@@ -1,370 +1,309 @@
-# Глава 1. Първи стъпки в програмирането
+# Chapter 1. First Steps in Programming
+In this chapter we are going to find out **what programming** is at its core. We will get familiar with the idea of **programming languages** and explore the environments for software development (**Integrated Development Environment** – IDEs); we'll see how to work with them, in particular with **PyCharm**. We will write and execute our **first program** written in the programming language Python and then we'll exercise on a few tasks: we will create a console-based program, a graphical application and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we'll learn how to avoid them.
 
-В тази глава ще разберем **какво е програмирането** в неговата същина. Ще се запознаем с идеята за **програмни езици** и ще разгледаме **средите за разработка на софтуер** (Integrated Development Environment - накратко IDE) и как да работим с тях, в частност с **PyCharm**. Ще напишем и изпълним **първата си програма** на програмния език **Python**, а след това ще се упражним с няколко задачи: ще създадем конзолна програма, графично приложение и уеб приложение. Ще се научим как да проверяваме за коректност решенията на задачите от тази книга в **Judge системата на СофтУни** и накрая ще се запознаем с типичните грешки, които често се допускат при писането на код и как да се предпазим от тях.
-
-
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видеоурок по тази глава тук: <a target="_blank"
+  Watch a video lesson on what we'll learn in this chapter: <a target="_blank"
   href="https://www.youtube.com/watch?v=LUUIDcwBDss">
   https://www.youtube.com/watch?v=LUUIDcwBDss</a>.
 </div>
 
+## What does 'To Program' mean?
+To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
 
-## Какво означава "да програмираме"?
+## Computer programs
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book we'll cover programming in general, as well as Python's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
-**Да програмираме** означава да даваме команди на компютъра какво да прави, например "*да изсвири някакъв звук*", "*да отпечата нещо на екрана*" или "*да умножи две числа*". Когато командите са няколко една след друга, те се наричат **компютърна програма** (или скрипт). Текстът на компютърните програми се нарича **програмен код** (или **сорс код**, или за по-кратко **код**).
+### Algorithms
+Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like **PyCharm**.
 
-### Компютърни програми
+### Programming languages, compilers, interpreters and development environments
+**Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
-**Компютърните програми** представляват **поредица от команди**, които се изписват на предварително избран **език за програмиране**, например Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Swift, Go или друг. За да пишем команди, трябва да знаем **синтаксиса и семантиката на езика**, с който ще работим, в нашия случай **Python**. Затова ще се запознаем със синтаксиса и семантиката на езика Python, и с програмирането като цяло в настоящата книга, изучавайки стъпка по стъпка писането на код, от по-простите към по-сложните програмни конструкции.
+**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
 
-### Алгоритми
+Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
 
-Компютърните програми обикновено изпълняват някакъв алгоритъм. **Алгоритмите** са последователност от стъпки, необходими за да се свърши определена работа и да се постигне някакъв очакван резултат, нещо като "рецепта". Например, ако пържим яйца, ние изпълняваме някаква рецепта (алгоритъм): загряваме мазнина в някакъв съд, чупим яйцата, изчакваме докато се изпържат, отместваме от огъня. Аналогично, в програмирането **компютърните програми изпълняват алгоритми** - поредица от команди, необходими, за да се свърши определена работа. Например, за да се подредят поредица от числа в нарастващ ред, е необходим алгоритъм, примерно да се намери най-малкото число и да се отпечата, от останалите числа да се намери отново най-малкото число и да се отпечата, и това се повтаря докато числата свършат.
+Overall, compiled languages work more slowly than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code more quickly and re-execute (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
 
-За удобство при създаването на програми, за писане на програмен код (команди), за изпълнение на програмите и за други операции, свързани с програмирането, ни е необходима и **среда за разработка** (IDE), например **PyCharm**.
+**The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a **programming language**, **a compiler or interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
-### Езици за програмиране, компилатори, интерпретатори и среди за разработка
+**Development environments** are convenient because they incorporate everything necessary to develop a program, so there's no need to leave the environment. If we don't use a development environment, we'll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which will cost a lot of time. This is why most programmers use IDEs for everyday work.
 
-**Езикът за програмиране** е изкуствен език (синтаксис за изразяване), предназначен за **задаване на команди**, които искаме компютъра да прочете, обработи и изпълни. Чрез езиците за програмиране пишем поредици от команди (**програми**), които **задават какво да прави компютъра**. Изпълнението на компютърните програми може да се реализира с **компилатор** или с **интерпретатор**.
-
-**Компилаторът** превежда кода от програмен език на **машинен код**, като за всяка от конструкциите (командите) в кода избира подходящ, предварително подготвен фрагмент от машинен код и междувременно **проверява за грешки в текста на програмата**. Заедно компилираните фрагменти съставят програмата в машинен код, както я очаква микропроцесора на компютъра. След като е компилирана програмата, тя може да бъде директно изпълнена от микропроцесора в кооперация с операционната система. При компилируемите езици за програмиране **компилирането на програмата** се извършва задължително преди нейното изпълнение и по време на компилация се откриват синтактичните грешки (грешно зададени команди). С компилатор работят езици като C++, C#, Java, Swift и Go.
-
-Някои езици за програмиране не използват компилатор, а се **интерпретират директно** от специализиран софтуер, наречен "интерпретатор". **Интерпретаторът** е "**програма за изпълняване на програми**", написани на някакъв програмен език. Той изпълнява командите на програмата една след друга, като разбира не само от единични команди и поредици от команди, но и от другите езикови конструкции (проверки, повторения, функции и т.н.). Езици като PHP, **Python** и JavaScript работят с интерпретатор и се изпълняват без да се компилират. Поради липса на предварителна компилация, при интерпретеруемите езици **грешките се откриват по време на изпълнение**, след като програмата започне да работи, а не предварително.
-
-Като цяло **компилируемите езици работят по-бързо от интерпретеруемите**. Разликата в скоростта на изпълнение на програмите понякога е минимална, а понякога е огромна. При интерпретеруемите езици за програмиране **по-бързо можем да променяме кода и да го изпълняваме отново** (например за да отстраним грешка), докато компилируемите езици са по-бавни след промяна на кода заради нуждата от компилация.
-
-**Средата за програмиране** (Integrated Development Environment - **IDE**, интегрирана среда за разработка) е съвкупност от традиционни инструменти за разработване на софтуерни приложения. В средата за разработка пишем код, компилираме и изпълняваме програмите. Средите за разработка интегрират в себе си **текстов редактор** за писане на кода, **език за програмиране**, **компилатор или интерпретатор** и **среда за изпълнение** за изпълнение на програмите, **дебъгер** за проследяване на програмата и търсене на грешки, **инструменти за дизайн на потребителски интерфейс** и други инструменти и добавки.
-
-**Средите за програмиране** са удобни, защото интегрират всичко необходимо за разработката на програмата, без да се напуска средата. Ако не ползваме среда за разработка, ще трябва да пишем кода в текстов редактор, да го компилираме с команда от конзолата, да го изпълняваме с друга команда от конзолата и да пишем още допълнителни команди, когато се налага, и това ще ни губи време. Затова повечето програмисти ползват IDE в ежедневната си работа.
-
-За програмиране на **езика Python** най-често се ползва средата за разработка **PyCharm**, която се разработва и разпространява от JetBrains, и може да се изтегли от: [https://www.jetbrains.com/pycharm](https://www.jetbrains.com/pycharm). Ето как изглежда средата PyCharm в действие:
+Programming with **Python** is usually done in the development environment **PyCharm** which is developed and distributed by JetBrains. You can download it from: [https://www.jetbrains.com/pycharm](https://www.jetbrains.com/pycharm).
+Here's what the PyCharm environment looks like in action:
 
 ![](/assets/chapter-1-images/PyCharm-IDE-in-action.png)
 
-Алтернативи на PyCharm за писане на Python са **Visual Studio Code** (https://code.visualstudio.com), **Atom** (https://atom.io), **Eclipse for Python** (http://www.eclipse.org) заедно с приставката **PyDev** (http://pydev.org) и други. В настоящата книга ще използваме средата за разработка PyCharm.
+Alternatives to PyCharm for writing code in Python are **Visual Studio Code** (https://code.visualstudio.com), **Atom** (https://atom.io), **Eclipse for Python** (http://www.eclipse.org) together with the add-on **PyDev** (http://pydev.org) and others. In this book we'll use the development environment PyCharm.
 
-Алтернатива на настолните среди за разработка (IDE) са **онлайн средите** за Python програмиране като [**Repl.it**](https://repl.it/languages/python3) и [**PythonAnywhere**](https://www.pythonanywhere.com). Те вършат отлична работа за тестване на кратки примери или когато нямаме възможност да инсталираме локално среда за разработка и Python интерпретатор или когато искаме лесно да споделим кода си с колеги. Ето пример как се изпълнява Python код в **Repl.it**:
+Alternatives to desktop development environments (IDE) are online environments for Python programing such as [**Repl.it**](https://repl.it/languages/python3) and [**PythonAnywhere**](https://www.pythonanywhere.com). They're great for testing short examples, when we cannot install an IDE locally, or when we want to easily share our code with colleagues. Here's an example of how to execute **Python code** in **Repl.it**:
 
 ![](/assets/chapter-1-images/Python-code-in-Repl.it.png)
 
-### Езици от ниско и високо ниво, среди за изпълнение (Runtime Environments)
+### Low-Level, High-Level Languages and Runtime Environments
+A program is, in essence, a **set of instructions** that ask the computer to carry out certain tasks. They are entered by the programmer and **executed unconditionally by the machine**.
 
-Програмата в своята същност е **набор от инструкции**, които карат компютъра да свърши определена задача. Те се въвеждат от програмиста и се **изпълняват безусловно от машината**.
+There are different types of **programming languages**. **Lowest-level** languages can be used to write the very **instructions commanding the processor** - **Assembler** is one such language. Higher-level languages can be utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines) and other system components and programs. Even higher-level languages like **JavaScript**, **C#** and **Python** are used to create application software, like programs for reading mail or chatting.
 
-Съществуват различни видове **езици за програмиране**. С езиците от най-ниско ниво могат да бъдат написани **самите инструкции**, които **управляват процесора**, например с езика "**assembler**". С езици от малко по-високо ниво като **C** и **C++** могат да бъдат създадени операционна система, драйвери за управление на хардуера (например драйвер за видеокарта), уеб браузъри, компилатори, двигатели за графика и игри (game engines) и други системни компоненти и програми. С езици от още по-високо ниво като **C#**, **Python** и **JavaScript** се създават приложни програми, например програма за четене на поща или чат програма.
+**Low-level languages** command hardware directly and require a lot of effort and a vast number of commands, to carry out a certain task. **Higher-level languages** require less code to achieve the same result, but have no direct access to hardware. They are used to develop application software like web and mobile applications.
 
-**Езиците от ниско ниво** управляват директно хардуера и изискват много усилия и огромен брой команди, за да свършат единица работа. **Езиците от по-високо ниво** изискват по-малко код за единица работа, но нямат директен достъп до хардуера. На тях се разработва приложен софтуер, например уеб приложения и мобилни приложения.
+Most of the software we use on a daily basis like music players, video players, GSP programs etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP etc.
 
-Болшинството софтуер, който използваме ежедневно, като музикален плеър, видеоплеър, GPS програма и т.н., се пише на **езици за приложно програмиране**, които са от високо ниво, като Python, JavaScript, C#, Java, C++, PHP и др.
+**Python is an interpreted language** which means we write commands and they're executed immediately after running the program. As a result of that, we will realize we've made a mistake in our code only after we've started our program and reached the incorrect command. In cases like these, **IDEs** like PyCharm are extremely helpful as they check our code while we're writing it and alarm us of potential issues. After we've written our code and want to test it, we can save it in a file with extension **`.py`**. 
 
-**Python е интерпретеруем език**, а това означава, че пишем команди, които се изпълняват директно след стартиране на програмата. Това означава, че ако сме допуснали грешка при писането на код, ще разберем едва след стартиране на програмата и достигането до грешната команда. Тук на помощ идват **IDE**-тата, като PyCharm, които проверяват кода ни, още докато пишем и ни алармират за евентуални проблеми. Когато сме написали кода си и искаме да го тестваме, можем да го запаметим във файл с разширение **`.py`**, примерно **`example.py`**.
+## Python Interpreter: Installation and Use
+In order to program in Python, we first need to **install a Python interpreter**. It executes commands and runs programs, written in Python, and is essential if we want to use Python on our computer. 
 
-## Python интерпретатор: инсталация и използване
-
-За да програмираме на езика Python, първо трябва **да си инсталираме Python интерпретатор**. Той изпълнява Python командите и програмите и е абсолютно необходим, ако ще пишем на езика Python на нашия компютър.
-
-### Инсталация на Python интерпретатора
-
-Инсталацията на Python е много лесна. Отиваме на https://python.org/downloads и изтегляме последната версия за нашата платформа:
+### Installing the Python Interpreter
+Installing Python is quite simple. Just go to https://python.org/downloads and download the latest version for your platform.
 
 ![](/assets/chapter-1-images/Python-download.png)
 
-В **Windows** среда инсталацията е стандартната с [**Next**], [**Next**] и [**Finish**]. В **Linux** се използва пакетния инсталатор, примерно `sudo apt-get install python3`.
-
+On **Windows** the installation is a straightforward process of clicking **[Next]**, **[Next]** and **[Finish]**. On **Linux**, you need to use a package installer like `sudo apt-get install python3`.
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-  <td>Използвайте <b>Python версия 3.x или по-висока</b>. Python 2 е остаряла технология и макар и да е достъпен по подразбиране в много системи, той е проблемен и много от примерите от тази книга няма да работят.</td>
-</tr></table>
+Use **Python version 3.x or newer**. Python 2 is an outdated technology and although it's accessible by default on many systems, it's problematic and many of the examples in this book won't work on it.
 
-### Стартиране на Python интерпретатора
-
-След като Python интерпретаторът е вече инсталиран, можем **да го стартираме** и да си поиграем с него. В Windows среда използвайте [**Start**] менюто и намерете току-що инсталираното приложение примерно “Python 3.7 (64-bit)”. В Linux / MacOS среда напишете на конзолата командата `python3`. Ето как би могъл да изглежда Python интрепретаторът в Windows среда:
+## Starting the Python Interpreter
+After the Python interpreter has been installed, we can **get it started** and have a tinker at it. If your environment is Windows, use the **[Start]** menu and find the application you just installed – 'Python 3.7 (64-bit)', for instance. On a Linux / MacOS environment, write the command `python3` in the console. Here's what the Python interpreter should look like on Windows:
 
 ![](/assets/chapter-1-images/Python-3.7-Shell.png)
 
-### Работа с Python интерпретатора
-
-Python е **интерпретатор** и с него може се работи в **команден режим**: пишем **команда** и той я изпълнява и връща **отговора**. Най-простата команда е да накараме Python да пресметне числен израз, примерно `2+3`:
+### Working with the Python Interpreter
+Python is an **interpreter** and it can be used in **command mode**: we write a **command**, it's executed and we receive the **result**. The simplest command we can use is to make Python calculate а numeric expression – `2 + 3`, for example: 
 
 ![](/assets/chapter-1-images/Python-shell-calculate-2-plus-3.png)
 
-Виждаме, че отговорът е правилен: `5`.
-Нека пробваме още няколко команди: да запишем стойност `5` в променлива с име `a` и да отпечатаме след това стойността `2 * a`:
+As we can see, the answer is correct: `5`.
+Let's try a few more commands: store the value `5` in a variable named `a` and print the result of `2 * a`:
 
 ![](/assets/chapter-1-images/Python-shell-calculate-2-multiplied-by-a.png)
 
-**Поиграйте си** сами с Python интерпретатора. Опитайте да изчислите **1234567890 * 234567890 * 34567890**. Успяхте ли? Опитайте с **грешна команда** (например напишете си името). Опитайте да пресметнете `2 ** 20` и помислете какво ли е това. Опитайте да отпечатате текста _“Здравей питоне, как си?”_ с командата `print("some text")`. Получава ли се?
+**Play around** with the Python interpreter yourself. Try calculating **1234567890 * 234567890 * 34567890**. Did it work? Try using an **incorrect command** (write your name, for example). Try calculating `2 ** 20` and guessing what that might be. Have a go at printing the text *"Hello Python, how are you?"* using the command `print("some text")`. Is it working?
 
-## Компютърни програми
+## Computer Programs
+As we already mentioned, a program is a **series of commands**, in other words, it describes a series of calculations, checks, iterations and numerous other operations, which aim at producing a result.
+The program is written in text format and the text is called **source code**. It's saved in a file with extension `.py` (`main.py`, for instance), and then it can be executed through your browser or through the **console** with the help of **Python Shell**. In **script and interpreted languages**, like JavaScript, Python and PHP, the source code is executed step by step by an interpreter.
 
-Както вече споменахме, програмата е **последователност от команди**, иначе казано тя описва поредица от пресмятания, проверки, повторения и всякакви подобни операции, които целят постигане на някакъв резултат.
-
-Програмата се пише в текстов формат, а самият текст на програмата се нарича **сорс код** (source code). Той се запазва във файл с разширение **`.py`** (например **`main.py`**), след което може да се изпълни през вашия браузър или през **конзолата** с помощта на **Python Shell**. При **скриптови и интерпретеруеми езици**, като JavaScript, Python и PHP, сорс кода се изпълнява постъпково от интерпретатор.
-
-### Пример: програма, която печата "Hello"
-
-Да започнем с много прост пример за кратка **Python програма**. Нашата първа програма ще отпечата думата _“Hello”_ ето така:
-
+### Example: a program that prints 'Hello'
+Let's start with a very basic example of a short **Python program**. It will print the word *"Hello"* like so:
 ```py
 print("Hello")
 ```
 
-Можем да я изпълним като я напишем в Python интерпретатора:
-
+We can execute it by typing in the Python interpreter:
 ![](/assets/chapter-1-images/Python-shell-print-Hello.png)
 
-### Пример: програма, която свири музикалната нота "ла"
-
-Нашата следваща програма ще се състои от единична **Python команда**, която свири музикалната нота "ла" (432 херца) с продължителност половин секунда (500 милисекунди):
-
+### Example: a program which plays the music tone 'A'
+Our next program will consist of a single **Python command** which plays the music tone 'A' (432 hertz) for half a second (500 milliseconds):
 ```python
 import winsound
 
 winsound.Beep(432, 500)
 ```
+In a Windows environment we will **hear a sound**. Make sure your speakers aren't muted. On Linux and MacOs, the example won't work.
 
-В Windows среда **ще чуем звук**. Уверете се, че звукът на компютъра ви е пуснат. В Linux и macOS примерът няма да проработи.
-
-### Пример: програма, която свири поредица от музикални ноти
-
-Можем да усложним предходната програма, като зададем за изпълнение повтарящи се в цикъл команди за свирене на поредица от ноти с нарастваща височина:
-
+### Example: a program which plays a series of music tones:
+We can make our last program a bit more complex by creating a loop which passes a series of notes with increasing height to the command:
 ```python
 import winsound
 
 for i in range(200, 4000, 200):
     winsound.Beep(i, 300)
 ```
+In the example above we make the computer play very briefly (300 milliseconds) each subsequent tone with height 200, 400, 600 etc. hertz until reaching 4000 hertz. The result is something similar to a melody.
+We will learn how iterations (loops) in programming work in **chapter** "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
-В горния пример караме компютъра да свири една след друга за много кратко (по 300 милисекунди) всички ноти с височина 200, 400, 600 и т.н. херца до достигане на 4000 херца. Резултатът от програмата е свирене на нещо като мелодия.
-
-Как работят повторенията (циклите) в програмирането ще научим в **главата "[Цикли](chapter-05-loops.md)"**, но засега приемете, че просто повтаряме някаква команда много пъти.
-
-### Пример: програма, която конвертира от левове в евро
-
-Да разгледаме още една проста програма, която прочита от потребителя някаква сума в лева (цяло число), конвертира я в евро (като я разделя на курса на еврото) и отпечатва получения резултат. Това е програма от **три поредни команди**. Въведете ги и ги изпълнете **една след друга**:
-
+### Example: Program which converts Bulgarian levs into euro
+Let's have a look at another simple program which reads a number of levs from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of **three consecutive commands**. Enter and execute them in sequence:
 ```python
 leva = int(input())
 euro = leva / 1.95583
 print(euro)
 ```
 
-Ето как би могъл да изглежда **резултатът** от горната серия команди:
+Here's what the **result** of the above series of commands might look like:
 
 ![](/assets/chapter-1-images/Python-shell-leva-to-euro.png)
 
-Разгледахме **три примера за компютърни програми**: единична команда, серия команди в цикъл и поредица от три команди. Нека сега преминем към по-интересното: как можем да пишем собствени програми на **Python** и как можем да ги изпълняваме?
+We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of three commands. Let's now move on to the more exciting bit: writing our own programs in **Python** and executing them.
 
-## Как да напишем конзолна програма?
+## How can we write a console program?
+Let's go through the necessary steps to **create and execute a computer program** which uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Python programs from this book and the exercises that go along with it.
 
-Нека преминем през **стъпките за създаване и изпълнение на компютърна програма**, която чете и пише своите данни от и на текстова конзола (прозорец за въвеждане и извеждане на текст). Такива програми се наричат "**конзолни**". Преди това, обаче, трябва първо да си **инсталираме и подготвим средата за разработка**, в която ще пишем и изпълняваме Python програмите от тази книга и упражненията към нея.
+## Development Environment (IDE)
+As previously mentioned, we need a **development environment** (IDE) in order to program. The IDE is actually a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
+-	For programming in Python we use the **PyCharm** environment, suitable Windows, Linux and MacOS operating systems.
+- If we are programming in Java we might use **IntelliJ IDEA**, **Eclipse** and **NetBeans**.
+- If we are programming in C# we might use **Visual Studio**.
 
-## Среда за разработка (IDE)
+### Installing PyCharm Community
+Let's start by installing the **PyCharm Community** integrated environment (in our example we'll be using version 2018, current as at October 2018).
+The Community version of PyCharm is freely distributed by JetBrains and can be downloaded from: [https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download).
 
-Както вече стана дума, за да програмираме ни е нужна **среда за разработка** - **Integrated Development Environment** (IDE). Това всъщност е редактор за програми, в който пишем програмния код и можем да го изпълняваме, да виждаме грешките, да ги поправяме и да стартираме програмата отново.
- - За програмиране на Python използваме средата **PyCharm** за операционните системи Windows, Linux или macOS.
- - Ако програмираме на Java, подходящи са средите **IntelliJ IDEA**, **Eclipse** или **NetBeans**.
- - Ако ще пишем на C#, можем да използваме средата **Visual Studio**.
-
-### Инсталация на PyCharm Community
-
-Започваме с инсталацията на интегрираната среда **PyCharm Community** (в нашия пример ще използваме версия 2018, актуална към октомври 2018 г.).
-
-**Community** версията на PyCharm се разпространява безплатно от JetBrains и може да бъде изтеглена от: [https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download). Инсталацията е типичната за Windows с [**Next**], [**Next**] и [**Finish**]. Има и Linux версия.
-
-В следващите редове подробно са описани **стъпките за инсталация на PyCharm** (версия Community 2018). След като свалим инсталационния файл и го стартираме, се появява следния екран:
+The installation is typical for Windows - simply use the **[Next]** and **[Finish]** buttons. There's a Linux version available as well.
+In the following paragraphs we've described in detail **every step of the PyCharm Community 2018 installation process**. After we download the installation file and run it, we're greeted with the following screen:
 
 ![](/assets/chapter-1-images/00.PyCharm-01.PNG)
 
-Натискаме бутона [**Next**], след което ще видим прозореца долу:
+We hit **[Next]**, which takes us to the screen you see below:
 
 ![](/assets/chapter-1-images/00.PyCharm-02.PNG)
 
-Зарежда се прозорец с инсталационния панел на PyCharm:
+A window with PyCharm's installation panel is loaded:
 
 ![](/assets/chapter-1-images/00.PyCharm-03.PNG)
 
-Слагаме отметка на пряк път в зависимост от нашата операционна система, [**.py**] и [**Download and install JRE x86 by JetBrains**], след което натискаме бутона [**Next**]:
+We tick the box which allows us to choose a shortcut depending on our operating system [**.py**] and [**Download and install JRE x86 by JetBrains**], and then click [**Next**]:
 
 ![](/assets/chapter-1-images/00.PyCharm-04.PNG)
 
-Натискаме бутона [**Install**].
+Then we hit the **[Install]** button.
 
 ![](/assets/chapter-1-images/00.PyCharm-05.PNG)
 
-След като PyCharm се инсталира, ще се появи информативен екран, където можем да сложим отметка ([**Run PyCharm ...**]), за да го стартираме. След **старта на PyCharm** излиза екран като този по-долу:
+After PyCharm installs, we'll see an information screen, where we can tick a box that says **[Run PyCharm]** which will start our IDE. After **PyCharm has started**, a screen similar to the one below will be displayed:
 
 ![](/assets/chapter-1-images/01.Hello-python-01.PNG)
 
-Това е всичко. Готови сме за работа с PyCharm.
+That's it. We're ready to start working with PyCharm.
 
-### По-стари версии на PyCharm
+### Older versions of PyCharm
+We could also use older versions of PyCharm (version 2016 or 2012, for example) but it's **not recommended** since they don't have the newest capabilities for development and not all the examples in this book will run on them. 
 
-Можем да използваме и по-стари версии на PyCharm (например версия 2016 или 2012), но **не е препоръчително**, тъй като в тях не се съдържат някои от по-новите възможности за разработка и не всички примери от книгата ще тръгнат.
+### Online development environments
+There are also **alternative environments to develop online**, directly in your web browser. They aren't very easy to use but if you have no other option, you can start your education with them and install PyCharm later. Here are some links:
+- Tutorials Point allows writing and executing code online:
+[https://www.tutorialspoint.com/online_python_ide.php](https://www.tutorialspoint.com/online_python_ide.php).
+- Another useful online development environment for writing and executing Python code is Repl.it: [https://repl.it/languages/python3](https://repl.it/languages/python3).
 
-### Онлайн среди за разработка
+### Projects in PyCharm
+Before we start working with PyCharm, let's get familiar with the term **PyCharm Project** - it represents the project we're currently working on. 
 
-Съществуват и **алтернативни среди за разработка онлайн**, директно в нашия уеб браузър. Тези среди не са много удобни, но ако нямате друга възможност, може да стартирате обучението си с тях и да си инсталирате PyCharm по-късно. Ето някои линкове:
- * За езика Python сайтът **Tutorials Point** позволява писане на код и изпълнението му онлайн: [https://www.tutorialspoint.com/online_python_ide.php](https://www.tutorialspoint.com/online_python_ide.php).
- * Друга добра онлайн среда за писане и изпълнение на Python код е Repl.it: https://repl.it/languages/python3.
- * За Java можем да използваме следното онлайн Java IDE: [https://www.compilejava.net](https://www.compilejava.net).
- * За JavaScript можем да пишем JS код директно в конзолата на даден браузър с натискане на **[F12]**.
+In the beginning that will be a console program which we'll learn how to write with the help of this book, its resources and SoftUni's Programming Basics course. After some more thorough studying and with time and practice, these projects will turn into applications, web apps and other projects. The PyCharm project uses **logic to group the numerous files** that make up a certain application or component.
 
-### Проекти в PyCharm
+A single **Python project** consists of several **Python source files** (**.py**), configuration files and other resources. Every Python source file can have one or more **classes** and **functions**. **Classes** contain **functions**(actions), which are comprised of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for good organization of our work files.
 
-Преди да започнем да работим с PyCharm, нека се запознаем с понятието **PyCharm Project**.
-
-**PyCharm Project** представлява "проекта", върху който работим. В началото това ще са нашите конзолни програми, които ще се научим да пишем с помощта на настоящата книга, ресурсите към нея и в курса Programming Basics в SoftUni. При по-задълбочено изучаване и с времето и практиката, тези проекти ще преминат в апликации, уеб приложения и други разработки. Проектът в PyCharm **логически групира множество файлове**, изграждащи дадено приложение или компонент.
-
-Един **Python проект** съдържа един или няколко **Python сорс файла** (**.py**), конфигурационни файлове и други ресурси. Във всеки Python сорс файл може да има един или повече **класове** и **функции**. В **класовете** има **функции** (действия), а те се състоят от **поредици от команди**. Изглежда сложно, но при големи проекти такава структура е много удобна и позволява добра организация на работните файлове.
-
-## Пример: създаване на конзолна програма "Hello Python"
-
-Да се върнем на нашата конзолна програма. Вече имаме PyCharm и можем да го стартираме. След това създаваме нов проект: [**Create New Project**].
+#Example: creating a console program 'Hello Python'
+Let's get back to our console program. Now that we have PyCharm installed, we can start it. Then we will create a new project: **[Create New Project]**.
 
 ![](/assets/chapter-1-images/01.Hello-python-01.PNG)
 
-Задаваме **смислено име** на проекта с нашата програма, например **`FirstStepsInProgramming`**:
+We will give our project a **meaningful name**, such as `FirstStepsInProgramming`:
 
 ![](/assets/chapter-1-images/01.Hello-python-02.PNG)
 
-PyCharm ще създаде за нас **празен проект**, в който може да добавяме Python файлове. Добавяме нов Python файл ([**File**] или десен бутон на проекта ни -> [**New**] -> [**Python File**]) и му задаваме смислено име, например `HelloPython.py`.
+PyCharm will create an **empty project** for us and we can add Python files to it. We'll add a new Python file - **[File]** or right click on our project -> **[New]** -> **[Python File]** and give it a meaningful name like `HelloPython.py`.
 
-Можем да настроим версията и местоположението на Python интерпретатора, който ще бъде използван. Задължително е да имаме Python интерпретатор, ако ще изпълняваме написаните Python програми. Можем да имаме повече от един Python версии на един и същ компютър. За леснота, в началото, най-добре е да имате **само един Python**, последна версия, и да ползвате само него навсякъде. Ако нямате инсталиран Python, инсталирайте го преди да продължите.
+We can adjust the version and location of the Python interpreter, which we'll be using. We must have a Python interpreter, otherwise, we won't be able to execute the programs we've written. It's possible to have more than one version of Python on the same computer but for ease of use, in the beginning **just install the latest version and use that**. If you haven't already installed Python, please do so before you continue.
 
-### Писане на програмен код
-
-Писането на Python код не изисква никаква допълнителна подготовка от това, което вече направихме - да си създадем файл с разширение `.py`. Затова директно пристъпваме към изписването на първия ред код. Изписваме следната команда:
-
+### Writing Program Code
+Writing Python code requires no additional preparation – creating a file with the `.py` extension is all we need. So let's directly proceed with writing our first line of code. We'll write the following command:
 ```python
 print('Hello Python')
 ```
-
-Ето как би могла да изглежда нашата програма в PyCharm:
+Here's what our program might look like in PyCharm:
 
 ![](/assets/chapter-1-images/01.Hello-python-03.PNG)
 
-Командата **`print('Hello Python')`** на езика Python означава да изпълним отпечатване (**`print(…)`**) върху конзолата и да отпечатаме текстово съобщение **`Hello Python`**, което трябва да оградим с кавички, за да поясним, че това е текст.
+The `print('Hello Python')` command allows us to print the text message `Hello Python` on the console. The message needs to be surround with quotes, signifying text.
 
-Тази команда е много типична за програмирането: извикваме функцията **`print(…)`** и ѝ подаваме като параметър текстов литерал **`'Hello Python'`**.
+This command is quite typical for programming: we call the function `print(...)` and pass the text literal `'Hello Python'` as its parameter.
 
-### Стартиране на програмата
-
-За стартиране на програмата натискаме [**Ctrl + Shift + F10**] или десен бутон - [**Run**]. Ако няма грешки, програмата ще се изпълни. Резултатът ще се изпише на конзолата:
+### Starting the Program
+To start the program we need to press **[Ctrl + Shift + F10]** or right click – **[Run]**. If there are no errors, the program will execute. The result will be displayed on the console:
 
 ![](/assets/chapter-1-images/01.Hello-python-04.PNG)
 
-Всъщност, изхода от програмата е следното текстово съобщение:
-
+Actually, the output from the program is the following text message:
 ```python
 Hello Python
 ```
+The **'Process finished with exit code 0'** message is displayed at the end of the PyCharm console after the program has executed, to signify that the program has finished with no errors.
 
-Съобщението "**Process finished with exit code 0**" се изписва допълнително на най-долния ред на конзолата на PyCharm след като програмата завърши, за да ни покаже, че програмата се е изпълнила без грешки.
+### Testing our program in the Judge system
+Testing the solutions to the problems in this book is completely automated via the **Judge System**'s website: [https://judge.softuni.bg](https://judge.softuni.bg). The solutions are judged immediately by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
 
-### Тестване на програмата в Judge системата
-
-Тестването на задачите от тази книга е автоматизирано и се осъществява през Интернет, от сайта на **Judge системата**: [https://judge.softuni.bg](https://judge.softuni.bg). Оценяването на задачите се извършва на момента от системата. Всяка задача минава поредица от тестове, като всеки успешно преминат тест дава предвидените за него точки. Тестовете, които се подават на задачите, са скрити.
-
-Горната програма може да тестваме тук: [https://judge.softuni.bg/Contests/Practice/Index/1046#0](https://judge.softuni.bg/Contests/Practice/Index/1046#0). За целта поставяме целия сорс код на програмата в черното поле и избираме **Python code**, както е показано тук:
+The program we just wrote can be tested here: [https://judge.softuni.bg/Contests/Practice/Index/1046#0](https://judge.softuni.bg/Contests/Practice/Index/1046#0). In order to do that, simply paste the entire source code in the black field and choose **Python code** as is shown below:
 
 ![](/assets/chapter-1-images/01.Hello-python-05.PNG)
 
-Изпращаме решението за оценяване с бутона [**Изпрати**] (или [**Submit**]). Системата връща резултат след няколко секунди в таблицата с изпратени решения. При необходимост може да натиснем бутона за обновяване на резултатите **[Refresh]**, който се намира в горната дясна част на таблицата с изпратени за проверка решения:
+Then we need to send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the 'Refresh' button at the upper right-hand corner of the table of submitted solutions:
 
 ![](/assets/chapter-1-images/01.Hello-python-06.PNG)
 
-В таблицата с изпратените решения Judge системата ще покаже един от следните **възможни резултати**:
-* **Брой точки** (между 0 и 100), когато предаденият код се компилира успешно (няма синтактични грешки) и може да бъде тестван.
-  - При **вярно решение** всички тестове са маркирани в зелено и получаваме **100 точки**.
-  - При **грешно решение** някои от тестовете са маркирани в червено и получаваме непълен брой точки или 0 точки.
-* При грешна програма ще получим **съобщение за грешка** по време на компилация.
+In the table, the Judge System will display one of the following **possible results**:
+- Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
+  -	If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
+  -	If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
+-	If there are syntactic errors in our program, we receive a **compile time error message**.
 
-### Как да се регистрирам в SoftUni Judge?
+### How do I register at SoftUni Judge?
+Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
 
-Използваме идентификацията си (Username + Password) от сайта [softuni.bg](softuni.bg). Ако нямате СофтУни регистрация, направете си. Отнема само минутка - стандартна регистрация в Интернет сайт.
+### Test your tone-playing programs
+Now that you've learned how to **execute programs**, you can test the sample note-playing programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `print('Hello Python')` command with `windsound.Beep(432, 500)` and add `import windsound` at the top, then start your program. Check whether your computer sound is on and turned up. If you're using an online development environment, you won't hear anything, because the program isn't executed on your computer, but somewhere else. The `windsound` Module may not work with some operating systems like Linux and MacOS.
 
-## Тествайте програмите за свирене на ноти
-
-Сега, след като вече **знаете как да изпълнявате програми**, можете да тествате примерните програми по-горе, които свирят музикални ноти. Позабавлявайте се, пробвайте тези програми. Пробвайте да ги промените и да си поиграете с тях. Заменете командата **`print('Hello Python')`** с команда **`winsound.Beep(432, 500)`**, като най-отгоре добавите **`import winsound`**, и стартирайте програмата. Проверете дали ви е включен звука на компютъра и дали е усилен. Ако работите в онлайн среда за разработка, няма да чуете звук, защото програмата не се изпълнява на вашия компютър, а някъде другаде. Пакетът `winsound` може да не работи под някои операционни системи като Linux и macOS.
-
-## Типични грешки в Python програмите
-
-Една от често срещаните грешки при начинаещите е бъркането на **главни и малки букви**, а те имат значение при извикване на командите и тяхното правилно функциониране. Ето пример за такава грешка:
-
+## Typical mistakes in Python programs
+One of the usual mistakes beginners make is mixing up **capital and lowercase letters**. However, they matter when we call commands and can impede proper functioning. Here's an example of such a mistake:
 ```python
 Print('Hello Python')
 ```
 
-В горния пример **`Print`** е изписано грешно и трябва да се поправи на **`print`**. 
+In the example above, `print` is written incorrectly and the capital letter needs to be changed to lowercase.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td>В езика Python не се слага <b>точка и запетая (;)</b> в края на командите. Командите се разделят една от друга чрез <b>нов ред или индентация (отстъп)</b>.</td></tr></table>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td>In Python we don't use a <b>semicolon (;)</b> в края на at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
 
-Липсваща **кавичка** или **липса на отваряща или затваряща скоба** също може да се окажат проблеми. Проблемът води до **неправилно функциониране на програмата** или въобще до нейното неизпълнение. Този пропуск трудно се забелязва при по-обемен код. Ето пример за грешна програма:
-
+A missing **quotation mark** or **closing bracket** can also cause issues – the program will either **function improperly** or **not execute at all**. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example:
 ```python
 print('Hello Python)
 ```
 
-Тази програма ще даде **грешка** и кода ще бъде подчертан, за да се насочи вниманието на програмиста към грешката, която е допуснал (пропуснатата затваряща кавичка):
+This program will return an **error** and the code will be underlined to draw the programmer's attention to the missed closing bracket.
 
-![](/assets/chapter-1-images/01.Hello-python-07.PNG)
+ ![](/assets/chapter-1-images/01.Hello-python-07.PNG)
 
+## What did we learn in this chapter?
+First of all, we learned **what programming is** – **issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Python programming language** and learned **how to create simple console programs** using PyCharm. Then we examined **Python's program code structure**. We looked at printing with the function **`print(...)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
-## Какво научихме от тази глава?
+Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
 
-На първо място научихме **какво е програмирането** - **задаване на команди, изписани на компютърен език**, които машината разбира и може да изпълни. Разбрахме още какво е **компютърната програма** - тя представлява **поредица от команди**, подредени една след друга. Запознахме се с **езика за програмиране Python** на базисно ниво и как **да създаваме прости конзолни програми** с PyCharm. Проследихме и **структурата на програмния код в езика Python**. Видяхме как да печатаме с функцията **`print(…)`** и как да стартираме програмата си с [**Ctrl + Shift + F10**]. Научихме се да тестваме кода си в **SoftUni Judge** системата.
+## First Steps in Programming – Exercises
+Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex – programs with graphical and web user interface.
 
-Добра работа! Да се захващаме с **упражненията**. Нали не сте забравили, че програмиране се учи с много писане на код и решаване на задачи? Да решим няколко задачи, за да затвърдим наученото.
-
-
-## Упражнения: първи стъпки в програмирането
-
-Добре дошли в упражненията. Сега ще напишем няколко конзолни програми, с които ще направим още няколко първи стъпки в програмирането, след което ще покажем как можем да програмираме нещо по-сложно - програми с графичен и уеб потребителски интерфейс.
-
-### Задача: конзолна програма “Expression”
-
-Да се напише конзолна **Python** програма, която **пресмята** и **отпечатва** стойността на следния числен израз:
-
+### Problem: console-based program 'Expression'
+Write a console-based **Python** program that **calculates** and **prints** the value of the following numerical expression:
 <p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
+Note: you are **not allowed to previously calculate the value** (for example with Windows Calculator).
 
-Забележка: **не е разрешено да се пресметне стойността предварително** (например с Windows Calculator).
-
-#### Насоки и подсказки
-
-Създаваме нов Python файл с име **expression**. След това трябва да **напишем кода**, който да изчисли горния числен израз и да отпечата на конзолата стойността му. Подаваме горния числен израз в скобите на командата **``print(…)``**:
+### Hints and Guidelines
+Create a new Python file and name it **Expression**. Then we need to **write the code** which will calculate the numeric expression above and print its value on the console. Pass the expression to the **`print(...)`** command by writing it within its brackets:
 
 ![](/assets/chapter-1-images/02.Expression-01.PNG)
 
-Стартираме програмата с [**Ctrl + Shift + F10**] и проверяваме дали резултата е същия като на картинката:
+Start the program with **[Ctrl + Shift + F10]** and check whether the result matches the one from the picture:
 
 ![](/assets/chapter-1-images/02.Expression-02.PNG)
 
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1046#1](https://judge.softuni.bg/Contests/Practice/Index/1046#1).
-
+### Testing in the Judge System
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/1046#1](https://judge.softuni.bg/Contests/Practice/Index/1046#1).
 ![](/assets/chapter-1-images/02.Expression-03.PNG)
 
+### Problem : Numbers from 1 to 20
+Write a **Python console program** that **prints the numbers from 1 to 20** on separate lines on the console.
 
-### Задача: числата от 1 до 20
-
-Да се напише **Python** конзолна програма, която **отпечатва числата от 1 до 20** на отделни редове на конзолата.
-
-#### Насоки и подсказки
-
-Създаваме **Python файл** с име **nums_1_to_20.py**:
+### Hints and Guidelines
+Create a Python file and name it **`nums_1_to_20.py`**:
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-01.PNG)
 
-Във файла изписваме 20 команди **``print(…)``**, всяка на отделен ред, за да отпечатаме числата от 1 до 20 едно след друго. По-досетливите от вас, сигурно се питат дали няма по-умен начин. Спокойно, има, но за него по-късно.
+Inside the file write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-02.PNG)
 
-Сега **стартираме програмата** и поверяваме дали резултатът е какъвто се очаква да бъде:
+Let's now **start the program** and check whether the result is what we're expecting:
 ```
 1
 2
@@ -372,17 +311,13 @@ print('Hello Python)
 20
 ```
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/1046#2](https://judge.softuni.bg/Contests/Practice/Index/1046#2).
+Now try and **think of a cleverer way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.bg/search?q=for+loop+python)" on the Internet.
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1046#2](https://judge.softuni.bg/Contests/Practice/Index/1046#2).
-
-Сега помислете дали може да напишем програмата по **по-умен начин**, така че да не повтаряме 20 пъти една и съща команда. Потърсете в Интернет информация за "**[for loop Python](https://www.google.bg/search?q=for+loop+python)**".
-
-
-### Задача: триъгълник от 55 звездички
-
-Да се напише **Python** конзолна програма, която **отпечатва триъгълник от 55 звездички**, разположени на 10 реда:
-
+### Problem: Triangle of 55 stars
+Write a **Python console program** that prints a **triangle of 55 stars** on 10 lines:
 ```
 *
 **
@@ -396,244 +331,217 @@ print('Hello Python)
 **********
 ```
 
-#### Насоки и подсказки
-
-Създаваме **нов Python файл** с име **triangle_of_55_stars.py**. В него трябва да напишем код, който печата триъгълника от звездички, например чрез 10 команди, като посочените по-долу:
-
+### Hints and Guidelines
+Create a **new Python file** and name it **`triangle_of_55_stars.py`**. Inside we need to write code that prints our triangle, using 10 print() commands, like this:
 ```python
 print('*')
 print('**')
 …
 ```
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/1046#3](https://judge.softuni.bg/Contests/Practice/Index/1046#3).
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1046#3](https://judge.softuni.bg/Contests/Practice/Index/1046#3).
+Try and **improve your solution** to avoid repeating the same command so many times. Can this be achieved with a **`for`**-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar, but a little more complex approach (a loop within another loop). It's completely fine if you can't figure it out, you'll remember this problem when we learn about loops in a few chapters.
 
-Опитайте да **подобрите решението**, така че да няма много повтарящи се команди. Може ли това да стане с **`for`** цикъл? Успяхте ли да намерите умно решение (например с цикъл) на предната задача? При тази задача може да се ползва нещо подобно, но малко по-сложно (два цикъла един в друг). Ако не успеете, няма проблем, ще учим цикли след няколко глави и ще си спомните за тази задача тогава.
+### Problem: Rectangle Area
+Write a **Python program** which **receives two numbers a and b, then calculates and prints** the area of a rectangle with sides **a** and **b**.
 
-### Задача: лице на правоъгълник
-
-Да се напише **Python** програма, която **получава две числа a и b**, **пресмята** и **отпечатва** лицето на правоъгълник със страни **a** и **b**. 
-
-#### Примерен вход и изход
-
+### Sample input and output
 | a | b | area |
 | :---: | :---: | :---: |
 | 2 | 7 |  14  |
 | 7 | 8 |  56  |
 | 12 | 5 |  60  |
 
-#### Насоки и подсказки
-
-Създаваме нов **Python файл**. За да **прочетем двете числа**, използваме следните две команди:
+### Hints and Guidelines
+Create a **new Python file**. We'll use the following commands to read our numbers:
 
 ![](/assets/chapter-1-images/05.Rectangle-area-01.PNG)
 
-Остава да се допише програмата по-горе, за да пресмята лицето на правоъгълника и да го отпечата. Използвайте познатата ни вече команда **`print(…)`** и ѝ подайте в скобите произведението на числата **a** и **b**. В програмирането умножението се извършва с оператора **`*`**.
+What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  **`a`** and **`b`** to the already familiar **`print(...)`** command. In programming we multiply using the **`*`** operator.
 
-#### Тествайте решението си
-
-Тествайте решението си с няколко примера. Трябва да получите резултат, подобен на този (въвеждаме 2 и 7 като вход и програмата отпечатва като резултат 14 - тяхното произведение):
-
+### Test your solution
+Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input and the program prints 14 – their product, as output):
 ```
 2
 7
 14
 ```
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:
+[https://judge.softuni.bg/Contests/Practice/Index/1046#4](https://judge.softuni.bg/Contests/Practice/Index/1046#4).
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1046#4](https://judge.softuni.bg/Contests/Practice/Index/1046#4).
+### \* Problem: Square of Stars
+Write a **Python console program which reads an integer positive number N** from the console and **prints a square of N stars** on the console, like in the examples below.
 
-### \* Задача: квадрат от звездички
-
-Да се напише **Python** конзолна програма, която **прочита** от конзолата **цяло положително число N** и **отпечатва** на конзолата **квадрат от N звездички**, като в примерите по-долу.
-
-#### Примерен вход и изход
-
-| Вход  |    Изход   	| Вход  |    Изход   	| Вход  |    Изход   	| 
+### Sample input and output
+| Input  |    Output   	| Input  |    Output   	| Input  |    Output   	| 
 |-----|-----------|-----|-----------|-----|----------|
-|  3  	|<code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|
+|  3  	| <code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|
 
-#### Насоки и подсказки
-
-Създаваме нов **Python файл**. За да прочетем числото N (2 ≤ N ≤100), използваме следния код:
+### Hints and Guidelines
+Create a **new Python file**. In order to read the number N (2 ≤ N ≤100), we use the following code:
 
 ![](/assets/chapter-1-images/06.Square-of-stars-01.PNG)
 
-Да се допише програмата по-горе, за да отпечатва квадрат, съставен от звездички. Може да се наложи да се използват **`for`** цикли. Потърсете информация в Интернет.
+Finish the program so that it prints a square made up of stars. You may need to use **`for`**-loops.
 
-**Внимание**: тази задача е по-трудна от останалите и нарочно е дадена сега и е обозначена със звездичка, за да ви провокира да потърсите информация в Интернет. Това е едно от най-важните умения, което трябва да развивате докато учите програмирането: **да търсите информация в Интернет**. Това ще правите всеки ден, ако работите като програмисти, така че не се плашете, а се опитайте. Ако имате трудности, можете да потърсите помощ и в СофтУни форума: [https://softuni.bg/forum](https://softuni.bg/forum).
+**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the SoftUni forum: https://softuni.bg/forum.
 
-#### Тестване в Judge системата
+### Testing in the Judge System
+Test your solution here:[https://judge.softuni.bg/Contests/Practice/Index/1046#5](https://judge.softuni.bg/Contests/Practice/Index/1046#5).
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1046#5](https://judge.softuni.bg/Contests/Practice/Index/1046#5).
+## Console, Graphical and Web Applications
+With **console applications**, as you've already noticed, **all operations** for reading input and printing output are done on the console. The input data is **entered on the console** and then it is read by the application; the console is also used to **print the output data** after or during the runtime of the program.
 
+While a console application **uses the text console**, web applications use a **web-based user interface**. **To execute them**, two things are needed – a **web server** and a **web browser**. The **browser** plays the main role in the **visualization of data and interaction with the user**. Web applications are much more pleasant for the user, they look better, and a mouse and touch screen can be used (for tablets and smartphones). Programming stands under all of that, of course. This is why **we need to learn how to program** and we have already made our first tiny steps towards achieving that.
 
-## Конзолни, графични и уеб приложения
+Graphical (GUI) applications have a **visual user interface**, directly on your computer or mobile device, without a web browser. Graphical applications (also known as desktop applications) contain one or more graphical windows where certain controllers are located (text fields, buttons, pictures, tables and others), which **allow dialog** with the user to be more intuitive. Similar to them are mobile applications on your smartphone or tablet: we use forms, text fields, buttons and other controls and we manage them with program code. This is why we learn to write code now: **code is everywhere in software development**.
 
-При **конзолните приложения**, както и сами можете да се досетите, **всички операции** за четене на вход и печатане на изход се **извършват през конзолата**. Там се **въвеждат входните данни**, които се прочитат от приложението, там се **отпечатват и изходните данни** след или по време на изпълнение на програмата.
+## Exercises: Graphical and Web Applications
+We will now build a **basic web application** and after that a simple **graphical application**, in order to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.
 
-Докато конзолните приложения **ползват текстовата конзола**, уеб приложенията **използват уеб-базиран потребителски интерфейс**. За да се **постигне тяхното изпълнение**, са необходими две неща - **уеб сървър** и **уеб браузър**, като **браузърът** играе главната роля по **визуализация на данните и взаимодействието с потребителя**. Уеб приложенията са много по-приятни за потребителя, изглеждат визуално много по-добре, използват се мишка и докосване с пръст (при таблети и телефони), но зад всичко това стои програмирането. И затова **трябва да се научим да програмираме**, и вече направихме първите си съвсем малки стъпки.
-
-Графичните (GUI) приложения имат **визуален потребителски интерфейс**, директно върху нашия компютър или мобилно устройство, без да е необходим уеб браузър. Графичните приложения (настолни приложения или, иначе казано, desktop apps) **се състоят от един или повече графични прозореца**, в които се намират определени **контроли** (текстови полета, бутони, картинки, таблици и други), **служещи за диалог** с потребителя по по-интуитивен начин. Подобни са и мобилните приложения в нашия телефон и таблет: ползваме форми, текстови полета, бутони и други контроли и ги управляване чрез програмен код. Нали затова се учим сега да пишем код: **кодът е навсякъде в разработката на софтуер**.
-
-
-## Упражнения: графични и уеб приложения
-
-Сега предстои да направим едно **графично приложение** (GUI application) и едно **уеб приложение** (Web application), за да надникнем в това, какво ще можем да създаваме някой ден като напреднем с програмирането и разработката на софтуер. Няма да разглеждаме детайлите по използваните техники и конструкции из основи, а само ще хвърлим поглед върху подредбата и функционалността на създаденото от нас. След като напреднем със знанията си, ще бъдем способни да правим големи и сложни софтуерни приложения и системи. Надяваме се примерите по-долу **да ви запалят интереса**, а не да ви откажат.
-
-### Графично приложение: “Суматор за числа”
-
-Да се напише **графично (GUI) приложение**, което **изчислява сумата на две числа**. След въвеждане на числата в първите две текстови полета и натискане на бутона [**Calculate**] се изчислява тяхната сума и резултатът се показва в третото текстово поле в (зелен цвят):
+## Graphical application: 'Numbers Summator'
+Write a **graphical (GUI) application** which **calculates the sum of two numbers**. After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field colored in green:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-01.PNG)
 
-За нашето приложение ще използваме стандартната Python графична библиотека **ТkInter** (https://wiki.python.org/moin/TkInter), която позволява създаване на **графични (GUI) приложения** с езика за програмиране **Python**.
+We'll use the standard Python graphical library **TKInter** for our application (https://wiki.python.org/moin/TkInter. It enables us to create **graphical (GUI) applications** using the **Python** programming language.
 
-#### Празен Python проект
-
-В PyCharm създаваме **нов Python проект** с име "**Summator-GUI**":
+## Empty Python Project
+Create a **new Python project** named **"Summator-GUI"** in PyCharm:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-02.PNG)
 
-Добавяме в проекта нов Python файл с име **sumator.py**. Добавяме и **tkinter**:
+Add a new Python file named **summator.py** to the project. Then add **tkinter** as well:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-03.PNG)
 
-#### Създаване основата на GUI проекта
-
-Следва да напишем кода на нашето графично приложение. Започваме с основата:
+#### Creating the basis for the GUI project
+Next we need to write the code for our graphical application, starting with the basis:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-04.PNG)
 
-Ще са ни нужни следните компоненти (**контроли**):
-
-*	**Entry** – ще въвежда числата за пресмятане.
-*	**Label** – ще ни служи за статично изобразяване на текст и резултата от пресмятането.
-*	**Button** – ще изчислява сумата на числата.
+We'll need the following components (controls):
+*	**Entry** – will enter the numbers that need to be calculated.
+*	**Label** – will serve to statically display text and the result of the calculation.
+*	**Button** – will calculate the sum of our numbers.
 
 ![](/assets/chapter-1-images/07.Numbers-sum-05.PNG)
 
-**Инициализираме и визуализираме** нашите контроли (widgets):
+Let's **initialize and visualize** our controls (widgets):
 
 ![](/assets/chapter-1-images/07.Numbers-sum-06.PNG)
 
-Опитваме да пуснем приложението с [**Ctrl + Shift + F10**] или с десен бутон на мишката + **[Run]**. То би трябвало да стартира, но да **не функционира напълно**, защото не сме написали какво се случва при натискане на бутона:
+And try to start our application with **[Ctrl + Shift + F10]** or right-click + **[Run]**. It should start but **not function correctly**, because we haven't specified what happens when the button is clicked:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-07.PNG)
 
-#### Логика на приложението
-
-Сега е време да напишем кода, който **сумира числата** от първите две полета и **показва резултата** в третото поле. За целта при инициализирането на бутона, добавяме команда **`calculate`**:
+#### Application Logic
+Now we'll write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the **`calculate`** command upon the button's initialization:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-08.PNG)
 
-Написваме кода на функцията **`calculate`**:
+Then we'll write the **`calculate`** function's code:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-09.PNG)
 
-Този код **взима първото число** от полето **`firstNumberEntry`** и го запазва **в променливата `first_value`**, запазва **второто число** от полето **`secondNumberEntry`** в **променливата `second_value`**, след това **сумира `first_value` и `second_value` в променливата `result`** и накрая **извежда текстовата стойност на променливата `result`** в полето **`resultLabel`**.
+This code **takes the first number** from the **`firstNumberEntry`** field and stores it in the **`first_value`** **variable**. Then it stores the **second number** from the **`secondNumberEntry`** field in the **`second_value`** variable. It **sums** **`first_value`** and **`second_value`** and stores the result in the **`result`** variable. Finally, it **displays the text representation** of the **`result`** variable in the **`resultLabel`** field.
 
-Стартираме отново програмата с [**Ctrl + Shift + F10**] или с десен бутон + **[Run]**, и проверяваме дали работи коректно. Правим опит да сметнете **4 + 5**, а след това **-25 + 1.5**:
+Let's start the program again using **[Ctrl + Shift + F10]** or right click + **[Run]** and check whether it's working correctly. Try and calculate **4** + **5**, then **-2.5** + **1.5**:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-10.PNG) ![](/assets/chapter-1-images/07.Numbers-sum-11.PNG)
 
-#### Обработка на невалидни числа
-
-Пробваме и с **невалидни числа**, напр. "**a**" и "**b**". Изглежда има проблем: 
+#### Managing invalid numbers
+Entering **invalid numbers** like **'a'** and **'b'** seems to create issues:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-12.PNG)
 
-Проблемът идва от **прехвърлянето на текстово поле в число**. Ако стойността в полето **не е число, програмата дава грешка**. Можем да поправим кода, за да коригираме този проблем:
+This is due to the **conversion of the information entered in our text field into a number**. If the **value in the field isn't a number, our program returns an error**. We can fix the code to resolve this issue:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-13.PNG)
 
-Горният код **прихваща грешките при работа с числа** (хваща изключенията) и в случай на грешка **извежда стойност `Not number/s.`** в полето с резултата. Стартираме отново програмата с [**Ctrl + Shift + F10**] или с десен бутон - **[Run]**, и я пробваме дали работи. Този път **при грешно число резултата е `Not number/s.`** и програмата не се чупи:
+The code you see above **intercepts number-handling errors** (catches exceptions) and in case of an error, **returns a `Not number/s`** value in the result field. If we start our program once more and enter an improper value, the **result is `Not number/s`** and our program continues working as intended: 
 
 ![](/assets/chapter-1-images/07.Numbers-sum-14.PNG) ![](/assets/chapter-1-images/07.Numbers-sum-15.PNG)
 
-Сложно ли е? Нормално е да е сложно, разбира се. Тъкмо започваме да навлизаме в програмирането. Примерът по-горе изисква още много знания и умения, които ще развиваме в тази книга и даже и след нея. Просто си позволете да се позабавлявате с desktop програмирането. Ако не тръгва нещо, винаги може да питате във **форума на СофтУни**: https://softuni.bg/forum. Или продължете смело напред към следващия пример или към следващата глава от книгата. Ще дойде време, когато ще ви е лесно, но наистина трябва да вложите **усърдие и постоянство**. Програмирането се учи бавно и с много, много практика.
+Does that seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. A time will come when this will to be easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and **lots of practice**.
 
-### Уеб приложение: “Суматор за числа”
+### Web Application: 'Numbers Summator'
+Now we are going to create something even more complex, but also more interesting: a Web application that **calculates the sum of two numbers**. By entering two numbers in the first two text fields and clicking the **[Calculate]** button, **their sum is calculated** and the result is displayed in the third text field.
 
-Сега ще напишем нещо още по-сложно, но и по-интересно: уеб приложение, което **изчислява сумата на две числа**. При **въвеждане на две числа** в първите две текстови полета и натискане на бутона [**Calculate**] се **изчислява тяхната сума** и резултата се показва в третото текстово поле.
-
-Обърнете внимание, че ще създадем **уеб-базирано приложение**. Това е приложение, което е достъпно през уеб браузър, точно както любимата ви уеб поща или новинарски сайт. Уеб приложението ще има сървърна част (back-end), която е написана на езика Python с технологията **Flask** (http://flask.pocoo.org) и клиентска част (front-end), която е написана на езика **HTML** (това е език за визуализация на информация в уеб браузър).  Уеб приложението се очаква да изглежда приблизително по следния начин:
+Keep in mind that we are creating a **Web-based application**. This is an application that is accessible through a web browser, just like your favorite email or news website. The web application is going to have a server side (back-end), which is written in the Python language with **Flask** ([http://flask.pocoo.org](http://flask.pocoo.org)) technology, and a client side (front-end), which is written in the **HTML** language (this is a language for visualization of information in a web browser). The Web application is expected to resemble the following:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-01.PNG)
 
-За разлика от конзолните приложения, които четат и пишат данните си във вид на текст на конзолата, уеб приложенията имат **уеб базиран потребителски интерфейс**. Уеб приложенията се **зареждат от някакъв Интернет адрес** (URL) чрез стандартен уеб браузър. Потребителите пишат входните данни в страница, визуализирана от уеб браузъра, данните се обработват на уеб сървър и резултатите се показват отново в страницата в уеб браузъра. За нашето уеб приложение ще използваме **Flask**, лека Python библиотека, която позволява създаване на **уеб приложения с езика за програмиране Python**.
+As opposed to console applications which read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. For our web application we are going to use **Flask**, a light Python library, which allows creating **web applications with the programming language Python**.
 
-Следват стъпките за имплементация на уеб приложението "Суматор за числа".
+Next are the steps for implementation of the "Numbers Summator" web application.
 
-#### Празно Python решение
-
-В PyCharm създаваме **нов Python проект**, за да организираме кода от приложението:
+#### Empty Python solution
+We'll create an **empty Python project** in PyCharm to organize our application's code:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-02.PNG)
 
-След това, задаваме смислено име на проекта, например "**Sumator-Web**". Също така, задаваме Python интерпретатора на този по подразбиране:
+Then we need to give the project a meaningful name like **"Summator-Web"**. We'll also set the Python interpreter to this one by default:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-03.PNG)
 
-#### Инсталиране на Flask
-
-Преди да започнем да пишем код, трябва да инсталираме **Flask**. Отиваме в настройките на PyCharm [**File**] -> [**Settings**] и след това в [**Project: Sumator-Web**] -> [**Project Interpreter**]. Там кликаме върху бутона **`+`**:
+#### Installing Flask
+Before we start writing code, we need to install Flask. Let's go to PyCharm's settings [**File**] -> [**Settings**] then go to [**Project: Sumator-Web**] -> [**Project Interpreter**]. There we need to click the **`+`** button:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-04.PNG)
 
-Търсим **Flask** в прозореца, който излиза и кликаме върху [**Install Package**]:
+When you find Flask in the window that appears, click **[Install package]**:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-05.PNG)
 
-Ако всичко мине успешно, ще получим следното съобщение в същия екран:
+If all goes well, you'll receive the following message on the same screen:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-06.PNG)
 
-#### Създаване структурата на проекта
-
-Нека да създадем структурата на нашия проект. За целта създаваме Python файл с име **app.py**, който ще съдържа нашия програмен код. Създаваме папка с име **templates** и в нея HTML файл с име **index.html**, който ще ни помага за изобразяването в браузъра.
+#### Creating the Project Structure
+Let's create the structure of our project. To do that, we'll create a Python file named **`app.py`** where we'll keep our program code. Then we need a folder which we'll call **templates** and an HTML file named **`index.html`** which will help visualize our content in the browser.
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-07.PNG)
 
-#### Съставяне логиката на приложението
-
-Сега създаваме контролите на приложението. Целта е да добавим полета за въвеждане на числа, бутон за сумирането им и място, където ще се изобрази резултата. Затова трябва да напишем следния код в **templates/index.html**:
+#### Writing the application's logic
+Time to create our application's controls. The aim is to add fields where our numbers will be entered, a button for summing them and a place to display the result. We can achieve this by writing the following code in `templates/index.html`:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-08.PNG)
 
-Този код създава уеб форма **`<form>`** с поле и бутон [**Calculate**] за изпращане на данните от формата към сървъра. Обработването на данните ще се случва в нашия Python файл **app.py**. Обърнете внимание на къдравите скоби – те служат за превключване между езика **HTML** и езика **Python** и идват от **Jinja2** синтаксиса за рисуване на динамични уеб страници.
+This code creates a web form `<form>` with a field and a button **[Calculate]** which will send the data from the form to our server. Our **Python** `app.py` file will be responsible for data manipulation. Notice the curly braces – they are used to switch between the **HTML** and **Python languages** and come from the **Jinja2** syntax used for creating dynamic web pages.
 
-След като напишем следния код в **app.py**, може да тестваме програмата дали работи като я стартираме с [**Ctrl + Shift + F10**] или с десен бутон - **[Run]**:
+After we've written the following code in `app.py`, we can test if our program is working by running it:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-09.PNG)
 
-Следва да напишем кода, който ще обработва нашата **заявка**:
+Next we need to write the code which will handle our **request**:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-10.PNG)
 
-Вече при кликане на бутона за пресмятане, нашата програма ще може да събере двете числа от формата. Нека пуснем програмата отново и да тестваме дали работи коректно. При въвеждане на числата **9** и **11** ще получим верен резултат: 
+If we click the calculation button now, our program will be able to sum the two digits from the form. Let's run the program again and test whether it's working correctly. Upon entering the numbers **9** and **11**, we'll receive a correct result:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-11.PNG) 
 
-#### Обработка на невалидни числа
-
-Ако пробваме с **невалидни данни**, ще получим грешка:
+#### Managing invalid numbers
+If we try entering **invalid data**, we'll receive an error:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-12.PNG)
 
-За да се справим с грешката, е нужно да напишем следния код:
+In order to handle the error, we need to write the following code:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-13.PNG)
 
-Това не е най-доброто решение за управление на грешки, но ще работи.
+This is not the best solution for error handling, but it will work.
 
-Ако пуснем отново програмата и тестваме с **невалидни данни**, ще получим съобщение - **Not number/s.**:
+If we run the program one more time and test it by entering **invalid data**, we'll receive the `Not number/s.` message.
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-14.PNG)
 
-Страшно ли изглежда? **Не се плашете!** Имаме да учим още много, за да достигнем ниво на знания и умения, за да пишем свободно уеб-базирани приложения, като в примера по-горе и много по-големи и по-сложни. Ако не успеете да се справите, продължете спокойно напред. След време ще си спомняте с усмивка колко непонятен и вълнуващ е бил първият ви сблъсък с уеб програмирането. Ако имате проблеми с примера по-горе, питайте във **форума на СофтУни**: https://softuni.bg/forum.
+Does all this seem scary? **There's no need to be afraid**. We have a lot more to learn, to reach the level of knowledge and skills required to write web-based applications with ease like in the example above, as well as much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. 
 
-Целта на горните два примера (графично desktop приложение и уеб приложение) не е да се научите, а да се докоснете по-надълбоко до програмирането, **да разпалите интереса си** към разработката на софтуер и да се вдъхновите да учите здраво. **Имате да учите още много**, но пък е интересно, нали?
+The purpose of both examples (graphical desktop application and web application) is not to teach you, but to allow you to dive a little deeper into programming, to **fuel your interest** towards software development and to inspire you to study hard. **You have a lot more to learn**, but it is interesting, isn't it?
