@@ -1,0 +1,990 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1. Първи стъпки в програмирането · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    <meta name="google-site-verification" content="TODO">
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter-02-simple-calculations.html" />
+    
+    
+    <link rel="prev" href="chapter-00-preface.html" />
+    
+
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Книга "Основи на програмирането с Python"
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter-00-preface.html">
+            
+                <a href="chapter-00-preface.html">
+            
+                    
+                    Предговор
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="chapter-01-first-steps-in-programming.html">
+            
+                <a href="chapter-01-first-steps-in-programming.html">
+            
+                    
+                    1. Първи стъпки в програмирането
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter-02-simple-calculations.html">
+            
+                <a href="chapter-02-simple-calculations.html">
+            
+                    
+                    2.1. Прости пресмятания
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter-02-simple-calculations-exam-problems.html">
+            
+                <a href="chapter-02-simple-calculations-exam-problems.html">
+            
+                    
+                    2.2. Прости пресмятания – изпитни задачи
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter-03-simple-conditions.html">
+            
+                <a href="chapter-03-simple-conditions.html">
+            
+                    
+                    3.1. Прости проверки
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter-03-simple-conditions-exam-problems.html">
+            
+                <a href="chapter-03-simple-conditions-exam-problems.html">
+            
+                    
+                    3.2. Прости проверки – изпитни задачи
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter-04-complex-conditions.html">
+            
+                <a href="chapter-04-complex-conditions.html">
+            
+                    
+                    4.1. По-сложни проверки
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter-04-complex-conditions-exam-problems.html">
+            
+                <a href="chapter-04-complex-conditions-exam-problems.html">
+            
+                    
+                    4.2. По-сложни проверки – изпитни задачи
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter-05-loops.html">
+            
+                <a href="chapter-05-loops.html">
+            
+                    
+                    5.1. Повторения (цикли)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter-05-loops-exam-problems.html">
+            
+                <a href="chapter-05-loops-exam-problems.html">
+            
+                    
+                    5.2. Цикли – изпитни задачи
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter-06-nested-loops.html">
+            
+                <a href="chapter-06-nested-loops.html">
+            
+                    
+                    6.1. Вложени цикли
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter-06-nested-loops-exam-problems.html">
+            
+                <a href="chapter-06-nested-loops-exam-problems.html">
+            
+                    
+                    6.2. Вложени цикли – изпитни задачи
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter-07-complex-loops.html">
+            
+                <a href="chapter-07-complex-loops.html">
+            
+                    
+                    7.1. По-сложни цикли
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="chapter-07-complex-loops-exam-problems.html">
+            
+                <a href="chapter-07-complex-loops-exam-problems.html">
+            
+                    
+                    7.2. По-сложни цикли – изпитни задачи
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="chapter-08-exam-preparation.html">
+            
+                <a href="chapter-08-exam-preparation.html">
+            
+                    
+                    8.1. Подготовка за практически изпит – част I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="chapter-08-exam-preparation-part-2.html">
+            
+                <a href="chapter-08-exam-preparation-part-2.html">
+            
+                    
+                    8.2. Подготовка за практически изпит – част II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="chapter-09-problems-for-champions.html">
+            
+                <a href="chapter-09-problems-for-champions.html">
+            
+                    
+                    9.1. Задачи за шампиони – част I
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="chapter-09-problems-for-champions-part-2.html">
+            
+                <a href="chapter-09-problems-for-champions-part-2.html">
+            
+                    
+                    9.2. Задачи за шампиони – част II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="chapter-10-functions.html">
+            
+                <a href="chapter-10-functions.html">
+            
+                    
+                    10. Функции
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="chapter-11-tricks-and-hacks.html">
+            
+                <a href="chapter-11-tricks-and-hacks.html">
+            
+                    
+                    11. Хитрости и хакове
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="chapter-12-conclusion.html">
+            
+                <a href="chapter-12-conclusion.html">
+            
+                    
+                    Заключение
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >1. Първи стъпки в програмирането</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-1-first-steps-in-programming"><a name="chapter-1-first-steps-in-programming" class="plugin-anchor" href="#chapter-1-first-steps-in-programming"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 1. First Steps in Programming</h1>
+<p>In this chapter we are going to find out <strong>what programming</strong> is at its core. We will get familiar with the idea of <strong>programming languages</strong> and explore the environments for software development (<strong>Integrated Development Environment</strong> &#x2013; IDEs); we&apos;ll see how to work with them, in particular with <strong>PyCharm</strong>. We will write and execute our <strong>first program</strong> written in the programming language Python and then we&apos;ll exercise on a few tasks: we will create a console-based program, a graphical application and a Web application. We will learn how use <strong>SoftUni&apos;s Judge System</strong> to check the correctness of our solutions to the problems in this book. Finally, we&apos;ll look at some typical mistakes made during code writing and we&apos;ll learn how to avoid them.</p>
+<h2 id="video"><a name="video" class="plugin-anchor" href="#video"><i class="fa fa-link" aria-hidden="true"></i></a>Video</h2>
+<div class="video-player">
+  Watch a video lesson on what we&apos;ll learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=LUUIDcwBDss">
+  https://www.youtube.com/watch?v=LUUIDcwBDss</a>.
+</div>
+
+<h2 id="what-does-to-program-mean"><a name="what-does-to-program-mean" class="plugin-anchor" href="#what-does-to-program-mean"><i class="fa fa-link" aria-hidden="true"></i></a>What does &apos;To Program&apos; mean?</h2>
+<p>To program means to give instructions to the computer, for example <em>play a certain sound</em>, <em>print something on the screen</em> or <em>multiply two numbers</em>. When there&apos;s a series of commands, we have a computer program (script). The computer program&apos;s text is called <strong>program code</strong> (<strong>source code</strong> or <strong>just code</strong>).</p>
+<h2 id="computer-programs"><a name="computer-programs" class="plugin-anchor" href="#computer-programs"><i class="fa fa-link" aria-hidden="true"></i></a>Computer programs</h2>
+<p><strong>Computer programs</strong> represent <strong>series of commands</strong> written in a particular <strong>programming language</strong>, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the <strong>syntax and semantics of the language</strong> we&apos;ll be using, in our case &#x2013; <strong>Python</strong>. In this book we&apos;ll cover programming in general, as well as Python&apos;s particular syntax and semantics. We&apos;ll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.</p>
+<h3 id="algorithms"><a name="algorithms" class="plugin-anchor" href="#algorithms"><i class="fa fa-link" aria-hidden="true"></i></a>Algorithms</h3>
+<p>Computer programs usually execute some sort of algorithm. <strong>Algorithms</strong> are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they&apos;re cooked, and finally move the pan away from the heat.  Similarly, in programming, <strong>computer programs execute algorithms</strong> &#x2013; series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a <strong>development environment</strong> (IDE) like <strong>PyCharm</strong>.</p>
+<h3 id="programming-languages-compilers-interpreters-and-development-environments"><a name="programming-languages-compilers-interpreters-and-development-environments" class="plugin-anchor" href="#programming-languages-compilers-interpreters-and-development-environments"><i class="fa fa-link" aria-hidden="true"></i></a>Programming languages, compilers, interpreters and development environments</h3>
+<p><strong>Programming languages</strong> are an artificial languages (syntax for expression), designed to <strong>issue commands</strong> which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (<strong>programs</strong>) which <strong>tell the computer what to do</strong>. Execution of computer programs can be achieved by using either a <strong>compiler</strong> or an <strong>interpreter</strong>.</p>
+<p><strong>The compiler</strong> translates code from a programming language into <strong>machine code</strong> and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program&apos;s text for <strong>errors</strong>. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer&apos;s microprocessor is expecting it. After it&apos;s been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages <strong>compile the program</strong> before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.</p>
+<p>Some programming languages don&apos;t use a compiler, but are <strong>directly interpreted</strong> by specialized software called an interpreter. <strong>The interpreter</strong> is a <strong>program that executes programs</strong>, written in some programming language. It executes the program&apos;s commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages&apos; errors are found during run time, after the program has already started working.</p>
+<p>Overall, compiled languages work more slowly than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code more quickly and re-execute (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.</p>
+<p><strong>The development environment</strong> (Integrated Development Environment &#x2013; <strong>IDE</strong>) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a <strong>programming language</strong>, <strong>a compiler or interpreter</strong>, an <strong>execution environment</strong> where our program is executed, a <strong>debugger</strong> which traces our program and looks for errors, <strong>instruments for design and user interface</strong> as well as other instruments and add-ons.</p>
+<p><strong>Development environments</strong> are convenient because they incorporate everything necessary to develop a program, so there&apos;s no need to leave the environment. If we don&apos;t use a development environment, we&apos;ll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which will cost a lot of time. This is why most programmers use IDEs for everyday work.</p>
+<p>Programming with <strong>Python</strong> is usually done in the development environment <strong>PyCharm</strong> which is developed and distributed by JetBrains. You can download it from: <a href="https://www.jetbrains.com/pycharm" target="_blank">https://www.jetbrains.com/pycharm</a>.
+Here&apos;s what the PyCharm environment looks like in action:</p>
+<p><img src="assets/chapter-1-images/PyCharm-IDE-in-action.png" alt=""></p>
+<p>Alternatives to PyCharm for writing code in Python are <strong>Visual Studio Code</strong> (<a href="https://code.visualstudio.com" target="_blank">https://code.visualstudio.com</a>), <strong>Atom</strong> (<a href="https://atom.io" target="_blank">https://atom.io</a>), <strong>Eclipse for Python</strong> (<a href="https://www.eclipse.org" target="_blank">https://www.eclipse.org</a>) together with the add-on <strong>PyDev</strong> (<a href="https://pydev.org" target="_blank">https://pydev.org</a>) and others. In this book we&apos;ll use the development environment PyCharm.</p>
+<p>Alternatives to desktop development environments (IDE) are online environments for Python programing such as <a href="https://repl.it/languages/python3" target="_blank"><strong>Repl.it</strong></a> and <a href="https://www.pythonanywhere.com" target="_blank"><strong>PythonAnywhere</strong></a>. They&apos;re great for testing short examples, when we cannot install an IDE locally, or when we want to easily share our code with colleagues. Here&apos;s an example of how to execute <strong>Python code</strong> in <strong>Repl.it</strong>:</p>
+<p><img src="assets/chapter-1-images/Python-code-in-Repl.it.png" alt=""></p>
+<h3 id="low-level-high-level-languages-and-runtime-environments"><a name="low-level-high-level-languages-and-runtime-environments" class="plugin-anchor" href="#low-level-high-level-languages-and-runtime-environments"><i class="fa fa-link" aria-hidden="true"></i></a>Low-Level, High-Level Languages and Runtime Environments</h3>
+<p>A program is, in essence, a <strong>set of instructions</strong> that ask the computer to carry out certain tasks. They are entered by the programmer and <strong>executed unconditionally by the machine</strong>.</p>
+<p>There are different types of <strong>programming languages</strong>. <strong>Lowest-level</strong> languages can be used to write the very <strong>instructions commanding the processor</strong> - <strong>Assembler</strong> is one such language. Higher-level languages can be utilized to create an operating system, drivers for managing hardware (video card drivers, for example), web browsers, compilers, engines for game graphics (game engines) and other system components and programs. Even higher-level languages like <strong>JavaScript</strong>, <strong>C#</strong> and <strong>Python</strong> are used to create application software, like programs for reading mail or chatting.</p>
+<p><strong>Low-level languages</strong> command hardware directly and require a lot of effort and a vast number of commands, to carry out a certain task. <strong>Higher-level languages</strong> require less code to achieve the same result, but have no direct access to hardware. They are used to develop application software like web and mobile applications.</p>
+<p>Most of the software we use on a daily basis like music players, video players, GSP programs etc. is written on high-level <strong>languages for application programming</strong> like Python, JavaScript, C#, Java, C++, PHP etc.</p>
+<p><strong>Python is an interpreted language</strong> which means we write commands and they&apos;re executed immediately after running the program. As a result of that, we will realize we&apos;ve made a mistake in our code only after we&apos;ve started our program and reached the incorrect command. In cases like these, <strong>IDEs</strong> like PyCharm are extremely helpful as they check our code while we&apos;re writing it and alarm us of potential issues. After we&apos;ve written our code and want to test it, we can save it in a file with extension <strong><code>.py</code></strong>. </p>
+<h2 id="python-interpreter-installation-and-use"><a name="python-interpreter-installation-and-use" class="plugin-anchor" href="#python-interpreter-installation-and-use"><i class="fa fa-link" aria-hidden="true"></i></a>Python Interpreter: Installation and Use</h2>
+<p>In order to program in Python, we first need to <strong>install a Python interpreter</strong>. It executes commands and runs programs, written in Python, and is essential if we want to use Python on our computer. </p>
+<h3 id="installing-the-python-interpreter"><a name="installing-the-python-interpreter" class="plugin-anchor" href="#installing-the-python-interpreter"><i class="fa fa-link" aria-hidden="true"></i></a>Installing the Python Interpreter</h3>
+<p>Installing Python is quite simple. Just go to <a href="https://python.org/downloads" target="_blank">https://python.org/downloads</a> and download the latest version for your platform.</p>
+<p><img src="assets/chapter-1-images/Python-download.png" alt=""></p>
+<p>On <strong>Windows</strong> the installation is a straightforward process of clicking <strong>[Next]</strong>, <strong>[Next]</strong> and <strong>[Finish]</strong>. On <strong>Linux</strong>, you need to use a package installer like <code>sudo apt-get install python3</code>.</p>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+Use **Python version 3.x or newer**. Python 2 is an outdated technology and although it&apos;s accessible by default on many systems, it&apos;s problematic and many of the examples in this book won&apos;t work on it.
+
+## Starting the Python Interpreter
+After the Python interpreter has been installed, we can **get it started** and have a tinker at it. If your environment is Windows, use the **[Start]** menu and find the application you just installed &#x2013; &apos;Python 3.7 (64-bit)&apos;, for instance. On a Linux / MacOS environment, write the command `python3` in the console. Here&apos;s what the Python interpreter should look like on Windows:
+
+![](/assets/chapter-1-images/Python-3.7-Shell.png)
+
+### Working with the Python Interpreter
+Python is an **interpreter** and it can be used in **command mode**: we write a **command**, it&apos;s executed and we receive the **result**. The simplest command we can use is to make Python calculate &#x430; numeric expression &#x2013; `2 + 3`, for example: 
+
+![](/assets/chapter-1-images/Python-shell-calculate-2-plus-3.png)
+
+As we can see, the answer is correct: `5`.
+Let&apos;s try a few more commands: store the value `5` in a variable named `a` and print the result of `2 * a`:
+
+![](/assets/chapter-1-images/Python-shell-calculate-2-multiplied-by-a.png)
+
+**Play around** with the Python interpreter yourself. Try calculating **1234567890 * 234567890 * 34567890**. Did it work? Try using an **incorrect command** (write your name, for example). Try calculating `2 ** 20` and guessing what that might be. Have a go at printing the text *&quot;Hello Python, how are you?&quot;* using the command `print(&quot;some text&quot;)`. Is it working?
+
+## Computer Programs
+As we already mentioned, a program is a **series of commands**, in other words, it describes a series of calculations, checks, iterations and numerous other operations, which aim at producing a result.
+The program is written in text format and the text is called **source code**. It&apos;s saved in a file with extension `.py` (`main.py`, for instance), and then it can be executed through your browser or through the **console** with the help of **Python Shell**. In **script and interpreted languages**, like JavaScript, Python and PHP, the source code is executed step by step by an interpreter.
+
+### Example: a program that prints &apos;Hello&apos;
+Let&apos;s start with a very basic example of a short **Python program**. It will print the word *&quot;Hello&quot;* like so:
+```py
+print(&quot;Hello&quot;)
+```
+
+We can execute it by typing in the Python interpreter:
+![](/assets/chapter-1-images/Python-shell-print-Hello.png)
+
+### Example: a program which plays the music tone &apos;A&apos;
+Our next program will consist of a single **Python command** which plays the music tone &apos;A&apos; (432 hertz) for half a second (500 milliseconds):
+```python
+import winsound
+
+winsound.Beep(432, 500)
+```
+In a Windows environment we will **hear a sound**. Make sure your speakers aren&apos;t muted. On Linux and MacOs, the example won&apos;t work.
+
+### Example: a program which plays a series of music tones:
+We can make our last program a bit more complex by creating a loop which passes a series of notes with increasing height to the command:
+```python
+import winsound
+
+for i in range(200, 4000, 200):
+    winsound.Beep(i, 300)
+```
+In the example above we make the computer play very briefly (300 milliseconds) each subsequent tone with height 200, 400, 600 etc. hertz until reaching 4000 hertz. The result is something similar to a melody.
+We will learn how iterations (loops) in programming work in **chapter** &quot;[Loops](chapter-05-loops.md)&quot;, but for now, let&apos;s assume that they just repeat a command many times.
+
+### Example: Program which converts Bulgarian levs into euro
+Let&apos;s have a look at another simple program which reads a number of levs from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of **three consecutive commands**. Enter and execute them in sequence:
+```python
+leva = int(input())
+euro = leva / 1.95583
+print(euro)
+```
+
+Here&apos;s what the **result** of the above series of commands might look like:
+
+![](/assets/chapter-1-images/Python-shell-leva-to-euro.png)
+
+We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of three commands. Let&apos;s now move on to the more exciting bit: writing our own programs in **Python** and executing them.
+
+## How can we write a console program?
+Let&apos;s go through the necessary steps to **create and execute a computer program** which uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Python programs from this book and the exercises that go along with it.
+
+## Development Environment (IDE)
+As previously mentioned, we need a **development environment** (IDE) in order to program. The IDE is actually a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
+-    For programming in Python we use the **PyCharm** environment, suitable Windows, Linux and MacOS operating systems.
+- If we are programming in Java we might use **IntelliJ IDEA**, **Eclipse** and **NetBeans**.
+- If we are programming in C# we might use **Visual Studio**.
+
+### Installing PyCharm Community
+Let&apos;s start by installing the **PyCharm Community** integrated environment (in our example we&apos;ll be using version 2018, current as at October 2018).
+The Community version of PyCharm is freely distributed by JetBrains and can be downloaded from: [https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download).
+
+The installation is typical for Windows - simply use the **[Next]** and **[Finish]** buttons. There&apos;s a Linux version available as well.
+In the following paragraphs we&apos;ve described in detail **every step of the PyCharm Community 2018 installation process**. After we download the installation file and run it, we&apos;re greeted with the following screen:
+
+![](/assets/chapter-1-images/00.PyCharm-01.PNG)
+
+We hit **[Next]**, which takes us to the screen you see below:
+
+![](/assets/chapter-1-images/00.PyCharm-02.PNG)
+
+A window with PyCharm&apos;s installation panel is loaded:
+
+![](/assets/chapter-1-images/00.PyCharm-03.PNG)
+
+We tick the box which allows us to choose a shortcut depending on our operating system [**.py**] and [**Download and install JRE x86 by JetBrains**], and then click [**Next**]:
+
+![](/assets/chapter-1-images/00.PyCharm-04.PNG)
+
+Then we hit the **[Install]** button.
+
+![](/assets/chapter-1-images/00.PyCharm-05.PNG)
+
+After PyCharm installs, we&apos;ll see an information screen, where we can tick a box that says **[Run PyCharm]** which will start our IDE. After **PyCharm has started**, a screen similar to the one below will be displayed:
+
+![](/assets/chapter-1-images/01.Hello-python-01.PNG)
+
+That&apos;s it. We&apos;re ready to start working with PyCharm.
+
+### Older versions of PyCharm
+We could also use older versions of PyCharm (version 2016 or 2012, for example) but it&apos;s **not recommended** since they don&apos;t have the newest capabilities for development and not all the examples in this book will run on them. 
+
+### Online development environments
+There are also **alternative environments to develop online**, directly in your web browser. They aren&apos;t very easy to use but if you have no other option, you can start your education with them and install PyCharm later. Here are some links:
+- Tutorials Point allows writing and executing code online:
+[https://www.tutorialspoint.com/online_python_ide.php](https://www.tutorialspoint.com/online_python_ide.php).
+- Another useful online development environment for writing and executing Python code is Repl.it: [https://repl.it/languages/python3](https://repl.it/languages/python3).
+
+### Projects in PyCharm
+Before we start working with PyCharm, let&apos;s get familiar with the term **PyCharm Project** - it represents the project we&apos;re currently working on. 
+
+In the beginning that will be a console program which we&apos;ll learn how to write with the help of this book, its resources and SoftUni&apos;s Programming Basics course. After some more thorough studying and with time and practice, these projects will turn into applications, web apps and other projects. The PyCharm project uses **logic to group the numerous files** that make up a certain application or component.
+
+A single **Python project** consists of several **Python source files** (**.py**), configuration files and other resources. Every Python source file can have one or more **classes** and **functions**. **Classes** contain **functions**(actions), which are comprised of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for good organization of our work files.
+
+#Example: creating a console program &apos;Hello Python&apos;
+Let&apos;s get back to our console program. Now that we have PyCharm installed, we can start it. Then we will create a new project: **[Create New Project]**.
+
+![](/assets/chapter-1-images/01.Hello-python-01.PNG)
+
+We will give our project a **meaningful name**, such as `FirstStepsInProgramming`:
+
+![](/assets/chapter-1-images/01.Hello-python-02.PNG)
+
+PyCharm will create an **empty project** for us and we can add Python files to it. We&apos;ll add a new Python file - **[File]** or right click on our project -&gt; **[New]** -&gt; **[Python File]** and give it a meaningful name like `HelloPython.py`.
+
+We can adjust the version and location of the Python interpreter, which we&apos;ll be using. We must have a Python interpreter, otherwise, we won&apos;t be able to execute the programs we&apos;ve written. It&apos;s possible to have more than one version of Python on the same computer but for ease of use, in the beginning **just install the latest version and use that**. If you haven&apos;t already installed Python, please do so before you continue.
+
+### Writing Program Code
+Writing Python code requires no additional preparation &#x2013; creating a file with the `.py` extension is all we need. So let&apos;s directly proceed with writing our first line of code. We&apos;ll write the following command:
+```python
+print(&apos;Hello Python&apos;)
+```
+Here&apos;s what our program might look like in PyCharm:
+
+![](/assets/chapter-1-images/01.Hello-python-03.PNG)
+
+The `print(&apos;Hello Python&apos;)` command allows us to print the text message `Hello Python` on the console. The message needs to be surround with quotes, signifying text.
+
+This command is quite typical for programming: we call the function `print(...)` and pass the text literal `&apos;Hello Python&apos;` as its parameter.
+
+### Starting the Program
+To start the program we need to press **[Ctrl + Shift + F10]** or right click &#x2013; **[Run]**. If there are no errors, the program will execute. The result will be displayed on the console:
+
+![](/assets/chapter-1-images/01.Hello-python-04.PNG)
+
+Actually, the output from the program is the following text message:
+```python
+Hello Python
+```
+The **&apos;Process finished with exit code 0&apos;** message is displayed at the end of the PyCharm console after the program has executed, to signify that the program has finished with no errors.
+
+### Testing our program in the Judge system
+Testing the solutions to the problems in this book is completely automated via the **Judge System**&apos;s website: [https://judge.softuni.org](https://judge.softuni.org). The solutions are judged immediately by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
+
+The program we just wrote can be tested here: [https://judge.softuni.org/Contests/Practice/Index/1046#0](https://judge.softuni.org/Contests/Practice/Index/1046#0). In order to do that, simply paste the entire source code in the black field and choose **Python code** as is shown below:
+
+![](/assets/chapter-1-images/01.Hello-python-05.PNG)
+
+Then we need to send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the &apos;Refresh&apos; button at the upper right-hand corner of the table of submitted solutions:
+
+![](/assets/chapter-1-images/01.Hello-python-06.PNG)
+
+In the table, the Judge System will display one of the following **possible results**:
+- Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
+  -    If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
+  -    If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
+-    If there are syntactic errors in our program, we receive a **compile time error message**.
+
+### How do I register at SoftUni Judge?
+Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). If you haven&apos;t yet registered, go right ahead &#x2013; it will take no more than a minute since it&apos;s just a standard website registration.
+
+### Test your tone-playing programs
+Now that you&apos;ve learned how to **execute programs**, you can test the sample note-playing programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `print(&apos;Hello Python&apos;)` command with `windsound.Beep(432, 500)` and add `import windsound` at the top, then start your program. Check whether your computer sound is on and turned up. If you&apos;re using an online development environment, you won&apos;t hear anything, because the program isn&apos;t executed on your computer, but somewhere else. The `windsound` Module may not work with some operating systems like Linux and MacOS.
+
+## Typical mistakes in Python programs
+One of the usual mistakes beginners make is mixing up **capital and lowercase letters**. However, they matter when we call commands and can impede proper functioning. Here&apos;s an example of such a mistake:
+```python
+Print(&apos;Hello Python&apos;)
+```
+
+In the example above, `print` is written incorrectly and the capital letter needs to be changed to lowercase.
+
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td><td>In Python we don&apos;t use a <b>semicolon (;)</b> &#x432; &#x43A;&#x440;&#x430;&#x44F; &#x43D;&#x430; at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
+
+<p>A missing <strong>quotation mark</strong> or <strong>closing bracket</strong> can also cause issues &#x2013; the program will either <strong>function improperly</strong> or <strong>not execute at all</strong>. Such mistakes are hard to notice, especially with larger amounts of code. Here&apos;s an example:</p>
+<pre><code class="lang-python">print(&apos;Hello Python)
+</code></pre>
+<p>This program will return an <strong>error</strong> and the code will be underlined to draw the programmer&apos;s attention to the missed closing bracket.</p>
+<p> <img src="assets/chapter-1-images/01.Hello-python-07.PNG" alt=""></p>
+<h2 id="what-did-we-learn-in-this-chapter"><a name="what-did-we-learn-in-this-chapter" class="plugin-anchor" href="#what-did-we-learn-in-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What did we learn in this chapter?</h2>
+<p>First of all, we learned <strong>what programming is</strong> &#x2013; <strong>issuing commands written in a programming language</strong> which the machine can understand and carry out. We also found out what a <strong>computer program</strong> is &#x2013; a <strong>series of commands</strong> that aim to achieve a certain result. We gained some basic knowledge of the <strong>Python programming language</strong> and learned <strong>how to create simple console programs</strong> using PyCharm. Then we examined <strong>Python&apos;s program code structure</strong>. We looked at printing with the function <strong><code>print(...)</code></strong> and starting the program with <strong>[Ctrl + Shift + F10]</strong>. And last but not least, we now know how to test our code in <strong>SoftUni&apos;s Judge System</strong>.</p>
+<p>Top work! Let&apos;s now tackle the <strong>exercises</strong>. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let&apos;s do just that and put what we&apos;ve learned into practice.</p>
+<h2 id="first-steps-in-programming-&#x2013;-exercises"><a name="first-steps-in-programming-&#x2013;-exercises" class="plugin-anchor" href="#first-steps-in-programming-&#x2013;-exercises"><i class="fa fa-link" aria-hidden="true"></i></a>First Steps in Programming &#x2013; Exercises</h2>
+<p>Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex &#x2013; programs with graphical and web user interface.</p>
+<h3 id="problem-console-based-program-expression"><a name="problem-console-based-program-expression" class="plugin-anchor" href="#problem-console-based-program-expression"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: console-based program &apos;Expression&apos;</h3>
+<p>Write a console-based <strong>Python</strong> program that <strong>calculates</strong> and <strong>prints</strong> the value of the following numerical expression:</p>
+<p></p><p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
+Note: you are <strong>not allowed to previously calculate the value</strong> (for example with Windows Calculator).<p></p>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
+<p>Create a new Python file and name it <strong>Expression</strong>. Then we need to <strong>write the code</strong> which will calculate the numeric expression above and print its value on the console. Pass the expression to the <strong><code>print(...)</code></strong> command by writing it within its brackets:</p>
+<p><img src="assets/chapter-1-images/02.Expression-01.PNG" alt=""></p>
+<p>Start the program with <strong>[Ctrl + Shift + F10]</strong> and check whether the result matches the one from the picture:</p>
+<p><img src="assets/chapter-1-images/02.Expression-02.PNG" alt=""></p>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1046#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1046#1</a>.
+<img src="assets/chapter-1-images/02.Expression-03.PNG" alt=""></p>
+<h3 id="problem--numbers-from-1-to-20"><a name="problem--numbers-from-1-to-20" class="plugin-anchor" href="#problem--numbers-from-1-to-20"><i class="fa fa-link" aria-hidden="true"></i></a>Problem : Numbers from 1 to 20</h3>
+<p>Write a <strong>Python console program</strong> that <strong>prints the numbers from 1 to 20</strong> on separate lines on the console.</p>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
+<p>Create a Python file and name it <strong><code>nums_1_to_20.py</code></strong>:</p>
+<p><img src="assets/chapter-1-images/03.Numbers-1-to-20-01.PNG" alt=""></p>
+<p>Inside the file write 20 <strong><code>print()</code></strong> commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don&apos;t worry, there is, but we will mention it later on.</p>
+<p><img src="assets/chapter-1-images/03.Numbers-1-to-20-02.PNG" alt=""></p>
+<p>Let&apos;s now <strong>start the program</strong> and check whether the result is what we&apos;re expecting:</p>
+<pre><code>1
+2
+&#x2026;
+20
+</code></pre><h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<p>Test your solution here:
+<a href="https://judge.softuni.org/Contests/Practice/Index/1046#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1046#2</a>.
+Now try and <strong>think of a cleverer way</strong> we can write this program, to avoid repeating the same command so many times. Look up information for &quot;<a href="https://www.google.bg/search?q=for+loop+python" target="_blank">for loop Python</a>&quot; on the Internet.</p>
+<h3 id="problem-triangle-of-55-stars"><a name="problem-triangle-of-55-stars" class="plugin-anchor" href="#problem-triangle-of-55-stars"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Triangle of 55 stars</h3>
+<p>Write a <strong>Python console program</strong> that prints a <strong>triangle of 55 stars</strong> on 10 lines:</p>
+<pre><code>*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+</code></pre><h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
+<p>Create a <strong>new Python file</strong> and name it <strong><code>triangle_of_55_stars.py</code></strong>. Inside we need to write code that prints our triangle, using 10 print() commands, like this:</p>
+<pre><code class="lang-python">print(<span class="hljs-string">&apos;*&apos;</span>)
+print(<span class="hljs-string">&apos;**&apos;</span>)
+&#x2026;
+</code></pre>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<p>Test your solution here:
+<a href="https://judge.softuni.org/Contests/Practice/Index/1046#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1046#3</a>.</p>
+<p>Try and <strong>improve your solution</strong> to avoid repeating the same command so many times. Can this be achieved with a <strong><code>for</code></strong>-loop? Did you manage to invent a better solution (with a for-loop, for example) to the previous problem? The current problem can be solved with a similar, but a little more complex approach (a loop within another loop). It&apos;s completely fine if you can&apos;t figure it out, you&apos;ll remember this problem when we learn about loops in a few chapters.</p>
+<h3 id="problem-rectangle-area"><a name="problem-rectangle-area" class="plugin-anchor" href="#problem-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle Area</h3>
+<p>Write a <strong>Python program</strong> which <strong>receives two numbers a and b, then calculates and prints</strong> the area of a rectangle with sides <strong>a</strong> and <strong>b</strong>.</p>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">a</th>
+<th style="text-align:center">b</th>
+<th style="text-align:center">area</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">14</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">56</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">60</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
+<p>Create a <strong>new Python file</strong>. We&apos;ll use the following commands to read our numbers:</p>
+<p><img src="assets/chapter-1-images/05.Rectangle-area-01.PNG" alt=""></p>
+<p>What&apos;s left is to finish the program so it can calculate the rectangle&apos;s area and print it. Pass the product of  <strong><code>a</code></strong> and <strong><code>b</code></strong> to the already familiar <strong><code>print(...)</code></strong> command. In programming we multiply using the <strong><code>*</code></strong> operator.</p>
+<h3 id="test-your-solution"><a name="test-your-solution" class="plugin-anchor" href="#test-your-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Test your solution</h3>
+<p>Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input and the program prints 14 &#x2013; their product, as output):</p>
+<pre><code>2
+7
+14
+</code></pre><h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<p>Test your solution here:
+<a href="https://judge.softuni.org/Contests/Practice/Index/1046#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1046#4</a>.</p>
+<h3 id="problem-square-of-stars"><a name="problem-square-of-stars" class="plugin-anchor" href="#problem-square-of-stars"><i class="fa fa-link" aria-hidden="true"></i></a>* Problem: Square of Stars</h3>
+<p>Write a <strong>Python console program which reads an integer positive number N</strong> from the console and <strong>prints a square of N stars</strong> on the console, like in the examples below.</p>
+<h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample input and output</h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td><code>***</code><br><code>*&#xA0;*</code><br><code>***</code></td>
+<td>4</td>
+<td><code>****</code><br><code>*&#xA0;&#xA0;*</code><br><code>*&#xA0;&#xA0;*</code><br><code>****</code></td>
+<td>5</td>
+<td><code>*****</code><br><code>*&#xA0;&#xA0;&#xA0;*</code><br><code>*&#xA0;&#xA0;&#xA0;*</code><br><code>*&#xA0;&#xA0;&#xA0;*</code><br><code>*****</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
+<p>Create a <strong>new Python file</strong>. In order to read the number N (2 &#x2264; N &#x2264;100), we use the following code:</p>
+<p><img src="assets/chapter-1-images/06.Square-of-stars-01.PNG" alt=""></p>
+<p>Finish the program so that it prints a square made up of stars. You may need to use <strong><code>for</code></strong>-loops.</p>
+<p><strong>Caution</strong>: this task is more difficult than the rest and is presented to you at this point purposefully. It&apos;s marked with a star, in order to provoke you <strong>to look for information on the Internet</strong>. This is one of the most important skills you have to develop while you&apos;re learning programming. This is what you&apos;ll be doing every day if you work as a developer, so don&apos;t be scared, try it out. If you&apos;re having difficulties, you can also ask for help in the SoftUni forum: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<p>Test your solution here:<a href="https://judge.softuni.org/Contests/Practice/Index/1046#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1046#5</a>.</p>
+<h2 id="console-graphical-and-web-applications"><a name="console-graphical-and-web-applications" class="plugin-anchor" href="#console-graphical-and-web-applications"><i class="fa fa-link" aria-hidden="true"></i></a>Console, Graphical and Web Applications</h2>
+<p>With <strong>console applications</strong>, as you&apos;ve already noticed, <strong>all operations</strong> for reading input and printing output are done on the console. The input data is <strong>entered on the console</strong> and then it is read by the application; the console is also used to <strong>print the output data</strong> after or during the runtime of the program.</p>
+<p>While a console application <strong>uses the text console</strong>, web applications use a <strong>web-based user interface</strong>. <strong>To execute them</strong>, two things are needed &#x2013; a <strong>web server</strong> and a <strong>web browser</strong>. The <strong>browser</strong> plays the main role in the <strong>visualization of data and interaction with the user</strong>. Web applications are much more pleasant for the user, they look better, and a mouse and touch screen can be used (for tablets and smartphones). Programming stands under all of that, of course. This is why <strong>we need to learn how to program</strong> and we have already made our first tiny steps towards achieving that.</p>
+<p>Graphical (GUI) applications have a <strong>visual user interface</strong>, directly on your computer or mobile device, without a web browser. Graphical applications (also known as desktop applications) contain one or more graphical windows where certain controllers are located (text fields, buttons, pictures, tables and others), which <strong>allow dialog</strong> with the user to be more intuitive. Similar to them are mobile applications on your smartphone or tablet: we use forms, text fields, buttons and other controls and we manage them with program code. This is why we learn to write code now: <strong>code is everywhere in software development</strong>.</p>
+<h2 id="exercises-graphical-and-web-applications"><a name="exercises-graphical-and-web-applications" class="plugin-anchor" href="#exercises-graphical-and-web-applications"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises: Graphical and Web Applications</h2>
+<p>We will now build a <strong>basic web application</strong> and after that a simple <strong>graphical application</strong>, in order to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we&apos;ve created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.</p>
+<h2 id="graphical-application-numbers-summator"><a name="graphical-application-numbers-summator" class="plugin-anchor" href="#graphical-application-numbers-summator"><i class="fa fa-link" aria-hidden="true"></i></a>Graphical application: &apos;Numbers Summator&apos;</h2>
+<p>Write a <strong>graphical (GUI) application</strong> which <strong>calculates the sum of two numbers</strong>. After the numbers are entered in the first text fields, and the button <strong>[Calculate]</strong> is clicked, calculate their sum and display the result in the third text field colored in green:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-01.PNG" alt=""></p>
+<p>We&apos;ll use the standard Python graphical library <strong>TKInter</strong> for our application (<a href="https://wiki.python.org/moin/TkInter" target="_blank">https://wiki.python.org/moin/TkInter</a>. It enables us to create <strong>graphical (GUI) applications</strong> using the <strong>Python</strong> programming language.</p>
+<h2 id="empty-python-project"><a name="empty-python-project" class="plugin-anchor" href="#empty-python-project"><i class="fa fa-link" aria-hidden="true"></i></a>Empty Python Project</h2>
+<p>Create a <strong>new Python project</strong> named <strong>&quot;Summator-GUI&quot;</strong> in PyCharm:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-02.PNG" alt=""></p>
+<p>Add a new Python file named <strong>summator.py</strong> to the project. Then add <strong>tkinter</strong> as well:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-03.PNG" alt=""></p>
+<h4 id="creating-the-basis-for-the-gui-project"><a name="creating-the-basis-for-the-gui-project" class="plugin-anchor" href="#creating-the-basis-for-the-gui-project"><i class="fa fa-link" aria-hidden="true"></i></a>Creating the basis for the GUI project</h4>
+<p>Next we need to write the code for our graphical application, starting with the basis:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-04.PNG" alt=""></p>
+<p>We&apos;ll need the following components (controls):</p>
+<ul>
+<li><strong>Entry</strong> &#x2013; will enter the numbers that need to be calculated.</li>
+<li><strong>Label</strong> &#x2013; will serve to statically display text and the result of the calculation.</li>
+<li><strong>Button</strong> &#x2013; will calculate the sum of our numbers.</li>
+</ul>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-05.PNG" alt=""></p>
+<p>Let&apos;s <strong>initialize and visualize</strong> our controls (widgets):</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-06.PNG" alt=""></p>
+<p>And try to start our application with <strong>[Ctrl + Shift + F10]</strong> or right-click + <strong>[Run]</strong>. It should start but <strong>not function correctly</strong>, because we haven&apos;t specified what happens when the button is clicked:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-07.PNG" alt=""></p>
+<h4 id="application-logic"><a name="application-logic" class="plugin-anchor" href="#application-logic"><i class="fa fa-link" aria-hidden="true"></i></a>Application Logic</h4>
+<p>Now we&apos;ll write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the <strong><code>calculate</code></strong> command upon the button&apos;s initialization:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-08.PNG" alt=""></p>
+<p>Then we&apos;ll write the <strong><code>calculate</code></strong> function&apos;s code:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-09.PNG" alt=""></p>
+<p>This code <strong>takes the first number</strong> from the <strong><code>firstNumberEntry</code></strong> field and stores it in the <strong><code>first_value</code></strong> <strong>variable</strong>. Then it stores the <strong>second number</strong> from the <strong><code>secondNumberEntry</code></strong> field in the <strong><code>second_value</code></strong> variable. It <strong>sums</strong> <strong><code>first_value</code></strong> and <strong><code>second_value</code></strong> and stores the result in the <strong><code>result</code></strong> variable. Finally, it <strong>displays the text representation</strong> of the <strong><code>result</code></strong> variable in the <strong><code>resultLabel</code></strong> field.</p>
+<p>Let&apos;s start the program again using <strong>[Ctrl + Shift + F10]</strong> or right click + <strong>[Run]</strong> and check whether it&apos;s working correctly. Try and calculate <strong>4</strong> + <strong>5</strong>, then <strong>-2.5</strong> + <strong>1.5</strong>:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-10.PNG" alt=""> <img src="assets/chapter-1-images/07.Numbers-sum-11.PNG" alt=""></p>
+<h4 id="managing-invalid-numbers"><a name="managing-invalid-numbers" class="plugin-anchor" href="#managing-invalid-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Managing invalid numbers</h4>
+<p>Entering <strong>invalid numbers</strong> like <strong>&apos;a&apos;</strong> and <strong>&apos;b&apos;</strong> seems to create issues:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-12.PNG" alt=""></p>
+<p>This is due to the <strong>conversion of the information entered in our text field into a number</strong>. If the <strong>value in the field isn&apos;t a number, our program returns an error</strong>. We can fix the code to resolve this issue:</p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-13.PNG" alt=""></p>
+<p>The code you see above <strong>intercepts number-handling errors</strong> (catches exceptions) and in case of an error, <strong>returns a <code>Not number/s</code></strong> value in the result field. If we start our program once more and enter an improper value, the <strong>result is <code>Not number/s</code></strong> and our program continues working as intended: </p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-14.PNG" alt=""> <img src="assets/chapter-1-images/07.Numbers-sum-15.PNG" alt=""></p>
+<p>Does that seem complicated? If it does, that&apos;s completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. A time will come when this will to be easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and <strong>lots of practice</strong>.</p>
+<h3 id="web-application-numbers-summator"><a name="web-application-numbers-summator" class="plugin-anchor" href="#web-application-numbers-summator"><i class="fa fa-link" aria-hidden="true"></i></a>Web Application: &apos;Numbers Summator&apos;</h3>
+<p>Now we are going to create something even more complex, but also more interesting: a Web application that <strong>calculates the sum of two numbers</strong>. By entering two numbers in the first two text fields and clicking the <strong>[Calculate]</strong> button, <strong>their sum is calculated</strong> and the result is displayed in the third text field.</p>
+<p>Keep in mind that we are creating a <strong>Web-based application</strong>. This is an application that is accessible through a web browser, just like your favorite email or news website. The web application is going to have a server side (back-end), which is written in the Python language with <strong>Flask</strong> (<a href="https://flask.palletsprojects.com" target="_blank">https://flask.palletsprojects.com</a>) technology, and a client side (front-end), which is written in the <strong>HTML</strong> language (this is a language for visualization of information in a web browser). The Web application is expected to resemble the following:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-01.PNG" alt=""></p>
+<p>As opposed to console applications which read and write data in the form of text on the console, Web applications have a <strong>Web-based user interface</strong>. Web applications are <strong>loaded from some Internet address</strong> (URL) through a standard web browser. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. For our web application we are going to use <strong>Flask</strong>, a light Python library, which allows creating <strong>web applications with the programming language Python</strong>.</p>
+<p>Next are the steps for implementation of the &quot;Numbers Summator&quot; web application.</p>
+<h4 id="empty-python-solution"><a name="empty-python-solution" class="plugin-anchor" href="#empty-python-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Empty Python solution</h4>
+<p>We&apos;ll create an <strong>empty Python project</strong> in PyCharm to organize our application&apos;s code:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-02.PNG" alt=""></p>
+<p>Then we need to give the project a meaningful name like <strong>&quot;Summator-Web&quot;</strong>. We&apos;ll also set the Python interpreter to this one by default:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-03.PNG" alt=""></p>
+<h4 id="installing-flask"><a name="installing-flask" class="plugin-anchor" href="#installing-flask"><i class="fa fa-link" aria-hidden="true"></i></a>Installing Flask</h4>
+<p>Before we start writing code, we need to install Flask. Let&apos;s go to PyCharm&apos;s settings [<strong>File</strong>] -&gt; [<strong>Settings</strong>] then go to [<strong>Project: Sumator-Web</strong>] -&gt; [<strong>Project Interpreter</strong>]. There we need to click the <strong><code>+</code></strong> button:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-04.PNG" alt=""></p>
+<p>When you find Flask in the window that appears, click <strong>[Install package]</strong>:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-05.PNG" alt=""></p>
+<p>If all goes well, you&apos;ll receive the following message on the same screen:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-06.PNG" alt=""></p>
+<h4 id="creating-the-project-structure"><a name="creating-the-project-structure" class="plugin-anchor" href="#creating-the-project-structure"><i class="fa fa-link" aria-hidden="true"></i></a>Creating the Project Structure</h4>
+<p>Let&apos;s create the structure of our project. To do that, we&apos;ll create a Python file named <strong><code>app.py</code></strong> where we&apos;ll keep our program code. Then we need a folder which we&apos;ll call <strong>templates</strong> and an HTML file named <strong><code>index.html</code></strong> which will help visualize our content in the browser.</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-07.PNG" alt=""></p>
+<h4 id="writing-the-applications-logic"><a name="writing-the-applications-logic" class="plugin-anchor" href="#writing-the-applications-logic"><i class="fa fa-link" aria-hidden="true"></i></a>Writing the application&apos;s logic</h4>
+<p>Time to create our application&apos;s controls. The aim is to add fields where our numbers will be entered, a button for summing them and a place to display the result. We can achieve this by writing the following code in <code>templates/index.html</code>:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-08.PNG" alt=""></p>
+<p>This code creates a web form <code>&lt;form&gt;</code> with a field and a button <strong>[Calculate]</strong> which will send the data from the form to our server. Our <strong>Python</strong> <code>app.py</code> file will be responsible for data manipulation. Notice the curly braces &#x2013; they are used to switch between the <strong>HTML</strong> and <strong>Python languages</strong> and come from the <strong>Jinja2</strong> syntax used for creating dynamic web pages.</p>
+<p>After we&apos;ve written the following code in <code>app.py</code>, we can test if our program is working by running it:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-09.PNG" alt=""></p>
+<p>Next we need to write the code which will handle our <strong>request</strong>:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-10.PNG" alt=""></p>
+<p>If we click the calculation button now, our program will be able to sum the two digits from the form. Let&apos;s run the program again and test whether it&apos;s working correctly. Upon entering the numbers <strong>9</strong> and <strong>11</strong>, we&apos;ll receive a correct result:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-11.PNG" alt=""> </p>
+<h4 id="managing-invalid-numbers"><a name="managing-invalid-numbers" class="plugin-anchor" href="#managing-invalid-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Managing invalid numbers</h4>
+<p>If we try entering <strong>invalid data</strong>, we&apos;ll receive an error:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-12.PNG" alt=""></p>
+<p>In order to handle the error, we need to write the following code:</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-13.PNG" alt=""></p>
+<p>This is not the best solution for error handling, but it will work.</p>
+<p>If we run the program one more time and test it by entering <strong>invalid data</strong>, we&apos;ll receive the <code>Not number/s.</code> message.</p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-14.PNG" alt=""></p>
+<p>Does all this seem scary? <strong>There&apos;s no need to be afraid</strong>. We have a lot more to learn, to reach the level of knowledge and skills required to write web-based applications with ease like in the example above, as well as much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. </p>
+<p>The purpose of both examples (graphical desktop application and web application) is not to teach you, but to allow you to dive a little deeper into programming, to <strong>fuel your interest</strong> towards software development and to inspire you to study hard. <strong>You have a lot more to learn</strong>, but it is interesting, isn&apos;t it?</p>
+</tr></table>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter-00-preface.html" class="navigation navigation-prev " aria-label="Previous page: Предговор">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter-02-simple-calculations.html" class="navigation navigation-next " aria-label="Next page: 2.1. Прости пресмятания">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1. Първи стъпки в програмирането","level":"1.3","depth":1,"next":{"title":"2.1. Прости пресмятания","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"previous":{"title":"Предговор","level":"1.2","depth":1,"path":"chapter-00-preface.md","ref":"chapter-00-preface.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-01-first-steps-in-programming.md","mtime":"2021-10-03T15:43:44.918Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-03T15:44:24.983Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/3b1797e9f1b8247b635ffd62217cb3d8-repl.it-code-runner.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
