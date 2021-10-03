@@ -30,7 +30,7 @@ The free book "**Programming Basics with Python**" introduces the readers to wri
 
 ## Download the Book
 
-Download the book "**Programming Basics with JavaScript**" in **PDF** format:
+Download the book "**Programming Basics with Python**" in **PDF** format:
 * <a href="#">TODO</a>
 
 ## Book Editions
@@ -48,7 +48,7 @@ This book is available in several versions in different programming languages:
 ## Book Details
 
 Brief information about this edition:
-* Title: **Programming Basics with JavaScript**
+* Title: **Programming Basics with Python**
 * Authors: **Svetlin Nakov & Team**
 * ISBN: **TODO**
 * Edition: **TODO**
