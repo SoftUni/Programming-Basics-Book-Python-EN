@@ -1,4 +1,4 @@
-# Book "Programming Basics" (with Python)
+# Free Book "Programming Basics with Python"
 
 > This is work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
 
@@ -31,13 +31,15 @@
 Изтеглете книгата "Основи на програмирането с Python" в PDF формат:
 * <a href="#">TODO</a>
 
-Настоящата книга е достъпна в няколко варианта с различни езици за програмиране:
-* [Основи на програмирането със C#](https://csharp-book.softuni.bg)
+This book is available in several versions in different programming languages:
+* [Programming Basics with Java (English)](https://java-book.softuni.org)
+* [Programming Basics with JavaScript (English)](https://js-book.softuni.org)
 * [Programming Basics with C# (English)](https://csharp-book.softuni.org)
-* [Основи на програмирането с Java](https://java-book.softuni.bg)
-* [Основи на програмирането с JavaScript](https://js-book.softuni.bg)
-* [Основи на програмирането с Python](https://python-book.softuni.bg)
-* [Основи на програмирането със C++](https://cpp-book.softuni.bg)
+* [Programming Basics with Java (Bulgarian)](https://java-book.softuni.bg)
+* [Programming Basics with JavaScript (Bulgarian)](https://js-book.softuni.bg)
+* [Programming Basics with Python (Bulgarian)](https://python-book.softuni.bg)
+* [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
+* [Programming Basics with C++ (Bulgarian)](https://cpp-book.softuni.bg)
 
 Кратка информация за изданието:
 * Заглавие: **Основи на програмирането с Python**
