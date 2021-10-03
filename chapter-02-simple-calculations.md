@@ -89,7 +89,7 @@ print('Square area = ', area)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#0](https://judge.softuni.bg/Contests/Practice/Index/1047#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0).
 
 ## Четене на поредица числа
 
@@ -150,7 +150,7 @@ print('Centimeters = ', centimeters)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#1](https://judge.softuni.bg/Contests/Practice/Index/1047#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
 
 ## Четене на вход под формата на текст
@@ -179,7 +179,7 @@ print(name, end='!')
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#2](https://judge.softuni.bg/Contests/Practice/Index/1047#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
 
 ## Съединяване на текст и числа
@@ -206,7 +206,7 @@ print('You are {0} {1}, a {2}-years old person from {3}.'
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#3](https://judge.softuni.bg/Contests/Practice/Index/1047#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
 ### Още за отпечатването на форматиран текст
 
@@ -480,7 +480,7 @@ print('Trapezoid area = ' + str(area))
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#4](https://judge.softuni.bg/Contests/Practice/Index/1047#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
 
 ## Закръгляне на числа
@@ -542,7 +542,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#5](https://judge.softuni.bg/Contests/Practice/Index/1047#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
 
 ### Пример: лице на правоъгълник в равнината
@@ -577,7 +577,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#6](https://judge.softuni.bg/Contests/Practice/Index/1047#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
 
 ## Какво научихме от тази глава?
@@ -627,7 +627,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#0](https://judge.softuni.bg/Contests/Practice/Index/1047#0). Трябва да получите 100 точки (напълно коректно решение):
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0). Трябва да получите 100 точки (напълно коректно решение):
 
 ![](/assets/chapter-2-1-images/01.Square-area-05.PNG)
 
@@ -672,7 +672,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#1](https://judge.softuni.bg/Contests/Practice/Index/1047#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
 Решението би трябвало да бъде прието като напълно коректно:
 
@@ -699,7 +699,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук:  [https://judge.softuni.bg/Contests/Practice/Index/1047#2](https://judge.softuni.bg/Contests/Practice/Index/1047#2).
+Тествайте решението си тук:  [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
 
 ### Задача:	съединяване на текст и числа
@@ -720,7 +720,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#3](https://judge.softuni.bg/Contests/Practice/Index/1047#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
 
 ### Задача:	лице на трапец
@@ -748,7 +748,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#4](https://judge.softuni.bg/Contests/Practice/Index/1047#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
 
 ### Задача:	периметър и лице на кръг
@@ -770,7 +770,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#5](https://judge.softuni.bg/Contests/Practice/Index/1047#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
 
 ### Задача: лице и периметър на правоъгълник в равнината
@@ -789,7 +789,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#6](https://judge.softuni.bg/Contests/Practice/Index/1047#6).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
 
 ### Задача:	лице на триъгълник
@@ -807,12 +807,12 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#7](https://judge.softuni.bg/Contests/Practice/Index/1047#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#7](https://judge.softuni.org/Contests/Practice/Index/1047#7).
 
 
 ### Задача:	конзолен конвертор - от градуси °C към градуси °F
 
-Напишете програма, която чете **градуси по скалата на Целзий** (°C) и ги преобразува до **градуси по скалата на Фаренхайт** (°F). Потърсете в Интернет подходяща [формула](http://bfy.tw/3rGh "Търсене в Google"), с която да извършите изчисленията. Закръглете резултата до **2 символа след десетичния знак**.
+Напишете програма, която чете **градуси по скалата на Целзий** (°C) и ги преобразува до **градуси по скалата на Фаренхайт** (°F). Потърсете в Интернет подходяща [формула](https://bfy.tw/3rGh "Търсене в Google"), с която да извършите изчисленията. Закръглете резултата до **2 символа след десетичния знак**.
 
 #### Примерен вход и изход
 
@@ -825,7 +825,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#8](https://judge.softuni.bg/Contests/Practice/Index/1047#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#8](https://judge.softuni.org/Contests/Practice/Index/1047#8).
 
 
 ### Задача:	конзолен конвертор - от радиани в градуси
@@ -843,7 +843,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#9](https://judge.softuni.bg/Contests/Practice/Index/1047#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#9](https://judge.softuni.org/Contests/Practice/Index/1047#9).
 
 
 ### Задача: конзолен конвертор - USD към BGN
@@ -860,7 +860,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#10](https://judge.softuni.bg/Contests/Practice/Index/1047#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#10](https://judge.softuni.org/Contests/Practice/Index/1047#10).
 
 
 ### Задача:	\* конзолен междувалутен конвертор
@@ -884,7 +884,7 @@ print('Perimeter = ', perimeter)
  
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#11](https://judge.softuni.bg/Contests/Practice/Index/1047#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#11](https://judge.softuni.org/Contests/Practice/Index/1047#11).
 
 
 ### Задача:	** пресмятане с дати - 1000 дни на Земята
@@ -907,7 +907,7 @@ print('Perimeter = ', perimeter)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1047#12](https://judge.softuni.bg/Contests/Practice/Index/1047#12).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#12](https://judge.softuni.org/Contests/Practice/Index/1047#12).
 
 
 ## Графични приложения с числови изрази

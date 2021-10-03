@@ -104,7 +104,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1060#0](https://judge.softuni.bg/Contests/Practice/Index/1060#0).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1060#0](https://judge.softuni.org/Contests/Practice/Index/1060#0).
 
 
 ## Задача: смяна на плочки
@@ -168,7 +168,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1060#1](https://judge.softuni.bg/Contests/Practice/Index/1060#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1060#1](https://judge.softuni.org/Contests/Practice/Index/1060#1).
 
 ## Задача: магазин за цветя
 
@@ -236,7 +236,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1060#2](https://judge.softuni.bg/Contests/Practice/Index/1060#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1060#2](https://judge.softuni.org/Contests/Practice/Index/1060#2).
 
 
 ## Задача: оценки
@@ -290,7 +290,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1060#3](https://judge.softuni.bg/Contests/Practice/Index/1060#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1060#3](https://judge.softuni.org/Contests/Practice/Index/1060#3).
 
 
 ## Задача: коледна шапка
@@ -345,7 +345,7 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1060#4](https://judge.softuni.bg/Contests/Practice/Index/1060#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1060#4](https://judge.softuni.org/Contests/Practice/Index/1060#4).
 
 
 ## Задача: комбинации от букви
@@ -379,7 +379,7 @@
 
 ### Насоки и подсказки
 
-За последната задача имаме по условие входни данни на **3 реда**, които са представени от по един символ от **ASCII таблицата** ([http://www.asciitable.com/](http://www.asciitable.com/)). Бихме могли да използваме вече дефинираната функция в езика Python, **`ord(…)`**, чрез която ще получим ASCII кода на подадения символ:
+За последната задача имаме по условие входни данни на **3 реда**, които са представени от по един символ от **ASCII таблицата** ([https://www.asciitable.com/](https://www.asciitable.com/)). Бихме могли да използваме вече дефинираната функция в езика Python, **`ord(…)`**, чрез която ще получим ASCII кода на подадения символ:
 
 ![](/assets/chapter-8-2-images/06.Letters-01.png)
 
@@ -399,4 +399,4 @@
 
 ### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1060#5](https://judge.softuni.bg/Contests/Practice/Index/1060#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1060#5](https://judge.softuni.org/Contests/Practice/Index/1060#5).

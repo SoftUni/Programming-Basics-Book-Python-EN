@@ -113,7 +113,7 @@
 
 #### Тестване в Judge системата
 
-Програмата с общо четири функции, които се извикват една от друга, е готова и можем **да я изпълним и тестваме**, след което да я пратим за проверка в Judge системата: [https://judge.softuni.bg/Contests/Practice/Index/1063#0](https://judge.softuni.bg/Contests/Practice/Index/1063#0).
+Програмата с общо четири функции, които се извикват една от друга, е готова и можем **да я изпълним и тестваме**, след което да я пратим за проверка в Judge системата: [https://judge.softuni.org/Contests/Practice/Index/1063#0](https://judge.softuni.org/Contests/Practice/Index/1063#0).
 
 ## Функции с параметри (по-сложни функции)
 
@@ -165,7 +165,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#1](https://judge.softuni.bg/Contests/Practice/Index/1063#1).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#1](https://judge.softuni.org/Contests/Practice/Index/1063#1).
 
 
 ### Незадължителни параметри и подразбираща се стойност
@@ -214,7 +214,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#2](https://judge.softuni.bg/Contests/Practice/Index/1063#2).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#2](https://judge.softuni.org/Contests/Practice/Index/1063#2).
 
 
 ### Пример: рисуване на запълнен квадрат
@@ -243,7 +243,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#3](https://judge.softuni.bg/Contests/Practice/Index/1063#3).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#3](https://judge.softuni.org/Contests/Practice/Index/1063#3).
 
 
 ## Връщане на резултат от функции
@@ -310,7 +310,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#4](https://judge.softuni.bg/Contests/Practice/Index/1063#4).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#4](https://judge.softuni.org/Contests/Practice/Index/1063#4).
 
 
 ### Пример: степен на число
@@ -333,7 +333,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#5](https://judge.softuni.bg/Contests/Practice/Index/1063#5).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#5](https://judge.softuni.org/Contests/Practice/Index/1063#5).
 
 
 ### Функции, връщащи няколко стойности
@@ -488,7 +488,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#7](https://judge.softuni.bg/Contests/Practice/Index/1063#7).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#7](https://judge.softuni.org/Contests/Practice/Index/1063#7).
 
 
 ### Задача: по-малко число
@@ -511,7 +511,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#8](https://judge.softuni.bg/Contests/Practice/Index/1063#8).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#8](https://judge.softuni.org/Contests/Practice/Index/1063#8).
 
 
 ### Задача: повтаряне на низ
@@ -532,7 +532,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#9](https://judge.softuni.bg/Contests/Practice/Index/1063#9).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#9](https://judge.softuni.org/Contests/Practice/Index/1063#9).
 
 
 ### Задача: N-та цифра
@@ -551,7 +551,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#10](https://judge.softuni.bg/Contests/Practice/Index/1063#10).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#10](https://judge.softuni.org/Contests/Practice/Index/1063#10).
 
 
 ### Задача: число към бройна система
@@ -578,7 +578,7 @@
 
 #### Тестване в Judge системата 
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#11](https://judge.softuni.bg/Contests/Practice/Index/1063#11).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#11](https://judge.softuni.org/Contests/Practice/Index/1063#11).
 
 
 ### Задача: известия
@@ -608,7 +608,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#12](https://judge.softuni.bg/Contests/Practice/Index/1063#12).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#12](https://judge.softuni.org/Contests/Practice/Index/1063#12).
 
 
 ### Задача: числа към думи
@@ -642,7 +642,7 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#13](https://judge.softuni.bg/Contests/Practice/Index/1063#13).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#13](https://judge.softuni.org/Contests/Practice/Index/1063#13).
 
 
 ### Задача: криптиране на низ
@@ -687,4 +687,4 @@
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/1063#14](https://judge.softuni.bg/Contests/Practice/Index/1063#14).
+Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#14](https://judge.softuni.org/Contests/Practice/Index/1063#14).
