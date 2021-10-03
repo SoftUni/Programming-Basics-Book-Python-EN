@@ -63,8 +63,10 @@ Installing Python is quite simple. Just go to https://python.org/downloads and d
 ![](/assets/chapter-1-images/Python-download.png)
 
 On **Windows** the installation is a straightforward process of clicking **[Next]**, **[Next]** and **[Finish]**. On **Linux**, you need to use a package installer like `sudo apt-get install python3`.
+
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-Use **Python version 3.x or newer**. Python 2 is an outdated technology and although it's accessible by default on many systems, it's problematic and many of the examples in this book won't work on it.
+  <td>Use <b>Python version 3.x or newer</b>. Python 2 is an outdated technology and although it's accessible by default on many systems, it's problematic and many of the examples in this book won't work on it.</td>
+</tr></table>
 
 ## Starting the Python Interpreter
 After the Python interpreter has been installed, we can **get it started** and have a tinker at it. If your environment is Windows, use the **[Start]** menu and find the application you just installed – 'Python 3.7 (64-bit)', for instance. On a Linux / MacOS environment, write the command `python3` in the console. Here's what the Python interpreter should look like on Windows:
