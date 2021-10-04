@@ -201,17 +201,17 @@
 
 Проектът е част от усилията на **[Фондация "Софтуерен университет"](https://softuni.foundation)** да създава и разпространява отворено учебно съдържание за обучение на софтуерни инженери и ИТ специалисти.
 
-### Авторски колектив
+### Authors team
 
-Настоящата книга “Основи на програмирането с Python” е разработена от широк авторски колектив от **доброволци**, които отделиха от своето време, за да ви подарят тези систематизирани знания и насоки при старта в програмирането. Списък на всички автори и редактори (по азбучен ред):
+This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of all authors and editors (in alphabetical order.)
 
-> **Бончо Вълков, Венцислав Петров, Владимир Дамяновски, Илия Илиев, Йордан Даракчиев, Мартин Царев, Миглен Евлогиев, Милена Ангелова, Мирела Дамянова, Николай Костов, Петър Иванов, Петя Господинова, Светлин Наков, Таня Евтимова, Таня Станева, Теодор Куртев, Христо Минков**
+> **Boncho Vulkov, Hristo Minkov, Iliya Iliev, IYordan Darakchiev, Martin Tsarev, Miglen Evlogiev, Milena Angelova, Mirela Damyanova, Nikolay Kostov, Petar Ivanov, Petya Gospodinova, Svetlin Nakov, Tanya Evtimova, Tanya Staneva, Teodor Kurtev, Ventsislav Petrov, Vladimir Damyanovski**
 
-Книгата е базирана на нейния първоначален C# вариант ([Въведение в програмирането със C#](https://csharp-book.softuni.bg)), който е разработен от широк авторски колектив и който има принос и към настоящата книга:
+The book is based on its initial C# variant ([Introduction to Programming with C#](https://csharp-book.softuni.org)) which is developed by a large team of authors that has a significant contribution to the current book:
 
-> Aлександър Кръстев, Александър Лазаров, Ангел Димитриев, Васко Викторов, Венцислав Петров, Даниел Цветков, Димитър Татарски, Димо Димов, Диян Тончев, Елена Роглева, Живко Недялков, Жулиета Атанасова, Захария Пехливанова, Ивелин Кирилов, Искра Николова, Калин Примов, Кристиян Памидов, Любослав Любенов, Николай Банкин, Николай Димов, Павлин Петков, Петър Иванов, Росица Ненова, Руслан Филипов, Светлин Наков, Стефка Василева, Теодор Куртев, Тоньо Желев, Християн Христов, Христо Христов, Цветан Илиев, Юлиан Линев, Яница Вълева
+> Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
 
-Дизайн на корица: Марина Шидерова.
+Book cover design: Marina Shiderova.
 
 Книгата е написана в периода юни-октомври 2018.
 
