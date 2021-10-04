@@ -13,9 +13,8 @@
 ## Видео
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank"
-  href="https://www.youtube.com/watch?v=IPJigJNDuKQ">
-  https://www.youtube.com/watch?v=IPJigJNDuKQ</a>.
+  Гледайте видео-урок по тази глава тук: 
+  https://www.youtube.com/watch?v=IPJigJNDuKQ.
 </div>
 
 
@@ -74,7 +73,7 @@
 
 Да се напише програма, която отпечатва числата **от 1 до 2^n** (две на степен n). Например, **ако n = 10**, то резултатът ще е **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
-![](/assets/chapter-7-1-images/03.Numbers-1-tо-2^n-01.png)
+![](/assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.png)
 
 #### Тестване в Judge системата
 
