@@ -50,15 +50,11 @@ This book is available in several versions in different programming languages:
 Brief information about this edition:
 * Title: **Programming Basics with Python**
 * Authors: **Svetlin Nakov & Team**
-* ISBN: **TODO**
-* Edition: **TODO**
+* ISBN: **978-619-00-1403-4** (9786190014034)
+* Edition: **Faber Publishing, Sofia, Dec 2021** (expected)
 * License: **CC-BY-SA**
 * Source code: https://github.com/SoftUni/Programming-Basics-Book-Python-EN
 * Всички автори, редактори и **участници в проекта**: Бончо Вълков, Венцислав Петров, Владимир Дамяновски, Илия Илиев, Йордан Даракчиев, Мартин Царев, Миглен Евлогиев, Милена Ангелова, Мирела Дамянова, Николай Костов, Петър Иванов, Петя Господинова, Светлин Наков, Таня Евтимова, Таня Станева, Теодор Куртев, Христо Минков, Aлександър Кръстев, Александър Лазаров, Ангел Димитриев, Васко Викторов, Венцислав Петров, Даниел Цветков, Димитър Татарски, Димо Димов, Диян Тончев, Елена Роглева, Живко Недялков, Жулиета Атанасова, Захария Пехливанова, Ивелин Кирилов, Искра Николова, Калин Примов, Кристиян Памидов, Любослав Любенов, Николай Банкин, Николай Димов, Павлин Петков, Петър Иванов, Росица Ненова, Руслан Филипов, Светлин Наков, Стефка Василева, Теодор Куртев, Тоньо Желев, Християн Христов, Христо Христов, Цветан Илиев, Юлиан Линев, Яница Вълева, Марина Шидерова.
-
-## Paper Book
-
-You can **buy a paper copy of the book** from SoftUni: https://softuni.bg/contacts. Contact us via telephone or email for more information.
 
 ## Free Practical Programming Course
 
