@@ -10,24 +10,24 @@ In the present chapter, we will take a look at the **conditional constructs in t
 </div>
 
 
-## Сравняване на числа
+## Number comparison
 
-В програмирането можем да сравняваме стойности чрез следните **оператори**:
+In programming, we can compare values through the use of the following **operators**:
 
-* Оператор **`<`** (по-малко)
-* Оператор **`>`** (по-голямо)
-* Оператор **`<=`** (по-малко или равно)
-* Оператор **`>=`** (по-голямо или равно)
-* Оператор **`==`** (равно)
-* Оператор **`!=`** (различно)
+* Operator **`<`** (less than)
+* Operator **`>`** (greater than)
+* Operator **`<=`** (less than or equals)
+* Operator **`>=`** (greater than or equals)
+* Operator **`==`** (equals)
+* Operator **`!=`** (not equal; different than)
 
-При сравнение резултатът е булева стойност – **`True`** или **`False`**, в зависимост от това дали резултатът от сравнението е истина или лъжа.
+The result from a comparison is the so-called Boolean value – **`True`** or **`False`**, depending on the evaluated result being either true or false.
 
-### Примери за сравнение на числа
+### Examples of Number Comparisons
 
 ![](/assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-Обърнете внимание, че при отпечатване на стойностите **`true`** и **`false`** в езика **Python**, те се отпечатват с главна буква, съответно **`True`** и **`False`**.
+Note that when printing **`true`** and **`false`** values in **Python**, they are capialized, **`True`** and **`False`**, respectively.
 
 ### Оператори за сравнение
 
