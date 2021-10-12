@@ -1,18 +1,18 @@
-# Глава 4.1. По-сложни проверки
+# Chapter 4.1. More Complex Conditions
 
-В **настоящата** глава ще разгледаме **вложените проверки** в езика **Python**, чрез които нашата програма може да съдържа **условни конструкции**, в които има **вложени други условни конструкции**. Наричаме ги **"вложени"**, защото **поставяме `if` конструкция** в **друга `if` конструкция**. Ще разгледаме и **по-сложни логически условия** с подходящи примери.
+In the **current** chapter, we are going to examine **nested conditional statements** in the **Python** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"**, because **we put `if` condition** into **another `if` condition**. We are going to examine the **more complex logical conditions** through proper examples.
 
 
-## Видео
+## Video
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: 
+  Watch this chapter's video lesson here:
   https://www.youtube.com/watch?v=aeeje4nIzas.
 </div>
 
 
-## Вложени проверки
+## Nested Conditions
 
-Доста често програмната логика налага използването на **`if`** или **`if-else`** конструкции, които се съдържат една в друга. Те биват наричани **вложени** **`if`** или **`if-else`** конструкции. Както се подразбира от названието **"вложени"**, това са **`if`** или **`if-else`** конструкции, които са поставени в други **`if`** или **`else`** конструкции.
+Pretty often the program logic requires the use of **`if`** or **`if-else`** statements, which are contained one inside another. They are called **nested** **`if`** or **`if-else`** statements. As implied by the title **"nested"**, these are **`if`** or **`if-else`** statements that are placed inside other **`if`** or **`else`** statements.
 
 ```python
 if condition1:
@@ -22,91 +22,91 @@ if condition1:
         # тяло
 ```
 
-Влагането на повече от три условни конструкции една в друга не се счита за добра практика и трябва да се избягва, най-вече чрез оптимизиране на структурата/алгоритъма на кода и/или чрез използването на друг вид условна конструкция, който ще разгледаме по-надолу в тази глава.
+Nesting of*more than three conditional statements inside each other is not considered a good practice and has to be avoided, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement, which we are going to examine below in this chapter.
 
-### Пример: обръщение според възраст и пол
+### Example: Personal Titles
 
-Според въведени **възраст** (десетично число) и **пол** (**m** / **f**) да се отпечата обръщение:
-* “**Mr.**” – мъж (пол “**m**”) на 16 или повече години.
-* “**Master**” – момче (пол “**m**”) под 16 години.
-* “**Ms.**” – жена (пол “**f**”) на 16 или повече години.
-* “**Miss**” – момиче (пол “**f**”) под 16 години.
+Depending on **age** (decimal number and **gender** (**m** / **f**), print a personal title:
+* “**Mr.**” – a man (gender “**m**”) – 16 or more years old.
+* “**Master**” – a boy (gender “**m**”) under 16 years.
+* “**Ms.**” – a woman (gender “**f**”) – 16 or more years old.
+* “**Miss**” – a girl (gender “**f**”) under 16 years.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|------|
 |12<br>f|Miss|17<br>m|Mr.|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|------|
 |25<br>f|Ms.|13.5<br>m|Master|
 
 #### Решение
 
-Можем да забележим, че **изходът** на програмата **зависи от няколко неща**. Първо трябва да проверим какъв **пол** е въведен и **после** да проверим **възрастта**. Съответно ще използваме няколко **`if-else`** блока. Тези блокове ще бъдат **вложени**, т.е. от **резултата** на първия ще се **определи** кои от **другите** да се изпълни:
+We should notice that the **output** of the program **depends on a few things**. **First**, we have to check what is the entered **gender** and **then** check the **age**. Respectively, we are going to use **a few** **`if-else`** blocks. These blocks will be **nested**, meaning from **the result** of the first, we are going to **define** which one of the **others** to execute.
 
 ![](/assets/chapter-4-1-images/01.Personal-titles-01.jpg)
 
-След прочитане на входните данни от конзолата ще трябва да се изпълни следната примерна програмна логика:
+After **reading the input data from the console**, the following **program logic** should be executed:
 
 ![](/assets/chapter-4-1-images/01.Personal-titles-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#0](https://judge.softuni.org/Contests/Practice/Index/1051#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#0](https://judge.softuni.org/Contests/Practice/Index/1051#0).
 
 
-### Пример: квартално магазинче
+### Example: Small Shop
 
-Предприемчив българин отваря по едно **квартално магазинче** в **няколко града** с различни **цени** за следните **продукти**:
+A Bulgarian entrepreneur opens **small shops** in **a few cities** with different **prices** for the following **products**:
 
-|продукт / град|  Sofia  | Plovdiv |  Varna  |
+|product / city|  Sofia  | Plovdiv |  Varna  |
 |:------------:|:-------:|:-------:|:-------:|
 |coffee<br>water<br>beer<br>sweets<br>peanuts|0.50<br>0.80<br>1.20<br>1.45<br>1.60<br>|0.40<br>0.70<br>1.15<br>1.30<br>1.50<br>|0.45<br>0.70<br>1.10<br>1.35<br>1.55|
 
-По даден **град** (стринг), **продукт** (стринг) и **количество** (десетично число) да се пресметне цената.
+Calculate the price by the given **city** (string), **product** (string) and **quantity** (float).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|        Вход        | Изход |          Вход         |Изход|
+|        Input        | Output |          Input         |Output|
 |--------------------|-------|-----------------------|-----|
 |coffee<br>Varna<br>2|0.90   |peanuts<br>Plovdiv<br>1|1.50 |
 
-|        Вход        | Изход |          Вход         |Изход|
+|        Input        | Output |          Input         |Output|
 |--------------------|-------|-----------------------|-----|
 |beer<br>Sofia<br>6  |7.20   |water<br>Plovdiv<br>3  |2.10 |
 
-#### Решение
+#### Solution
 
-**Прехвърляме** всички букви в **долен регистър** с функцията **`.lower()`**, за да сравняваме продукти и градове **без значение** от малки/главни букви:
+We **convert** all of the letters into **lower register** using the function **`.lower()`**, to compare products and cities **no matter** what the letters are – small or capital ones.
 
 ![](/assets/chapter-4-1-images/02.Small-shop-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System 
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#1](https://judge.softuni.org/Contests/Practice/Index/1051#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#1](https://judge.softuni.org/Contests/Practice/Index/1051#1).
 
 
-## По-сложни проверки
+## More Complex Conditions
 
-Нека разгледаме как можем да правим по-сложни логически проверки. Може да използваме логическо "**И**" (**`and`**), логическо "**ИЛИ**" (**`or`**), логическо **отрицание** (**`not`**) и **скоби** (**`()`**).
+Let's take a look at how we can create more complex logical conditions. We can use the logical "**AND**" (**`and`**), logical "**OR**" (**`or`**), logical **negation** (**`not`**) and **brackets** (**`()`**).
 
-## Логическо "И"
+## Logical "AND"
 
-Както видяхме, в някои задачи се налага да правим **много проверки наведнъж**. Но какво става, когато за да изпълним някакъв код, трябва да бъдат изпълнени **няколко** условия едновременно и **не искаме** да правим **отрицание** (**`else`**) за всяко едно от тях? Вариантът с вложените **`if` блокове** е валиден, но кодът би изглеждал много **неподреден** и със сигурност - **труден** за четене и поддръжка.  
+As we saw, in some tasks we have to make **many checks at once**. But what happens when to execute some code **more** conditions have to be executed and we **don't want to** make a **negation** (**`else`**) for each one of them? The option with nested **`if` blocks** is valid, but the code would look very **unordered** and for sure – **hard** to read and maintain.
 
-Логическо "**И**" (оператор **`and`**) означава няколко условия да са **изпълнени едновременно**. В сила е следната таблица на истинност:
+The logical "**AND**" (operator **`and`**) means a few conditions have to be **fulfilled simultaneously**. The following table of truthfulness is applicable:
 
 |a|b|a **`and`** b|
 |-----|-----|-----|
 |True<br>True<br>False<br>False|True<br>False<br>True<br>False|True<br>False<br>False<br>False|
 
-### Как работи операторът `and` ?
+### How does the `and` Operator work?
 
-Операторът **`and`** приема **няколко булеви** (условни) израза, които имат стойност **`True`** или **`False`**, и ни връща **един** булев израз като **резултат**. Използването му вместо редица вложени **`if`** блокове прави кода **по-четлив**, **подреден** и **лесен** за поддръжка. Но как работи, когато поставим **няколко** условия едно след друго? Както видяхме по-горе, логическото **"И"** връща **`True`**, **само** когато приема като **аргументи изрази** със стойност **`True`**. Съответно, когато имаме **последователност** от аргументи, логическото "И" **проверява** или докато **свършат** аргументите, или докато не **срещне** аргумент със стойност **`False`**. 
+The **`and`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`True`** or **`False`** value, and returns **one** bool statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`True`**, **only** when it accepts as **arguments statements** with the value **`True`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either until one of the arguments is **over**, or until it **meets** an argument with value **`False`**. 
 
-**Пример**:
+**Example**:
 
 ```python
 a = True
@@ -115,54 +115,54 @@ c = False
 d = True
 
 result = a and b and c and d
-# False (като d не се проверява)
+# False (as d is not being checked)
 ```
 
-Програмата ще се изпълни по **следния** начин: **започва** проверката от **`а`**, **прочита** я и отчита, че има стойност **`True`**, след което **проверява** **`b`**. След като е **отчела**, че **`a`** и **`b`** връщат стойност **`True`**, **проверява следващия** аргумент. Стига до **`c`** и отчита, че променливата има стойност **`False`**. След като програмата отчете, че аргументът **`c`** има стойност **`False`**, тя изчислява израза **до `c`**, **независимо** каква е стойността на **`d`**. За това проверката на **`d`** се **прескача** и целият израз бива изчислен като **`False`**.
+The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it and accepts that it has a **`True`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`True`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`False`** value. After the program accepts that argument **`c`** has a **`False`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`False`**.
 
 
-### Пример: точка в правоъгълник
+### Example: Point in a Rectangle
 
-Проверка дали **точка {x, y}** се намира **вътре в правоъгълника {x1, y1} – {x2, y2}**. Входните данни се четат от конзолата и се състоят от 6 реда: десетичните числа **x1**, **y1**, **x2**, **y2**, **x** и **y** (като се гарантира, че **x1 < x2** и **y1 < y2**).
+Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход |Изход |Визуализация|
+|Input |Output |Visualization|
 |-----|------|:------:|
 |2<br>-3<br>12<br>3<br>8<br>-1|Inside|![shop](/assets/chapter-4-1-images/03.Point-in-rectangle-01.png)|
 
-#### Решение
+#### Solution
 
-Една точка е вътрешна за даден многоъгълник, ако **едновременно** са изпълнени следните четири условия:
+A point is internal for a given polygon if the following four conditions are applied **at the same time**:
 
-* Точката е надясно от лявата страна на правоъгълника.
-* Точката е наляво от дясната страна на правоъгълника.
-* Точката е надолу от горната страна на правоъгълника.
-* Точката е нагоре от долната страна на правоъгълника.
+* The point is placed to the right from the left side of the rectangle.
+* The point is placed to the left from the right side of the rectangle.
+* The point is placed downwards from the upper side of the rectangle.
+* The point is placed upwards from the down side of the rectangle.
 
 ![](/assets/chapter-4-1-images/03.Point-in-rectangle-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
 Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#2](https://judge.softuni.org/Contests/Practice/Index/1051#2).
 
 
-## Логическо "ИЛИ"
+## Logical "OR"
 
-Логическо **"ИЛИ"** (оператор **`or`**) означава да е **изпълнено поне едно** измежду няколко условия. Подобно на оператора **`and`**, логическото **"ИЛИ"** приема няколко аргумента от **булев** (условен) тип и връща **`True`** или **`False`**. Лесно можем да се досетим, че **получаваме** като стойност **`True`**, винаги когато поне **един** от аргументите има стойност **`True`**. Типичен пример за логиката на този оператор е следният:
+The logical **"OR"** (operator **`or`**) means that **at least one** among a few conditions is fulfilled. Similar to the operator **`and`**, the logical **"OR"** accepts a few arguments of **bool** (conditional) type and returns **`True`** or **`False`**. We can easily guess that we **obtain** a value **`True`** whenever at least **one** of the arguments has a **`True`** value. This is shown at the truth table below:
 
-В училище учителят казва: "Иван или Петър да измият дъската". За да бъде изпълнено това условие (дъската да бъде измита), е възможно само Иван да я измие, само Петър да я измие или и двамата да го направят.
+In school, the teacher said: "Ivan or Peter should clean the board". For completing this condition (the board to be clean), it's possible only Ivan to clean it, only Peter to clean it or both of them to do it.
 
 |a|b|a **`or`** b|
 |:-----:|:-----:|:-----:|
 |True<br>True<br>False<br>False|True<br>False<br>True<br>False|True<br>True<br>True<br>False|
 
 
-### Как работи операторът `or` ?
+### How does the `or` operator work?
 
-Вече научихме какво **представлява** логическото **"ИЛИ"**. Но как всъщност се реализира? Както при логическото **"И"**, програмата **проверява** от ляво на дясно **аргументите**, които са зададени. За да получим **`True`** от израза, е необходимо **само един** аргумент да има стойност **`True`**, съответно проверката **продължава** докато се срещне **аргумент** с **такава** стойност или докато **не свършат** аргументите.
+We have already learned what the logical **"OR" represents**. But how is it being achieved? Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. To obtain **`True`** from the expression, **just one** argument must have a **`True`** value. Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
-Ето един **пример** за оператора **`or`** в действие:
+Here is one **example** of the **`or`** operator in action:
 
 ```python
 a = False
@@ -171,66 +171,67 @@ c = False
 d = True
 
 result = a or b or c or d
-# True (като c и d не се проверяват)
+# True (as c and d are not being checked)
 ```
 
-Програмата **проверява `а`**, отчита, че има стойност **`False`** и продължава. Стигайки до **`b`**, отчита, че има стойност **`True`** и целият **израз** получава стойност **`True`**, **без** да се проверява **`c`** и **`d`**, защото техните стойности **не биха променили** резултата на израза.
+The program **checks `a`**, accepts that it has a value **`False`** and continues. Reaching **`b`**, it understands that it has a **`True`** value and the whole **expression** is calculated as **`True`**, **without** having to check **`c`** or **`d`**, because their values **wouldn't change** the result of the expression.
 
-### Пример: плод или зеленчук
+### Example: Fruit or Vegetable
 
-Нека проверим дали даден продукт е **плод** или **зеленчук**. Плодовете "**fruit**" са **banana**, **apple**, **kiwi**, **cherry**, **lemon** и **grapes**. Зеленчуците "**vegetable**" са **tomato**, **cucumber**, **pepper** и **carrot**. Всички останали са "**unknown**".
+Let's check whether a given **product** is **a fruit** or **a vegetable**. The "**fruits**" are **banana**, **apple**, **kiwi**, **cherry**, **lemon** and **grapes**. The "**vegetables**" are **tomato**, **cucumber**, **pepper** and **carrot**. Everything else is "**unknown**".
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |----|----|
 |banana<br>tomato<br>java|fruit<br>vegetable<br>unknown|
 
-#### Решение
+#### Solution
 
-Трябва да използваме няколко условни проверки с логическо "**ИЛИ**" (**`or`**):
+We have to use a few conditional statements with logical "**OR**" (**`or`**):
 
 ![](/assets/chapter-4-1-images/04.Fruit-or-vegetable-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#3](https://judge.softuni.org/Contests/Practice/Index/1051#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#3](https://judge.softuni.org/Contests/Practice/Index/1051#3).
 
 
-## Логическо отрицание
+## Logical Negation
 
-**Логическо отрицание** (оператор **`not`**) означава да **не е изпълнено** дадено условие.
+**Logical negation** (operator **`not`**) means that a given condition is **not fulfilled**.
 
 |a|**`not`** a|
 |:----:|:----:|
 |True|False|
 
-Операторът **`not`** приема като **аргумент** булева променлива и **обръща** стойността ѝ (истината стажа лъжа, а лъжата става истина).
+The operator **`not`** accepts as an **argument** a bool variable and **returns** its value.
+(the truth becomes a lie and the lie becomes a truth).
 
-### Пример: невалидно число
+### Example: Invalid Number
 
-Дадено **число е валидно**, ако е в диапазона [**100 … 200**] или е **0**. Да се направи проверка за **невалидно** число.
+A given **number is valid** if it is in the range [**100 … 200**] or it is **0**. Validate an **invalid** number.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |----|----|
 |75|invalid|
-|150| (няма изход)|
+|150| (no output)|
 |220|invalid|
 
-#### Решение
+#### Solution
 
 ![](/assets/chapter-4-1-images/05.Invalid-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#4](https://judge.softuni.org/Contests/Practice/Index/1051#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#4](https://judge.softuni.org/Contests/Practice/Index/1051#4).
 
 
-## Операторът скоби `()`
+## The Parenthesis **`()`** Operator
 
-Както останалите оператори в програмирането, така и операторите **`and`** и **`or`** имат приоритет, като в случая **`and`** е с по-голям приоритет от **`or`**. Операторът **`()`** служи за **промяна на приоритета на операторите** и се изчислява пръв, също както в математиката. Използването на скоби също така придава по-добра четимост на кода и се счита за добра практика.
+Like the rest of the operators in programming, the operators **`and`** and **`or`** have a priority, as in the case **`and`** is with higher priority than **`or`**. The operator **`()`** serves for **changing the priority of operators** and is being calculated first, just like in mathematics. Using parentheses also gives the code better readability and is considered a good practice.
 
 
 ## По-сложни логически условия

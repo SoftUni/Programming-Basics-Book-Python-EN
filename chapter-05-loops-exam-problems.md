@@ -1,25 +1,25 @@
-# Глава 5.2. Повторения (цикли) – изпитни задачи
+# Chapter 5.2 Iterations (loops) - exam problems
 
-В предходната глава научихме как да изпълним даден блок от команди **повече от веднъж**. Затова въведохме **`for` цикъл** и разгледахме някои от основните му приложения. Целта на настоящата глава е да затвърдим знанията си, решавайки няколко по-сложни задачи с цикли, давани на приемни изпити. За някои от тях ще покажем примерни подробни решения, а за други ще оставим само напътствия. Преди да се захванем за работа е добре да си припомним конструкцията на **цикъла `for`**:
+In the previous chapter we learned how to run a command block **more than once**. That's why we implemented **`for` loop** and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams.  For some of them we’ll show detailed solved examples, while for others there’ll be tips only. Before we begin, we’ll recall the **`for` loop** construction:
 
 ![](/assets/chapter-5-2-images/00.For-construction-01.png)
 
-**`for` циклите** се състоят от:
- * **Инициализационен блок**, в който се декларира променливата-брояч (**`i`**) и с помощта на вградената функция **`range(…)`** в Python, определяме каква да бъде началната и крайната ѝ стойност.
- * **Обновяване на брояча** – подава се като трети параметър на функцията **`range(…)`** и указва с каква стъпка да се обновява променливата-брояч.
- * **Тяло** на цикъла - съдържа произволен блок със сорс код.
+**`for` loops** consist of:
+ * **Initialization block**, where the variable-counter (**`i`**) is declared, and with the help of the **`range(…)`** function built into Python, we define what its starting and ending value will be.
+ * **Updating the counter** – we implement it as a third parameter in the **`range(…)`** function, and it shows with how many steps the variable-counter should be updated.
+ * **Loop body** - it has a random block full of source code.
 
-## Изпитни задачи
+## Exam problems
 
-Да решим няколко задачи с цикли от изпити в СофтУни.
+Let’s solve a couple of problems with loops in SoftUni’s exams.
 
-## Задача: хистограма
+## Problem: histogram
 	
-Дадени са **n цели числа** в интервала [**1 … 1000**]. От тях някакъв процент **p1** са под 200, процент __p2__ са от 200 до 399, процент **p3** са от 400 до 599, процент **p4** са от 600 до 799 и останалите **p5** процента са от 800 нагоре. Да се напише програма, която изчислява и отпечатва процентите **p1**, **p2**, **p3**, **p4** и **p5**.
+We’re given **n-count integers** in range [**1 … 1000**]. A percent of them, **p1**, are under 200, __p2__ percent are between 200 and 399, **p3** percent are between 400 and 599, **p4** percent are between 600 and 799, and the remaining **p5** percent begin at 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
 
-**Пример**: имаме n = **20** числа: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. Получаваме следното разпределение и визуализация:
+**Example**: we have n = **20** integers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
                           
-| **Група**   | **Числа**                                       | **Брой числа** | **Процент**                     |
+| **Group**   | **Numbers**                                     |**Number count**| **Percentage**                  |
 |-------------|-------------------------------------------------|:---------------|---------------------------------|
 | < 200       | 53, 7, 56, 180, 12, 7, 150, 2, 199, 46, 128, 65 | 12             | p1 = 12 / 20 * 100 = 60.00%     |
 | 200 … 399   | 250, 200                                        | 2              | p2 = 2 / 20 * 100 = 10.00%      |
@@ -28,23 +28,23 @@
 | ≥ 800       | 920, 800                                        | 2              | p5 = 2 / 20 * 100 = 10.00%      |
 
 
-### Входни данни
+### Input
 
-На първия ред от входа стои цялото число **n** (1 ≤ **n** ≤ 1000), което представлява броя редове с числа, които ще ни бъдат подадени. На следващите **n реда** стои **по едно цяло число** в интервала [**1 … 1000**] – числата, върху които да бъде изчислена хистограмата.
+On the first line of the input is an integer **n** ( 1 <= **n** <= 1000), which stands for the number of lines with numbers, which will be given to us. On the next **n lines** there is **one integer** in range [**1 … 1000**] – the numbers that the histogram will be based on.
 
-### Изходни данни
+### Output
 
-Да се отпечата на конзолата **хистограма от 5 реда**, всеки от които съдържа число между 0% и 100%, форматирано с точност две цифри след десетичния знак (например 25.00%, 66.67%, 57.14%).
+In the console, print a histogram of **5 lines**, each of them containing a number between 0% and 100%, formatted with two-digit precision after the decimal point(for example, 25.00%, 66.67%, 57.14%).
 
-### Примерен вход и изход
+### Example input & output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -60,10 +60,10 @@
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -79,8 +79,8 @@
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -91,206 +91,205 @@
 </tbody>
 </table>
 
-### Насоки и подсказки
+### Tips and advice
 
-Програмата, която решава този проблем, можем да разделим мислено на три части:
+The program that solves this problem can be divided theoretically into three parts:
 
-  * **Прочитане на входните данни** – в настоящата задача това включва прочитането на числото **n**, последвано от **n на брой цели числа**, всяко на отделен ред.
-  * **Обработка на входните данни** – в случая това означава разпределяне на числата по групи и изчисляване на процентното разделение по групи.
-  * **Извеждане на краен резултат** – отпечатване на хистограмата на конзолата в посочения формат.
+  * **Reading the input data** – in the current problem, this means reading the integer **n**, followed by a **count of n integers**, each on a new line.
+  * **Processing the input data** – in this case, this means dividing the numbers in groups and calculating the division percentage by those groups.
+  * **Outputting the final result** – printing the histogram in the console, in the given format.
 
-#### Прочитане на входните данни
+#### Reading the input data
   
-Преди да преминем към самото прочитане на входните данни трябва да си **декларираме променливите**, в които ще ги съхраняваме: 
+Before we transition to the real reading of the input, we have to **declare our variables**, in which the data will be stored:
 
 ![](/assets/chapter-5-2-images/01.Histogram-01.png)
 
-Декларираме си променливи **`p1_percentage`**, **`p2_percentage`** и т.н., в които ще се пазят процентите, както и **`cnt_p1`**, **`cnt_p2`** и т.н., в които ще пазим броя на числата от съответната група. 
+We declare variables **`p1_percentage`**, **`p2_percentage`**, etc., in which we’ll store the percentages, as well as **`cnt_p1`**, **`cnt_p2`**, etc., in which we’ll keep the count of numbers for the respective group.
 
-След като сме си декларирали нужните променливи, можем да пристъпим към прочитането на числото **`n`** от конзолата:
+After we’ve declared the needed variables, we can move on to reading the number **`n`** from the console:
 
 ![](/assets/chapter-5-2-images/01.Histogram-02.png)
 
-#### Обработка на входните данни
+#### Processing the input data
   
-За да прочетем и разпределим всяко число в съответната му група, ще си послужим с **`for` цикъл** от **0** до **`n`** (броя на числата). Всяка итерация на цикъла ще прочита и разпределя **едно единствено** число (**`current_number`**) в съответната му група. За да определим дали едно число принадлежи към дадена група, **правим проверка в съответния ѝ диапазон**. Ако това е така - увеличаваме броя на числата в тази група (**`cnt_p1`**, **`cnt_p2`** и т.н.) с 1:  
+In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to it’s respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers(**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
 
 ![](/assets/chapter-5-2-images/01.Histogram-03.png)
 
-След като сме определили колко числа има във всяка група, можем да преминем към изчисляването на процентите, което е и главна цел на задачата. За това ще използваме следната формула:
+After we’ve found out how many numbers there are in each group, we can move on to calculating the percentages, which is also the main part of the problem. We’ll use the following formula:
 
-<p align="center"><strong>(процент на група) = (брой числа в група) * 100 / (брой на всички числа)</strong></p>
+<p align="center"><strong>(Group percentage) = (Group number count) * 100 / (Count of all numbers)</strong></p>
 
-Няма значение дали ще разделим на **100** (число тип **`int`**) или на **100.0** (число тип **`float`**), **делението** ще се извърши и в променливата ще се запази резултата от него. Например: **5 / 2 = 2.5**, а **5 / 2.0 = 2.5**. В **`Python 3`**, няма значение дали ще се дели на цяло число или реално, ако резултата е реално число, то той ще се запише в променливата като число с плаваща запетая. Но, в **`Python 2.7`** е необходимо първо числата да се сведат до тип **`float`**, за да получим правилен резултат - реално число. Имайки това предвид, формулата за първата променлива ще изглежда така: 
+It doesn’t matter whether we’ll divide by **100** (an **`integer`** type), or **100.0**(a **`float`** type), since the **division** will take place and the result will be saved to the variable. Example: **5 / 2 = 2.5**, and **5 / 2.0 = 2.5**. In **`Python 3`**, there’s no difference whether we’ll be dividing by an integer or a real number - if the result is a real number itself, then it will be saved in the variable as a floating-point number. But in **`Python 2.7`** we have to convert the numbers to a **`float`** type, in order to get the correct result – a real number. Having that in mind, the first variable’s formula will look like this:
 
 ![](/assets/chapter-5-2-images/01.Histogram-04.png)
 
-За да стане още по-ясно какво се случва, нека разгледаме следния пример:
+To better understand what’s happening, let’s look at the following example:
 
-|Вход|Изход|
+|Input|Output|
 |--------|---------|
 |**3**<br>1<br>2<br>999|66.67%<br>0.00%<br>0.00%<br>0.00%<br>33.33%|
 
-В случая **`n = 3`**.
-За цикъла имаме:
-   -   	**`i = 0`** - прочитаме числото 1, което е по-малко от 200 и попада в първата група, следователно увеличаваме брояча на групата (**`cnt_p1`**) с 1.
-   -   	**`i = 1`** – прочитаме числото 2, което отново попада в първата група и увеличаваме брояча ѝ (**`cnt_p1`**) отново с 1.
-   -   	**`i = 2`** – прочитаме числото 999, което попада в последната група (**`p5`**), защото е по-голямо от 800, и увеличаваме брояча на групата (**`cnt_p5`**) с 1.
+In this case, **`n = 3`**. 
+The cycle consists of:
+   -   	**`i = 0`** - we read the number 1, which is lower than 200 and belongs to the first group, thus increasing the counter of the number (**`cnt_p1`**) by 1.
+   -   	**`i = 1`** – we read the number 2, which, again, belongs to the first group and we increase the group’s counter(**`cnt_p1`**) by 1.
+   -   	**`i = 2`** – we read the number 999, which belongs to the last group(**`p5`**), because it’s bigger than 800, and we increase it’s group counter (**`cnt_p5`**) by 1.
    
-След прочитането на числата в първата група имаме 2 числа, а в последната - имаме 1 число. В другите групи **нямаме числа**. Като приложим гореспоменатата формула, изчисляваме процентите на всяка група. Няма значение как ще умножим по **100**, или по **100.0** ще получим един и същ резултат: за **първата** група 66.67%, а за **последната** група – 33.33% . Но все пак да споменем отново, че това е валидно само за **`Python 3`**.
+After reading the numbers, we have two of them in the first group, and we have only one in the last group. There are **no numbers** in the other groups. After we apply the aforementioned formula, we calculate the percentage of each group. It doesn’t matter whether we multiply by **100** or **100.0** – we’ll get the same result: the **first** group has 66.67%, and the **last** group – 33.33%. We have to mention that this is valid only for **`Python 3`**.
 
-#### Извеждане на краен резултат
+#### Printing the final result
   
-Остава само да отпечатаме получените резултати. В условието е казано, че процентите трябва да са **с точност две цифри след десетичната точка**. Това ще постигнем, като след placeholder-а изпишем **`.2f`**:
+The last step is to print the calculated results. In the problem’s description it’s said that the percentages have to be with **2-digit precision after the decimal point**. To achieve this, we have to write **`.2f`** after the placeholder.
 
 ![](/assets/chapter-5-2-images/01.Histogram-05.png)
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1054#0](https://judge.softuni.org/Contests/Practice/Index/1054#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#0](https://judge.softuni.org/Contests/Practice/Index/1054#0).
 
 
-## Задача: умната Лили
+## Problem: Smart Lily
 
-Лили вече е на **N години**. За всеки свой **рожден ден** тя получава подарък. За **нечетните** рождени дни (1, 3, 5, …, n) получава **играчки**, а за всеки **четен** (2, 4, 6, …, n) получава **пари**. За **втория рожден ден** получава **10.00 лв.**, като **сумата се увеличава с 10.00 лв. за всеки следващ четен рожден ден** (2 -> 10, 4 -> 20, 6 -> 30 и т.н.). През годините Лили тайно е спестявала парите. **Братът** на Лили, в годините, които тя **получава пари**, **взима по 1.00 лев** от тях. Лили **продала играчките**, получени през годините, **всяка за P лева** и добавила сумата към спестените пари. С парите искала да си **купи пералня за X лева**. Напишете програма, която да пресмята **колко пари е събрала** и дали ѝ **стигат да купи пералня**.
+Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** birthdays (1, 3, 5, …, n) she receives **toys**, and for each **even** birthday (2, 4, 6, …, n) she receives **money**. For her **second birthday** she receives **10.00 USD**, and **the sum increases by 10 USD with each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30, etc.). Lily has secretly been saving the money for years. **Her brother**, in the years when she **receives money**, **takes 1.00 USD**. Lily **sold the toys** received with the years, **each for P USD** and added the sum to the saved money. With them she wants **to buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and whether **it's enough to buy a washing machine**.
 
-### Входни данни
+### Input
 
-От конзолата се прочитат **3 числа**, всяко на отделен ред:
+**3 numbers** are read from the console, each on a new line:
 
-   - **Възрастта** на Лили – **цяло число** в интервала [**1 … 77**].
-   - **Цената на пералнята** – число в интервала [**1.00 … 10 000.00**].
-   - **Единична цена на играчка** – **цяло число** в интервала [**0 … 40**].
+   - **Lily's age** – **integer** in range [**1 … 77**].
+   - **The price of the washing machine** – a number in range [**1.00 … 10 000.00**].
+   - **The price of a single toy** – **integer** in range [**0 … 40**].
 
-### Изходни данни
+### Output
 
-Да се отпечата на конзолата един ред:
+Print a single line in the console:
 
-  * Ако парите на Лили са достатъчни:
-    * "**Yes! {N}**" – където **N** е остатъка пари след покупката
-  * Ако парите не са достатъчни:
-    * "**No! {M}**" – където **M** е сумата, която не достига
-  * Числата **N** и **M** трябва да са **форматирани до втория знак след десетичната точка**.
+  * If Lily's money are enough:
+    * "**Yes! {N}**" – where **N** are the remaining money after the purchase
+  * If they're not:
+    * "**No! {M}**" – where **M** is the amount of money **lacking**
+  * The numbers **N** and **M** should be **formatted with 2-digit precision after the decimal point**.
 
-### Примерен вход и изход
+### Example input & output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Коментари</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">10<br>170.00<br>6</td>
 <td valign="top">Yes! 5.00</td>
-<td valign="top"><p><strong>Първи рожден ден</strong> получава <strong>играчка</strong>; <strong>2ри</strong> -> <strong>10 лв.</strong>; 3ти -> играчка; <strong>4ти</strong>  -> 10 + 10 = <strong>20 лв.</strong>; 5ти -> играчка; <strong>6ти</strong> -> 20 + 10 = <strong>30 лв.</strong>; 7ми -> играчка; <strong>8ми</strong> -> 30 + 10 = <strong>40 лв.</strong>; 9ти -> играчка; <strong>10ти</strong> -> 40 + 10 = <strong>50 лв</strong>.<br>
-<strong>Спестила е</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 лв.</strong>. Продала е <strong>5 играчки по 6 лв. = 30 лв.</strong>.<br>
-<strong>Брат ѝ взел 5 пъти по 1 лев = 5 лв</strong>. <strong>Остават</strong> -> 150 + 30 – 5 = <strong>175 лв</strong>.
-<strong>175 &gt;= 170</strong> (цената на пералнята) <strong>успяла</strong> е да я купи и са ѝ <strong>останали</strong> 175-170 = <strong>5 лв</strong>.
+<td valign="top"><p><strong>On the first birthday</strong> she receives <strong>a toy</strong>; <strong>Second</strong> -> <strong>10 USD</strong>; 3rd -> toy; <strong>4th</strong>  -> 10 + 10 = <strong>20 USD</strong>; 5th -> toy; <strong>6th</strong> -> 20 + 10 = <strong>30 USD</strong>; 7th -> toy; <strong>8th</strong> -> 30 + 10 = <strong>40 USD</strong>; 9th -> toy; <strong>10th</strong> -> 40 + 10 = <strong>50 USD</strong><br>
+<strong>She has saved</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 USD</strong>. She has sold <strong>5 toys by 6 USD = 30 USD</strong>.<br>
+<strong>Her brother took 1 USD for 5 years = 5 USD</strong>. <strong>Remaining money</strong> -> 150 + 30 – 5 = <strong>175 USD</strong>.
+<strong>175 &gt;= 170</strong> (washing machine's price) <strong>She has succeeded</strong> buying it and there <strong>remain</strong> 175-170 = <strong>5 USD</strong>.
 </p></td>
 </tr>
 <tr>
 <td valign="top">21<br>1570.98<br>3</td>
 <td valign="top">No! 997.98</td>
-<td valign="top"><p><strong>Спестила е 550 лв.</strong>. <strong>Продала</strong> е <strong>11 играчки</strong> по <strong>3 лв.</strong> = <strong>33 лв</strong>. Брат ѝ <strong>взимал 10 години по 1 лев</strong> = <strong>10лв</strong>. <strong>Останали</strong> 550 + 33 – 10 = <strong>573 лв.</strong> <br>
-<strong>573 &lt; 1570.98</strong> – <strong>не е успяла</strong> да купи пералня. <strong>Не ѝ достигат</strong> 1570.98–573 = <strong>997.98 лв.</strong></p></td>
+<td valign="top"><p><strong>She has saved 550 USD</strong>. <strong>She's sold</strong> <strong>11 toys</strong> by <strong>3 USD each</strong> = <strong>33 USD</strong>. Her brother <strong>has taken 1 USD for 10 years</strong> = <strong>10 USD</strong>. <strong>There remain</strong> 550 + 33 – 10 = <strong>573 USD.</strong> <br>
+<strong>573 &lt; 1570.98</strong> – <strong>She's failed</strong> buying a washing machine. <strong>She needs</strong> 1570.98–573 = <strong>997.98 USD more.</strong></p></td>
 </tr>
 </tbody>
 </table>    
 
-### Насоки и подсказки
+### Tips and advice
 
-Решението на тази задача, подобно на предходната, също можем да разделим мислено на три части – **прочитане** на входните данни, **обработката** им и **извеждане** на резултат.
+Solving this problem, like the previous one, again can be divided in three parts – **reading** the input data, **processing** it and **outputting** a result.
 
-Както вече знаем, в повечето скриптови езици, както и в Python, не се грижим да определяме типа на променливите, които декларираме. Интерпретаторът сам преценява какви да бъдат те. За годините на Лили (**`age`**) и единичната цена на играчката (**`present_price`**) по условие е дадено, че ще са **цели числа**. Затова ще използваме **вградента функция `int()`** да конвентираме прочетената стрингова стойност в тип цяло число. Когато се използва функция **`input()`**, резултатът въведен в конзолата винаги е от тип текст (**`string`**), затова ако е необходимо той да бъде конвертиран към друг тип, можем да използваме **вградените в Python функции** за целта. За цената на пералнята (**`price_of_washing_machine`**) знаем, че е **дробно число и избираме да използваме тип `float`**. В кода по-долу **декларираме** и **инициализираме** (присвояваме стойност) на променливите:
+As we already know, in most of the scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpretator decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price, (**`present_price`**), in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this problem. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
-За да решим задачата, ще се нуждаем от няколко помощни променливи – за **броя на играчките** (**`number_of_toys`**), за **спестените пари** (**`saved_money`**) и за **парите, получени на всеки рожден ден** (**`money_for_birthday`**). Като присвояваме на **`money_for_birthday`** първоначална стойност 10, тъй като по условие е дадено, че първата сума, която Лили получава, е 10 лв:
+In order to solve the problem, we'll need a couple of helper variables – for **the toys' count**, (**`number_of_toys`**), for **the saved money**, (**`saved_money`**) and for **the money received on each birthday** ,(**`money_for_birthday`**). We initially assign 10 to **`money_for_birthday`**, because in the description it's said that the first sum received by Lily is 10 USD:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-02.png)
  
-С **`for` цикъл** преминаваме през всеки рожден ден на Лили. Когато водещата променлива е **четно число**, това означава, че Лили е **получила пари** и съответно прибавяме тези пари към общите ѝ спестявания. Едновременно с това **изваждаме по 1 лев** - парите, които брат ѝ взема. След това **увеличаваме** стойността на променливата **`money_for_birthday`**, т.е. увеличаваме с 10 сумата, която тя ще получи на следващия си рожден ден. Обратно, когато водещата променлива е **нечетно число**, увеличаваме броя на **играчките**. Проверката за четност осъществяваме чрез **деление с остатък** (**`%`**) **на 2** – когато остатъкът е 0, числото е четно, а при остатък 1 - нечетно:
+With a **`for` loop** we go through each of Lily's birthdays. When the loop variable is an **even number**, it means that Lily has **received money** and we add them to her savings. At the same time we **subtract 1 USD** - the money taken by her brother. After that we **increase** the value of the variable **`money_for_birthday`** , meaning we increase the sum with 10 for the next time she receives money for her birthday. Contrary, when the loop variable is an **odd number**, we increase the **toys**' count. Checking whether it's even or odd happens with a **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, and when the remainder's 1 - it's odd:
  
 ![](/assets/chapter-5-2-images/02.Smart-lilly-03.png)
  
-Към спестяванията на Лили прибавяме и парите от продадените играчки:
+We add the money from the sold toys to Lily's savings:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-04.png)
 
-Накрая остава да отпечатаме получените резултати, като се съобразим с форматирането, указано в условието, т.е. сумата трябва да е **закръглена до две цифри след десетичния знак**:
+At the end we print the results, taking in account the required formatting, meaning the sum has to be **rounded to 2 digits after the decimal point**:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
-В някои програмни езици съществува конструкция, като **условния оператор (`?:`)** (наричан още тернарен оператор), тъй като записът е по-кратък. В Python синтаксисът му е следният: **`операнд1 if операнд2 else операнд3`**. Вторият операнд е нашето условие и трябва да е от **булев тип** (т.е. да връща **`true/false`**). Ако **`операнд2`** върне стойност **`true`**, то ще се изпълни **`операнд1`**, а ако върне **`false`** – **`операнд3`**. В нашия случай проверяваме дали **събраните пари** от Лили стигат за една пералня. Ако те са повече или равни на цената на пералнята, то проверката **`saved_money >= price_of_washing_machine`** ще върне **`true`** и ще се отпечата "**Yes! …**", а ако е по-малко – резултатът ще е **`false`** и ще се отпечата "**No! …**". Разбира се, вместо условния оператор, можем да използваме и обикновени **`if`** проверки.
+In some programming languages there's a construction called **conditional operator (`?:`)** (also known as ternary operator), as it's shorter to write. It has the following syntax in Python: **`operand1 if operand2 else operand3`**. The second operand is our condition and it has to be of **bool type** (meaning it has to return **`true/false`**). If **`operand2`** returns **`true`**, it'll execute **`operand1`**, and if it returns **`false`** – **`operand3`**. In our case we check whether Lily's **saved money** are enough to buy a washing machine. If they're higher or equal to it's price, the check **`saved_money >= price_of_washing_machine`** will return **`true`** and it'll print "**Yes! …**", while if it's lower – the result will be **`false`** and "**No! …**" will be printed. Of course, instead of the ternary operator, we can use simple **`if`** expressions.
 
-Повече за условния оператор: [https://book.pythontips.com/en/latest/ternary_operators.html](https://book.pythontips.com/en/latest/ternary_operators.html).
+More about ternary operators: [https://book.pythontips.com/en/latest/ternary_operators.html](https://book.pythontips.com/en/latest/ternary_operators.html).
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
 
+## Problem: Returning to the past
 
-## Задача: завръщане в миналото
+Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** will **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including it**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the taken year]**.
 
-Иванчо е на **18 години** и получава наследство, което се състои от **X сума пари** и **машина на времето**. Той решава **да се върне до 1800 година**, но не знае **дали парите** ще **са достатъчни**, за да живее без да работи. Напишете **програма, която пресмята** дали Иванчо **ще има достатъчно пари**, за да не се налага да работи **до дадена година включително**. Като приемем, че **за всяка четна** (1800, 1802 и т.н.) година ще **харчи 12 000 долара**. За **всяка нечетна** (1801, 1803  и т.н.) ще харчи **12 000 + 50 * [годините, които е навършил през дадената година]**.
+### Input
 
-### Входни данни
+The input is read from the console and **contains exactly 2 lines**:
 
-Входът се чете от конзолата и **съдържа точно 2 реда**:
+  * **The inherited money** – a real number in range [**1.00 … 1 000 000.00**].
+  * **The year until he has to live (inclusive)** – real number in range [**1801 … 1900**].
 
-  * **Наследените пари** – реално число в интервала [**1.00 … 1 000 000.00**].
-  * **Годината, до която трябва да живее (включително)** – цяло число в интервала [**1801 … 1900**].
+### Output
 
-### Изходни данни
+**Print** to the console **1 line**. **The sum** has to be **formatted** with **2-digit precision after the decimal point**:
+  * If **the money are enough**:
+    * "**Yes! He will live a carefree life and will have {N} dollars left.**" – where **N** are the remaining money.
+  *	If **the money are NOT enough**:
+    * "**He will need {М} dollars to survive.**" – where **M** is the amount **lacking**.
 
-Да се **отпечата** на конзолата **1 ред**. **Сумата** трябва да е **форматирана** до **два знака след десетичния знак**:
-  * Ако **парите са достатъчно**:
-    * "**Yes! He will live a carefree life and will have {N} dollars left.**" – където **N** са парите, които ще му останат.
-  *	Ако **парите НЕ са достатъчно**:
-    * "**He will need {М} dollars to survive.**" – където **M** е сумата, която **НЕ достига**.
-
-### Примерен вход и изход
+### Example input & output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanations</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">50000<br>1802</td>
 <td valign="top">Yes! He will live a carefree life and<br> will have 13050.00 dollars left.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
- 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи 12000</strong> долара <br>
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 50000 – 12000 = <strong>38000</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 + <strong>19*50</strong> = 12950 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 38000 – 12950 = <strong>25050</strong><br>
-1802 &rarr; <strong>четна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 25050 – 12000 = <strong>13050</strong></p></td>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+ 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends 12000</strong> dollars <br>
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Left 50000 – 12000 = <strong>38000</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends</strong> 12000 + <strong>19*50</strong> = 12950 dollars<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Left</strong> 38000 – 12950 = <strong>25050</strong><br>
+1802 &rarr; <strong>even</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends</strong> 12000 dollars<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Left</strong> 25050 – 12000 = <strong>13050</strong></p></td>
 </tr>
 <tr>
 <td valign="top">100000.15<br>1808</td>
 <td valign="top">He will need 12399.85 dollars<br> to survive.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 100000.15 – 12000 = <strong>88000.15</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Left 100000.15 – 12000 = <strong>88000.15</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Left</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
 <strong>…</strong><br>
-1808 &rarr; <strong>четна</strong> &rarr; -399.85 - 12000 = -12399.85<br>
-<strong>12399.85 не достигат</strong>
+1808 &rarr; <strong>even</strong> &rarr; -399.85 - 12000 = -12399.85<br>
+<strong>12399.85 lacking</strong>
 </p></td>
 </tr>
 </tbody>
-</table>    
+</table> 
 
 ### Насоки и подсказки
 

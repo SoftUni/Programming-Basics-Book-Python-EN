@@ -1,6 +1,6 @@
-# Глава 6.2. Вложени цикли – изпитни задачи
+# Chapter 6.2. Nested loops – exam tasks
 
-В предходната глава разгледахме **вложените цикли** и как да ги използване за **рисуване** на различни **фигури на конзолата**. Научихме се как да отпечатваме фигури с различни размери, измисляйки подходяща логика на конструиране с използване на **единични и вложени `for`** цикли в комбинация с различни изчисления и програмна логика:
+In the previous chapter, we introduced **nested loops** and how to use them for **drawing** various kinds of **figures on the console**. We've learned how to print figures with different sizes, establishing suitable logic construction by using **single and nested `for`** loops in combination with different calculations and program logic:
 
 ```python
 for r in range(5):
@@ -10,309 +10,311 @@ for r in range(5):
     print("")
 ```
 
-Запознахме се и с **оператора `*`**, който дава възможност **даден стринг** да се печата определен от нас **брой** пъти:
+We also learned the **operator `*`**, which lets you for defined by us **number** of times, a **given string** to be printed:
 
 ```python
 print_me = ('abc' * 2)
 ```
 
-## Изпитни задачи
+## Exam tasks
 
-Сега нека решим заедно няколко изпитни задачи, за да затвърдим наученото и да развием още алгоритмичното си мислене.
+Now let's solve some exam tasks to consolidate what we have learned and to develop our algorithmic thinking.
 
-## Задача: чертане на крепост
+## Task: Drawing a fortress
 
-Да се напише програма, която приема **цяло число n** и чертае **крепост** с ширина **2 * n колони** и височина **n реда** като в примерите по-долу. Лявата и дясната колона във вътрешността си са широки **n / 2**.
+Write a program, that reads from the console an **integer n** and draws a **fortress** with a width of **2 * n columns** and height of **n rows**, as in the below-given examples. The left and the right inner columns have a width of **n / 2**.
 
-### Входни данни
+### Input data
 
-Входът на програмата се състои от един елемент (аргумент) - **цяло число n** в интервала [**3 … 1000**].
+The program input consists one element (argument) - **integer n** within the range [**3 … 1000**].
 
-### Изходни данни
+### Output data
 
-Да се отпечатат на конзолата **n** текстови реда, изобразяващи **крепостта**, точно както в примерите.
+Print on the console **n** text lines, depicting the **fortress**, just as in the examples below.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |3|<code>&#47;&#94;&#92;&#47;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#47;&#92;&#95;&#47;</code>|4|<code>&#47;&#94;&#94;&#92;&#47;&#94;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#95;&#47;&#92;&#95;&#95;&#47;</code><br>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |5|<code>&#47;&#94;&#94;&#92;&#95;&#95;&#47;&#94;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&#95;&#95;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#95;&#47;&nbsp;&nbsp;&#92;&#95;&#95;&#47;</code><br>|8|<code>&#47;&#94;&#94;&#94;&#94;&#92;&#95;&#95;&#95;&#95;&#47;&#94;&#94;&#94;&#94;&#92;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#95;&#95;&#95;&#95;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</code><br><code>&#92;&#95;&#95;&#95;&#95;&#47;&nbsp;&nbsp;&nbsp;&nbsp;&#92;&#95;&#95;&#95;&#95;&#47;</code><br>|
 
-### Насоки и подсказки
+### Hints and guidelines
 
-От условието на задачата виждаме, че **входните данни** ще се състоят само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 1000**]. По тази причина ще конвертираме прочетената стрингова стойност към тип **`int`**:
+By the set task condition, we can see that the **input data** will contain only one **integer** within the range [**3 … 1000**].  Therefore, we will convert the input value into **`int`** type:
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-01.png)
 
-След като вече сме декларирали и инициализирали входните данни, ще разделим **крепостта** на три части:
-* покрив
-* тяло
-* основа
+After we've declared and initialized the input data, we have to divide the **fortress** into three parts:
+* roof
+* body
+* base
 
-От примерите можем да разберем, че **покривът** е съставен от **две кули** и **междинна част**. Всяка кула се състои от начало **`/`**, среда **`^`** и край **`\`**.
+We can see from the examples, that the **roof** consists of **two towers** and **a middle part**. Each tower has a beginning **`/`**, middle part **`^`** and an end **`\`**.
 
-По условие лявата и дясната колона във вътрешността си са широки **`n / 2`**, следователно можем да отделим тази стойност в отделна **променлива**, като внимаваме, че ако като входни данни имаме **нечетно число**, при деление на две резултатът ще е реално число с цяла и дробна част. Тъй като в този случай ни трябва **само цялата част** (в условието  на задачата виждаме, че при вход **3** броят на **`^`** във вътрешността на колоната е **1**, а при вход **5** е **3**), можем да я отделим с метода **`math.trunc(…)`** и да запазим само нейната стойност в новата ни променлива:
+By the set task condition the left and the right inner columns have a width of **`n / 2`**, therefore we can save this value as a separate **variable**, keeping in mind, that if we receive an **odd number** as input, the result of dividing by two will be a number with a whole and fractional part. In this case, we need **only the whole part** (in the set task condition we can see, that when the input is equal to **3** the count of **`^`** in the inner part column is equal to **1**, and input of **5** it is **3**), we can separate it with the function **`math.trunc(…)`** and to save only its value in our new variable:
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Добра практика е винаги, когато видим, че имаме израз, чиято стойност ще използваме <b>повече от един път</b>, да запазваме стойността му в променлива. Така от една страна, кодът ни ще бъде <b>по-лесно четим</b>, от друга страна, ще бъде <b>по-лесно да поправим</b> евентуални <b>грешки</b> в него, тъй като няма да се налага да търсим поотделно всяка употреба на израза. </td>
+<td>It's always a good practice, whenever we have an expression with value we intend to use <b>more than once</b>, to keep it in a variable. In this way, on the one hand, our code will be <b>easier to read</b>, and on the other hand, it will be <b>easier to correct</b> possible <b>errors</b>, as we will not have to look for each use of the expression separately. </td>
 </tr></table>
 
-Декларираме и втора **променлива**, в която ще пазим **стойността** на частта **между двете кули**. Знаем, че по условие общата ширина на крепостта е **`n * 2`**. Освен това имаме и две кули с по една наклонена черта за начало и край (общо 4 знака) и ширина **`colSize`**. Следователно, за да получим броя на знаците в междинната част, трябва да извадим размера на кулите от ширината на цялата крепост: **`2 * n - 2 * colSize - 4`**:
+We also declare a second **variable**, which will keep **the value** of the part **between the two towers**. By the set task condition, we know that the total width of the fortress is **`n * 2`**. In addition, we have two towers with one slash for a start and one slash for an end (a total of 4 characters) and a width of **`col_size`**. Therefore, to get the number of characters in the middle part, we have to subtract the size of the towers from the width of the entire fortress: **`2 * n - 2 * col_size - 4`**.
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-03.png)
 
-За да отпечатаме на конзолата **покрива**, ще използваме метода **`format(…)`** в комбинация с оператора **`*`**, който съединява даден символ в низ **n** на брой пъти:
+To print the **roof** part, on the console we will use the **`format(…)`** method in comination with the operator **`*`**, which joins a given string **n** number of times:
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-04.png)
 
-<table><tr><td><img src="./assets/alert-icon.png" style="max-width:50px" /></td>
-<td><strong><code>\</code></strong> е специален символ в езика Python и използвайки само него в метода <strong><code>print(…)</code></strong>, конзолата няма да го разпечата, затова с <strong><code>\\</code></strong> показваме на конзолата, че искаме да отпечатаме точно този символ, без да се интерпретира като специален (<b>екранираме го</b>, на английски се нарича “<b>character escaping</b>”).</td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<td><strong><code>\</code></strong> is a special symbol in Python and using it solely in the method <strong><code>print(…)</code></strong>, the console will not print it out, so with <strong><code>\\</code></strong> we indicate on the console, that we want to print out exactly this character, without interpreting it as special character (<b>we screen it </b>, in English this is called “<b>character escaping</b>”).</td>
 </tr></table>
 
-**Тялото на крепостта** се състои от начало **`|`**, среда **`(празно място)`** и край **`|`**. **Средата** от празно място е с големина **`2 * n - 2`**. Броят на **редовете** за стени, можем да определим от дадените ни примери - **`n - 3`**:
+**The fortress body** consists of beginning **`|`**, middle part **`(white spaces)`** and an end **`|`**. **The middle part** of white spaces has a width of **`2 * n - 2`**. The number of **rows** for the walls can be determined from the given examples: **`n - 3`**:
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-05.png)
 
-За да нарисуваме предпоследния ред, който е част от основата, трябва да отпечатаме начало **`|`**, среда **`(празно място)_(празно място)`** и край **`|`**. За да направим това, можем да използваме отново вече декларираните от нас променливи **`col_size`** и **`mid_size`**, защото от примерите виждаме, че са равни на броя **`_`** в покрива:
+In order to draw a penultimate row, which is part of the base, we need to print a beginning **`|`**, middle part **`(white space)_(white space)`** and an end **`|`**. To do this, we can use already declared variables **`col_size`** and **`mid_size`** because as we see from the examples they are equal to the number of **`_`** in the roof:
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-06.png)
 
-Добавяме към стойността на **празните места** **`+ 1`**, защото в примерите имаме **едно** празно място повече.
+We add to the value of **white spaces** **`+ 1`**, because in the examples we have **one** white space more.
 
-Структурата на **основата на крепостта** е еднаква с тази на **покрива**. Съставена е от **две кули** и **междинна част**. Всяка една **кула** има начало **`\`**, среда **`_`** и край **`/`**:
+The structure of the **fortress base** is the same as the one in the **roof**. It includes **two towers** and **middle part**. Each **tower** begins with **`\`**, followed by a middle part **`_`** and an end **`/`**.
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-07.png)
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1056#0](https://judge.softuni.org/Contests/Practice/Index/1056#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#0](https://judge.softuni.org/Contests/Practice/Index/1056#0).
 
 
-## Задача: пеперуда
+## Task: Butterfly
 
-Да се напише програма, която приема **цяло число n** и чертае **пеперуда** с ширина **2 * n - 1 колони** и височина **2 * (n - 2) + 1 реда** като в примерите по-долу.  **Лявата и дясната** ѝ **част** са **широки n - 1**.
+Write a program, that takes **an integer n** from the console and draws **butterfly** with width of **2 * n - 1 columns** and height of **2 * (n - 2) + 1 rows** as in the examples below.  **The left and the right** **part** have **width of n - 1**.
 
-### Входни данни
+### Input data
 
-Входът се състои от един елемент (аргумент) - **цяло число n** [**3 … 1000**].
+The input consists of one element (argument) - **integer n** in the range [**3 … 1000**].
 
-### Изходни данни
+### Output data
 
-Да се отпечатат на конзолата **2 * (n - 2) + 1**  текстови реда, изобразяващи **пеперудата**, точно както в примерите.
+Print on the console **2 * (n - 2) + 1**  text rows, representing the **butterfly**, exactly as shown in the examples.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&#42;&#92;&nbsp;&#47;&#42;</code><br><code>&nbsp;&nbsp;&#64;&nbsp;&nbsp;</code><br><code>&#42;&#47;&nbsp;&#92;&#42;</code><br>|5|<code>&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#92;&nbsp;&#47;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&#64;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#47;&nbsp;&#92;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |7|<code>&#42;&#42;&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#92;&nbsp;&#47;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#92;&nbsp;&#47;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#92;&nbsp;&#47;&#42;&#42;&#42;&#42;&#42;</code><br><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#64;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#47;&nbsp;&#92;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;&#42;&#42;</code><br><code>&#45;&#45;&#45;&#45;&#45;&#47;&nbsp;&#92;&#45;&#45;&#45;&#45;&#45;</code><br><code>&#42;&#42;&#42;&#42;&#42;&#47;&nbsp;&#92;&#42;&#42;&#42;&#42;&#42;</code><br>|
 
-### Насоки и подсказки
+### Hints and guidelines
 
-Аналогично на предходната задача виждаме от условието, че **входните данни** ще се състоят само от едно **цяло число** в интервала [**3 … 1000**]. По тази причина ще конвертираме прочетената стойност към тип **`int`**:
+Similar to the previous task, we can see from the condition, that the **input data** will consist of only one **integer** in the range [**3 … 1000**]. That's why we will convert the input value into **`int`** type:
 
 ![](/assets/chapter-6-2-images/02.Butterfly-01.png)
 
-Можем да разделим фигурата на 3 части - **горно крило**, **тяло** и **долно крило**. За да начертаем горното крило на пеперудата, трябва да го разделим на части - начало **`*`**, среда **`\ /`** и край **`*`**. След разглеждане на примерите можем да кажем, че горното крило на пеперудата е с големина **`n - 2`**:
+We can divide the figure into 3 parts - **upper wing**, **body** and **lower wing**. In order to draw the upper wing of the butterfly, we have to divide it into three parts - a beginning with **`*`**, a middle part with **`\ /`** and an end with **`*`**. After looking at the examples, we can say that the upper wing of the butterfly is with a size of **`n - 2`**:
 
 ![](/assets/chapter-6-2-images/02.Butterfly-02.png)
 
-За да нарисуваме горното крило правим цикъл, който да се повтаря **`half_row_size`** пъти:
+To draw the upper wing we make a loop repeated **`half_row_size`** number of times:
 
 ![](/assets/chapter-6-2-images/02.Butterfly-03.png)
 
-От примерите можем също така да забележим, че на **четен** ред имаме начало **`*`**, среда **`\ /`** и край **`*`**, а на **нечетен** - начало **`-`**, среда **`\ /`** и край **`-`**. Следователно при всяка итерация на цикъла трябва да направим **`if-else`** проверка дали редът, който печатаме, е четен или нечетен. От примерите, дадени в условието, виждаме, че броят на звездичките и тиретата на всеки ред също е равен на **`n - 2`**, т. е. за тяхното отпечатване отново можем да използваме променливата **`half_row_size`**: 
+We can see in the examples, that on an **even** row we have a beginning **`*`**, middle part **`\ /`** and an end **`*`**, on the other hand on an **odd** row we have a beginning **`-`**, middle part **`\ /`** and an end **`-`**. Therefore, at each iteration of the loop, we have to do an **`if-else`** check to see whether the row that we print is even or odd. From the examples given in the set condition, we can see that the number of star characters and dashes on each row is equal to **`n - 2`**, i. e. we can use again the variable **`half_row_size`** to print them: 
 
 ![](/assets/chapter-6-2-images/02.Butterfly-04.png)
 
-За да направим **тялото на пеперудата** е необходимо да отпечатаме на конзолата точно **един** ред. Структурата на тялото е с начало **`(празно място)`**, среда **`@`** и край **`(празно място)`**. От примерите виждаме, че броят на празните места е **`n - 1`**:
+In order to draw the **the butterfly body**, we have to print exactly  **one** row on the console. The structure of the body has a beginning **`(white space)`**, middle part **`@`** and an end **`(white space)`**. From the examples we can see, that the number of the white spaces is equal to **`n-1`**:
 
 ![](/assets/chapter-6-2-images/02.Butterfly-05.png)
 
-Остава да отпечатаме на конзолата и **долното крило**, което е **аналогично на горното крило**: единствено трябва да разменим местата на наклонените черти.
+What is left now is to print on the console the **lower wing**, which is **analogical to the upper wing**: we only need to swap the places of the slashes.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1056#1](https://judge.softuni.org/Contests/Practice/Index/1056#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#1](https://judge.softuni.org/Contests/Practice/Index/1056#1).
 
 
-## Задача: знак "Стоп"
+## Task: "Stop" sign
 
-Да се напише програма, която приема **цяло число n** и чертае **предупредителен знак STOP** с размери като в примерите по-долу.
+Write a program, that takes an **integer n** from the console and draws **a STOP warning sign** with size as shown in the examples below.
 
-### Входни данни
+### Input data
 
-Входът е състоящ се от един елемент (аргумент)- **цяло число n** в интервала [**3 … 1000**].
+The input consists of one element (argument) - **integer n** in the range [**3 … 1000**].
 
-### Изходни данни
+### Output data
 
-Да се отпечатат на конзолата текстови редове, изобразяващи **предупредителния знак STOP**, точно както в примерите.
+Print on the console text lines, representing **the STOP warning sign**, just as in the examples.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |3|<code>....\_\_\_\_\_\_\_....</code><br><code>...//\_\_\_\_\_\\\\...</code><br><code>..//\_\_\_\_\_\_\_\\\\..</code><br><code>.//\_\_\_\_\_\_\_\_\_\\\\.</code><br><code>//\_\_\_STOP!\_\_\_\\\\</code><br><code>\\\\\_\_\_\_\_\_\_\_\_\_\_//</code><br><code>.\\\\\_\_\_\_\_\_\_\_\_//.</code><br><code>..\\\\\_\_\_\_\_\_\_//..</code><br>|6|<code>.......\_\_\_\_\_\_\_\_\_\_\_\_\_.......</code><br><code>......//\_\_\_\_\_\_\_\_\_\_\_\\\\......</code><br><code>.....//\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.....</code><br><code>....//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\....</code><br><code>...//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\...</code><br><code>..//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\..</code><br><code>.//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.</code><br><code>//\_\_\_\_\_\_\_\_\_STOP!\_\_\_\_\_\_\_\_\_\\\\</code><br><code>\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//</code><br><code>.\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//.</code><br><code>..\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//..</code><br><code>...\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//...</code><br><code>....\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//....</code><br><code>.....\\\\_\_\_\_\_\_\_\_\_\_\_\_\_//.....</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |7|<code>........\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_........</code><br><code>.......//\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.......</code><br><code>......//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\......</code><br><code>.....//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.....</code><br><code>....//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\....</code><br><code>...//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\...</code><br><code>..//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\..</code><br><code>.//\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\\\.</code><br><code>//\_\_\_\_\_\_\_\_\_\_\_STOP!\_\_\_\_\_\_\_\_\_\_\_\\\\</code><br><code>\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//</code><br><code>.\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//.</code><br><code>..\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//..</code><br><code>...\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//...</code><br><code>....\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//....</code><br><code>.....\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//.....</code><br><code>......\\\\\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_//......</code><br>|
 
-### Насоки и подсказки
+### Hints and guidelines
 
-Както и при предходните задачи, **входните данни** ще бъдат прочетени само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 1000**]:
+As in the previous examples, **the input data** will be on one line, which will contains one **int** in the range [**3 … 1000**]:
 
 ![](/assets/chapter-6-2-images/03.Stop-01.png)
 
-Можем да **разделим** фигурата на **3 части** - горна, средна и долна. **Горната част** се състои от две подчасти - начален ред и редове, в които знака се разширява. **Началния ред** е съставен от начало **`.`**, среда **`_`** и край **`.`**. След разглеждане на примерите можем да кажем, че началото е с големина **`n + 1`** и е добре да отделим тази **стойност** в отделна **променлива**. Трябва да създадем и втора **променлива**, в която ще пазим **стойността** на **средата на началния ред** с големина **`2 * n + 1`**:
+We can **divide** the figure into **3 parts** - upper, middle and lower. **The upper part** consists of two subparts - a starting line and lines in which the sign widens. **The starting line** consists of beginning **`.`**, middle part **`_`** and an end **`.`**. After looking at the examples, we can see that the beginning has a size of **`n + 1`** and it's better to keep this **value** as a separate **variable**. We also have to create a second **variable**, in which we will keep **the value** of the **first row middle part** which has a size of **`2 * n + 1`**:
 
 ![](/assets/chapter-6-2-images/03.Stop-02.png)
 
-След като вече сме декларирали и инициализирали двете променливи, можем да отпечатаме на конзолата началния ред:
+Once we have declared and initialized the two variables, we can print the first row on the console:
 
 ![](/assets/chapter-6-2-images/03.Stop-03.png)
-		
-За да начертаем редовете, в които знака се **"разширява"**, трябва да създадем **цикъл**, който да се завърти **`n`** брой пъти. Структурата на един ред се състои от начало **`.`**, **`//`** + среда **`_`** + **`\\`** и край **`.`**. За да можем да използваме отново създадените **променливи**, трябва да намалим **`dots`** с 1 и **`underscores`** с 2, защото ние вече сме **отпечатали** първия ред, а точките и долните черти в горната част от фигурата на всеки ред **намаляват**:
+
+In order to draw the rows in which the sign is getting **"wider"**, we have to create a **loop**, that iterates **`n`** number of times. The row structure consists of a beginning **`.`**, **`//`** + middle part **`_`** + **`\\`** and an end **`.`**. In order to reuse the already created **variables**, we have to decrease **`dots`** by 1 and **`underscores`** by 2, because we've already **printed** the first row, and the dots and underscores in the top part of the figure are **decreasing** on each row:
 
 ![](/assets/chapter-6-2-images/03.Stop-04.png)
-		
-На всяка следваща итерация **началото** и **краят** намаляват с 1, а **средата** се увеличава с 2:
+
+At each subsequent iteration **the beginning** and **the end** decrease by 1, and **the middle part** increases by 2:
 
 ![](/assets/chapter-6-2-images/03.Stop-05.png)
-		
-**Средната част** от фигурата има начало **`//`** + **`_`**, среда **`STOP!`** и край **`_`** + **`\\`**. Броят на долните черти **`_`** е **`(underscores - 5) / 2`**:
+
+**The middle part** of the figure begins with **`//`** + **`_`**, middle part **`STOP!`** and an end **`_`** + **`\\`**. The count of the underscores **`_`** is **`(underscores - 5) / 2`**:
 
 ![](/assets/chapter-6-2-images/03.Stop-06.png)
-		
-**Долната част** на фигурата, в която знака се **смалява**, можем да направим като отново създадем **цикъл**, който да се завърти **`n`** брой пъти. Структурата на един ред е начало **`.`** + **`\\`**, среда **`_`** и край **`//`** + **`.`**. Броят на **точките** при първата итерация на цикъла трябва да е 0 и на всяка следваща да се **увеличава** с едно. Следователно можем да кажем, че броят на **точките в долната част от фигурата** е равен на **`i`**. За да работи нашата програма правилно, трябва на всяка итерация от **цикъла** да **намаляваме** броя на **`_`** с **2**:
+
+**The lower part** of the figure, in which the width of the sign **decreases**, can be done by creating a **loop**, that iterates **`n`** number of times. The structure of a row should have a beginning **`.`** + **`\\`**, middle part **`_`** and an end **`//`** + **`.`**. The number of the **dots** in the first loop iteration has to be 0 and on each subsequent have to **increase** by one. Therefore we can say that the **the dots in the lower part of the figure** are equal to **`i`**. To ensure proper operation of our program, on each **loop** iteration, we have to **decrease** the number of **`_`** by **2**:
 
 ![](/assets/chapter-6-2-images/03.Stop-07.png)
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1056#2](https://judge.softuni.org/Contests/Practice/Index/1056#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#2](https://judge.softuni.org/Contests/Practice/Index/1056#2).
 
 
-## Задача: стрелка
-Да се напише програма, която приема **цяло нечетно число n** и чертае **вертикална стрелка** с размери като в примерите по-долу.
+## Task: Arrow
 
-### Входни данни
+Write a program that receives from the console **an odd integer n** and draws **a vertical arrow** with size as in the examples below.
 
-Входът се състои от **цяло нечетно число n** (аргумент) в интервала [**3 … 79**].
+### Input data
 
-### Изходни данни
-Да се отпечата на конзолата вертикална стрелка, при която "**`#`**" (диез) очертава стрелката, а "**`.`**" - останалото.
+The input is **an odd integer n** (argument) within the range [**3 … 79**].
 
-### Примерен вход и изход
+### Output data
 
-|Вход|Изход|Вход|Изход|
+Print on the console a vertical arrow, in which "**`#`**" (hash sign) marks the outline of the arrow, and "**`.`**" - the rest.
+
+### Sample Input and Output
+
+|Input|Output|Input|Output|
 |----|----|----|----|
 |3|<code>.###.</code><br><code>.#.#.</code><br><code>##.##</code><br><code>.#.#.</code><br><code>..#..</code><br>|5|<code>..#####..</code><br><code>..#...#..</code><br><code>..#...#..</code><br><code>..#...#..</code><br><code>###...###</code><br><code>.#.....#.</code><br><code>..#...#..</code><br><code>...#.#...</code><br><code>....#....</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |9|<code>....#########....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>....#.......#....</code><br><code>#####.......#####</code><br><code>.#.............#.</code><br><code>..#...........#..</code><br><code>...#.........#...</code><br><code>....#.......#....</code><br><code>.....#.....#.....</code><br><code>......#...#......</code><br><code>.......#.#.......</code><br><code>........#........</code><br>|
 
-### Насоки и подсказки
+### Hints and guidelines
 
-От условието на задачата виждаме, че **входните данни** ще бъдат прочетени само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**3 … 79**]. По тази причина отново ще конвертираме прочетената стойност към тип **`int`**:
+From the explanation we see that **the input data** will be read from one input line only, which will contain **an integer** within the range [**3 … 1000**]. That's why we will convert the input value into **`int`** type:
 
 ![](/assets/chapter-6-2-images/04.Arrow-01.png)
-		
-Можем да разделим фигурата на **3 части** - горна, средна и долна. **Горната част** се състои от две подчасти - начален ред и тяло на стрелката. От примерите виждаме, че броят на **външните точки** в началния ред и в тялото на стрелката са **`(n - 1) / 2`**. Тази стойност можем да запишем в **променлива** **`outer_dots`**:
+
+We can divide the figure into **3 parts** - upper, middle and lower. **The upper part** consists of two subparts - first row and body of the arrow. We can see from the examples, that the count of  **the outer dots** in the first row and in the body of the arrow are equal to **`(n - 1) / 2`**. We can keep this value in **a variable** **`outer_dots`**:
 
 ![](/assets/chapter-6-2-images/04.Arrow-02.png)
-		
-Броят на **вътрешните точки** в тялото на стрелката е **`(n - 2)`**. Трябва да създадем **променлива** с име **`inner_dots`**, която  ще пази тази стойност:
+
+The count of **the inner dots** in the body of the arrow is equal to **`(n - 2)`**. We have to create **the variable** **`inner_dots`**, which will keep this value:
 
 ![](/assets/chapter-6-2-images/04.Arrow-03.png)
-		
-От примерите можем да видим структурата на началния ред. Трябва да използваме декларираните и инициализирани от нас **променливи** **`outer_dots`** и **`n`**, за да отпечатаме **началния ред**:
+
+We can see from the examples the structure of the first row. We can use the declared and initialized by us **variables** **`outer_dots`** and **`n`**, in order to print **the first row**:
 
 ![](/assets/chapter-6-2-images/04.Arrow-04.png)
 
-За да нарисуваме на конзолата **тялото на стрелката**, трябва да създадем **цикъл**, който да се повтори **`n - 2`** пъти:
+To draw **the body of the arrow**, we have to create **a loop**, which iterates **`n - 2`** number of times:
 
 ![](/assets/chapter-6-2-images/04.Arrow-05.png)
 
-**Средата на фигурата** е съставена от начало **`#`**, среда **`.`** и край **`#`**. Броят на **`#`** е равен на **`outer_dots`** и за това можем да използваме отново същата **променлива**:
+**The middle part of the figure** is made of a beginning **`#`**, middle part **`.`** and an end **`#`**. The count of **`#`** is equal to **`outer_dots`** and that is why we will use the same **variable**:
 
 ![](/assets/chapter-6-2-images/04.Arrow-06.png)
 
-За да начертаем **долната част на стрелката**, трябва да зададем нови стойности на двете **променливи** **`outer_dots`** и **`inner_dots`**.
+In order to draw **the lower part of the arrow**, we have to assign new values of the two **variables** **`outer_dots`** and **`inner_dots`**.
 
 ![](/assets/chapter-6-2-images/04.Arrow-07.png)
 
-При всяка итерация **`outer_dots`** се увеличава с 1, а **`inner_dots`** намалява с 2. Забелязваме, че тъй като на предпоследния ред стойността на **`inner_dots`** ще е 1 и при последвала итерация на цикъла тя ще стане **отрицателно число**. Тъй като оператора **`*`** не може да съедини символ 0 или отрицателен брой пъти в низ, няма да се изведе нищо на конзолата. Един вариант да избегнем това е да отпечатаме последния ред на фигурата отделно. Височината на долната част на стрелката е **`n - 1`**, следователно **цикълът**,  който ще отпечата всички редове без последния, трябва да се завърти **`n - 2`** пъти: 
+On each loop iteration **`outer_dots`** increases by 1, and **`inner_dots`** decreases by 2. We can notice, that on the penultimate row the **`inner_dots`** value will be 1 and on each subsequent loop iteration will be a **negative number**. Since the operator **`*`** cannot concatenate symbol 0 or negative number of times in a string, it won't print nothing on the console. In order to avoid that we can print the last row of the figure separately. The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**,  that will print all the rows, except the last one, have to iterate **`n - 2`** number of times:
 
 ![](/assets/chapter-6-2-images/04.Arrow-08.png)
-		
-**Последният ред** от нашата фигура е съставен от начало **`.`**, среда **`#`** и край **`.`**. Броят на **`.`** е равен на **`outer_dots`**:
+
+**The last row** of our figure is made of a beginning **`.`**, middle part **`#`** and an end **`.`**. The count of **`.`** is equal to **`outer_dots`**:
    
 ![](/assets/chapter-6-2-images/04.Arrow-09.png)
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1056#3](https://judge.softuni.org/Contests/Practice/Index/1056#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#3](https://judge.softuni.org/Contests/Practice/Index/1056#3).
 
 
-## Задача: брадва
+## Task: Axe
 
-Да се напише програма, която приема **цяло число n** и чертае брадва с размери, показани по-долу. Ширината на брадвата е **5 * n**  колони.
+Write a program, that receives **an integer n** and draws an axe with size as in the example below. The width of the axe is **5 * n** columns.
 
-### Входни данни
+### Input data
 
-Входът се състои от един елемент (аргумент) - **цяло число n** в интервала [**2..42**].
+The input consists one element (argument) - **integer n** within range [**2..42**].
 
-### Изходни данни
+### Output data
 
-Да се отпечата на конзолата **брадва**, точно както е в примерите.
+Print on the console **axe**, as in the examples.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |2|<code>------\*\*--</code><br><code>------\*-\*-</code><br><code>\*\*\*\*\*\*\*-\*-</code><br><code>------\*\*\*-</code><br>|5|<code>---------------\*\*--------</code><br><code>---------------\*-\*-------</code><br><code>---------------\*--\*------</code><br><code>---------------\*---\*-----</code><br><code>---------------\*----\*----</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*----\*----</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*----\*----</code><br><code>---------------\*----\*----</code><br><code>--------------\*\*\*\*\*\*\*\*---</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |8|<code>------------------------\*\*--------------</code><br><code>------------------------\*-\*-------------</code><br><code>------------------------\*--\*------------</code><br><code>------------------------\*---\*-----------</code><br><code>------------------------\*----\*----------</code><br><code>------------------------\*-----\*---------</code><br><code>------------------------\*------\*--------</code><br><code>------------------------\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*-------\*-------</code><br><code>------------------------\*-------\*-------</code><br><code>-----------------------\*---------\*------</code><br><code>----------------------\*-----------\*-----</code><br><code>---------------------\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*----</code><br>|
 
-### Насоки и подсказки
+### Hints and guidelines
 
-От условието на задачата виждаме, че **входните данни** ще бъдат прочетени само от един ред, който ще съдържа в себе си едно **цяло число** в интервала [**2 … 42**]. По тази причина ще използваме тип **`int`**. След което, за решението на задачата е нужно първо да изчислим големината на **тиретата от ляво**, **средните тирета**, **тиретата от дясно** и цялата дължина на фигурата:
+From the explanation we see that **the input data** will be read from one input line only, which will contain **an integer** within the range [**2 … 42**]. That's why we will use **`int`** type. After that, for the solution we need to calculate the **the dashes in the left**, **the dashes in the middle**, **the dashes in the right** and the whole figure length:
 
 ![](/assets/chapter-6-2-images/05.Axe-01.png)
 
-След като сме декларирали и инициализирали **променливите**, можем да започнем да изчертаваме фигурата като започнем с **горната част**. От примерите можем да разберем каква е структурата на **първия ред** и да създадем цикъл, който се повтаря **`n`** на брой пъти. При всяка итерация от цикъла **средните тирета** се увеличават с 1, а **тиретата отдясно** се намаляват с 1:
+Once we have declared and initialized the **variables**, we can draw the figure, starting with the **upper part**. We can see from the examples what the structure of **the first row** is and we can create a loop that iterates **`n`** number of times. At each loop iteration **the middle dashes** are increasing by 1, and the **right dashes** are decreasing by 1:
 
 ![](/assets/chapter-6-2-images/05.Axe-02.png)
 
-Сега следва да нарисуваме **дръжката на брадвата**. За да можем да използваме отново създадените **променливи** при чертането на дръжката на брадвата, трябва да намалим **средните тирета** с 1, а **тези отдясно и отляво** да увеличим с 1.
+Now we have to draw the **the handle of the axe**. In order to be able to use the newly created **variables**, when drawing the handle of the axe, we have to decrease **the middle dashes** by 1 and to increase **these on the right and left** by 1.
 
 ![](/assets/chapter-6-2-images/05.Axe-03.png)
 
-**Дръжката на брадвата** можем да нарисуваме, като завъртим цикъл, който се повтаря **`n / 2`** пъти. Можем да отделим тази стойност в отделна **променлива**, като внимаваме, че ако като входни данни имаме **нечетно число**, при деление на 2 резултатът ще е **реално число** с цяла и дробна част. Тъй като в този случай ни трябва **само цялата част** (от условието на задачата виждаме, че при вход **5** височината на дръжката на брадвата е **2**), можем да използваме метода **`math.trunc(…)`**, с който да запазим само нейната стойност в новата ни променлива **`axe_height`**. От примерите можем да разберем, каква е структурата на дръжката:
+**The handle of the axe** we can draw, by iterating a loop that repeats **`n / 2`** number of times. We can set this value into separate **variable**, considering that when dividing **odd number** inputs by 2 the result will be **a real number** with a whole and fractional part. Since in this case we need **only the whole part** (from the example condition we see that at input **5** the height of the axe handle is **2**), we can use the **`math.trunc(…)`** method, to save only its value in our new variable **`axe_height`**. We get the structure of the handle from the examples given:
 
 ![](/assets/chapter-6-2-images/05.Axe-04.png)
 
-**Долната част** на фигурата, трябва да разделим на две подчасти - **глава на брадвата** и **последния ред от фигурата**. **Главата на брадвата** ще отпечатаме на конзолата, като направим цикъл, който да се повтаря **`axe_height - 1`** пъти. На всяка итерация **тиретата отляво** и **тиретата отдясно** намаляват с 1, а **средните тирета** се увеличават с 2:
+**The lower part** of the figure, should be divided into two subparts  - the **head of the axe** and the **last row of the figure**. We will print on the console **the head of the axe**, by making a self iterating loop **`axe_height - 1`** number of times. On each iteration **the left dashes** and **the right dashes** decrease by 1, and **the middle dashes** increase by 2:
 
 ![](/assets/chapter-6-2-images/05.Axe-05.png)
 
-За **последния ред** от фигурата, можем отново да използваме трите, вече декларирани и инициализирани променливи **`left_dashes`**, **`middle_dashes`**, **`right_dashes`**.
+For **the last row** of the figure, we can use again, the already declared variables **`left_dashes`**, **`middle_dashes`**, **`right_dashes`**.
 
 ![](/assets/chapter-6-2-images/05.Axe-06.png)
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1056#4](https://judge.softuni.org/Contests/Practice/Index/1056#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#4](https://judge.softuni.org/Contests/Practice/Index/1056#4).

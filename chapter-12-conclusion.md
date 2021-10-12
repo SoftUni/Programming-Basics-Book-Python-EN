@@ -1,103 +1,102 @@
-# Заключение
+# Conclusion
 
-Ако сте **прочели цялата** книга и сте решили всички задачи от упражненията и сте стигнали до настоящото заключение, заслужавате **поздравления**! Вече сте направили **първата стъпка** от изучаването на **професията на програмиста**, но имате още доста **дълъг път** докато станете **истински добри** и превърнете **писането на софтуер** в своя **професия**.
+If you have **read the entire** book and you've solved all the problems from the exercises and reached the present conclusion, **congratulations**! You've already made the **first step** in learning the **profession of a programmer**, but there is a **long way** to go until you become **really good** and make **software writing** your **profession**.
 
-Спомнете си за **[четирите основни групи умения](chapter-00-preface.md#become-a-developer)**, които всеки програмист трябва да притежава, за да работи своята професия:
- - Умение #1 – **писане на програмен код** (20% от уменията на програмиста) - покриват се до голяма степен от тази книга, но трябва да изучите още базови структури от данни, класове, обекти, функции, стрингове и други елементи от писането на код.
- - Умение #2 – **алгоритмично мислене** (30% от уменията на програмиста) - покриват се частично от тази книга и се развиват най-вече с решаване на голямо количество разнообразни алгоритмични задачи.
- - Умение #3 – **фундаментални знания за професията** (25% от уменията на програмиста) - усвояват се за няколко години с комбинация от учене и практикуване (четене на книги, гледане на видео уроци, посещаване на курсове и най-вече писане на разнообразни проекти от различни технологични области).
- - Умение #4 - **езици за програмиране и софтуерни технологии** (25% от уменията на програмиста) - усвояват се продължително време, с много практика, здраво четене и писане на проекти. Тези знания и умения бързо остаряват и трябва непрестанно да се актуализират. Добрите програмисти учат всеки ден нови технологии.
+Remember the **[four main groups of skills](chapter-00-preface.md#become-a-developer)**, that each programmer must have so we can work in the industry:
+ - Skill #1 – **writing the program code** (20% of programmer's skills) – covered to a large degree by this book, but you must learn additional basic data structures, classes, functions, strings, and other elements of code writing.
+ - Skill #2 – **algorithmic thinking** (30% of programmer's skills) – covered partially by this book and developed mostly by solving a large amount of diverse algorithmic problems.
+ - Skill #3 – a **fundamental understanding of the profession** (25% of programmer's skills) – acquired for a few years in combination with learning and practice (reading books, watching video lessons, attending courses, and mostly by writing diverse projects in various technological areas).
+ - Skill #4 - **programming languages and software technologies** 25% of programmer's skills) – acquired in a long period of time, by a lot of practice, consistent reading, and writing projects. Such knowledge and skills quickly get outdated and need to be updated frequently. Good programmers are involved in studying new technologies every day.
+
+## This book is only the first step!
+
+**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **Python** language on a **basic level**. You are about to start **in-depth** studying of programming, and develop **your algorithmic thinking**, and then add **technological knowledge** regarding the Python language, Django ecosystem, front-end technologies (HTML, CSS, Angular, React, AJAX, HTML5) and many other concepts, technologies and instruments for software development.
+
+If you were **not able** to solve all problems or a large part of them, go back and solve them! Remember that **becoming a programmer** requires **a lot of work and effort**. This profession is not for lazy people. There is no way to learn it unless **you seriously practice** programming for years!
+
+As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code. We recommend you, besides reading the book, to enroll in the **[practical course "Programming Basics" at SoftUni](https://softuni.bg/apply)**, as an online format of training.
 
 
-## Тази книга е само първа стъпка!
+## What to do after reading this book?
 
-**Настоящата** книга по основи на програмирането е само **първа стъпка** от изграждането на уменията на един програмист. Ако сте успели да решите **всички задачи**, това означава, че сте **получили ценни знания** за принципите на програмиране с езика **Python** на **базисно ниво**. Тепърва ви предстои да изучавате **по-задълбочено** програмирането, както и да развивате **алгоритмичното си мислене**, след което да добавите и **технологични знания** за езика Python и Django екосистемата, front-end уеб технологиите (HTML, CSS, Angular, React, AJAX, HTML5) и още редица концепции, технологии и инструменти за разработка на софтуер.
+This book **gives you solid grounds**, thanks to which it will be easy for you to continue developing as a programmer. If you wonder how to continue your development, you have the following possibilities:
+ - to study for a **software engineer at SoftUni** and make programming your profession.
+ - to continue developing as a programmer **on your own**, for example through self-training or via online lessons.
+ - to **stay at a coder level**, without going more seriously into programming.
 
-Ако **не сте успели** да решите всички задачи или голяма част от тях, върнете се и ги решете! Помнете, че за да **станете програмисти** се изискват **много труд и усилия**. Тази професия не е за мързеливци. Без **да практикувате сериозно** програмирането години наред, няма как да го научите!
+### Study software engineering in SoftUni
 
-Както вече обяснихме, първото и най-базово умение на програмиста е **да се научи да пише код** с лекота и удоволствие. Именно това е мисията на тази книга: да ви научи да кодите. Препоръчваме ви освен книгата, да запишете и **[практическия курс "Основи на програмирането" в СофтУни](https://softuni.bg/apply)**, който се предлага напълно безплатно в присъствена или онлайн форма на обучение.
+The first, and respectively recommended option to master on a high level the profession of a "**software engineer**", is to start your training via the **end-to-end SoftUni program for software engineers**: [https://softuni.bg/curriculum](https://softuni.bg/curriculum). The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company.
 
+#### Training duration in SoftUni
 
-## Накъде да продължим след тази книга?
+The training in SoftUni has a duration of **2-3 years** (depending on the profession and the selected specializations) and during that period it is normal to reach a good starting level (junior developer), but this is **only if you study seriously** and write code intensely every day. Upon having good grades, a typical student **starts a job around the middle of the training (after around 1.5 years)**. Thanks to the well-developed partners' network, **the career center of SoftUni offers work** in a software or IT company to all SoftUni students who have very good or excellent grades. **Starting a job** in the major in case of having good grades at SoftUni, combined with a willingness to work and reasonable expectations towards the employers, is almost guaranteed.
 
-С тази книга сте **поставили стабилни основи**, благодарение на които ще ви е лесно да продължите да се развивате като програмисти. Ако се чудите как да продължите развитието си, помислете за следните няколко възможности:
- - Да учите за **софтуерен инженер в СофтУни** и да направите програмирането своя професия.
- - Да продължите развитието си като програмист **по свой собствен път**, например чрез самообучение или с някакви онлайн уроци.
- - Да си **останете на ниво кодер**, без да се занимавате с програмиране по-сериозно.
+#### It takes at least a year of intense code writing to become a programmer
 
-### Професия "софтуерен инженер" в СофтУни
+Keep in mind that **to become a programmer takes a lot of effort**, writing tens of thousands of lines of code, and solving hundreds, even thousands of practical problems, and this takes years! If someone offers you "**an easier program**" and promises you to become a programmer and start working within 3-4 months, then either they are **lying**, to you, or they will give you such a low level, that **companies won't even take you as a trainee**, even if you pay to the company that is wasting its time with you. There are exceptions, of course, for example, if you are not starting from scratch, or if you have extremely well-developed engineering thinking, or if you apply for a very low position (for example technical support), but in general, **you cannot become a programmer if you haven't spent at least 1 year of intense learning and code writing!**!
 
-Първата, и съответно препоръчителната, възможност да овладеете цялостно и на ниво професията "**софтуерен инженер**", е да започнете своето обучение по **цялостната програма на СофтУни за софтуерни инженери**: [https://softuni.bg/curriculum](https://softuni.bg/curriculum). Учебният план на СофтУни е внимателно разработен от **д-р Светлин Наков и неговия екип**, за да ви поднесе последователно и с градираща сложност всички умения, които един софтуерен инженер трябва да притежава, за **да стартира кариера като разработчик на софтуер** в ИТ фирма.
+#### Entrance exam in SoftUni
 
-#### Продължителност на обучението в СофтУни
+**To enroll at SoftUni** you need to attend an **entrance exam** in "Programming Basics" on the material from this book. If you easily solve the problems in this book, then you are ready for the exam. Also, pay attention to the chapters on **preparation for the practical exam in programming**. They will give you a good idea of the level of difficulty of the exam and the types of tasks that you need to learn to solve.
 
-Обучението в СофтУни е с продължителност **2-3 години** (в зависимост от професията и избраните специализации) и за това време е нормално да достигнете добро начално ниво (junior developer), но **само ако учите сериозно** и здраво пишете код всеки ден. При добър успех един типичен студент **започва работа на средата на обучението си (след около 1.5 години)**. Благодарение на добре развита партньорска мрежа **кариерният център на СофтУни предлага работа** в софтуерна или ИТ фирма на всички студенти в СофтУни, които имат много добър или отличен успех. **Започването на работа** по специалността при силен успех в СофтУни, съчетан с желание за работа и разумни очаквания спрямо работодателя, е почти гарантирано.
+If the tasks from the book and the preparation examples are hard for you, then you **need more preparation**. Enroll for the [free course in "Programming Basics"](https://softuni.bg/apply) or go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease**, without helping yourselves with the guidelines and the sample solutions.
 
-#### Програмист се става за най-малко година здраво писане на код
+#### SoftUni curriculum for Software Engineers
 
-Предупреждаваме ви, че **програмист се става с много усилия**, с писане на десетки хиляди редове код и с решаване на стотици, дори хиляди практически задачи, и отнема години! Ако някой ви предлага "**по-лека програма**" и ви обещава да станете програмисти и да започнете работа за 3-4 месеца, значи или ви **лъже**, или ще ви даде толкова ниско ниво, че **няма да ви вземат даже за стажант**, дори и да си плащате на фирмата, която си губи времето с вас. Има и изключения, разбира се, например ако не започвате от нулата или ако имате екстремно развито инженерно мислене или ако кандидатствате за много ниска позиция (например техническа поддръжка), но като цяло **програмист за по-малко от 1 година здраво учене и писане на код не се става**!
+What follows after the entrance exam is a **serious curriculum** in the SoftUni program for training software engineers. It is formed as a sequence of **modules in several courses** in programming and software technologies, fully directed towards gaining fundamental knowledge in software development and acquiring **practical skills for working** as a programmer with the most contemporary software technologies. Students are given a choice between **several professions** and specializations focused on C#, Java, JavaScript, PHP and other languages and technologies. Each profession is trained in several modules with 4 months duration, and each module consists of 2 or 3 courses. The classes are divided into **theoretical preparation** (30%) and **practical exercises, projects** (70%), and each course ends with a practical exam or practical academic project.
 
-#### Приемен изпит в СофтУни
+#### How many hours per day does the training take?
 
-За **да се запишете в СофтУни** е нужно да се явите на **приемен изпит** по "Основи на програмирането", върху материала от тази книга. Ако решавате с лекота задачите от упражненията в книгата, значи сте готови за изпита. Обърнете внимание и на няколкото глави за **подготовка за практически изпит по програмиране**. Те ще ви дадат добра представа за трудността на изпита и за типовете задачи, които трябва да се научите да решавате.
+The training for software engineers at SoftUni is a **very serious occupation** and you need to spend **at least 4-5 hours every day**, preferably your entire attention and time. Combining **working and training** is not always successful, but if you work something easy and you have a lot of spare time, it is a good option. SoftUni is an appropriate option for **school students, university students**, and **people who work**, but it is best if you assign your entire time to your training and mastering the profession. It will not work if you spend 2 or 4 hours a week on it!
 
-Ако задачите от книгата и подготвителните примерни изпити ви затрудняват, значи имате **нужда от още подготовка**. Запишете се на [безплатния курс по "Основи на програмирането"](https://softuni.bg/apply) или преминете внимателно през книгата още веднъж отначало, без да пропускате да решавате **задачите от всяка една учебна тема**! Трябва да се научите **да ги решавате с лекота**, без да си помагате с насоките и примерните решения.
+The forms of training at SoftUni are **on-site** (the better choice) and **online** (if you don't have another option). In both forms of training, to learn the program in the curriculum (that is required by software companies for starting a job), you need **a lot of learning**. You just need to **find the time for it!** Reason #1 for having a hard time on the road to the profession in SoftUni is not spending enough time for the training: as a minimum, you need to spend at least 20-30 hours a week.
 
-#### Учебен план за софтуерни инженери
+#### SoftUni for people who work and study
 
-След изпита ви очаква **сериозен учебен план** по програмата на СофтУни за обучение на софтуерни инженери. Той е поредица от **модули с по няколко курса** по програмиране и софтуерни технологии, изцяло насочени към усвояване на фундаментални познания от разработката на софтуер и придобиване на **практически умения за работа** като програмист с най-съвременните софтуерни технологии. На студентите се предоставя избор измежду **няколко професии** и специализации с фокус върху C#, Java, JavaScript, PHP и други езици и технологии. Всяка професия се изучава в няколко модула с продължителност от 4 месеца и всеки модул съдържа 2 или 3 курса. Учебните занятия са разделени на **теоретична подготовка** (30%) и **практически упражнения, проекти и занимания** (70%), а всеки курс завършва с практически изпит или практически курсов проект.
+We recommend to everyone who gets **an excellent score at the SoftUni entrance exam** and is passionate about making programming their profession, to leave the rest of their commitments aside and **spend their entire time** on learning the profession of a "software engineer" and start making a living through it.
 
-#### Колко часа на ден отнема обучението?
-
-Обучението за софтуерен инженер в СофтУни е **много сериозно занимание** и трябва да му отделите като **минимум поне по 4-5 часа всеки ден**, а за препоръчване е да посветите цялото си време на него. Съчетанието на **работа с учене** невинаги е успешно, но ако работите нещо леко с много свободно време, е добър вариант. СофтУни е подходяща възможност за **ученици**, **студенти** и **работещи други професии**, но най-добре е да отделите цялото си време за вашето образование и овладяването на професията. Не става с 2 или 4 часа на седмица!
-
-Формите на обучение в СофтУни са **присъствена** (по-добър избор) и **онлайн** (ако нямате друга възможност). И в двете форми, за да успеете да научите предвиденото в учебния план (което се изисква от софтуерните фирми за започване на работа), е необходимо **здраво учене**. Просто **трябва да намерите време**! Причина #1 за буксуване по пътя към професията в СофтУни е неотделянето на достатъчно време за обучението: като минимум поне 20-30 часа на седмица.
-
-#### СофтУни за работещи и учащи другаде
-
-На всички, които изкарат **отличен резултат на приемния изпит в СофтУни** и се запалят истински по програмирането и мечтаят да го направят своя професия, препоръчваме да се освободят от останалите си ангажименти и **да отделят цялото си време**, за да научат професията "софтуерен инженер" и да започнат да си изкарват хляба с нея.
-
- - За **работещите** това означава да си напуснат работата (и да вземат заем или да си свият финансовите разходи, за да изкарат с по-нисък доход 1-2 години до започване на работа по новата професия).
- - За **учащите** в традиционен университет това означава да си изместят силно фокуса към програмирането и практическите курсове в СофтУни, като намалят до минимум времето, което отделят за традиционния университет.
- - За **безработните** това е отличен шанс да вложат цялото си време, сили и енергия, за да придобият една перспективна, добре платена и много търсена професия, която ще им осигури високо качество на живот и дългосрочен просперитет.
- - За **учениците** от средните училища и гимназиите това означава **да си сложат приоритет** какво е по-важно за тяхното развитие: да учат практическо програмиране в СофтУни, което ще им даде професия и работа или да отделят цялото си внимание на традиционната образователна система или да съчетават умело и двете начинания. За съжаление, често пъти приоритетите се задават от родителите и за тези случаи нямаме решение.
+ - For people who **work** this means quitting their job (and getting a loan or decreasing their expenses, to spend with a lower income for 1-2 years until they start working in the new profession).
+ - For people who **study** in a traditional university, this means to move significantly their focus towards programming and the practical courses in SoftUni, by decreasing the time spent in the traditional university.
+ - For **unemployed** people, this is an excellent chance to assign their entire time, power, and energy to acquire a new, perspective, well paid and highly sought profession, that will give them good life quality and long-term prosperity.
+ - For **students** in secondary schools and high schools, this means **giving a priority** to what is more important in their development: studying practical programming in SoftUni, which will give them a profession and a job, or giving their full attention to the traditional education system, or combining smartly both undertakings. Unfortunately, often priorities are determined by parents, and we don't have a solution for these cases.
  
-На всички, които **не могат да изкарат отличен резултат на приемния изпит в СофтУни** препоръчваме да наблегнат върху по-доброто изучаване, разбиране и най-вече практикуване на учебния материал от настоящата книга. Ако не се справяте с лекота със задачите от тази книга, няма да се справяте и за напред при изучаването на програмирането и разработката на софтуер. 
+We recommend to all who **cannot get an excellent score at the SoftUni entrance exam** to spend more time on better learning, understanding, and most of all, practicing the material studied in the present book. If you cannot easily solve the problems in this book, you will not be able to cope with programming and software development in the future.
 
-**Не пропускайте основите на програмирането!** В никакъв случай не трябва да взимате смели решения да напускате работата си или традиционния университет и да кроите велики планове за бъдещата си професия на софтуерен инженер, ако нямате отличен резултат на входния изпит в СофтУни! Той е мерило доколко ви се отдава програмирането, доколко ви харесва и доколко наистина сте мотивирани да го учите сериозно и да го работите след това години наред всеки ден с желание и наслада.
+**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession as a software engineer, if you don't have an excellent grade at the SoftUni entrance exam! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously and work on this for years every day with joy and pleasure.
 
-### Професия "софтуерен инженер" по ваш собствен път
+### Study Software Engineering on your own
 
-Другата възможност за развитие след тази книга е **да продължите да изучавате програмирането извън СофтУни**. Можете да запишете или да следите **видео курсове**, които навлизат в по-голяма дълбочина в програмирането с **Python** или други езици и платформи за разработка. Можете **да четете книги** за програмиране и софтуерни технологии, да следвате **онлайн ръководства (tutorials)** и други онлайн ресурси - има безкрайно много безплатни материали в Интернет. Запомнете, обаче, че най-важното по пътя към професията на програмиста е **да правите практически проекти**!
+Another possibility to develop after this book is to **continue studying programming outside of SoftUni**. You can enroll or subscribe to **video training**, that goes into more details in programming with **Python** or other languages and development platforms. You can **read books** on programming and software technologies, follow **online tutorials** and other online resources – there are plenty of free materials on the Internet. However, keep in mind that the most important thing about the profession of a programmer is **to do practical projects**!
 
-**Без писане на много, много код и здраво практикуване, не се става програмист**. Отделете си **достатъчно време**. Програмист не се става за месец или два. В Интернет ще намерите **голям набор от свободни ресурси** като книги, учебници, видео уроци, онлайн и присъствени курсове за програмиране и разработка на софтуер. Обаче, ще трябва да инвестирате **поне година-две**, за да добиете начално ниво като за започване на работа.
+**You cannot become a programmer without a lot of code writing and intense practice.**. Allocate **sufficient time** to it. You cannot become a programmer for a month or two. On the Internet, you will find a wide variety of **free resources** such as books, manuals, video lessons, online and on-site courses on programming and software development. However, you need to invest **at least a year or two**, to acquire a foundation level, needed for starting a job.
 
-След като понапреднете, намерете начин или да започнете **стаж в някоя фирма** (което ще е почти невъзможно без поне година здраво писане на код преди това) или да си измислите **ваш собствен практически проект**, по който да поработите няколко месеца, даже година, за да се учите чрез проба-грешка.
+After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your practical project**, on which you need to spend a few months, even a year, to learn based on the trial-and-error principle.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Запомнете, че има много начини да станете програмисти, но всички те имат обща пресечна точка: <b>здраво писане на код и практика години наред</b>!</td>
+<td>Keep in mind that there are many ways to become a programmer, but they all have something in common:   <b>code writing and years of practice!</b>!</td>
 </tr></table>
 
 
-## Онлайн общности за стартиращите в програмирането
+## Online communities for beginners in Programming
 
-Независимо по кой път сте поели, ако ще се занимавате сериозно с програмиране, е препоръчително да следите специализирани **онлайн форуми, дискусионни групи и общности**, от които можете да получите помощ от свои колеги и да следите новостите от софтуерната индустрия.
+Regardless of the path you have chosen, if you are seriously involved in programming, we recommend subscribing to specialized **online forums, discussion groups, and communities**, from which you can get assistance from your colleagues and track the novelties in the software industry.
 
-Ако ще учите програмиране сериозно, **обградете се с хора, които се занимават с програмиране** сериозно. Присъединете се към **общности от софтуерни разработчици**, ходете по софтуерни конференции, ходете на събития за програмисти, намерете си приятели, с които да си говорите за програмиране и да си обсъждате проблемите и бъговете, намерете среда, която да ви помага. В София и в големите градове има безплатни събития за програмисти, по няколко на седмица. В по-малките градове имате Интернет и достъп до цялата онлайн общност.
+If you will study programming seriously, **surround yourselves with people who are involved in programming** seriously. Join **communities of software developers**, attend software conferences, go to events for programmers, find friends with whom you can talk about programming and discuss problems and bugs, find an environment that can help you. In most large towns there are free events for programmers, a few times a week. In smaller localities, you have the Internet and access to the entire online community.
 
-Ето и някои препоръчителни **ресурси**, които ще са от полза за развитието ви като програмист:
-* https://softuni.bg - официален **уеб сайт на СофтУни**. В него ще намерите безплатни (и не само) курсове, семинари, видео уроци и обучения по програмиране, софтуерни технологии и дигитални компетенции.
-* https://softuni.bg/forum - официален **форум на СофтУни**. Форумът за дискусии на СофтУни е изключително позитивен и изпълнен с желаещи да помагат колеги. Ако зададете смислен въпрос, свързан с програмирането и изучаваните в СофтУни технологии, почти сигурно ще получите смислен отговор до минути. Опитайте, нищо не губите.
-* https://www.facebook.com/SoftwareUniversity/ - официална **Facebook страница на СофтУни**. От нея ще научавате за нови курсове, семинари и събития, свързани с програмирането и разработката на софтуер.
-* https://introprogramming.info - официален уеб сайт на **книгите "Въведение в програмирането"** със **C#** и **Java** от д-р Светлин Наков и колектив. Книгите разглеждат в дълбочина основите на програмирането, базовите структури от данни и алгоритми, ООП и други базови умения и са отлично продължение за четене след настоящата книга. Обаче **освен четене, трябва и здраво писане**, не забравяйте това!
-* https://stackoverflow.com - **Stack Overflow** е един от **най-големите** в световен мащаб дискусионни форуми за програмисти, в който ще получите помощ за всеки възможен въпрос от света на програмирането. Ако владеете английски език, търсете в StackOverflow и задавайте въпросите си там.
-* https://fb.com/groups/bg.developers - групата "**Програмиране България @ Facebook**" е една от най-големите онлайн общности за програмисти и дискусии по темите на софтуерната разработка на български език във Facebook.
-* https://www.meetup.com/find/tech/ - потърсете **технологични срещи (tech meetups)** около вашия град и се включете в общностите, които харесвате. Повечето технологични срещи са безплатни и новобранци са добре дошли.
-* Ако се интересувате от ИТ събития, технологични конференции, обучения и стажове, разгледайте и по-големите **сайтове за ИТ събития** като https://techevents.bg, https://dev.bg и https://iteventz.bg.
+Here are some recommended **resources**, that will be useful for your development as a programmer:
+* https://softuni.bg - official **website of SoftUni**. In it, you will find free (and not only) courses, seminars, video tutorials, and training in programming, software technologies, and digital competencies.
+* https://softuni.bg/forum - official **Forum of Softuni**. The Forum is very positive and filled with ready to help colleagues. If you ask logical questions connected with programming and studying in SoftUni technologies, it's mostly certain that you will get an answer almost immediately. Ask, you don't lose anything.
+* https://www.facebook.com/SoftwareUniversity/ - official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
+* https://introprogramming.info - official website of the **books "Programming Basics"** with **C#** and **Java** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
+* https://stackoverflow.com - **Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
+* https://fb.com/groups/bg.developers - **"Programing Bulgaria @ Facebook"** group is one of the biggest Bulgarian communities for programmers related to software development on Facebook.
+* https://www.meetup.com/find/tech/ - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
+* If you are interested in IT events, tech conferences, studying, and interns, look inside the **sites for IT events** such as https://techevents.bg, https://dev.bg and https://iteventz.bg.
 
 
-## Успех на всички!
+## Good Luck to All of You!
 
-От името на целия авторски колектив ви **пожелаваме неспирни успехи в професията и в живота**! Ще сме невероятно щастливи, ако с наша помощ сте се **запалили по програмирането** и сме ви вдъхновили да поемете смело към професията "**софтуерен инженер**", която ще ви донесе добра работа, която да работите с удоволствие, качествен живот и просперитет, като и страхотни перспективи за развитие и възможности да правите значими проекти с вдъхновение и страст.
+On behalf of the entire authors' team, we **wish you endless success in the profession and your life**! We will be really happy if we have helped you get **passionate about programming** and we have inspired you to go bravely towards becoming a "software engineer", which will bring you a good job that you will work with pleasure, give you a quality life, and prosperity, as well as amazing perspectives for development and possibilities for making impressive projects with inspiration and passion.
 
-<p align="right"><i>София, 19 октомври 2018 г.</i></p>
+<p align="right"><i>Sofia, October 19, 2018</i></p>

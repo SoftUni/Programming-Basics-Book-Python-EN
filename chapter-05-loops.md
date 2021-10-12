@@ -1,91 +1,91 @@
-# Глава 5.1. Повторения (цикли)
+# Chapter 5.1. Loops (Repetitions)
 
-В настоящата глава ще се запознаем с конструкциите за **повторение на група команди**, известни в програмирането с понятието "**цикли**". Ще напишем няколко цикъла с използване на оператора **`for`** в класическата му форма. Накрая ще решим няколко практически задачи, изискващи повторение на поредица от действия, като използваме цикли.
+In this chapter we will get familiar with how to **repeat blocks of commands**, known in programming as "**loops**". We will write a number of loops using the **`for`** operator in its classic form. Finally, we will solve some practical problems, which require repeating series of actions, using loops.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: 
+  Watch video-tutorial about this chapter here: 
   https://www.youtube.com/watch?v=pvTMTGsooMk.
 </div>
 
 
-## Повторения на блокове код (for цикъл)
+## Repeating blocks of code (for loop)
 
-В програмирането често пъти се налага **да изпълним блок с команди няколко пъти**. За целта се използват т.нар. **цикли**. Нека разгледаме един пример за **`for` цикъл**, който преминава последователно през числата от 1 до 10 и ги отпечатва:
+In programming it is often required **to execute a block with commands multiple times**. For this reason we are using **loops**. We can see an example for **`for` loop**, which goes through the numbers from 1 to 10 and prints them:
 
 ![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
-Цикълът започва с **оператора `for`** и преминава през всички стойности за дадена променлива в даден интервал, например всички числа от 1 до 10 включително (без да включва 11), и за всяка стойност изпълнява поредица от команди.
+The loop starts with the **operator `for`** and passes through all values of particular variable in given range, for example all numbers from 1 to 10 included (without 11) and for each value it performs series of commands.
 
-В декларацията на цикъла може да се зададе **начална стойност** и **крайна стойност**, като крайната стойност не е включена в диапазона. **Тялото на цикъла** представлява блок с една или няколко команди. На фигурата по-долу е показана структурата на един **`for` цикъл**:
+Upon declaring the loop, you can specify a **start value** and **end value**, while the end value is not included in the range. **The body of the loop** is a block with at least one commands. THe figure below shows the structure of a **`for` loop**:
 
 ![](/assets/chapter-5-1-images/00.For-loop-02.png)
 
-В повечето случаи един **`for` цикъл** се завърта от **`1`** до **`n`** (например от 1 до 10). Целта на цикъла е да се премине последователно през числата 1, 2, 3, …, n и за всяко от тях да се изпълни някакво действие. В примера по-горе променливата **`i`** приема стойности от 1 до 10 и в тялото на цикъла се отпечатва текущата стойност. Цикълът се повтаря 10 пъти и всяко от тези повторения се нарича "**итерация**".
+In most cases a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perfomrm a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
 
-### Пример: числа от 1 до 100
+### Problem: The numbers from 1 to 100
 
-Да се напише програма, която **печата числата от 1 до 100**. Програмата не приема вход и отпечатва числата от 1 до 100 едно след друго, по едно на ред.
+Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Можем да решим задачата с **`for` цикъл** , с който преминаваме с променливата **`i`** през числата от 1 до 100 и ги печатаме в тялото на цикъла:
+We can solve the problem using a **`for` loop** , via which we will pass through the numbers from 1 to 100 using the **`i`** variable, and print the numbers in the body of the loop:
 
 ![](/assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
-**Стартираме** програмата с [**Ctrl+Shift+F10**] или с десен бутон - **Run**, и я **тестваме**:
+**Start** the program with [**Ctrl+Shift+F10**] or with right click - **Run** and **test it**:
 
 ![](/assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#0](https://judge.softuni.org/Contests/Practice/Index/1053#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#0](https://judge.softuni.org/Contests/Practice/Index/1053#0).
 
-Трябва да получите **100 точки** (напълно коректно решение).
+You should get **100 points** (fully accurate solution).
 
-### Пример: числа до 1000, завършващи на 7
+### Problem: Numbers to 1000, ending in 7
 
-Да се напише програма, която намира всички числа в интервала [**1 … 1000**], които завършват на 7. 
+Write a program that finds all numbers in range [**1 … 1000**], that end in 7. 
 
-#### Насоки и подсказки
+####  Hints and guidelines
 
-Задачата можем да решим като комбинираме **`for` цикъл** за преминаваме през числата от 1 до 1000 и **проверка** за всяко число дали завършва на 7. Има и други решения, разбира се, но нека решим задачата чрез **завъртане на цикъл + проверка**:
+We can solve the problem by combining a **`for` loop** for passing through the numbers between 1 and 1000 and a condition to **check** if each of the numbers end in 7. Of course, there are other solutions, but let's solve the problem using **loop + condition**:
 
 ![](/assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#1](https://judge.softuni.org/Contests/Practice/Index/1053#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#1](https://judge.softuni.org/Contests/Practice/Index/1053#1).
 
 
-### Пример: всички латински букви
+### Problem: All Latin letters
 
-Да се напише програма, която отпечатва буквите от латинската азбука: **a, b, c, …, z**.
+Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Полезно е да се знае, че **`for` циклите** не работят само с числа. Може да решим задачата като завъртим **`for` цикъл**, който преминава последователно през всички букви от латинската азбука:
+It is good to know that the **`for` loops** don't work only with numbers. We can solve the task by running a **`for` loop**, that goes sequentially through all letters in the Latin alphabet:
 
 ![](/assets/chapter-5-1-images/03.Latin-letters-01.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#2](https://judge.softuni.org/Contests/Practice/Index/1053#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#2](https://judge.softuni.org/Contests/Practice/Index/1053#2).
 
 
-### Пример: сумиране на числа
+### Problem: Sum of numbers
 
-Да се напише програма, която **въвежда `n` цели числа и ги сумира**.
+Write a program that **reads `n` integers and finds their sum**.
 
-* От първия ред на входа се въвежда броят числа **`n`**.
-* От следващите **`n`** реда се въвежда по едно число.
-* Числата се сумират и накрая се отпечатва резултатът.
+* The first line of the input holds the number of integers **`n`**.
+* Each of the following **`n`** holds an integer.
+* Sum up the numbers and print the result.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>10<br>20 | 30 |
 | 3<br>-10<br>-20<br>-30 | -60 |
@@ -93,30 +93,30 @@
 | 1<br>999 | 999 | 
 | 0 | 0 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Можем да решим задачата за сумиране на числа по следния начин:
- - Четем входното число **`n`** от конзолата.
- - Започваме първоначално със сума **`sum = 0`**.
- - Въртим цикъл от 0 до **`n`**. На всяка стъпка от цикъла четем число **`num`** и го добавяме към сумата **`sum`**.
- - Накрая отпечатваме получената сума **`sum`**.
+We can solve the problem with summing up numbers in the following way:
+ - We read the input number **`n`**.
+ - We initially start with a sum **`sum = 0`**.
+ - We run a loop from 0 to **`n`**. On each step of the loop, we read the number **`num`** and add it to the **`sum`**.
+ - Finally, we print the calculated amount **`sum`**.
  
-Ето и сорс кода на решението:
+Here is the source code for the solution:
 
 ![](/assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#3](https://judge.softuni.org/Contests/Practice/Index/1053#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#3](https://judge.softuni.org/Contests/Practice/Index/1053#3).
 
 
-### Пример: най-голямо число
+### Problem: Max number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-голямото** измежду тях. На първия ред на входа се въвежда броят числа **n**. След това се въвеждат самите числа, по едно на ред. Примери:
+Write a program that enters **n integers** (**n** > 0) and finds **the max** among them. The first line of the input, reads the number of integers. After that the next lines read the integers, each on separate line. Examples:
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>100<br>99 | 100 | 
 | 3<br>-10<br>20<br>-30 | 20 |
@@ -124,137 +124,137 @@
 | 1<br>999 | 999 |
 | 2<br>-1<br>-2 | -1 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Първо въвеждаме едно число **`n`** (броят числа, които предстои да бъдат въведени). Задаваме на текущия максимум **`max`** първоначална неутрална стойност, например **-10000000000000**. С помощта на **`for` цикъл**, чрез който итерираме **n-1 пъти**, прочитаме по едно цяло число **`num`**. Ако прочетеното число **`num`** е по-голямо от текущия максимум **`max`**, присвояваме стойността на **`num`** в променливата **`max`**. Накрая, в **`max`** трябва да се е запазило най-голямото число. Отпечатваме го на конзолата:
+We will first enter one number **`n`** (the number of integers that are about to be entered). We assign the current maximum **`max`**an initial neutral value, for example **-10000000000000**. Using a **`for` loop**, that is iterated **n-1 times**, we read one integer **`num`**.  If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the **`max`** value. Finally, in **`max`**  we must have stored the highest number. We print the number on the console.:
 
 ![](/assets/chapter-5-1-images/05.Max-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#4](https://judge.softuni.org/Contests/Practice/Index/1053#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#4](https://judge.softuni.org/Contests/Practice/Index/1053#4).
 
 
-### Пример: най-малко число
+### Problem: Min number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-малкото** измежду тях. Първо се въвежда броя числа **n**, след тях още **n** числа по едно на ред. 
+Write a program that enters **n integers** (**n** > 0) and finds **the min** among them. The first line of the input, reads the number of integers and after that the next lines read the integers, each on separate line.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | 
+| Input | Output | 
 | --- | --- |
 | 2<br>100<br>99 | 99 |
 | 3<br>-10<br>20<br>-30 | -30 |
 | 4<br>45<br>-20<br>7<br>99<br> | -20 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е абсолютно аналогична с предходната, само че започване с друга неутрална начална стойност:
+The problem is completely identical to the previous one, except this time we will start with another neutral starting value:
 
 ![](/assets/chapter-5-1-images/06.Min-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#5](https://judge.softuni.org/Contests/Practice/Index/1053#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#5](https://judge.softuni.org/Contests/Practice/Index/1053#5).
 
 
-### Пример: лява и дясна сума
+### Example: Left and right sum
 
-Да се напише програма, която въвежда **2 \* n цели числа** и проверява дали **сумата на първите n числа** (лява сума) е равна на **сумата на вторите n числа** (дясна сума). При равенство се печата **"Yes" + сумата**, иначе се печата **"No" + разликата**. Разликата се изчислява като положително число (по абсолютна стойност). Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that reads an input **2 \* n integers** and checks if ** the sum of the first n numbers** (left sum) is equal to **the sum of the second n numbers** (right sum). In case the sums are equal, print **"Yes" + sum**, otherwise print **"No" + the difference**. The difference is calculated as a positive number (by absolute value). The format of the output must be identical to the one in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 | --- | --- | --- | --- | 
 | 2<br>10<br>90<br>60<br>40 | Yes, sum = 100 | 2<br>90<br>9<br>50<br>50 | No, diff = 1 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо въвеждаме числото **n**, след това първите **n** числа (**лявата** половина) и ги сумираме. Продължаваме с въвеждането на още **n** числа (**дясната** половина) и намираме и тяхната сума. Изчисляваме **разликата** между намерените суми по абсолютна стойност: **`math.fabs(rightSum - leftSum)`**. Ако разликата е **0**, отпечатваме **"Yes" + сумата**, в противен случай - отпечатваме **"No" + разликата**.
+We will first input the number **n**, after that the first **n** numbers (**left** half) and we sum them up. We will then proceed with inputting more **n** numbers (**right** half) and sum them up. We calculate **the difference ** between the sums by absolute value: **`math.fabs(rightSum - leftSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + the difference **.
 
 ![](/assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#6](https://judge.softuni.org/Contests/Practice/Index/1053#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#6](https://judge.softuni.org/Contests/Practice/Index/1053#6).
 
 
-### Пример: четна / нечетна сума
+### Problem: Even / odd sum
 
-Да се напише програма, която въвежда **n цели числа** и проверява дали **сумата на числата на четни позиции** е равна на **сумата на числата на нечетни позиции**. При равенство печата **"Yes" + сумата**, иначе печата **"No" + разликата**. Разликата се изчислява по абсолютна стойност. Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that inputs **n integers** and checks whether **the sum of the numbers on even positions** is equal to **the sum of the numbers on odd positions**. In case the sums are equal, print **"Yes" + sum**, otherwise print **"No" + the difference **. The difference is calculated by absolute value. The format of the output must be identical to the one in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 4<br>10<br>50<br>60<br>20 | Yes<br>Sum = 70 |
 | 4<br>3<br>5<br>1<br>-2 | No<br>Diff = 1 |
 | 3<br>5<br>8<br>1 | No<br>Diff = 2 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Въвеждаме числата едно по едно и изчисляваме двете **суми** (на числата на **четни** позиции и на числата на **нечетни** позиции). Както в предходната задача, изчисляваме абсолютната стойност на разликата и отпечатваме резултата (**"Yes" + сумата** при разлика 0 или **"No" + разликата** в противен случай):
+Input the numbers one by one and calculate the two **sums** (of the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** in case of difference of 0 or **"No" + the difference ** in any other case):
 
 ![](/assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#7](https://judge.softuni.org/Contests/Practice/Index/1053#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#7](https://judge.softuni.org/Contests/Practice/Index/1053#7).
 
 
-### Пример: сумиране на гласните букви
+### Problem: Sum of vowels
 
-Да се напише програма, която въвежда **текст** (стринг), изчислява и отпечатва **сумата от стойностите на гласните букви** според таблицата по-долу:
+Write a program that inputs **text** (string), calculates and prints **the sum of the values of vowels** according to the table below:
 
 | a | e | i | o | u | 
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | 2 | 3 | 4 | 5 |
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход | 
+| Input | Output | Input | Output | 
 | --- | --- | --- | --- |
 | hello | 6<br>(e+o = 2+4 = 6) | bamboo | 9<br>(a+o+o = 1+4+4 = 9) |
 | hi | 3<br>(i = 3) | beer | 4<br>(e+e = 2+2 = 4) |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Прочитаме входния текст **`line`**, зануляваме сумата и завъртаме цикъл, който преминава през всеки символ от входния текст. Проверяваме всяка буква **`c`** дали е гласна и съответно добавяме към сумата стойността ѝ:
+We read the input text **`line`**, null the sum and run a loop, which goes through each symbol from the text. We check each letter **`c`** and verify if it is a vowel, and accordingly, add its value to the sum:
 
 ![](/assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#8](https://judge.softuni.org/Contests/Practice/Index/1053#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#8](https://judge.softuni.org/Contests/Practice/Index/1053#8).
 
 
-## Какво научихме от тази глава?
+## What did we learn in this chapter?
 
-Можем да повтаряме блок код с **`for` цикъл**:
+We can repeat a block of code with **`for` loop**:
 
 ![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
-Можем да четем поредица от **`n`** числа от конзолата:
+We can read a sequence of **`n`** numbers from the console:
 
 ![](/assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Упражнения: повторения (цикли)
+## Exercises: Repetitions (loops)
 
-След като се запознахме с циклите, идва време **да затвърдим знанията си на практика**, а както знаете, това става с много писане на код. Да решим няколко задачи за упражнение.
+Now, that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise.
 
-### Създаване на нов проект в PyCharm
+### Creating new project in PyCharm
 
-Създаваме нов проект в PyCharm (от [**File**] -> [**New Project**]), за да организираме по-добре задачите за упражнение. Целта на този **проект** e да съдържа **по един Python файл за всяка задача** от упражненията:
+Create new project in PyCharm (from [**File**] -> [**New Project**]), in order to organise better the exercise tasks. The purpose of this **project** is to contain **one Python file for each task** from the exercises:
   
 ![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.png)
 
-### Задача: елемент, равен на сумата на останалите
+### Problem: Element equal to the sum of the rest
 
-Да се напише програма, която въвежда **n цели числа** и проверява дали сред тях съществува число, което е равно на сумата на всички останали. Ако има такъв елемент, се отпечатва **"Yes" + неговата стойност**, в противен случай - **"No" + разликата между най-големия елемент и сумата на останалите** (по абсолютна стойност). 
+Write a program that inputs **n integers** and checks whether among them there is a number equal to the sum of all the rest. If there is such an element, print **"Yes" + itsvalue**, otherwise print - **"No" + the difference betwen the largest element and the sum of the rest** (by absolute value). 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Коментар |
+| Input | Output | Comment |
 | --- | --- | :---: |
 | 7<br>3<br>4<br>1<br>1<br>2<br>12<br>1 | Yes<br>Sum = 12 | 3 + 4 + 1 + 2 + 1 + 1 = 12 |
 | 4<br>6<br>1<br>2<br>3 | Yes<br>Sum = 6 | 1 + 2 + 3 = 6 |
@@ -262,149 +262,149 @@
 | 3<br>5<br>5<br>1 | No<br>Diff = 1 | &#124;5 - (5 + 1)&#124; = 1 |
 | 3<br>1<br>1<br>1 | No<br>Diff = 1 | - |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Трябва да изчислим **сумата** на всички елементи, да намерим **най-големия** от тях и да проверим търсеното условие.
+We have to calculate **the sum** of all elements, find **the largest** of them and check the condition.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#9](https://judge.softuni.org/Contests/Practice/Index/1053#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#9](https://judge.softuni.org/Contests/Practice/Index/1053#9).
 
 
-### Задача: четни / нечетни позиции
+### Problem: Even / odd positions
 
-Напишете програма, която чете **n числа** и пресмята **сумата**, **минимума** и **максимума** на числата на **четни** и **нечетни** позиции (броим от 1). Когато няма минимален / максимален елемент, отпечатайте **"No"**. 
+Write a program that reads **n numbers** and calculates **the sum**, **the min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max elements, print **"No"**. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 | --- | --- | --- | --- |
 | 6<br>2<br>3<br>5<br>4<br>2<br>1 | OddSum=9,<br>OddMin=2,<br>OddMax=5,<br>EvenSum=8,<br>EvenMin=1,<br>EvenMax=4 | 2<br>1.5<br>-2.5 | OddSum=1.5,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=-2.5,<br>EvenMin=-2.5,<br>EvenMax=-2.5 |
 | 1<br>1 | OddSum=1,<br>OddMin=1,<br>OddMax=1,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 0 | OddSum=0,<br>OddMin=No,<br>OddMax=No,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No |
 | 5<br>3<br>-2<br>8<br>11<br>-3 | OddSum=8,<br>OddMin=-3,<br>OddMax=8,<br>EvenSum=9,<br>EvenMin=-2,<br>EvenMax=11 | 4<br>1.5<br>1.75<br>1.5<br>1.75 | OddSum=3,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=3.5,<br>EvenMin=1.75,<br>EvenMax=1.75 |
 | 1<br>-5 | OddSum=-5,<br>OddMin=-5,<br>OddMax=-5,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 3<br>-1<br>-2<br>-3 | OddSum=-4,<br>OddMin=-3,<br>OddMax=-1,<br>EvenSum=-2,<br>EvenMin=-2,<br>EvenMax=-2 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Задачата обединява няколко предходни задачи: намиране на **минимум**, **максимум** и **сума**, както и обработка на елементите от **четни и нечетни позиции**. Припомнете си ги.
+The task combines some of the previous tasks: finding the **min**, **max** value and **sum**, as well as processing of elements on **even and odd positions **. Check them out.
 
-В тази задача е по-добре да се работи с **дробни числа** (не цели). Сумата, минимумът и максимумът също са дробни числа. Трябва да използваме **неутрална начална стойност** при намиране на минимум / максимум, например **1000000000.0** и **-1000000000.0**. Ако получим накрая неутралната стойност, печатаме **"No"**.
+In the current task it is better to work with **fractions** (not integers). The sum, the min and the max will also be fractions. We must use a **neutral starting value** when findinf the min / max value, for example **1000000000.0** and **-1000000000.0**. If the end result is the neutral value, print **"No"**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#10](https://judge.softuni.org/Contests/Practice/Index/1053#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#10](https://judge.softuni.org/Contests/Practice/Index/1053#10).
 
 
-### Задача: еднакви двойки
+### Problem: Equal pair
 
-Дадени са **2 \* n числа**. Първото и второто формират **двойка**, третото и четвъртото също и т.н. Всяка двойка има **стойност** – сумата от съставящите я числа. Напишете програма, която проверява **дали всички двойки имат еднаква стойност**. В случай, че е еднаква отпечатайте **"Yes, value=…" + стойността**, в противен случай отпечатайте **максималната разлика** между две последователни двойки в следния формат - **"No, maxdiff=…" + максималната разлика**. Входът се състои от число **n**, следвано от **2*n цели числа**, всички по едно на ред.
+There are **2 \* n numbers**. The first and the second number form a **pair**, the third and the fourth number as well, and so on. Each pair has a **value** – the usm of its numbers. Write a program that check **if all pairs have equal value**. In case the value is the same, print **"Yes, value=…" + the value**, otherwise print **the maximum difference ** between two neighboring pairs in the following format - **"No, maxdiff=…" + the maximum difference **. The input consists of the number **n**, followed by **2*n integers**, all of them one per line.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Коментар |
+| Input | Output | Comment |
 | --- | --- | :---: | 
-| 3<br>1<br>2<br>0<br>3<br>4<br>-1| Yes, value=3 | стойности = {3, 3, 3}<br>еднакви стойности | 
-| 2<br>1<br>2<br>2<br>2 | No, maxdiff=1 | стойности = {3, 4}<br>разлики = {1}<br>макс. разлика = 1 |
-| 4<br>1<br>1<br>3<br>1<br>2<br>2<br>0<br>0 | No, maxdiff=4 | стойности = {2, 4, 4, 0}<br>разлики = {2, 0, 4}<br>макс. разлика = 4 |
-| 1<br>5<br>5 | Yes, value=10 | стойности = {10}<br>една стойност<br>еднакви стойности |
-| 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | стойности = {-1, -1}<br>еднакви стойности | 
-| 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | стойности = {1, -1}<br>разлики = {2}<br>макс. разлика = 2 |
+| 3<br>1<br>2<br>0<br>3<br>4<br>-1| Yes, value=3 | values = {3, 3, 3}<br>equal values | 
+| 2<br>1<br>2<br>2<br>2 | No, maxdiff=1 | values = {3, 4}<br>differece = {1}<br>max difference = 1 |
+| 4<br>1<br>1<br>3<br>1<br>2<br>2<br>0<br>0 | No, maxdiff=4 | values = {2, 4, 4, 0}<br>differences = {2, 0, 4}<br>max difference = 4 |
+| 1<br>5<br>5 | Yes, value=10 | value = {10}<br>one vlaue<br>equal values |
+| 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | values = {-1, -1}<br>equal values | 
+| 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | values = {1, -1}<br>differences = {2}<br>max difference = 2 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Прочитаме входните числа **по двойки**. За всяка двойка пресмятаме **сумата** ѝ. Докато четем входните двойки, за всяка двойка, без първата, трябва да пресметнем **разликата с предходната**. За целта е необходимо да пазим в отделна променлива сумата на предходната двойка. Накрая намираме **най-голямата разлика** между две двойки. Ако е **0**, печатаме **"Yes"** + стойността, в противен случай - **"No"** + разликата.
+We read the input numbers **in pairs**. For each pair we calculate its **the sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. In order to do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#11](https://judge.softuni.org/Contests/Practice/Index/1053#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#11](https://judge.softuni.org/Contests/Practice/Index/1053#11).
 
 
-## Упражнения: графични и уеб приложения
+## Lab: Graphic and web applications
 
-В настоящата глава се запознахме с **циклите** като конструкция в програмирането, която ни позволява да повтаряме многократно дадено действие или група от действия. Сега нека си поиграем с тях. За целта ще начертаем няколко фигурки, които се състоят от голям брой повтарящи се графични елементи, но този път не на конзолата, а в графична среда, използвайки "**графика с костенурка**". Ще е интересно. И никак не е сложно. Опитайте!
+In the current chapter we learned about **loops** as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them. In order to do that, we will draw some figures that will consist of a large number of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
 
-### Задача: чертане с костенурка – графично GUI приложение
+### Problem: Turtle Graphics GUI Application
 
-Целта на следващото упражнение е да си поиграем с една **библиотека за рисуване**, известна като **"графика с костенурка" (turtle graphics)**. Ще изградим графично приложение, в което ще **рисуваме различни фигури**, придвижвайки нашата **"костенурка"** по екрана чрез операции от типа "отиди напред 100 позиции", "завърти се надясно на 30 градуса", "отиди напред още 50 позиции". Приложението ще изглежда приблизително така:
+The purpose of the following exercise is to play with a **drawing library**, also known as **"turtle graphics"**. We will build a graphical application in which we will **draw various figures**, by moving our **"turtle"** across the screen via operations like "move 100 positions ahead", "turn 30 degrees to the right", "move 50 more positions ahead". The application will look approximately like this:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
-Нека първо се запознаем с **концепцията за рисуване "Turtle Graphics"**. Може да разгледаме следните източници:
+Let's first get familiar with **the concept of drawing "Turtle Graphics""**. Take a look at the following sources:
 
-* Дефиниция на понятието "turtle graphics": [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
-* Статия за "turtle graphics" в Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-* Интерактивен онлайн инструмент за чертане с костенурка – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
+* Definition of "turtle graphics": [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
+* Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
+* Interactive online tool for drawing with a turtle – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
 
-Започваме, като създаваме нов **проект с PyCharm**:
+We will start by creating a new **project in PyCharm**:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-В новосъздадения проект добавяме нов **Python File**. За чертането ще използваме външната библиотека **`turtle`**. Тя дефинира клас **`Turtle`**, който представлява **костенурка за рисуване**. За да я използваме, добавяме следния код, най-отгоре в началото на Python файла:
+In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. She defines class **`Turtle`**, which represents **drawing turtle**. In order to use it, we add the following code in the beginning of the Python file:
   
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
-След това, за чертането, добавяме следния код:
+After that for the drawing we add the code:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
-Горния код мести и върти костенурката, която в началото е в центъра на екрана (в средата на формата), и чертае равностранен триъгълник. Може да го редактирате и да си поиграете с него. **Стартираме** приложението:
+The above code moves and rotates the turtle, which is located in the center of the screen in the beginning (in the middle of the form) and draws an equilateral triangle. You can edit it and play with it. **Start** the app:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-05.png)
 
-Сега може да променим и усложним горния код, за да получим по-сложна фигура: 
+Now you can modify the turtle code and make it more complex, in order for the turtle to make more complec figure: 
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
-Отново **стартираме** приложението, за да видим резултата:
+Again **start** the app to see the result:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-7.png)
 
-Вече нашата костенурката чертае по-сложни фигури чрез приятно анимирано движение.
+Now our turtle draws more complex figures via a nice animated motion.
 
-### Задача: * чертане на шестоъгълник с костенурката
+### Problem: * Draw a Hexagon with the Turtle
 
-Добавeте нов Python файл, с примерно име **hexagon**, който ще чертае правилен шестоъгълник:
+Add new Python file, with name **hexagon**, which will draw hexagon:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-8.png)
 
-**Подсказка:**
+**Hint:**
 
-В цикъл повторете 6 пъти следното:
-* Ротация на 60 градуса.
-* Движение напред 100.
+With loop repeat the following 6 times:
+* 60 degrees rotation.
+* Forward step of 100.
 
-### Задача: * чертане на звезда с костенурката
+### Problem: * Draw a Star with the Turtle
 
-Добавете нов Python файл **star.py**, който чертае звезда с 5 върха (**петолъчка**), като на фигурата по-долу:
+Add new Python file **star.py**, which draws a star with 5 beams (**pentagram**), as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-9.png)
 
-**Подсказка:** Сменете цвета: **`my_turtle.color("green")`**. 
+**Hints:** Change the colour: **`my_turtle.color("green")`**. 
 
-В цикъл повторете 5 пъти следното:
-* Движение напред 200.
-* Ротация на 144 градуса.
+Repeat 5 times the following in a loop:
+* Forward step of 200.
+* 144 degrees rotation.
 
-### Задача * чертане на спирала с костенурката
+### Problem * Draw a Spiral with the Turtle
 
-Добавете нов Python файл **spiral.py**, който чертае спирала с 20 върха като на фигурата по-долу:
+Add new Python file **spiral.py**, which draws spiral with 20 beamsas on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
-**Подсказка:** Чертайте в цикъл, като движите напред и завъртате. С всяка стъпка увеличавайте постепенно дължината на движението напред и завъртайте на 60 градуса.
+**Hint:** Draw in a loop by moving ahead and rotating. In each step, decrease gradually the length of the forward step and rotate 60 degrees..
 
-### Задача: * чертане на слънце с костенурката
+### Problem: * Draw a Sun with the Turtle
 
-Добавете нов Python файл **sun.py**, който чертае слънце с 36 върха като на фигурата по-долу:
+Add new Python file **sun.py**, which draws a sun with 36 beams, as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 
-### Задача: * чертане на спирален триъгълник с костенурката
+### Problem: * Draw a Spiral Triangles with the Turtle
 
-Добавете нов Python файл **triangle.py**, който чертае три триъгълника с по 22 върха като на фигурата по-долу:
+Add new Python file **triangle.py**, which draws three triangles with 22 beams each, as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-12.png)
 
-**Подсказка:** Чертайте в цикъл като движите напред и завъртате. С всяка стъпка увеличавайте с 10 дължината на движението напред и завъртайте на 120 градуса. Повторете 3 пъти за трите триъгълника.
+**Hint:** Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles. 
 
-Ако имате проблеми с примерния проект по-горе, питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have a problem with the above exercises, ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.

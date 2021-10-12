@@ -1,340 +1,336 @@
-# Глава 9.2. Задачи за шампиони – част II
+# Chapter 9.2. Problems for Champions – Part II
 
-В тази глава ще разгледаме още три задачи, които причисляваме към категорията "**за шампиони**", т.е. по-трудни от стандартните задачи в тази книга.
+In this chapter we will review three additional tasks that belong to the category "**For Champions**", i.e. they are more complex than the rest of the tasks in this book.
 
-## По-сложни задачи върху изучавания материал
+## More Complex tasks on the Studied Material
 
-Преди да преминем към конкретните задачи, трябва да поясним, че те могат да се решат по-лесно с **допълнителни знания за програмирането и езика Python** (функции, масиви, колекции, рекурсия и т.н.), но всяко едно решение, което ще дадем сега, ще използва единствено материал, покрит в тази книга. Целта е да се научим да съставяме **по-сложни алгоритми** на базата на сегашните ни знания.
+Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with Python** (functions, arrays, collections, recursion, etc.), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
-## Задача: дни за страстно пазаруване
+## Task: Passion Shopping Days
 
-Лина има истинска страст за пазаруване. Когато тя има малко пари, веднага отива в първия голям търговски център (мол) и се опитва да изхарчи възможно най-много за дрехи, чанти и обувки. Но любимото ѝ нещо са зимните намаления. Нашата задача е да анализираме странното ѝ поведение и да **изчислим покупките**, които Лина прави, когато влезе в мола, както и **парите, които ѝ остават**, когато приключи с пазаруването си.
+Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our task is to analyze her strange behavior and  **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over.
 
-На **първия ред** от входа ще бъде подадена **сумата**, която Лина има **преди** да започне да пазарува. След това при получаване командата "**`mall.Enter`**", Лина влиза в мола и започва да пазарува, докато не получи командата "**`mall.Exit`**". Когато Лина започне да пазарува, **на всяка линия** от входа ще получите стрингове, които представляват **действия, които Лина изпълнява**. Всеки **символ** в стринга представлява **покупка или друго действие**. Стринговите команди могат да съдържат само символи от **ASCII таблицата**. ASCII кода на всеки знак има **връзка с това колко Лина трябва да плати** за всяка стока. Интерпретирайте символите по следния начин:
+The **first line** of the input will pass the **amount** that Lina has **before** she starts shopping. After that, upon reading the "**`mall.Enter`**" command, Lina enters the mall and starts shopping until the "**`mall.Exit`**" command is given. When Lina starts shopping, **on each line** of the input you will be given strings that are **actions performed by Lina**. Each **symbol** in the string is a **purchase or another action**. String commands contain only symbols of the **ASCII table**. The ASCII code of each sign is **related to what Lina must pay** for each of the goods. You need to interpret the symbols in the following way:
 
-- Ако символът е **главна буква**, Лина получава **50% намаление**, което означава, че трябва да намалите парите, които тя има, с 50% от цифровата репрезентация на символа от ASCII таблицата.
-- Ако символът е **малка буква**, Лина получава **70% намаление**, което означава, че трябва да намалите парите, които тя има, с 30% от цифровата репрезентация на символа от ASCII таблицата.
-- Ако символът е **"`%`"**, Лина прави **покупка**, която намалява парите ѝ на половина.
-- Ако символът е **"`*`"**, Лина **изтегля пари от дебитната си карта** и добавя към наличните си средства 10 лева.
-- Ако символът е **различен от упоменатите горе**, Лина просто прави покупка без намаления и в такъв случай просто извадете стойността на символа от ASCII таблицата от наличните ѝ средства.
+- If the symbol is a **capital letter**, Lina gets a **50% discount**, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
+- If the symbol is a **small letter**, Lina gets a **70% discount**, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
+- If the symbol is **"`%`"**, Lina makes a **purchase** that decreases her money in half.
+- If the symbol is **"`*`"**, Lina **withdraws money from her debit card** and adds 10 lv. to her available funds.
+- If the symbol is **different from all of the aforementioned**, Lina just purchases without discount, and in this case, you should simply subtract the value of the symbol from the ASCII table from her available funds.
 
-Ако някоя от стойностите на покупките е **по-голяма** от текущите налични средства, Лина **НЕ** прави покупката. Парите на Лина **не могат да бъдат по-малко от 0**.
+If a certain value of her purchases is **higher** than her current available funds, Lina **DOES NOT** make the purchase. Lina's funds **cannot be less than 0**.
 
-Пазаруването завършва, когато се получи командата "**`mall.Exit`**". Когато това стане, трябва да се **принтират броя на извършени покупки и парите**, които са останали на Лина.
+The shopping ends when the "**`mall.Exit`**" command is given. When this happens, you need to **print the number of purchases made and the money** that Lina has left.
 
-### Входни данни
+### Input Data
 
-Входните данни трябва да се четат от конзолата. На **първия ред** от входа ще бъде подадена **сумата, която Лина има преди да започне да пазарува**. На всеки следващ ред ще има определена команда. Когато получите командата **"mall.Enter"**, на всеки следващ ред ще получавате стрингове, съдържащи **информация относно покупките / действията**, които Лина иска да направи. Тези стрингове ще продължат да бъдат подавани, докато не се получи командата "**`mall.Exit`**".
+The input data must be read from the console. The **first line** of the input will indicate the **amount that Lina has before starting to purchase**. On each of the following lines there will be a particular command. After you read the command "**`mall.Enter`**", on each of the following lines you will be given strings holding **information regarding the purchases / actions** that Lina wants to perform. These strings will keep being passed, until the "**`mall.Exit`**" command is given.
 
-Командите "**`mall.Enter`**" и "**`mall.Exit`**" ще се подават само по веднъж.
+Always only one "**`mall.Enter`**" command will be given, as well as only one "**`mall.Exit`**" command.
 
-### Изходни данни
+### Output Data
 
-Когато пазаруването приключи, на конзолата трябва да се принтира определен изход в зависимост от това какви покупки са били направени:
+When shopping is over, you must print on the console a particular output depending on what purchases have been made:
 
-- Ако **не са били направени някакви покупки** – "**No purchases. Money left: {останали пари} lv.**"
-- Ако е направена **поне една покупка** - "**{брой покупки} purchases. Money left: {останали пари} lv.**"
+- If **no purchases have been made** – "**No purchases. Money left: {remaining funds} lv.**"
+- If **at least one purchase** is made – "**{number of purchases} purchases. Money left: {remaining funds} lv.**"
 
-**Парите** трябва да се принтират с **точност от 2 символа след десетичния знак**.
+**The funds** must be printed with an **accuracy of up to 2 symbols after the decimal point**.
 
-### Ограничения
+### Constraints
 
-- Парите са число с **плаваща запетая** в интервала: [**0 - 7.9 x 10<sup>28</sup>**].
-- Броят стрингове между "**`mall.Enter`**" и "**`mall.Exit`**" ще в интервала: [**1 - 20**].
-- Броят символи във всеки стринг, който представлява команда, ще е в интервала: [**1 - 20**].
-- Позволено време за изпълнение: **0.1 секунди**.
-- Позволена памет: **16 MB**.
+- Money is a **float** number within the range: [**0 - 7.9 x 10<sup>28</sup>**].
+- The number of strings between "**`mall.Enter`**" and "**`mall.Exit`**" will be within the range: [**1 - 20**].
+- The number of symbols in each string that represents a command will be within the range: [**1 - 20**].
+- Allowed execution time: **0.1 seconds**.
+- Allowed memory: **16 MB**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход                       | Изход                              | Коментар |
+| Input                       | Output                              | Comment  |
 |----------------------------|------------------------------------|-----------|
-| 110<br>mall.Enter<br>d<br>mall.Exit | 1 purchases. Money left: 80.00 lv. | ‘d’ има ASCII код 100. ‘d’ e малка буква и за това Лина получава 70% отстъпка. 100% – 70% = 30.110 – 30 = 80 лв. |
+| 110<br>mall.Enter<br>d<br>mall.Exit | 1 purchases. Money left: 80.00 lv. | ‘d’ has an ASCII code of 100. ‘d’ is a small letter, this is why Lina gets a 70% discount. 100% – 70% = 30. 110 - 30 = 80 lv. |
 
-| Вход | Изход |Вход | Изход |
+| Input | Output |Input | Output |
 |------|-------|------|-------|
 | 110<br>mall.Enter<br>%<br>mall.Exit|1 purchases. Money left: 55.00 lv.| 100<br>mall.Enter<br>Ab<br>\*\*<br>mall.Exit|2 purchases. Money left: 58.10 lv.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще разделим решението на задачата на три основни части:
+We will separate the solution of the problem into three main parts:
 
-- **Обработка** на входа.
-- **Алгоритъм** на решаване.
-- **Форматиране** на изхода.
+- **Processing** of the input.
+- **Algorithm** for solving the problem. 
+- **Formatting** the output.
 
-Нека разгледаме всяка една част в детайли.
+Let's examine each of the parts in detail.
 
-#### Обработване на входа
+#### Processing the Input Data
 
-Входът за нашата задача се състои от няколко компонента:
+The input of our task consists of a few components:
 
-- На **първия ред имаме всички пари**, с които Лина ще разполага за пазаруването.
-- На **всеки следващ ред** ще имаме някакъв вид **команда**.
+- In the **first argument, we have all the money** that Lina has for shopping.
+- In the **second argument, we have an array** that is a series of commands.
 
-Първата част от прочитането е тривиална:
+The first part is simple:
 
 ![Input read](/assets/chapter-9-2-images/01.Passion-days-01.png)
 
-Но във втората част има детайл, с който трябва да се съобразим. Условието гласи следното:
+But in the second part is a detail that we need to take into consideration. The requirements state the following:
 
-> Всеки следващ ред ще има определена команда. Когато получите командата **"mall.Enter"**, на всеки следващ ред ще получите стрингове, съдържащи информация относно покупките/действията, които Лина иска да направи.
+> Each of the next rolls will contain specific command. When we receive the command **"mall.Enter"**, on each of the next rolls the element will be a string containing information regarding the purchases/actions that Lina wants to perform.
 
-Тук е моментът, в който трябва да се съобразим, че от **втория ред нататък трябва да започнем да четем команди**, но **едва след като получим** командата **"mall.Enter"**, трябва да започнем да ги обработваме. Как можем да направим това? Използването на **`while`** или **`do-while`** цикъл e добър избор. Ето примерно решение как можем **да пропуснем** всички команди преди получаване на командата **"mall.Enter"**:
+This is where we need to take into consideration the fact that inside **our array we should start processing commands**, but **only after we receive** the command **"mall.Enter"**. How can we do that? Using a **`while`** or a **`do-while`** loop is a good option. Here is an exemplary solution of how **to skip** all commands before processing the command **"mall.Enter"**:
 
 ![Input filter](/assets/chapter-9-2-images/01.Passion-days-02.png)
 
-Тук е мястото да отбележим, че извикването на **`input()`** след края на цикъла се използва за **преминаване към първата команда** за обработване.
+Here is the place to say that by calling  **`input()`** after the end of the loop is used to **pass from the first command** for processing.
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-Алгоритъмът за решаването на самата задача е праволинеен - продължаваме да **четем команди** от конзолата, **докато не бъде подадена командата "mall.Exit"**. През това време **обработваме** всеки един ASKII знак (**`char`**) от всяка една команда спрямо правилата, указани в условието, и едновременно с това **модифицираме парите**, които Лина има, и **съхраняваме броя на покупките**.
+The algorithm for solving the problem is a direct one – we continue **reading commands** from the console **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the task requirements, and in parallel, we **modify the amount** that Lina has and **store the number of purchases**.
 
-Нека разгледаме първите два проблема пред нашия алгоритъм. Първият проблем засяга начина, по който можем да четем командите, докато не срещнем **"mall.Exit"**. Решението, както видяхме по-горе, е да се използва **`while` цикъл**. Вторият проблем е задачата да **достъпим всеки един знак** от подадената команда. Имайки предвид, че входните данни с командите са от тип **`string`**, то най-лесният начин да достъпим всеки знак в тях е чрез **`for-in` цикъл**.
+Let's examine the first two problems for our algorithm. The first problem concerns the way we read the commands until we reach the **"mall.Exit"** command. The solution that we previously saw uses a **`while-loop`**. The second problem for the task is to **access each symbol** of the command passed. Keeping in mind that the input data with the commands is a **`string`** type, the easiest way to access each symbol inside the strings is via a **`for-in` loop**.
 
-Ето как би изглеждало използване на два такива цикъла:
+This is how the code may look like using two loops like this:
 
 ![Main loop](/assets/chapter-9-2-images/01.Passion-days-03.png)
 
-Следващата част от алгоритъма ни е да **обработим символите от командите**, спрямо следните правила от условието:
+The next part of the algorithm is to **process the symbols from the commands**, according to the following rules in the requirements:
 
-> - Ако символът е **главна буква**, Лина получава 50% намаление, което означава, че трябва да намалите парите, които тя има, с 50% от цифровата репрезентация ASCII символа.
-> - Ако символът е **малка буква**, Лина получава 70% намаление, което означава, че трябва да намалите парите, които тя има, с 30% от цифровата репрезентация ASCII символа.
-> - Ако символът е **"%"**, Лина прави покупка, която намалява парите ѝ на половина.
-> - Ако символът е **"\*"**, Лина изтегля пари от дебитната си карта и добавя към наличните си средства 10 лева.
-> - Ако символът е **различен от упоменатите горе**, Лина просто прави покупка без намаления и в такъв случай просто извадете стойността на ASCII символа от наличните ѝ средства.
+> - If the symbol is a **capital letter**, Lina gets a 50% discount, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
+> - If the symbol is a **small letter**, Lina gets a 70% discount, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
+> - If the symbol is **"%"**,  Lina purchases and that decreases her money in half.
+> - If the symbol is **"\*"**, Lina withdraws money from her debit card and adds 10 lv. to her available funds.
+> - If the symbol is **different from all of the aforementioned**, Lina just purchases without discount, and in this case, you should simply subtract the value of the symbol from the ASCII table from her available funds.
 
-Нека разгледаме проблемите от първото условие, които стоят пред нас. Единият е как можем да разберем дали даден **символ представлява главна буква**. Можем да използваме един от двата начина:
+Let's examine the problems that we will be facing in the first condition. The first one is how to distinguish if a particular **symbol is a capital letter**. We can use one of the following ways:
+- Keeping in mind the fact that the letters in the alphabet have a particular order, we can use the following condition **`action >= 'A' && action <= 'Z'`**, to check if our symbol is within the capital letters range.
+- We can use the function **`.isupper(…)`**.
 
-- Имайки предвид, факта, че буквите в азбуката имат ред, можем да използваме проверката **`action >= 'A' && action <= 'Z'`**, за да проверим дали нашият символ се намира в интервала от големи букви.
-- Можем да използваме функцията **`.isupper(…)`**.
+The other problem is how **to skip a particular symbol** if it is not an operation that requires more money than Lina has. This is doable using the **`continue`** construction.
 
-Другият проблем е как можем **да пропуснем даден символ**, ако той представлява операция, която изисква повече пари, отколкото Лина има? Това е възможно да бъде направено чрез използване на **`continue`** конструкцията.
-
-Примерната проверка за първата част от условието изглежда по следния начин:
+An exemplary condition for the first part of the requirements looks like this:
 
 ![Case check](/assets/chapter-9-2-images/01.Passion-days-04.png)
 
-**Забележка**: **`purchases`** е променлива от тип **`int`** , в която държим броя на всички покупки.
+**Note**: the variable **`purchases`** is of **`int`** type, in which we store the number of all purchases.
 
-Смятаме, че читателят не би трябвало да изпита проблем при имплементацията на всички други проверки, защото са много сходни с първата.
+We believe the reader should not have difficulties implementing all the other conditions because they are very similar to the first one.
 
-#### Форматиране на изхода
+#### Formatting the Output
 
-В края на задачата трябва да **принтираме** определен **изход**, в зависимост от следното условие:
+At the end of our task we must **print** a particular **output**, depending on the following condition:
 
-> - Ако не са били направени никакви покупки – "**No purchases. Money left: {останали пари} lv.**"
-> - Ако е направена поне една покупка - "**{брой покупки} purchases. Money left: {останали пари} lv.**"
+> - If no purchases have been made – "**No purchases. Money left: {remaining funds} lv.**"
+> - If at least one purchase is made – "**{number of purchases} purchases. Money left: {remaining funds} lv.**"
 
-Операциите по принтиране са тривиални, като единственото нещо, с което трябва да се съобразим е, че **парите трябва да се принтират с точност от 2 символа след десетичния знак**.
+The printing operations are simple, as the only thing we need to take into consideration is that **the amount has to be printed with an accuracy of up to 2 symbols after the decimal point**.
 
-Как можем да направим това? Ще оставим отговора на този въпрос на читателя.
+How can we do that? We will leave the answer to this question to the reader.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1062#0](https://judge.softuni.org/Contests/Practice/Index/1062#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062#0](https://judge.softuni.org/Contests/Practice/Index/1062#0).
 
 
-## Задача: числен израз
+## Task: Numerical Expression
 
-Бони е изключително могъща вещица. Тъй като силата на природата не е достатъчна, за да се бори успешно с вампири и върколаци, тя започнала да усвоява силата на Изразите. Изразът е много труден за усвояване, тъй като заклинанието разчита на способността за **бързо решаване на математически изрази**.
+Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 
-За използване на "Израз заклинание", вещицата трябва да знае резултата от математическия израз предварително. **Израз заклинанието** се състои от няколко прости математически израза. Всеки математически израз може да съдържа оператори за **събиране**, **изваждане**, **умножение** и/или **деление**.
+To use an "Expression spell", the witch must know the result of a mathematical expression in advance. An **Expression spell** consists of a few simple mathematical expressions. Each mathematical expression can contain operators for **summing up**, **subtraction**, **multiplying**, and/or **division**.
 
-Изразът се решава **без да се вземат под внимание математическите правила** при пресмятане на числови изрази. Това означава, че приоритет има последователността на операторите, а не това какъв вид изчисление правят. Израза **може да съдържа скоби**, като **всичко в скобите се пресмята първо**. Всеки израз може да съдържа множество скоби, но не може да съдържа вложени скоби:
+The expression is solved **without considering the mathematical rules** for calculating numerical expressions. This means that the priority is applied according to the sequence of the operators, and not the type of calculation that they do. The expression **can contain brackets**, as **everything inside the brackets is calculated first**. Every expression can contain multiple brackets, but no nested brackets:
+- An expression containing **(…(…)…) is an invalid one**.
+- An expression containing **(…)…(…) is a valid one**.
 
-- Израз съдържащ **(…(…)…) е невалиден**.
-- Израз съдържащ **(…)…(…) е валиден**.
+### Example
 
-### Пример
-
-Изразът
+The expression
 
 ![First example](/assets/chapter-9-2-images/02.X-expression-01.png)
 
-бива решен по следния начин:
+is solved in the following way:
 
 ![First example explained](/assets/chapter-9-2-images/02.X-expression-02.png)
 
-Бони е много красива, но не чак толкова съобразителна, затова тя има нужда от нашата помощ, за да усвои силата на Изразите.
+Bonny is very pretty, but not as wise, so she will need our help to master the power of Expressions.
 
-### Входни данни
+### Input Data
 
-Входните данни се състоят от един ред, който бива подаван от конзолата. Той съдържа **математическият израз за пресмятане**. Редът **винаги завършва със символа** "**=**". Символът "**=**" означава **край на математическия израз**.
+The input data consists of a single text line, passed from the console. It contains a **mathematical expression for calculation**. The line **always ends with the "=" symbol**. The **"="** symbol means **the end of the mathematical expression**.
 
-Входните данни винаги са валидни и във формата, който е описан. Няма нужда да бъдат валидирани.
+The input data is always valid and always in the described format. No need to validate it.
 
-### Изходни данни
+### Output Data
 
-Изходните данни трябва да се принтират на конзолата. Изходът се състои от един ред – резултата от **пресметнатия математически израз**.
+The output data must be printed on the console. The output consists of one line: the result of the **calculated mathematical expression**.
 
-Резултатът трябва да бъде **закръглен до втората цифра след десетичния знак**.
+The result must be rounded up to the **second digit after the decimal point**.
 
-### Ограничения
+### Constraints
 
-- Изразите ще състоят от **максимум 2500 символа**.
-- Числата от всеки математически израз ще са в интервала [**1 … 9**].
-- Операторите в математическите изрази винаги ще бъдат измежду **`+`** (събиране), **`-`** (изваждане), **`/`** (деление) или **`*`** (умножение).
-- Резултатът от математическия израз ще е в интервала [**-100000.00 … 100000.00**].
-- Позволено време за изпълнение: **0.1 секунди**.
-- Позволена памет: **16 MB**.
+- The expressions will consist of **a maximum of 2500 symbols**.
+- The numbers of each mathematical expression will be within the range [**1 … 9**].
+- The operators in the mathematical expressions will always be among **`+`** (summing up), **`-`** (subtraction), **`/`** (division) or **`*`** (multiplying).
+- The result of the mathematical expression will be within the range [**-100000.00 … 100000.00**].
+- Allowed execution time: **0.1 seconds**.
+- Allowed memory: **16 MB**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход                           | Изход  |Вход                           | Изход  |
+| Input                           | Output  |Input                           | Output  |
 |--------------------------------|--------|-------------------------------|--------|
 | 4+6/5+(4\*9–8)/7\*2=           | 8.57   |3+(6/5)+(2\*3/7)\*7/2\*(9/4+4\*1)= | 110.63 |
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Както обикновено, първо ще прочетем и обработим входа, след това ще решим задачата и накрая ще отпечатаме резултата, форматиран, както се изисква в условието.
+As usual, we will first read and process the input, after that, we will solve the problem, and finally, we will print the result, formatted as required.
 
-#### Обработване на входа
+#### Reading the Input Data
 
-Входните данни се състоят от точно един ред от конзолата. За да имаме достъп до всеки един елемент от числовия израз, ще прочетем входа, чрез **`input()`** функцията и после ще превърнем входния **`string`** в масив от символи. Използвайки функцията **`pop(…)`** можем да достъпваме символите един по един:
+The input data will consist of exactly one text line read from the console. In order to have access to each expression, we have to read the input with **`input()`** function and then convert the string into array of symbols. Using the function **`pop(…)`** we can processing each symbol:
 
 ![Expression Read](/assets/chapter-9-2-images/02.X-expression-03.png)
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-За целите на нашата задача ще имаме нужда от две помощни променливи:
+For the tasks of our problem we need to use some variables:
 
-- Една променлива, в която ще пазим **текущия резултат**.
-- Още една променлива, в която ще пазим **текущия оператор** от нашия израз.
+* One variable will store our **current result**.
+* And our final variable will store the **current operator** from our expression.
 
 ![Variable declearation](/assets/chapter-9-2-images/02.X-expression-04.png)
 
-Относно кода по-горе трябва да поясним, че стойността по подразбиране на оператора е **`+`**, за да може още първото срещнато число да бъде събрано с резултата ни.
+We have to clarify that in the code above, by default the operator is **`+`**, so that the first meet number can be summed with our result.
 
-След като вече имаме началните променливи, трябва да помислим върху това, **каква ще е основната структура** на нашата програма. От условието разбираме, че **всеки израз завършва с `=`**, т.е. ще трябва да четем и обработваме символи, докато не срещнем **`=`**. Следва точното изписване на **`while` цикъл**:
+Now that we already have our starting variables, we must decide **what will be the main structure** of our program. By the requirements, we understand that **each expression ends with `=`**, i.e. we must read and process symbols until we reach a **`=`**. This is followed by an accurately written **`while` loop**.
 
 ![Main loop](/assets/chapter-9-2-images/02.X-expression-05.png)
 
-Следващата стъпка е обработването на нашата **`symbol`** променлива. За нея имаме 3 възможни случая:
+Our next step is to process our **`symbol`**  variable. We have 3 possible cases for it:
 
-- Ако символът е **начало на подизраз, заграден в скоби**, т.е. срещнатият символ е **`(`**.
-- Ако символът е **цифра между 0 и 9**. Но как можем да проверим това? Как можем да проверим дали символът ни е цифра? Тук идва на помощ **ASCII кодът** на символа, чрез който можем да използваме следната формула: **`[ASCII кода на нашия символ] - [ASCII кода на символа 0] = [цифрата, която репрезентира символа]`**. Ако **резултатът от тази проверка е между 0 и 9**, то тогава нашият символ наистина е **число**.
+- If the symbol is a **start of a sub-expression placed in brackets** i.e. the found symbol is a **`(`**.
+- If the symbol is a **digit between 0 and 9**. But how can we check this? How can we check if our symbol is a digit? We can use for assistance the **ASCII code** of the symbol, via which we can use the following formula: **`[ASCII code of our symbol] – [ASCII code of the symbol 0] = [the digit that represents the symbol]`**. If **the result of this condition is between 0 and 9**, then our symbol is a **number**.
 
-**Забележка**: за да вземем ASCII кода на даден символ, ще ползваме **`ord(…)`** функцията.
+**Note**: in order to get the ASCII code of a certain symbol, we will use the function **`ord(…)`**.
 
-- Ако символът е **оператор**, т.е. е **`+`**, **`-`**, **`*`** или **`/`**.
+- If the symbol is an **operator**, i.e. it is **`+`**, **`-`**, **`*`** or **`/`**.
 
 ![Main checks](/assets/chapter-9-2-images/02.X-expression-06.png)
 
-Нека разгледаме действията, които трябва да извършим при съответните случаи, които дефинирахме:
+Let's examine the actions that we need to undertake in the relevant cases that we defined:
 
-- Ако нашият символ е **оператор**, то тогава единственото, което трябва да направим, е да **зададем нова стойност на променливата `expression_operator`**.
-- Ако нашият символ е **цифра**, тогава трябва да **променим текущия резултат от израза в зависимост от текущия оператор**, т.е. ако **`expression_operator`** е **`-`**, тогава трябва да **намалим резултата с цифровата репрезентация на текущия символ**. Можем да вземем цифровата репрезентация на текущия символ, чрез формулата, която използвахме при проверката на този случай (**`[ASCII кода на нашия символ] - [ASCII кода на символа 0] = [цифрата, която репрезентира символа]`**).
+- If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expression_operator` variable**.
+- If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if  **`expression_operator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (**`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**).
 
 ![Number checks](/assets/chapter-9-2-images/02.X-expression-07.png)
 
-- Ако нашият символ е **`(`**, това индикира **началото на подизраз** (израз в скоби). По дефиниция **подизразът трябва да се калкулира преди да се модифицира резултата от целия израз** (действията в скобите се извършват първи). Това означава, че ще имаме локален резултат за подизраза и локален оператор.
+- If our symbol is a **`(`**, this indicates the **beginning of a sub-expression** (an expression in brackets). By definition, **the sub-expression must be calculated before modifying the result of the whole expression** (the actions in brackets are performed first). This means that we will have a local result for the sub-expression and a local operator.
 
 ![Inner expression checks](/assets/chapter-9-2-images/02.X-expression-08.png)
 
-След това, за **пресмятане стойността на подизраза** използваме същите методи, които използвахме за пресмятане на главния израз - използваме **`while` цикъл**, за **да четем символи** (докато не срещнем символ **`)`**). В зависимост от това дали прочетения символ е цифра или оператор, модифицираме резултата на подизраза. Имплементацията на тези операции е аналогична с имплементацията за пресмятане на изрази, описана по-горе, затова смятаме, че читателят не би трябвало да има проблем с нея.
+After that, to **calculate the sub-expression value**, we will use the same methods that we used for calculating the main expression – we use a **`while` loop** to **read symbols** (until we reach an **`)`** symbol). Depending on whether the read symbol is a number or an operator, we modify the result of the sub-expression. The implementation of these operations is identical to the above-described implementation for calculating expressions. This is why we believe the reader will be able to easily handle it.
 
-След като приключим калкулацията на резултата от подизраза ни, **модифицираме резултата на целия израз** в зависимост от стойността на **`expression_operator`**:
+After finishing the result calculation for our sub-expression, we **modify the result of the whole expression** depending on the value of the **`expression_operator`**.
 
 ![Operator checks](/assets/chapter-9-2-images/02.X-expression-09.png)
 
-#### Форматиране на изхода
+#### Formatting the Output
 
-Единствения изход, който програмата трябва да принтира на конзолата, е **резултатът от решаването на израза, с точност два символа след десетичния знак**. Как можем да форматираме изхода по този начин? Отговора на този въпрос оставяме на читателя.
+The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two symbols after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1062#1](https://judge.softuni.org/Contests/Practice/Index/1062#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062#1](https://judge.softuni.org/Contests/Practice/Index/1062#1).
 
-## Задача: бикове и крави
+## Test: Bulls and Cows
 
-Всички знаем играта „Бикове и крави“ ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). При дадено 4-цифрено **тайно число** и 4-цифрено **предполагаемо число**, използваме следните правила:
+We all know the game called "Bulls and Cows"  ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
 
-- Ако имаме цифра от предполагаемото число, която съвпада с цифра от тайното число и е на **същата позиция**, имаме ***бик***.
-- Ако имаме цифра от предполагаемото число, която съвпада с цифра от тайното число, но е **на различна позиция**, имаме ***крава***.
+- If a digit in the suggested number matches a digit in the secret number and is located at the **same position**, we have a ***bull***.
+- If a digit in the suggested number matches a digit in the secret number but is located at a **different position**, we have a ***cow***.
 
-Ето няколко примера за бикове и крави:
+Here are a few examples of the game:
 
-| Тайно число         | 1 | 4 | 8 | 1 |Коментар|
+| Secret number         | 1 | 4 | 8 | 1 |Comment|
 |:-------------------:|:---:|:---:|:---:|:---:|:--------------------------:|
-| Предполагаемо число | 8 | 8 | 1 | 1 | Бикове = 1<br>Крави = 2  |
+| Suggested number | 8 | 8 | 1 | 1 | Bulls = 1<br>Cows = 2  |
 
-| Тайно число         | 2 | 2 | 4 | 1 |Коментар|
+| Secret number         | 2 | 2 | 4 | 1 |Comment|
 |:-------------------:|:---:|:---:|:---:|:---:|:-------------------------:|
-| Предполагаемо число | 9 | 9 | 2 | 4 | Бикове = 0<br>Крави = 2 |
+| Suggested number | 9 | 9 | 2 | 4 | Bulls = 0<br>Cows = 2 |
 
-При дадено тайно число и брой на бикове и крави, нашата задача е **да намерим всички възможни предполагаеми числа** в нарастващ ред. Ако **не съществуват предполагаеми числа**, които да отговарят на зададените критерии на конзолата, трябва да се отпечата "**No**".
+Upon having a particular secret number and the bulls and cows pertaining to it, our task is **to find all possible suggested numbers** in ascending order. If there are **no suggested numbers** that match the criteria provided from the console, we must print "**No**".
 
-### Входни данни
+### Input Data
 
-Входните данни се четат от конзолата. Входът се състои от 3 реда:
+The input data is read from the console. We have 3 lines in the input data:
 
-- Първият ред съдържа **секретното число**.
-- Вторият ред съдържа **броя бикове**.
-- Третият ред съдържа **броя крави**.
+ - The first contains **the secret number**.
+ - The second contains **the number of bulls**.
+ - The third contains **the number of cows**.
 
-Входните данни ще бъдат винаги валидни. Няма нужда да бъдат проверявани.
+The input data will always be valid. There is no need to verify them.
 
-### Изходни данни
+### Output Data
 
-Изходните данни трябва да се принтират на конзолата. Изходът трябва да се състои от **един единствен ред** – **всички предполагаеми числа**, разделени с единично празно място. Ако **не съществуват предполагаеми числа**, които да отговарят на зададените критерии на конзолата, трябва **да се изпише "No"**.
+The output data must be printed on the console. The output must consist of **a single line** - **all suggested numbers**, space-separated. If there are **no suggested numbers** that match the criteria provided from the console, we must **print “No”**.
 
-### Ограничения
+### Constraints
 
-- Тайното число винаги ще се състои от **4 цифри в интервала** [**1 … 9**].
-- Броят на **кравите и биковете** винаги ще е в интервала [**0 … 9**].
-- Позволено време за изпълнение: **0.15 секунди**.
-- Позволена памет: **16 MB**.
+- The secret number will always consist of **4 digits in the range** [**1..9**].
+- The number of **cows and bulls** will always be in the range [**0..9**].
+- Allowed execution time: **0.15 seconds**.
+- Allowed memory: **16 MB**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход           | Изход        |
+| Input           | Output        |
 |--------------|------------|
 | 2228<br>2<br>1 | 1222 2122 2212 2232 2242 2252 2262 2272 2281 2283 2284 2285 2286 2287 2289 2292 2322 2422 2522 2622 2722 2821 2823 2824 2825 2826 2827 2829 2922 3222 4222 5222 6222 7222 8221 8223 8224 8225 8226 8227 8229 9222 |
 
-| Вход           | Изход        |
+| Input           | Output        |
 |--------------|------------|
 | 1234<br>3<br>0 | 1134 1214 1224 1231 1232 1233 1235 1236 1237 1238 1239 1244 1254 1264 1274 1284 1294 1334 1434 1534 1634 1734 1834 1934 2234 3234 4234 5234 6234 7234 8234 9234 |
 
-| Вход           | Изход        |
+| Input           | Output        |
 |--------------|------------|
 | 1234<br>3<br>1 | No           |
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще решим задачата на няколко стъпки:
+To complete our task we can do the followings steps:
 
-- Ще прочетем **входните данни**.
-- Ще генерираме всички възможни **четирицифрени комбинации** (кандидати за проверка).
-- За всяка генерирана комбинация ще изчислим **колко бика** и **колко крави** има в нея спрямо секретното число. При съвпадение с търсените бикове и крави, ще **отпечатаме комбинацията**.
+- We will generate all possible **four-digit combinations** (candidates for verification).
+- For each generated combination we will calculate **how many bulls** and **how many cows** it has according to the secret number. Upon matching the needed bulls and cows, we will **print the combination**.
 
-#### Обработване на входа
+#### Reading the Input Data
 
-За входа на нашата задача имаме 3 реда:
+We have 3 lines in the input data:
+ - **Secret number**.
+ - **Number of** desired **bulls**.
+ - **Number of** desired **cows**.
 
-- **Секретното число**.
-- **Броят** желани **бикове**.
-- **Броят** желани **крави**.
-
-Прочитането на тези входни данни е тривиално:
+Reading the input data is simple:
 
 ![Input read](/assets/chapter-9-2-images/03.Bulls-and-cows-01.png)
 
-#### Алгоритъм за решаване на задачата
+#### Algorithm for Solving the Problem
 
-Преди да започнем писането на алгоритъма за решаване на нашия проблем, трябва да **декларираме флаг**, който да указва дали е намерено решение:
+Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution is found:
 
 ![Flag set](/assets/chapter-9-2-images/03.Bulls-and-cows-02.png)
 
-Ако след приключването на нашия алгоритъм, този флаг все още е **`False`**, тогава ще принтираме **`No`** на конзолата, както е указано в условието:
+If after finishing our algorithm this flag is still **`False`**, then we will print **`No`** on the console, as specified in the requirements:
 
 ![No case](/assets/chapter-9-2-images/03.Bulls-and-cows-03.png)
 
-Нека започнем да размишляваме над нашия проблем. Това, което трябва да направим, е да **анализираме всички числа от `1111` до `9999`** без тези, които съдържат в себе си нули (напр. **`9011`**, **`3401`** и т.н. са невалидни числа). Какъв е най-лесният начин за **генериране** на всички тези **числа**? **С вложени цикли**. Тъй като имаме **4-цифрено число**, ще имаме **4 вложени цикъла**, като всеки един от тях ще генерира **отделна цифра от нашето число** за тестване:
+Let's start analyzing our problem. What we need to do is **analyze all numbers from `1111` to `9999`**, excluding those that contain zeroes (for example **`9011`**, **`3401`**, etc. are invalid). What is the easiest way to **generate** all these **numbers**? We will **use nested loops**. As we have a **4-digit number**, we will have **4 nested loops**, as each of them will generate **an individual digit in our number** for testing:
 
 ![Digit generation](/assets/chapter-9-2-images/03.Bulls-and-cows-04.png)
 
-Благодарение на тези цикли, **имаме достъп до всяка една цифра** на всички числа, които трябва да проверим. Следващата ни стъпка е да **разделим секретното число на цифри**. Това може да се постигне много лесно чрез **разрязване на стринг-а (string slicing)**. Алтернативно също можем да постигнем аналогичен резултат чрез достъпване на отделните символи по индекс:
+Thanks to these loops, **we have access to every digit** of all numbers that we need to check. Our next step is to **separate the secret number into digits**. This can be achieved very easily by **splicing the string (string slicing)**. An alternative solution is to access the symbols by index:
 
 ![Guess set](/assets/chapter-9-2-images/03.Bulls-and-cows-05.png)
 
@@ -342,28 +338,28 @@
 
 ![Checks set](/assets/chapter-9-2-images/03.Bulls-and-cows-06.png)
 
-Вече сме готови да започнем анализирането на генерираните числа. Каква логика можем да използваме? Най-елементарният начин да проверим колко крави и бикове има в едно число е чрез **поредица от `if-elif` проверки**. Да, не е най-оптималният начин, но с цел да не използваме знания извън пределите на тази книга, ще изберем този подход.
+We are ready to start analyzing the generated numbers. What logic can we use? The easiest way to check how many cows and bulls there are inside a number is via a **sequence of `if-elif` conditions**. Yes, this is not the most optimal way, but to stick to what is covered in the current book, we will use this approach.
 
-От какви проверки имаме нужда?
+What conditions do we need?
 
-Проверката за бикове е елементарна - проверяваме дали **първата цифра** от генерираното число е еднаква със **същата цифра** от секретното число. Премахваме проверените цифри с цел да избегнем повторения на бикове и крави:
+The condition for the bulls is very simple – we check whether the **first digit** of the generated number matches the **same digit** in the secret number. We remove the digits that are already checked to avoid repetitions of bulls and cows:
 
 ![Single check](/assets/chapter-9-2-images/03.Bulls-and-cows-07.png)
 
-Повтаряме действието за втората, третата и четвърта цифра. 
+We repeat the action for the second, third, and fourth digits.
 
-Проверката за крави можем да направи по следния начин - първо проверяваме дали **първата цифра** от генерираното число **съвпада с втората**, **третата** или **четвъртата цифра** на секретното число. Примерна имплементация:
+Our conditional statement for cows can be done by this method - we check if the **first digit** from the generated number **matches with the second**, **the third**, or **the fourth** digit of the secret number. Example:
 
 ![Case check](/assets/chapter-9-2-images/03.Bulls-and-cows-08.png)
 
-След това последователно проверяваме дали **втората цифра** от генерираното число **съвпада с първата**, **третата** или **четвъртата цифра** на секретното число, дали **третата цифра** от генерираното число съвпада с **първата**, **втората** или **четвъртата цифра** на секретното число и накрая проверяваме дали **четвъртата цифра** от генерираното число съвпада с **първата**, **втората** или **третата цифра** на секретното число.
+After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one**, or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one**, or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
-#### Отпечатване на изхода
+#### Printing the Output
 
-След като приключим всички проверки, ни остава единствено да **проверим дали биковете и кравите в текущото генерирано число съвпадат с желаните бикове и крави, прочетени от конзолата**. Ако това е така, принтираме текущото число на конзолата:
+After completing all conditions, we just need to **check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console**. If this is true, we print the current number on the console:
 
 ![Root check](/assets/chapter-9-2-images/03.Bulls-and-cows-09.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1062#2](https://judge.softuni.org/Contests/Practice/Index/1062#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062#2](https://judge.softuni.org/Contests/Practice/Index/1062#2).
