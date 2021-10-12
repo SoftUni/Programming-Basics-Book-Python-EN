@@ -82,7 +82,7 @@ After you gain some experience, find a way to start **an internship in a company
 
 Regardless of the path you have chosen, if you are seriously involved in programming, we recommend subscribing to specialized **online forums, discussion groups, and communities**, from which you can get assistance from your colleagues and track the novelties in the software industry.
 
-If you will study programming seriously, **surround yourselves with people who are involved in programming** seriously. Join **communities of software developers**, attend software conferences, go to events for programmers, find friends with whom you can talk about programming and discuss problems and bugs, find an environment that can help you. In most large towns there are free events for programmers, a few times a week. In smaller localities, you have the Internet and access to the entire online community
+If you will study programming seriously, **surround yourselves with people who are involved in programming** seriously. Join **communities of software developers**, attend software conferences, go to events for programmers, find friends with whom you can talk about programming and discuss problems and bugs, find an environment that can help you. In most large towns there are free events for programmers, a few times a week. In smaller localities, you have the Internet and access to the entire online community.
 
 Here are some recommended **resources**, that will be useful for your development as a programmer:
 * https://softuni.bg - official **website of SoftUni**. In it, you will find free (and not only) courses, seminars, video tutorials, and training in programming, software technologies, and digital competencies.
