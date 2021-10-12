@@ -1,44 +1,44 @@
-# Глава 8.1. Подготовка за практически изпит – част I
+# Chapter 8.1. Practical Exam Preparation - Part I
 
-В **настоящата глава** ще разгледаме няколко **задачи** с ниво на **трудност**, каквото може да очаквате от **задачите** на практическия **изпит** по “Основи на програмирането”. Ще **преговорим** и **упражним** всички знания, които сме придобили от настоящата книга и през курса "Programing Basics".
+In **the present chapter**, we will examine a few **problems** with a level of **difficulty** that can be expected in **the problems** of the practical **exam** in “Programming Basics”. We will **review** and **practice** all the knowledge that was gained from this book and through the "Programming Basics" course.
 
 
-## Видео
+
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: 
+  Watch a video tutorial on this chapter here: <a target="_blank"
   https://www.youtube.com/watch?v=OYuT5_j1OVE.
 </div>
 
+## The "Programming Basics" Practical Exam
 
-## Практически изпит по “Основи на програмирането”
+The course **"Programing Basics"** finishes with a **practical exam**. There are **6** problems included, and you will have **4 hours** to solve them. **Each** of the exam problems will **cover** one of the studied **topics** during the course. Problem topics are as follows:
 
-Курсът "**Programing Basics**" приключва с **практически изпит**. Включени са **6** задачи, като ще имате **4 часа**, за да ги решите. **Всяка** от задачите на изпита ще **засяга** една от изучаваните **теми** по време на курса. Темите на задачите са както следва:
+- Problem with simple calculations (without conditions)
+- Problem with simple condition
+- Problem with more complex conditions
+- Problem with a simple loop
+- Problem with nested loops (drawing a figure on the console)
+- Problem with nested loops and more complex logic
 
-- Задача с прости сметки (без проверки)
-- Задача с единична проверка
-- Задача с по-сложни проверки
-- Задача с единичен цикъл
-- Задача с вложени цикли (чертане на фигурка на конзолата)
-- Задача с вложени цикли и по-сложна логика
+## The Online Evaluation System (Judge)
 
-## Система за онлайн оценяване (Judge)
+**All exams and homework** are automatically **tested** through the online **Judge system**: [https://judge.softuni.org](https://judge.softuni.org). For **each** of the problems, there are **visible** (zero points) tests that help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly. In the **Judge** system, you can log in with your **softuni.bg account**.
 
-**Всички изпити и домашни** се **тестват** автоматизирано през онлайн **Judge система**: [https://judge.softuni.org](https://judge.softuni.org). За **всяка** от задачите има **открити** (нулеви) тестове, които ще ви помогнат да разберете какво се очаква от задачата и да поправите грешките си, както и **състезателни** тестове, които са **скрити** и проверяват дали задачата ви работи правилно. В **Judge** системата се влиза с вашия **softuni.bg акаунт**.
-
-**Как** работи тестването в **Judge** системата? **Качвате** сорс кода и от менюто под него избирате да се изпълни като **Python** програма. Програмата бива **тествана** с поредица от тестове, като за всеки **успешен** тест получавате **точки**.
+**How** does the testing in the **Judge** system work? **You upload** the source code and from the menu below you choose to compile as a **Python** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 
 
-## Задачи с прости пресмятания
+## Problems with Simple Calculations
 
-**Първата** задача на практическия изпит по “Основи на програмирането” обхваща **прости пресмятания без проверки и цикли**. Ето няколко примера:
+**The first**  problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
 
-### Задача: лице на триъгълник в равнината
+### Problem: 2D Triangle Area
 
 <table>
    <tr>
       <td width="60%">
-        <b>Триъгълник в равнината</b> е зададен чрез координатите на трите си върха. Първо е зададен <b>върхът (x1, y1)</b>. След това са зададени останалите два върха: <b>(x2, y2)</b> и <b>(x3, y3)</b>, които <b>лежат на обща хоризонтална права</b> (т.е. имат еднакви Y координати). Напишете програма, която пресмята <b>лицето на триъгълника</b> по координатите на трите му върха.
+        <b>Triangle in the plain</b>  is defined by the coordinates of its three vertices. First, <b>the vertex (x1, y1)</b> is set. Then the other two vertices are set: <b>(x2, y2)</b> and <b>(x3, y3)</b> which <b>lie on a common horizontal line</b> i.e. they have the same Y coordinates). Write a program that calculates <b>the triangle area</b> by the coordinates of its three vertices.
       </td>
       <td>
          <img src="assets/chapter-8-1-images/01.Triangle-area-01.png"/>
@@ -46,326 +46,325 @@
    </tr>
 </table>
 
-#### Вход
-От конзолата се четат **6 цели числа** (по едно на ред):
+#### Input
+**6 integers** are read from the console (one per line): 
 **x1, y1, x2, y2, x3, y3.**
--	Всички входни числа са в диапазона [**-1000 … 1000**].
--	Гарантирано е, че **y2 = y3**.
+-	All input numbers are in the range [**-1000 … 1000**].
+-	It's guaranteed that **y2 = y3**.
 
-#### Изход
-Да се отпечата на конзолата **лицето на триъгълника**.
+#### Output
+Print on the console **the triangle area**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Чертеж|Обяснения|
-|----|----|----|----|
-|5<br>-2<br>6<br>1<br>1<br>1|7.5|![](/assets/chapter-8-1-images/01.Triangle-area-01.png)|Страната на триъгълника **а** = 6 - 1 = **5**<br>Височината на триъгълника **h** = 1 - (-2) = **3**<br>Лицето на триъгълника **S** = a \* h / 2 = 5 \* 3 / 2 = **7.5**|
+|Input|Output|Visualization|Comments|
+|-----|------|-------------|--------|
+|5<br>-2<br>6<br>1<br>1<br>1|7.5|![](/assets/chapter-8-1-images/01.Triangle-area-01.png)|The side of the triangle **a** = 6 - 1 = **5**<br>The height of the triangle **h** = 1 - (-2) = **3**<br>The area of the triangle **S** = a \* h / 2 = 5 \* 3 / 2 = **7.5**|
 
-|Вход|Изход|Чертеж|Обяснения|
-|----|----|----|----|
-|4<br>1<br>-1<br>-3<br>3<br>-3|8|![](/assets/chapter-8-1-images/01.Triangle-area-02.png)|Страната на триъгълника **а** = 3 - (-1) = **4**<br>Височината на триъгълника **h** = 1 - (-3) = **4**<br>Лицето на триъгълника **S** = a \* h / 2 = 4 \* 4 / 2 = **8**|
+|Input|Output|Visualization|Comments|
+|-----|------|-------------|--------|
+|4<br>1<br>-1<br>-3<br>3<br>-3|8|![](/assets/chapter-8-1-images/01.Triangle-area-02.png)|The side of the triangle **a** = 3 - (-1) = **4**<br>The height of the triangle **h** = 1 - (-3) = **4**<br>The area of the triangle **S** = a \* h / 2 = 4 \* 4 / 2 = **8**|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Изключително важно при подобен тип задачи, при които се подават някакви координати, е да обърнем внимание на **реда**, в който се подават, както и правилно да осмислим кои от координатите ще използваме и по какъв начин. В случая, на входа се подават **x1, y1, x2, y2, x3, y3** в този си ред. Ако не спазваме тази последователност, решението става грешно. Първо пишем кода, който чете подадените данни:
+It is extremely important in these types of tasks, in which some coordinates are given, to pay attention to the ** order ** in which they are submitted, as well as to correctly understand which of the coordinates we will use and in what way.  In this case, the input is in order **x1, y1, x2, y2, x3, y3**. If we do not follow this sequence, the solution becomes wrong. First, we write the code that reads the input data:
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-03.png)
 
-Трябва да пресметнем **страната** и **височината** на триъгълника. От картинките, както и от условието **`y2 = y3`** забелязваме, че едната **страна** винаги е успоредна на хоризонталната ос. Това означава, че нейната **дължина** е равна на дължината на отсечката между нейните координати **`x2` и `x3`**, която е равна на разликата между по-голямата и по-малката координата. Аналогично можем да изчислим и **височината**. Тя винаги ще е равна на разликата между **`y1` и `y2`**(или **`y3`**, тъй като са равни). Тъй като не знаем дали винаги **`x2`** ще е по-голям от **`x3`**, или **`y1`** ще е под или над страната на триъгълника, ще използваме **абсолютните стойности** на разликата, за да получаваме винаги положителни числа, понеже една отсечка не може да има отрицателна дължина:
+We have to calculate **the side** and **the height** of the triangle. From the examples and the condition **`y2 = y3`** we notice that one **side** is always parallel to the horizontal axis. It means that its **length** is equal to the length of the segment between its coordinates **`x2` and `x3`**,  which is equal to the difference between the larger and the smaller coordinates. Similarly, we can calculate **the height**. It will always be equal to the difference between **`y1` and `y2`**(or **`y3`**,  as they are equal). Since we do not know if **`x2`** is greater than **`x3`**, or **`y1`** will be below or above the triangle side, we will use **the absolute values** of the difference to always get positive numbers because one segment cannot have a negative length.
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-04.png)
-
-По познатата ни от училище формула за намиране на **лице на триъгълник**, ще пресметнем лицето:
+  
+We will use the formula familiar to us from school for finding the ** area of a triangle ** to calculate the area.
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-05.png)
 
-Единственото, което остава, е да отпечатаме лицето на конзолата:
+The only thing left is to print the area on the console.
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1059#0](https://judge.softuni.org/Contests/Practice/Index/1059#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#0](https://judge.softuni.org/Contests/Practice/Index/1059#0).
 
 
-### Задача: пренасяне на тухли
+### Problem: Moving Bricks
 
-Строителни работници трябва да пренесат общо **x тухли**. **Работниците** са **w** на брой и работят едновременно. Те превозват тухлите в колички, всяка с **вместимост m** тухли. Напишете програма, която прочита целите числа **x**, **w** и **m** и пресмята **колко най-малко курса** трябва да направят работниците, за да превозят тухлите.
+Construction workers have to transfer a total of **x bricks**. **The workers** are **w** and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w**, and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
-#### Вход
+#### Input
 
-От конзолата се четат **3 цели числа** (по едно на ред):
-- **Броят тухли x** се чете от първия ред.
-- **Броят работници w** се чете от втория ред.
-- **Вместимостта на количката m** се чете от третия ред.
+From the console **3 integers** are read (one per line):
+- **The number of bricks x** is read from the first line.
+- **The number of workers w** is read from the second line.
+- **The capacity of the trolley m** is read from the third line. 
 
-Всички входни числа са цели и в диапазона [**1 … 1000**].
+All input numbers are integers in the range [**1 … 1000**].
 
-#### Изход
+#### Output
 
-Да се отпечата на конзолата **минималният брой курсове**, необходими за превозване на тухлите.
+Print on the console **the minimum number of courses** needed to transport the bricks.
 
-#### Примерен вход и изход
+#### Sample Input and Output
+|Input|Output|Comments|
+|-----|------|--------|
+|120<br>2<br>30|2|We have **2** workers, each transporting **30** bricks per course. In total, workers are transporting **60**  bricks per course. To transport **120** bricks, exactly **2** courses are needed.|
 
-|Вход|Изход|Обяснения|
-|----|----|----|
-|120<br>2<br>30|2|Имаме **2** работника, всеки вози по **30** тухли на курс. Общо работниците возят по **60** тухли на курс. За да превозят **120** тухли, са необходими точно **2** курса.|
+|Input|Output|Comments|
+|-----|------|--------|
+|355<br>3<br>10|12|We have **3** workers, each transporting **10** bricks per course. In total, workers are transporting **30** bricks per course. To transport **355** bricks, exactly **12** courses are needed: **11** complete courses carry **330** bricks and the last **12th** course carries the last **25** bricks.|
 
-|Вход|Изход|Обяснения|
-|----|----|----|
-|355<br>3<br>10|12|Имаме **3** работника, всеки вози по **10** тухли на курс. Общо работниците возят по **30** тухли на курс. За да превозят **355** тухли, са необходими точно **12** курса: **11** пълни курса превозват **330** тухли и последният **12**-ти курс пренася последните **25** тухли.|
+|Input|Output|Comments|
+|-----|------|--------|
+|5<br>12<br>30|1|We have **5** workers, each transporting **30** bricks per course. In total, workers are transporting **150** bricks per course. To transport **5** bricks, only **1** course is enough (although incomplete, with only 5 bricks).|
 
-|Вход|Изход|Обяснения|
-|----|----|----|
-|5<br>12<br>30|1|Имаме **5** работника, всеки вози по **30** тухли на курс. Общо работниците возят по **150** тухли на курс. За да превозят **5** тухли, е достатъчен само **1** курс (макар и непълен, само с 5 тухли).|
+#### Hints and Guidelines
 
-#### Насоки и подсказки
-
-Входът е стандартен, като единствено трябва да внимаваме за последователността, в която прочитаме данните:
+The input is standard, and we only have to pay attention to the sequence in which we read the data:
 
 ![](/assets/chapter-8-1-images/02.Bricks-01.png)
 
-Пресмятаме колко **тухли** носят работниците на един курс:
+We calculate how many **bricks** the workers transport in a single course:
 
 ![](/assets/chapter-8-1-images/02.Bricks-02.png)
 
-Като разделим общия брой на **тухлите, пренесени за 1 курс**, ще получим броя **курсове**, необходими за пренасянето им. Ще използваме функцията **`math.ceil(…)`**, за да закръглим получения резултат нагоре. **Не забравяме** да добавим и **`import math`** в началото на работния файл, за да може функцията **`math.ceil(…)`** да работи. Когато тухлите могат да се пренесат с **точен брой курсове**, делението ще връща точно число и няма да има нищо за закръгляне. Съответно, когато не е така, резултатът от делението ще е **броя на точните курсове**, но с десетична част. Десетичната част ще се закръгли нагоре и така ще се получи нужният **1 курс** за оставащите тухлию;
+By dividing the total number of **bricks transported for 1 course**, we will obtain the number of **courses** needed to carry them. We will use the **`math.ceil (…)`** function to round the result up. ** Remember ** to add **`import math`** at the beginning of the working file so that the **`math.ceil (…)`** function can work. When the bricks can be transferred with **an exact number of courses**, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be **the number of exact courses** but with a decimal fraction.  The decimal part will be rounded up and we will get the required **1 course** for the remaining bricks.
 
 ![](/assets/chapter-8-1-images/02.Bricks-03.png)
 
-Накрая принтираме резултата на конзолата:
+In the end, we print the result on the console:
 
 ![](/assets/chapter-8-1-images/02.Bricks-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1059#1](https://judge.softuni.org/Contests/Practice/Index/1059#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#1](https://judge.softuni.org/Contests/Practice/Index/1059#1).
 
 
-## Задачи с единична проверка
+## Problems with Simple Condition
 
-**Втората** задача от практическия изпит по “Основи на програмирането” обхваща **условна конструкция и прости пресмятания**. Ето няколко примера:
+**The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
 
-### Задача: точка върху отсечка
+### Problem: Point on a Segment
 
-Върху хоризонтална права е разположена **хоризонтална отсечка**, зададена с **x** координатите на двата си края: **first** и **second**. **Точка** е разположена **върху** същата хоризонтална права и е зададена с **x координатата** си. Напишете програма, която проверява дали точката е **вътре или вън от отсечката** и изчислява **разстоянието до по-близкия край** на отсечката.
+On a horizontal line **a horizontal segment** is placed, set with the **x** coordinates at both ends: **first** and **second**. **A point** is located **on** the same horizontal line and is set with its **x coordinate**. Write a program that checks whether the point is **inside or outside of the segment** and calculates **the distance to the nearest end** of the segment.
 
-#### Вход
+#### Input
 
-От конзолата се четат **3 цели числа** (по едно на ред):
-- На първия ред стои числото first – **единия край на отсечката**.
-- На втория ред стои числото second – **другия край на отсечката**.
-- На третия ред стои числото point – **местоположението на точката**.
+From the console **3 integers** are read (one per line):
+- On the first line is the number first - **one end of the segment**.
+- On the second line is the number second - **the other end of the segment**.
+- On the third line is the number point - **the location of the point**. 
 
-Всички входни числа са цели и в диапазона [**-1000 … 1000**].
+All inputs are integers in the range [**-1000 … 1000**].
 
-#### Изход
+#### Output
 
-Резултатът да се отпечата на конзолата:
-- На първия ред да се отпечата "**in**" или "**out**" – дали точката е върху отсечката или извън нея.
-- На втория ред да се отпечата разстоянието от точката до най-близкия край на отсечката.
+Print the result on the console:
+- On the first line, print "**in**" or "**out**" – whether the point is inside or outside the segment.
+- On the second line, print the distance from the point to the nearest end of the segment.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Визуализация|
-|---|---|---|
+|Input|Output|Visualization|
+|-----|------|-------------|
 |10<br>5<br>7|in<br>2|![](/assets/chapter-8-1-images/03.Point-on-segment-01.png)|
 
-|Вход|Изход|Визуализация|
-|---|---|---|
+|Input|Output|Visualization|
+|-----|------|-------------|
 |8<br>10<br>5|out<br>3|![](/assets/chapter-8-1-images/03.Point-on-segment-02.png)|
 
-|Вход|Изход|Визуализация|
-|---|---|---|
+|Input|Output|Visualization|
+|-----|------|-------------|
 |1<br>-2<br>3|out<br>2|![](/assets/chapter-8-1-images/03.Point-on-segment-03.png)|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо прочитаме входните данни:
+First we read the input: 
 
 ![](/assets/chapter-8-1-images/03.Point-on-segment-04.png)
 
-Тъй като не знаем коя **точка** е от ляво и коя е от дясно, ще си направим две променливи, които да ни отбелязват това. Тъй като **лявата точка** е винаги тази с по-малката **х координата**, ще ползваме функцията **`min(…)`**, за да я намерим. Съответно, **дясната** е винаги тази с по-голяма **х координата** - за нея ще ползваме **`max(…)`**. Ще намерим и разстоянието от **точката x** до **двете точки**. Понеже не знаем положението им една спрямо друга, ще използваме функцията **`abs(…)`**, за да получим положителен резултат:
+Since we do not know which **point**  is on the left and which is on the right, we will create two variables to mark this. Since **the left point** is always the one with the smaller **x coordinate**, we will use the **`min(…)`** function to find it. Accordingly, **the right point** is always the one with a larger **x coordinate** and we will use the **`max(…)`** function. We will also find the distance from **the point x** to **the two points**. Since we do not know their position relative to each other, we will use the **`abs(…)`** function to get a positive result: 
 
 ![](/assets/chapter-8-1-images/03.Point-on-segment-05.png)
 
-По-малкото от двете **разстояния** ще намерим ползвайки **`min(…)`**:
+The shorter of the two **distances** we will find by using **`min(…)`**:
 
 ![](/assets/chapter-8-1-images/03.Point-on-segment-06.png)
 
-Остава да намерим дали **точката** е на линията или извън нея. Точката ще се намира **на линията** винаги, когато тя **съвпада** с някоя от другите две точки или х координатата ѝ се намира **между тях**. В противен случай, точката се намира **извън линията**. След проверката изкарваме едното от двете съобщения ("**in**" или "**out**"), спрямо това кое условие е удовлетворено:
+What remains is to find whether **the point** is on or out of the line. The point will be **on the line** always when it **matches** one of the other two points or its x coordinate lies **between them**. Otherwise, the point is **outside the line**. After checking, we display one of the two messages ("**in**" or "**out**"), depending on which condition is satisfied:
 
 ![](/assets/chapter-8-1-images/03.Point-on-segment-07.png)
 
-Накрая принтираме **разстоянието**, намерено преди това:
+Finally, we print **the distance** found before.
 
 ![](/assets/chapter-8-1-images/03.Point-on-segment-08.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1059#2](https://judge.softuni.org/Contests/Practice/Index/1059#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#2](https://judge.softuni.org/Contests/Practice/Index/1059#2).
 
 
-### Задача: точка във фигура
+### Problem: Point on a Figure
 
-Да се напише програма, която проверява дали дадена точка (с координати **x** и **y**) е **вътре** или **извън** следната фигура:
+Write a program that checks if a point (with coordinates **x** and **y**) is **inside** or **outside** of the given figure:
  
 ![](/assets/chapter-8-1-images/04.Point-in-figure-01.png)
 
-#### Вход
+#### Input
 
-От конзолата се четат **две цели числа** (по едно на ред): **x** и **y**.
+From the console are read **two integers** (one per line): **x** и **y**.
 
-Всички входни числа са цели и в диапазона **[-1000 … 1000]**.
+All inputs are integers in the range **[-1000 … 1000]**.
 
-#### Изход
+#### Output
 
-Да се отпечата на конзолата "**in**" или "**out**" – дали точката е **вътре** или **извън** фигурата (на контура е вътре).
+Print on the console "**in**" or "**out**" – whether the point is **inside** or **outside** the figure (the outline is inside).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |8<br>-5|in|6<br>-3|in|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |11<br>-5|out|11<br>2|out|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За да разберем дали **точката** е във фигурата, ще разделим **фигурата** на 2 четириъгълника:
+To find out if **the point** is inside of the figure, we will divide **the figure** into 2 rectangles:
 
 ![](/assets/chapter-8-1-images/04.Point-in-figure-02.png)
 ![](/assets/chapter-8-1-images/04.Point-in-figure-03.png)
 
-Достатъчно условие е **точката** да се намира в един от тях, за да се намира във **фигурата**.
+A sufficient condition is the ** point ** to be located in one of them to be in the ** figure **. 
 
-Четем от конзолата входните данни:
+We read the input from the console:
 
 ![](/assets/chapter-8-1-images/04.Point-in-figure-04.png)
 
-Ще създадем две променливи, които ще отбелязват дали **точката** се намира в някой от правоъгълниците:
+We will initialize two variables that will mark whether **the point** is in one of the rectangles:
 
 ![](/assets/chapter-8-1-images/04.Point-in-figure-05.png)
 
-При отпечатването на съобщението ще проверим дали някоя от променливите е приела стойност **`True`**. Достатъчно е **само една** от тях да е **`True`**, за да се намира точката във фигурата:
+When printing the message, we will check whether any of the variables has accepted a value of **`True`**. It's enough **only one** of them to be **`True`**  so that the point is in the figure.
 
 ![](/assets/chapter-8-1-images/04.Point-in-figure-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1059#3](https://judge.softuni.org/Contests/Practice/Index/1059#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#3](https://judge.softuni.org/Contests/Practice/Index/1059#3).
 
 
-## Задачи с по-сложни проверки
+## Problems with Complex Conditions
 
-**Третата** задача на практическия изпит по “Основи на програмирането” включва **няколко вложени проверки съчетани с прости пресмятания**. Ето няколко примера:
+**The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
 
-### Задача: дата след 5 дни
+### Problem: Date after 5 days
 
-Дадени са две числа **d** (ден) и **m** (месец), които формират **дата**. Да се напише програма, която отпечатва датата, която ще бъде **след 5 дни**. Например 5 дни след **28.03** е датата **2.04**. Приемаме, че месеците: април, юни, септември и ноември имат по 30 дни, февруари има 28 дни, а останалите имат по 31 дни. Месеците да се отпечатат с **водеща нула**, когато са едноцифрени (например 01, 08).
+There are two numbers **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **after 5 days**. For example, 5 days after **28.03** is the date **2.04**. We assume that the months: April, June, September, and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they are single-digit numbers (e.g. 01, 08).
 
-#### Вход
+#### Input
+  
+The input is read from the console and consists of two lines:
+- On the first line there is an integer **d** in the interval [**1… 31**] - day. The number of the day does not exceed the number of days in the respective month (e.g. 28 for February).
+- On the second line there is an integer **m** in the interval [**1… 12**] - month. Month 1 is January, month 2 is February,…, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04). 
 
-Входът се чете от конзолата и се състои от два реда:
--	На първия ред стои едно цяло число **d** в интервала [**1 … 31**] – ден. Номерът на деня не надвишава броя дни в съответния месец (напр. 28 за февруари).
--	На втория ред стои едно цяло число **m** в интервала [**1 … 12**] – месец. Месец 1 е януари, месец 2 е февруари, …, месец 12 е декември. Месецът може да съдържа водеща нула (напр. април може да бъде изписан като 4 или 04).
+#### Output
 
-#### Изход
+Print a single line containing the date after 5 days in the format **day.month** on the console. The month must be a two-digit number with a leading zero, if necessary. The day must be written without a leading zero.
 
-Отпечатайте на конзолата един единствен ред, съдържащ дата след 5 дни във формат **ден.месец**. Месецът трябва да бъде двуцифрено число с водеща нула, ако е необходимо. Денят трябва да е без водеща нула.
+#### Sample Input and Output
 
-#### Примерен вход и изход
-
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |28<br>03|2.04|27<br>12|1.01|
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |25<br>1|30.01|26<br>02|3.03|
 
 #### Насоки и подсказки
 
-Прочитаме входните данни от конзолата:
+We read the input data from the console: 
 
 ![](/assets/chapter-8-1-images/05.Date-after-5-days-01.png)
 
-За да си направим по-лесно проверките, ще си създадем една променлива, която ще съдържа **броя дни**, които има в месеца, който сме задали:
+To make our checks easier, we will create a variable that will contain the **number of days** that we have in the month we set:
 
 ![](/assets/chapter-8-1-images/05.Date-after-5-days-02.png)
 
-Увеличаваме **деня** с 5:
+We increase the **day** by 5:
 
 ![](/assets/chapter-8-1-images/05.Date-after-5-days-03.png)
 
-Проверяваме дали **денят** не е станал по-голям от броя дни, които има в съответния **месец**. Ако това е така, трябва да извадим дните от месеца от получения ден, за да получим нашият ден на кой ден от следващия месец съответства:
+We check if **the day** has exceeded the number of days in **the month**. If so, we must deduct the days of the month from the obtained day to calculate which day of the next month our day corresponds to:
 
 ![](/assets/chapter-8-1-images/05.Date-after-5-days-04.png)
 
-След като сме минали в **следващия месец**, това трябва да се отбележи, като увеличим първоначално зададения месец с 1. Трябва да проверим, дали той не е станал по-голям от 12 и ако е така, да коригираме. Тъй като няма как да прескочим повече от **един месец**, когато увеличаваме с 5 дни, следната проверка е достатъчна:
+After we have passed to **the next month**,  this should be noted by increasing the initial one by 1. We need to check if it has become greater than 12 and if it has, to adjust it. Because we cannot skip more than **one month** when we increase by 5 days, the following check is enough:
 
 ![](/assets/chapter-8-1-images/05.Date-after-5-days-05.png)
 
-Остава само да принтираме резултата на конзолата. Важно е да **форматираме изхода** правилно, за да се появява водещата нула в първите 9 месеца. Това става, като добавим **форматиращ стринг** **`%02d`** за втория елемент:
+The only thing that remains is to print the result on the console. It is important to **format the output** correctly to display the leading zero in the first 9 months. This is done by adding a **formatted string** **`%02d`** for the second element: 
 
 ![](/assets/chapter-8-1-images/05.Date-after-5-days-06.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1059#4](https://judge.softuni.org/Contests/Practice/Index/1059#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#4](https://judge.softuni.org/Contests/Practice/Index/1059#4).
 
 
-### Задача: суми от 3 числа
+### Problem: Sums of Three Numbers
 
-Дадени са **3 цели числа**. Да се напише програма, която проверява дали **сумата на две от числата е равна на третото**. Например, ако числата са **3**, **5** и **2**, сумата на две от числата е равна на третото: **2 + 3 = 5**.
+There are **3 integers** given. Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5**, and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
-#### Вход
+#### Input
 
-От конзолата се четат **три цели числа**, по едно на ред. Числата са в диапазона [**1 … 1000**].
+From the console are read **three integers**, one per line. The numbers are in the range  [**1 … 1000**].
 
-#### Изход
+#### Output
 
--	Да се отпечата на конзолата един ред, съдържащ решението на задачата във формат "**a + b = c**", където **a**, **b** и **c** са измежду входните три числа и  **a ≤ b**.
--	Ако задачата няма решение, да се отпечата "**No**" на конзолата.
+-	Print a single line on the console containing the solution of the problem in the format "**a + b = c**", where **a**, **b** and **c** are among the three input numbers and  **a ≤ b**.
+-	If the problem has no solution, print “**No**” on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |3<br>5<br>2|2 + 3 = 5|2<br>2<br>4|2 + 2 = 4|
 
-|Вход|Изход|Вход|Изход|
-|---|---|---|---|
+|Input|Output|Input|Output|
+|-----|------|-----|------|
 |1<br>1<br>5|No|2<br>6<br>3|No|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Приемаме входа от конзолата:
+We take the input from the console:
 
 ![](/assets/chapter-8-1-images/06.Sums-3-numbers-01.png)
 
-Трябва да проверим дали **сумата** на някоя двойка числа е равна на третото. Имаме три възможни случая:
+We have to check if **the sum** of a pair of numbers is equal to the third number. We have three possible cases:
 * a + b = c
 * a + c = b 
 * b + c = a
 
-Ще напишем **рамка**, която после ще допълним с нужния код. Ако никое от горните три условия не е изпълнено, ще зададем на програмата да принтира "**No**":
+We will write **a template**, which will later be complemented by the required code. If none of the above three conditions is met, we will make our program print "**No**":
 
 ![](/assets/chapter-8-1-images/06.Sums-3-numbers-02.png)
 
-Сега остава да разберем реда, в който ще се изписват **двете събираеми** на изхода на програмата. За целта ще направим **вложено условие**, което проверява кое от двете числа е по-голямото. При първия случай, ще стане по следния начин:
-
+Now it remains to understand the order in which **the two addends** will be displayed at the output of the program. For this purpose we will make a **nested condition**, which checks which of the two numbers is the greater. In the first case, it will be as follows: 
+  
 ![](/assets/chapter-8-1-images/06.Sums-3-numbers-03.png)
 
-Аналогично, ще допълним и другите два случая. Пълният код на проверките и изходът на програмата ще изглеждат така:
+Similarly, we will supplement the other two cases. The full code of the program will look like this:
 
 ![](/assets/chapter-8-1-images/06.Sums-3-numbers-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1059#5](https://judge.softuni.org/Contests/Practice/Index/1059#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#5](https://judge.softuni.org/Contests/Practice/Index/1059#5).
 
 
 ## Задачи с единичен цикъл
