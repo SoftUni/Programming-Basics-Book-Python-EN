@@ -152,7 +152,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 ## Problem: Smart Lily
 
-Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** birthdays (1, 3, 5, …, n) she receives **toys**, and for each **even** birthday (2, 4, 6, …, n) she receives **money**. For her **second birthday** she receives **10.00 USD**, and **the sum increases by 10 USD with each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30, etc.). Lily has secretly been saving the money for years. **Her brother**, in the years when she **receives money**, **takes 1.00 USD**. Lily **sold the toys** received with the years, **each for P USD** and added the sum to the saved money. With them she wants **to buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and whether ** it's enough to buy a washing machine**.
+Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** birthdays (1, 3, 5, …, n) she receives **toys**, and for each **even** birthday (2, 4, 6, …, n) she receives **money**. For her **second birthday** she receives **10.00 USD**, and **the sum increases by 10 USD with each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30, etc.). Lily has secretly been saving the money for years. **Her brother**, in the years when she **receives money**, **takes 1.00 USD**. Lily **sold the toys** received with the years, **each for P USD** and added the sum to the saved money. With them she wants **to buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and whether **it's enough to buy a washing machine**.
 
 ### Входни данни
 
