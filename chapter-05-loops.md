@@ -240,7 +240,7 @@ We can read a sequence of **`n`** numbers from the console:
 
 ## Exercises: Repetitions (loops)
 
-Now that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise.
+Now, that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise.
 
 ### Creating new project in PyCharm
 
@@ -248,13 +248,13 @@ Create new project in PyCharm (from [**File**] -> [**New Project**]), in order t
   
 ![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.png)
 
-### Problem: елемент, равен на сумата на останалите
+### Problem: element equal to the sum of the rest
 
-Да се напише програма, която въвежда **n цели числа** и проверява дали сред тях съществува число, което е равно на сумата на всички останали. Ако има такъв елемент, се отпечатва **"Yes" + неговата стойност**, в противен случай - **"No" + разликата между най-големия елемент и сумата на останалите** (по абсолютна стойност). 
+Write a program that inputs **n integers** and checks whether among them there is a number equal to the sum of all the rest. If there is such an element, print **"Yes" + itsvalue**, otherwise print - **"No" + the difference betwen the largest element and the sum of the rest** (by absolute value). 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Коментар |
+| Input | Output | Comment |
 | --- | --- | :---: |
 | 7<br>3<br>4<br>1<br>1<br>2<br>12<br>1 | Yes<br>Sum = 12 | 3 + 4 + 1 + 2 + 1 + 1 = 12 |
 | 4<br>6<br>1<br>2<br>3 | Yes<br>Sum = 6 | 1 + 2 + 3 = 6 |
@@ -262,149 +262,149 @@ Create new project in PyCharm (from [**File**] -> [**New Project**]), in order t
 | 3<br>5<br>5<br>1 | No<br>Diff = 1 | &#124;5 - (5 + 1)&#124; = 1 |
 | 3<br>1<br>1<br>1 | No<br>Diff = 1 | - |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Трябва да изчислим **сумата** на всички елементи, да намерим **най-големия** от тях и да проверим търсеното условие.
+We have to calculate **the sum** of all elements, find **the largest** of them and check the condition.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#9](https://judge.softuni.org/Contests/Practice/Index/1053#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#9](https://judge.softuni.org/Contests/Practice/Index/1053#9).
 
 
-### Задача: четни / нечетни позиции
+### Problem: even / odd positions
 
-Напишете програма, която чете **n числа** и пресмята **сумата**, **минимума** и **максимума** на числата на **четни** и **нечетни** позиции (броим от 1). Когато няма минимален / максимален елемент, отпечатайте **"No"**. 
+Write a program that reads **n numbers** and calculates **the sum**, **the min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max elements, print **"No"**. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 | --- | --- | --- | --- |
 | 6<br>2<br>3<br>5<br>4<br>2<br>1 | OddSum=9,<br>OddMin=2,<br>OddMax=5,<br>EvenSum=8,<br>EvenMin=1,<br>EvenMax=4 | 2<br>1.5<br>-2.5 | OddSum=1.5,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=-2.5,<br>EvenMin=-2.5,<br>EvenMax=-2.5 |
 | 1<br>1 | OddSum=1,<br>OddMin=1,<br>OddMax=1,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 0 | OddSum=0,<br>OddMin=No,<br>OddMax=No,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No |
 | 5<br>3<br>-2<br>8<br>11<br>-3 | OddSum=8,<br>OddMin=-3,<br>OddMax=8,<br>EvenSum=9,<br>EvenMin=-2,<br>EvenMax=11 | 4<br>1.5<br>1.75<br>1.5<br>1.75 | OddSum=3,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=3.5,<br>EvenMin=1.75,<br>EvenMax=1.75 |
 | 1<br>-5 | OddSum=-5,<br>OddMin=-5,<br>OddMax=-5,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 3<br>-1<br>-2<br>-3 | OddSum=-4,<br>OddMin=-3,<br>OddMax=-1,<br>EvenSum=-2,<br>EvenMin=-2,<br>EvenMax=-2 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Задачата обединява няколко предходни задачи: намиране на **минимум**, **максимум** и **сума**, както и обработка на елементите от **четни и нечетни позиции**. Припомнете си ги.
+The task combines some of the previous tasks: finding the **min**, **max** value and **sum**, as well as processing of elements on **even and odd positions **. Check them out.
 
-В тази задача е по-добре да се работи с **дробни числа** (не цели). Сумата, минимумът и максимумът също са дробни числа. Трябва да използваме **неутрална начална стойност** при намиране на минимум / максимум, например **1000000000.0** и **-1000000000.0**. Ако получим накрая неутралната стойност, печатаме **"No"**.
+In the current task it is better to work with **fractions** (not integers). The sum, the min and the max will also be fractions. We must use a **neutral starting value** when findinf the min / max value, for example **1000000000.0** and **-1000000000.0**. If the end result is the neutral value, print **"No"**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#10](https://judge.softuni.org/Contests/Practice/Index/1053#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#10](https://judge.softuni.org/Contests/Practice/Index/1053#10).
 
 
-### Задача: еднакви двойки
+### Problem: equal pair
 
-Дадени са **2 \* n числа**. Първото и второто формират **двойка**, третото и четвъртото също и т.н. Всяка двойка има **стойност** – сумата от съставящите я числа. Напишете програма, която проверява **дали всички двойки имат еднаква стойност**. В случай, че е еднаква отпечатайте **"Yes, value=…" + стойността**, в противен случай отпечатайте **максималната разлика** между две последователни двойки в следния формат - **"No, maxdiff=…" + максималната разлика**. Входът се състои от число **n**, следвано от **2*n цели числа**, всички по едно на ред.
+There are **2 \* n numbers**. The first and the second number form a **pair**, the third and the fourth number as well, and so on. Each pair has a **value** – the usm of its numbers. Write a program that check **if all pairs have equal value**. In case the value is the same, print **"Yes, value=…" + the value**, otherwise print **the maximum difference ** between two neighboring pairs in the following format - **"No, maxdiff=…" + the maximum difference **. The input consists of the number **n**, followed by **2*n integers**, all of them one per line.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Коментар |
+| Input | Output | Comment |
 | --- | --- | :---: | 
-| 3<br>1<br>2<br>0<br>3<br>4<br>-1| Yes, value=3 | стойности = {3, 3, 3}<br>еднакви стойности | 
-| 2<br>1<br>2<br>2<br>2 | No, maxdiff=1 | стойности = {3, 4}<br>разлики = {1}<br>макс. разлика = 1 |
-| 4<br>1<br>1<br>3<br>1<br>2<br>2<br>0<br>0 | No, maxdiff=4 | стойности = {2, 4, 4, 0}<br>разлики = {2, 0, 4}<br>макс. разлика = 4 |
-| 1<br>5<br>5 | Yes, value=10 | стойности = {10}<br>една стойност<br>еднакви стойности |
-| 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | стойности = {-1, -1}<br>еднакви стойности | 
-| 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | стойности = {1, -1}<br>разлики = {2}<br>макс. разлика = 2 |
+| 3<br>1<br>2<br>0<br>3<br>4<br>-1| Yes, value=3 | values = {3, 3, 3}<br>equal values | 
+| 2<br>1<br>2<br>2<br>2 | No, maxdiff=1 | values = {3, 4}<br>differece = {1}<br>max difference = 1 |
+| 4<br>1<br>1<br>3<br>1<br>2<br>2<br>0<br>0 | No, maxdiff=4 | values = {2, 4, 4, 0}<br>differences = {2, 0, 4}<br>max difference = 4 |
+| 1<br>5<br>5 | Yes, value=10 | value = {10}<br>one vlaue<br>equal values |
+| 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | values = {-1, -1}<br>equal values | 
+| 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | values = {1, -1}<br>differences = {2}<br>max difference = 2 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Прочитаме входните числа **по двойки**. За всяка двойка пресмятаме **сумата** ѝ. Докато четем входните двойки, за всяка двойка, без първата, трябва да пресметнем **разликата с предходната**. За целта е необходимо да пазим в отделна променлива сумата на предходната двойка. Накрая намираме **най-голямата разлика** между две двойки. Ако е **0**, печатаме **"Yes"** + стойността, в противен случай - **"No"** + разликата.
+We read the input numbers **in pairs**. For each pair we calculate its **the sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. In order to do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#11](https://judge.softuni.org/Contests/Practice/Index/1053#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#11](https://judge.softuni.org/Contests/Practice/Index/1053#11).
 
 
-## Упражнения: графични и уеб приложения
+## Lab: Graphic and web applications
 
-В настоящата глава се запознахме с **циклите** като конструкция в програмирането, която ни позволява да повтаряме многократно дадено действие или група от действия. Сега нека си поиграем с тях. За целта ще начертаем няколко фигурки, които се състоят от голям брой повтарящи се графични елементи, но този път не на конзолата, а в графична среда, използвайки "**графика с костенурка**". Ще е интересно. И никак не е сложно. Опитайте!
+In the current chapter we learned about **loops** as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them. In order to do that, we will draw some figures that will consist of a large number of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
 
-### Задача: чертане с костенурка – графично GUI приложение
+### Problem: Turtle Graphics GUI Application
 
-Целта на следващото упражнение е да си поиграем с една **библиотека за рисуване**, известна като **"графика с костенурка" (turtle graphics)**. Ще изградим графично приложение, в което ще **рисуваме различни фигури**, придвижвайки нашата **"костенурка"** по екрана чрез операции от типа "отиди напред 100 позиции", "завърти се надясно на 30 градуса", "отиди напред още 50 позиции". Приложението ще изглежда приблизително така:
+The purpose of the following exercise is to play with a **drawing library**, also known as **"turtle graphics"**. We will build a graphical application in which we will **draw various figures**, by moving our **"turtle"** across the screen via operations like "move 100 positions ahead", "turn 30 degrees to the right", "move 50 more positions ahead". The application will look approximately like this:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
-Нека първо се запознаем с **концепцията за рисуване "Turtle Graphics"**. Може да разгледаме следните източници:
+Let's first get familiar with **the concept of drawing "Turtle Graphics""**. Take a look at the following sources:
 
-* Дефиниция на понятието "turtle graphics": [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
-* Статия за "turtle graphics" в Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
-* Интерактивен онлайн инструмент за чертане с костенурка – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
+* Definition of "turtle graphics": [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
+* Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
+* Interactive online tool for drawing with a turtle – [https://blockly-games.appspot.com/turtle](https://blockly-games.appspot.com/turtle)
 
-Започваме, като създаваме нов **проект с PyCharm**:
+We will start by creating a new **project in PyCharm**:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-В новосъздадения проект добавяме нов **Python File**. За чертането ще използваме външната библиотека **`turtle`**. Тя дефинира клас **`Turtle`**, който представлява **костенурка за рисуване**. За да я използваме, добавяме следния код, най-отгоре в началото на Python файла:
+In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. She defines class **`Turtle`**, which represents **drawing turtle**. In order to use it, we add the following code in the beginning of the Python file:
   
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
-След това, за чертането, добавяме следния код:
+After that for the drawing we add the code:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
-Горния код мести и върти костенурката, която в началото е в центъра на екрана (в средата на формата), и чертае равностранен триъгълник. Може да го редактирате и да си поиграете с него. **Стартираме** приложението:
+The above code moves and rotates the turtle, which is located in the center of the screen in the beginning (in the middle of the form) and draws an equilateral triangle. You can edit it and play with it. **Start** the app:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-05.png)
 
-Сега може да променим и усложним горния код, за да получим по-сложна фигура: 
+Now you can modify the turtle code and make it more complex, in order for the turtle to make more complec figure: 
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
-Отново **стартираме** приложението, за да видим резултата:
+Again **start** the app to see the result:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-7.png)
 
-Вече нашата костенурката чертае по-сложни фигури чрез приятно анимирано движение.
+Now our turtle draws more complex figures via a nice animated motion.
 
-### Задача: * чертане на шестоъгълник с костенурката
+### Problem: * Draw a Hexagon with the Turtle
 
-Добавeте нов Python файл, с примерно име **hexagon**, който ще чертае правилен шестоъгълник:
+Add new Python file, with name **hexagon**, which will draw hexagon:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-8.png)
 
-**Подсказка:**
+**Hint:**
 
-В цикъл повторете 6 пъти следното:
-* Ротация на 60 градуса.
-* Движение напред 100.
+With loop repeat the following 6 times:
+* 60 degrees rotation.
+* Forward step of 100.
 
-### Задача: * чертане на звезда с костенурката
+### Problem: * Draw a Star with the Turtle
 
-Добавете нов Python файл **star.py**, който чертае звезда с 5 върха (**петолъчка**), като на фигурата по-долу:
+Add new Python file **star.py**, which draws a star with 5 beams (**pentagram**), as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-9.png)
 
-**Подсказка:** Сменете цвета: **`my_turtle.color("green")`**. 
+**Hints:** Change the colour: **`my_turtle.color("green")`**. 
 
-В цикъл повторете 5 пъти следното:
-* Движение напред 200.
-* Ротация на 144 градуса.
+Repeat 5 times the following in a loop:
+* Forward step of 200.
+* 144 degrees rotation.
 
-### Задача * чертане на спирала с костенурката
+### Problem * Draw a Spiral with the Turtle
 
-Добавете нов Python файл **spiral.py**, който чертае спирала с 20 върха като на фигурата по-долу:
+Add new Python file **spiral.py**, which draws spiral with 20 beamsas on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
-**Подсказка:** Чертайте в цикъл, като движите напред и завъртате. С всяка стъпка увеличавайте постепенно дължината на движението напред и завъртайте на 60 градуса.
+**Hint:** Draw in a loop by moving ahead and rotating. In each step, decrease gradually the length of the forward step and rotate 60 degrees..
 
-### Задача: * чертане на слънце с костенурката
+### Problem: * Draw a Sun with the Turtle
 
-Добавете нов Python файл **sun.py**, който чертае слънце с 36 върха като на фигурата по-долу:
+Add new Python file **sun.py**, which draws a sun with 36 beams, as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 
-### Задача: * чертане на спирален триъгълник с костенурката
+### Problem: * Draw a Spiral Triangles with the Turtle
 
-Добавете нов Python файл **triangle.py**, който чертае три триъгълника с по 22 върха като на фигурата по-долу:
+Add new Python file **triangle.py**, which draws three triangles with 22 beams each, as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-12.png)
 
-**Подсказка:** Чертайте в цикъл като движите напред и завъртате. С всяка стъпка увеличавайте с 10 дължината на движението напред и завъртайте на 120 градуса. Повторете 3 пъти за трите триъгълника.
+**Hint:** Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles. 
 
-Ако имате проблеми с примерния проект по-горе, питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you have a problem with the above exercises, ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.
