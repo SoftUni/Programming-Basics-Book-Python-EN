@@ -15,7 +15,7 @@ Let’s solve a couple of problems with loops in SoftUni’s exams.
 
 ## Problem: histogram
 	
-We’re given **n-count integers** in the interval [**1 … 1000**]. A percent of them, **p1**, are under 200, __p2__ percent are between 200 and 399, **p3** percent are between 400 and 599, **p4** percent are between 600 and 799, and the remaining **p5** percent begin at 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
+We’re given **n-count integers** in range [**1 … 1000**]. A percent of them, **p1**, are under 200, __p2__ percent are between 200 and 399, **p3** percent are between 400 and 599, **p4** percent are between 600 and 799, and the remaining **p5** percent begin at 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
 
 **Example**: we have n = **20** integers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
                           
@@ -30,7 +30,7 @@ We’re given **n-count integers** in the interval [**1 … 1000**]. A percent o
 
 ### Input
 
-On the first line of the input is an integer **n** ( 1 <= **n** <= 1000), which stands for the number of lines with numbers, which will be given to us. On the next **n lines** there is **one integer** in the interval [**1 … 1000**] – the numbers that the histogram will be based on.
+On the first line of the input is an integer **n** ( 1 <= **n** <= 1000), which stands for the number of lines with numbers, which will be given to us. On the next **n lines** there is **one integer** in range [**1 … 1000**] – the numbers that the histogram will be based on.
 
 ### Output
 
@@ -154,13 +154,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** birthdays (1, 3, 5, …, n) she receives **toys**, and for each **even** birthday (2, 4, 6, …, n) she receives **money**. For her **second birthday** she receives **10.00 USD**, and **the sum increases by 10 USD with each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30, etc.). Lily has secretly been saving the money for years. **Her brother**, in the years when she **receives money**, **takes 1.00 USD**. Lily **sold the toys** received with the years, **each for P USD** and added the sum to the saved money. With them she wants **to buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and whether **it's enough to buy a washing machine**.
 
-### Входни данни
+### Input
 
-От конзолата се прочитат **3 числа**, всяко на отделен ред:
+**3 numbers** are read from the console, each on a new line:
 
-   - **Възрастта** на Лили – **цяло число** в интервала [**1 … 77**].
-   - **Цената на пералнята** – число в интервала [**1.00 … 10 000.00**].
-   - **Единична цена на играчка** – **цяло число** в интервала [**0 … 40**].
+   - **Lily's age** – **integer** in range [**1 … 77**].
+   - **The price of the washing machine** – a number in range [**1.00 … 10 000.00**].
+   - **The price of a single toy** – **integer** in range [**0 … 40**].
 
 ### Изходни данни
 
