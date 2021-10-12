@@ -293,21 +293,21 @@ The input is read from the console and **contains exactly 2 lines**:
 
 ### Tips and advice
 
-Методът за решаване на тази задача не е по-различен от тези на предходните, затова започваме **деклариране и инициализиране** на нужните променливи. В условието е казано, че годините на Иванчо са 18, ето защо при декларацията на променливата **`years`** ѝ задаваме начална стойност **18**. Другите променливи прочитаме от конзолата: 
+The method of solving this problem isn't unlike the previous ones, so we begin by **declaring and initializing** the needed variables. In the problem's description it's said that Ivancho's age is 18, so we declare the variable **`years`** with the initial value **18**. We read other variables from the console: 
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
-С помощта на **`for` цикъл** ще обходим всички години. **Започваме от 1800** – годината, в която Иванчо се връща, и стигаме **до годината, до която той трябва да живее**. В цикъла проверяваме дали текущата година е **четна** или **нечетна**. Проверката за четност осъществяваме чрез **деление с остатък** (**`%`**) на 2. Ако годината е **четна**, изваждаме от наследството (**`heritage`**) **12000**, a ако е **нечетна**, изваждаме от наследството (**`heritage`**) **12000 + 50 * (годините на Иванчо)**:
+With the help of a **`for` loop** we loop through all years. **We begin at 1800** – the year when Ivancho travels back in time, and we end at **the year until he has to live**. In the loop we check wheter the current year is **even** or **odd**. We check it with **division with remainder** (**`%`**) by 2. If the year is **even**, from the heritage (**`heritage`**) we subtract **12000**, while if it's **odd**, from the heritage (**`heritage`**) we subtract **12000 + 50 * (Ivancho's age)**:
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
-Накрая остава да отпечатаме резултатите, като за целта правим **проверка дали наследството** (**`heritage`**) му е било достатъчно да живее без да работи или не. Ако наследството (**`heritage`**) е **положително число**, отпечатваме: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", а ако е **отрицателно число**: "**`He will need {М} dollars to survive.`**". Не забравяме да форматираме сумата до два знака след десетичната точка.
+At the end we print the results, and we do a **check whether the inheritance** (**`heritage`**) has been enough for him to live without working or not. If the inheritance (**`heritage`**) is **a positive number**, we print: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", while if it's a **negative number**: "**`He will need {М} dollars to survive.`**". We don't forget to format the sum with 2-digit precision after the decimal point.
 
-**Hint**: Обмислете използването на функцията **`abs(…)`** при отпечатване на изхода, когато наследството е недостатъчно.
+**Hint**: Think about using the function **`abs(…)`** when printing the output and the inheritance is not enough.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1054#2](https://judge.softuni.org/Contests/Practice/Index/1054#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#2](https://judge.softuni.org/Contests/Practice/Index/1054#2).
 
 
 ## Задача: болница
