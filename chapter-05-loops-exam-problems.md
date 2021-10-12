@@ -172,31 +172,41 @@ Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** 
     * "**No! {M}**" – където **M** е сумата, която не достига
   * Числата **N** и **M** трябва да са **форматирани до втория знак след десетичната точка**.
 
-### Примерен вход и изход
+### Output
+
+Print a single line in the console:
+
+  * If Lily's money are enough:
+    * "**Yes! {N}**" – where **N** are the remaining money after the purchase
+  * If they're not:
+    * "**No! {M}**" – where **M** are the missing money
+  * The numbers **N** and **M** should be **formatted with 2-digit precision after the decimal point**.
+
+### Example input & output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Коментари</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Comments</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">10<br>170.00<br>6</td>
 <td valign="top">Yes! 5.00</td>
-<td valign="top"><p><strong>Първи рожден ден</strong> получава <strong>играчка</strong>; <strong>2ри</strong> -> <strong>10 лв.</strong>; 3ти -> играчка; <strong>4ти</strong>  -> 10 + 10 = <strong>20 лв.</strong>; 5ти -> играчка; <strong>6ти</strong> -> 20 + 10 = <strong>30 лв.</strong>; 7ми -> играчка; <strong>8ми</strong> -> 30 + 10 = <strong>40 лв.</strong>; 9ти -> играчка; <strong>10ти</strong> -> 40 + 10 = <strong>50 лв</strong>.<br>
-<strong>Спестила е</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 лв.</strong>. Продала е <strong>5 играчки по 6 лв. = 30 лв.</strong>.<br>
-<strong>Брат ѝ взел 5 пъти по 1 лев = 5 лв</strong>. <strong>Остават</strong> -> 150 + 30 – 5 = <strong>175 лв</strong>.
-<strong>175 &gt;= 170</strong> (цената на пералнята) <strong>успяла</strong> е да я купи и са ѝ <strong>останали</strong> 175-170 = <strong>5 лв</strong>.
+<td valign="top"><p><strong>On the first birthday</strong> she receives <strong>a toy</strong>; <strong>Second</strong> -> <strong>10 USD</strong>; 3rd -> toy; <strong>4th</strong>  -> 10 + 10 = <strong>20 USD</strong>; 5th -> toy; <strong>6th</strong> -> 20 + 10 = <strong>30 USD</strong>; 7th -> toy; <strong>8th</strong> -> 30 + 10 = <strong>40 USD</strong>; 9th -> toy; <strong>10th</strong> -> 40 + 10 = <strong>50 USD</strong><br>
+<strong>She has saved</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 USD</strong>. She has sold <strong>5 toys by 6 USD = 30 USD</strong>.<br>
+<strong>Her brother took 1 USD for 5 years = 5 USD</strong>. <strong>Remaining money</strong> -> 150 + 30 – 5 = <strong>175 USD</strong>
+<strong>175 &gt;= 170</strong> (washing machine's price) <strong>She has succeeded</strong> buying it and there <strong>remain</strong> 175-170 = <strong>5 USD</strong>
 </p></td>
 </tr>
 <tr>
 <td valign="top">21<br>1570.98<br>3</td>
 <td valign="top">No! 997.98</td>
-<td valign="top"><p><strong>Спестила е 550 лв.</strong>. <strong>Продала</strong> е <strong>11 играчки</strong> по <strong>3 лв.</strong> = <strong>33 лв</strong>. Брат ѝ <strong>взимал 10 години по 1 лев</strong> = <strong>10лв</strong>. <strong>Останали</strong> 550 + 33 – 10 = <strong>573 лв.</strong> <br>
-<strong>573 &lt; 1570.98</strong> – <strong>не е успяла</strong> да купи пералня. <strong>Не ѝ достигат</strong> 1570.98–573 = <strong>997.98 лв.</strong></p></td>
+<td valign="top"><p><strong>She has saved 550 USD</strong>. <strong>She's sold</strong> <strong>11 toys</strong> by <strong>3 USD each</strong> = <strong>33 USD</strong>. Her brother <strong>has taken 1 USD for 10 years</strong> = <strong>10 USD</strong> <strong>There remain</strong> 550 + 33 – 10 = <strong>573 USD</strong> <br>
+<strong>573 &lt; 1570.98</strong> – <strong>She's failed</strong> buying a washing machine <strong>She needs</strong> 1570.98–573 = <strong>997.98 USD more</strong></p></td>
 </tr>
 </tbody>
 </table>    
