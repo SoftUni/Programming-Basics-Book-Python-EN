@@ -16,7 +16,7 @@ if condition1:
 <td>Remember that it is not a good practice to write <strong>deeply nested conditional statements</strong> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
-## if-elif-else Conditions
+## If-Elif-Else Conditions
 
 When the program operation depends on the value of a variable, we can do consecutive checks with multiple **`if-elif-else`** blocks:
 
@@ -38,11 +38,11 @@ The body can consist of any code, as long as it matches the syntactic particular
 
 Now, after we refreshed our knowledge on how to use and nested conditional statements to implement more complex conditions and program logic, let's solve some exam problems.
 
-## Задача: навреме за изпит
+## Problem: On Time for the Exam
 
-Студент трябва да отиде **на изпит в определен час** (например в 9:30 часа). Той идва в изпитната зала в даден **час на пристигане** (например 9:40). Счита се, че студентът е дошъл **навреме**, ако е пристигнал **в часа на изпита или до половин час преди това**. Ако е пристигнал **по-рано, повече от 30 минути**, той е **подранил**. Ако е дошъл **след часа на изпита**, той е **закъснял**. 
+A student has to attend **an exam at a particular time** (for example at 9:30 am). They arrive in the exam room at a particular **time of arrival** (for example 9:40 am). It is considered that the student has arrived **on time** if they have arrived **at the time when the exam starts or up to half an hour earlier**. If the student has arrived **more than 30 minutes earlier**, the student has come **too early**. If they have arrived **after the time when the exam starts**, they are **late**.
 
-Напишете програма, която въвежда време на изпит и време на пристигане и отпечатва дали студентът е дошъл **навреме**, дали е **подранил** или е **закъснял**, както и **с колко часа или минути** е подранил или закъснял.
+Write a program that inputs the exam starting time and the time of student's arrival, and prints if the student has arrived **on time**, if they have arrived **early** or if they are **late**, as well as **how many hours or minutes** the student is early or late.
 
 ### Входни данни
 
