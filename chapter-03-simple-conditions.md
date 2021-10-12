@@ -108,7 +108,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 
 ## About blocks of code
 
-By pressing **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other constructs) and we want to perform a series of operations, we put them in a block after the condition.
+By pressing **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other structures) and we want to perform a series of operations, we put them in a block after the condition.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution</td>
@@ -132,39 +132,39 @@ The following output will be printed on the console:
 
 ### Problem: Even or Odd
 
-Да се напише програма, която проверява, дали дадено цяло число е **четно** (even) или **нечетно** (odd).
+Write a program that checks whether a given integer number is **even** or **odd** (odd)
 
-Задачата можем да решим с помощта на една **`if-else`** конструкция и оператора **`%`**, който връща **остатък при деление** на две числа:
+The problem can be solved with a single **`if-else`** structure and the operator **`%`**, which returns the **division remainder** of two numbers:
 
 ![](/assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
 
 ### Пример: по-голямото число
 
-Да се напише програма, която чете две цели числа и извежда по-голямото от тях.
+Write a program that reads two integers and outputs the larger.
 
-Първата ни подзадача е да **прочетем** двете числа. След което, чрез проста **`if-else`** конструкция, в съчетание с **оператора за по-голямо** (**`>`**), да направим проверка. Кодът е замъглен умишлено и трябва да бъде довършен от читателя:
+Our first task is to  **read** the two numbers. After which through the use of a simple  **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
 
 ![](/assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
 
 
-## Живот на променлива
+## The Lifetime of a variable
 
-Всяка една променлива си има обхват, в който съществува, наречен **variable scope**. Този обхват уточнява къде една променлива може да бъде използвана. В езика Python **променливите могат да бъдат използвани навсякъде, стига да сa инициализирани поне веднъж.**
+Every variable has a scope in which it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In Python, **variables could be used anywhere if they are initialized at least once.**
 
-В примера по-долу, на последния ред, на който се опитваме да отпечатаме променливата **`my_name`**, която е дефинирана в **`else` конструкцията**, ще получим **грешка**, защото в конкретния случай не се е изпълнило тялото на **`else`** клаузата, в която инициализираме променливата. Но отпечатването на променливата **`can_drive`** е безпроблемно, защото програмата е влязла в тялото на **`if`** клаузата и е инициализирала променливата. Както забелязвате обаче променливите **`can_drive`** и **`my_name`** за оцветени в жълто. Това е предупреждение от **PyCharm**, че е възможно да получим грешка. Затова е най-добре да внимаваме с това къде инициализираме променливите.
+In the example below, on the last line we try to print the variable **`my_name`**, which is defined in the **`else` structure**. We will get an **error**, because in this case the body of the  **`else`** clause, in which we initialize the variable, is not executed. However, there is no problem to print the variable **`can_drive`** because the program entered the body of the **`if`** clause and initialized the variable. As you can see the variables **`can_drive`** and **`my_name`** are colored yellow.  This is a warning from  **PyCharm**, that we may get an error. Therefore, we should be careful where we initialize the variables.
 
 ![](/assets/chapter-3-1-images/00.Variable-scope-01.png)
 
-## Серии от проверки
+## Conditional chaining
 
 Понякога се налага да извършим серия от проверки, преди да решим какви действия ще изпълнява нашата програма. В такива случаи, можем да приложим конструкцията **`if-elif ... else` в серия**. За целта използваме следния формат: 
 
