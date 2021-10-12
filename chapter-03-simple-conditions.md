@@ -35,25 +35,25 @@ In Python we can use the following operators to compare data:
 
 <table>
 <tr>
-<th>Оператор</th> <th>Означение</th> <th>Работи за</th>
+<th>Operator</th> <th>Notation</th> <th>Applicable for</th>
 </tr>
 <tr>
-<td>Проверка за равенство</td><td align="center"> == </td><td rowspan="2"> числа, стрингове, дати</td>
+<td>Equals</td><td align="center"> == </td><td rowspan="2"> numbers, strings, dates</td>
 </tr>
 <tr>
-<td>Проверка за различие</td><td align="center"> != </td>
+<td>Not equal</td><td align="center"> != </td>
 </tr>
 <tr>
-<td>По-голямо</td><td align="center"> > </td><td rowspan="4">числа, дати, други сравними типове</td>
+<td>Greater than</td><td align="center"> > </td><td rowspan="4">numbers, dates, other comparable data types</td>
 </tr>
 <tr>
-<td>По-голямо или равно</td><td align="center"> >= </td>
+<td>Greater than or equal</td><td align="center"> >= </td>
 </tr>
 <tr>
-<td>По-малко</td><td align="center"> &lt; </td>
+<td>Less than</td><td align="center"> &lt; </td>
 </tr>
 <tr>
-<td>По-малко или равно</td><td align="center"> &lt;= </td>
+<td>Less than or equal</td><td align="center"> &lt;= </td>
 </tr>
 </table>
 
