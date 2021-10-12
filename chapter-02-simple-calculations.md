@@ -1,9 +1,9 @@
-# Глава 2.1. Прости пресмятания с числа
+# Chapter 2.1. Simple Calculations
 
-В настоящата глава ще се запознаем със следните концепции и програмни техники:
-- Как да работим с **типове данни и променливи**, които са ни необходими при обработка на числа и стрингове.
-- Как да **изпечатаме** резултат на екрана.
-- Как да **четем** потребителски вход.
+In this chapter we are going to get familiar with the following concepts and programming techniques:
+- How to work with **data types and variables**, which are necessary to process numbers and strings.
+- How to **print** a result on the console.
+- How to **read** user input.
 - Как да извършваме прости **аритметични операции**: събиране, изваждане, умножение, деление, съединяване на стринг.
 - Как да **закръгляме** числа.
 
