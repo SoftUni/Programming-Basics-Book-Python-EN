@@ -233,33 +233,33 @@ More about ternary operators: [https://book.pythontips.com/en/latest/ternary_ope
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
 
-## Задача: завръщане в миналото
+## Problem: Returning to the past
 
-Иванчо е на **18 години** и получава наследство, което се състои от **X сума пари** и **машина на времето**. Той решава **да се върне до 1800 година**, но не знае **дали парите** ще **са достатъчни**, за да живее без да работи. Напишете **програма, която пресмята** дали Иванчо **ще има достатъчно пари**, за да не се налага да работи **до дадена година включително**. Като приемем, че **за всяка четна** (1800, 1802 и т.н.) година ще **харчи 12 000 долара**. За **всяка нечетна** (1801, 1803  и т.н.) ще харчи **12 000 + 50 * [годините, които е навършил през дадената година]**.
+Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** will **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including it**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the taken year]**.
 
-### Входни данни
+### Input
 
-Входът се чете от конзолата и **съдържа точно 2 реда**:
+The input is read from the console and **contains exactly 2 lines**:
 
-  * **Наследените пари** – реално число в интервала [**1.00 … 1 000 000.00**].
-  * **Годината, до която трябва да живее (включително)** – цяло число в интервала [**1801 … 1900**].
+  * **The inherited money** – a real number in range [**1.00 … 1 000 000.00**].
+  * **The year until he has to live (inclusive)** – real number in range [**1801 … 1900**].
 
-### Изходни данни
+### Output
 
-Да се **отпечата** на конзолата **1 ред**. **Сумата** трябва да е **форматирана** до **два знака след десетичния знак**:
-  * Ако **парите са достатъчно**:
-    * "**Yes! He will live a carefree life and will have {N} dollars left.**" – където **N** са парите, които ще му останат.
-  *	Ако **парите НЕ са достатъчно**:
-    * "**He will need {М} dollars to survive.**" – където **M** е сумата, която **НЕ достига**.
+**Print** to the console **1 line**. **The sum** has to be **formatted** with **2-digit precision after the decimal point**:
+  * If **the money are enough**:
+    * "**Yes! He will live a carefree life and will have {N} dollars left.**" – where **N** are the remaining money.
+  *	If **the money are NOT enough**:
+    * "**He will need {М} dollars to survive.**" – where **M** is the amount **lacking**.
 
-### Примерен вход и изход
+### Example input & output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanations</strong></th>
 </tr>
 </thead>
 <tbody>
