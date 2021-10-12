@@ -353,166 +353,166 @@ Now we have an empty project (no files in it).
 
 ### Problem: Excellent Grade
 
-The first exercise for this topic is to write a **console application**, which **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока.
+The first exercise for this topic is to write a **console application**, which **reads input data - a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
-| 5 | (няма изход) |
+| 5 | (no output) |
 | 5.5 | Excellent! |
-| 5.49 | (няма изход) |
+| 5.49 | (no output) |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Създаваме нов **python** файл (**.py**) като цъкаме с десен клавиш на мишката върху създадената от нас папка и изберем [**New**] -> [**Python File**]:
+We create a new **python** file (**.py**) by right-clicking on the folder we created and selecting [**New**] -> [**Python File**]:
 
  ![](/assets/chapter-3-1-images/00.PyCharm-03.png)
 
-Ще се отвори диалогов прозорец за избор на име на файла. Тъй като задачата ни е за проверка на отлична оценка, нека именуваме файла **excellent_result**:
+A dialog box will open, where we need to specify a name for our file. Since our task is to check if a grade is excellent, let’s name the file **excellent_result**:
 
  ![](/assets/chapter-3-1-images/00.PyCharm-04.png)
  
-Вече имаме Project с еднин файл в него. Остава да напишем кода за решаване на задачата. За целта пишем следния код:
+We already have a Project with a single file in it. Now we have to write the code to solve the problem. To this effect we write the following code:
 
  ![](/assets/chapter-3-1-images/01.ExcellentResult-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
 
  ![](/assets/chapter-3-1-images/01.ExcellentResult-02.png) 
 
  ![](/assets/chapter-3-1-images/01.ExcellentResult-03.png)
 
 
-### Задача: отлична оценка или не
+### Problem: Excellent Grade or Not
 
-Следващата задача от тази тема е да се напише **конзолна програма**, която **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока, или "**Not excellent.**" в противен случай.
+The next exercise for this topic is to write a **console program**, which **reads input data - a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher, or "**Not excellent.**" if it is not.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
 | 5 | Not excellent. |
 | 5.5 | Excellent! |
 | 5.49 | Not excellent. |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Първо създаваме **нов Python файл** в нашия проект. Следва да **напишем кода** на програмата. Може да си помогнем със следния примерен код:
+Firstly, we create a **new Python file** in our project. After that, we  **write the code** the program. You may use the following example code as a hint:
 
  ![](/assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-Следва да **стартираме програмата**, както обикновено с [**Shift + F10**] и да я тестваме дали работи коректно:
+After that, we **run the program**, as usual with [**Shift + F10**], so we can test its functionality:
 
  ![](/assets/chapter-3-1-images/02.Excellent-or-not-02.png)
  ![](/assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
 
 ![](/assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
-### Задача: четно или нечетно
+### Problem: Even or Odd
 
-Да се напише програма, която въвежда **цяло число** и печата дали е **четно** или **нечетно**.
+Write a program that checks whether an **integer** input data is either **even** or **odd** and prints the result on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 2 | even |
 | 3 | odd |
 | 25 | odd |
 | 1024 | even |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Отново, първо добавяме **нов Python файл**. Проверката дали дадено число е четно, може да се реализира с оператора **`%`**, който ще ни върне **остатъка при целочислено деление на 2**, по следния начин: **`is_even = number % 2 == 0`**.
+Again, firstly we must create a **new Python file**. Then the check if a number is either even or odd can be made with the operator **`%`**, which will return the **remainder from an integer divided by 2** as follows: **`is_even = number % 2 == 0`**.
 
-Остава да **стартираме** програмата с [**Ctrl+F5**] и да я тестваме:  
+Now we have to **run** the program with [**Ctrl+F5**] and test it:  
 
 ![](/assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
 
-### Задача: намиране на по-голямото число
+### Problem: Find the greater number
 
-Да се напише програма, която въвежда **две цели числа** и отпечатва по-голямото от двете.
+Write a program that reads input data from the console. As input data enter **two integers** each on a separate line and print the greater one on the console.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 |-----|------|
 |5<br>3| 5 |
 |3<br>5| 5 |
 |10<br>10| 10 |
 |-5<br>5| 5 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Както обикновено, първо трябва да добавим **нов Python файл**. За кода на програмата ни е необходима единична **`if-else`** конструкция. Може да си помогнете частично с кода от картинката, който е умишлено замъглен, за да помисли читателя как да го допише сам:  
+As usual, first, we need to create a **new Python file**. For the main logic, we need a single **`if-else`** construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself: 
 
 ![](/assets/chapter-3-1-images/04.Greater-number-01.png)
 
-След като сме готови с имплементацията на решението, **стартираме** програмата с [**Shift + F10**] и я тестваме:
+When we are done with the implementation of the solution, we **run** the program with [**Shift + F10**] and test it:
 
 ![](/assets/chapter-3-1-images/04.Greater-number-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
 
 
-### Задача: изписване на число до 9 с думи
+### Problem: Output a Digit's Word Equivalent
 
-Да се напише програма, която въвежда **цяло число в диапазона** [**0 … 9**] и го **изписва с думи** на английски език. Ако числото е извън диапазона, изписва "**number too big**".
+Write a program that reads input data from the console - **integer in range** [**0 … 9**] and prints **its word equivalent** in English. If the number is outside the given range, the program should print "**number too big**".
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5 | five |
 | 1 | one |
 | 9 | nine |
 | 10 | number too big |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Може да използваме поредица **`if-elif`** конструкции, с които да разгледаме възможните **11 случая**.
+We can use a sequence of **`if-elif`** statements to cover every one of the possible **11 cases**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
 
 
-### Задача: познай паролата
+### Problem: Guess the Password
 
-Да се напише програма, която **въвежда парола** (произволен текст) и проверява дали въведеното **съвпада** с фразата "**s3cr3t!P@ssw0rd**". При съответствие да се изведе "**Welcome**", а при несъответствие да се изведе "**Wrong password!**". 
+Write a program that **reads input data from the console - a password** (one line of random text) and checks if the input **matches** the phrase "**s3cr3t!P@ssw0rd**". If it matches, print "**Welcome**", otherwise print "**Wrong password!**". 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | qwerty | Wrong password! |
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Може да използваме **`if-else`** конструкцията.
+Use an **`if-else`** statement.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#8](https://judge.softuni.org/Contests/Practice/Index/1049#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#8](https://judge.softuni.org/Contests/Practice/Index/1049#8).
 
 
 ### Задача: число от 100 до 200
