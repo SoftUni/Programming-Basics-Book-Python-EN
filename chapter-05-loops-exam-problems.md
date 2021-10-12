@@ -113,7 +113,7 @@ After we’ve declared the needed variables, we can move on to reading the numbe
 
 #### Processing the input data
   
-In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign** only one number** (**`current_number`**) to it’s respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers(**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
+In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to it’s respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers(**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
 
 ![](/assets/chapter-5-2-images/01.Histogram-03.png)
 
