@@ -1,9 +1,8 @@
 # Chapter 3.1. Simple conditions
 
-In the present chapter, we will take a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the sytax of the conditional operators (**`if`**, **`if-elif`** и **`else`**) by implementing appropriate examples and also we will take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
+In the present chapter, we will take a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`**, **`if-elif`** and **`else`**) by implementing appropriate examples and also we will take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
-
-## Видео
+## Video
 
 <div class="video-player">
   Гледайте видео-урок по тази глава тук: 
