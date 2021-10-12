@@ -5,7 +5,7 @@ In the present chapter, we will take a look at the **conditional constructs in t
 ## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: 
+  Watch video-tutorial about this chapter here: 
   https://www.youtube.com/watch?v=cQIl0wQLVRE.
 </div>
 
@@ -70,17 +70,17 @@ if условие:
     # тяло на условната конструкция
 ```
 
-### Пример: отлична оценка
+### Example: Excellent Grade
 
-Въвеждаме оценка в конзолата и проверяваме дали тя е отлична (**`≥ 5.50`**).
+We take the grade as an input in the console and check if it is excellent (**`≥ 5.50`**).
 
 ![](assets/chapter-3-1-images/01.ExcellentResult.png)
 
-Тествайте кода от примера локално. Опитайте да въведете различни оценки, например **4.75**, **5.49**, **5.50** и **6.00**. При оценки **по-малки от 5.50** програмата няма да изведе нищо, а при оценка **5.50 или по-голяма**, ще изведе "**Excellent!**".
+Test the example code locally. Try entering different grades, for example, **4.75**, **5.49**, **5.50** and **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**".
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте програмата от примера в Judge системата на СофтУни:
+You can test the solution example here:
 [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
 
 
