@@ -222,9 +222,9 @@ The result is:
 ```
 
 
-## Аритметични операции
+## Arithmetic operations
 
-Да разгледаме базовите аритметични операции в програмирането.
+Let's look at the basic arithmetic operations in programming.
 
 ### Събиране на числа: оператор **`+`**
 
