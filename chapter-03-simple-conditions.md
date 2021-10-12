@@ -249,7 +249,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 ### Problem: Summing Up Seconds
 
-Three athletes finish with some **number of seconds** (between **1** and **50**). Write a program that reads the times of the contestants and calculates their **сумарното им време** in "minutes:seconds" format. Seconds are to be printed with a **leading zero** (2 -> "02", 7 -> "07", 35 -> "35").
+Three athletes finish with some **number of seconds** (between **1** and **50**). Write a program that reads the times of the contestants and calculates their **combined time** in "minutes:seconds" format. Seconds are to be printed with a **leading zero** (2 -> "02", 7 -> "07", 35 -> "35").
 
 #### Sample Input and Output
 
