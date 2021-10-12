@@ -67,7 +67,7 @@ In programming, we often **check particular conditions** and perform various act
 
 ```python
 if условие:
-    # тяло на условната конструкция
+    # body of the conditional construct
 ```
 
 ### Example: Excellent Grade
@@ -84,26 +84,26 @@ You can test the solution example here:
 [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
 
 
-## Проверки с if-else конструкция
+## If-else conditional constructs
 
-Конструкцията **`if`** може да съдържа и **`else`** клауза, с която да окажем конкретно действие в случай, че булевият израз (който е зададен в началото **`if булев израз`**) върне отрицателен резултат (**`False`**). Така построена, **условната конструкция** наричаме **`if-else`** и поведението ѝ е следното: ако резултатът от условието е **позитивен** (**`True`**) - извършваме едни действия, a когато е **негативен** (**`False`**) - други. Форматът на конструкцията е:
+The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specidified at the beginning **`if Boolean expression`**) returns a negative result (**`False`**). Written in this way, the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive** (**`True`**) - a set of instructions is executed. By contrast, when the result is **negative** (**`False`**) - a different set is executed. The format of this structure is as follows:
 
 ```python
 if условие:
-    # тяло на условната конструкция
+    # Condition body to be executed if a condition is true
 else:
-    # тяло на else конструкция
+    # else structure body to be executed if a condition is false
 ```
 
-### Пример: отлична оценка или не
+### Example: Excellent grade or not
 
-Подобно на горния пример, въвеждаме оценка, проверяваме дали е отлична, но **изписваме резултат и в двата случая**.
+Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not.png)
 
-#### Тестване в Judge системата
+#### Testing in Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
+You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
 
 
 ## За блокoвете от код
