@@ -1,8 +1,8 @@
-# Глава 4.2. По-сложни проверки – изпитни задачи
+# Chapter 4.2. More Complex Conditions – Exam Problems
 
-В предходната глава се запознахме с **вложените условни конструкции** в езика **Python**. Чрез тях програмната логика в дадена програма може да бъде представена посредством **`if` конструкции**, които се съдържат една в друга. Разгледахме и и по сложния вариант **`if-elif-else`**, която позволява избор измежду редица от възможности. Следва да упражним и затвърдим наученото досега, като разгледаме няколко по-сложни задачи, давани на изпити. Преди да преминем към задачите, ще си припомним условните конструкции:
+The previous chapter introduced you to **nested conditions** in **Python**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested one into another. We also explained the more complex **`if-elif-else`** conditional statement that allows selecting from a number of options. Now we are going to solve some practical exercises and make sure we have an in-depth understanding of the material, by discussing a set of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
 
-## Вложени проверки
+## Nested Conditions
 
 ```python
 if condition1:
@@ -13,12 +13,12 @@ if condition1:
 ```
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Запомнете, че не е добра практика да пишете <strong>дълбоко вложени условни конструкции</strong> (с ниво на влагане повече от три). Избягвайте влагане на повече от три условни конструкции една в друга. Това усложнява кода и затруднява неговото четене и разбиране.</td>
+<td>Remember that it is not a good practice to write <strong>deeply nested conditional statements</strong> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
-## if-elif-else проверки
+## if-elif-else Conditions
 
-Когато работата на програмата ни зависи от стойността на една променлива, можем да правим последователни проверки с множество **`if-elif-else`** блокове:
+When the program operation depends on the value of a variable, we can do consecutive checks with multiple **`if-elif-else`** blocks:
 
 ```python
 if condition1:
@@ -31,12 +31,12 @@ else:
     # тяло
 ```
 
-Тялото може се състои от какъвто и да е код, стига да отговаря на синтактичните особености на езика и да е **вложен с една табулация** навътре.
+The body can consist of any code, as long as it matches the syntactic particularity of the language and is indented one tab inside.
 
 
-## Изпитни задачи
+## Exam Problems
 
-Сега, след като си припомнихме как се използват условни конструкции и как се влагат една в друга условни конструкции, за реализиране на по-сложни проверки и програмна логика, нека решим няколко изпитни задачи.
+Now, after we refreshed our knowledge on how to use and nested conditional statements to implement more complex conditions and program logic, let's solve some exam problems.
 
 ## Задача: навреме за изпит
 
