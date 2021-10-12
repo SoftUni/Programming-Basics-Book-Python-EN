@@ -297,7 +297,7 @@ The method of solving this problem isn't unlike the previous ones, so we begin b
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
-With the help of a **`for` loop** we loop through all years. **We begin at 1800** – the year when Ivancho travels back in time, and we end at **the year until he has to live**. In the loop we check wheter the current year is **even** or **odd**. We check it with **division with remainder** (**`%`**) by 2. If the year is **even**, from the heritage (**`heritage`**) we subtract **12000**, while if it's **odd**, from the heritage (**`heritage`**) we subtract **12000 + 50 * (Ivancho's age)**:
+With the help of a **`for` loop** we loop through all years. **We begin at 1800** – the year when Ivancho travels back in time, and we end at **the year until he has to live**. In the loop we check wheter the current year is **even** or **odd**. We check it with **division with remainder** (**`%`**) by 2. If the year is **even**, from the inheritance (**`heritage`**) we subtract **12000**, while if it's **odd**, from the inheritance (**`heritage`**) we subtract **12000 + 50 * (Ivancho's age)**:
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
