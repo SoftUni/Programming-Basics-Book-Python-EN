@@ -162,16 +162,6 @@ Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** 
    - **The price of the washing machine** – a number in range [**1.00 … 10 000.00**].
    - **The price of a single toy** – **integer** in range [**0 … 40**].
 
-### Изходни данни
-
-Да се отпечата на конзолата един ред:
-
-  * Ако парите на Лили са достатъчни:
-    * "**Yes! {N}**" – където **N** е остатъка пари след покупката
-  * Ако парите не са достатъчни:
-    * "**No! {M}**" – където **M** е сумата, която не достига
-  * Числата **N** и **M** трябва да са **форматирани до втория знак след десетичната точка**.
-
 ### Output
 
 Print a single line in the console:
@@ -219,30 +209,29 @@ As we already know, in most of the scripting languages, in Python as well, we do
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
-За да решим задачата, ще се нуждаем от няколко помощни променливи – за **броя на играчките** (**`number_of_toys`**), за **спестените пари** (**`saved_money`**) и за **парите, получени на всеки рожден ден** (**`money_for_birthday`**). Като присвояваме на **`money_for_birthday`** първоначална стойност 10, тъй като по условие е дадено, че първата сума, която Лили получава, е 10 лв:
+In order to solve the task, we'll need a couple of helper variables – for **the toys' count**, (**`number_of_toys`**), for **the saved money**, (**`saved_money`**) and for **the money received on each birthday** ,(**`money_for_birthday`**). We initially assign 10 to **`money_for_birthday`**, because in the description it's said that the first sum received by Lily is 10 USD:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-02.png)
  
-С **`for` цикъл** преминаваме през всеки рожден ден на Лили. Когато водещата променлива е **четно число**, това означава, че Лили е **получила пари** и съответно прибавяме тези пари към общите ѝ спестявания. Едновременно с това **изваждаме по 1 лев** - парите, които брат ѝ взема. След това **увеличаваме** стойността на променливата **`money_for_birthday`**, т.е. увеличаваме с 10 сумата, която тя ще получи на следващия си рожден ден. Обратно, когато водещата променлива е **нечетно число**, увеличаваме броя на **играчките**. Проверката за четност осъществяваме чрез **деление с остатък** (**`%`**) **на 2** – когато остатъкът е 0, числото е четно, а при остатък 1 - нечетно:
+With a **`for` loop** we go through each of Lily's birthdays. When the loop variable is an **even number**, it means that Lily has **received money** and we add them to her savings. At the same time we **subtract 1 USD** - the money taken by her brother. After that we **increase** the value of the variable **`money_for_birthday`** , meaning we increase the sum with 10 for the next time she receives money for her birthday. Contrary, when the loop variable is an **odd number**, we increase the **toys**' count. Checking whether it's even or odd happens with a **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, and when the remainder's 1 - it's odd:
  
 ![](/assets/chapter-5-2-images/02.Smart-lilly-03.png)
  
-Към спестяванията на Лили прибавяме и парите от продадените играчки:
+We add the money from the sold toys to Lily's savings:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-04.png)
 
-Накрая остава да отпечатаме получените резултати, като се съобразим с форматирането, указано в условието, т.е. сумата трябва да е **закръглена до две цифри след десетичния знак**:
+At the end we print the results, taking in account the required formatting, meaning the sum has to be **rounded to 2 digits after the decimal point**:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
-В някои програмни езици съществува конструкция, като **условния оператор (`?:`)** (наричан още тернарен оператор), тъй като записът е по-кратък. В Python синтаксисът му е следният: **`операнд1 if операнд2 else операнд3`**. Вторият операнд е нашето условие и трябва да е от **булев тип** (т.е. да връща **`true/false`**). Ако **`операнд2`** върне стойност **`true`**, то ще се изпълни **`операнд1`**, а ако върне **`false`** – **`операнд3`**. В нашия случай проверяваме дали **събраните пари** от Лили стигат за една пералня. Ако те са повече или равни на цената на пералнята, то проверката **`saved_money >= price_of_washing_machine`** ще върне **`true`** и ще се отпечата "**Yes! …**", а ако е по-малко – резултатът ще е **`false`** и ще се отпечата "**No! …**". Разбира се, вместо условния оператор, можем да използваме и обикновени **`if`** проверки.
+In some programming languages there's a construction called **conditional operator (`?:`)** (also known as ternary operator), as it's shorter to write. It has the following syntax in Python: **`operand1 if operand2 else operand3`**. The second operand is our condition and it has to be of **bool type** (meaning it has to return **`true/false`**). If **`operand2`** returns **`true`**, it'll execute **`operand1`**, and if it returns **`false`** – **`operand3`**. In our case we check whether Lily's **saved money** are enough to buy a washing machine. If they're higher or equal to it's price, the check **`saved_money >= price_of_washing_machine`** will return **`true`** and it'll print "**Yes! …**", while if it's lower – the result will be **`false`** and "**No! …**" will be printed. Of course, instead of the ternary operator, we can use simple **`if`** expressions.
 
-Повече за условния оператор: [https://book.pythontips.com/en/latest/ternary_operators.html](https://book.pythontips.com/en/latest/ternary_operators.html).
+More about ternary operators: [https://book.pythontips.com/en/latest/ternary_operators.html](https://book.pythontips.com/en/latest/ternary_operators.html).
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
-
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
 
 ## Задача: завръщане в миналото
 
