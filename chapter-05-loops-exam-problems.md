@@ -211,11 +211,11 @@ Print a single line in the console:
 </tbody>
 </table>    
 
-### Насоки и подсказки
+### Tips and advice
 
-Решението на тази задача, подобно на предходната, също можем да разделим мислено на три части – **прочитане** на входните данни, **обработката** им и **извеждане** на резултат.
+Solving this problem, like the previous one, again can be divided in three parts – **reading** the input data, **processing** it and **outputting** a result.
 
-Както вече знаем, в повечето скриптови езици, както и в Python, не се грижим да определяме типа на променливите, които декларираме. Интерпретаторът сам преценява какви да бъдат те. За годините на Лили (**`age`**) и единичната цена на играчката (**`present_price`**) по условие е дадено, че ще са **цели числа**. Затова ще използваме **вградента функция `int()`** да конвентираме прочетената стрингова стойност в тип цяло число. Когато се използва функция **`input()`**, резултатът въведен в конзолата винаги е от тип текст (**`string`**), затова ако е необходимо той да бъде конвертиран към друг тип, можем да използваме **вградените в Python функции** за целта. За цената на пералнята (**`price_of_washing_machine`**) знаем, че е **дробно число и избираме да използваме тип `float`**. В кода по-долу **декларираме** и **инициализираме** (присвояваме стойност) на променливите:
+As we already know, in most of the scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpretator decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price, (**`present_price`**), in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this task. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
