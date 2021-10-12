@@ -515,30 +515,30 @@ Use an **`if-else`** statement.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#8](https://judge.softuni.org/Contests/Practice/Index/1049#8).
 
 
-### Задача: число от 100 до 200
+### Problem: Numbers from 100 to 200
 
-Да се напише програма, която **въвежда цяло число** и проверява дали е **под 100**, **между 100 и 200** или **над 200**. Да се отпечатат съответно съобщения, като в примерите по-долу.
+Write a program that **reads input data from the console - an integer** and checks if it is **below 100**, **between 100 and 200** or **over 200**. Print the appropriate messages as per the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 95 | Less than 100 |
 | 120 | Between 100 and 200 |
 | 210 | Greater than 200 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#9](https://judge.softuni.org/Contests/Practice/Index/1049#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#9](https://judge.softuni.org/Contests/Practice/Index/1049#9).
 
 
-### Задача: еднакви думи
+### Problem: Identical words
 
-Да се напише програма, която **въвежда две думи** и проверява дали са еднакви. Да не се прави разлика между главни и малки букви. Да се изведе "**yes**" или "**no**". 
+Write a program that **reads input data from the console - two words** and checks if they are the same. A comparison should be case-insensitive and the output should be either "**yes**" or "**no**". 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | Hello<br>Hello | yes |
 | SoftUni<br>softuni | yes |
@@ -546,22 +546,21 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Преди сравняване на думите, трябва да ги обърнем в долен регистър, за да не оказва влияние размера на буквите (главни/малки): **`word = word.lower()`**.
+Before the comparison, both words should be in lower case, so that case (uppercase / lowercase) does not influence the result **`word = word.lower()`**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#10](https://judge.softuni.org/Contests/Practice/Index/1049#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#10](https://judge.softuni.org/Contests/Practice/Index/1049#10).
 
 
-### Задача: информация за скоростта
+### Problem: Speed Assessment
 
-Да се напише програма, която **въвежда скорост** (дробно число) и отпечатва **информация за скоростта**. При скорост **до 10** (включително), отпечатайте "**slow**". При скорост **над 10** и **до 50**, отпечатайте "**average**". При скорост **над 50 и до 150**, отпечатайте "**fast**". При скорост **над 150 и до 1000**, отпечатайте "**ultra fast**". При по-висока скорост, отпечатайте "**extremely fast**".
+Write a program, that **reads input data from the console - speed** (decimal number) and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10 up to 50**, print "**average**". For speeds **over 50 and up to 150**, print "**fast**". For speeds **over 150 and up to 1000**, print "**ultra fast**". For higher speed, print "**extremely fast**".
 
-#### Примерен вход и изход
-
-| Вход | Изход |
+#### Sample Input and Output
+| Input | Output |
 | --- | ---- |
 | 8 | slow |
 | 49.5 | average |
@@ -569,44 +568,44 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 | 160 | ultra fast |
 | 3500 | extremely fast |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#11](https://judge.softuni.org/Contests/Practice/Index/1049#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#11](https://judge.softuni.org/Contests/Practice/Index/1049#11).
 
 
-### Задача: лица на фигури
+### Problem: Areas of Figures
 
-Да се напише програма, която **въвежда размерите на геометрична фигура** и **пресмята лицето й**. Фигурите са четири вида: квадрат (**square**), правоъгълник (**rectangle**), кръг (**circle**) и триъгълник (**triangle**).
+Write a program that reads input data from the console - **the measures of a geometric shape** and **calculates its surface area**. There are four types of shapes: **square**, **rectangle**, **circle** and **triangle**.
 
-На първия ред на входа се чете вида на фигурата (**`square`**, **`rectangle`**, **`circle`**, **`triangle`**):
-* Ако фигурата е **квадрат**, на следващия ред се чете едно число – дължина на страната му.
-* Ако фигурата е **правоъгълник**, на следващите два реда се четат две числа – дължините на страните му.
-* Ако фигурата е **кръг**, на следващия ред се чете едно число – радиусa на кръга.
-* Ако фигурата е **триъгълник**, на следващите два реда се четат две числа – дължината на страната му и дължината на височината към нея.
+The first line of the input is the type of shape (**`square`**, **`rectangle`**, **`circle`**, **`triangle`**):
+* If the shape is a **square**, the next argument will be one number - the length of its side.
+* If the shape is a **rectangle**, the next argument will be two numbers - the lengths of its sides.
+* If the shape is a **circle**, the next argument will be one number - the radius of the circle.
+* If the shape is a **triangle**, the next argument will be two numbers - its base and the corresponding altitude.
 
-Резултатът да се закръгли до **3 цифри след десетичния знак**. 
+The result should be rounded up to the **third decimal point**. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | square<br>5 | 25 |
 | rectangle<br>7<br>2.5 | 17.5 |
 | circle<br>6 | 113.097 |
 | triangle<br>4.5<br>20 | 45 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#12](https://judge.softuni.org/Contests/Practice/Index/1049#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#12](https://judge.softuni.org/Contests/Practice/Index/1049#12).
 
 
-### Задача: време + 15 минути
+### Problem: Time + 15 Minutes
 
-Да се напише програма, която **въвежда час и минути** от 24-часово денонощие и изчислява колко ще е **часът след 15 минути**. Резултатът да се отпечата във формат **`hh:mm`**. Часовете винаги са между 0 и 23, а минутите винаги са между 0 и 59. Часовете се изписват с една или две цифри. Минутите се изписват винаги с по две цифри и с **водеща нула**, когато е необходимо.
+Write a program that reads **two integers - hours and minutes** based on a 24-hour day and calculates what will be the time **after 15 minutes**. The result should be printed in the following format **`hh:mm`**. Hours should always be between 0 and 23, while minutes should always be between 0 and 59. Hours should be written with one or two digits as needed, while the minutes should always be written with two digits - add a **leading zero**, as needed.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 1<br>46 | 2:01 |
 | 0<br>01 | 0:16 |
@@ -614,48 +613,47 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Добавете 15 минути и направете няколко проверки. Ако минутите надвишат 59, **увеличете часовете** с 1 и **намалете минутите** с 60. По аналогичен начин разгледайте случая, когато часовете надвишат 23. При печатането на минутите, **проверете за водеща нула**.
+Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** when appropriate.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#13](https://judge.softuni.org/Contests/Practice/Index/1049#13).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#13](https://judge.softuni.org/Contests/Practice/Index/1049#13).
 
 
-### Задача: еднакви 3 числа
+### Problem: Tree equal numbers
 
-Да се напише програма, в която се въвеждат **3 числа** и се отпечатва дали те са еднакви ("**yes**" / "**no**").
+Write a program that reads **3 numbers** and prints whether they are the same ("**yes**" / "**no**").
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5<br>5<br>5 | yes |
 | 5<br>4<br>5 | no |
 | 1<br>2<br>3 | no |
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#14](https://judge.softuni.org/Contests/Practice/Index/1049#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#14](https://judge.softuni.org/Contests/Practice/Index/1049#14).
 
 
-### Задача: \* изписване на число от 0 до 100 с думи
+### Problem: \* Convert a number to words
 
-Да се напише програма, която превръща число в диапазона [**0 … 100**] в текст. 
+Write a program that converts numbers in the range of [**0 … 100**] in text. 
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 25 | twenty five |
 | 42 | forty two |
 | 6  | six |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Проверяваме първо за **едноцифрени числа** и ако числото е едноцифрено, отпечатваме съответната дума за него. След това проверяваме за **двуцифрени числа**. Тях отпечатваме на две части: лява част (**десетици** = числото / 10) и дясна част (**единици** = числото % 10). Ако числото има 3 цифри, трябва да е 100 и може да се разгледа като специален случай.
+Firstly, we should check for **single-digit numbers** and if this is the case, print the corresponding word. Then we can check if the number is a **double-digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = числото % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
+#### Testing in the Judge System
 
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#15](https://judge.softuni.org/Contests/Practice/Index/1049#15).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#15](https://judge.softuni.org/Contests/Practice/Index/1049#15).
