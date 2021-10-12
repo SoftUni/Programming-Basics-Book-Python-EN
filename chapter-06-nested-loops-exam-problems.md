@@ -18,7 +18,7 @@ print_me = ('abc' * 2)
 
 ## Exam tasks
 
-Now let's solve some exam problems to consolidate what we have learned and to develop our algorithmic thinking.
+Now let's solve some exam tasks to consolidate what we have learned and to develop our algorithmic thinking.
 
 ## Task: Drawing a fortress
 
