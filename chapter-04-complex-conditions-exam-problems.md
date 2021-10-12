@@ -7,9 +7,9 @@ The previous chapter introduced you to **nested conditions** in **Python**. Via 
 ```python
 if condition1:
     if condition2:
-        # тяло
+        # body
     else:
-        # тяло
+        # body
 ```
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -22,13 +22,13 @@ When the program operation depends on the value of a variable, we can do consecu
 
 ```python
 if condition1:
-    # тяло
+    # body
 elif condition2:
-    # тяло
+    # body
 elif condition3:
-    # тяло
+    # body
 else:
-    # тяло
+    # body
 ```
 
 The body can consist of any code, as long as it matches the syntactic particularity of the language and is indented one tab inside.
