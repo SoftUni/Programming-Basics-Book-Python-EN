@@ -4,67 +4,67 @@ In this chapter we are going to get familiar with the following concepts and pro
 - How to work with **data types and variables**, which are necessary to process numbers and strings.
 - How to **print** a result on the console.
 - How to **read** user input.
-- Как да извършваме прости **аритметични операции**: събиране, изваждане, умножение, деление, съединяване на стринг.
-- Как да **закръгляме** числа.
+- How to do simple **arithmetic operations**: add, subtract, multiply, divide, string concatenation.
+- How to **round** numbers.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук:
+  Watch a video lesson on this chapter here:
   https://www.youtube.com/watch?v=qcBWD8ImVRI.
 </div>
 
 
-## Пресмятания в програмирането
+## Calculations in programming
 
-За компютрите знаем, че са машини, които обработват данни. Всички **данни** се записват в компютърната памет (RAM памет) в **променливи**. Променливите са именувани области от паметта, които пазят данни от определен тип, например число или текст. Всяка една **променлива** в Python има **име** и **стойност**. Ето как бихме дефинирали една променлива, като едновременно с декларацията ѝ, ѝ присвояваме и стойност:
+We know that computers are machines which process data. All **data** is held in the computer memory (RAM memory) as **variables**. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each **variable** in Python has a **name** and **value**. Here is how to define a variable, assigning a value to it at the time of declaration:
 
 ![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
 
-След тяхната обработка, данните се записват отново в променливи (т.е. някъде в паметта, заделена от нашата програма).
+After processing, data is still held in variables (i.e. somewhere in the computer memory, set aside by our program).
 
-## Типове данни и променливи
+## Data types and Variables
 
-В програмирането всяка една променлива съхранява определена **стойност** от даден **тип**. Типовете данни могат да бъдат например: **число**, **буква**, **текст** (стринг), **дата**, **цвят**, **картинка**, **списък** и др. Ето няколко примера за типове данни и стойности за тях:
+In programming, each variable stores a certain **value** of a particular **type**. For example, data types can be: **number**, **letter**, **text** (string), **date**, **color**, **image**, **list** and others. Here are some examples of data types and their values:
 
-- **int** - цяло число: 1, 2, 3, 4, 5, ...
-- **float** - дробно число: 0.5, 3.14, -1.5, ...
-- **str** - текст (низ) от символи: 'a', 'Здрасти', 'Hi', 'Beer', ...
-- **datetime** - дата: 21-12-2017, 25/07/1995, ...
+- **int** - integer: 1, 2, 3, 4, 5, ...
+- **float** - floating-point number: 0.5, 3.14, -1.5, ...
+- **str** - text (string) of symbols: 'a', 'Hello', 'Hi', 'Beer', ...
+- **datetime** - date: 21-12-2017, 25/07/1995, ...
 
-В езика **Python** типът се определя от стойността, която се присвоява и не се задава изрично при декларирането на променливи (за разлика от C#, Java и C++).
+In **Python** the data type is automatically defined by the variable's assigned value. It is not defined explicitly upon declaration of variables (as opposed to C#, Java and C++).
 
-## Печатане на резултат на екрана
+## Printing outcomes on the console
 
-За да изпечатаме текст, число или друг резултат на екрана, е необходимо да извикаме вградената функция **`print()`**. С нея можем да принтираме както стойността на променлива, така и директно текст или число:
+In order to print text, numbers or other data on the console, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
 
 ```python
-print(9)  # печатане на число
+print(9)  # prints a number
 
-print('Hello!')  # печатане на текст
+print('Hello!')  # prints text
 
 msg = 'Hello, Python!'
-print(msg)  # печатане на стойност на променлива
+print(msg)  # prints value of a variable
 ```
 
-## Четене на потребителски вход, под формата на цяло число
+## Reading Integers from the Console
 
-За да прочетем потребителски вход под формата на цяло число, е необходимо да **декларираме променлива** и да използваме вградените функции `input(…)` за четене на текстов ред от конзолата и `int(…)` за преобразуване на текстова стойност към числена:
+In order to read an integer number from the console, we have to **declare a variable** and to use the built-in functions `input(…)` for reading a text line from the system console and `int(…)` to convert the text line into an integer number:
 
 ```python
 num = int(input())
 ```
 
-Ако това преобразуване не се направи, за програмата **всяко едно число** ще бъде просто **текст**, с който **не бихме могли да извършваме** аритметични операции. При извикването на `input(…)` можем да подадем подканващо съобщение за потребителя, с което да го насочим какво искаме от него да въведе, примерно:
+If it weren't for this conversion, for the program **every number** will be just **text** with which **we wouldn't be able to do** arithmetic operations. When using `input(…)` we can include a message for the user which guides them towards what is required from them to type as input, for example:
 
 ```python
 size = int(input('Enter the size = '))
 ```
 
-### Пример: пресмятане на лице на квадрат със страна **а**
+### Example: Calculation of the area of a square with side **а**
 
-За пример да вземем следната програма, която прочита цяло число, умножава го по него самото (т.е. **вдига го на квадрат**) и отпечатва резултата от умножението. Така можем да пресметнем лицето на квадрат по дадена дължина на страната:
+Let's take the following program as an example. It reads an integer, multiplies it by itslef (i.e. **squares it **) and prints the result of the multiplication. This is how we can calculate the area of a square by using a given length of its side **a**:
 
 ```python
 a = int(input('a = '))
@@ -72,70 +72,70 @@ area = a * a
 print('Square area = ', area)
 ```
 
-Ето как би работила програмата при квадрат с размер на страната 3:
+Here is how this program would work for a square with side equal to 3:
 
 ![](/assets/chapter-2-1-images/00.Square-area-01.png)
 
-Опитайте да въведете грешно число, например "**hello**". Ще получите съобщение за **грешка** по време на изпълнение (exception). Това е нормално. По-късно ще разберем как можем да прихващаме такива грешки и да караме потребителят да въвежда число наново.
+Try to type in an invalid number, for example "**hello**". You will recieve an **error** message during execution of the program (exception). This is normal. Later on, we will learn how to tackle these errors and how to make the user type another number.
 
-#### Как работи примерът?
+#### How does the example work?
 
-Първият ред **`a = int(input('a = '))`** печата информативно съобщение, което подканва потребителя да въведе страната на квадрата **a**, след това прочита текст (стринг) и го преобразува до цяло число (извършва се т.нар. парсване) чрез функцията **`int(…)`**. Резултатът се записва в променлива с име **`a`**.
+The first line **`a = int(input('a = '))`** prints a message which tells the user to input the side of the square **a**, then it reads a text (string) and converts it into an integer (this is called parsing) utilizing the function **`int(…)`**. The result is assigned to a variable with the name **`a`**.
 
-Следващата команда **`area = a * a`** записва в нова променлива **`area`** резултата от умножението на **`a`** по **`a`**.
+The next command **`area = a * a`** assigns to a new variable **`area`** the result of the multiplication of **`a`** by **`a`**.
 
-Последният ред **`print('Square area = ', area)`** отпечатва посочения текст, като до него долепя изчисленото лице на квадрата, който сме записали в променливата **`area`**.
+The last line **`print('Square area = ', area)`** prints the given text and next to it, the calculated area of the square, held in the variable **`area`** is concatenated.
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0).
 
-## Четене на поредица числа
+## Reading of a sequence of numbers
 
-Когато искаме да прочетем **няколко числа от конзолата**, ако те са дадени **всяко на отделен ред**, ги четем последователно ето така:
+When we want to read **several numbers from the console**, if they are given **each on a new line**, we read them one by one like so:
 ```python
 num1 = input()
 num2 = input()
 num3 = input()
 print(num1, num2, num3)
 ```
-Ако въведем следния вход: 
+If we type in the following input: 
 ```
 10
 20
 30
 ```
-ще получим съответно следния резултат:
+we will recieve the following result:
 ```
 10 20 30
 ```
-Когато искаме да прочетем **няколко числа от конзолата** и те са дадени **заедно на един ред**, разделени с интервал, можем да използваме следна конструкция:
+When we want to read **several numbers from the console** and they are given **together on the same line**, separated by an interval, we can use the following construction:
 ```python
 num1, num2, num3 = map(int, input().split())
 print(num1 + num2 + num3)
 ```
-Ако въведем следния вход: 
+If we type in the following input:
 ```
 100 200 300
 ```
-ще получим съответно следния резултат:
+we will recieve the following result:
 ```
 600
 ```
-Как работи горният код? Чрез `.split(…)` разделяме елементите на въведения текстов ред по разделител интервал. Ако въведем горния вход, ще получим 3 елемента: `'100'`, `'200'` и `'300'`. След това чрез функцията `map(int, elements)` преобразуваме поредицата елементи от текст към число.
+How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will recieve 3 elements: `'100'`, `'200'` и `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
 
 
-## Четене на дробно число
+## Reading Floating Point Numbers
 
-За да прочетем потребителски вход под формата на **дробно число**, отново е необходимо да **декларираме променлива**, но този път ще използваме функцията **`float(…)`**, която преобразува прочетената текстова стойност към числена:
+To read a user input as a **floating-point number **, we need to **declare a variable**, this time using the function **`float(…)`** which converts the given text value to a fractional number:
 
 ```python
 num = float(input())
 ```
 
-### Пример: прехвърляне от инчове в сантиметри
+### Example: Conversion of inches to centimeters
 
-Да напишем програма, която чете дробно число в инчове и го обръща в сантиметри:
+Let's write a program which reads a fractional number in inches and converts it to centimeters:
 
 ```python
 inches = float(input('Inches = '))
@@ -143,26 +143,26 @@ centimeters = inches * 2.54
 print('Centimeters = ', centimeters)
 ```
 
-Да стартираме програмата и да се уверим, че при подаване на стойност в инчове, получаваме коректен резултат в сантиметри:
+Let's start the program to make sure that, when we input a value in inches, we recieve a correct result in centimeters:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
 
-## Четене на вход под формата на текст
+## Reading a Text from the Console
 
-За да прочетем текст (стринг) от конзолата, отново **декларираме нова променлива** и използваме стандартната **команда за четене от конзолата**:
+To read a **text** (string) from the console, again, we have to **declare a new variable** and use the standard **command for reading a text from the console**:
 
 ```python
 str = input()
 ```
 
-### Пример: поздрав по име
+### Example: Greeting by Name
 
-Да напишем програма, която въвежда името на потребителя и го поздравява с текста "**Hello, _{име}_!**".
+Let's write a program that asks the user for their name and salutes them with the text "Hello, {name}!".
 
 ```python           
 name = input()
@@ -170,22 +170,22 @@ print('Hello, ', end='')
 print(name, end='!')
 ```
 
-По подразбиране вградената функция **`print(…)`** печата резултат и отива на следващия ред. Това е така, защото **`print(…)`** използва параметъра **`end`**, който по подразбиране има стойност **`\n`** (нов ред). За да останем на същия ред, може да променим стойността на **`end=''`**.
+By default, the built-in function **`print(…)`** prints the result and continues to the next line. This is because **`print(…)`** uses the parameter **`end`**, which by default has the value **`\n`** (new line). In order to stay on the same line, we can change the value of **`end=''`**.
 
-Ето и резултата, ако извикаме функцията с името "Иван":
+Here is the result if we call the function with the name "Ivan":
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-00.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
 
-## Съединяване на текст и числа
+## Concatenating Text and Numbers
 
-При печат на текст, числа и други данни, **можем да ги съединим**, като използваме шаблони **`{0}`**, **`{1}`**, **`{2}`** и т.н. В програмирането тези **шаблони** се наричат **placeholders**. 
+When printing text, numbers and other data, **we can concatenate them** by using templates **`{0}`**, **`{1}`**, **`{2}`** etc. In programming these **templates** are called **placeholders**. 
 
-В **Python** използваме вградения метод **`.format(…)`**, чрез който изреждаме променливите, които искаме да се поставят на мястото на шаблоните (плейсхолдърите). Пример: въвеждаме **име** и **фамилия** на курсист, неговата **възраст** и от **град** е и отпечатваме текст в стил “You are _{име}_ _{фамилия}_, a _{възраст}_-years old person from _{град}_.”. Ето едно решение с текстови шаблони:
+In **Python** we use the built-in method **`.format(…)`** to list the variables which we want to be put in place of the templates(placeholders). Example: we type in **first name** and **familiy name** of a student as well as their **age** and **hometown** and we print text in the format “You are _{name}_ _{family name}_, a _{age}_-years old person from _{hometown}_.”. The following is a solution with text templates:
 
 ```python
 first_name = input()
@@ -197,25 +197,25 @@ print('You are {0} {1}, a {2}-years old person from {3}.'
       .format(first_name, last_name, age, town))
 ```
 
-Ето резултата, който ще получим, след изпълнение на този пример:
+Here is the result which we will get after execution of this example:
 
 ![](/assets/chapter-2-1-images/00.Placeholders-01.png)
 
-Обърнете внимание как всяка една променлива трябва да бъде подадена в **реда, в който искаме да се печата**. По същество, шаблонът (**placeholder**) **приема променливи от всякакъв вид** и това създава голямо удобство при печатане.
+Pay attention to how each variable has to be given in the **order, in which we want it to print**. Essentially, the template (**placeholder**) **accepts all types of variables** and this makes it very convenient for use when printing.
 
-### Тестване в Judge системата
+### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
-### Още за отпечатването на форматиран текст
+### More on printing formatted text
 
-Възможно е един и същ номер на **шаблон** да се използва по няколко пъти и не е задължително шаблоните за функцията **`.format(…)`** да са номерирани поредно. Ето пример:
+It is possible for one number of a **template** to be used several times and it is not required for the templates of the function **`.format(…)`** to be numbered consecutively. Here is an example:
 
 ```python
 print('{1} + {1} = {0}'.format(1+1, 1))
 ```
 
-Резултатът е:
+The result is:
 
 ```python
 1 + 1 = 2
