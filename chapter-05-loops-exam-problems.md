@@ -169,7 +169,7 @@ Print a single line in the console:
   * If Lily's money are enough:
     * "**Yes! {N}**" – where **N** are the remaining money after the purchase
   * If they're not:
-    * "**No! {M}**" – where **M** are the missing money
+    * "**No! {M}**" – where **M** is the amount of money **lacking**
   * The numbers **N** and **M** should be **formatted with 2-digit precision after the decimal point**.
 
 ### Example input & output
