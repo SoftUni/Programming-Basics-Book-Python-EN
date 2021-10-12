@@ -119,29 +119,29 @@ In order to read and assign each number to its respective group, we’ll use a *
 
 After we’ve found out how many numbers there are in each group, we can move on to calculating the percentages, which is also the main part of the problem. We’ll use the following formula:
 
-<p align="center"><strong>(Group percentage) = (number count in group) * 100 / (count of all numbers)</strong></p>
+<p align="center"><strong>(Group percentage) = (Group number count) * 100 / (Count of all numbers)</strong></p>
 
-Няма значение дали ще разделим на **100** (число тип **`int`**) или на **100.0** (число тип **`float`**), **делението** ще се извърши и в променливата ще се запази резултата от него. Например: **5 / 2 = 2.5**, а **5 / 2.0 = 2.5**. В **`Python 3`**, няма значение дали ще се дели на цяло число или реално, ако резултата е реално число, то той ще се запише в променливата като число с плаваща запетая. Но, в **`Python 2.7`** е необходимо първо числата да се сведат до тип **`float`**, за да получим правилен резултат - реално число. Имайки това предвид, формулата за първата променлива ще изглежда така: 
+It doesn’t matter whether we’ll divide by **100** (an **`integer`** type), or **100.0**(a **`float`** type), since the **division** will take place and the result will be saved to the variable. Example: **5 / 2 = 2.5**, and **5 / 2.0 = 2.5**. In **`Python 3`**, there’s no difference whether we’ll be dividing by an integer or a real number - if the result is a real number itself, then it will be saved in the variable as a floating-point number. But in **`Python 2.7`** we have to convert the numbers to a **`float`** type, in order to get the correct result – a real number. Having that in mind, the first variable’s formula will look like this:
 
 ![](/assets/chapter-5-2-images/01.Histogram-04.png)
 
-За да стане още по-ясно какво се случва, нека разгледаме следния пример:
+To better understand what’s happening, let’s look at the following example:
 
-|Вход|Изход|
+|Input|Output|
 |--------|---------|
 |**3**<br>1<br>2<br>999|66.67%<br>0.00%<br>0.00%<br>0.00%<br>33.33%|
 
-В случая **`n = 3`**.
-За цикъла имаме:
-   -   	**`i = 0`** - прочитаме числото 1, което е по-малко от 200 и попада в първата група, следователно увеличаваме брояча на групата (**`cnt_p1`**) с 1.
-   -   	**`i = 1`** – прочитаме числото 2, което отново попада в първата група и увеличаваме брояча ѝ (**`cnt_p1`**) отново с 1.
-   -   	**`i = 2`** – прочитаме числото 999, което попада в последната група (**`p5`**), защото е по-голямо от 800, и увеличаваме брояча на групата (**`cnt_p5`**) с 1.
+In this case, **`n = 3`**. 
+The cycle consists of:
+   -   	**`i = 0`** - we read the number 1, which is lower than 200 and belongs to the first group, thus increasing the counter of the number (**`cnt_p1`**) by 1.
+   -   	**`i = 1`** – we read the number 2, which, again, belongs to the first group and we increase the group’s counter(**`cnt_p1`**) by 1.
+   -   	**`i = 2`** – we read the number 999, which belongs to the last group(**`p5`**), because it’s bigger than 800, and we increase it’s group counter (**`cnt_p5`**) by 1.
    
-След прочитането на числата в първата група имаме 2 числа, а в последната - имаме 1 число. В другите групи **нямаме числа**. Като приложим гореспоменатата формула, изчисляваме процентите на всяка група. Няма значение как ще умножим по **100**, или по **100.0** ще получим един и същ резултат: за **първата** група 66.67%, а за **последната** група – 33.33% . Но все пак да споменем отново, че това е валидно само за **`Python 3`**.
+After reading the numbers, we have two of them in the first group, and we have only one in the last group. There are **no numbers** in the other groups. After we apply the aforementioned formula, we calculate the percentage of each group. It doesn’t matter whether we multiply by **100** or **100.0** – we’ll get the same result: the **first** group has 66.67%, and the **last** group – 33.33%. We have to mention that this is valid only for **`Python 3`**.
 
-#### Извеждане на краен резултат
+#### Printing the final result
   
-Остава само да отпечатаме получените резултати. В условието е казано, че процентите трябва да са **с точност две цифри след десетичната точка**. Това ще постигнем, като след placeholder-а изпишем **`.2f`**:
+The last step is to print the calculated results. In the problem’s description it’s said that the percentages have to be with **2-digit precision after the decimal point**. To achieve this, we have to write **`.2f`** after the placeholder.
 
 ![](/assets/chapter-5-2-images/01.Histogram-05.png)
 
