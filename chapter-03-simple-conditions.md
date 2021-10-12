@@ -143,7 +143,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
 
-### Пример: по-голямото число
+### Problem: Finding the Greater Number
 
 Write a program that reads two integers and outputs the larger.
 
@@ -232,54 +232,54 @@ We are given an **integer** – several points. Additional **bonus points** are 
 
 #### Hints and pointers
 
-Основните и допълнителните бонус точки можем да изчислим с поредица от няколко **`if-elif-else`** проверки. Като за **основните бонус точки имаме 3 случая** (когато въведеното число е до 100, между 100 и 1000 и по-голямо от 1000), а за **допълнителните бонус точки - още 2 случая** (когато числото е четно и нечетно):
+We can calculate the base and additional bonus score with a series of **`if-elif-else`** statements. For the  **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus score - further 2 cases** (whether the number is even or odd):
 
 ![](/assets/chapter-3-1-images/06.Bonus-score-01.png)
 
-Ето как би могло да изглежда решението на задачата в действие:
+Here’s what the solution to the problem might look like:
 
 ![](/assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-Обърнете внимание, че за тази задача Judge е настроен да игнорира всичко, което не е число, така че можем да печатаме не само числата, но и уточняващ текст.
+Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#5](https://judge.softuni.org/Contests/Practice/Index/1049#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#5](https://judge.softuni.org/Contests/Practice/Index/1049#5).
 
 
-### Задача: сумиране на секунди
+### Problem: Summing Up Seconds
 
-Трима спортни състезатели финишират за някакъв **брой секунди** (между **1** и **50**). Да се напише програма, която въвежда времената на състезателите и пресмята **сумарното им време** във формат "минути:секунди". Секундите да се изведат с **водеща нула** (2 -> "02", 7 -> "07", 35 -> "35").
+Three athletes finish with some **number of seconds** (between **1** and **50**). Write a program that reads the times of the contestants and calculates their **сумарното им време** in "minutes:seconds" format. Seconds are to be printed with a **leading zero** (2 -> "02", 7 -> "07", 35 -> "35").
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 35<br>45<br>44 | 2:04 |
 | 22<br>7<br>34 | 1:03 |
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Първо сумираме трите числа, за да получим общия резултат в секунди. Понеже **1 минута = 60** секунди, ще трябва да изчислим броя минути и броя секунди в диапазона от 0 до 59:
-- Ако резултатът е между 0 и 59, отпечатваме 0 минути + изчислените секунди.
-- Ако резултатът е между 60 и 119, отпечатваме 1 минута + изчислените секунди минус 60.
-- Ако резултатът е между 120 и 179, отпечатваме 2 минути + изчислените секунди минус 120.
-- Ако секундите са по-малко от 10, извеждаме водеща нула преди тях.
+Firstly, we sum the three numbers, to obtain the seconds total. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
+- If the result is between 0 and 59, we print 0 minutes + calculated seconds.
+- If the result is between 60 and 119, we print 1 minute + calculated seconds minus 60.
+- If the result is between 120 and 179, we print 2 minutes + calculated seconds minus 120.
+- If the seconds are less than 10, we print the number with a leading zero.
 
 ![](/assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#6](https://judge.softuni.org/Contests/Practice/Index/1049#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#6](https://judge.softuni.org/Contests/Practice/Index/1049#6).
 
 
-### Задача: конвертор за мерни единици
+### Problem: Metric Converter
 
-Да се напише програма, която **преобразува разстояние** между следните **8 мерни единици**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Използвайте съответствията от таблицата по-долу:
+Write a program, that **converts distance** between the following **8 units of measure**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. You may use the conversion table below:
 
-| Входна единица | Изходна единица |
+| Input measure | Output measure |
 | :-------------: | :--------------: |
 | 1 meter (m) | 1000 millimeters (mm) |
 | 1 meter (m) | 100 centimeters (cm) |
@@ -289,71 +289,71 @@ We are given an **integer** – several points. Additional **bonus points** are 
 | 1 meter (m) | 3.2808399 feet (ft)  |
 | 1 meter (m) | 1.0936133 yards (yd) |
 
-Входните данни се състоят от три реда:
+The input will be three parameters:
 
-- Първи ред: число за преобразуване.
-- Втори ред: входна мерна единица.
-- Трети ред: изходна мерна единица (за резултата).
+- First line: A number.
+- Second: Input unit of measure.
+- Third: Output unit of measure (for the result).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 12 <br>km <br>ft | 39370.0788 |
 | 150 <br>mi <br>in | 9503999.99393599 |
 | 450 <br>yd <br>km | 0.41147999937455 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
-Прочитаме си входните данни, като към прочитането на мерните единици можем да добавим функцията **`lower()`**, която ще направи всички букви малки. Както виждаме от таблицата в условието, можем да конвертираме само **между метри и някаква друга мерна единица**. Следователно трябва първо да изчислим числото за преобразуване в метри. Затова трябва да направим набор от проверки, за да определим каква е входната мерна единица, а след това и за изходната мерна единица:
+We take the input data and to the units of measure, we can add the function  **`lower()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit.**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
 ![](/assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#7](https://judge.softuni.org/Contests/Practice/Index/1049#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#7](https://judge.softuni.org/Contests/Practice/Index/1049#7).
 
 
-## Дебъгване - прости операции с дебъгер
+## Debugging - simple operations with a debugger
 
-До момента писахме доста код и често пъти в него имаше грешки, нали? Сега ще покажем един инструмент, с който можем да намираме грешките по-лесно.
+To date, we have written quite a lot of code and oftentimes there were mistakes, were there? Now we can show you a tool to make finding mistakes easier.
 
-### Какво е "дебъгване"?
+### What is "debugging"?
 
-**Дебъгване** е процесът на "**закачане**" към изпълнението на програмата, който ни позволява да проследим поетапно процеса на изпълнение. Можем да следим **ред по ред** какво се случва с нашата програма, какъв път следва, какви стойности имат дефинираните променливи на всяка стъпка от изпълнението на програмата и много други неща, които ни позволяват да откриваме грешки (**бъгове**):
+**Debugging** is the process of "**attaching**" to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called (**bugs**):
 
 ![](/assets/chapter-3-1-images/00.Debugging-01.png)
 ![](/assets/chapter-3-1-images/00.Debugging-02.png)
 
-### Дебъгване в PyCharm
+### Debugging in PyCharm
 
-Чрез натискане на [**Shift + F9**], стартираме програмата в **Debug режим**. Преминаваме към **следващия ред** на изпълнение с [**F7**]:
+By pressing [**Shift + F9**], we start the program in **Debug mode**. We move on to the **next line** of execution with [**F7**]:
 
 ![](/assets/chapter-3-1-images/00.Debugging-03.png)
 
-Чрез [**Ctrl + F8**] създаваме стопери - така наречените **breakpoints**, до които можем да стигнем директно използвайки [**Shift + F9**]  (при стартирането на програмата в **Debug режим**).
+With [**Ctrl + F8**] we create **breakpoints**, which we can reach directly using [**Shift + F9**] (when starting the program in **Debug mode**).
 
-## Упражнения: прости проверки
+## Exercises: Simple Conditions
 
-Нека затвърдим наученото в тази глава с няколко задачи.
+Now let's practice the lessons learned in this chapter with a few practical exercises.
 
-### Празно PyCharm решение (Project)
+### Empty PyCharm solution (Project)
 
-Създаваме празно решение в **PyCharm**, за да организираме по-добре решенията на задачите от упражненията – всяка задача ще бъде в отделен файл и всички задачи ще бъдат в общ Project.
+We create empty solution in PyCharm so we can organize the solutions to the tasks from the exercises – each task will be in a separate file and all tasks will be in the same Project.
 
-Стартираме PyCharm. Създаваме нов **Project:** [**File**] -> [**New Project**].
+We start PyCharm and create a new **Project:** [**File**] -> [**New Project**].
 
 ![](/assets/chapter-3-1-images/00.PyCharm-01.png)
 
-Избираме от полето в ляво **Pure Python** и задаваме директория на проекта, като на мястото на **untitled** слагаме името на нашия проект:  
+Select **Pure Python** from the field on the left and set the project directory, putting the name of your project in place of the **untitled** one:  
 
 ![](/assets/chapter-3-1-images/00.PyCharm-02.png)
 
-Сега имаме създаден празен проект (без файлове в него).
+Now we have an empty project (no files in it).
 
-### Задача: проверка за отлична оценка
+### Problem: Excellent Grade
 
-Първата задача от упражненията за тази тема е да се напише **конзолна програма**, която **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока.
+The first exercise for this topic is to write a **console application**, which **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока.
 
 #### Примерен вход и изход
 
