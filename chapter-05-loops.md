@@ -25,7 +25,7 @@ Upon declaring the loop, you can specify a **start value** and **end value**, wh
 
 In most cases a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perfomrm a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
 
-### Example: the numbers from 1 to 100
+### Problem: the numbers from 1 to 100
 
 Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.
 
@@ -45,7 +45,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 You should get **100 points** (fully accurate solution).
 
-### Example: numbers to 1000, ending in 7
+### Problem: numbers to 1000, ending in 7
 
 Write a program that finds all numbers in range [**1 … 1000**], that end in 7. 
 
@@ -60,7 +60,7 @@ We can solve the problem by combining a **`for` loop** for passing through the n
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#1](https://judge.softuni.org/Contests/Practice/Index/1053#1).
 
 
-### Example: all Latin letters
+### Problem: all Latin letters
 
 Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
@@ -75,7 +75,7 @@ It is good to know that the **`for` loops** don't work only with numbers. We can
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#2](https://judge.softuni.org/Contests/Practice/Index/1053#2).
 
 
-### Example: sum of numbers
+### Problem: sum of numbers
 
 Write a program that **reads `n` integers and finds their sum**.
 
@@ -95,28 +95,28 @@ Write a program that **reads `n` integers and finds their sum**.
 
 #### Hints and guidelines
 
-Можем да решим задачата за сумиране на числа по следния начин:
- - Четем входното число **`n`** от конзолата.
- - Започваме първоначално със сума **`sum = 0`**.
- - Въртим цикъл от 0 до **`n`**. На всяка стъпка от цикъла четем число **`num`** и го добавяме към сумата **`sum`**.
- - Накрая отпечатваме получената сума **`sum`**.
+We can solve the problem with summing up numbers in the following way:
+ - We read the input number **`n`**.
+ - We initially start with a sum **`sum = 0`**.
+ - We run a loop from 0 to **`n`**. On each step of the loop, we read the number **`num`** and add it to the **`sum`**.
+ - Finally, we print the calculated amount **`sum`**.
  
-Ето и сорс кода на решението:
+Here is the source code for the solution:
 
 ![](/assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#3](https://judge.softuni.org/Contests/Practice/Index/1053#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#3](https://judge.softuni.org/Contests/Practice/Index/1053#3).
 
 
-### Пример: най-голямо число
+### Problem: Max number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-голямото** измежду тях. На първия ред на входа се въвежда броят числа **n**. След това се въвеждат самите числа, по едно на ред. Примери:
+Write a program that enters **n integers** (**n** > 0) and finds **the max** among them. The first line of the input, reads the number of integers. After that the next lines read the integers, each on separate line. Examples:
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>100<br>99 | 100 | 
 | 3<br>-10<br>20<br>-30 | 20 |
@@ -124,131 +124,131 @@ Write a program that **reads `n` integers and finds their sum**.
 | 1<br>999 | 999 |
 | 2<br>-1<br>-2 | -1 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Първо въвеждаме едно число **`n`** (броят числа, които предстои да бъдат въведени). Задаваме на текущия максимум **`max`** първоначална неутрална стойност, например **-10000000000000**. С помощта на **`for` цикъл**, чрез който итерираме **n-1 пъти**, прочитаме по едно цяло число **`num`**. Ако прочетеното число **`num`** е по-голямо от текущия максимум **`max`**, присвояваме стойността на **`num`** в променливата **`max`**. Накрая, в **`max`** трябва да се е запазило най-голямото число. Отпечатваме го на конзолата:
+We will first enter one number **`n`** (the number of integers that are about to be entered). We assign the current maximum **`max`**an initial neutral value, for example **-10000000000000**. Using a **`for` loop**, that is iterated **n-1 times**, we read one integer **`num`**.  If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the **`max`** value. Finally, in **`max`**  we must have stored the highest number. We print the number on the console.:
 
 ![](/assets/chapter-5-1-images/05.Max-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#4](https://judge.softuni.org/Contests/Practice/Index/1053#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#4](https://judge.softuni.org/Contests/Practice/Index/1053#4).
 
 
-### Пример: най-малко число
+### Problem: Min number
 
-Да се напише програма, която въвежда **n цели числа** (**n** > 0) и намира **най-малкото** измежду тях. Първо се въвежда броя числа **n**, след тях още **n** числа по едно на ред. 
+Write a program that enters **n integers** (**n** > 0) and finds **the min** among them. The first line of the input, reads the number of integers and after that the next lines read the integers, each on separate line.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | 
+| Input | Output | 
 | --- | --- |
 | 2<br>100<br>99 | 99 |
 | 3<br>-10<br>20<br>-30 | -30 |
 | 4<br>45<br>-20<br>7<br>99<br> | -20 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е абсолютно аналогична с предходната, само че започване с друга неутрална начална стойност:
+The problem is completely identical to the previous one, except this time we will start with another neutral starting value:
 
 ![](/assets/chapter-5-1-images/06.Min-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#5](https://judge.softuni.org/Contests/Practice/Index/1053#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#5](https://judge.softuni.org/Contests/Practice/Index/1053#5).
 
 
-### Пример: лява и дясна сума
+### Example: Left and right sum
 
-Да се напише програма, която въвежда **2 \* n цели числа** и проверява дали **сумата на първите n числа** (лява сума) е равна на **сумата на вторите n числа** (дясна сума). При равенство се печата **"Yes" + сумата**, иначе се печата **"No" + разликата**. Разликата се изчислява като положително число (по абсолютна стойност). Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that reads an input **2 \* n integers** and checks if ** the sum of the first n numbers** (left sum) is equal to **the sum of the second n numbers** (right sum). In case the sums are equal, print **"Yes" + sum**, otherwise print **"No" + the difference**. The difference is calculated as a positive number (by absolute value). The format of the output must be identical to the one in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 | --- | --- | --- | --- | 
 | 2<br>10<br>90<br>60<br>40 | Yes, sum = 100 | 2<br>90<br>9<br>50<br>50 | No, diff = 1 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо въвеждаме числото **n**, след това първите **n** числа (**лявата** половина) и ги сумираме. Продължаваме с въвеждането на още **n** числа (**дясната** половина) и намираме и тяхната сума. Изчисляваме **разликата** между намерените суми по абсолютна стойност: **`math.fabs(rightSum - leftSum)`**. Ако разликата е **0**, отпечатваме **"Yes" + сумата**, в противен случай - отпечатваме **"No" + разликата**.
+We will first input the number **n**, after that the first **n** numbers (**left** half) and we sum them up. We will then proceed with inputting more **n** numbers (**right** half) and sum them up. We calculate **the difference ** between the sums by absolute value: **`math.fabs(rightSum - leftSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + the difference **.
 
 ![](/assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#6](https://judge.softuni.org/Contests/Practice/Index/1053#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#6](https://judge.softuni.org/Contests/Practice/Index/1053#6).
 
 
-### Пример: четна / нечетна сума
+### Problem: even / odd sum
 
-Да се напише програма, която въвежда **n цели числа** и проверява дали **сумата на числата на четни позиции** е равна на **сумата на числата на нечетни позиции**. При равенство печата **"Yes" + сумата**, иначе печата **"No" + разликата**. Разликата се изчислява по абсолютна стойност. Форматът на изхода трябва да е като в примерите по-долу.
+Write a program that inputs **n integers** and checks whether **the sum of the numbers on even positions** is equal to **the sum of the numbers on odd positions**. In case the sums are equal, print **"Yes" + sum**, otherwise print **"No" + the difference **. The difference is calculated by absolute value. The format of the output must be identical to the one in the examples below.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 4<br>10<br>50<br>60<br>20 | Yes<br>Sum = 70 |
 | 4<br>3<br>5<br>1<br>-2 | No<br>Diff = 1 |
 | 3<br>5<br>8<br>1 | No<br>Diff = 2 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Въвеждаме числата едно по едно и изчисляваме двете **суми** (на числата на **четни** позиции и на числата на **нечетни** позиции). Както в предходната задача, изчисляваме абсолютната стойност на разликата и отпечатваме резултата (**"Yes" + сумата** при разлика 0 или **"No" + разликата** в противен случай):
+Input the numbers one by one and calculate the two **sums** (of the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** in case of difference of 0 or **"No" + the difference ** in any other case):
 
 ![](/assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#7](https://judge.softuni.org/Contests/Practice/Index/1053#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#7](https://judge.softuni.org/Contests/Practice/Index/1053#7).
 
 
-### Пример: сумиране на гласните букви
+### Problem: sum of vowels
 
-Да се напише програма, която въвежда **текст** (стринг), изчислява и отпечатва **сумата от стойностите на гласните букви** според таблицата по-долу:
+Write a program that inputs **text** (string), calculates and prints **the sum of the values of vowels** according to the table below:
 
 | a | e | i | o | u | 
 | :---: | :---: | :---: | :---: | :---: |
 | 1 | 2 | 3 | 4 | 5 |
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход | Вход | Изход | 
+| Input | Output | Input | Output | 
 | --- | --- | --- | --- |
 | hello | 6<br>(e+o = 2+4 = 6) | bamboo | 9<br>(a+o+o = 1+4+4 = 9) |
 | hi | 3<br>(i = 3) | beer | 4<br>(e+e = 2+2 = 4) |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Прочитаме входния текст **`line`**, зануляваме сумата и завъртаме цикъл, който преминава през всеки символ от входния текст. Проверяваме всяка буква **`c`** дали е гласна и съответно добавяме към сумата стойността ѝ:
+We read the input text **`line`**, null the sum and run a loop, which goes through each symbol from the text. We check each letter **`c`** and verify if it is a vowel, and accordingly, add its value to the sum:
 
 ![](/assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#8](https://judge.softuni.org/Contests/Practice/Index/1053#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#8](https://judge.softuni.org/Contests/Practice/Index/1053#8).
 
 
-## Какво научихме от тази глава?
+## What did we learn in this chapter?
 
-Можем да повтаряме блок код с **`for` цикъл**:
+We can repeata block of code with **`for` loop**:
 
 ![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
-Можем да четем поредица от **`n`** числа от конзолата:
+We can read a sequence of **`n`** numbers from the console:
 
 ![](/assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Упражнения: повторения (цикли)
+## Exercises: Repetitions (loops)
 
-След като се запознахме с циклите, идва време **да затвърдим знанията си на практика**, а както знаете, това става с много писане на код. Да решим няколко задачи за упражнение.
+Now that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise.
 
-### Създаване на нов проект в PyCharm
+### Creating new project in PyCharm
 
-Създаваме нов проект в PyCharm (от [**File**] -> [**New Project**]), за да организираме по-добре задачите за упражнение. Целта на този **проект** e да съдържа **по един Python файл за всяка задача** от упражненията:
+Create new project in PyCharm (from [**File**] -> [**New Project**]), in order to organise better the exercise tasks. The purpose of this **project** is to contain **one Python file for each task** from the exercises:
   
 ![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.png)
 
-### Задача: елемент, равен на сумата на останалите
+### Problem: елемент, равен на сумата на останалите
 
 Да се напише програма, която въвежда **n цели числа** и проверява дали сред тях съществува число, което е равно на сумата на всички останали. Ако има такъв елемент, се отпечатва **"Yes" + неговата стойност**, в противен случай - **"No" + разликата между най-големия елемент и сумата на останалите** (по абсолютна стойност). 
 
