@@ -95,61 +95,61 @@ We will do a **linear**, search in the second array, and we will leave the more 
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-06.png)
 
-The previous solution to the problem uses arrays to store the values. Arrays are not needed to solve the problem. There is an **alternative solution**,  that generates the numbers and works directly with them instead of keeping them in an array. On **every step** we can check whether **the numbers in the two sequences match**. If this is the case, we will print the number on the console and terminate the execution of our program. Otherwise, we will see the current number of *which sequence is the smaller one and we will generate the next one where we are "lagging"**. The idea is that **ще генерираме числа от редицата, която е "по-назад"**, докато не прескочим текущото число на другата редица и след това обратното, а ако междувременно намерим съвпадение, ще прекратим изпълнението:
+The previous solution to the problem uses arrays to store the values. Arrays are not needed to solve the problem. There is an **alternative solution**,  that generates the numbers and works directly with them instead of keeping them in an array. On **every step** we can check whether **the numbers in the two sequences match**. If this is the case, we will print the number on the console and terminate the execution of our program. Otherwise, we will see the current number of *which sequence is the smaller one and we will generate the next one where we are "lagging"**. The idea is that **we will generate numbers from the sequence that is "behind"**,until we skip the current number of the other sequence and then vice versa, and if we find a match in the meantime, we will terminate the execution:
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-07.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1061#0](https://judge.softuni.org/Contests/Practice/Index/1061#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1061#0](https://judge.softuni.org/Contests/Practice/Index/1061#0).
 
 
-## Задача: магически дати
+## Problem: Magic Dates
 
-Дадена е **дата** във формат "**дд-мм-гггг**", напр. 26-09-2018. Изчисляваме **теглото на тази дата**, като вземем всичките ѝ цифри, умножим всяка цифра с останалите след нея и накрая съберем всички получени резултати. В нашия случай имаме 8 цифри: **17032007**, така че теглото е  **`1*7 + 1*0 + 1*3 + 1*2 + 1*0 + 1*0 + 1*7`** **+** **`7*0 + 7*3 + 7*2 + 7*0 + 7*0 + 7*7`** **+** **`0*3 + 0*2 + 0*0 + 0*0 + 0*7`** **+** **`3*2 + 3*0 + 3*0 + 3*7`** **+** **`2*0 + 2*0 + 2*7`** **+** **`0*0 + 0*7`** **+** **`0*7`** = **144**.
+**Date** is given in a "**dd-mm-yyyy**" format, e.g. 17-04-2018. We calculate **the weight of that date**, by taking all of its digits, multiplying each digit with the others after it, and finally summing up all the results obtained. In our case, we have 8 digits: **17032007**, so the weight is  **`1*7 + 1*0 + 1*3 + 1*2 + 1*0 + 1*0 + 1*7`** **+** **`7*0 + 7*3 + 7*2 + 7*0 + 7*0 + 7*7`** **+** **`0*3 + 0*2 + 0*0 + 0*0 + 0*7`** **+** **`3*2 + 3*0 + 3*0 + 3*7`** **+** **`2*0 + 2*0 + 2*7`** **+** **`0*0 + 0*7`** **+** **`0*7`** = **144**.
 
-Нашата задача е да напишем програма, която намира всички **магически дати - дати между две определени години (включително), отговарящи на дадено във входните данни тегло**. Датите трябва да бъдат принтирани в нарастващ ред (по дата) във формат "**дд-мм-гггг**". Ще използваме само валидните дати в традиционния календар (високосните години имат 29 дни през февруари).
+Our task is to write a program that finds all the **magical dates between two specific years (inclusively) corresponding to given weight**. Dates must be printed in ascending order (by date) in the format "**dd-mm-yyyy**". We will only use the valid dates in the traditional calendar (the leap years have 29 days in February).
 
-### Входни данни
+### Input Data
 
-Входните данни трябва да бъдат прочетени от конзолата. Състоят се от 3 реда:
+Input data should be read from the console. It consists of 3 lines:
 
-*	Първият ред съдържа цяло число: **начална година**.
-*	Вторият ред съдържа цяло число: **крайна година**.
-*	Третият ред съдържа цяло число: **търсеното тегло** за датите.
+* The first line contains an integer: **start year**.
+* The second line contains an integer: **end year**.
+* The third line contains an integer: **the search weight** for the dates.
+* 
+Input data will always be valid and will always be in the format described. No need to check.
 
-Входните данни винаги ще бъдат валидни и винаги ще са в описания формат. Няма нужда да се проверяват.
+### Output Data
 
-### Изходни данни
+The result should be printed on the console as consecutive dates in **dd-mm-yyyy" format"**, sorted by date in ascending order. Each string must be in a separate line. If there are no existing magic dates, print "**No**".
 
-Резултатът трябва да бъде принтиран на конзолата, като последователни дати във **формат "дд-мм-гггг"**, подредени по дата в нарастващ ред. Всяка дата трябва да е на отделен ред. В случай, че няма съществуващи магически дати, да се принтира "**No**".
+### Constraints
 
-### Ограничения
+* The start and final year are integer numbers in the range [**1900 - 2100**].
+* Magic weight is an integer in the range [**1 … 1000**].
+* Allowed program time: 0.75 секунди.
+* Allowed memory: 16 MB.
 
-* Началната и крайната година са цели числа в периода [**1900 - 2100**].
-* Магическото тегло е цяло число в диапазона [**1 … 1000**].
-* Позволено работно време за програмата: 0.75 секунди.
-* Позволена памет: 16 MB.
+### Sample Input and Output
 
-### Примерен вход и изход
-
-| Вход                | Изход                                  | Вход                     | Изход |
+| Input                | Output                                  | Input                     | Output |
 | ------------------- | -------------------------------------- | ------------------------ | ----- |
 | 2007<br>2007<br>144 | 17-03-2007<br>13-07-2007<br>31-07-2007 | 2003<br>2004<br>1500<br> | No    |
 
-| Вход               | Изход                                    | Вход                   | Изход                                    |
+| Input               | Output                                    | Input                   | Output                                    |
 | ------------------ | ---------------------------------------- | ---------------------- | ---------------------------------------- |
 | 2012<br>2014<br>80 | 09-01-2013<br>17-01-2013<br>23-03-2013<br>11-07-2013<br>01-09-2013<br>10-09-2013<br>09-10-2013<br>17-10-2013<br>07-11-2013<br>24-11-2013<br>14-12-2013<br>23-11-2014<br>13-12-2014<br>31-12-2014 | 2011<br>2012<br>14<br> | 01-01-2011<br>10-01-2011<br>01-10-2011<br>10-10-2011 |
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Започваме с вмъкване на необходимите функционалност и с четенето от входните данни от конзолата. В случая имаме вмъкваме типа `date` (с ново име `datetype`), функциите `timedelta` и `floor` и четем **3 цели числа**:
+We start with inserting the necessary functionality and reading the input from the console. In this case we insert the type `date` (with new name `datetype`), the functions `timedelta` and `floor` and read **3 integers**:
 
 ![](/assets/chapter-9-1-images/02.Magic-dates-01.png)
 
-Разполагайки с началната и крайната година, е хубаво да разберем как ще минем през всяка дата, без да се объркваме от това колко дена има в месеца и дали годината е високосна и т.н.
+Having the start and the end year, it is nice to know how we will go through every date, not to worry about how many days there are in the month and whether it is a leap year, and so on.
 
-#### Обхождане на всички дати
+#### Loop through Dates
 
 За обхождането ще се възползваме от функционалността, която ни дава **`date`** типът в **Python**. Ще си дефинираме **променлива за началната дата**, което можем да направим, използвайки "конструктора", който приема година, месец и ден. Знаем, че годината е началната година, която сме получили като параметър, а месеца и деня трябва да са съответно януари и 1-ви:
 
