@@ -266,30 +266,30 @@ The input is read from the console and **contains exactly 2 lines**:
 <tr>
 <td valign="top">50000<br>1802</td>
 <td valign="top">Yes! He will live a carefree life and<br> will have 13050.00 dollars left.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
- 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи 12000</strong> долара <br>
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 50000 – 12000 = <strong>38000</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 + <strong>19*50</strong> = 12950 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 38000 – 12950 = <strong>25050</strong><br>
-1802 &rarr; <strong>четна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Харчи</strong> 12000 долара<br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 25050 – 12000 = <strong>13050</strong></p></td>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+ 	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends 12000</strong> dollars <br>
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Left 50000 – 12000 = <strong>38000</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends</strong> 12000 + <strong>19*50</strong> = 12950 dollars<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Left</strong> 38000 – 12950 = <strong>25050</strong><br>
+1802 &rarr; <strong>even</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Spends</strong> 12000 dollars<br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Left</strong> 25050 – 12000 = <strong>13050</strong></p></td>
 </tr>
 <tr>
 <td valign="top">100000.15<br>1808</td>
 <td valign="top">He will need 12399.85 dollars<br> to survive.</td>
-<td valign="top"><p>1800 &rarr; <strong>четна</strong><br> 
-  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Остават 100000.15 – 12000 = <strong>88000.15</strong><br>
-1801 &rarr; <strong>нечетна</strong> <br>
-	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Остават</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
+<td valign="top"><p>1800 &rarr; <strong>even</strong><br> 
+  &nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; Left 100000.15 – 12000 = <strong>88000.15</strong><br>
+1801 &rarr; <strong>odd</strong> <br>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;  &rarr; <strong>Left</strong> 88000.15 – 12950 = <strong>75050.15</strong><br>
 <strong>…</strong><br>
-1808 &rarr; <strong>четна</strong> &rarr; -399.85 - 12000 = -12399.85<br>
-<strong>12399.85 не достигат</strong>
+1808 &rarr; <strong>even</strong> &rarr; -399.85 - 12000 = -12399.85<br>
+<strong>12399.85 lacking</strong>
 </p></td>
 </tr>
 </tbody>
-</table>    
+</table> 
 
 ### Насоки и подсказки
 
