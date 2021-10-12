@@ -23,7 +23,7 @@ In programming, we can compare values through the use of the following **operato
 
 The result from a comparison is the so-called Boolean value – **`True`** or **`False`**, depending on the evaluated result being either true or false.
 
-### Examples of Number Comparisons
+### Examples of number comparisons
 
 ![](/assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
@@ -31,7 +31,7 @@ Note that when printing **`true`** and **`false`** values in **Python**, they ar
 
 ### Comparison operators
 
-In Python we ca use the following operators to compare data:
+In Python we can use the following operators to compare data:
 
 <table>
 <tr>
