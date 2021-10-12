@@ -29,9 +29,9 @@ The result from a comparison is the so-called Boolean value – **`True`** or **
 
 Note that when printing **`true`** and **`false`** values in **Python**, they are capialized, **`True`** and **`False`**, respectively.
 
-### Оператори за сравнение
+### Comparison operators
 
-В езика Python можем да използваме следните оператори за сравнение на данни:
+In Python we ca use the following operators to compare data:
 
 <table>
 <tr>
@@ -57,13 +57,13 @@ Note that when printing **`true`** and **`false`** values in **Python**, they ar
 </tr>
 </table>
 
-Ето един пример:
+Here is an example:
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
-## Прости проверки
+## Simple if comparisons
 
-В програмирането често **проверяваме дадени условия** и извършваме различни действия, спрямо резултата от тези проверки. Проверките извършваме посредством **`if`** клаузи, които имат следната конструкция:
+In programming, we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through **`if`** clauses, which have the following structure:
 
 ```python
 if условие:
