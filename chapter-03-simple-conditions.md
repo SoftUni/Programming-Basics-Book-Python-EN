@@ -111,7 +111,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 By pressing **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other structures) and we want to perform a series of operations, we put them in a block after the condition.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution</td>
+<td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution.</td>
 </tr></table>
 
 Here is an example of bad indentation:
@@ -132,7 +132,7 @@ The following output will be printed on the console:
 
 ### Problem: Even or Odd
 
-Write a program that checks whether a given integer number is **even** or **odd** (odd)
+Write a program that checks whether a given integer number is **even** or **odd**.
 
 The problem can be solved with a single **`if-else`** structure and the operator **`%`**, which returns the **division remainder** of two numbers:
 
@@ -166,23 +166,23 @@ In the example below, on the last line we try to print the variable **`my_name`*
 
 ## Conditional chaining
 
-Понякога се налага да извършим серия от проверки, преди да решим какви действия ще изпълнява нашата програма. В такива случаи, можем да приложим конструкцията **`if-elif ... else` в серия**. За целта използваме следния формат: 
+Sometimes we have to do a series of checks, before deciding what actions our program will execute. In such cases we can apply the structure **`if-elif ... else` in series**. For this purpose, we employ the following structure:
 
 ```python
-if условие:
-    # тяло на условната конструкция
-elif условие2:
-    # тяло на условната конструкция
-elif условие3:
-    # тяло на условната конструкция
+if condition:
+    # condition body;
+elif condition2:
+    # condition body;
+elif condition3:
+    # condition body;
 …
 else:
-    # тяло на else конструкция
+    # else structure body
 ```
 
-### Пример: число от 1 до 9 на английски
+### Example: Numbers 1 through 9 in English
 
-Да се изпише число в интервала от 1 до 9 с текст на английски език (числото се чете от конзолата). Можем да прочетем числото и след това чрез **серия от проверки** отпечатваме съответстващата му английска дума:
+Print the digits one through nine in English on the console (the numbers are read from the console). We can take the digit and through a  **series of conditions** print the corresponding English word on the console:
 
 ```python
 number = int(input())
@@ -199,38 +199,38 @@ else:
     print("number too big")
 ```
 
-Програмната логика от примера по-горе **последователно сравнява** входното число от конзолата с цифрите от 1 до 9, като **всяко следващо сравнение се извършва, само в случай че предходното сравнение не е било истина**. В крайна сметка, ако никое от **`if`** условията не е изпълнено, се изпълнява последната **`else` клаузa**.
+The program logic of the above example **sequentially compares** the input number with the digits from 1 to 9 **with each consecutive comparison being performed only in case the previous result is not true**. Eventually, if none of the **`if`** conditionals are satisfied, the last **`else` clause** is executed.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
 
 
-## Упражнения: прости проверки
+## Excercies: Simple conditions
 
-За да затвърдим знанията си за условните конструкции **`if`** и **`if-elif`**, ще решим няколко практически задачи.
+To practice the implementation of the conditional constructs **`if`** and **`if-elif`** we will take a look at a few practical problems.
 
-### Задача: бонус точки 
+### Problem: Bonus Score 
 
-Дадено е **цяло число** – брой точки. Върху него се начисляват **бонус точки** по правилата, описани по-долу. Да се напише програма, която пресмята **бонус точките** за това число и **общия брой точки** с бонусите.
+We are given an **integer** – several points. Additional **bonus points** are awarded as per the rules described below. Write a program that calculates the **bonus points** for the given number and outputs the **total points** including the bonus.
 
-- Ако числото е **до 100** включително, бонус точките са 5.
-- Ако числото е **по-голямо от 100**, бонус точките са **20%** от числото.
-- Ако числото е **по-голямо от 1000**, бонус точките са **10%** от числото.
-- Допълнителни бонус точки (начисляват се отделно от предходните):
- - За **четно** число -> + 1 т.
- - За число, което **завършва на 5** -> + 2 т.
+- If the number is **up to 100** inclusive, the bonus points are 5.
+- If the number is **larger than 100**, the bonus points are **20%** of the number.
+- If the number is  **larger than 1000**, the bonus points are **10%** of the number.
+- Additional points are awarded as below (added separately from the described above):
+ - For **even** numbers -> + 1 p.
+ - For numbers, **ending with 5** -> + 2 p.
  
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 20 | 6<br>26 |
 | 175 | 37<br>212 |
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
 
-#### Насоки и подсказки
+#### Hints and pointers
 
 Основните и допълнителните бонус точки можем да изчислим с поредица от няколко **`if-elif-else`** проверки. Като за **основните бонус точки имаме 3 случая** (когато въведеното число е до 100, между 100 и 1000 и по-голямо от 1000), а за **допълнителните бонус точки - още 2 случая** (когато числото е четно и нечетно):
 
