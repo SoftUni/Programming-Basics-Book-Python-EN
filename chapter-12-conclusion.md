@@ -10,31 +10,31 @@ Remember the **[four main groups of skills](chapter-00-preface.md#become-a-devel
 
 ## This book is only the first step!
 
-**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **Python** language on a **basic level**. Тепърва ви предстои да изучавате **по-задълбочено** програмирането, както и да развивате **алгоритмичното си мислене**, след което да добавите и **технологични знания** за езика Python и Django екосистемата, front-end уеб технологиите (HTML, CSS, Angular, React, AJAX, HTML5) и още редица концепции, технологии и инструменти за разработка на софтуер.
+**The present** book on programming basics is just the **first step** in building the skills of a programmer. If you were able to solve **all problems**, this means you have **obtained valuable knowledge** in the programming principles with **Python** language on a **basic level**. You are about to start **in-depth** studying of programming, and develop **your algorithmic thinking**, and then add **technological knowledge** regarding the Python language, Django ecosystem, front-end technologies (HTML, CSS, Angular, React, AJAX, HTML5) and many other concepts, technologies and instruments for software development.
 
-Ако **не сте успели** да решите всички задачи или голяма част от тях, върнете се и ги решете! Помнете, че за да **станете програмисти** се изискват **много труд и усилия**. Тази професия не е за мързеливци. Без **да практикувате сериозно** програмирането години наред, няма как да го научите!
+If you were **not able** to solve all problems or a large part of them, go back and solve them! Remember that **becoming a programmer** requires **a lot of work and effort**. This profession is not for lazy people. There is no way to learn it unless **you seriously practice** programming for years!
 
-Както вече обяснихме, първото и най-базово умение на програмиста е **да се научи да пише код** с лекота и удоволствие. Именно това е мисията на тази книга: да ви научи да кодите. Препоръчваме ви освен книгата, да запишете и **[практическия курс "Основи на програмирането" в СофтУни](https://softuni.bg/apply)**, който се предлага напълно безплатно в присъствена или онлайн форма на обучение.
+As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code. We recommend you, besides reading the book, to enroll in the **[practical course "Programming Basics" at SoftUni](https://softuni.bg/apply)**, as an online format of training.
 
 
-## Накъде да продължим след тази книга?
+## What to do after reading this book?
 
-С тази книга сте **поставили стабилни основи**, благодарение на които ще ви е лесно да продължите да се развивате като програмисти. Ако се чудите как да продължите развитието си, помислете за следните няколко възможности:
- - Да учите за **софтуерен инженер в СофтУни** и да направите програмирането своя професия.
- - Да продължите развитието си като програмист **по свой собствен път**, например чрез самообучение или с някакви онлайн уроци.
- - Да си **останете на ниво кодер**, без да се занимавате с програмиране по-сериозно.
+This book **gives you solid grounds**, thanks to which it will be easy for you to continue developing as a programmer. If you wonder how to continue your development, you have the following possibilities:
+ - to study for a **software engineer at SoftUni** and make programming your profession.
+ - to continue developing as a programmer **on your own**, for example through self-training or via online lessons.
+ - to **stay at a coder level**, without going more seriously into programming.
 
-### Професия "софтуерен инженер" в СофтУни
+### Study software engineering in SoftUni
 
-Първата, и съответно препоръчителната, възможност да овладеете цялостно и на ниво професията "**софтуерен инженер**", е да започнете своето обучение по **цялостната програма на СофтУни за софтуерни инженери**: [https://softuni.bg/curriculum](https://softuni.bg/curriculum). Учебният план на СофтУни е внимателно разработен от **д-р Светлин Наков и неговия екип**, за да ви поднесе последователно и с градираща сложност всички умения, които един софтуерен инженер трябва да притежава, за **да стартира кариера като разработчик на софтуер** в ИТ фирма.
+The first, and respectively recommended option to master on a high level the profession of a "**software engineer**", is to start your training via the **end-to-end SoftUni program for software engineers**: [https://softuni.bg/curriculum](https://softuni.bg/curriculum). The SoftUni curriculum is carefully developed by **Dr. Svetlin Nakov and his team**, to provide you consequently and with gradually increasing complexity all the skills that a software engineer must have, **to start a career as a software developer** in an IT company.
 
-#### Продължителност на обучението в СофтУни
+#### Training duration in SoftUni
 
-Обучението в СофтУни е с продължителност **2-3 години** (в зависимост от професията и избраните специализации) и за това време е нормално да достигнете добро начално ниво (junior developer), но **само ако учите сериозно** и здраво пишете код всеки ден. При добър успех един типичен студент **започва работа на средата на обучението си (след около 1.5 години)**. Благодарение на добре развита партньорска мрежа **кариерният център на СофтУни предлага работа** в софтуерна или ИТ фирма на всички студенти в СофтУни, които имат много добър или отличен успех. **Започването на работа** по специалността при силен успех в СофтУни, съчетан с желание за работа и разумни очаквания спрямо работодателя, е почти гарантирано.
+The training in SoftUni has a duration of **2-3 years** (depending on the profession and the selected specializations) and during that period it is normal to reach a good starting level (junior developer), but this is **only if you study seriously** and write code intensely every day. Upon having good grades, a typical student **starts a job around the middle of the training (after around 1.5 years)**. Thanks to the well-developed partners' network, **the career center of SoftUni offers work** in a software or IT company to all SoftUni students who have very good or excellent grades. **Starting a job** in the major in case of having good grades at SoftUni, combined with a willingness to work and reasonable expectations towards the employers, is almost guaranteed.
 
-#### Програмист се става за най-малко година здраво писане на код
+#### It takes at least a year of intense code writing to become a programmer
 
-Предупреждаваме ви, че **програмист се става с много усилия**, с писане на десетки хиляди редове код и с решаване на стотици, дори хиляди практически задачи, и отнема години! Ако някой ви предлага "**по-лека програма**" и ви обещава да станете програмисти и да започнете работа за 3-4 месеца, значи или ви **лъже**, или ще ви даде толкова ниско ниво, че **няма да ви вземат даже за стажант**, дори и да си плащате на фирмата, която си губи времето с вас. Има и изключения, разбира се, например ако не започвате от нулата или ако имате екстремно развито инженерно мислене или ако кандидатствате за много ниска позиция (например техническа поддръжка), но като цяло **програмист за по-малко от 1 година здраво учене и писане на код не се става**!
+Keep in mind that **to become a programmer takes a lot of effort**, writing tens of thousands of lines of code, and solving hundreds, even thousands of practical problems, and this takes years! If someone offers you "**an easier program**" and promises you to become a programmer and start working within 3-4 months, then either they are **lying**, to you, or they will give you such a low level, that **companies won't even take you as a trainee**, even if you pay to the company that is wasting its time with you. There are exceptions, of course, for example, if you are not starting from scratch, or if you have extremely well-developed engineering thinking, or if you apply for a very low position (for example technical support), but in general, **you cannot become a programmer if you haven't spent at least 1 year of intense learning and code writing!**!
 
 #### Приемен изпит в СофтУни
 
