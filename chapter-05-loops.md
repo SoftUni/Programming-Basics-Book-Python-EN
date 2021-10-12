@@ -11,19 +11,19 @@ In this chapter we will get familiar with how to **repeat blocks of commands**, 
 </div>
 
 
-## Повторения на блокове код (for цикъл)
+## Repeating blocks of code (for loop)
 
-В програмирането често пъти се налага **да изпълним блок с команди няколко пъти**. За целта се използват т.нар. **цикли**. Нека разгледаме един пример за **`for` цикъл**, който преминава последователно през числата от 1 до 10 и ги отпечатва:
+In programming it is often required **to execute a block with commands multiple times**. For this reason we are using **loops**. We can see an example for **`for` loop**, which goes through the numbers from 1 to 10 and prints them:
 
 ![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
-Цикълът започва с **оператора `for`** и преминава през всички стойности за дадена променлива в даден интервал, например всички числа от 1 до 10 включително (без да включва 11), и за всяка стойност изпълнява поредица от команди.
+The loop starts with the **operator `for`** and passes through all values of particular variable in given range, for example all numbers from 1 to 10 included (without 11) and for each value it performs series of commands.
 
-В декларацията на цикъла може да се зададе **начална стойност** и **крайна стойност**, като крайната стойност не е включена в диапазона. **Тялото на цикъла** представлява блок с една или няколко команди. На фигурата по-долу е показана структурата на един **`for` цикъл**:
+Upon declaring the loop, you can specify a **start value** and **end value**, while the end value is not included in the range. **The body of the loop** is a block with at least one commands. THe figure below shows the structure of a **`for` loop**:
 
 ![](/assets/chapter-5-1-images/00.For-loop-02.png)
 
-В повечето случаи един **`for` цикъл** се завърта от **`1`** до **`n`** (например от 1 до 10). Целта на цикъла е да се премине последователно през числата 1, 2, 3, …, n и за всяко от тях да се изпълни някакво действие. В примера по-горе променливата **`i`** приема стойности от 1 до 10 и в тялото на цикъла се отпечатва текущата стойност. Цикълът се повтаря 10 пъти и всяко от тези повторения се нарича "**итерация**".
+In most cases a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perfomrm a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
 
 ### Пример: числа от 1 до 100
 
