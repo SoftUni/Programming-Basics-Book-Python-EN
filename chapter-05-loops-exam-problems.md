@@ -198,15 +198,15 @@ Print a single line in the console:
 <td valign="top">Yes! 5.00</td>
 <td valign="top"><p><strong>On the first birthday</strong> she receives <strong>a toy</strong>; <strong>Second</strong> -> <strong>10 USD</strong>; 3rd -> toy; <strong>4th</strong>  -> 10 + 10 = <strong>20 USD</strong>; 5th -> toy; <strong>6th</strong> -> 20 + 10 = <strong>30 USD</strong>; 7th -> toy; <strong>8th</strong> -> 30 + 10 = <strong>40 USD</strong>; 9th -> toy; <strong>10th</strong> -> 40 + 10 = <strong>50 USD</strong><br>
 <strong>She has saved</strong> -> 10 + 20 + 30 + 40 + 50 = <strong>150 USD</strong>. She has sold <strong>5 toys by 6 USD = 30 USD</strong>.<br>
-<strong>Her brother took 1 USD for 5 years = 5 USD</strong>. <strong>Remaining money</strong> -> 150 + 30 – 5 = <strong>175 USD</strong>
-<strong>175 &gt;= 170</strong> (washing machine's price) <strong>She has succeeded</strong> buying it and there <strong>remain</strong> 175-170 = <strong>5 USD</strong>
+<strong>Her brother took 1 USD for 5 years = 5 USD</strong>. <strong>Remaining money</strong> -> 150 + 30 – 5 = <strong>175 USD</strong>.
+<strong>175 &gt;= 170</strong> (washing machine's price) <strong>She has succeeded</strong> buying it and there <strong>remain</strong> 175-170 = <strong>5 USD</strong>.
 </p></td>
 </tr>
 <tr>
 <td valign="top">21<br>1570.98<br>3</td>
 <td valign="top">No! 997.98</td>
-<td valign="top"><p><strong>She has saved 550 USD</strong>. <strong>She's sold</strong> <strong>11 toys</strong> by <strong>3 USD each</strong> = <strong>33 USD</strong>. Her brother <strong>has taken 1 USD for 10 years</strong> = <strong>10 USD</strong> <strong>There remain</strong> 550 + 33 – 10 = <strong>573 USD</strong> <br>
-<strong>573 &lt; 1570.98</strong> – <strong>She's failed</strong> buying a washing machine <strong>She needs</strong> 1570.98–573 = <strong>997.98 USD more</strong></p></td>
+<td valign="top"><p><strong>She has saved 550 USD</strong>. <strong>She's sold</strong> <strong>11 toys</strong> by <strong>3 USD each</strong> = <strong>33 USD</strong>. Her brother <strong>has taken 1 USD for 10 years</strong> = <strong>10 USD</strong>. <strong>There remain</strong> 550 + 33 – 10 = <strong>573 USD.</strong> <br>
+<strong>573 &lt; 1570.98</strong> – <strong>She's failed</strong> buying a washing machine. <strong>She needs</strong> 1570.98–573 = <strong>997.98 USD more.</strong></p></td>
 </tr>
 </tbody>
 </table>    
