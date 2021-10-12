@@ -95,7 +95,7 @@ In the console, print a histogram of **5 lines**, each of them containing a numb
 
 The program that solves this problem can be divided theoretically into three parts:
 
-  * **Reading the input data** – in the current task, this means reading the integer **n**, followed by a **count of n integers**, each on a new line.
+  * **Reading the input data** – in the current problem, this means reading the integer **n**, followed by a **count of n integers**, each on a new line.
   * **Processing the input data** – in this case, this means dividing the numbers in groups and calculating the division percentage by those groups.
   * **Outputting the final result** – printing the histogram in the console, in the given format.
 
@@ -205,11 +205,11 @@ Print a single line in the console:
 
 Solving this problem, like the previous one, again can be divided in three parts – **reading** the input data, **processing** it and **outputting** a result.
 
-As we already know, in most of the scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpretator decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price, (**`present_price`**), in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this task. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
+As we already know, in most of the scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpretator decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price, (**`present_price`**), in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this problem. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
-In order to solve the task, we'll need a couple of helper variables – for **the toys' count**, (**`number_of_toys`**), for **the saved money**, (**`saved_money`**) and for **the money received on each birthday** ,(**`money_for_birthday`**). We initially assign 10 to **`money_for_birthday`**, because in the description it's said that the first sum received by Lily is 10 USD:
+In order to solve the problem, we'll need a couple of helper variables – for **the toys' count**, (**`number_of_toys`**), for **the saved money**, (**`saved_money`**) and for **the money received on each birthday** ,(**`money_for_birthday`**). We initially assign 10 to **`money_for_birthday`**, because in the description it's said that the first sum received by Lily is 10 USD:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-02.png)
  
