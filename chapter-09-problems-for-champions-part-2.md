@@ -4,7 +4,7 @@ In this chapter we will review three additional tasks that belong to the categor
 
 ## More Complex tasks on the Studied Material
 
-Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with Javascript** (functions, arrays, collections, recursion, etc.), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
+Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with Python** (functions, arrays, collections, recursion, etc.), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
 ## Task: Passion Shopping Days
 
