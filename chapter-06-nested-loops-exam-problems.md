@@ -63,7 +63,7 @@ By the set task condition the left and the right inner columns have a width of *
 <td>It's always a good practice, whenever we have an expression with value we intend to use <b>more than once</b>, to keep it in a variable. In this way, on the one hand, our code will be <b>easier to read</b>, and on the other hand, it will be <b>easier to correct</b> possible <b>errors</b>, as we will not have to look for each use of the expression separately. </td>
 </tr></table>
 
-We also declare a second **variable**, which will keep **the value** of the part **between the two towers**. By the set task condition, we know that the total width of the fortress is **`n * 2`**. In addition, we have two towers with one slash for a start and one slash for an end (a total of 4 characters) and a width of **`colSize`**. Therefore, to get the number of characters in the middle part, we have to subtract the size of the towers from the width of the entire fortress: **`2 * n - 2 * colSize - 4`**.
+We also declare a second **variable**, which will keep **the value** of the part **between the two towers**. By the set task condition, we know that the total width of the fortress is **`n * 2`**. In addition, we have two towers with one slash for a start and one slash for an end (a total of 4 characters) and a width of **`col_size`**. Therefore, to get the number of characters in the middle part, we have to subtract the size of the towers from the width of the entire fortress: **`2 * n - 2 * col_size - 4`**.
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-03.png)
 
