@@ -25,7 +25,7 @@ Upon declaring the loop, you can specify a **start value** and **end value**, wh
 
 In most cases a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perfomrm a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
 
-### Problem: the numbers from 1 to 100
+### Problem: The numbers from 1 to 100
 
 Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.
 
@@ -45,7 +45,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 You should get **100 points** (fully accurate solution).
 
-### Problem: numbers to 1000, ending in 7
+### Problem: Numbers to 1000, ending in 7
 
 Write a program that finds all numbers in range [**1 … 1000**], that end in 7. 
 
@@ -60,7 +60,7 @@ We can solve the problem by combining a **`for` loop** for passing through the n
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#1](https://judge.softuni.org/Contests/Practice/Index/1053#1).
 
 
-### Problem: all Latin letters
+### Problem: All Latin letters
 
 Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
@@ -75,7 +75,7 @@ It is good to know that the **`for` loops** don't work only with numbers. We can
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#2](https://judge.softuni.org/Contests/Practice/Index/1053#2).
 
 
-### Problem: sum of numbers
+### Problem: Sum of numbers
 
 Write a program that **reads `n` integers and finds their sum**.
 
@@ -179,7 +179,7 @@ We will first input the number **n**, after that the first **n** numbers (**left
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#6](https://judge.softuni.org/Contests/Practice/Index/1053#6).
 
 
-### Problem: even / odd sum
+### Problem: Even / odd sum
 
 Write a program that inputs **n integers** and checks whether **the sum of the numbers on even positions** is equal to **the sum of the numbers on odd positions**. In case the sums are equal, print **"Yes" + sum**, otherwise print **"No" + the difference **. The difference is calculated by absolute value. The format of the output must be identical to the one in the examples below.
 
@@ -202,7 +202,7 @@ Input the numbers one by one and calculate the two **sums** (of the numbers on *
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#7](https://judge.softuni.org/Contests/Practice/Index/1053#7).
 
 
-### Problem: sum of vowels
+### Problem: Sum of vowels
 
 Write a program that inputs **text** (string), calculates and prints **the sum of the values of vowels** according to the table below:
 
@@ -230,7 +230,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ## What did we learn in this chapter?
 
-We can repeata block of code with **`for` loop**:
+We can repeat a block of code with **`for` loop**:
 
 ![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
@@ -248,7 +248,7 @@ Create new project in PyCharm (from [**File**] -> [**New Project**]), in order t
   
 ![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.png)
 
-### Problem: element equal to the sum of the rest
+### Problem: Element equal to the sum of the rest
 
 Write a program that inputs **n integers** and checks whether among them there is a number equal to the sum of all the rest. If there is such an element, print **"Yes" + itsvalue**, otherwise print - **"No" + the difference betwen the largest element and the sum of the rest** (by absolute value). 
 
@@ -271,7 +271,7 @@ We have to calculate **the sum** of all elements, find **the largest** of them a
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#9](https://judge.softuni.org/Contests/Practice/Index/1053#9).
 
 
-### Problem: even / odd positions
+### Problem: Even / odd positions
 
 Write a program that reads **n numbers** and calculates **the sum**, **the min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max elements, print **"No"**. 
 
@@ -295,7 +295,7 @@ In the current task it is better to work with **fractions** (not integers). The 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#10](https://judge.softuni.org/Contests/Practice/Index/1053#10).
 
 
-### Problem: equal pair
+### Problem: Equal pair
 
 There are **2 \* n numbers**. The first and the second number form a **pair**, the third and the fourth number as well, and so on. Each pair has a **value** – the usm of its numbers. Write a program that check **if all pairs have equal value**. In case the value is the same, print **"Yes, value=…" + the value**, otherwise print **the maximum difference ** between two neighboring pairs in the following format - **"No, maxdiff=…" + the maximum difference **. The input consists of the number **n**, followed by **2*n integers**, all of them one per line.
 
