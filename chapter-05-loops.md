@@ -25,67 +25,67 @@ Upon declaring the loop, you can specify a **start value** and **end value**, wh
 
 In most cases a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perfomrm a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
 
-### Пример: числа от 1 до 100
+### Example: the numbers from 1 to 100
 
-Да се напише програма, която **печата числата от 1 до 100**. Програмата не приема вход и отпечатва числата от 1 до 100 едно след друго, по едно на ред.
+Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Можем да решим задачата с **`for` цикъл** , с който преминаваме с променливата **`i`** през числата от 1 до 100 и ги печатаме в тялото на цикъла:
+We can solve the problem using a **`for` loop** , via which we will pass through the numbers from 1 to 100 using the **`i`** variable, and print the numbers in the body of the loop:
 
 ![](/assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
-**Стартираме** програмата с [**Ctrl+Shift+F10**] или с десен бутон - **Run**, и я **тестваме**:
+**Start** the program with [**Ctrl+Shift+F10**] or with right click - **Run** and **test it**:
 
 ![](/assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#0](https://judge.softuni.org/Contests/Practice/Index/1053#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#0](https://judge.softuni.org/Contests/Practice/Index/1053#0).
 
-Трябва да получите **100 точки** (напълно коректно решение).
+You should get **100 points** (fully accurate solution).
 
-### Пример: числа до 1000, завършващи на 7
+### Example: numbers to 1000, ending in 7
 
-Да се напише програма, която намира всички числа в интервала [**1 … 1000**], които завършват на 7. 
+Write a program that finds all numbers in range [**1 … 1000**], that end in 7. 
 
-#### Насоки и подсказки
+####  Hints and guidelines
 
-Задачата можем да решим като комбинираме **`for` цикъл** за преминаваме през числата от 1 до 1000 и **проверка** за всяко число дали завършва на 7. Има и други решения, разбира се, но нека решим задачата чрез **завъртане на цикъл + проверка**:
+We can solve the problem by combining a **`for` loop** for passing through the numbers between 1 and 1000 and a condition to **check** if each of the numbers end in 7. Of course, there are other solutions, but let's solve the problem using **loop + condition**:
 
 ![](/assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#1](https://judge.softuni.org/Contests/Practice/Index/1053#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#1](https://judge.softuni.org/Contests/Practice/Index/1053#1).
 
 
-### Пример: всички латински букви
+### Example: all Latin letters
 
-Да се напише програма, която отпечатва буквите от латинската азбука: **a, b, c, …, z**.
+Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
-Полезно е да се знае, че **`for` циклите** не работят само с числа. Може да решим задачата като завъртим **`for` цикъл**, който преминава последователно през всички букви от латинската азбука:
+It is good to know that the **`for` loops** don't work only with numbers. We can solve the task by running a **`for` loop**, that goes sequentially through all letters in the Latin alphabet:
 
 ![](/assets/chapter-5-1-images/03.Latin-letters-01.png)
 
-#### Тестване в Judge системата
+#### Test in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1053#2](https://judge.softuni.org/Contests/Practice/Index/1053#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#2](https://judge.softuni.org/Contests/Practice/Index/1053#2).
 
 
-### Пример: сумиране на числа
+### Example: sum of numbers
 
-Да се напише програма, която **въвежда `n` цели числа и ги сумира**.
+Write a program that **reads `n` integers and finds their sum**.
 
-* От първия ред на входа се въвежда броят числа **`n`**.
-* От следващите **`n`** реда се въвежда по едно число.
-* Числата се сумират и накрая се отпечатва резултатът.
+* The first line of the input holds the number of integers **`n`**.
+* Each of the following **`n`** holds an integer.
+* Sum up the numbers and print the result.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | --- |
 | 2<br>10<br>20 | 30 |
 | 3<br>-10<br>-20<br>-30 | -60 |
@@ -93,7 +93,7 @@ In most cases a **`for` loop** is run between **`1`** and **`n`** (for example f
 | 1<br>999 | 999 | 
 | 0 | 0 |
 
-#### Насоки и подсказки
+#### Hints and guidelines
 
 Можем да решим задачата за сумиране на числа по следния начин:
  - Четем входното число **`n`** от конзолата.
