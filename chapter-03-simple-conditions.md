@@ -653,7 +653,7 @@ Write a program that converts numbers in the range of [**0 … 100**] in text.
 
 #### Hints and pointers
 
-Firstly, we should check for **single-digit numbers** and if this is the case, print the corresponding word. Then we can check if the number is a **double-digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = числото % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
+Firstly, we should check for **single-digit numbers** and if this is the case, print the corresponding word. Then we can check if the number is a **double-digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#15](https://judge.softuni.org/Contests/Practice/Index/1049#15).
