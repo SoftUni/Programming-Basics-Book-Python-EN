@@ -1,25 +1,25 @@
-# Глава 5.2. Повторения (цикли) – изпитни задачи
+# Chapter 5.2 Iterations (loops) - exam problems
 
-В предходната глава научихме как да изпълним даден блок от команди **повече от веднъж**. Затова въведохме **`for` цикъл** и разгледахме някои от основните му приложения. Целта на настоящата глава е да затвърдим знанията си, решавайки няколко по-сложни задачи с цикли, давани на приемни изпити. За някои от тях ще покажем примерни подробни решения, а за други ще оставим само напътствия. Преди да се захванем за работа е добре да си припомним конструкцията на **цикъла `for`**:
+In the previous chapter we learned how to run a command block **more than once**. That's why we implemented **`for` loop** and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams.  For some of them we’ll show detailed solved examples, while for others there’ll be tips only. Before we begin, we’ll recall the **`for` loop** construction:
 
 ![](/assets/chapter-5-2-images/00.For-construction-01.png)
 
-**`for` циклите** се състоят от:
- * **Инициализационен блок**, в който се декларира променливата-брояч (**`i`**) и с помощта на вградената функция **`range(…)`** в Python, определяме каква да бъде началната и крайната ѝ стойност.
- * **Обновяване на брояча** – подава се като трети параметър на функцията **`range(…)`** и указва с каква стъпка да се обновява променливата-брояч.
- * **Тяло** на цикъла - съдържа произволен блок със сорс код.
+**`for` loops** consist of:
+ * **Initialization block**, where the variable-counter (**`i`**) is declared, and with the help of the **`range(…)`** function built into Python, we define what its starting and ending value will be.
+ * **Updating the counter** – we implement it as a third parameter in the **`range(…)`** function, and it shows with how many steps the variable-counter should be updated.
+ * **Loop body** - it has a random block full of source code.
 
-## Изпитни задачи
+## Exam problems
 
-Да решим няколко задачи с цикли от изпити в СофтУни.
+Let’s solve a couple of problems with loops in SoftUni’s exams.
 
-## Задача: хистограма
+## Problem: histogram
 	
-Дадени са **n цели числа** в интервала [**1 … 1000**]. От тях някакъв процент **p1** са под 200, процент __p2__ са от 200 до 399, процент **p3** са от 400 до 599, процент **p4** са от 600 до 799 и останалите **p5** процента са от 800 нагоре. Да се напише програма, която изчислява и отпечатва процентите **p1**, **p2**, **p3**, **p4** и **p5**.
+We’re given **n-count integers** in the interval [**1 … 1000**]. A percent of them, **p1**, are under 200, __p2__ percent are between 200 and 399, **p3** percent are between 400 and 599, **p4** percent are between 600 and 799, and the remaining **p5** percent begin at 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
 
-**Пример**: имаме n = **20** числа: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. Получаваме следното разпределение и визуализация:
+**Example**: we have n = **20** integers: 53, 7, 56, 180, 450, 920, 12, 7, 150, 250, 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
                           
-| **Група**   | **Числа**                                       | **Брой числа** | **Процент**                     |
+| **Group**   | **Numbers**                                     |**Number count**| **Percentage**                  |
 |-------------|-------------------------------------------------|:---------------|---------------------------------|
 | < 200       | 53, 7, 56, 180, 12, 7, 150, 2, 199, 46, 128, 65 | 12             | p1 = 12 / 20 * 100 = 60.00%     |
 | 200 … 399   | 250, 200                                        | 2              | p2 = 2 / 20 * 100 = 10.00%      |
@@ -28,23 +28,23 @@
 | ≥ 800       | 920, 800                                        | 2              | p5 = 2 / 20 * 100 = 10.00%      |
 
 
-### Входни данни
+### Input
 
-На първия ред от входа стои цялото число **n** (1 ≤ **n** ≤ 1000), което представлява броя редове с числа, които ще ни бъдат подадени. На следващите **n реда** стои **по едно цяло число** в интервала [**1 … 1000**] – числата, върху които да бъде изчислена хистограмата.
+On the first line of the input is an integer **n** ( 1 <= **n** <= 1000), which stands for the number of lines with numbers, which will be given to us. On the next **n lines** there is **one integer** in the interval [**1 … 1000***] – the numbers that the histogram will be based on.
 
-### Изходни данни
+### Output
 
-Да се отпечата на конзолата **хистограма от 5 реда**, всеки от които съдържа число между 0% и 100%, форматирано с точност две цифри след десетичния знак (например 25.00%, 66.67%, 57.14%).
+In the console, print a histogram of **5 lines**, each of them containing a number between 0% and 100%, formatted with two-digit precision after the decimal point(for example, 25.00%, 66.67%, 57.14%).
 
-### Примерен вход и изход
+### Example input & output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -60,10 +60,10 @@
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -79,8 +79,8 @@
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -91,35 +91,35 @@
 </tbody>
 </table>
 
-### Насоки и подсказки
+### Tips and advice
 
-Програмата, която решава този проблем, можем да разделим мислено на три части:
+The program that solves this problem can be divided theoretically into three parts:
 
-  * **Прочитане на входните данни** – в настоящата задача това включва прочитането на числото **n**, последвано от **n на брой цели числа**, всяко на отделен ред.
-  * **Обработка на входните данни** – в случая това означава разпределяне на числата по групи и изчисляване на процентното разделение по групи.
-  * **Извеждане на краен резултат** – отпечатване на хистограмата на конзолата в посочения формат.
+  * **Reading the input data** – in the current task, this means reading the integer **n**, followed by a **count of n integers**, each on a new line.
+  * **Processing the input data** – in this case, this means dividing the numbers in groups and calculating the division percentage by those groups.
+  * **Outputting the final result** – printing the histogram in the console, in the given format.
 
-#### Прочитане на входните данни
+#### Reading the input data
   
-Преди да преминем към самото прочитане на входните данни трябва да си **декларираме променливите**, в които ще ги съхраняваме: 
+Before we transition to the real reading of the input, we have to **declare our variables**, in which the data will be stored:
 
 ![](/assets/chapter-5-2-images/01.Histogram-01.png)
 
-Декларираме си променливи **`p1_percentage`**, **`p2_percentage`** и т.н., в които ще се пазят процентите, както и **`cnt_p1`**, **`cnt_p2`** и т.н., в които ще пазим броя на числата от съответната група. 
+We declare variables **`p1_percentage`**, **`p2_percentage`**, etc., in which we’ll store the percentages, as well as **`cnt_p1`**, **`cnt_p2`**, etc., in which we’ll keep the count of numbers for the respective group.
 
-След като сме си декларирали нужните променливи, можем да пристъпим към прочитането на числото **`n`** от конзолата:
+After we’ve declared the needed variables, we can move on to reading the number **`n`** from the console:
 
 ![](/assets/chapter-5-2-images/01.Histogram-02.png)
 
-#### Обработка на входните данни
+#### Processing the input data
   
-За да прочетем и разпределим всяко число в съответната му група, ще си послужим с **`for` цикъл** от **0** до **`n`** (броя на числата). Всяка итерация на цикъла ще прочита и разпределя **едно единствено** число (**`current_number`**) в съответната му група. За да определим дали едно число принадлежи към дадена група, **правим проверка в съответния ѝ диапазон**. Ако това е така - увеличаваме броя на числата в тази група (**`cnt_p1`**, **`cnt_p2`** и т.н.) с 1:  
+In order to read and assign each number to its respective group, we’ll use a**` for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign** only one number** (**`current_number`**) to it’s respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers(**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
 
 ![](/assets/chapter-5-2-images/01.Histogram-03.png)
 
-След като сме определили колко числа има във всяка група, можем да преминем към изчисляването на процентите, което е и главна цел на задачата. За това ще използваме следната формула:
+After we’ve found out how many numbers there are in each group, we can move on to calculating the percentages, which is also the main part of the problem. We’ll use the following formula:
 
-<p align="center"><strong>(процент на група) = (брой числа в група) * 100 / (брой на всички числа)</strong></p>
+<p align="center"><strong>(Group percentage) = (number count in group) * 100 / (count of all numbers)</strong></p>
 
 Няма значение дали ще разделим на **100** (число тип **`int`**) или на **100.0** (число тип **`float`**), **делението** ще се извърши и в променливата ще се запази резултата от него. Например: **5 / 2 = 2.5**, а **5 / 2.0 = 2.5**. В **`Python 3`**, няма значение дали ще се дели на цяло число или реално, ако резултата е реално число, то той ще се запише в променливата като число с плаваща запетая. Но, в **`Python 2.7`** е необходимо първо числата да се сведат до тип **`float`**, за да получим правилен резултат - реално число. Имайки това предвид, формулата за първата променлива ще изглежда така: 
 
@@ -145,9 +145,9 @@
 
 ![](/assets/chapter-5-2-images/01.Histogram-05.png)
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1054#0](https://judge.softuni.org/Contests/Practice/Index/1054#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#0](https://judge.softuni.org/Contests/Practice/Index/1054#0).
 
 
 ## Задача: умната Лили
