@@ -66,7 +66,7 @@ Here is an example:
 In programming, we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through **`if`** clauses, which have the following structure:
 
 ```python
-if условие:
+if condition:
     # body of the conditional construct
 ```
 
@@ -86,10 +86,10 @@ You can test the solution example here:
 
 ## If-else conditional constructs
 
-The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specidified at the beginning **`if Boolean expression`**) returns a negative result (**`False`**). Written in this way, the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive** (**`True`**) - a set of instructions is executed. By contrast, when the result is **negative** (**`False`**) - a different set is executed. The format of this structure is as follows:
+The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if Boolean expression`**) returns a negative result (**`False`**). Written in this way, the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive** (**`True`**) - a set of instructions is executed. By contrast, when the result is **negative** (**`False`**) - a different set is executed. The format of this structure is as follows:
 
 ```python
-if условие:
+if condition:
     # Condition body to be executed if a condition is true
 else:
     # else structure body to be executed if a condition is false
