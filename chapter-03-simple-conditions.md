@@ -106,32 +106,31 @@ Similarly to the example above, we input a grade and check if it is excellent, b
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
 
 
-## За блокoвете от код
+## About blocks of code
 
-Чрез **табулация** създаваме блок от код, чрез който може да се изпълняват група от команди. Когато имаме код в **if, elif, else** (и други конструкции) и искаме да изпълним поредица от операции, ги поставяме в блок след условието.
+By pressing **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other constructs) and we want to perform a series of operations, we put them in a block after the condition.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Добра практика е, <strong>да ползваме табулация (или четири spaces)</strong>, понеже това прави кода ни по-четим и по-подреден и
-по този начин избягваме грешки по време на изпълнение на кода.</td>
+<td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution</td>
 </tr></table>
 
-Ето един пример за лоша индентация:
+Here is an example of bad indentation:
 
 ![](/assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
-Горният код или ще даде грешка, защото е грешно форматиран, или изпълнението му ще изведе грешен резултат на конзолата:
+The above code will either give an error because it is incorrectly formatted, or its execution will display the wrong result on the console:
 
 ![](/assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
-С правилна индентация:
+With correct indentation:
 
 ![](/assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
-На конзолата ще бъде отпечатано следното:
+The following output will be printed on the console:
 
 ![](/assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
-### Пример: четно или нечетно
+### Problem: Even or Odd
 
 Да се напише програма, която проверява, дали дадено цяло число е **четно** (even) или **нечетно** (odd).
 
