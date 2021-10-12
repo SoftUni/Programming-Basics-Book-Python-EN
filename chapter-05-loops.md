@@ -1,12 +1,12 @@
-# Глава 5.1. Повторения (цикли)
+# Chapter 5.1. Loops (Repetitions)
 
-В настоящата глава ще се запознаем с конструкциите за **повторение на група команди**, известни в програмирането с понятието "**цикли**". Ще напишем няколко цикъла с използване на оператора **`for`** в класическата му форма. Накрая ще решим няколко практически задачи, изискващи повторение на поредица от действия, като използваме цикли.
+In this chapter we will get familiar with how to **repeat blocks of commands**, known in programming as "**loops**". We will write a number of loops using the **`for`** operator in its classic form. Finally, we will solve some practical problems, which require repeating series of actions, using loops.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: 
+  Watch video-tutorial about this chapter here: 
   https://www.youtube.com/watch?v=pvTMTGsooMk.
 </div>
 
