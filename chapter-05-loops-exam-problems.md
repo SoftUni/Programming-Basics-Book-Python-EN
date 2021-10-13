@@ -301,7 +301,7 @@ With the help of a **`for` loop** we loop through all years. **We begin at 1800*
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
-At the end we print the results, and we do a **check whether the inheritance** (**`heritage`**) has been enough for him to live without working or not. If the inheritance (**`heritage`**) is **a positive number**, we print: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", while if it's a **negative number**: "**`He will need {М} dollars to survive.`**". We don't forget to format the sum with 2-digit precision after the decimal point.
+At the end we print the results, and we do a **check whether the inheritance** (**`inheritance`**) has been enough for him to live without working or not. If the inheritance (**`inheritance`**) is **a positive number**, we print: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", while if it's a **negative number**: "**`He will need {М} dollars to survive.`**". We don't forget to format the sum with 2-digit precision after the decimal point.
 
 **Hint**: Think about using the function **`abs(…)`** when printing the output and the inheritance is not enough.
 
@@ -310,7 +310,7 @@ At the end we print the results, and we do a **check whether the inheritance** (
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#2](https://judge.softuni.org/Contests/Practice/Index/1054#2).
 
 
-## Задача: болница
+## Problem: hospital
 
 За даден период от време, всеки ден в болницата пристигат пациенти за преглед. Тя разполага **първоначално** със **7 лекари**. Всеки лекар може да преглежда **само по един пациент на ден**, но понякога има недостиг на лекари, затова **останалите пациенти се изпращат в други болници**. **Всеки трети ден** болницата прави изчисления и **ако броят на непрегледаните пациенти е по-голям от броя на прегледаните, се назначава още един лекар**. Като назначаването става преди да започне приемът на пациенти за деня.
 
