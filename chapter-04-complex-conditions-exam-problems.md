@@ -199,116 +199,116 @@ Typically, as for the other tasks, we can separate the solution into the followi
 * Doing calculations
 * Printing the result
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-While reading carefully the requirements, we understand that we expect **two** lines of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. Ще се спрем на **`float`** като тип за бюджета, а за сезона - **`string`**: 
+While reading carefully the requirements, we understand that we expect **two** lines of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. We can pick **`float`** as a variable for the budget and – **`string`** for the season: 
 
 ![](/assets/chapter-4-2-images/02.Trip-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Винаги преценявайте какъв <strong>тип стойност</strong> се подава при входните данни, както и към какъв тип трябва да бъдат конвертирани тези данни, за да работят правилно създадените от вас програмни конструкции!</td>
+<td>Always take into consideration what <strong>value type</strong> is passed in the input data, as well as what type these need to be converted to, for the program conditions to work properly!</td>
 </tr></table>
 
-#### Изчисления
+#### Calculations
 
-Нека си създадем и инициализираме нужните за логиката и изчисленията променливи:
+Let's create and initialize the variables needed for applying the logic and calculations:
 
 ![](/assets/chapter-4-2-images/02.Trip-02.png)
 
-Подобно на примера в предната задача, можем да инициализираме променливите с някои от изходните резултати - с цел спестяване на допълнително инициализиране.
+Similar to the example in the previous task, we can initialize variables with some of the output results, to spare additional initialization.
 
-Разглеждайки отново условието на задачата забелязваме, че основното разпределение за това къде ще почиваме се определя от **стойността на подадения бюджет**, т.е. основната ни логика се разделя на два случая: 
-* Ако бюджетът е **по-малък** от дадена стойност.
-* Ако е **по-малък** от друга стойност, или е **повече** от дадена гранична стойност. 
+When examining once again the problem requirements, we notice that the main distribution of where the vacation will take place is determined by the **value of the budget**, i.e. our main logic is divided into two cases:
+* If the budget is **less than** a particular value.
+* If it is **less than** another value or is **more than** the specified border value.
 
-Спрямо това как си подредим логическата схема (в какъв ред ще обхождаме граничните стойности), ще имаме повече или по-малко проверки в условията. **Помислете защо!**
+Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or fewer conditions in the solution. **Think why!**
 
-След това е необходимо да направим проверка за стойността на **подадения сезон**. Спрямо нея ще определим какъв процент от бюджета ще бъде похарчен, както и къде ще почива програмистът - в **хотел** или на **къмпинг**. Пример за един от възможните подходи за решение е:
+After that, we need to apply a condition to check the value of the **season**. Based on it, we will determine what percentage of the budget will be spent, as well as where the programmer will stay – in a **hotel** or a **camp**. This is a sample code that may be used to implement the above idea:
 
 ![](/assets/chapter-4-2-images/02.Trip-03.png)
 
-Винаги можем да инициализираме дадена стойност на параметъра и след това да направим само една проверка. **Това ни спестява една логическа стъпка**. Например следният блок:
+We can optimize the conditions checking by assigning a **default value** and then checking one variant less. **This saves one logical step**. For example, this block:
 
 ![](/assets/chapter-4-2-images/02.Trip-04.png)
 
-може да бъде съкратен до този си вид:
+can be shortened like this:
 
 ![](/assets/chapter-4-2-images/02.Trip-05.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Остава ни да покажем изчисления резултат на конзолата:
+What remains is to display the calculated result on the console:
 
 ![](/assets/chapter-4-2-images/02.Trip-06.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1052#1](https://judge.softuni.org/Contests/Practice/Index/1052#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#1](https://judge.softuni.org/Contests/Practice/Index/1052#1).
 
 
-## Задача: операции между числа
+## Problem: Operations with Numbers
 
-Напишете програма, която чете **две цели числа (n1 и n2)** и **оператор**, с който да се извърши дадена математическа операция с тях. Възможните операции са: **събиране** (**`+`**), **изваждане** (**`-`**), **умножение** (**`*`**), **деление** (**`/`**) и **модулно деление** (**`%`**). При събиране, изваждане и умножение на конзолата трябва да се отпечата резултата и дали той е **четен** или **нечетен**. При обикновено деление – **единствено резултата**, а при модулно деление – **остатъка**. Трябва да се има предвид, че **делителят може да е равен на нула** (**`= 0`**), а на нула не се дели. В този случай трябва да се отпечата **специално съобщение**.
+Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: summing up (**`+`**), **subtraction ** (**`-`**), **multiplying** (**`*`**), **division ** (**`/`**) и **modular  division ** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, a **special notification** must be printed.
 
-### Входни данни
+### Input Data
 
-От конзолата се прочитат **3 реда**:
+**3 lines** are read from the console:
 
-- **N1** – **цяло число** в интервала [**0 … 40 000**].
-- **N2** – **цяло число** в интервала [**0 … 40 000**].
-- **Оператор** – **един символ** измежду: "**+**", "**-**", "**\***", "**/**", "**%**".
+- **N1** – **integer** within the range [**0 … 40 000**].
+- **N2** – **integer** within the range [**0 … 40 000**].
+- **Operator** – **one character** among: "+", "-", "*", "/", "%"."**+**", "**-**", "**\***", "**/**", "**%**".
 
-### Изходни данни
+### Output Data
 
-Да се отпечата на конзолата **един ред**:
+Print the output as a **single line** on the console:
 
-- Ако операцията е **събиране**, **изваждане** или **умножение**:
-  - **"{N1} {оператор} {N2} = {резултат} – {even/odd}"**.
-- Ако операцията е **деление**:
-  - **"{N1} / {N2} = {резултат}"** – резултатът е **форматиран** до **втория символ след десетичния знак**.
-- Ако операцията е **модулно деление**:
-  - **"{N1} % {N2} = {остатък}"**.
-- В случай на **деление на 0** (нула):
+- If the operation is **summing up**, **subtraction** or **multiplying**:
+  - **"{N1} {operator} {N2} = {output} – {even/odd}"**.
+- If the operation is **division**:
+  - **"{N1} / {N2} = {output}"** – the result is **formatted** up **to the second digit after the decimal point**.
+- If the operation is **modular division**:
+  - **"{N1} % {N2} = {remainder}"**.
+- In case of **dividing by 0** (zero):
   - **"Cannot divide {N1} by zero"**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 |---|---|---|---|
 |123<br>12<br>/|123 / 12 = 10.25|112<br>0<br>/|Cannot divide 112 by zero|
 |10<br>3<br>%|10 % 3 = 1|10<br>0<br>%|Cannot divide 10 by zero|
 
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |10<br>12<br>+|10 + 12 = 22 - even|
 |10<br>1<br>-|10 - 1 = 9 - odd|
 |7<br>3<br>\*|7 * 3 = 21 - odd|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Задачата не е сложна, но има доста редове код за писане.
+The problem is not complex, but there are a lot of code lines to write.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-След прочитане на условието разбираме, че очакваме три реда с входни данни. На първите **два** реда ни се подават **цели числа** (в указания от заданието диапазон), а на третия - **аритметичен символ**: 
+Upon reading the requirements, we understand that we expect **three** lines of input data. The first two lines are **integers** (within the specified range), and the third one – **an arithmetical symbol**.
 
 ![](/assets/chapter-4-2-images/03.Operations-01.png)
 
-#### Изчисления
+#### Calculations
 
-Нека си създадем и инициализираме нужните за логиката и изчисленията променливи. В едната ще пазим **резултата от изчисленията**, а другата ще използваме за **крайния изход** на програмата:
+Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the calculations output**, and in the other one, we will use it for the **final output** of the program.
 
 ![](/assets/chapter-4-2-images/03.Operations-02.png)
 
-Прочитайки внимателно условието разбираме, че има случаи, в които не трябва да правим **никакви** изчисления, а просто да изведем резултат. Следователно първо може да проверим дали второто число е **`0`** (нула), както и дали операцията е **деление** или **модулно деление**, след което да инициализираме резултата:
+When carefully reading the requirements, we understand that there are cases where we don't need to do **any** calculations, and simply display a result. Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is a **division** or a **modular division**, and then initialize the output.
 
 ![](/assets/chapter-4-2-images/03.Operations-03.png)
 
-Нека сложим резултата като стойност при инициализацията на **`output`** параметъра. По този начин може да направим само **една проверка** - дали е необходимо да **преизчислим** и **заменим** този резултат. 
+Let's place the output as a value upon initializing the **`output`** parameter. This way we can apply only **one condition** – whether it is needed to **recalculate** or **replace** this output. 
 
-Спрямо това кой подход изберем, следващата ни проверка ще бъде или обикновен **`elif`** или единичен **`if`**. В тялото на тази проверка, с допълнителни проверки за начина на изчисление на резултата спрямо подадения оператор, можем да разделим логиката спрямо **структурата** на очаквания **резултат**. 
+Based on the approach that we choose, our next condition will be either a simple **`elif`** or a single **`if`**. In the body of this condition, using additional conditions regarding the manner of calculating the output based on the passed operator, we can separate the logic based on the **structure** of the expected **output**. 
 
-От условието можем да видим, че за **събиране** (**`+`**), **изваждане** (**`-`**) или **умножение** (**`*`**) очакваният резултат има еднаква структура: **"{n1} {оператор} {n2} = {резултат} – {even/odd}"**, докато за **деление** (**`/`**) и за **модулно деление** (**`%`**) резултатът има различна структура:
+From the requirements we can see that for **summing up** (**`+`**), **subtraction ** (**`-`**) или **multiplying ** (**`*`**) the expected output has the same structure: **"{n1} {operator} {n2} = {output} – {even/odd}"**, whereas for **division ** (**`/`**) and за **modular division** (**`%`**) the output has a different structure:
 
 ![](/assets/chapter-4-2-images/03.Operations-04.png)
 
