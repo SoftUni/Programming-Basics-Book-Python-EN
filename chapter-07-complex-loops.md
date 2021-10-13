@@ -1,163 +1,163 @@
-# Глава 7.1. По-сложни цикли
+# Chapter 7.1. Complex loops
 
-След като научихме какво представляват и за какво служат **`for` циклите**, сега предстои да се запознаем с **други видове цикли**, както и с някои **по-сложни конструкции за цикъл**. Те ще разширят познанията ни и ще ни помагат в решаването на по-трудни и по-предизвикателни задачи. По-конкретно, ще разгледаме как се ползват следните програмни конструкции:
+Since we have learned what **`for` loops** are and their function in code, now is the time to take a look at **other loop types**, as well as some **more complex loop constructs**. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the following programming constructs:
 
-  * цикли **със стъпка**
-  * **`while`** цикли
-  * **`while`** + **`break`** цикли
-  * **безкрайни** цикли
+  * loops **with step aka stride**
+  * **`while`** loops
+  * **`while`** + **`break`** loops
+  * **infinite** цикли
 
-В настоящата тема ще разберем и какво представлява операторът **`break`**, както и **как** чрез него да **прекъснем** един цикъл. Ще се научим още как да следим за **грешки по време на изпълнението** на програмата, използвайки **`try-except`** конструкцията.
+In the current chapter, we will also take a look at the **`break`** operator and ** how** to use it to **interrupt** a loop. We will also learn how to process **errors during execution** of the program, using **`try-except`** statement.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: 
+  Watch a video lesson on this chapter here:
   https://www.youtube.com/watch?v=IPJigJNDuKQ.
 </div>
 
 
-## Цикли със стъпка
+## Loops with stride
 
-В главата ["Повторения (цикли)"](/chapter-05-loops.md) научихме как работи **`for`** цикълът и вече знаем кога и с каква цел да го използваме. В тази тема ще обърнем **внимание** на една определена и много важна **част от конструкцията** му, а именно **стъпката**.  
+In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`**  loop works and we already know when and to what purpose to use it. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.
 
-### Какво представлява стъпката?
+### Loop with a Step – Explanation
 
-**Стъпката** е тази **част** от конструкцията на **`range`** функцията, която указва с **колко** да се **увеличи** или **намали** стойността на **водещата** му променлива. Тя се декларира последна в скелета на **`range`** функцията.
+The **stride** is **part** of the **'range'** function, that specifies the **amount** used to **increment** or **decrement** the value of the **main** variable. The step is declared as last argument in the **`range`** function.
 
-По подразбиране е с **размер `1`** и не се добавя в **`range`** функцията. Ако искаме стъпката ни да е **различна от 1**, при писане на **`range`** функцията, добавяме още едно число, което е нашата стъпка. При стъпка **`10`**, цикълът би изглеждал по следния начин: 
+By default, range in Python uses a step **value of `1`** and is not added to the **`range`** function. If we want our step to be **different from 1**, when writing the **`range`** function, we add another number as last parameter, which is our step. With a step of **`10`**, the loop would appear as below: 
 
 ![](/assets/chapter-7-1-images/00.Step-explanation-01.png)
 
-Следва поредица от примерни задачи, решението на които ще ни помогне да разберем по-добре употребата на **стъпката** във **`for`** цикъл.
+Here is a series of sample problems, the solution of which will help us better understand the use of a **step** in a **`for`** loop.
 
-### Пример: числата от 1 до N през 3
+### Example: Numbers from 1 to N with a step of 3
 
-Да се напише програма, която отпечатва числата **от 1 до n** със **стъпка 3**. Например, **ако n = 100**, то резултатът ще е: **1, 4, 7, 10, …, 94, 97, 100**.
+Write a program that prints the numbers **from 1 to n** with a **stride of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
 
-Можем да решим задачата чрез следната поредица от действия (алгоритъм):
+We can solve the problem using the following sequence of actions (algorithm):
 
-  * Четем числото **`n`** от входа на конзолата.
-  * Изпълняваме **`for` цикъл** от **1** до **`n`** (включително и **`n`**) с размер на стъпката **3**.
-  * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
+  * We read **`n`** from the console.
+  * We run a **`for` loop** from **1** to **`n`** (including **`n`**) with a stride of **3**.
+  * In the **body of the loop** we print the value of the current step.
   
 ![](/assets/chapter-7-1-images/01.Numbers-1-to-n-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#0](https://judge.softuni.org/Contests/Practice/Index/1057#0).
+You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#0](https://judge.softuni.org/Contests/Practice/Index/1057#0).
 
 
-### Пример: числата от N до 1 в обратен ред
+### Example: Numbers from N to 1 in reverse
 
-Да се напише програма, която отпечатва числата **от n до 1 в обратен ред** (стъпка -1). Например, **ако n = 100**, то резултатът ще е: **100, 99, 98, …, 3, 2, 1**.
+Write a program that prints the numbers **from n to 1 in reverse** (step -1). For example, **if n = 100**, then the output will be: **100, 99, 98, …, 3, 2, 1**.
 
-Можем да решим задачата по следния начин:
+We can solve the problem in the following manner:
 
-  * Четем числото **`n`** от входа на конзолата.
-  * Създаваме **`for` цикъл**, от **`n`** до 0.
-  * Дефинираме размера на стъпката: **-1**.
-  * В **тялото на цикъла** отпечатваме стойността на текущата стъпка.
+  * We read **`n`** from the console.
+  * We create a **`for` loop**, from **`n`** to 0.
+  * We define the stride size: **-1**.
+  * In the **body of the loop** we print the value of the current step.
 
 ![](/assets/chapter-7-1-images/02.Numbers-n-to-1-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#1](https://judge.softuni.org/Contests/Practice/Index/1057#1).
+You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#1](https://judge.softuni.org/Contests/Practice/Index/1057#1).
 
 
-### Пример: числата от 1 до 2^n с for цикъл
+### Example: Numbers from 1 to 2^n with a for loop
 
-В следващия пример ще разгледаме ползването на обичайната стъпка с размер 1.
+In the following example, we will use the standard size 1 stride.
 
-Да се напише програма, която отпечатва числата **от 1 до 2^n** (две на степен n). Например, **ако n = 10**, то резултатът ще е **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
+Write a program that prints the numbers **from 1 to 2^n** (two to the power of n). For example, **if n = 10**, then the output would be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
 ![](/assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#2](https://judge.softuni.org/Contests/Practice/Index/1057#2).
+You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#2](https://judge.softuni.org/Contests/Practice/Index/1057#2).
 
 
-### Пример: четни степени на 2
+### Example: Even Powers of 2
 
-Да се отпечатат **четните** степени на **2** до **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. Например, ако **n = 10**, то резултатът ще е **1, 4, 16, 64, 256, 1024**.
+Print the **even** powers of **2** until **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. For example, if **n = 10**, then the output would be **1, 4, 16, 64, 256, 1024**.
 
-Ето как можем да решим задачата:
+Here is how we can solve the problem:
 
-  * Създаваме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
-  * За **стъпка** на цикъла задаваме стойност **2**.
-  * В **тялото на цикъла**: отпечатваме стойността на текущото число и **увеличаваме текущото число `num` 4 пъти** (според условието на задачата).
+  * We declare a variable **`num`** that will hold the current number and we assign it the initial **value of  1**.
+  * For the **step** of the loop we set a value of **2**.
+  * In the **body of the loop**: we print the value of the current number and **increase the current number `num` 4 times** (as per the problem description).
 
 ![](/assets/chapter-7-1-images/04.Even^2-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#3](https://judge.softuni.org/Contests/Practice/Index/1057#3).
-
-
-## While цикъл
-
-Следващият вид цикли, с които ще се запознаем, се наричат **`while` цикли**. Специфичното при тях е, че повтарят блок от команди, **докато дадено условие е истина**. Като структура се различават от тази на **`for`** циклите, даже имат опростен синтаксис.
+You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#3](https://judge.softuni.org/Contests/Practice/Index/1057#3).
 
 
-### Какво представлява while цикълът?
+## While loop
 
-В програмирането **`while` цикълът** се използва, когато искаме да **повтаряме** извършването на определена логика, докато **е в сила дадено условие**. Под "**условие**", разбираме всеки **израз**, който връща **`true`** или **`false`**. Когато **условието** стане **грешно**, **`while`** цикълът **прекъсва** изпълнението си и програмата **продължава** с изпълняването на кода след цикъла. Конструкцията за **`while` цикъл** изглежда по този начин:
+The next type of loops that we will familiarize, which are called **`while` loops**. The special thing about them is that they repeat a command block, **while a condition is met**. Their structure is a bit different than that of the **`for`** loops, however, they boast a simpler syntax.
+
+
+### While Loop – Explanation
+
+In programming, the **`while` loop** is used when we want to **repeat** the execution of a specific logic block until **a specific condition is met**. Any expression that returns either **`true`** или **`false`** (a Boolean) can be used as a "**condition**". When the **condition** becomes **invalid**, the **`while`** loop **is interrupted** and the program **proceeds** to execute the code after the loop. The **`while` loop** structure looks like this:
 
 ![](/assets/chapter-7-1-images/00.While-loop-01.png)
 
-Следва поредица от примерни задачи, решението на които ще ни помогне да разберем по-добре употребата на **`while`** цикъла.
+Here is a series of sample problems, the solutions of which will help us better understand the use of the **`while`** loop.
 
 
-### Пример: редица числа 2k+1
+### Example: Sequence of Numbers 2k+1
 
-Да се напише програма, която отпечатва всички **числа ≤ n** от редицата: **1, 3, 7, 15, 31, …**, като приемем, че всяко следващо число = **предишно число \* 2 + 1**.
+Write a program that prints **all numbers ≤ n** in the series: **1, 3, 7, 15, 31, …**, assuming that each number is generated according to the following formula next_number = **previous_number \* 2 + 1**.
 
-Ето как можем да решим задачата:
+Here is how we can solve the problem:
 
-* Създаваме променлива **`num`** за текущото число, на която присвояваме начална **стойност 1**.
-* За условие на цикъла слагаме **текущото число <= n**.
-* В **тялото на цикъла**: отпечатваме стойността на текущото число и увеличаваме текущото число, използвайки формулата от условието на задачата.
+* We declare a variable **`num`** that will hold the current number and we assign it the initial **value of 1**.
+* For loop condition, we use **the current number <= n**.
+* In the **body of the loop**: we print the value of the current number and increase the current number by using the formula above.
 
-Ето и примерна реализация на описаната идея:
+Here is a sample implementation of this idea:
 
 ![](/assets/chapter-7-1-images/05.Numbers-2k+1-01.png)
  
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#4](https://judge.softuni.org/Contests/Practice/Index/1057#4).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#4](https://judge.softuni.org/Contests/Practice/Index/1057#4).
 
 
-### Пример: число в диапазона [1 … 100]
+### Example: Number in Range [1 … 100]
 
-Да се въведе цяло число в диапазона [**1 … 100**]. Ако то е невалидно, да се въведе отново. В случая, за невалидно число ще считаме всяко такова, което **не е** в зададения диапазон.
+Enter an integer in the range [**1 … 100**]. If the entered number is **invalid**, enter **again**. In this case, an invalid number would be any number that is **outside** the given range.
 
-За да решим задачата, можем да използваме следния алгоритъм:
+To solve the problem, we can use the following algorithm:
 
-* Създаваме променлива **`num`**, на която присвояваме целочислената стойност, получена от входа на конзолата.
-* За условие на цикъла слагаме израз, който е **`True`**, ако числото от входа **не е** в диапазона посочен в условието.
-* В **тялото на цикъла**: отпечатваме съобщение със съдържание "**Invalid number!**" на конзолата, след което присвояваме нова стойност за **`num`** от входа на конзолата.
-* След като вече сме валидирали въведеното число, извън тялото на цикъла отпечатваме стойността му.
+* We declare a variable **`num`**, to which we assign the integer part of the first argument, received from the console.
+* For a loop condition, we put a **`True`** expression, if the number **is not** in the range specified in the problem description.
+* In the **body of the loop**: we print the message "**Invalid number!**" on the console, afterwards we assign a new value to **`num`** (the next line from the console input).
+* Once we have validated the entered number,we print its value outside the body of the loop.
 
-Ето и примерна реализация на алгоритъма чрез **`while` цикъл**:
+Here is a sample implementation of the algorithm using a **`while` loop**:
 
 ![](/assets/chapter-7-1-images/06.Numbers-in-range-1..100-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#5](https://judge.softuni.org/Contests/Practice/Index/1057#5).
-
-
-## Най-голям общ делител (НОД)
-
-Преди да продължим към следващата задача, е необходимо да се запознаем с определението за **най-голям общ делител** (**НОД**).
-
-**Определение за НОД**: най-голям общ делител на две **естествени** числа **a** и **b** е най-голямото число, което се дели **едновременно** и на **a**, и на **b** без остатък. Например:
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#5](https://judge.softuni.org/Contests/Practice/Index/1057#5).
 
 
-|a|b|НОД| 
+## Greatest Common Divisor (GCD)
+
+Before proceeding to the next problem, we should become familiar with the definition of **the greatest common divisor** (**GCD**).
+
+**Definition of GCD**: the greatest common divisor of two **natural** numbers **a** and **b** is the largest number that **divides both** **a** and **b** without reminder. For example:
+
+
+|a|b|GCD| 
 |:---:|:---:|:---:| 
 |24|16|8|
 |67|18|1|
@@ -166,16 +166,16 @@
 |10|10|10|
 |100|88|4|
 
-## Алгоритъм на Евклид
+## The Euclidean Algorithm
 
-В следващата задача ще използваме един от първите публикувани алгоритми за намиране на НОД - **алгоритъм на Евклид**:
+In the next problem we will use one of the first published algorithms for finding the GCD - **Euclid's algorithm**:
 
-**Докато** не достигнем остатък 0:
+**Until** we have a remainder of 0:
 
-* Делим по-голямото число на по-малкото.
-* Вземаме остатъка от делението.
+* We divide the greater number by the smaller one.
+* We take the remainder of the division.
 
-**Псевдо-код** за алгоритъма на Евклид:
+Euclid's algorithm **pseudo-code**:
 
 ```python
 while b ≠ 0
@@ -185,183 +185,181 @@ while b ≠ 0
 print а
 ```
 
-### Пример: най-голям общ делител (НОД)
+### Example: Greatest Common Divisor (GCD)
 
-Да се подадат **цели** числа **a** и **b** и да се намери **НОД(a, b)**.
+Enter the **integers** **a** and **b** and find **GCD(a, b)**.
 
-Ще решим задачата чрез **алгоритъма на Евклид**:
+We will solve the problem by implementing **Euclid's algorithm**:
 
-* Създаваме променливи **`a`** и **`b`**, на които присвояваме **целочислени** стойности, взети от входа на конзолата.
-* За условие на цикъла слагаме израз, който е **`True`**, ако числото **`b`** **е различно** от **0**.
-* В **тялото на цикъла** следваме указанията от псевдо кода:
-   * Създаваме временна променлива, на която присвояваме **текущата** стойност на **`b`**.
-   * Присвояваме нова стойност на **`b`**, която е остатъка от делението на **`a`** и **`b`**.
-   * На променливата **`a`** присвояваме **предишната** стойност на променливата **`b`**.
-* След като цикълът приключи и сме установили НОД, го отпечатваме на екрана.
+* We declare variables **`a`** and **`b`**, to which we assign the **integer** values, passed by the console input.
+* For loop condition, we use a **`True`** expression, if the number **`b`** **is different** than **0**.
+* In the **body of the loop** we follow the instructions from the pseudo-code:
+   * We create a temporary variable to which we assign the **current** value of **`b`**.
+   * We assign a new value to **`b`**, which is the remainder of the division of **`a`** and **`b`**.
+   * On variable **`a`** we assign the **previous** value of the variable **`b`**.
+* Once the loop is complete and we have found the GCD, we print it on the screen.
 
 ![](/assets/chapter-7-1-images/07.GCD-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#6](https://judge.softuni.org/Contests/Practice/Index/1057#6).
+You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#6](https://judge.softuni.org/Contests/Practice/Index/1057#6).
 
 
 ## While True + break цикъл
 
-Следващият тип конструкция за цикъл, с която ще се запознаем докато изучаваме програмирането, е `while True` + `break` цикълът (за по-кратко `while` + `break` цикъл). Неговата идея е **да повтаря фрагмент от кода** многократно докато не се достигне до **изрично прекратяване на цикъла**, обикновено след `if` проверка в тялото на цикъла. Ето как изглежда този цикъл на практика като Python код:
+The next type of loop construction that we will be familiar with while studying programming is the `while True` + `break` loop (for short `while` + `break` loop). Its idea **is to repeat a block of code** over and over again until **explicit termination of the loop**, usually after a `if` statement in the body of the loop. Here's what this loop looks like in Python code:
 
 ![](/assets/chapter-7-1-images/00.Do-while-01.png)
 
-Горният пример се нарича “**обърнат `while` цикъл**”, защото условието за изход от цикъла е накрая, а не в началото. По същина горната конструкция представлява “безкраен цикъл” с проверка на дадено условие за изход вътре в тялото на цикъла. 
+The above example is called “**inverted `while` loop**”, because the condition for exiting the loop is at the end, not at the beginning. In essence, the above construction is an “infinite loop” with a check, of a given condition, for an exit inside the body of the cycle.
 
-В програмирането операторът `break` безусловно прекратява даден цикъл и преминава към първата инструкция веднага след него. В горния пример в края на цикъла се проверява дадено условие и ако то не е вярно, цикълът се прекратява.
+In programming, the `break` operator unconditionally terminates a loop and proceeds to the first instruction after it. In the example above, a condition is checked at the end of the cycle, and if it is not true, the cycle is terminated.
 
-Конструкцията за цикъл `while` + `brea`k в много други езици за програмиране се реализира с `do-while` конструкция (в превод “**прави-докато**”), но последната няма директен еквивалент в Python. За да се постигне същото поведение, в Python се използва безкраен цикъл (`while True`) и когато се достигне условието за изход от него, цикълът се прекъсва (с `break`).
+The construct for the `while` + `break` loop in many other programming languages is implemented with the `do-while` construct, but there is no direct equivalent of `do-while` in Python. In order to do the same in Python, we can use an infinite loop (`while True`) and when an exit condition is reached, the loop is interrupted (with `break`).
 
-Конструкцията `while` + `break` предоставя повече гъвкавост, отколкото `while` циклите, защото позволява изходът от цикъла да е на **произволно място** в него (например в началото, в средата или в края), дори позволява да има изход от цикъла на няколко различни места (с няколко `break` оператора).
+The `while` + `break` construct provides more flexibility than `while` loops, because it allows to break the loop at **any place** in the body of the loop(for example at the beginning, in the middle or at the end), it even allows to have exit of the loop in several different places (with several `break` operators).
 
-По структура `while` + `break` цикълът наподобява много класическия `while` цикъл, но има съществена разлика: `while` се изпълнява 0 или повече пъти (според входното условие на цикъла), докато `while` + `break` изпълнява тялото си **поне веднъж**. Защо се случва това? В конструкцията на `while True` + `break` цикъла, **условието** винаги се проверява **вътре в тялото му**, докато при класическият `while` цикъл проверката за изход от цикъла е винаги в началото, преди неговото тяло.
+The structure of `while` + `break` loop is very similar to the classic `while` loop, but there is a significant difference: `while` is executed 0 or more times (according to the entry condition of the loop), whilst `while` + `break` will execute its body **at least once**. Why is this? In the `while True` + `break` loop structure, the **condition** is always checked **in the body of the loop**, whilst with the classic `while` loop the condition, which we check to exit the loop is always at the begginning, before its body.
 
-След като се запознахме с концепцията за `while` + `break` цикъл с условие за изход, което не е задължително в началото, сега нека преминем през обичайната поредица от примерни задачи, в които можем да приложим наученото.
+Once we are familiar with the concept of a `while` + `break` loop with an exit condition, which is not required to be at the beginning, now we should proceed with the usual set of practical problems, with which we can master the new knowledge.
 
+### Example: Calculating Factorial
 
-### Пример: изчисляване на факториел
+For natural **n** number calculate **n! = 1 \* 2 \* 3 \* … \* n**. For example, if **n = 5**, then the result would be: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
-За естествено число **n** да се изчисли **n! = 1 \* 2 \* 3 \* … \* n**. Например, ако **n = 5**, то резултатът ще бъде: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
+Here is how we can calculate factorial in more detail:
 
-Ето как по-конкретно можем да пресметнем факториел:
-
-* Създаваме променливата **`n`**, на която присвояваме целочислена стойност взета от входа на конзолата.
-* Създаваме още една променлива - **`fact`**, чиято начална стойност е 1. Нея ще използваме за изчислението и съхранението на факториела.
-* За условие на цикъла ще използваме **`n > 1`**, тъй като всеки път, когато извършим изчисленията в тялото на цикъла, ще намаляваме стойността на **`n`** с 1.
-* В тялото на цикъла:
-   * Присвояваме нова стойност на **`fact`**, която е резултат от умножението на текущата стойност на **`fact`** с текущата стойност на **`n`**.
-   * Намаляваме стойността на **`n`** с **-1**.
-* Извън тялото на цикъла отпечатваме крайната стойност на факториела.
+* We declare the variable **`n`**, to which we assign the integer value, received from the input of the console.
+* We declare another variable - **`fact`**, with an initial value of 1. We will use it in the calculation and store the factorial value.
+* For the loop condition we will use **`n > 1`**,  because each time we perform the calculations in the body of the loop, we willdecrease the value of **`n`** by 1.
+* In the body of the loop:
+   * We assign a new value to **`fact`**, which value is the product of multiplying the current **`fact`** with the current **`n`**.
+   * We decrement на **`n`** with **1**.
+* Outside the body of the loop we print the final factorial value.
 
 ![](/assets/chapter-7-1-images/08.Factorial-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#7](https://judge.softuni.org/Contests/Practice/Index/1057#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#7](https://judge.softuni.org/Contests/Practice/Index/1057#7).
 
 
-### Пример: сумиране на цифрите на число
+### Example: Summing the Digits of a Number
 
-Да се сумират цифрите на цяло **положително** число **n**. Например, ако **n = 5634**, то резултатът ще бъде: 5 + 6 + 3 + 4 = **18**.
+Sum up the digits of the integer **positive** number **n**. For example, if **n = 5634**, then the output would bе: 5 + 6 + 3 + 4 = **18**.
 
-Можем да използваме следната идея, за да решим задачата:
+We can use the following idea to solve the problem:
 
-* Създаваме променливата **`n`**, на която присвояваме стойност, равна на въведеното от потребителя число.
-* Създаваме втора променлива - **`sum`**, чиято начална стойност е 0. Нея ще използваме за изчислението и съхранението на резултата.
-* За условие на цикъла ще използваме **`n > 0`**, тъй като след всяко изчисление на резултата в тялото на цикъла, ще премахваме последната цифра от **`n`**.
-* В тялото на цикъла:
-   * Присвояваме нова стойност на **`sum`**, която е резултат от събирането на текущата стойност на **`sum`** с последната цифра на **`n`**.
-   * Присвояваме нова стойност на **`n`**, която е резултат от премахването на последната цифра от **`n`**.
-* Извън тялото на цикъла отпечатваме крайната стойност на сумата.
+* We declare the variable **`n`**, to which we assign a value equal to the number received by the user.
+* We create a second variable - **`sum`**, with an initial value of 0. We will use it for the calculation and storage of the result.
+* As a loop condition, we will use **`n > 0`**, since, after each iteration of the loop, we will be removing the last digit from **`n`**.
+* In the body of the loop:
+   * We assign a new value to **`sum`**, which is the result of the sum of the current value of **`sum`** with the last digit of **`n`**.
+   * We assign a new value to **`n`**,  which is the result of removing the last digit of **`n`**.
+* utside the body of the loop, we print the final value of the sum.
 
 ![](/assets/chapter-7-1-images/09.Sum-digits-01.png)
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;" /></td>
-<td><code><strong>n % 10</strong></code>: <b>връща</b> последната цифра на числото <code><strong>n</strong></code>.<br>
-<code><strong>n // 10</strong></code>: <b>изтрива</b> последната цифра на <code><strong>n</strong></code>.</td>
+<td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
+<code><strong>n // 10</strong></code>: <b>deletes</b> the last digit of <code><strong>n</strong></code>.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#8](https://judge.softuni.org/Contests/Practice/Index/1057#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#8](https://judge.softuni.org/Contests/Practice/Index/1057#8).
 
 
-## Безкрайни цикли и операторът break
+## Infinite loops and the operator break
 
-До момента се запознахме с различни видове цикли, като научихме какви конструкции имат те и как се прилагат. Следва да разберем какво е **безкраен цикъл**, кога възниква и как можем да **прекъснем** изпълнението му чрез оператора **`break`**.
+So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs, and how we can **break** it using the **`break`** operator.
 
-### Безкраен цикъл. Що е то?
+### Infinite Loop – Explanation
 
-**Безкраен цикъл** наричаме този цикъл, който **повтаря безкрайно** изпълнението на тялото си. При безкрайните **`while`** цикли проверката за край е условен израз, който **винаги** връща **`true`**. Ето как изглежда **безкраен `while`** цикъл:
+An **infinite loop** **runs infinitely** the code of its body. With the infinite **`while`** loops the end check is a conditional expression that **always** returns **`true`**. Here is an example of an **infinite `while`** loop:
 
 ![](/assets/chapter-7-1-images/00.Infinite-while-loop-01.png)
 
 
-### Оператор break
+### The Break Operator
 
-Вече знаем, че безкрайният цикъл изпълнява определен код до безкрайност, но какво става, ако желаем в определен момент при дадено условие, да излезем принудително от цикъла? На помощ идва операторът **`break`**, в превод - **спри, прекъсни**.
+We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **`break`** operator comes in handy in this situation.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Операторът <b><code>break</code></b> спира изпълнението на цикъла към момента, в който е извикан, и продължава от първия ред след края на цикъла. Това означава, че текущата итерация на цикъла няма да бъде завършена до край и съответно останалата част от кода в тялото на цикъла няма да се изпълни.</td>
+<td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
-### Пример: прости числа
+### Example: Prime Number Checking
 
-В следващата задача се изисква да направим **проверка за просто число**. Преди да продължим към нея, нека си припомним какво са простите числа.
+The next problem we are going to solve is to **check whether a given number is prime**, but before that, we should remember what are prime numbers.
 
-**Определение**: едно цяло число е **просто**, ако се дели без остатък единствено на себе си и на 1. По дефиниция простите числа са положителни и по-големи от 1. Най-малкото просто число е **2**.
+**Definition**: An integer is considered **prime**, if it is divisible only by itself and by 1. By definition, the prime numbers are positive and greater than 1. The smallest prime number is **2**.
 
-Можем да приемем, че едно цяло число **n** е просто, ако **n > 1** и **n** не се дели на число между **2** и **n-1**.
+We can assume that an integer **n** is a prime number if **n > 1** and **n** is not divisible by a number between **2** and **n-1**.
 
-Първите няколко прости числа са: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, …
+The first few prime numbers are: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, …
 
-За разлика от тях, **непростите (композитни) числа** са такива числа, чиято композиция е съставена от произведение на прости числа.
+By contrast, **composite numbers** are integers, which can be obtained by multiplying several prime numbers.
 
-Ето няколко примерни непрости числа: 
+Here are some examples of composite numbers: 
 * **10** = 2 \* 5
 * **42** = 2 \* 3 \* 7
 * **143** = 13 \* 11
 
-**Алгоритъм за проверка** дали дадено цяло число е **просто**: проверяваме дали **n > 1** и дали **n** се дели на **2**, **3**, …, **n-1** без остатък.
-* Ако се раздели на някое от числата, значи е **композитно**.
-* Ако не се раздели на никое от числата, значи е **просто**.
+**An algorithm to check** whether a given number is **prime**: we check if **n > 1** and if **n** is divisible by **2**, **3**, …, **n-1** without remainder.
+* If it is divisible by any of the numbers, it is **composite**.
+* If it is not divisible by any of the numbers, then it is **prime**.
 
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Можем да оптимизираме алгоритъма, като вместо проверката да е до <code><strong>n-1</strong></code>, да се проверяват делителите до <code><strong>√n</strong></code>. Помислете защо.</td>
+<td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, checking divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-### Пример: проверка за просто число. Оператор break
+### Example: check for a prime number. Break operator
 
-Да се провери дали едно число **n** е просто. Това ще направим като проверим дали **n** се дели на числата между 2 и √n.
+You are tasked to write a function that takes a single input **n** integer and checks if it is prime. This can be implemented by checking if **n** is divisible by any numbers in the range between 2 and √n.
 
-Ето го алгоритъма за проверка за просто число, разписан постъпково:
+The steps of the **"prime checking algorithm"** are given below in bigger detail:
 
-* Създаваме променливата **`n`**, на която присвояваме цяло число въведено от входа на конзолата.
-* Създаваме булева променлива **`is_prime`** с начална стойност **`True`**. Приемаме, че едно число е просто до доказване на противното.
-* Създаваме **`for`** цикъл, на който като начална стойност за променливата на цикъла задаваме 2, за условие **текущата ѝ стойност `<= √n`**. Стъпката на цикъла е 1.
-* В **тялото на цикъла** проверяваме дали **`n`**, разделено на **текущата стойност** има остатък. Ако от делението **няма остатък**, то променяме **`is_prime`** на **`False`** и излизаме принудително от цикъла чрез оператор **`break`**.
-* В зависимост от стойността на **`is_prime`** отпечатваме дали числото е просто (**`True`**) или съответно съставно (**`False`**).
+* We declare the variable **`n`**, to which we assign the integer passed by the console.
+* We create a **`is_prime`** boolean with and an initial value of **`True`**. We assume that a number is prime until proven otherwise.
+* We create a **`for`** loop, with the initial value set to 2, for a condition the **current value `<= √n`**. The stride is set to 1.
+* In the **body of the loop** we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`is_prime`** to **`False`** and exit the loop through the **`break`** operator.
+* Depending on the value of **`is_prime`** we print whether the input number is prime (**`True`**) or composite (**`False`**).
 
-Ето и примерна имплементация на описания алгоритъм:
+Here is a sample implementation of the prime checking algorithm, described above:
 
 ![](/assets/chapter-7-1-images/10.Check-if-prime-01.png)
 
-Оставаме да добавите **проверка дали входното число е по-голямо от 1**, защото по дефиниция числа като 0, 1, -1 и -2 не са прости.
+What remains is to add a **condition that checks if the input number is greater than 1**, because, by definition numbers such as 0, 1, -1 and -2 are not prime.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#9](https://judge.softuni.org/Contests/Practice/Index/1057#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#9](https://judge.softuni.org/Contests/Practice/Index/1057#9).
 
 
-### Пример: оператор break в безкраен цикъл
+### Example: the break operator in an infinite loop
 
-Да се напише програма, която проверява дали едно число **n** е четно, ако е - да се отпечатва на екрана. За четно считаме число, което се дели на 2 без остатък. При невалидно число да се връща към повторно въвеждане и да се изписва съобщение, което известява, че въведеното число не е четно.
+Write a function, which checks whether a given number **n**is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
-Ето една идея как можем да решим задачата:
+Here is an idea for the solution:
 
-* Създаваме променлива **`n`**, на която присвояваме начална стойност **0**.
-* Създаваме безкраен **`while`** цикъл, като за условие ще зададем **`True`**.
-* В **тялото на цикъла**:
-   * Вземаме целочислена стойност от входа на конзолата и я присвояваме на **`n`**.
-   * Ако **числото е четно**, излизаме от цикъла чрез **`break`**. 
-   * В **противен случай** извеждаме съобщение, което гласи, че **числото не е четно**. Итерациите продължават, докато не се въведе четно число.
-* Отпечатваме четното число на екрана.
+* We declare a variable **`n`**, with an initial value of **0**.
+* We create an infinite **`while`** loop, with a condition set to **`True`**.
+* In **the body of the loop**:
+   * We take the integer value, passed to our function, and assign it to **`n`**.
+   * If **the number is even**, we exit the loop by a **`break`**. 
+   * **Otherwise**, we print a message stating that **the number is not even**. Iterations continue, until an even number is entered.
+* We print the even number on the console.
 
-Ето и примерна имплементация на идеята:
+Here is an example implementation of the idea:
 
 ![](/assets/chapter-7-1-images/00.Break-in-infinite-loop-01.png)
 
-Забележка: макар кодът по-горе да е коректен, той няма да работи, ако вместо число потребителят въведе текст, например "**Invalid number**". Тогава парсването на текста към число ще се счупи и програмата ще покаже **съобщение за грешка (изключение)**. Как да се справим с този проблем и как да прихващаме и обработваме изключения чрез **`try-except` конструкцията** ще научим след малко.
+Note: although the code above is correct, it will not work if the user enters text instead of a number, for example "**Invalid number**". Then the parse of the text to a number will break and the program will display **error message (exception)**. We will learn in a little time how to deal with this problem and how to catch and handle exceptions using the **`try-except` construct**.
+#### Testing in the Judge System
 
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
 
 ## Вложени цикли и операторът break
