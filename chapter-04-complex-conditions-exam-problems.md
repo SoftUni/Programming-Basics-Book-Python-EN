@@ -248,7 +248,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052
 
 ## Problem: Operations with Numbers
 
-Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: summing up (**`+`**), **subtraction ** (**`-`**), **multiplying** (**`*`**), **division ** (**`/`**) и **modular  division ** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, a **special notification** must be printed.
+Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) и **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, a **special notification** must be printed.
 
 ### Input Data
 
@@ -308,33 +308,33 @@ Let's place the output as a value upon initializing the **`output`** parameter. 
 
 Based on the approach that we choose, our next condition will be either a simple **`elif`** or a single **`if`**. In the body of this condition, using additional conditions regarding the manner of calculating the output based on the passed operator, we can separate the logic based on the **structure** of the expected **output**. 
 
-From the requirements we can see that for **summing up** (**`+`**), **subtraction ** (**`-`**) или **multiplying ** (**`*`**) the expected output has the same structure: **"{n1} {operator} {n2} = {output} – {even/odd}"**, whereas for **division ** (**`/`**) and за **modular division** (**`%`**) the output has a different structure:
+From the requirements we can see that for **summing up** (**`+`**), **subtraction** (**`-`**) или **multiplying** (**`*`**) the expected output has the same structure: **"{n1} {operator} {n2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure:
 
 ![](/assets/chapter-4-2-images/03.Operations-04.png)
 
-Завършваме с проверките за събиране, изваждане и умножение:
+We finish the solution by applying conditions for summing up, subtraction and multiplying:
 
 ![](/assets/chapter-4-2-images/03.Operations-05.png)
 
-При кратки и ясни проверки, както в горния пример за четно и нечетно число, е възможно да се използва **тернарен оператор**, който просто спестява няколко реда код. Нека разгледаме възможната проверка **с** и **без** тернарен оператор.
+For short and clear conditions, such as the above example for even and odd numbers, you can use a **ternary operator**. Let's examine the possibility to apply a condition **with** or **without** a ternary operator.
 
-**Без използване на тернарен оператор** кодът е по-дълъг, но се чете лесно:
+**Without using a ternary operator** the code is longer but easier to read:
 
 ![](/assets/chapter-4-2-images/03.Operations-06.png)
 
-**С използване на тернарен оператор** кодът е много по-кратък, но може да изисква допълнителни усилия, за да бъде прочетен и разбран като логика:
+**Upon using a ternary operator** the code is much shorter, but may require additional efforts to read and understand the logic:
 
 ![](/assets/chapter-4-2-images/03.Operations-07.png)
 
-#### Отпечатване на резултата
+#### Printing the Output
 
-Накрая ни остава да покажем изчисления резултат на конзолата:
+Finally, what remains is to print the calculated result on the console:
 
 ![](/assets/chapter-4-2-images/03.Operations-08.png)
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1052#2](https://judge.softuni.org/Contests/Practice/Index/1052#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#2](https://judge.softuni.org/Contests/Practice/Index/1052#2).
 
 
 ## Задача: билети за мач
