@@ -136,7 +136,7 @@ Enter an integer in the range [**1 … 100**]. If the entered number is **invali
 
 To solve the problem, we can use the following algorithm:
 
-* We declare a variable **`num`**, to which we assign the integer part of the first argument, received from the console.
+* We declare a variable **`num`**, to which we assign the integer, received from the console.
 * For a loop condition, we put a **`True`** expression, if the number **is not** in the range specified in the problem description.
 * In the **body of the loop**: we print the message "**Invalid number!**" on the console, afterwards we assign a new value to **`num`** (the next line from the console input).
 * Once we have validated the entered number,we print its value outside the body of the loop.
