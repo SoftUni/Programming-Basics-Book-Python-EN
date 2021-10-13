@@ -46,7 +46,7 @@ Write a program that inputs the exam starting time and the time of student's arr
 
 ### Input Data
 
-You will receive **four integers** (each on a new line):
+**Four integers** are read from the console(each on a new line):
 
 - The first line contains the **exam starting time (hours)** – an integer from 0 to 23
 - The second line contains the **exam starting time (minutes)** – an integer from 0 to 59.
