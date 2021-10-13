@@ -31,7 +31,7 @@ else:
     # body
 ```
 
-The body can consist of any code, as long as it matches the syntactic particularity of the language and is indented one tab inside.
+The body can consist of any code, as long as it corresponds to the syntactic particularity of the language and is indented one tab inside.
 
 
 ## Exam Problems
@@ -44,63 +44,63 @@ A student has to attend **an exam at a particular time** (for example at 9:30 am
 
 Write a program that inputs the exam starting time and the time of student's arrival, and prints if the student has arrived **on time**, if they have arrived **early** or if they are **late**, as well as **how many hours or minutes** the student is early or late.
 
-### Входни данни
+### Input Data
 
-От конзолата се четат **четири цели числа** (по едно на ред):
+You will receive **four integers** (each on a new line):
 
-- Първият ред съдържа **час на изпита** – цяло число от 0 до 23.
-- Вторият ред съдържа **минута на изпита** – цяло число от 0 до 59.
-- Третият ред съдържа **час на пристигане** – цяло число от 0 до 23.
-- Четвъртият ред съдържа **минута на пристигане** – цяло число от 0 до 59.
+- The first line contains the **exam starting time (hours)** – an integer from 0 to 23
+- The second line contains the **exam starting time (minutes)** – an integer from 0 to 59.
+- The third line contains the **hour of arrival** – an integer from 0 to 23.
+- The fourth line contains **minutes of arrival** – an integer from 0 to 59.
 
-### Изходни данни
+### Output Data
 
-На първия ред отпечатайте:
+Print the following on the first line on the console:
 
-- "**Late**", ако студентът пристига **по-късно** от часа на изпита.
-- "**On time**", ако студентът пристига **точно** в часа на изпита или до 30 минути по-рано.
-- "**Early**", ако студентът пристига повече от 30 минути **преди** часа на изпита.
+- "**Late**", if the student arrives **later** compared to the exam starting time.
+- "**On time**", if the student arrives **exactly** at the exam starting time or up to 30 minutes earlier.
+- "**Early**", if the student arrives more than 30 minutes **before** the exam starting time.
 
-Ако студентът пристига с поне минута разлика от часа на изпита, отпечатайте на следващия ред:
+If the student arrives with more than one minute difference compared to the exam starting time, print on the next line:
 
-- "**mm minutes before the start**" за идване по-рано с по-малко от час.
-- "**hh:mm hours before the start**" за подраняване с 1 час или повече. Минутите винаги печатайте с 2 цифри, например "1:05".
-- "**mm minutes after the start**" за закъснение под час.
-- "**hh:mm hours after the start**" за закъснение от 1 час или повече. Минутите винаги печатайте с 2 цифри, например "1:03".
+- "**mm minutes before the start**" for arriving less than an hour earlier.
+- "**hh:mm hours before the start**" for arriving 1 hour or earlier. Always print minutes using 2 digits, for example "1:05".
+- "**mm minutes after the start**" for arriving more than an hour late.
+- "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print minutes using 2 digits, for example "1:03".
+- 
+###Sample Input and Output
 
-### Примерен вход и изход
-
-| Вход | Изход | Вход | Изход |
+| Input | Output | Input | Output |
 |---|---|---|---|
 |9<br>30<br>9<br>50|Late<br>20 minutes after the start|16<br>00<br>15<br>00|Early<br>1:00 hours before the start|
 |9<br>00<br>8<br>30|On time<br>30 minutes before the start|9<br>00<br>10<br>30|Late<br>1:30 hours after the start|
 |14<br>00<br>13<br>55|On time<br>5 minutes before the start|11<br>30<br>8<br>12|Early<br>3:18 hours before the start|
 
 
-| Вход | Изход | 
+| Input | Output | 
 |---|---|
 |10<br>00<br>10<br>00|On time|
 |11<br>30<br>10<br>55|Early<br>35 minutes before the start|
 |11<br>30<br>12<br>29|Late<br>59 minutes after the start|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Препоръчително е <strong>да прочетете няколко пъти заданието</strong> на дадена задача, като си водите записки и си скицирате примерите, докато разсъждавате над тях, преди да започнете писането на код.</td></tr></table>
+<td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start with the code.</td></tr></table>
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Съгласно заданието очакваме да ни бъдат подадени **четири** поредни реда с различни **цели числа**. Разглеждайки дадените входни параметри можем да се спрем на типа **`int`**, тъй като той удовлетворява очакваните ни стойности. Едновременно **четем** входа и **парсваме** стринговата стойност към избрания от нас тип данни за **цяло число**:
+According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`int`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for the **intege**r.
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-01.png)
 
-Разглеждайки очаквания изход, можем да създадем променливи, които да съдържат различните видове изходни данни, с цел да избегнем използването на т.нар. **"magic strings"** в кода:
+Examining the expected output, we can create variables that contain the different output data types, to avoid using the so-called **"magic strings"** in the code.
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-02.png)
 
-#### Изчисления
+#### Calculations
 
-След като прочетохме входа, можем да започнем да разписваме логиката за изчисление на резултата. Нека първо да изчислим **началния час** на изпита **в минути** за по-лесно и точно сравнение:
+After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for an easier and more accurate comparison:
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-03.png)
 
