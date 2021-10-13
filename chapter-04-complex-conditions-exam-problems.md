@@ -168,23 +168,23 @@ Write a program that accepts **as input the budget and season** and **as output*
   
 ### Input Data
 
-Входът се чете от конзолата и се състои от **два реда**:
+The input data will be read from the console and will consist of **two lines**:
 
-- На **първия** ред получаваме **бюджета** - **реално число** в интервал [**10.00 … 5000.00**].
-- На **втория** ред – **един** от двата възможни сезона: "**summer**" или "**winter**".
+- The **first** line holds **the budget** – a **real number** in the range [**10.00 … 5000.00**].
+- The **second** line holds one of two possible seasons that are "**summer**" or "**winter**".
+- 
+### Output Data
 
-### Изходни данни
+**Two lines** must be printed on the console.
 
-На конзолата трябва да се отпечатат **два реда**.
+- On the **first** line – "**Somewhere in {destination}**" among "**Bulgaria**", "**Balkans**" and "**Europe**".
+- On the **second** line – "{**Vacation type**} – {**Amount spent**}".
+  - The **Vacation** can be in a "**Camp**" or "**Hotel**".
+  - The **Amount** must be **rounded up to the second digit after the decimal point**.
 
-- На **първи** ред – "**Somewhere in {дестинация}**" измежду "**Bulgaria**", "**Balkans**" и "**Europe**".
-- На **втори** ред – "{**Вид почивка**} – {**Похарчена сума**}".
-  - **Почивката** може да е между "**Camp**" и "**Hotel**".
-  - **Сумата** трябва да е **закръглена с точност до втория символ** след десетичния знак.
+### Sample Input and Output
 
-### Примерен вход и изход
-
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |50<br>summer|Somewhere in Bulgaria<br>Camp - 15.00|
 |75<br>winter|Somewhere in Bulgaria<br>Hotel - 52.50|
@@ -192,16 +192,16 @@ Write a program that accepts **as input the budget and season** and **as output*
 |678.53<br>winter|Somewhere in Balkans<br>Hotel - 542.82|
 |1500<br>summer|Somewhere in Europe<br>Hotel - 1350.00|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Типично, както и при другите задачи, можем да разделим решението на няколко части:
-* Четене на входните данни
-* Изчисления
-* Отпечатване на резултата
+Typically, as for the other tasks, we can separate the solution into the following parts:
+* Reading the input data
+* Doing calculations
+* Printing the result
 
 #### Обработка на входните данни
 
-Прочитайки внимателно условието разбираме, че очакваме **два** реда с входни данни. Първият параметър е **реално число**, за което е добре да изберем подходящ тип на променливата. Ще се спрем на **`float`** като тип за бюджета, а за сезона - **`string`**: 
+While reading carefully the requirements, we understand that we expect **two** lines of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. Ще се спрем на **`float`** като тип за бюджета, а за сезона - **`string`**: 
 
 ![](/assets/chapter-4-2-images/02.Trip-01.png)
 
