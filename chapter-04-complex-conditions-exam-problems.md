@@ -68,7 +68,7 @@ If the student arrives with more than one minute difference compared to the exam
 - "**mm minutes after the start**" for arriving more than an hour late.
 - "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print minutes using 2 digits, for example "1:03".
 - 
-###Sample Input and Output
+### Sample Input and Output
 
 | Input | Output | Input | Output |
 |---|---|---|---|
@@ -121,52 +121,52 @@ To spare one additional check (**`else`**), we can, by default, assume that the 
 
 After that, according to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**.  If we do not match the first condition, we need to check if **the difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
 
-При всички останали случаи приемаме, че студентът е **закъснял**, което сме направили **по подразбиране**, и не е нужна допълнителна проверка:
+In all other cases, we assume that the student **was late**, which we set as **default**, and no additional check is needed:
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
 
-За финал ни остава да разберем и покажем с **каква разлика от времето на изпита е пристигнал**, както и дали тази разлика показва време на пристигане **преди или след изпита**.
+Finally, we need to understand and print **what is the time difference between exam start time and student arrival time**, as well as whether this time difference indicates the time of arrival **before or after the exam start**.
 
-Правим проверка дали разликата ни е **над** един час, за да изпишем съответно часове и минути в желания по задание **формат**, или е **под** един час, за да покажем **само минути** като формат и описание. Остава да направим още една проверка - дали времето на пристигане на студента е **преди** или **след** началото на изпита:
+We check whether the time difference is **more than** one hour, to print hours and minutes in the required **format**, or **less than** one hour, to print **only minutes** as a format and description. We also need to do one more check – whether the time of student's arrival is **before** or **after** the exam start time.
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая остава да изведем резултата на конзолата. По задание, ако студентът е дошъл точно на време (**без нито една минута разлика**), не трябва да изваждаме втори резултат. Затова правим следната **проверка**:
+Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time **(not even a minute difference)**, we do not need to print a second result. This is why we apply the following **condition**:
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-08.png)
 
-Реално за целите на задачата извеждането на резултата **на конзолата** може да бъде направен и в по-ранен етап - още при самите изчисления. Това като цяло не е много добра идея. **Защо?**
+Actually, for the task, printing the result **on the console** can be done at a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?**
 
-Нека разгледаме идеята, че кодът ни не е 10 реда, а 100 или 1000! Някой ден ще се наложи извеждането на резултата да не бъде в конзолата, а да бъде записан във **файл** или показан на **уеб приложение**. Тогава на колко места в кода ще трябва да бъдат нанесени корекции поради тази смяна? И дали няма да пропуснем някое място?
+Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web application**. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won't miss some places?
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Винаги си мислете за кода с логическите изчисления, като за отделна част, различна от обработката на входните и изходните данни. Той трябва да може да работи без значение как му се подават данните и къде ще трябва да бъде показан резултатът.</td></tr></table>
+<td>Always consider the code that contains logical calculations as a separate part, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук:  [https://judge.softuni.org/Contests/Practice/Index/1052#0](https://judge.softuni.org/Contests/Practice/Index/1052#0).
+Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/1052#0](https://judge.softuni.org/Contests/Practice/Index/1052#0).
 
 
-## Задача: пътешествие
+## Problem: Trip
 
-Странно, но повечето хора си плануват от рано почивката. Млад програмист разполага с **определен бюджет** и свободно време в даден **сезон**.
+It is strange, but most people start planning their vacations well in advance. A young programmer from Bulgaria has a **certain budget** and spare time in a particular **season**.
 
-Напишете програма, която да приема **на входа бюджета и сезона**, а **на изхода** да изкарва **къде ще почива** програмистът и **колко ще похарчи**.
+Write a program that accepts **as input the budget and season** and **as output** displays programmer's **vacation place** and **the amount of money they will spend**.
 
-**Бюджетът определя дестинацията, а сезонът определя колко от бюджета ще бъде изхарчен**. Ако е лято, ще почива на къмпинг, а зимата - в хотел. Ако е в Европа, независимо от сезона, ще почива в хотел. Всеки къмпинг или хотел, според дестинацията, има собствена цена, която отговаря на даден **процент от бюджета**:
+**The budget determines the destination, and the season determines what amount of the budget will be spent**. If the season is summer, the programmer will go camping, if it is winter – he will stay in a hotel. If it is in Europe, regardless of the season, the programmer will stay in a hotel. Each camp or hotel, according to the destination, has its price, which corresponds to a particular **percentage of the budget**:
 
-- При **100 лв. или по-малко** – някъде в **България**.
-  - **Лято** – **30%** от бюджета.
-  - **Зима** – **70%** от бюджета.
-- При **1000 лв. или по малко** – някъде на **Балканите**.
-  - **Лято** – **40%** от бюджета.
-  - **Зима** – **80%** от бюджета.
-- При **повече от 1000 лв**. – някъде из **Европа**.
-  - При пътуване из Европа, независимо от сезона, ще похарчи **90% от бюджета**.
+- If **100 BGN or less** – somewhere in **Bulgaria**.
+  - **Summer** – **30%** of the budget
+  - **Winter** – **70%** of the budget.
+- If **1000 BGN or less** – somewhere in the **Balkans**.
+  - **Summer** – **40%** of the budget.
+  - **Winter** – **80%** of the budget.
+- If **more than 1000 BGN** – somewhere in **Europe**.
+  - Upon traveling in Europe, regardless of the season, the programmer will spend **90% of the budget**.
   
-### Входни данни
+### Input Data
 
 Входът се чете от конзолата и се състои от **два реда**:
 
