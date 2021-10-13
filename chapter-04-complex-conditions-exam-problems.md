@@ -172,7 +172,7 @@ The input data will be read from the console and will consist of **two lines**:
 
 - The **first** line holds **the budget** – a **real number** in the range [**10.00 … 5000.00**].
 - The **second** line holds one of two possible seasons that are "**summer**" or "**winter**".
-- 
+
 ### Output Data
 
 **Two lines** must be printed on the console.
