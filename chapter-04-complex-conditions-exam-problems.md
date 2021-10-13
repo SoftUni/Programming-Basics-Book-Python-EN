@@ -509,4 +509,4 @@ Finally, what remains is to print the calculated results on the console.
 
 ### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1052#4](https://judge.softuni.org/Contests/Practice/Index/1052#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#4](https://judge.softuni.org/Contests/Practice/Index/1052#4).
