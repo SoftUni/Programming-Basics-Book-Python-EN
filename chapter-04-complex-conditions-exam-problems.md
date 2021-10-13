@@ -65,7 +65,7 @@ If the student arrives with more than one minute difference compared to the exam
 
 - "**mm minutes before the start**" for arriving less than an hour earlier.
 - "**hh:mm hours before the start**" for arriving 1 hour or earlier. Always print minutes using 2 digits, for example "1:05".
-- "**mm minutes after the start**" for arriving more than an hour late.
+- "**mm minutes after the start**" for arriving less than an hour late.
 - "**hh:mm hours after the start**" for arriving late with 1 hour or more. Always print minutes using 2 digits, for example "1:03".
 
 ### Sample Input and Output
