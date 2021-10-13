@@ -337,176 +337,176 @@ Finally, what remains is to print the calculated result on the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#2](https://judge.softuni.org/Contests/Practice/Index/1052#2).
 
 
-## Задача: билети за мач
+## Problem: Game Tickets
 
-**Група запалянковци** решили да си закупят **билети за Евро 2016**. Цената на билета се определя спрямо **две** категории:
+**A group of football** fans decided to buy **tickets for Euro Cup 2016**. The tickets are sold in **two** price categories:
 
-- **VIP** – **499.99** лева.
-- **Normal** – **249.99** лева.
+- **VIP** – **499.99** BGN (Bulgarian leva).
+- **Normal** – **249.99** BGN (Bulgarian leva).
 
-Запалянковците **имат определен бюджет**, a **броят на хората** в групата определя какъв процент от бюджета трябва **да се задели за транспорт**:
+The football fans **have a shared budget**, and the **number of people** in the group determines what percentage of the budget will be **spent on transportation**:
 
-- **От 1 до 4** – 75% от бюджета.
-- **От 5 до 9** – 60% от бюджета.
-- **От 10 до 24** – 50% от бюджета.
-- **От 25 до 49** – 40% от бюджета.
-- **50 или повече** – 25% от бюджета.
+- **1 to 4** – 75% of the budget.
+- **5 to 9** – 60% of the budget.
+- **10 to 24** – 50% of the budget.
+- **25 to 49** – 40% of the budget.
+- **50 or more** – 25% of the budget.
 
-Напишете програма, която да **пресмята дали с останалите пари от бюджета** могат да си **купят билети за избраната категория**, както и колко пари ще им **останат или ще са им нужни**.
+**Write a program** that **calculates whether the money left in the budget** will be enough for the football fans to **buy tickets in the selected category**, as well as **how much money** they will **have left or be insufficient**.
 
-### Входни данни
+### Input Data
 
-Входът се чете от **конзолата** и съдържа **точно 3 реда**:
+The input data will be read from the **console** and contains **exactly 3 lines**:
 
-- На **първия** ред е **бюджетът** – реално число в интервала [**1 000.00 … 1 000 000.00**].
-- На **втория** ред е **категорията** – "**VIP**" или "**Normal**".
-- На **третия** ред е **броят на хората в групата** – цяло число в интервала [**1 … 200**].
+- The **first** line contains the budget – a real number within the range [**1 000.00 … 1 000 000.00**].
+- The **second** line contains the **category** – "**VIP**" or "**Normal**".
+- The **third** line contains the **number of people in the group** – an integer within the range [**1 … 200**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечата** на конзолата **един ред**:
+**Print the following** on the console as **one line**:
 
-- Ако **бюджетът е достатъчен**:
-  - "**Yes! You have {N} leva left.**" – където **N са останалите пари** на групата.
-- Ако **бюджетът НЕ Е достатъчен**:
-  - "**Not enough money! You need {М} leva.**" – където **М е сумата, която не достига**.
+- If the **budget is sufficient**:
+  - "**Yes! You have {N} leva left.**" – where **N is the amount of remaining money** for the group.
+- If the **budget is NOT sufficient**:
+  - "**Not enough money! You need {М} leva.**" – where **М is the insufficient amount**.
 
-**Сумите** трябва да са **форматирани с точност до два символа след десетичния знак**.
+**The amounts** must be **formatted up to the second digit after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход | Обяснения |
+| Input | Output | Explanations |
 |---|---|---|
-|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 човек : 75%** от бюджета отиват за **транспорт**.<br>**Остават:** 1000 – 750 = **250**.<br>Категория **Normal**: билетът **струва 249.99 * 1 = 249.99**<br>249.99 < 250: **остават му** 250 – 249.99 = **0.01**|
+|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 person : 75%** of the budget is spent on **transportation**.<br>**Remaining amount:** 1000 – 750 = **250**.<br>Category  **Normal**:  the ticket **price is 249.99 * 1 = 249.99**<br>249.99 < 250: **the person will have** 250 – 249.99 = **0.01** money left|
 
-| Вход | Изход | Обяснения |
+| Input | Output | Explanations |
 |---|---|---|
-|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 човека: 40%** от бюджета отиват за **транспорт**.<br>Остават: 30000 – 12000 = 18000.<br>Категория **VIP**: билетът **струва** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**Не стигат** 24499.51 - 18000 = **6499.51**|
+|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 човека: 40%** of the budget are spent on **transportation**.<br>Remaining amount: 30000 – 12000 = 18000.<br>Category **VIP**: the ticket **costs** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**The amount is not enough** 24499.51 - 18000 = **6499.51**|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще прочетем входните данни и ще извършим изчисленията, описани в условието на задачата, за да проверим дали ще стигнат парите.
+We will read the input data and perform the calculations described in the task requirements, to check if the money will be sufficient.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Нека прочетем внимателно условието и да разгледаме какво се очаква да получим като **входни данни**, какво се очаква да **върнем като резултат**, както и кои са **основните стъпки** при разбиването **на логическата схема**. Като за начало, нека обработим и запазим входните данни в **подходящи** за това **променливи**:
+Let's read carefully the requirements and examine what we expect to take as **input data**, what is expected to **return as a result**, as well as what are the **main steps** for solving the problem. For a start, let's process and save the input data in **appropriate variables**:
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-01.png)
 
-#### Изчисления
+#### Calculations
 
-Нека създадем и инициализираме нужните за изчисленията променливи:
+Let's create and initialize the variables needed for doing the calculations:
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-02.png)
 
-Нека отново прегледаме условието. Трябва да направим **две** различни блок изчисления. От първите изчисления трябва да разберем каква част от бюджета ще трябва да заделим за **транспорт**. За логиката на тези изчисления забелязваме, че има значение единствено **броят на хората в групата**. Следователно ще направим логическата разбивка спрямо броя на запалянковците. Ще използваме условна конструкция - поредица от **`if-elif`** блокове:
+Let's review the requirements once again. We need to perform **two** different block calculations. By the first set of calculations, we must understand what part of the budget has to be spent on **transportation**. You will notice that the logic for doing these calculations only depends on the **number of people in the group**. Therefore, we will do a logical breakdown according to the number of football fans. We will use a conditional statement – a sequence of **`if-elif`** blocks:
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-03.png)
 
-От вторите изчисления трябва да намерим каква сума ще ни е необходима за закупуване на **билети за групата**. Според условието, това зависи единствено от типа на билетите, които трябва да закупим. Нека използваме **`if-elif`** условна конструкция:
+By the second set of calculations, we need to find out what amount will be needed for **purchasing tickets** for the group. According to the requirements, this only depends on the type of tickets that we need to buy. Let's use **`if-elif`** conditional statement:
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-04.png)
 
-След като сме изчислили какви са **транспортните разходи** и **разходите за билети**, ни остава да изчислим крайния резултат и да разберем **ще успее** ли групата от запалянковци да отиде на Евро 2016 или **няма да успее** при така подадените параметри. 
+Once we have calculated the **transportation costs** and **ticket costs**, what remains is to calculate the final result and understand if the group of football fans will **attend** Euro Cup 2016 or **not**, by the provided the available parameters. 
 
-За извеждането на резултата, за да си спестим една **проверка** в конструкцията, приемаме, че групата по подразбиране ще може да отиде на Евро 2016:
+For the output, to spare one **condition** in the construction, we will assume that the group can, by default, attend Euro Cup 2016:
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-05.png)
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая ни остава да покажем изчисления резултат на конзолата.
+Finally, we need to display the calculated result on the console.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1052#3](https://judge.softuni.org/Contests/Practice/Index/1052#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#3](https://judge.softuni.org/Contests/Practice/Index/1052#3).
 
 
-## Задача: хотелска стая
+## Problem: Hotel Room
 
-Хотел предлага **два вида стаи**: **студио и апартамент**.
+A hotel offers **two types of rooms: studio and apartment**.
 
-Напишете програма, която изчислява **цената за целия престой за студио и апартамент**. **Цените** зависят от **месеца** на престоя:
+Write a program that calculates **the price of the whole stay for a studio and apartment**. **Prices** depend on the **month** of the stay:
 
-| **Май и октомври** | **Юни и септември** | **Юли и август** |
+| **May and October** | **June and September** | **July and August** |
 |---|---|---|
-|Студио – **50** лв./нощувка|Студио – **75.20** лв./нощувка|Студио – **76** лв./нощувка|
-|Апартамент – **65** лв./нощувка|Апартамент – **68.70** лв./нощувка|Апартамент – **77** лв./нощувка|
+|Studio  – **50** BGN/night|Studio  – **75.20** BGN/night|Studio  – **76** BGN/night|
+|Apartment  – **65** BGN/night|Apartment  – **68.70** BGN/night|Apartment  – **77** BGN/night|
 
-Предлагат се и следните **отстъпки**:
+The following **discounts** are also offered:
 
-- За **студио**, при **повече** от **7** нощувки през **май и октомври**: **5% намаление**.
-- За **студио**, при **повече** от **14** нощувки през **май и октомври**: **30% намаление**.
-- За **студио**, при **повече** от **14** нощувки през **юни и септември**: **20% намаление**.
-- За **апартамент**, при **повече** от **14** нощувки, **без значение от месеца: 10% намаление**.
+- For a **studio**, in case of **more than 7** stays in **May and October: 5% discount**.
+- For a **studio**, in case of **more than 14** stays in **May and October: 30% discount**.
+- For a **studio**, in case of **more than 14** stays in **June and September: 20% discount**.
+- For an **apartment**, in case of **more than 14 stays**, **no limitation regarding the month: 10% discount**.
 
-### Входни данни
+### Input Data
 
-Входът се чете от конзолата и съдържа **точно два реда**:
+The input data will be read from the console and contains **exactly two lines**:
 
-- На първия ред е **месецът** – **May**, **June**, **July**, **August**, **September** или **October**.
-- На втория ред е **броят на нощувките** – **цяло число в интервала** [**0 … 200**].
+- The **first** line contains the **month** – **May**, **June**, **July**, **August**, **September** or **October**.
+- The **second** line is the **number of stays** – integer within the range [**0 … 200**].
 
-### Изходни данни
+### Output Data
 
-Да се **отпечатат** на конзолата два реда:
+**Print** the following **two lines** on the console:
 
-- На първия ред: "**Apartment: { цена за целият престой } lv**".
-- На втория ред: "**Studio: { цена за целият престой } lv**".
+- On the **first line**: "**Apartment: { price for the whole stay } lv.**"
+- On the **second line**: "**Studio: { price for the whole stay } lv.**"
 
-**Цената за целия престой да е форматирана с точност до два символа след десетичния знак**.
+**The price for the whole stay must be formatted up to two symbols after the decimal point**.
 
-### Примерен вход и изход
+### Sample Input and Output
 
-| Вход | Изход |Обяснения |
+| Input | Output | Comments |
 |---|---|---|
-|May<br>15|Apartment: 877.50 lv.<br>Studio: 525.00 lv.| През **май**, при повече от **14 нощувки**, намаляваме цената на **студиото с 30%** (50 – 15 = 35), а на **апартамента – с 10%** (65 – 6.5 =58.5).<br>Целият престой в **апартамент – 877.50** лв.<br>Целият престой **в студио – 525.00** лв.|
+|May<br>15|Apartment: 877.50 lv.<br>Studio: 525.00 lv.| In **May**, in case of more than **14 stays**, the discount for a **studio is 30%** (50 - 15 = 35), and for the **apartment is 10%** (65 - 6.5 = 58.5)..<br>The whole stay in the **apartment: 877.50** lv.<br>The whole stay **in the studio: 525.00** lv.|
 
-| Вход | Изход |
+| Input | Output |
 |---|---|
 |June<br>14|Apartment: 961.80 lv.<br>Studio: 1052.80 lv|
 |August<br>20|Apartment: 1386.00 lv.<br>Studio: 1520.00 lv.|
 
-### Насоки и подсказки
+### Hints and Guidelines
 
-Ще прочетем входните данни и ще извършим изчисленията според описания ценоразпис и правилата за отстъпките и накрая ще отпечатаме резултата.
+We will read the input data and do the calculations according to the provided price list and the discount rules, and finally, print the result.
 
-#### Обработка на входните данни
+#### Processing the Input Data
 
-Съгласно условието на задачата очакваме да получим два реда входни данни - на първия ред **месеца, през който се планува престой**, а на втория - **броя нощувки**. Нека обработим и запазим входните данни в подходящи за това променливи:
+According to the task requirements, we expect two lines of input data - the first line is the **month in which the stay is planned**, and the second - the **number of stays**. Let's process and store the input data in the appropriate parameters:
 
 ![](/assets/chapter-4-2-images/05.Hotel-room-01.png)
 
-#### Изчисления
+#### Calculations
 
-След това да създадем и инициализираме нужните за изчисленията променливи:
+Now let's create and initialize the variables needed for the calculations:
 
 ![](/assets/chapter-4-2-images/05.Hotel-room-02.png)
 
-Разглеждайки отново условието забелязваме, че основната ни логика зависи от това какъв **месец** ни се подава, както и от броя на **нощувките**.
+When doing an additional analysis of the requirements, we understand that our main logic depends on what month is passed and what is the number of **stays**.
 
-Като цяло има различни подходи и начини да се направят въпросните проверки, но нека се спрем на основна условна конструкция **`if-elif`**, като в различните **случаи** ще използваме съответно вложени условни конструкции **`if`** и **`if-elif`**.
+In general, there are different approaches and ways to apply the above conditions, but let's examine a basic **`if-elif`** conditional statement, as in each different **case** we will use **`if`** and **`if-elif`** conditional statements.
 
-Нека започнем с първата група месеци: **Май** и **Октомври**. За тези два месеца **цената на престой е еднаква** и за двата типа настаняване - в **студио** и в **апартамент**. Съответно остава само да направим вътрешна проверка спрямо **броят нощувки**, за да преизчислим **съответната цена** (ако се налага):
+Let's start with the first group of months: **May** and **October**. For these two months, **the price for a stay is the same** for both types of accommodation – a **studio** or an **apartment**. Therefore, the only thing that remains is to apply an internal condition regarding the **number of stays** and recalculate the **relevant price** (if needed):
 
 ![](/assets/chapter-4-2-images/05.Hotel-room-03.png)
 
-За следващите месеци **логиката** и **изчисленията** ще са донякъде **идентични**: 
+To some extent, the **logic** and **calculations** will be **identical** for the following months: 
 
 ![](/assets/chapter-4-2-images/05.Hotel-room-04.png)
 
 ![](/assets/chapter-4-2-images/05.Hotel-room-05.png)
 
-След като изчислихме какви са съответните цени и крайната сума за престоя - нека да си изведем във форматиран вид резултата, като преди това го запишем в изходните ни **променливи** - **`studio_info`** и **`apartment_info`**:
+After calculating the relevant prices and the total amount for the stay, now let's prepare the formatted result. Before that, we should store it in our output **variables** - **`studio_info`** and **`apartment_info`**:
 
 ![](/assets/chapter-4-2-images/05.Hotel-room-06.png)
 
-За изчисленията на изходните параметри използваме **форматирането** **`.2f`**. Този начин на форматиране **закръгля десетично** число до **зададен брой цифри** (в случая 2) след десетичния знак, а на целите числа просто добавя необходимия брой символи след десетичната запетая.
+To calculate the output parameters, we will use the **formatting** **`.2f`**. This formatting **rounds the decimal** number up to a specified number of characters after the decimal point. In our case, we will round the decimal number up to **2 digits** after the decimal point.
 
-#### Отпечатване на резултата
+#### Printing the Result
 
-Накрая остава да покажем изчислените резултати на конзолата.
+Finally, what remains is to print the calculated results on the console.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
 Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1052#4](https://judge.softuni.org/Contests/Practice/Index/1052#4).
