@@ -362,92 +362,92 @@ Note: although the code above is correct, it will not work if the user enters te
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
 
-## Вложени цикли и операторът break
+## Nested Loops and the Break operator
 
-След като вече научихме какво са **вложените цикли** и как работи операторът **`break`**, е време да разберем как работят двете заедно. За по-добро разбиране, нека стъпка по стъпка да напишем **програма**, която трябва да направи всички възможни комбинации от **двойки числа**. Първото число от комбинацията е нарастващо от 1 до 3, а второто е намаляващо от 3 до 1. Задачата трябва да продължи изпълнението си, докато **`i + j`** **не** е равно на 2 (т.е. **`i = 1`** и **`j = 1`**).
+Now since we know what the **nested loops** are and how the **`break`** operator works, it is time to figure out how they work together.To get a better idea, we should write a **function** step by step, that should make all possible combinations of **number pairs**. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until **`i + j`** **is not** equal to 2 (i.e. **`i = 1`** and **`j = 1`**).
 
-Желаният резултат е:
+The desired result is:
 
 ![](/assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.png)
 
-Ето едно **грешно решение**, което изглежда правилно на пръв поглед:
+Here is a **wrong implementation**, that looks right at first glance:
 
 ![](/assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.png)
 
-Ако оставим програмата ни по този начин, резултатът ни ще е следният:
+If we leave our function that way, our result will be as follows:
 
 ![](/assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.png)
 
-Защо се получава така? Както виждаме, в резултата **липсва "1 1"**. Когато програмата стига до там, че **`i = 1`** и **`j = 1`**, тя влиза в **`if`** проверката и изпълнява **`break`** операцията. По този начин се **излиза от вътрешния цикъл**, но след това продължава изпълнението на външния. **`i`** нараства, програмата влиза във вътрешния цикъл и принтира резултата.
+Why is this so? As we can see, the result is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Когато във <b>вложен цикъл</b> използваме оператора <b><code>break</code></b>, той прекъсва изпълнението <b>само</b> на вътрешния цикъл.</td>
+<td> When we use the <b><code>break</code></b> <b>operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
-Какво е **правилното решение**? Един начин за решаването на този проблем е чрез деклариране на **`bool` променлива**, която следи за това, дали трябва да продължава въртенето на цикъла. При нужда от изход (излизане от всички вложени цикли), се променя стойността на променливата на **`True`** и се излиза от вътрешния цикъл с **`break`**, а при последваща проверка се напуска и външния цикъл. Ето и примерна имплементация на тази идея:
+What is the **correct solution**? One way to solve the problem is by declaring a **`bool` variable**, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to **`True`** and exit the inner loop with **`break`**, and in the next check, we exit the outer loop. Here is an example implementation of this idea:
 
 ![](/assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png)
 
-По този начин, когато **`i + j = 2`**, програмата ще направи променливата **`has_to_end = True`** и ще излезе от вътрешния цикъл. При следващото завъртане на външния цикъл, чрез **`if`** проверката, програмата няма да може да стигне до вътрешния цикъл и ще прекъсне изпълнението си.
+In this manner, when **`i + j = 2`**, the program will set the variable **`has_to_end = True`** and will exit the inner loop. Upon the next iteration of the outer loop, via the **`if`** check, the function will not reach the inner loop and will interrupt its execution.
 
-### Тестване в Judge системата
+### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#11](https://judge.softuni.org/Contests/Practice/Index/1057#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#11](https://judge.softuni.org/Contests/Practice/Index/1057#11).
 
-## Справяне с изключения: try-except
+## Dealing with exceptions: try-except
 
-Последното, с което ще се запознаем в тази глава, е как да "улавяме" **грешки (exceptions)** чрез конструкцията **`try-except`**.
+The last thing we'll look at in this chapter is how to "catch" **errors (exceptions)** using the **`try-except`** construction .
 
-### Какво е try-except?
+### What is try-except?
 
-Програмната конструкция **`try-except`** служи за **прихващане и обработка на изключения (грешки)** по време на изпълнението на програмата.
+The **`try-except`** construction is used for **catching and handling exceptions (errors)** during program execution.
 
-В програмирането **изключенията (exceptions)** представляват уведомление за дадено събитие, което нарушава нормалната работа на една програма. Такива събития **прекъсват изпълнението** на програмата и тя търси кой да обработи настъпилата ситуация. Ако не намери, изключението се отпечатва на конзолата (т.е. програмата "гърми"). Ако намери, **изключението се обработва** и програмата продължава нормалното си изпълнение, без да "гърми". След малко ще видим как точно става това.
+In programming, **exceptions** are notifications of an event that disrupts the normal operation of a program. Such events **interrupt the execution** of the program, which starts looking for someone to handle the situation. If it is not found, the exception is printed on the console (i.e. the program stops). If found, **the exception is processed** and the program continues normal execution. In a little we will see exactly how this happens.
 
-### Конструкция на try-except
+### try-except construction
 
-Конструкцията **`try-except`** има различни варианти, но за сега ще се запознаем само с най-основния от тях: 
+The **`try-except`** construction has different options, but for now we will get acquainted only with the most basic of them
 
  ![](/assets/chapter-7-1-images/00.Try...except-01.png)
 
 
 
-В следващата задача ще видим нагледно, как да се справим в ситуация, в която потребителят въвежда вход, различен от число (например **`string`** вместо **`int`**), чрез **`try-except`**.
+In the next task we will see how to deal with a situation, in which the user enters an input other than a number (for example **`string`** instead of **`int`**), using **`try-except`**.
 
-### Пример: справяне с невалидни числа чрез try-except
+### Example: dealing with invalid numbers by try-except
 
-Да се напише програма, която проверява дали едно число **n** е четно и ако е, да се отпечата на екрана. При **невалидно въведено** число да се изписва съобщение, че въведения вход не е валидно число и въвеждането да продължи отново.
+Write a program that checks that a number **n** is even and, if so, print it on the screen. In case of **invalid entered** number, a message should be displayed that the entered input is not a valid number and the input should continue.
 
-Ето как можем да решим задачата:
+Here's how we can solve the problem:
 
-* Създаваме безкраен **`while`** цикъл, като за условие ще зададем **`True`**.
-* В тялото на цикъла:
-	* Създаваме **`try-except`** конструкция.
-	* В **`try`** блока пишем програмната логика за четене на потребителския вход, парсването му до число и проверката за четност.
-	* При **четно число** го отпечатваме и излизаме от цикъла (с **`break`**). Програмата си е свършила работата и приключва.
-	* При **нечетно число** отпечатваме съобщение, че се изисква четно число, без да излизаме от цикъла (защото искаме той да се повтори отново).
-	* Ако **хванем изключение** при изпълнението на **`try`** блока, изписваме съобщение за невалидно въведено число (и цикълът съответно се повтаря, защото не излизаме изрично от него).
+* We create an infinite **`while`** loop, as a condition we will set **`True`**.
+* In the body of the loop:
+	* We create a **`try-except`** construction.
+	* In the block **`try`** we write the program logic for reading the user input, its parsing to a number and the parity check.
+	* At **even number** we print it and leave the loop (with **`break`**). The program has done its job and is coming to an end.
+	* At **odd number** we print a message that an even number is required without leaving the loop (because we want it to be repeated again).
+	* If we **catch an exception** during the execution of the **`try`** block, we print a message for an invalid entered number (and the loop repeats, because we do not explicitly leave it).
 
-Ето и примерна имплементация на описаната идея:
+Here is an example implementation of the described idea:
 
 ![](/assets/chapter-7-1-images/11.Wrong-numbers-try-except-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
-Сега вече решението трябва да работи винаги: независимо дали въвеждаме цели числа, невалидни числа (например твърде много цифри) или текст, които не съдържат числа.
+Now the solution must always work: whether we enter integers, invalid numbers (for example, numbers with too many digits) or text that does not contain numbers.
 
 
-## Задачи с цикли
+## Exercises with loops
 
-В тази глава се запознахме с няколко нови вида цикли, с които могат да се правят повторения с по-сложна програмна логика. Да решим няколко задачи, използвайки новите знания.
+In this chapter, we got familiar with a few new types of loops that can perform repetitions with more complex programming logic. Let's solve a few practical problems using these new constructs.
 
-### Задача: числа на Фибоначи
+### Problem: Fibonacci Numbers
 
-Числата на Фибоначи в математиката образуват редица, която изглежда по следния начин: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**.
+Fibonacci's numbers in mathematics form a sequence that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**.
 
-**Формулата** за образуване на редицата е:
+**The formula** to derive the next member of Fibonacci's sequence is:
 
 ```python
 F0 = 1
@@ -455,9 +455,9 @@ F1 = 1
 Fn = Fn-1 + Fn-2
 ```
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход (n)|Изход|Коментар|
+|Input (n)|Output|Comment|
 |----|-----|---------|
 |10|89|F(11) = F(9) + F(8)|
 |5|8|F(5) = F(4) + F(3)|
@@ -465,106 +465,106 @@ Fn = Fn-1 + Fn-2
 |0|1| |
 |1|1| |
 
-Да се въведе **цяло** число **n** и да се пресметне **n-тото число на Фибоначи**.
+Enter an **integer** number **n** and calculate the **n-th Fibonacci number.**.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Идея за решаване на задачата:
+An idea to solve the problem:
 
-* Създаваме **променлива `n`**, на която присвояваме целочислена стойност от входа на конзолата.
-* Създаваме променливите **`f0`** и **`f1`**, на които присвояваме стойност **1**, тъй като така започва редицата.
-* Създаваме **`for`** цикъл от нула до **крайна стойност `n - 1`**.
-* В **тялото на цикъла:**
-   * Създаваме **временна** променлива **`f_next`**, на която присвояваме следващото число в поредицата на Фибоначи.
-   * На **`f0`** присвояваме текущата стойност на **`f1`**.
-   * На **`f1`** присвояваме стойността на временната променлива **`f_next`**.
-* Извън цикъла отпечатваме числото n-тото число на Фибоначи.
+* We declare a **variable `n`**, which will hold the integer value received from the console input.
+* We create the variables **`f0`** and **`f1`**, to which we assign the value to **1**, since this is the start of Fibonacci's sequence.
+* We create a **`for`** loop starting from 0 to **final value `n - 1`**.
+* In the **body of the loop:**
+   * We create a **temporary** variable **`f_next`**, to which we assign the next number in the Fibonacci sequence.
+   * To **`f0`** we assign the current value of **`f1`**.
+   * To **`f1`** we assign the value of the temporary variable **`f_next`**.
+* Out of the loop we print the n-th number of Fibonacci.
 
-Примерна имплементация:
+Example implementation:
 
 ![](/assets/chapter-7-1-images/12.Fibonacci-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#12](https://judge.softuni.org/Contests/Practice/Index/1057#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#12](https://judge.softuni.org/Contests/Practice/Index/1057#12).
 
 
-### Задача: пирамида от числа
+### Problem: Numbers Pyramid
 
-Да се отпечатат **числата 1 … n в пирамида** като в примерите по долу. На първия ред печатаме едно число, на втория ред печатаме две числа, на третия ред печатаме три числа и т.н. докато числата свършат. На последния ред печатаме толкова числа, колкото останат докато стигнем до **n**.
+Print the **numbers 1 … n in a pyramid** as per the below example. On the first row, we print one number, at the second we print two, at the third, we print three, and so on, until the numbers are over. On the last line, we print as many numbers as we get until we get to **n**.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход |Изход                 |Вход |Изход          |Вход      |Изход                         |
+|Input|Output                |Input|Output         |Input     |Output                        |
 |-----|----------------------|-----|---------------|----------|------------------------------|
 |7    |1<br>2 3<br>4 5 6<br>7|5    |1<br>2 3<br>4 5|10        |1<br>2 3<br>4 5 6<br>7 8 9 10 |
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем да решим задачата с **два вложени цикъла** (по редове и колони) с печатане в тях и излизане при достигане на последното число. Ето идеята, разписана по-подробно:
+We can solve the problem with **two nested loops** (by rows and columns) with printing in them and leaving when the last number is reached. Here is the idea, written in more detail:
 
-* Създаваме променлива **`n`**, на която присвояваме целочислена стойност, прочетена от конзолата.
-* Създаваме променлива **`num`** с начална стойност 1. Тя ще пази броя на отпечатаните числа. При всяка итерация ще я **увеличаваме** с **1** и ще я принтираме.
-* Създаваме **външен** **`for`** цикъл, който ще отговаря за **редовете** в таблицата. Наименуваме променливата на цикъла **`row`** и ѝ задаваме начална стойност 1. За крайна стойност слагаме **`n + 1`**.
-* В тялото на цикъла създаваме **вътрешен** **`for`** цикъл, който ще отговаря за **колоните** в таблицата. Наименуваме променливата на цикъла **`col`** и ѝ задаваме начална стойност 1. За условие слагаме **`row + 1`** (**`row`** = брой цифри на ред).
-* В тялото на вложения цикъл:
-   * Проверяваме дали **`col > 1`**, ако да – принтираме разстояние. Ако не направим тази проверка, а директно принтираме разстоянието, ще имаме ненужно такова в началото на всеки ред.
-   * **Отпечатваме** числото **`num`** в текущата клетка на таблицата и го **увеличаваме с 1**.
-   * Правим проверка за **`num > n`**. Ако **`num`** е по-голямо от **`n`**, **прекъсваме** въртенето на **вътрешния цикъл**.
-* Отпечатваме **празен ред**, за да преминем на следващия.
-* Отново проверяваме дали **`num > n`**. Ако е по-голямо, **прекъсваме** изпълнението на **програмата ни** чрез **`break`**. 
+* We declare a variable **`n`**, to which we assign the integer value, received from the console input.
+* We declare a variable **`num`** with an initial value of 1. It will hold the count of printed numbers. At each iteration, we will **increment** it by **1** and will add it to the current row.
+* We create an **outer** **`for`** loop, which will be responsible for the **rows** in the table. The loop variable will be named **`row`** and we assign it an initial value of 1. For condition, we set **`n + 1`**.
+* In the body of the loop, we create an **inner** **`for`** loop, which will be responsible for the **columns** in the table. We name the variable **`col`** and assign it an initial value of 1. For condition we set **`row + 1`** (**`row`** = number of digits per line).
+* In the body of the nested loop:
+   * We check whether **`col > 1`**, if true we print space. If we do not make this check and instead print the space every time, each resulting line will start with a space.
+   * We **print** the number **`num`**  in the current cell of the table and **increment it by 1**.
+   * We check if **`num > n`**. If the **`num`** is greater than **`n`**, we **break** the **inner loop**.
+* We print **empty line**, to move on to the next.
+* Again, we check if **`num > n`**. If it is greater, we **interrupt** the execution of **our program** with a **`break`** operator. 
 
-Ето и примерна имплементация:
+Here is an example implementation:
 
 ![](/assets/chapter-7-1-images/13.Pyramid-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#13](https://judge.softuni.org/Contests/Practice/Index/1057#13).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#13](https://judge.softuni.org/Contests/Practice/Index/1057#13).
 
 
-### Задача: таблица с числа
+### Problem: Numbers Table
 
-Да се отпечатат числата 1 … n в таблица като в примерите по-долу.
+Print the numbers 1 … n in a table as per the examples below:
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход |Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |--------|-----|-------|-----|
 |3|1 2 3<br>2 3 2<br>3 2 1|4|1 2 3 4<br>2 3 4 3<br>3 4 3 2<br>4 3 2 1|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем да решим задачата с **два вложени цикъла** и малко изчисления в тях:
+We can solve the problem by using **two nested loops** and some simple calculations in them:
 
-* Четем от конзолата размера на таблицата в целочислена променлива **`n`**.
-* Създаваме **`for`** цикъл, който ще отговаря за редовете в таблицата. Наименуваме променливата на цикъла **`row`** и ѝ задаваме начална **стойност 0**. За крайна стойност слагаме **`n`**. Размерът на стъпката е 1.
-* В **тялото на цикъла** създаваме вложен **`for`** цикъл, който ще отговаря за колоните в таблицата. Наименуваме променливата на цикъла **`col`** и ѝ задаваме начална **стойност 0**. За крайна стойност слагаме **`n`**. Размерът на стъпката е 1.
-* В **тялото на вложения цикъл**:
-   * Създаваме променлива **`num`**, на която присвояваме резултата от **текущият ред + текущата колона + 1** (+1, тъй като започваме броенето от 0).
-   * Правим проверка за **`num > n`**. Ако **`num`** е **по-голямо** от **`n`**, присвояваме нова стойност на **`num`** равна на **два пъти **`n`** - текущата стойност за **`num`**. Това правим с цел да не превишаваме **`n`** в никоя от клетките на таблицата.
-    * Отпечатваме числото от текущата клетка на таблицата.
-* Отпечатваме **празен ред** във външния цикъл, за да преминем на следващия ред.
+* We take the size of the table from the integer value of the variable **`n`**, which is received from the console input.
+* We create a **`for`** loop, that will be responsible for the rows of the table. We name the loop variable **`row`** and assign it an initial **value of 0**. For condition, we set **`n`**. The size of the step is 1.
+* In **the body of the loop** we create a nested **`for`** loop, that will be responsible for the columns in the table. We name the loop variable **`col`** and assign it an initial **value of 0**. For condition, we set **`n`**. The size of the stride is set to 1.
+* In **the body of the nested loop**:
+   * We create a variable **`num`**, to which we assign the result of **the current row + the current column + 1** (+1, is needed since we count from 0).
+   * We check whether **`num > n`**. If **`num`** is **greater** than **`n`**, we assign **`num`** a new value equal to **two times**`n`** - the current value of **`num`**. We do this in order not to exceed **`n`** in any of the cells of the table.
+    * We print the number fro the current table cell.
+* We print **empty line** in the outer loop, to move on to the next line.
 
-Ето и примерна имплементация на описаната идея:
+Here is an example implementation:
 
 ![](/assets/chapter-7-1-images/14.Table-with-numbers-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1057#14](https://judge.softuni.org/Contests/Practice/Index/1057#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#14](https://judge.softuni.org/Contests/Practice/Index/1057#14).
 
 
-## Какво научихме от тази глава?
+## What have we learned in this chapter?
 
-Можем да използваме **`for`** цикли със **стъпка**:
+We can use **`for`** loops with a **stride**:
 
 ```python
 for i in range(1, n + 1, 3):
     print(i)
 ```
 
-Циклите **`while`** се повтарят докато е в сила дадено **условие**:
+The **`while`** loop is repeated while a condition **is True**:
 
 ```python
 num = 1
@@ -573,7 +573,7 @@ while num <= n:
    num += 1
 ```
 
-Ако се наложи да **прекъснем** изпълнението на цикъл, го правим с оператора **`break`**:
+If we have to **interrupt** the loop execution, we use the **`break`** operator:
 
 ```python
 n = 0
@@ -585,7 +585,7 @@ while True:
 print("Even number entered: {}".format(n))
 ```
 
-Вече знаем как да прихващаме **грешки** по време на изпълнението на програмата ни:
+We already know how to catch **errors** during the execution of our program:
 
 ```python
 try:
