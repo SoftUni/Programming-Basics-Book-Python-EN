@@ -13,6 +13,7 @@ In the previous chapter we learned how to run a command block **more than once**
 
 Let’s solve a couple of problems with loops in SoftUni’s exams.
 
+
 ## Problem: histogram
 	
 We’re given **n-count integers** in range [**1 … 1000**]. A percent of them, **p1**, are under 200, __p2__ percent are between 200 and 399, **p3** percent are between 400 and 599, **p4** percent are between 600 and 799, and the remaining **p5** percent begin at 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
@@ -233,6 +234,7 @@ More about ternary operators: [https://book.pythontips.com/en/latest/ternary_ope
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
 
+
 ## Problem: Returning to the past
 
 Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** will **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including it**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the taken year]**.
@@ -387,19 +389,19 @@ Example:
 
 If the check **`day % 3 == 0`** returns **`true`**, there'll also be a check whether the count of untreated patients is higher than the treated's count: **`untreated_patients > treated_patients`**. If the result is again **`true`**, then the count of doctors (**`count_of_doctors`**) will increase.
 
-След това проверяваме броя на пациентите за деня (**`current_patients`**) дали е по-голям от броя на докторите (**`count_of_doctors`**). Ако броят на пациентите е **по-голям**:
- - Увеличаваме стойността на променливата **`treated_patients`** с броя на докторите (**`count_of_doctors`**).
- - Увеличаваме стойността на променливата **`untreated_patients`** с броя на останалите пациенти, който изчисляваме, като от всички пациенти извадим броя на докторите (**`current_patients - count_of_doctors`**).
+After that we check whether the patients' count for the current day (**`current_patients`**) is higher than the doctors' count (**`count_of_doctors`**). If the patients' count is **higher**:
+ - We increase the value of the variable **`treated_patients`** with the doctors' count (**`count_of_doctors`**).
+ - We increase the value of the variable **`untreated_patients`** with the count of patients left, which we calculate by subtracting the doctors' count from the patients' count (**`current_patients - count_of_doctors`**).
  
-Ако броят на пациентите **не е по-голям**, увеличаваме само променливата **`treated_patients`** с броя на пациентите за деня (**`current_patients`**):
+If the patients' count is **lower**, we increase only the variable **`treated_patients`** with the current day's count of patients (**`current_patients`**):
 
 ![](/assets/chapter-5-2-images/04.Hospital-02.png)
 
-Накрая трябва само да отпечатаме броя на излекуваните и броя на неизлекуваните пациенти.
+At the end we only have to print the count of treated and untreated patients.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1054#3](https://judge.softuni.org/Contests/Practice/Index/1054#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#3](https://judge.softuni.org/Contests/Practice/Index/1054#3).
 
 
 ## Задача: деление без остатък
