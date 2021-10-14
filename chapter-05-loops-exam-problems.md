@@ -404,17 +404,17 @@ At the end we only have to print the count of treated and untreated patients.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#3](https://judge.softuni.org/Contests/Practice/Index/1054#3).
 
 
-## Задача: деление без остатък
+## Problem: division without remainder
 
-Дадени са **n цели числа** в интервала [**1 … 1000**]. От тях някакъв **процент p1 се делят без остатък на 2**, **процент p2** се **делят без остатък на 3**, **процент p3** се **делят без остатък на 4**. Да се напише програма, която изчислява и отпечатва процентите p1, p2 и p3.
-**Пример:** имаме **n = 10** числа: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. Получаваме следното разпределение и визуализация:
+We're given **n integers** in range [**1 … 1000**]. A percentage of them, **percent p1, are divided by 2 without remainder**, **percent p2** are **divided by 3 without remainder**, **percent p3** are **divided by 4 without remainder**. Write a program that calculates and prints the percentages p1, p2 and p3.
+**Example:** we have **n = 10** integers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Деление без остатък на:</strong></th>
-<th align="left"><strong>Числа</strong></th>
-<th align="left"><strong>Брой</strong></th>
-<th align="left"><strong>Процент</strong></th>
+<th align="left"><strong>Division without remainder by:</strong></th>
+<th align="left"><strong>Numbers</strong></th>
+<th align="left"><strong>Count</strong></th>
+<th align="left"><strong>Percentage</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -437,7 +437,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 <td valign="top">p3 = (5 / 10) * 100 = <strong>50.00%</strong></td>
 </tr>
 </tbody>
-</table>   
+</table>  
 
 ### Входни данни
 
