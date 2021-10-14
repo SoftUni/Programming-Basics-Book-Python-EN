@@ -1,33 +1,33 @@
-# Глава 11. Хитрости и хакове
+# Chapter 11. Tricks and Hacks
 
-В настоящата глава ще разгледаме някои хитрости, хакове и техники, които ще улеснят работата ни с езика **Python** в средата за разработка **PyCharm**. По-специално ще се запознаем:
+In the current chapter, we are going to see some tricks, hacks and techniques, which will make our work with **Python**  easier in the **PyCharm** IDE. In particular, we will see:
 
-* Как правилно да **форматираме код**.
-* С конвенции за **именуване на елементи от код**.
-* С някои **бързи клавиши** (keyboard shortcuts).
-* С някои **шаблони с код** (code snippets).
-* С техники за **дебъгване на код**.
+* How to properly **format our code**.
+* Conventions for **naming elements in the code**.
+* Some **keyboard shortcuts**.
+* Some **code snippets**.
+* Techniques to **debug our code**.
 
-## Форматиране на кода
+## Code Formatting
 
-Правилното форматиране на нашия код ще го направи **по-четим и разбираем**, в случай че се наложи някой друг да работи с него. Това е важно, защото в практиката ще е необходимо да работим в екип с други хора и е от голямо значение дали пишем кода си така, че колегите ни да могат **бързо да се ориентират** в него.
+The right formatting of our code will make it **easier to read and understand** in case someone else needs to work with it. This is important because in practice we will need to work in a team with other people and it is highly important to write our code in a way that our colleagues can **quickly understand** it.
 
-Има определени правила за правилно форматиране на кода, които събрани в едно се наричат **конвенции**. Конвенциите са група от правила, общоприети от програмистите на даден език, и се ползват масово. Тези конвенции помагат за изграждането на норми в дадени езици &ndash; как е най-добре да се пише и какви са **добрите практики**. Приема се, че ако един програмист ги спазва, то кодът му е лесно четим и разбираем.
+There are some defined rules for correct formatting of the code, which are collected in one place and are called **conventions**. The conventions are a group of rules, generally accepted by the programmers using a given language, which are massively used. These conventions help to build norms in given languages - what is the best way to write and what are the **good practices**. It is accepted that if a programmer follows them then his code is easy to read and understand.
 
-Езикът **Python** е създаден от огранизацията **Python Software Foundation** (PSF). Добрите практики за писане може да се различават между проектите, но общоприетите такива са дело на авторите на езика (основно Guido van Rossum). Трябва да знаете, че дори да не спазвате конвенциите, препоръчани от **PSF**, кодът ви ще работи (стига да е написан правилно), но просто няма да бъде лесно разбираем. Това, разбира се, не е фатално на основно ниво, но колкото по-бързо свикнете да пишете качествен код, толкова по-добре.
+The **Python** language is created by the organization **Python Software Foundation** (PSF). The good practices to write can be different in each project, but the most of the are done by the authors of the language (mostyly Guido van Rossum). You should know that, even if you do not follow the imposed conventions recommended by **PSF**, the code will **work** (as long as it is written correctly), but simply **will not be easy to understand**. Of course, this is not fatal on a base level, but the faster you get used to writing quality code, the better.
 
-Официалната **Python код конвенция** на PSF е публикувана в страницата **PEP 8 &ndash; Style Guide for Python Code**: [https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/). Важно е да се отбележи, че в примерите, които сме давали до сега и ще даваме занапред в тази книга, се ръководим основно от нея.
+The official **Python code convention** by PSF is publicated in the page **PEP 8 &ndash; Style Guide for Python Code**: [https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/). It is important to note that in the examples which we gave untill now and the ones that we will give in this book, are guided by it.
 
-За форматиране на кода от PSF се препоръчва всяко ниво на влагане да бъде **4 празни полета навътре** (или една табулация), както е в примера по-долу. **Езикът не позволява смесването на табулации и интервали**:
+For formatting the code, PSF recommends each inside level to be **4 spaces inside** (or one tab), as it is in the example bellow. **The language do not accept mixing tabs with spaces**:
 
 ```python
 if some_condition:
     print("Inside the if statement")
 ```
 
-Възможно е вместо 4, да се използват 2 интервала, но не се препоръчва.
+It is possible that instead of 4, to use 2 spaces, but it is not recommended.
  
-Ето как изглеждат две вложени конструкции. Всеки блок започва с 4 интервала навътре. Броят интервали в началото на всеки ред определя какво е нивото му на влагане: 
+Here is how two nested constructions look. Each block starts 4 intervals inside. The number of spaces in the beginning of each row indicates what is the indentation level:
 
 ```python
 if some_condition:
@@ -37,134 +37,134 @@ if some_condition:
     print("End of outer if statement")
 ```
 
-В **Python** форматирането на кода е от изключително важно значение за функционирането му. Код, който не е форматиран правилно, дава **грешка**.
+The formatting of the code in **Python** is extremely important in order for it to work. Code that is not formatted throws an **error**.
 
-Ето това е пример за **лошо форматиран код** спрямо общоприетите конвенции за писане на код на езика Python:
+This is an example for **badly formatted code** according to the accepted conventions for writing code in Python:
    
 ```python
 if some_condition:
 print("Inside the if statement")
 ```
 
-Когато бъде стартиран, кодът дава следната грешка и програмата спира работа:
+Once you run the code the following error is thrown and the program stops working:
   * `IndentationError: expected an indented block`
 
-Командата вътре в **`if`** конструкцията трябва да бъде **4 празни полета навътре (един таб)**. Веднага след ключовата дума **`if`** и преди условието на проверката се оставя **интервал**.
+The command inside **`if`** construction should be **4 spaces inside (or one tab)**. Right after the key word **`if`** and before the condition of the check you should wtite a **space**.
 
-Същото правило важи и за **`for` цикли и всякакви други вложени конструкции**. Ето още един пример:
+The same rule is applied for **`for` loops and the other nested constructions**. This is another example:
 
-**Правилно**:
-
-```python
-for i in range(5):
-    print(i)
-```
-
-**Грешно**:
-
-```python
-for  i  in    range(5):
-print( i )
-```
-
-За наше удобство има **бързи клавиши в PyCharm**, за които ще обясним по-късно в настоящата глава, но засега ни интересува една комбинация. Тя е за **форматиране на кода** в целия документ: [**CTRL + ALT + L**]. 
-
-Нека използваме **грешния пример** от преди малко:
-
-```python
-for  i  in    range(5):
-print( i )
-```
-
-Ако натиснем [**Ctrl + Alt + L**], което е нашата комбинация за форматиране на **целия документ**, ще получим код, форматиран според **общоприетите конвенции за Python**, който ще изглежда по следния начин:
+**Correct**:
 
 ```python
 for i in range(5):
     print(i)
 ```
 
-Тази комбинация може да ни помогне, ако попаднем на лошо форматиран код. Автоматичното форматиране обаче не влияе на именуването на нашите променливи (както и на други елементи на кода), за което ние трябва да се погрижим сами.
+**Wrong**:
 
-## Именуване на елементите на кода
+```python
+for  i  in    range(5):
+print( i )
+```
 
-В тази секция ще се фокусираме върху **общоприетите конвенции за именуване на проекти, файлове и променливи**, наложени от PSF.
+For our convenience, there are **keyboard shortcuts in PyCharm** which will be explained later in this chapter, but for now we can check one combination. It is used for **formatting the code** in the whole document: [**CTRL + ALT + L**]. 
 
-### Именуване на проекти и файлове
+Let's use the wrongly formatted example from earlier:
 
-**За именуване на проекти и файлове** се препоръчва описателно име, което подсказва **каква е ролята** на въпросния файл / проект и в същото време се препоръчва **`lowercase_with_underscores` конвенцията**. Tова е **конвенция за именуване** на елементи, при която всяка дума, включително първата, започва с **малка буква**, а отделните думи са съединени с долни черти (**`_`**), например **`expression_calculator`**. Допустимо е да именуваме проекти и по конвенцията **`PascalCase`** &ndash; всяка дума, включително и първата, започва с главна буква, а отделните думи са долепени &ndash; **`ExpressionCalculator`**. 
+```python
+for  i  in    range(5):
+print( i )
+```
 
-Пример: в този курс се започва с лекция на име **First steps in coding** и следователно едно примерно именуване на проекта за тази лекция може да бъде **`first_steps_in_coding`** или **`FirstStepsInCoding`**. Файловете в даден проект задължително трябва да спазват конвенцията **`lowercase_with_underscores`**. Ако вземем за пример първата задача от лекцията **First steps in coding**, тя се казва **Hello World** и следователно нашият файл в проекта ще се казва **`hello_world.py`**.
+If we press [**Shift + Alt + F**], which is our combination to format **the entire document**, we will get code formatted according to **generally accepted Python conventions** and it will look the following way:
 
-### Именуване на променливи
+```python
+for i in range(5):
+    print(i)
+```
 
-В програмирането променливите пазят някакви данни и за да е по-разбираем кодът, името на една променлива трябва **да подсказва нейното предназначение**. Ето и още няколко препоръки за имената на променливите:
+This key combination can help us if we work with a badly formatted code. However, automatic formatting does not affect the naming of our variables (as well as other elements in the code), which we have to take care of ourselves.
 
-* Името трябва да е **кратко и описателно** и да обяснява за какво служи дадената променлива.
-* Името трябва да се състои само от буквите **a-z**, **A-Z**, **цифрите 0-9**, както и **символа '\_'**.
-* В Python е прието променливите да спазват конвенцията **`lowercase_with_underscores`**.
-* Трябва да се внимава за главни и малки букви, тъй като Python прави разлика между тях. Например **`age`** и **`Age`** са различни променливи.
-* Имената на променливите **не могат да съвпадат със служебна дума** (keyword) от езика Python, например **`for`** е невалидно име на променлива.
+## Naming Code Elements
+
+In this section we will focus on **the accepted conventions for naming projects, files and variables**, defined by PSF.
+
+### Naming Projects and Files
+
+It is recommended to use a descriptive name **for naming projects and files**, which suggests **the role** of the respective file / project and at the same time the **`lowercase_with_underscores` convention** is also recommended. This is a **convention for naming** elements, in which each word, including the first one, starts with **a lowercase character** and each word after is connected with underscore (**`_`**), for example **`expression_calculator`**. It's acceptable to name projects using the **`PascalCase`** convention - each word, including the first one, starts with capital letter and the next are appended to each other - **`ExpressionCalculator`**.
+
+Example: this course starts with a **First steps in coding** lecture, therefore an exemplary name for the solution for this lecture can be **`first_steps_in_coding`** or **`FirstStepsInCoding`**. The files in a project should follow the **`lowercase_with_underscores`** convention. If we take for example the first problem in the **First steps in coding** lecture, it is called **Hello World**, therefore our file in the project will be called **`hello_world.py`**.
+
+### Naming Variables
+
+In programming variables keep data, and for the code to be more understandable, the name of a variable should **suggest its purpose**. Here are some recommendations for naming variables:
+
+* The name should be **short and descriptive** and to explain what the variable serves for.
+* The name should only contain the letters **a-z**, **A-Z**, **the numbers 0-9**, and **the symbol '\_'**.
+* It is accepted in Python for the variables to follow the **`lowercase_with_underscores`** convention.
+* You should be careful about uppercase and lowercase letters, because Python distinguishes them. For example, **`age`** and **`Age`** are different variables.
+* The names of the variables **cannot coincide with keywords** in the Python language, for example **`for`** is an invalid name for a variable.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Въпреки че използването на главни букви в имената на променливите е разрешено, <strong>в Python това не се препоръчва</strong> и се счита за лош стил на именуване.</td>
+<td>Although using capital letters in the names of variables is allowed, <strong>in Python it is not recommended</strong> and is considered a bad style of naming.</td>
 </tr></table>
 
-Ето няколко примера за **добре именувани** променливи:
+Here are some examples for **well named** variables:
 
 * **`first_name`**
 * **`age`**
 * **`start_index`**
 * **`last_negative_number_index`**
 
-Ето няколко примера за **лошо именувани променливи**, макар и имената да са коректни от гледна точка на интерпретатора на Python:
+Here are some examples for **badly named variables**, even though the names are correct according to the Python compiler:
 
-* **`firstName`** (именувана е по друга конвенция, неприета в Python).
-* **`AGE`** (изписана е с главни букви).
-* **`Start_Index`** (съдържа главни букви).
-* **`lastNegativeNumber_Index`** (няма '\_' около всяка дума).
+* **`firstName`** (named after another convention, which is not accepted in Python).
+* **`AGE`** (written in capital letters).
+* **`Start_Index`** (contaions capital letters).
+* **`lastNegativeNumber_Index`** (missing '\_' before each word).
 
-Първоначално всички тези правила може да ви се струват безсмислени и ненужни, но с течение на времето и натрупването на опит ще видите нуждата от норми за писане на качествен код, за да може да се работи по-лесно и по-бързо в екип. Ще разберете, че е изключително досадна работата с код, който е написан без да се спазват никакви правила за качествен код.
+At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for conventions for writing quality code in order to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.
 
-## Бързи клавиши в PyCharm
+## Shortcuts in in PyCharm
 
-В предната секция споменахме за една от комбинациите, които се отнасят за форматиране на код: [**Ctrl + Alt + L**], която беше за **форматиране на целия код в даден файл**. Тези комбинации се наричат **бързи клавиши** и сега ще дадем по-подробна информация за тях.
+In the previous section, we mentioned some of the combinations, that are used for formatting code: [**Ctrl + Alt + L**] is used for **formatting the whole code in a file**. These combinations are called **shortcuts** and now we will give more thorough information about them.
 
-Бързи клавиши са **комбинации**, които ни предоставят възможността да извършваме някои действия **по-лесно и по-бързо**, като всяка среда за разработка на софтуер си има своите бързи клавиши, въпреки че повечето се повтарят. Сега ще разгледаме някои от **бързите клавиши** в **PyCharm**.
+Shortcuts are **combinations**, that give us the ability to perform some actions **easier and faster**, and each software development environment has its own shortcuts, although most are repetitive. We will now look at some of the **shortcuts** in **PyCharm**.
 
-| Комбинация | Действие |
+| Combination | Action |
 | --- | --- |
-|  [**CTRL + F**] | **Отваря търсачка**, с която можем да **търсим в нашия код**. |
-|  [**CTRL + /**] | **Закоментира** част от кода. **Разкоментира код**, който е вече закоментиран. |
-|  [**CTRL + Z**] | **Връща една промяна назад** (т.нар. Undo). |
-|  [**CTRL + SHIFT + Z**] | Има **противоположно действие** на [**CTRL + Z**] (т.нар. Redo). |
-|  [**CTRL + ALT + L**] | **Форматира кода** според конвенциите по подразбиране. |
-|  [**CTRL + Backspace**] | **Изтрива** думата вляво от курсора. |
-|  [**CTRL + Del**] | **Изтрива** думата вдясно от курсора. |
-|  [**CTRL + S**] | **Запазва** всички файлове в проекта. |
+|  [**CTRL + F**] | The conbination **opens the search window**, by which we can **search in our code**. |
+|  [**CTRL + /**] | **Comments** part of our code and accordingly **removes the comment** which is already commented. |
+|  [**CTRL + Z**] | **Brings back one change** (so-called Undo). |
+|  [**CTRL + SHIFT + Z**] | The combination is opposite of [**CTRL + Z**] (the so-called Redo). |
+|  [**CTRL + ALT + L**] | **Formats the code** according the default conventions. |
+|  [**CTRL + Backspace**] | **Deletes** the word to the left of the cursor. |
+|  [**CTRL + Del**] | **Deletes** the word to the right of the cursor. |
+|  [**CTRL + S**] | **Saves** all files in the project. |
 
-Повече за **бързите клавиши в PyCharm** може да намерите в сайта на JetBrains: [https://www.jetbrains.com/help/pycharm/mastering-keyboard-shortcuts.html](https://www.jetbrains.com/help/pycharm/mastering-keyboard-shortcuts.html).
+More about the **shortcuts in PyCharm** can be found in the website of JetBrains: [https://www.jetbrains.com/help/pycharm/mastering-keyboard-shortcuts.html](https://www.jetbrains.com/help/pycharm/mastering-keyboard-shortcuts.html).
 
-## Шаблони с код (code snippets)
+## Code Snippets
 
-В PyCharm съществуват т.нар. **шаблони с код** (live templates), при изписването на които се изписва по шаблон някакъв блок с код. Примерно, при изписването на кратък код "**`iter`**" и натискане на **[Tab]** се генерира кодът **`for ... in ...:`** в тялото на нашата програма, на мястото на краткия код. Това се нарича “разгъване на шаблон за кратък код”. На фигурата по-долу е показано действието на шаблона "**`iter`**":
+In **PyCharm** there are the so-called **code snippets** (code snippets), which write a block of code by using a code template. For example, by writing the short code "**`iter`**" and then pressing **[Tab]** code **`for ... in ...:`** is generated in the body of our program, in the place of the short code. This is called “unfolding a code snippet”. On the figure below you can see the "**`iter`**" snippet in action:
 
 ![](/assets/chapter-11-images/01.Code-snippet-01.png)
 
-### Да си направим собствен шаблон за код
+### Creating Your Own Code Snippet
 
-В тази секция ще покажем как сами да си **направим собствен шаблон**. Ще разгледаме **как се прави live template** за **два вложени цикъла**. Като за начало ще си създадем нов празен проект и ще отидем на [**File**] -> [**Settings**], както е показано на снимката:
+In this section we are going to show you how to **make your own code snippet**. We will see **how to make live template** for **two nested loops**. In order to begin we must create a new empty project and go to [**File**] -> [**Settings**], as shown on the picture:
 
 ![](/assets/chapter-11-images/01.Code-snippet-02.png) 
 
-В отворилия се прозорец трябва да изберем [**Editor**] -> [**Live Templates**], а от появилите се секции трябва да изберем стрелката **преди** отметката **Python**. Там се намират всички съществуващи шаблони за езика **Python**:
+In the window that we opened we must choose [**Editor**] -> [**Live Templates**], and from the section we should choose the arrow **before** the checkbox for **Python**. This is where all the existing snippets for **Python** are located:
 
 ![](/assets/chapter-11-images/01.Code-snippet-03.png) 
 
-Избираме някой snippet, например **`iter`** и го разглеждаме:
+We choose a snippet, for example **`iter`**, we explore it:
 
 ![](/assets/chapter-11-images/01.Code-snippet-04.png) 
 
-Виждаме доста непознати неща, но няма страшно, по-нататък ще се запознаем и с тях. Засега искаме да създадем собствен шаблон. За целта избираме бутона Add (зеленият **+** вдясно). От появилия се списък избираме [**1. Live Template**]. В долната част на прозореца, на **Abbreviation** пишем краткото име, с което ще извикваме шаблона (например **`ff`**, от **`for, for`**), за **Description** даваме полезно описание, а при **Template Text** въвеждаме следното:
+We see many things we haven't seen yet, but don't worry, we will become acquainted with them later. For now we want to create our own snippet. In order to do so we choose the button Add (the green **+** on the right). From the list we choose [**1. Live Template**]. In the bottom part of the window, on the place of **Abbreviation**, we should write a short name, which will be used to call the snippet (for example **`ff`**, for **`for, for`**), for **Description** we give a usefull description and for **Template Text** we input the following:
 
 ```
 for $I$ in $LIST1$:
@@ -174,156 +174,156 @@ for $I$ in $LIST1$:
 
 ![](/assets/chapter-11-images/01.Code-snippet-05.png) 
 
-Получаваме предупреждение, че трябва да изберем контекст, т.е. в кои случаи да се показва нашият шаблон (червеният текст под Template text). Избираме **Define** и от появилото се меню слагаме отметка пред **Python**:
+We receive a warning to choose context, or the cases our snippet will show (the red text under Template text). We choose **Define** and from the appered menu we check **Python**.
 
 ![](/assets/chapter-11-images/01.Code-snippet-06.png) 
 
-Вече когато напишем **`ff`** в PyCharm, **нашият нов live template** се появява:
+Now, if we write **`ff`** in PyCharm, our **new live template** appears:
 
 ![](/assets/chapter-11-images/01.Code-snippet-07.png) 
 
-## Техники за дебъгване на кода
+## Code Debugging Techniques
 
-Дебъгването играе важна роля в процеса на създаване на софтуер, която ни позволява **постъпково да проследим изпълнението** на нашата програма. С помощта на тази техника можем да **следим стойностите на локалните променливи**, тъй като те се променят по време на изпълнение на програмата, и да **отстраним** евентуални **грешки** (бъгове). Процесът на дебъгване включва:
+Debugging plays an important role in the process of creating software, which is to allow us to **follow the implementation of our program step by step**. With this technique, we can **follow the values of the local variables** because they are changing during the execution of the program and to **remove** possible **errors** (bugs). The process of debugging includes:
 
-* **Забелязване** на проблемите (бъговете).
-* **Намиране** на кода, който причинява проблемите.
-* **Коригиране** на кода, причиняващ проблемите, така че програмата да работи правилно.
-* **Тестване**, за да се убедим, че програмата работи правилно след нанесените корекции.
+* **Finding** the problems (bugs).
+* **Locating** the code, which causes the problems.
+* **Correcting** the code, which causes the problems so that the program works correctly.
+* **Testing**, to make sure that the program works correctly after the corrections we have made.
 
-**PyCharm** ни предоставя **вграден дебъгер** (debugger), чрез който можем да поставяме **точки на прекъсване** (или breakpoints), на избрани от нас места. При среща на **стопер** (breakpoint), програмата **спира изпълнението** си и позволява **постъпково изпълнение** на останалите редове от кода. Дебъгването ни дава възможност да **вникнем в детайлите на програмата** и да видим къде точно възникват грешките и каква е причината за това.
+**PyCharm**  gives us **a built-in debugger**,  thanks to which we can place **breakpoints**, at places we have chosen.  When it reaches a **breakpoint**,  the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
 
-За да демонстрираме работа с дебъгера ще използваме следната програма:
+In order to demonstrate how to use the debugger, we will use the following program:
 
 ```python
 for i in range(1, 100):
     print(i)
 ```
 
-Ще сложим **стопер** (breakpoint) на функцията **`print(…)`**. За целта трябва да преместим курсора на реда, който печата на конзолата, и да натиснем [**CTRL + F8**]. Появява се **стопер**, където програмата ще **спре** изпълнението си:
+We will place a **breakpoint** on the function **`print(…)`**. For this, we will need to move our cursor to the line, which prints on the console, and press [**CTRL + F8**]. A **breakpoint**, where the program will  **stop** its execution:
 
 ![](/assets/chapter-11-images/02.Debugger-01.png) 
 
-За да стартираме **програмата в режим на дебъгване**, избираме [**Run**] -> [**Debug...**] или натискаме [**Alt + Shift + F9**]:
+In order to start  **the program in debug mode**, we choose [**Run**] -> [**Debug...**] or press [**Alt + Shift + F9**]:
 
 ![](/assets/chapter-11-images/02.Debugger-02.png) 
 
-След стартиране на програмата виждаме, че тя **спира изпълнението си** на ред 2, където сложихме стопера (breakpoint). Кодът на текущия ред се **оцветява с жълт цвят** и можем да го **изпълняваме постъпково**. За да преминем на **следващ ред** използваме клавиш [**F8**]. **Забелязваме, че кодът на текущия ред все още не е изпълнен**. **Изпълнява се, когато преминем на следващия ред**:
+After starting the program, we can see that it **stops executing** at line 2, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**. In order to go to **the next line** e use the key [**F8**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
 
 ![Debugger](/assets/chapter-11-images/02.Debugger-03.png) 
 
-От прозореца **Debugger** можем да наблюдаваме **промените по локалните променливи**. Той се отваря, когато започнем да дебъгваме. За да отворите прозореца ръчно, трябва да изберем [**View**] -> [**Tool Windows**] -> [**Debug**]:
+From the **Debugger** window, we can observe **the changes in the local variables**. The window opens when we start debugging. To open it manually , we should choose [**View**] -> [**Tool Windows**] -> [**Debug**]:
 
 ![Debugger](/assets/chapter-11-images/02.Debugger-04.png) 
 
-## Справочник с хитрости
+## A guide to tricks
 
-В тази секция ще припомним накратко **хитрости и техники** от програмирането с езика **Python**, разглеждани вече в тази книга, които ще са ви много полезни, ако ходите на изпит по програмиране за начинаещи:
+In this section, we will briefly show **tricks and techniques** of the programming with the **Python** language, some of which are already mentioned in this book, which will be very useful, if you take a programming exam for beginners:
 
-### Вкарване на променливи в стринг (string)
+### Inserting Variable Values in Strings
 
 ```python
 text = "some text"
 print(f"{text}")
-# Tова ще отпечата на конзолата "some text"
+# This will print "some text" on the console
 ```
 
-В случая използваме **placeholder** &ndash; **`{x}`**, където **x** е **името на променливата**, която искаме да покажем. Възможно е да използваме повече от една променлива, примерно:
+In this case we are using a **placeholder** – `{x}`, where **x** is **the name of variable** that we want to show. It's possible to use more than one variable, for example:
 
 ```python
 text = "some text"
 number = 5
 print(f"{text} {number} {text}")
-# Tова ще отпечата "some text 5 some text"
+# This will print "some text 5 some text"
 ```
 
-В този пример забелязваме, че можем да подаваме **не само текстови променливи**. Също така можем да използваме дадена променлива **няколко пъти**.
+In this example we can see that we can insert **not only text variables**. We can also use a given variable **several times**.
 
-### Закръгляне на числа
+### Rounding Numbers
 
-При нужда от закръгляне можем да използваме един от следните методи:
+In case we need to round numbers we can use one of the following methods:
 
- * **`round(num, digits)`** &ndash; приема два параметър &ndash; първият е **числото, което искаме да закръглим**, а вторият &ndash; числото, което определя **с колко символа след десетичния знак да се извърши закръглянето** (това число винаги трябва да бъде цяло число). Закръглянето се извършва по основното математическо правило &ndash; ако десетичната част е по-малка 5, числото се закръгля надолу и обратно: ако е по-голяма от 5 &ndash; нагоре:
+ * **`round(num, digits)`** &ndash; accepts two arguments &ndash; the first one is **the number to be rounded**, and the second &ndash; the number **of decimals to use when rounding the number** (this number should always be integer). Rounding is performed according to the basic rule of rounding - if the decimal part is less than 5, rounding is down and vice versa, if it is greater than 5 - up:
  
 ```python
 first_number = 5.431
 print(round(first_number, 2))
-# Това ще отпечата на конзолата "5.43"
+# This will print "5.43"
 
 second_number = 5.539
 print(round(second_number, 2))
-# Това ще отпечата на конзолата "5.54"
+# This will print "5.54" on the console
 ```
-
- * **`math.floor(…)`** &ndash; в случай, че искаме закръглянето да е винаги **надолу**. Важно е да отбележим, че тази функция закръгля до цяло число. Например, ако имаме числото 5.99 и използваме **`math.floor(5.99)`**, ще получим числото **5**:
+in case we want the rounding always to be **down to the previous integer**.
+ * **`math.floor(…)`** &ndash; in case we want the rounding always to be **down**. It is important to pay attention that this function is rounding the number to integer. For example, if we have the number 5.99 and use **`math.floor(5.99)`**, we get the number **5**:
  
 ```python
 number_to_floor = 5.99
 print(math.floor(number_to_floor))
-# Tова ще отпечата на конзолата "5"
+# This will print "5" on the console
 ```
 
- * **`math.ceil(…)`** &ndash; в случай, че искаме закръглянето да е винаги **нагоре**. Тази функция също закръгля до цяло число. Например, ако имаме числото 5.11 и използваме **`math.ceil(5.11)`**, ще получим числото **6**:
+ * **`math.ceil(…)`** &ndash; in case we want the rounding always to be **up**. This function also is rounding the number to integer. For example, if we have the number 5.11 and use **`math.ceil(5.11)`**, we get the number **6**:
 
 ```python
 number_to_ceil = 5.11
 print(math.ceil(number_to_ceil))
-# Tова ще отпечата на конзолата "6"
+# This will print "6" on the console
 ```
 
- * **`math.trunc(…)`** &ndash; в случай, че искаме да **премахнем дробната част**. Например, ако имаме числото 2.63 и използваме **`math.trunc(2.63)`**, ще получим **2**:
+ * **`math.trunc(…)`** &ndash; in case we want to **remove the fractional part**. For example, if we have the number 2.63 and use **`math.trunc(2.63)`**, we will get the number **2**:
 
 ```python
 number_to_truncate = 2.63
 print(math.trunc(number_to_truncate))
-# Tова ще отпечата на конзолата "2"
+# This will print "2" on the console
 ```
 
-### Закръгляне чрез placeholder
+### Rounding with a Placeholder
 
 ```python
 number = 5.432424
 print(f"{number:.2f}")
 ```
 
-В случая след числото добавяме **`:.2f`**, което ще ограничи числото до 2 цифри след десетичния знак. Поведението ще е като на функцията **`round(…)`**. Трябва да имаме предвид, че числото преди буквата **`f`** означава до колко цифри след десетичния знак да е закръглено числото (т.е. може да е примерно **`3f`** или **`5f`**). Не забравяйте и **точката преди числото** &ndash; тя е задължителна.
+In this case after the number we add **`:.2f`**, which will limit the number to 2 digits after the decimal point and will work like **`round(…)`**. You should keep in mind that the number after the letter **`f`** means to how many digits after the decimal point the number is rounded (i.e. it can be **`3f`** or **`5f`**). Don't forget the **the dot before the number** - it is necessary.
 
-### Как се пише условна конструкция?
+### How to Write a Conditional Statement?
 
-Условната **`if` конструкция** се състои от следните елементи:
+The conditional **`if` statement** contains the following elements:
 
-* Ключова дума **`if`**.
-* **Булев израз** (условие).
-* **Тяло** на условната конструкция.
-* Незадължително: **`else` клауза**.
+* Keyword **`if`**
+* **A Boolean expression** (condition).
+* **Body** of the conditonal construction.
+* Optional: **`else` clause**.
 
 ```python
-if условие:
-    # Тяло
+if condition:
+    # Body
 else:
-    # Тяло
+    # Body
 ```
 
-За улеснение може да използваме live template за **`if` конструкция**:
+To make it easier we can use a live template for an **`if` construction**:
  * **`if` + [Tab]**
 
-### Как се пише for цикъл?
+### How to Write a 'For' Loop?
 
-За **`for` цикъл** ни трябват няколко неща:
+For a **`for` loop** we need a couple of things:
 
-* **Инициализационен блок**, в който се декларира променливата брояч (**`i`**).
-* **Граници за повторение**: **`range(5)`** са числата от **`0`** до **`4`** включително.
-* **Тяло** на цикъла.
+* **Initializing block**, in which the counter variable is declared (**`let i`**).
+* **Condition for repetition**: **`range(5)`** are the numbers from **`0`** to **`4`** included.
+* **Body** of the loop.
 
 ```python
 for i in range(5):
-    # Тяло
+    # Body
 ```
 
-За улеснение може да използваме live template за **`for` цикъл**:
+To be easier to write it, we can use live template for the **`for` loop**:
  * **`for` + [Tab]**
- * или **`iter` + [Tab]**
+ * or **`iter` + [Tab]**
 
-## Какво научихме от тази глава?
+## What We Learned in This Chapter?
 
-В **настоящата** глава се запознахме как **правилно** да **форматираме** и именуваме елементите на нашия **код**, някои **бързи клавиши** (shortcuts) за работа в PyCharm, **шаблони с код** (Live Templates) и разгледахме как се **дебъгва код**.
+In the current chapter we learned how to **correctly** **format** and name the elements of our code, some **shortcuts** for work in PyCharm, some **code snippets** (Live Templates) and how to **debug code**.
