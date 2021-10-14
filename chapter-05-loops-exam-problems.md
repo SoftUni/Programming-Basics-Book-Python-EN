@@ -31,11 +31,11 @@ We’re given **n-count integers** in range [**1 … 1000**]. A percent of them,
 
 ### Input
 
-On the first line of the input is an integer **n** ( 1 <= **n** <= 1000), which stands for the number of lines with numbers, which will be given to us. On the next **n lines** there is **one integer** in range [**1 … 1000**] – the numbers that the histogram will be based on.
+On the first line of the input is an integer **n** ( 1 <= **n** <= 1000 ), which stands for the number of lines with numbers, which will be given to us. On the next **n lines** there is **one integer** in range [**1 … 1000**] – the numbers that the histogram will be based on.
 
 ### Output
 
-In the console, print a histogram of **5 lines**, each of them containing a number between 0% and 100%, formatted with two-digit precision after the decimal point(for example, 25.00%, 66.67%, 57.14%).
+In the console, print a histogram of **5 lines**, each of them containing a number between 0% and 100%, formatted with two-digit precision after the decimal point (for example, 25.00%, 66.67%, 57.14%).
 
 ### Example input & output
 
@@ -114,7 +114,7 @@ After we’ve declared the needed variables, we can move on to reading the numbe
 
 #### Processing the input data
   
-In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to it’s respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers(**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
+In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to its respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers (**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
 
 ![](/assets/chapter-5-2-images/01.Histogram-03.png)
 
@@ -136,7 +136,7 @@ In this case, **`n = 3`**.
 The cycle consists of:
    -   	**`i = 0`** - we read the number 1, which is lower than 200 and belongs to the first group, thus increasing the counter of the number (**`cnt_p1`**) by 1.
    -   	**`i = 1`** – we read the number 2, which, again, belongs to the first group and we increase the group’s counter(**`cnt_p1`**) by 1.
-   -   	**`i = 2`** – we read the number 999, which belongs to the last group(**`p5`**), because it’s bigger than 800, and we increase it’s group counter (**`cnt_p5`**) by 1.
+   -   	**`i = 2`** – we read the number 999, which belongs to the last group(**`p5`**), because it’s bigger than 800, and we increase its group counter (**`cnt_p5`**) by 1.
    
 After reading the numbers, we have two of them in the first group, and we have only one in the last group. There are **no numbers** in the other groups. After we apply the aforementioned formula, we calculate the percentage of each group. It doesn’t matter whether we multiply by **100** or **100.0** – we’ll get the same result: the **first** group has 66.67%, and the **last** group – 33.33%. We have to mention that this is valid only for **`Python 3`**.
 
@@ -167,7 +167,7 @@ Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** 
 
 Print a single line in the console:
 
-  * If Lily's money are enough:
+  * If Lily's money is enough:
     * "**Yes! {N}**" – where **N** are the remaining money after the purchase
   * If they're not:
     * "**No! {M}**" – where **M** is the amount of money **lacking**
@@ -206,7 +206,7 @@ Print a single line in the console:
 
 Solving this problem, like the previous one, again can be divided in three parts – **reading** the input data, **processing** it and **outputting** a result.
 
-As we already know, in most of the scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpretator decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price (**`present_price`**) in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this problem. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
+As we already know, in most of the scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpreter decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price (**`present_price`**) in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this problem. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
@@ -214,7 +214,7 @@ In order to solve the problem, we'll need a couple of helper variables – for *
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-02.png)
  
-With a **`for` loop** we go through each of Lily's birthdays. When the loop variable is an **even number**, it means that Lily has **received money** and we add them to her savings. At the same time we **subtract 1 USD** - the money taken by her brother. After that we **increase** the value of the variable **`money_for_birthday`** , meaning we increase the sum with 10 for the next time she receives money for her birthday. Contrary, when the loop variable is an **odd number**, we increase the **toys**' count. Checking whether it's even or odd happens with a **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, and when the remainder's 1 - it's odd:
+With a **`for` loop** we go through each of Lily's birthdays. When the loop variable is an **even number**, it means that Lily has **received money** and we add them to her savings. At the same time, we **subtract 1 USD** - the money taken by her brother. After that we **increase** the value of the variable **`money_for_birthday`**, meaning we increase the sum with 10 for the next time she receives money for her birthday. Contrary, when the loop variable is an **odd number**, we increase the **toys**' count. Checking whether it's even or odd happens with a **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, and when the remainder's 1 - it's odd:
  
 ![](/assets/chapter-5-2-images/02.Smart-lilly-03.png)
  
@@ -226,7 +226,7 @@ At the end we print the results, taking in account the required formatting, mean
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
-In some programming languages there's a construction called **conditional operator (`?:`)** (also known as ternary operator), as it's shorter to write. It has the following syntax in Python: **`operand1 if operand2 else operand3`**. The second operand is our condition and it has to be of **bool type** (meaning it has to return **`true/false`**). If **`operand2`** returns **`true`**, it'll execute **`operand1`**, and if it returns **`false`** – **`operand3`**. In our case we check whether Lily's **saved money** are enough to buy a washing machine. If they're higher or equal to it's price, the check **`saved_money >= price_of_washing_machine`** will return **`true`** and it'll print "**Yes! …**", while if it's lower – the result will be **`false`** and "**No! …**" will be printed. Of course, instead of the ternary operator, we can use simple **`if`** expressions.
+In some programming languages there's a construction called **conditional operator (`?:`)** (also known as ternary operator), as it's shorter to write. It has the following syntax in Python: **`operand1 if operand2 else operand3`**. The second operand is our condition and it has to be of **bool type** (meaning it has to return **`true/false`**). If **`operand2`** returns **`true`**, it'll execute **`operand1`**, and if it returns **`false`** – **`operand3`**. In our case we check whether Lily's **saved money** are enough to buy a washing machine. If they're higher or equal to its price, the check **`saved_money >= price_of_washing_machine`** will return **`true`** and it'll print "**Yes! …**", while if it's lower – the result will be **`false`** and "**No! …**" will be printed. Of course, instead of the ternary operator, we can use simple **`if`** expressions.
 
 More about ternary operators: [https://book.pythontips.com/en/latest/ternary_operators.html](https://book.pythontips.com/en/latest/ternary_operators.html).
 
@@ -249,9 +249,9 @@ The input is read from the console and **contains exactly 2 lines**:
 ### Output
 
 **Print** to the console **1 line**. **The sum** has to be **formatted** with **2-digit precision after the decimal point**:
-  * If **the money are enough**:
+  * If **the money is enough**:
     * "**Yes! He will live a carefree life and will have {N} dollars left.**" – where **N** are the remaining money.
-  *	If **the money are NOT enough**:
+  *	If **the money is NOT enough**:
     * "**He will need {М} dollars to survive.**" – where **M** is the amount **lacking**.
 
 ### Example input & output
@@ -299,7 +299,7 @@ The method of solving this problem isn't unlike the previous ones, so we begin b
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
-With the help of a **`for` loop** we loop through all years. **We begin at 1800** – the year when Ivancho travels back in time, and we end at **the year until he has to live**. In the loop we check wheter the current year is **even** or **odd**. We check it with **division with remainder** (**`%`**) by 2. If the year is **even**, from the inheritance (**`inheritance`**) we subtract **12000**, while if it's **odd**, from the inheritance (**`inheritance`**) we subtract **12000 + 50 * (Ivancho's age)**:
+With the help of a **`for` loop** we loop through all years. **We begin at 1800** – the year when Ivancho travels back in time, and we end at **the year until he has to live**. In the loop we check whether the current year is **even** or **odd**. We check it with **division with remainder** (**`%`**) by 2. If the year is **even**, from the inheritance (**`inheritance`**) we subtract **12000**, while if it's **odd**, from the inheritance (**`inheritance`**) we subtract **12000 + 50 * (Ivancho's age)**:
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
@@ -316,7 +316,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 For a given amount of time, patients arrive for a checkup in the hospital every day. She **initially** has **7 doctors**. Each of them can **check one patient a day only**, but sometimes there's a shortage of doctors, so **the other patients are sent to other hospitals**. **Every third day** the hospital calculates **whether the count of patients that haven't been examined is higher than those that've been, and if so, an additional doctor is assigned**. The assignment happens before the start of the day.
 
-Write a program that calculates **the count of treated and untreated patients for the given period.**.
+Write a program that calculates **the count of treated and untreated patients for the given period**.
 
 ### Input
 
@@ -383,8 +383,8 @@ Again, we begin by **declaring and initializing** the needed variables. The peri
 With the help of the **`for` loop** we go through all days in the given period (**`period`**). For each day we read the number of patients from the console (**`current_patients`**). The addition of doctors is said in the problem's description to happen **every third day**, **BUT** only if the untreated patients' count is **higher** than the treated's count. That's why we check whether the day is a third one – with the arithmetic operator for division with remainder (**`%`**): **`day % 3 == 0`**.
 
 Example:
- * If the day is a **third** one, the remainder of divison by **3** will be **0** (**`3 % 3 = 0`**) and the check **`day % 3 == 0`** will return **`true`**.
- * If the day is a **second** one, the remainder of divison by **3** will be **2** (**`2 % 3 = 2`**) and the check will return **`false`**.
+ * If the day is a **third** one, the remainder of division by **3** will be **0** (**`3 % 3 = 0`**) and the check **`day % 3 == 0`** will return **`true`**.
+ * If the day is a **second** one, the remainder of division by **3** will be **2** (**`2 % 3 = 2`**) and the check will return **`false`**.
  * If the day is a **fourth** one, the remainder of the division will be **1** (**`4 % 3 = 1`**) and the check will again return **`false`**.
 
 If the check **`day % 3 == 0`** returns **`true`**, there'll also be a check whether the count of untreated patients is higher than the treated's count: **`untreated_patients > treated_patients`**. If the result is again **`true`**, then the count of doctors (**`count_of_doctors`**) will increase.
