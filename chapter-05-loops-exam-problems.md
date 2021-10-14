@@ -334,21 +334,21 @@ The input is read from the **console** and contains:
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanation</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td valign="top">4<br>7<br>27<br>9<br>1</td>
 <td valign="top">Treated patients: 23.<br>Untreated patients: 21.</td>
-<td valign="top"><p><strong>1 ден</strong>: 7 прегледани и 0 непрегледани пациента за деня<br>
-<strong>2 ден</strong>: 7 прегледани и 20 непрегледани пациента за деня<br>
-<strong>3 ден</strong>: До момента прегледаните пациенти са общо 14,<br> а непрегледаните – 20 –> Назначава се нов лекар <br>–>
-8 прегледани и 1 непрегледан пациент за деня<br>
-<strong>4 ден</strong>: 1 прегледан и 0 непрегледани пациента за деня<br>
-<strong>Общо: 23 прегледани и 21 непрегледани пациенти.</strong></p></td>
+<td valign="top"><p><strong>Day 1</strong>: 7 treated and 0 untreated patients for the day<br>
+<strong>Day 2</strong>: 7 treated and 20 untreated patients for the day<br>
+<strong>Day 3</strong>: Until now the treated patients are 14,<br> and the untreated – 20 –> A new doctor is assigned <br>–>
+8 treated and 1 untreated patients for the day<br>
+<strong>Day 4</strong>: 1 treated and 0 untreated patients for the day<br>
+<strong>Total: 23 treated and 21 untreated patients.</strong></p></td>
 </tr>
 </tbody>
 </table>    
@@ -356,8 +356,8 @@ The input is read from the **console** and contains:
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
