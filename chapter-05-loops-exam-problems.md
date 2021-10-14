@@ -475,24 +475,24 @@ Print to the console **3 lines**, each of them containing a percentage between 0
 </tbody>
 </table>  
 
-### Насоки и подсказки
+### Tips and advice
 
-За тази и следващата задача ще трябва сами да напишете програмния код, следвайки дадените напътствия.
+For this and the next problem, you'll have to write the program's code on your own, with the help of the following advice.
 
-Програмата, която решава текущия проблем, е аналогична на тази от задача **Хистограма**, която разгледахме по-горе. Затова можем да започнем с декларацията на нужните ни променливи. Примерни имена на променливи може да са: **`n`** – брой на числата (който трябва да прочетем от конзолата) и **`divisible_by_2`**, **`divisible_by_3`**, **`divisible_by_4`** – помощни променливи, пазещи броя на числата от съответната група.
+The program that solves the current problem is similar to the one from the problem **Histogram**, which we viewed previously. That's why we can begin by declaring our needed variables. For example, a couple of variable names can be: **`n`** – count of numbers (which we'll read from the console) and **`divisible_by_2`**, **`divisible_by_3`**, **`divisible_by_4`** – additional variables, storing the count of numbers in their respective groups.
 
-За да прочетем и разпределим всяко число в съответната му група, ще трябва да завъртим **`for` цикъл** от **`0`** до **`n`** (броя на числата). Всяка итерация на цикъла трябва да прочита и разпределя **едно единствено число**. Различното тук е, че **едно число може да попадне в няколко групи едновременно**, затова трябва да направим **три отделни `if` проверки за всяко число** – съответно дали се дели на 2, 3 и 4 и да увеличим стойността на променливата, която пази броя на числата в съответната група. 
+In order to read and distribute each number in its respective group, we'll have to start our**`for` loop** from **`0`** and end at **`n`** (the numbers' count). Each of the loop's iterations has to read and distribute **a single number**. The difference is that **a single number can be distributed to more than one group simultaneously**, so we have to do **three different `if` checks for each number** – whether it's divided by 2, 3 and 4, and to increase the value of the variable that stores the count of numbers in the respective group.
 
-**Внимание**: **`if-elif`** конструкция в този случай няма да ни свърши работа, защото след като намери съвпадение се прекъсва по-нататъшното проверяване на условията.
+**Warning**: an **`if-elif`** construction in this case won't be of use to us, since when it detects a match, the loop gets broken before checking the following conditions.
 
-Накрая трябва да отпечатате получените резултати, като спазвате посочения формат в условието.
+At the end, print the found results while keeping the given in the problem's description format.
 
-### Тестване в Judge системата
+### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1054#4](https://judge.softuni.org/Contests/Practice/Index/1054#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#4](https://judge.softuni.org/Contests/Practice/Index/1054#4).
 
 
-## Задача: логистика
+## Problem: logistic
 
 Отговаряте за логистиката на различни товари. **В зависимост от теглото** на всеки товар е нужно **различно превозно средство** и струва **различна цена на тон**:
 
