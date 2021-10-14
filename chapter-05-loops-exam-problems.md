@@ -504,7 +504,7 @@ Your task is to calculate **the average price per ton of transported cargo**, as
 
 ### Input
 
-**A sequence of numbers** are read from the console, each on a different line:
+**A sequence of numbers** is read from the console, each on a different line:
  * **First line**: **count of cargos** for transportation – **integer** in range [**1 … 1000**].
  * On each following line **the weight in tons of the current cargo** is written – **integer** in range [**1 … 1000**].
 
@@ -565,11 +565,11 @@ The percentage of <b>train-transported</b> cargo: 16/25*100 = <b>64.00%</b><br>
 
 ### Tips and advice
 
-First **we'll read the weight of each load** and we'll **sum** how many tons are being transported by a **van**, **truck** and **train** respectively, and we'll additionally calculate **the total tons** of transported cargos. We'll calculate **the prices of each transport type** according to the total tons and **the total price**. At the end we'll calculate and print **the total average price per ton** and **what part of the overall load is transported by each transport type, in percents**.
+First **we'll read the weight of each load** and we'll **sum** how many tons are being transported by a **van**, **truck** and **train** respectively, and we'll additionally calculate **the total tons** of transported cargos. We'll calculate **the prices of each transport type** according to the total tons and **the total price**. At the end we'll calculate and print **the total average price per ton** and **what part of the overall load is transported by each transport type, in percentages**.
 
 We declare our variables, for example: **`count_of_loads`** – the count of cargos to be transported (we read them from the console), **`sum_of_tons`** – the sum of the overall load's weight, **`microbus_tons`**, **`truck_tons`**, **`train_tons`** – variables, holding the sum of the weights transported respectively by a van, truck and train.
 
-We'll need a **`for` loop** from **`0`** to **`count_of_loads - 1`**, in order to go through all loads. For each load **we read it's weight** (in tons) from the console and assign it to our variable, for example **`tons`**. To the sum of all loads (**`sum_of_tons`**) we add our current load's weight (**`tons`**). After we've read our current load's weight, **we have to decide which transport vehicle will be used for it** (van, truck or train). For this we'll need some **`if-elif`** checks:
+We'll need a **`for` loop** from **`0`** to **`count_of_loads - 1`**, in order to go through all loads. For each load **we read its weight** (in tons) from the console and assign it to our variable, for example **`tons`**. To the sum of all loads (**`sum_of_tons`**) we add our current load's weight (**`tons`**). After we've read our current load's weight, **we have to decide which transport vehicle will be used for it** (van, truck or train). For this we'll need some **`if-elif`** checks:
 
  * If the value of the variable **`tons`** is **lower than 3**, we increase the value of the variable **`microbus_tons`** by the value of **`tons`**:
  
