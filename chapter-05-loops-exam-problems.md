@@ -372,20 +372,20 @@ The input is read from the **console** and contains:
 </tbody>
 </table>    
 
-### Насоки и подсказки
+### Tips and advice
 
-Отново започваме, като **декларираме и инициализираме** нужните променливи. Периодът, за който трябва да направим изчисленията, прочитаме от конзолата и запазваме в променливата **`period`**. Ще се нуждаем и от няколко помощни променливи: броя на излекуваните пациенти (**`treated_patients`**), броя на неизлекуваните пациенти (**`untreated_patients`**) и броя на докторите (**`count_of_doctors`**), който първоначално е 7: 
+Again, we begin by **declaring and initializing** the needed variables. The period, for which we have to do our calculations, we read from the console and assign to the variable **`period`**. We'll need a couple of additional variables: the count of treated patients (**`treated_patients`**), the count of untreated patients (**`untreated_patients`**) and the count of doctors (**`count_of_doctors`**), which is initially 7: 
 
 ![](/assets/chapter-5-2-images/04.Hospital-01.png)
 
-С помощта на **`for` цикъл** обхождаме всички дни в дадения период (**`period`**). За всеки ден прочитаме от конзолата броя на пациентите (**`current_patients`**). Увеличаването на докторите по условие може да стане **всеки трети ден**, **НО** само ако броят на непрегледаните пациенти е **по-голям** от броя на прегледаните. За тази цел проверяваме дали денят е трети – чрез аритметичния оператор за деление с остатък (**`%`**): **`day % 3 == 0`**.
+With the help of the **`for` loop** we go through all days in the given period (**`period`**). For each day we read the number of patients from the console (**`current_patients`**). The addition of doctors is said in the problem's description to happen **every third day**, **BUT** only if the untreated patients' count is **higher** than the treated's count. That's why we check whether the day is a third one – with the arithmetic operator for division with remainder (**`%`**): **`day % 3 == 0`**.
 
-Например:
- * Ако денят е **трети**, остатъкът от делението на **3** ще бъде **0** (**`3 % 3 = 0`**) и проверката **`day % 3 == 0`** ще върне **`true`**.
- * Ако денят е **втори**, остатъкът от делението на **3** ще бъде **2** (**`2 % 3 = 2`**) и проверката ще върне **`false`**.
- * Ако денят е **четвърти**, остатъкът от делението ще бъде **1** (**`4 % 3 = 1`**) и проверката отново ще върне **`false`**.
+Example:
+ * If the day is a **third** one, the remainder of divison by **3** will be **0** (**`3 % 3 = 0`**) and the check **`day % 3 == 0`** will return **`true`**.
+ * If the day is a **second** one, the remainder of divison by **3** will be **2** (**`2 % 3 = 2`**) and the check will return **`false`**.
+ * If the day is a **fourth** one, the remainder of the division will be **1** (**`4 % 3 = 1`**) and the check will again return **`false`**.
 
-Ако проверката **`day % 3 == 0`** върне **`true`**, ще се провери дали и броят на неизлекуваните пациенти е по-голям от този на излекуваните: **`untreated_patients > treated_patients`**. Ако резултатът отново е **`true`**, тогава ще се увеличи броят на лекарите (**`count_of_doctors`**).
+If the check **`day % 3 == 0`** returns **`true`**, there'll also be a check whether the count of untreated patients is higher than the treated's count: **`untreated_patients > treated_patients`**. If the result is again **`true`**, then the count of doctors (**`count_of_doctors`**) will increase.
 
 След това проверяваме броя на пациентите за деня (**`current_patients`**) дали е по-голям от броя на докторите (**`count_of_doctors`**). Ако броят на пациентите е **по-голям**:
  - Увеличаваме стойността на променливата **`treated_patients`** с броя на докторите (**`count_of_doctors`**).
