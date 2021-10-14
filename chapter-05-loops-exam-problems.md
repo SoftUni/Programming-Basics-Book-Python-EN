@@ -492,38 +492,38 @@ At the end, print the found results while keeping the given in the problem's des
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#4](https://judge.softuni.org/Contests/Practice/Index/1054#4).
 
 
-## Problem: logistic
+## Problem: logistics
 
-Отговаряте за логистиката на различни товари. **В зависимост от теглото** на всеки товар е нужно **различно превозно средство** и струва **различна цена на тон**:
+You're responsible for the logistics of different cargos. **Depending on the weight** of each cargo, a **different transportation vehicle** is needed and costs **a different price per ton**:
 
- * До **3 тона** – **микробус** (200 лева на тон).
- * От **над 3 и до 11 тона** – **камион** (175 лева на тон).
- * **Над 11 тона – влак** (120 лева на тон).
+ * Up to **3 tons** – **van** (200 USD per ton).
+ * Between **over 3 and up to 11 tons** – **truck** (175 USD per ton).
+ * **Over 11 tons – train** (120 USD per ton).
 
-Вашата задача е да изчислите **средната цена на тон превозен товар**, както и **колко процента от товара** се превозват с **всяко превозно средство**.
+Your task is to calculate **the average price per ton of transported cargo**, as well as **what percentage of the overall cargo** is transported with **each vehicle**.
 
-### Входни данни
+### Input
 
-От конзолата се четат **поредица от числа**, всяко на отделен ред:
- * **Първи ред**: **брой на товарите** за превоз – **цяло число** в интервала [**1 … 1000**].
- * На всеки следващ ред се подава **тонажът на поредния товар** – **цяло число** в интервала [**1 … 1000**].
+**A sequence of numbers** are read from the console, each on a different line:
+ * **First line**: **count of cargos** for transportation – **integer** in range [**1 … 1000**].
+ * On each following line **the weight in tons of the current cargo** is written – **integer** in range [**1 … 1000**].
 
-### Изходни данни
+### Output
 
-Да се отпечатат на конзолата **4 реда**, както следва:
- * **Ред #1** – **средната цена на тон превозен товар** (закръглена до втория знак след десетичната точка).
- * **Ред #2** – **процентът** товар, превозван с **микробус** (между 0.00% и 100.00%, закръглен до втория знак след десетичната точка).
- * **Ред #3** – **процентът** товар, превозвани с **камион** (между 0.00% и 100.00%).
- * **Ред #4** – **процентът** товар, превозвани с **влак** (между 0.00% и 100.00%).
+Print **4 lines** to the console, as given:
+ * **Line #1** – **the average price per ton of transported cargo** (rounded to second digit after the decimal point).
+ * **Line #2** – **the percentage** of cargo, transported with a **van** (between 0.00% and 100.00%, rounded to second digit after the decimal point).
+ * **Line #3** – **the percentage** of cargo, transported with a **truck** (between 0.00% and 100.00%).
+ * **Line #4** – **the percentage** of cargo, transported with a **train** (between 0.00% and 100.00%).
  
-### Примерен вход и изход
+### Example input and output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Обяснения</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Explanation</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -531,14 +531,14 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 <td valign="top">4<br>1<br>5<br>16<br>3</td>
 <td valign="top">143.80<br>16.00%<br>20.00%<br>64.00%</td>
 <td valign="top">
-С <b>микробус</b> се превозват два от товарите <b>1</b> + <b>3</b>, общо <b>4</b> тона.<br>
-С <b>камион</b> се превозва един от товарите: <b>5</b> тона.<br>
-С <b>влак</b> се превозва един от товарите: <b>16</b> тона.<br>
-<b>Сумата</b> от всички товари е: 1 + 5 + 16 + 3 = <b>25</b> тона.<br>
-Процент товар <b>с микробус</b>: 4/25*100 = <b>16.00%</b><br>
-Процент товар <b>с камион</b>: 5/25*100 = <b>20.00%</b><br>
-Процент товар <b>с влак</b>: 16/25*100 = <b>64.00%</b><br>
-<b>Средна цена</b> на тон превозен товар: (4 * 200 + 5 * 175 + 16 * 120) / 25 = <b>143.80</b>
+Two of the cargos are transported with a <b>van</b>: <b>1</b> + <b>3</b>, total <b>4</b> tons.<br>
+One cargo is transported with a <b>truck</b>: <b>5</b> tons.<br>
+One cargo is transported with a <b>train</b>: <b>16</b> tons.<br>
+<b>The sum</b> of all cargos is: 1 + 5 + 16 + 3 = <b>25</b> tons.<br>
+The percentage of <b>van-transported</b> cargo: 4/25*100 = <b>16.00%</b><br>
+The percentage of <b>truck-transported</b> cargo: 5/25*100 = <b>20.00%</b><br>
+The percentage of <b>train-transported</b> cargo: 16/25*100 = <b>64.00%</b><br>
+<b>Average price</b> per ton of transported cargo: (4 * 200 + 5 * 175 + 16 * 120) / 25 = <b>143.80</b>
 </td>
 </tr>
 </tbody>
@@ -547,10 +547,10 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
