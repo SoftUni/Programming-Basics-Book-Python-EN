@@ -439,28 +439,28 @@ We're given **n integers** in range [**1 … 1000**]. A percentage of them, **pe
 </tbody>
 </table>  
 
-### Входни данни
+### Input
 
-На първия ред от входа стои цялото число **n** (1 ≤ **n** ≤ 1000) – брой числа. На следващите **n реда** стои **по едно цяло число** в интервала [**1 … 1000**] – числата, които да бъдат проверени на колко се делят.
+On the first line of the input stands the integer **n** (1 ≤ **n** ≤ 1000) – count of numbers. On the next **n lines** each stands **a single integer** in range [**1 … 1000**] – the numbers for which we'll check their divisors.
 
-### Изходни данни
+### Output
 
-Да се отпечатат на конзолата **3 реда**, всеки от които съдържа процент между 0% и 100%, с точност две цифри след десетичния знак, например 25.00%, 66.67%, 57.14%.
- * На **първия ред** – процентът на числата, които **се делят на 2**.
- * На **втория ред** – процентът на числата, които **се делят на 3**.
- * На **третия ред** – процентът на числата, които **се делят на 4**.
+Print to the console **3 lines**, each of them containing a percentage between 0% and 100%, with 2-digit precision after the decimal point, for example 25.00%, 66.67%, 57.14%.
+ * On the **first line** – the percentage of numbers **divisible by 2**.
+ * On the **second line** – the percentage of numbers **divisible by 3**.
+ * On the **third line** – the percentage of numbers **divisible by 4**.
 
-### Примерен вход и изход
+### Example input and output
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
-<th align="left"><strong>Вход</strong></th>
-<th align="left"><strong>Изход</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
+<th align="left"><strong>Input</strong></th>
+<th align="left"><strong>Output</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -473,7 +473,7 @@ We're given **n integers** in range [**1 … 1000**]. A percentage of them, **pe
 <td valign="top">100.00%<br>100.00%<br>100.00%</td>
 </tr>
 </tbody>
-</table>   
+</table>  
 
 ### Насоки и подсказки
 
