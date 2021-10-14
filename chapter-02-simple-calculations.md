@@ -86,7 +86,7 @@ The next command **`area = a * a`** assigns to a new variable **`area`** the res
 
 The last line **`print('Square area = ', area)`** prints the given text and next to it, the calculated area of the square, held in the variable **`area`** is concatenated.
 
-#### Test in the Judge system
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0).
 
@@ -147,7 +147,7 @@ Let's start the program to make sure that, when we input a value in inches, we r
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
-#### Test in the Judge system
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
@@ -176,7 +176,7 @@ Here is the result if we call the function with the name "Ivan":
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-00.png)
 
-#### Test in the Judge system
+#### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
@@ -203,7 +203,7 @@ Here is the result which we will get after execution of this example:
 
 Pay attention to how each variable has to be given in the **order, in which we want it to print**. Essentially, the template (**placeholder**) **accepts all types of variables** and this makes it very convenient for use when printing.
 
-### Test in the Judge system
+### Testing in the Judge system
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
@@ -224,21 +224,21 @@ The result is:
 
 ## Arithmetic operations
 
-Let's look at the basic arithmetic operations in programming.
+Let's examine the basic arithmetic operations in programming.
 
-### Събиране на числа: оператор **`+`**
+### Summing up Numbers: Operator **`+`**
 
-Можем да събираме числа с оператора **`+`**:
+We can sum up numbers using the **`+`** operator:
 
 ```python
 a = 5
 b = 7
-sum = a + b  # резултатът е 12
+sum = a + b  # the result is 12
 ```
 
-### Изваждане на числа: оператор **`-`**
+### Subtracting Numbers: Operator **`-`**
 
-Изваждането на числа се извършва с оператора **`-`**:
+Subtracting numbers is done using the **`-`** operator:
 
 ```python
 a = int(input())
@@ -248,13 +248,13 @@ result = a - b
 print(result)
 ```
 
-Ето резултата от изпълнението на програмата (при числа 10 и 3):
+Here is the result of the execution of this program (with numbers 10 and 3):
 
 ![](/assets/chapter-2-1-images/00.Subtracting-01.png)
 
-### Умножение на числа: оператор **`*`**
+### Multiplying Numbers: Operator **`*`**
 
-За умножение на числа използваме оператора **`*`**:
+For multiplication of numbers we use the **`*`** operator:
 
 ```python
 a = 5
@@ -262,13 +262,13 @@ b = 7
 product = a * b  # 35
 ```
 
-### Деление на числа: оператор /
+### Dividing Numbers: Operator /
 
-Делението на числа се извършва с оператора **`/`**. 
+Dividing numbers is done using the **`/`** operator. 
 
-**Забележка:** **Делението на 0** предизвиква **грешка** по време на изпълнение (runtime exception) - **ZeroDivisionError**.
+**Note:** **Dividing by 0** causes an **error** during execution (runtime exception) - **ZeroDivisionError**.
 
-Ето няколко примера за използване на оператора за делене:
+Here are a few examples with the division operator:
 
 ```python
 print(10 / 2.5) # Резултат: 4
@@ -281,9 +281,10 @@ print(0 / 0)    # Резултат: ZeroDivisionError: division by zero
 print(2.5 / 0)  # Резултат: ZeroDivisionError: float division by zero
 ```
 
-### Степенуване на числа: оператор **`**`**
+### Raising to power: operator **`**`**
 
-За **повдигане на степен** в Python използваме оператора `**`:
+To **raise to power** in Python the operator `**` is used:
+
 ```python
 print(2 ** 10)     # 1024
 print(2 ** 20)     # 1048576
@@ -293,19 +294,20 @@ print(2 ** 128)    # 340282366920938463463374607431768211456
 print(2.5 ** 1.5)  # 3.952847075210474
 ```
 
-Както се вижда от примера, Python работи с лекота с **големи целочислени стойности**, без специални усилия. Ето един по-голям пример:
+As seen in the example, Python works efficiently with **big integer values**, without special requirements. Here is a bigger example:
+
 ```python
 print(2 ** 1024)
 ```
 
-Резултатът е следното **голямо цяло число**:
+The result is the following **big integer**:
 ```
 179769313486231590772930519078902473361797697894230657273430081157732675805500963132708477322407536021120113879871393357658789768814416622492847430639474124377767893424865485276302219601246094119453082952085005768838150682342462881473913110540827237163350510684586298239947245938479716304835356329624224137216
 ```
 
-## Съединяване на текст и число
+## Concatenating Text and Numbers
 
-Операторът **`+`** освен за събиране на числа служи и за съединяване на текст (долепяне на два символни низа един след друг). В програмирането съединяване на текст с още текст или с число наричаме "**конкатенация**". Ето как можем да съединяваме текст и число с оператора **`+`**:
+Besides for summing up numbers, the operator + is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called "concatenation". Here is how we can concatenate a text with a number by the + operator:
 
 ```python
 first_name = 'Maria'
@@ -316,9 +318,9 @@ str = first_name + ' ' + last_name + ' @ ' + str(age)
 print(str)  # Maria Ivanova @ 19
 ```
 
-В Python не можем директно да долепяме (конкатенираме) число към даден текст и затова първо превръщане числото към текст с функцията **`str(…)`**.
+In Python we cannot concatenate a number to a given text directly. That is why the number is first parsed to text utilizing the function **`str(…)`**.
 
-Ето още един пример:
+Here is another example:
 
 ```python
 a = 1.5
@@ -328,7 +330,7 @@ sum = 'The sum is: ' + str(a) + str(b)
 print(sum)  # The sum is 1.52.5
 ```
 
-Забелязвате ли нещо странно? Може би очаквахте числата **`a`** и **`b`** да се сумират? Всъщност конкатенацията работи последователно отляво надясно и горният резултат е абсолютно коректен. Ако искаме да сумираме числата, ще трябва да ползваме **скоби**, за да променим реда на изпълнение на операциите:
+Did you notice something strange? Maybe you expected the numbers a and b to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
 
 ```python
 a = 1.5
@@ -338,131 +340,130 @@ sum = 'The sum is: ' + str(int(a + b))
 print(sum)  # The sum is: 4
 ```
 
-### Повтаряне на текст: оператор *
+### Repeating Text: operator *
 
-Операторът `*` може да се използва за **повтаряне на даден текст няколко пъти**:
+The operator `*` can be used to **repeat a given text a number of times**:
 ```py
 text = 'hi'
 print(3 * text)  # hihihi
 ```
-Тази особеност на оператора за умножение може да доведе до следния **грешен резултат**, когато не съобразим типа на умножаваната стойност:
+This feature of the operator for multiplication can lead to the following **wrong result** if we don't keep in mind our value type:
 ```py
 count = input()   # Enter 20
 print(5 * count)  # 2020202020, not 100
 ```
-Ако искаме да умножим по 5 число, прочетено от входа, трябва първо да преобразуване към число с функцията `int()`:
+If we want to multiply a number, read from the console, by 5, we first have to transform it to an integer using the function `int()`:
 ```py
 count = int(input())  # Enter 20
 print(5 * count)      # 100
 ```
 
 
-## Отпечатване на форматиран текст в Python
+## Printing Formatted Text in Python 
+In Python there are **several ways** to print **formatted text**, i.e. text, combined with numbers, values of variables and expressions. We have already encountered some of them, but let's get into more detail.
 
-В езика Python има **няколко начина** да отпечатаме **форматиран текст**, т.е. текст, смесен с числа, стойности на променливи и изрази. Вече се сблъскахме с някои от тях, но нека разгледаме въпроса по-детайлно.
+### Printing with commas
 
-### Печатане с изброяване със запетайки
-
-При печатане с `print(…)` можем да изброяваме няколко стойности със запетайки:
+When printing using `print(…)` we can list multiple values with commas:
 ```python
 width = 5
 height = 7
 print('width =', width, '; height =', height, '; area =', width * height)
 ```
 
-Резултатът е следният:
+The result is the following:
 ```
 width = 5 ; height = 7 ; area = 35
 ```
-Както се вижда от примера, при такова отпечатване всеки две стойности от изброените се отделят с **интервал**.
+As you can see from this example, when using this method for printing, each two values are separated by an **interval**.
 
-### Съединение на текст с оператора +
+### Concatenating text with the operator +
 
-Вече знаем как да съединяваме текст и числа с оператора `+`. Използвайки `+`, горният пример може да се напише по следния начин:
+We already know how to concatenate text and numbers with the operator `+`. Using `+`, the example above can be written in the following way:
 ```python
 width = 5
 height = 7
 print('width = ' + str(width) + ' ; height = ' + str(height) + ' ; area = ' + str(width * height))
 ```
-Резултатът е същият като в предния пример:
+The result is the same as in the last example:
 ```
 width = 5 ; height = 7 ; area = 35
 ```
-Понеже в Python текст не може да се съединява директно с числа, те трябва да се преобразуват първо към текст чрез функцията `str(num)`.
+Because in Python text cannot be directly concatenated with numbers, they first have to be parsed to text using the function `str(num)`.
 
-### Форматиращи низове `%d`, `%s`, `%f`
+### Formatting strings `%d`, `%s`, `%f`
 
-Печатането с шаблони може да се извърши и чрез **форматиращи низове** (които се ползват в езици като C и Java). Ето пример как става това: 
+Printing with templates can be done using **formatting strings** (also used in C and Java). Here is an example: 
 ```python
 width = 5
 height = 7
 text = "area"
 print('width = %d ; height = %d ; %s = %d' % (width, height, text, width * height))
 ```
-В горния пример използваме оператора `%`, който замества в **текстов шаблон** стойности, подадени като поредица от елементи в скоби. Използват се следните основни **placeholders** (форматиращи низове): `%d` обозначава цяло число, `%f` обозначава дробно число, `%s` обозначава текст. Резултатът от горния код е същият като в предходните примери:
+In the example above we use the operator `%`, which substitutes values in a **text template**, given as a sequence of elements in brackets. The following main **placeholders** are used (formatting strings): `%d` signifies an integer, `%f` signifies a floating point number, `%s` signifies text. The outcome of the code above is the same as in the last examples:
 ```
 width = 5 ; height = 7 ; area = 35
 ```
 
-Ако е подаден грешен форматиращ низ, може да получим грешка.
+Using a wrong formatting string could result in an error.
 
-При форматирането на дробни числа можем да закръгляме до определен брой цифри след десетичната точка, например с форматиращ низ `%.2f` отпечатваме дробно число с 2 знака след десетичната точка: 
+When formatting floating point numbers, we can round them to a specified number of digits after the decimal point, for example with the formatting string `%.2f` we can print a floating point number rounded to 2 digits after the decimal point: 
 ```python
 print('price = %.2f \nVAT = %.3f' % (1.60, 1.60 * 0.2))
 ```
-Резултатът от горния код е следният: 
+The result from the code above is the following: 
 ```
 price = 1.60
 VAT = 0.320
 ```
-В горния пример използваме специалния символ `\n`, който означава „отиди на нов ред“. Аналогично специалният символ `\b` връща курсора с една позиция назад (изтрива последния отпечатан символ) и съответно следния код:
+In the example above we use the special symbol `\n`, which means „go to the next line“. Analogically, the special symbol `\b` returns the cursor with one position backwards (deletes the last printed symbol), respectively the following code:
 ```python
 print('ab\bc')
 ```
-отпечатва следния резултат:
+prints the following result:
 ```
 ac
 ```
 
-### Форматиране с .format(…)
+### Formatting using .format(…)
 
-Вече разгледахме как можем да форматираме текст и числа чрез `.format(…)` с използването на номерирани шаблони `{0}`, `{1}`, `{2}` и т.н. Всъщност, когато числова номерация не е необходима, можем да напишем само `{}`, за да създадем **placeholder**. Ето пример как можем да ползваме форматиране с `текст.format(…)`, за да отпечатаме резултата от предходния пример:
+We already looked at how we can format text and numbers using `.format(…)` and numbered templates `{0}`, `{1}`, `{2}` etc. Actually, when enumeration is not necessary, we can use just `{}`, to create a **placeholder**. Here is an example of how we can use formatting with `text.format(…)` in order to print the result from the last example:
 ```python
 width = 5
 height = 7
 print('width = {} ; height = {} ; area = {}'.format(width, height, width * height))
 ```
-Резултатът е отново същият:
+The result is the same again:
 ```
 width = 5 ; height = 7 ; area = 35
 ```
 
-### Форматиране с f-string
+### Formatting using f-string
 
-Може би най-лесното, най-интуитивното и най-краткото за писане **форматиране на текст и числа** в Python е чрез **f-string синтаксиса**:
+Maybe the easieast, the most intuitive and the shortest way to **format text and numbers** in Python is to use the **f-string syntax**:
 ```python
 width = 5
 height = 7
 print(f'width = {width} ; height = {height} ; area = {width * height}')
 ```
-Използването на **f-string форматиране** е много лесно: поставяме префикс `f` пред стринга и в него вмъкваме на произволни позиции стойности на променливи и изрази във фигурни скоби `{expression}`. В горния пример имаме три израза: `{width}`, `{height}` и `{width * height}`, които се изчисляват и се заместват с текстовата им стойност. Можем да ползваме текстови изрази, целочислени изрази, изрази с дробни числа и всякакви други изрази.
+Using the **f-string formatting** is very easy: we put a prefix `f` before the string and inside the string at whichever positions we put values of variables and expressions in curly brackets `{expression}`. In the example above we have three expressions: `{width}`, `{height}` and `{width * height}` which are calculated and are substituted by their text value. We can use text expressions, integer expressions, floating point expressions and all other kinds of expressions.
 
-Форматирането с **f-string** в Python е **препоръчителният начин** за печатане на форматиран текст, защото ползва най-кратък синтаксис и кодът е най-лесно разбираем се чете най-лесно.
+Formatting with **f-string** in Python is **the recommedned method** for printing formatted text because it uses the shortest syntax and the code is easily read and understood.
 
 
-## Числени изрази
+## Numerical expressions
 
-В програмирането можем да пресмятаме и **числови изрази**, например:
+In programming, we can calculate **numerical expressions**, for example:
 
 ```python
 expr = (3 + 5) * (4 – 2)  # 16
 ```
 
-В сила е стандартното правило за приоритетите на аритметичните операции: **умножение и деление се извършват винаги преди събиране и изваждане**. При наличие на **израз в скоби, той се изчислява пръв**, но ние знаем всичко това от училищната математика.
+The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
 
-### Пример: изчисляване на лице на трапец
+### Example: Calculating Trapezoid Area
 
-Да напишем програма, която въвежда дължините на двете основи на трапец и неговата височина (по едно дробно число на ред) и пресмята **лицето на трапеца** по стандартната математическа формула:
+Let's write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating point number per line) and calculates the area of the trapezoid by the standard math formula:
 
 ```python
 b1 = float(input())
@@ -473,39 +474,39 @@ area = (b1 + b2) * h / 2
 print('Trapezoid area = ' + str(area))
 ```
 
-Тъй като искаме програмата да работи, както с цели, така и с дробни числа, използваме **`float(…)`**. Ако стартираме програмата и въведем за страните съответно **`3`**, **`4`** и **`5`**, ще получим следния резултат:
+Because we want the program to work for both integer and floating point numbers, we use **`float(…)`**. If we start the program and we input for the sides respectively **`3`**, **`4`** и **`5`**, we will get the following result:
 
 ![](/assets/chapter-2-1-images/05.Trapezoid-area-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
 
-## Закръгляне на числа
+## Rounding of numbers
 
-Понякога, когато работим с дробни числа, се налага да приведем числата към еднотипен формат. Това привеждане се нарича **закръгляне**. Езикът **Python** ни предоставя няколко метода за закръгляне на числа:
+Sometimes when we work with floating point numbers we need to convert the numbers to the same type of format. This conversion is called **rounding**. **Python** offers several methods for rounding of numbers:
 
-* **`math.ceil(…)`** - **закръгляне нагоре**, до следващо (по-голямо) цяло число:
+* **`math.ceil(…)`** - **rounding upwards**, to the next (bigger) integer number:
 
 ```python
 up = math.ceil(23.45)  # up = 24
 ```
 
-* **`math.floor(…)`** - **закръгляне надолу**, до предишно (по-малко) цяло число:
+* **`math.floor(…)`** - **rounding downwards**, to the previous (smaller) integer number:
 
 ```python
 down = math.floor(45.67)  # down = 45
 ```
 
-* **`round(…)`** - закръглянето се извършва по **основното правило за закръгляване** - ако десетичната част е по-малка от 5, закръглението е надолу и обратно, ако е по-голяма от 5 - нагоре:
+* **`round(…)`** - rounding is done following the **basic rule for rounding** - if the decimal part is smaller than 5, rounding is downwards and it is the opposite if the decimal part is bigger than 5 - rounding is upwards:
 
 ```python
 round(5.439)  # 5
 round(5.539)  # 6
 ```
 
-* **`round(…, [брой символи след десетичната запетая])`** - закръгляне до **най-близко** число с определен на брой символи след десетичната запетая:
+* **`round(…, [number of symbols after the decimal point])`** - rounding to **the closest** number with a specified number of symbols after the decimal point:
 
 ```python
 round(123.456, 2)  # 123.46
@@ -514,13 +515,13 @@ round(123.456, 0)  # 123.0
 round(123.512, 0)  # 124.0
 ```
 
-### Пример: периметър и лице на кръг 
+### Example: Perimeter and area of a circle: 
 
-Нека напишем програма, която при въвеждане **радиуса r** на кръг **изчислява лицето и периметъра** на кръга / окръжността.
+Let's write a program which, when given the **radius r** of a circle, **calculates the area and the perimeter** of the circle.
 
-Формули:
-- Лице = π \* r \* r
-- Периметър = 2 \* π \* r
+Formulas:
+- Area = π \* r \* r
+- Perimeter = 2 \* π \* r
 - π ≈ 3.14159265358979323846…
 
 ```python
@@ -534,23 +535,22 @@ perimeter = 2 * math.pi * r
 print('Area = ', area)
 print('Perimeter = ', perimeter)
 ```
-
-Нека изпробваме програмата с **радиус `r = 10`**:
+Let's try the program with **radius `r = 10`**:
 
 ![](/assets/chapter-2-1-images/00.Circle-area-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
 
-### Пример: лице на правоъгълник в равнината
+### Example: Area of a rectangle
 
-Правоъгълник е зададен с **координатите на два от своите два срещуположни ъгъла**. Да се пресметнат **площта и периметъра** му:
+A rectangle is given with **coordinates of its two opposite corners**. You have to calculate its **area and perimeter**:
 
 <img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
 
-В тази задача трябва да съобразим, че ако от по-големия **`x`** извадим по-малкия **`x`**, ще получим дължината на правоъгълника. Аналогично, ако от по-големия **`y`** извадим по-малкия **`y`**, ще получим височината на правоъгълника. Остава да умножим двете страни. Ето примерна имплементация на описаната логика:
+For this exercise, we have to take into consideration that by subtracting the smaller **`x`** from the bigger **`x`** we can get the long side of the rectangle. Analogically, by subtracting the smaller **`y`** from the bigger **`y`**, we can get the height of the rectangle. Finally, we have to multiply them. Here is an example implementation of the described logic:
 
 ```python
 x1 = float(input())
@@ -568,331 +568,330 @@ print('Area = ', area)
 print('Perimeter = ', perimeter)
 ```
 
-Използваме функцията **`max(a, b)`**, за намиране на по-голямата измежду стойностите **`a`** и **`b`** и аналогично **`min(a, b)`** - за намиране на по-малката от двете стойности.
+The function **`max(a, b)`** is used to find the bigger value between **`a`** and **`b`** and analogically **`min(a, b)`** - to find the smaller value between the two.
 
-При стартиране на програмата със стойностите от координатната система в условието, получаваме следния резултат:
-
+When starting the program with the values from the coordinate system, the following result is given:
 ![](/assets/chapter-2-1-images/00.Rectangle-area-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
 
-## Какво научихме от тази глава?
+## What did we learn in this chapter?
 
-Да резюмираме какво научихме от тази глава на книгата:
+Let's summarize what we have learned in this chapter:
 
-- **Въвеждане на текст**: **`str = input()`**.
-- **Въвеждане на цяло число**: **`num = int(input())`**.
-- **Въвеждане на дробно число**: **`num = float(input())`**.
-- **Извършване на пресмятания с числа** и използване на съответните **аритметични оператори** [+, -, \*, /, ()]: **`sum = 5 + 3`**.
-- **Извеждане на текст по шаблон** на конзолата: **`print('{0} + {1} = {2}'.format(3, 5, 3 + 5))`**.
+- **Reading text**: **`str = input()`**.
+- **Reading an integer**: **`num = int(input())`**.
+- **Reading a floating point number**: **`num = float(input())`**.
+- **Calculations with numbers** and using the suitable **arithmetic operators** [+, -, \*, /, ()]: **`sum = 5 + 3`**.
+- **Printing a text by placeholders** on the console: **`print('{0} + {1} = {2}'.format(3, 5, 3 + 5))`**.
 
-## Упражнения: прости пресмятания
+## Exercises: Simple Calculations
 
-Нека затвърдим наученото в тази глава с няколко задачи.
+Let's strengthen the knowledge gained throughout this chapter with a few more exercises.
 
-### Създаване на нов проект в PyCharm
+### Creating a new project in PyCharm
 
-Създаваме нов проект в PyCharm (от [**Create New Project**] или [**File**] -> [**New Project**]), за да организираме по-добре задачите за упражнение. Целта на този **проект** e да съдържа **по един Python файл за всяка задача** от упражненията:
+We have to create a new project in PyCharm (from [**Create New Project**] or [**File**] -> [**New Project**])in order to better organize our problems for exercise. The idea of this **project** is for it to contain **one Python file for each problem** of the exercises:
 
-* Стартираме PyCharm.
-* Създаваме нов проект: [**Create New Project**] (или [**File**] -> [**New Project**]).
+* We start PyCharm.
+* We create a new project: [**Create New Project**] (or [**File**] -> [**New Project**]).
 
 ![](/assets/chapter-2-1-images/00.New-project-PyCharm-01.png)
 
-### Задача:	пресмятане на лице на квадрат
+### Problem:	Calculating Square Area
 
-Първата задача от тази тема е следната: да се напише конзолна програма, която **въвежда цяло число `a` и пресмята лицето** на квадрат със страна **`a`**. Задачата е тривиално лесна: **прочитаме въведеното число**, **умножаваме го само по себе си** и **печатаме получения резултат** на конзолата.
+The first exercise from this topic is the following: write a console program that **inputs an integer a and calculates the area** of a square with side **`a`**. The task is trivial and easy: **input a number** from the console, **multiply it by itself** and **print the obtained result** on the console.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Създаваме **нов файл** в съществуващия PyCharm проект. Кликваме с десен бутон на мишката върху **SimpleCalculations** и избираме [**New**] -> [**Python File**]:
+We create a **new file** in the existing PyCharm project. Right-click on **SimpleCalculations** and choose [**New**] -> [**Python File**]:
 
 ![](/assets/chapter-2-1-images/01.Square-area-01.png)
 
-Ще се отвори **диалогов прозорец** за избор на **името** на файла. Наименуваме го "square_area":
+A **dialog box** will open letting us choose a **name** for the file. We name it "square_area":
 
 ![](/assets/chapter-2-1-images/01.Square-area-02.png)
 
-Вече имаме проект с един файл в него. Остава да напишем **кода за решаване на задачата**. За целта отиваме във файла и пишем следния код:
+We already have a solution with one console application in it. What remains is to write the **code for solving this problem**. For this purpose, we go to the file and we write the following code:
 
 ![](/assets/chapter-2-1-images/01.Square-area-03.png)
 
-Кодът прочита цяло число чрез **`a = int(input('a = '))`**, след това изчислява **`area = a * a`** и накрая печата стойността на променливата **`area`**. **Стартираме** програмата с [**Ctrl + Shift + F10**] или с десен бутон - [**Run**], и я **тестваме** с различни входни стойности:
+The code inputs an integer through **`a = int(input('a = '))`**, afterwards it calculates **`area = a * a`** and finally prints the value of the variable **`area`**. We **start** the program using [**Ctrl + Shift + F10**] or with right-click - [**Run**], and we **test** it with different inputs:
 
 ![](/assets/chapter-2-1-images/01.Square-area-04.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0). Трябва да получите 100 точки (напълно коректно решение):
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0). You have to get 100 points (completely correct solution):
 
 ![](/assets/chapter-2-1-images/01.Square-area-05.png)
 
 ![](/assets/chapter-2-1-images/01.Square-area-06.png)
 
 
-### Задача:	от инчове към сантиметри
+### Problem:	Inches to Centimeters
 
-Да се напише програма, която **чете от конзолата число** (не непременно цяло) и преобразува числото от **инчове в сантиметри.** За целта **умножава инчовете по 2.54** (защото 1 инч = 2.54 сантиметра).
+Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For the purpose **it multiplies the inches by 2.54** (because one inch = 2.54 centimeters).
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо създаваме **нов Python файл** в проекта "SimpleCalculations". За целта кликаме с десен бутон на мишката върху решението **SimpleCalculations** и избираме [**New**] -> [**Python File**]. Задаваме име "inches_to_centimeters":
+First, we create a **new Python file** in the project "SimpleCalculations".  We right-click the solution **SimpleCalculations** and choose [**New**] -> [**Python File**]. We name it "inches_to_centimeters":
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
 
-Следва да напишем **кода на програмата**:
+Next, we have to write **the program code**:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
 
-**Стартираме** програмата с [**Ctrl + Shift + F10**] или с десен бутон - [**Run**]:
+**Start the program** with [**Ctrl + Shift + F10**] or with right-click - [**Run**]:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-04.png)
 
-Да тестваме с дробни числа, например с **2.5**:
+Let's test it with floating point numbers, for example **2.5**:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-05.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>В зависимост от регионалните настройки на операционната система, е възможно вместо <b>десетична точка</b> (US настройки) да се използва <b>десетична запетая</b> (BG настройки).</td>
+<td>Depending on the regional settings of the operation system, it is possible instead of using a <b>decimal point</b> (US settings), to use a <b>decimal comma</b> (BG settings).</td>
 </tr></table>
 
-Ако програмата очаква десетична точка и бъде въведено число с десетична запетая или обратното (бъде въведена десетична точка, когато се очаква десетична запетая), ще се получи следната грешка:
+If the program expects a decimal point and instead a number with a decimal comma you enter the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-06.png)
 
-Препоръчително е **да променим настройките на компютъра си**, така че да се използва **десетична точка**. В Windows това става от контролния панел:
+It is recommended to **change the settings of your computer** to use a **decimal point**: In Windows this can be done from the Control Panel:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-07.png)
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-08.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
-Решението би трябвало да бъде прието като напълно коректно:
+The solution should be accepted as a completely correct one:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-09.png)
 
 
-### Задача: поздрав по име
+### Problem: Greeting by Name
 
-Да се напише програма, която **чете от конзолата име на човек** и отпечатва **`Hello, <name>!`**, където **`<name>`** е въведеното преди това име.
+Write a program that **reads a person's name ** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Първо създаваме **нов Python файл** с име "greeting_by_name" в проекта "SimpleCalculations":
+First, we create a **new Python file** named "greeting_by_name" in the project "SimpleCalculations":
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-01.png)
 
-**Следва да напишем кода** на програмата. Ако се затруднявате, може да ползвате примерния код по-долу:
+Next, **we have to write the code** of the program. If you have any difficulties, you can use the code from the example below:
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-02.png)
 
-**Стартираме** програмата с [**Ctrl + Shift + F10**] или с десен бутон - [**Run**], за да тестваме дали работи коректно:
+We **run** the program using [**Ctrl + Shift + F10**] or with right click - [**Run**] to test if it runs correctly:
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-03.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук:  [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
+Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
 
-### Задача:	съединяване на текст и числа
+### Problem:	Concatenating Text and Numbers
 
-Напишете програма, която прочита от конзолата име, фамилия, възраст и град и печата съобщение от следния вид: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
+Write a program, that reads a first name, last name, age and city from the console and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Добавяме към текущия PyCharm проект още един Python файл с име "concatenate_data". **Пишем кода**, който чете входните данни от конзолата:
+We add to the existing PyCharm project one more Python file named "concatenate_data". We **write the code** which reads the input from the console:
 
 ![](/assets/chapter-2-1-images/04.Concatenate-data-01.png)
 
-**Кодът**, който отпечатва описаното в условието на задачата съобщение, е целенасочено размазан и трябва да се допише от читателя:
+**The code** that prints the message described in the problem requirements should be finished:
 
 ![](/assets/chapter-2-1-images/04.Concatenate-data-02.png)
 
-Следва да се тества решението локално с [**Ctrl + Shift + F10**] или с десен бутон - [**Run**], и въвеждане на примерни входни данни.
+Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter an exemplary data.
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
 
-### Задача:	лице на трапец
+### Problem:	Trapezoid Area
 
-Напишете програма, която чете от конзолата три числа **b1, b2 и h и пресмята лицето на трапец** с основи **b1 и b2 и височина h. Формулата за лице на трапец е (b1 + b2) * h / 2**.
+Write a program that reads three numbers from the console **b1, b2 and h and calculates the area of a trapezoid** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход          |  Изход  |    
+| Input          |  Output  |    
 |---------------|---------|
 | 8<br>13<br>7  | 73.5    | 
 | 12<br>8<br>5  | 50      | 
 
-На фигурата по-долу е показан трапец със страни 8 и 13 и височина 7. Той има лице **(8 + 13) * 7 / 2 = 73.5**.
+The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
 ![](/assets/chapter-2-1-images/05.Trapezoid-area-01.png)
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Отново трябва да добавим към текущия PyCharm проект още един **Python файл** с име "trapezoid_area" и да напишем **кода, който чете входните данни от конзолата, пресмята лицето на трапеца и го отпечатва**. Кодът на картинката е нарочно размазан, за да помисли читателят върху него и да го допише сам:
+Again, we have to add to the existing PyCharm project another **Python file** named "trapezoid_area" and to write the **code which reads the input data from the console, calculates the the trapezoid area and prints it**. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself.
 
 ![](/assets/chapter-2-1-images/05.Trapezoid-area-02.png)
 
-**Тествайте** решението локално с [**Ctrl + Shift + F10**] или с десен бутон - [**Run**], и въвеждане на примерни данни.
+**Test** your solution locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter an exemplary data.
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
 
-### Задача:	периметър и лице на кръг
+### Problem:	Circle Area and Perimeter
 
-Напишете програма, която чете от конзолата **число r** и пресмята и отпечатва **лицето и периметъра на кръг**/**окръжност** с **радиус r**.
+Write a program that reads from the console a **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход  |           Изход                                          |    
+| Input  |           Output                                          |    
 |-------|----------------------------------------------------------|
 | 3     | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388|
 | 4.5   | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За изчисленията можете да използвате следните формули:
+For the calculations you may use the following formulas:
 -	**`area = math.pi * r * r`**.
 -	**`perimeter = 2 * math.pi * r`**.
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
 
-### Задача: лице и периметър на правоъгълник в равнината
+### Problem: Rectangle Area
 
-**Правоъгълник** е зададен с **координатите** на два от своите срещуположни ъгъла (x1, y1) – (x2, y2). Да се пресметнат **площта и периметъра** му. **Входът** се чете от конзолата. Числата **x1, y1, x2 и y2** са дадени по едно на ред. **Изходът** се извежда на конзолата и трябва да съдържа два реда с по една число на всеки от тях – лицето и периметъра.
+A **rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2 and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
 ![](/assets/chapter-2-1-images/07.Rectangle-area-01.png)
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход                                 | Изход               |
+| Input                                | Output               |
 | ------------------------------------ | ------------------- |
 | 60<br>20<br>10<br>50                 | 1500<br>160         |
 | 30<br>40<br>70<br>-10                | 2000<br>180         |
 | 600.25<br>500.75<br>100.50<br>-200.5 | 350449.6875<br>2402 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
 
-### Задача:	лице на триъгълник
+### Problem:	Triangle Area
 
-Напишете програма, която чете от конзолата **страна и височина на триъгълник** и пресмята неговото лице. Използвайте **формулата** за лице на триъгълник: **area = a * h / 2**. Закръглете резултата до **2 цифри след десетичния знак използвайки функцията `round(area, 2)`**.
+Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. ЗRound the result to **2 digits after the decimal point using `round(area, 2)`**.
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход                | Изход                 |
+| Input                | Output                 |
 | ------------------- | --------------------- |
 | 20 <br>30           | Triangle area = 300   |
 | 15 <br>35           | Triangle area = 262.5 |
 | 7.75 <br>8.45       | Triangle area = 32.74 |
 | 1.23456 <br>4.56789 | Triangle area = 2.82  |
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#7](https://judge.softuni.org/Contests/Practice/Index/1047#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#7](https://judge.softuni.org/Contests/Practice/Index/1047#7).
 
 
-### Задача:	конзолен конвертор - от градуси °C към градуси °F
+### Problem:	Converter – from °C Degrees to °F Degrees
 
-Напишете програма, която чете **градуси по скалата на Целзий** (°C) и ги преобразува до **градуси по скалата на Фаренхайт** (°F). Потърсете в Интернет подходяща [формула](https://bfy.tw/3rGh "Търсене в Google"), с която да извършите изчисленията. Закръглете резултата до **2 символа след десетичния знак**.
+Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход | Изход |
+| Input | Output |
 | ---- | ----- |
 | 25   | 77    |
 | 0    | 32    |
 | -5.5 | 22.1  |
 | 32.3 | 90.14 |
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#8](https://judge.softuni.org/Contests/Practice/Index/1047#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#8](https://judge.softuni.org/Contests/Practice/Index/1047#8).
 
 
-### Задача:	конзолен конвертор - от радиани в градуси
+### Problem:	Converter – from Radians to Degrees
 
-Напишете програма, която чете **ъгъл в [радиани](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) и го преобразува в **[градуси](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (**`deg`**). Потърсете в Интернет подходяща формула. Числото **π** в Python програмите е достъпно чрез **`math.pi`** като преди това трябва да реферираме **библиотеката math** чрез **`import math`**. Закръглете резултата до най-близкото цяло число използвайки метода **`round()`**.
+Write a program, that reads **an angle in [radians](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) and converts it to **[degrees](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** when before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход   | Изход |
+| Input   | Output |
 | ------ | ----- |
 | 3.1416 | 180   |
 | 6.2832 | 360   |
 | 0.7854 | 45    |
 | 0.5236 | 30    |
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#9](https://judge.softuni.org/Contests/Practice/Index/1047#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#9](https://judge.softuni.org/Contests/Practice/Index/1047#9).
 
 
-### Задача: конзолен конвертор - USD към BGN
+### Problem: Converter – USD to BGN
 
-Напишете програма за **конвертиране на щатски долари** (USD) **в български лева** (BGN). **Закръглете** резултата до **2 цифри** след десетичния знак. Използвайте фиксиран курс между долар и лев: **1 USD = 1.79549 BGN**.
+Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and **levs** (BGN): **1 USD = 1.79549 BGN**.
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход | Изход      |
+| Input | Output      |
 | ---- | ---------- |
 | 20   | 35.91 BGN  |
 | 100  | 179.55 BGN |
 | 12.5 | 22.44 BGN  |
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#10](https://judge.softuni.org/Contests/Practice/Index/1047#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#10](https://judge.softuni.org/Contests/Practice/Index/1047#10).
 
 
-### Задача:	\* конзолен междувалутен конвертор
+### Problem:	\* Currency Converter
 
-Напишете програма за **конвертиране на парична сума от една валута в друга**. Трябва да се поддържат следните валути: **BGN, USD, EUR, GBP**. Използвайте следните фиксирани валутни курсове:
+Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
 |  Курс  |   USD   |   EUR   |   GBP   |
 |:------:|:-------:|:-------:|:-------:|
 | 1 BGN  | 1.79549 | 1.95583 | 2.53405 |
 
-**Входът** e **сума за конвертиране**, **входна валута** и **изходна валута**. **Изходът** е едно число – преобразуваната сума по посочените по-горе курсове, закръглен до **2 цифри** след десетичната точка. 
+**The input** is **sum for conversion**, **input currency** and **output currency**. **The output** is one number – the converted value of the above currency rates, rounded **2 digits** after the decimal point.  
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход                 | Изход      |
+| Input                 | Output      |
 | -------------------- | ---------- |
 | 20<br>USD<br>BGN     | 35.91 BGN  |
 | 100<br>BGN<br>EUR    | 51.13 EUR  |
 | 12.35<br>EUR<br>GBP  | 9.53 GBP   |
 | 150.35<br>USD<br>EUR | 138.02 EUR |
  
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#11](https://judge.softuni.org/Contests/Practice/Index/1047#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#11](https://judge.softuni.org/Contests/Practice/Index/1047#11).
 
 
-### Задача:	** пресмятане с дати - 1000 дни на Земята
+### Problem:	** Date Calculations – 1000 Days on the Earth
 
-Напишете програма, която въвежда **рождена дата** във формат **`dd-MM-yyyy`** и пресмята датата, на която се навършват **1000 дни** от тази рождена дата и я отпечатва в същия формат.
+Write a program that enters **a birth date** in format **dd-MM-yyyy** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
-#### Примерен вход и изход
+#### Example input and output
 
-| Вход       | Изход      |
+| Input       | Output      |
 | ---------- | ---------- |
 | 1995-02-25 | 20-11-1997 |
 | 2003-11-07 | 02-08-2006 |
@@ -900,45 +899,45 @@ print('Perimeter = ', perimeter)
 | 2012-01-01 | 26-09-2014 |
 | 1980-06-14 | 10-03-1983 |
 
-#### Насоки и подсказки 
-* Потърсете информация за **``datetime``** в Python и по-конкретно разгледайте методите **``strptime(str, format)``**, **``timedelta(days=n)``**. С тяхна помощ може да решите задачата, без да е необходимо да изчислявате дни, месеци и високосни години.
-* **Не печатайте** нищо допълнително на конзолата освен изискваната дата!
+#### Hints and Guidelines 
+* Look for information about the data type **``datetime``** in Python and in particular look at the methods **``strptime(str, format)``**, **``timedelta(days=n)``**. With their help you can solve the problem without the need to calculate days, months and leap years.
+* **Don't print** anything additional on the console except for the wanted date!
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1047#12](https://judge.softuni.org/Contests/Practice/Index/1047#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#12](https://judge.softuni.org/Contests/Practice/Index/1047#12).
 
 
-## Графични приложения с числови изрази
+## GUI Applications with Numerical Expressions
 
-За да упражним работата с променливи и пресмятания с оператори и числови изрази, ще направим нещо интересно: ще разработим **настолно приложение** с графичен потребителски интерфейс. В него ще използваме пресмятания с дробни числа.
+To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **desktop application** with graphical user interface. In it, we will use calculations with floating point numbers.
 
-### Графично приложение: конвертор от BGN към EUR
+### Graphical Application: Converter from BGN to EUR
 
-От нас се изисква да създадем **графично приложение** (GUI application), което пресмята стойността в **евро** (EUR) на парична сума, зададена в **лева** (BGN). Използваме курс лева / евро: **1.95583**).
+We need to create **a graphical application** (GUI application), that calculates the value in  **Euro** (EUR) of monetary amount given in **Bulgarian levs** (BGN). We use a fixed rate BGN / EUR: **1.95583**.
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-01.png)
 
-**Забележка:** тази задача излиза извън изучавания в книгата материал и има за цел не да ви научи как да програмирате GUI приложения, а да ви запали интереса към разработката на софтуер. Да се залавяме за работа.
+**Note:** This exercise goes beyond the material learned in this book and its purpose is not to teach you how to program GUI applications, but to strengthen your interest in software development. Let's get to work.
 
-Добавяме към текущия PyCharm проект още един Python файл. Наименуваме го "BGN_to_EUR_converter". За да направим графично приложение с Python, ще използваме стандартната библиотека [**tkinter**](https://docs.python.org/3/library/tkinter.html#module-tkinter).
+We add to the existing PyCharm project one more Python file. We name it "BGN_to_EUR_converter". In order to create a Graphical Application using Python we will us the standard library [**tkinter**](https://docs.python.org/3/library/tkinter.html#module-tkinter).
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-02.png)
 
-Първо създаваме графично приложение (**Application**), което представлява правоъгълна рамка за компоненти (**Frame**). На този етап всичко ще се случва без обяснения, като **на магия**:
+First, we create a Graphical **Application**, which represents a rectangle **Frame** for components. At this stage, everything will be done without explanations, as if it is **magic**:
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-03.png)
 
-Вече може да добавим компонентите на приложението ни в т.нар. **функция**, която ще извикаме във функцията **__init__**, или т.нар. **конструктор**:
+Now we can add the components of our application to the so called **function** which we will call with the function **__init__**, or the so called **constructor**:
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-04.png)
 
-Подреждаме следните UI компоненти:
+We order the following UI components:
 
-* **Label** - ще ни служи за статично изобразяване на текст.
-* **Entry** - ще въвежда сумата за конвертиране.
-* **Button** - ще конвертира въведената сума.
-* Още един **Label**, който ще показва резултата след конвертиране.
+* **Label** - will serve for static display of text
+* **Entry** - will input the value for conversion
+* **Button** - will convert the given value
+* One more **Label** which will show the result of the conversion.
 
 Нашите компоненти се намират във функцията **`create_widgets()`**. Добавяме текст за визуализация на първия **Label**, който ни е под името **`label`**. **`numberEntry`** е **Entry**, където ще се въвежда сумата за конвертиране. **`convertButton`** ще **хваща** събитие и ще изпълнява **команда** (в нашата задача ще извиква функцията **`convert()`**, която ще напишем малко по-късно). **`output`** е нашия **Label** за показване на резултат след като сме въвели сума и кликнали върху бутон:
 
