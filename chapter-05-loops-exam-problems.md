@@ -494,19 +494,19 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 ## Problem: logistics
 
-You're responsible for the logistics of different cargos. **Depending on the weight** of each cargo, a **different transportation vehicle** is needed and costs **a different price per ton**:
+You're responsible for the logistics of different cargos. **Depending on the weight** of each load, a **different transportation vehicle** is needed and costs **a different price per ton**:
 
- * Up to **3 tons** – **van** (200 USD per ton).
- * Between **over 3 and up to 11 tons** – **truck** (175 USD per ton).
+ * Up to and including **3 tons** – **van** (200 USD per ton).
+ * **Over 3 and up to 11 tons** – **truck** (175 USD per ton).
  * **Over 11 tons – train** (120 USD per ton).
 
-Your task is to calculate **the average price per ton of transported cargo**, as well as **what percentage of the overall cargo** is transported with **each vehicle**.
+Your task is to calculate **the average price per ton of transported load**, as well as **what percentage of the overall cargo** is transported by **each vehicle**.
 
 ### Input
 
 **A sequence of numbers** is read from the console, each on a different line:
- * **First line**: **count of cargos** for transportation – **integer** in range [**1 … 1000**].
- * On each following line **the weight in tons of the current cargo** is written – **integer** in range [**1 … 1000**].
+ * **First line**: **count of loads** for transportation – **integer** in range [**1 … 1000**].
+ * On each following line **the weight in tons of the current load** is written – **integer** in range [**1 … 1000**].
 
 ### Output
 
