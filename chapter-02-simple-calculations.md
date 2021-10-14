@@ -939,15 +939,15 @@ We order the following UI components:
 * **Button** - will convert the given value
 * One more **Label** which will show the result of the conversion.
 
-Нашите компоненти се намират във функцията **`create_widgets()`**. Добавяме текст за визуализация на първия **Label**, който ни е под името **`label`**. **`numberEntry`** е **Entry**, където ще се въвежда сумата за конвертиране. **`convertButton`** ще **хваща** събитие и ще изпълнява **команда** (в нашата задача ще извиква функцията **`convert()`**, която ще напишем малко по-късно). **`output`** е нашия **Label** за показване на резултат след като сме въвели сума и кликнали върху бутон:
+Our components are found in the function **`create_widgets()`**. We add text for visualization on the first **Label**, named **`label`**. **`numberEntry`** is **Entry** where the conversion value will be input. **`convertButton`** will **catch** an event and execute **command** (in our task it will call the function **`convert()`** which we will write shortly). **`output`** is our **Label** for displaying a result after we have input a value and we have clicked a button:
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-05.png)
 
-След като сме инициализирали нашите компоненти е ред да ги визуализираме. Това става лесно чрез вградения метод в **tkinter** - **`pack()`**:
+After we have initialized our components, we have to visualize them. This is easly done using the built-in method from **tkinter** - **`pack()`**:
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-06.png)
 
-Остана да напишем **кода** (програмната логика) за конвертиране от лева към евро. Това ще го направим във функцията **`convert()`**:
+It is left to write the **code** (program logic) for conversion from leva to euro. We will do this by using the function **`convert()`**:
 
 ```python
 def convert(self):
@@ -960,15 +960,15 @@ def convert(self):
         bg="green", fg="white")
 ```
 
-На последния ред подаваме резултата на нашия **Label `output`** и задаваме цвят на фона (**`bg`**) и на текста (**`fg`**).
+On the last line we input the result of our **Label `output`** and we set the color of the background (**`bg`**) and the color of the text (**`fg`**).
 
-Стартираме приложението с [Ctrl + Shift + F10] или с десен бутон + [Run], и тестваме дали работи коректно.
+We run the application with [Ctrl + Shift + F10] or with right-click + [Run], and we test if it works correctly.
 
-С този код ще имаме проблем. Какво ще стане, ако въведем нещо, различно от число?
+We are bound to have an issue with this code. What will happen if we input something different than a number?
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-07.png)
 
-Тази грешка можем да я **хванем** и да получаваме user-friendly съобщение в приложението ни. За целта нека променим кода на нашата програмна логика:
+We can **catch** this error and prompt a user-friendly message in our application. In order to do this, lets change the code of our program logic:
 
 ```python
 def convert(self):
@@ -986,46 +986,46 @@ def convert(self):
             bg="red", fg="black")
 ```
 
-По този начин ние прихващаме грешката в **try блок** и когато въведем нещо, различно от число, ще получаваме съобщение **That's not a number!**.
+This way we catch the error in a **try block** and when we input something different than a number we will recieve the message **That's not a number!**.
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-08.png)
 
-Накрая **стартираме приложението** с [**Ctrl + Shift + F10**] или с десен бутон + [**Run**], и тестваме дали работи коректно.
+Finally we **run the application** with [**Ctrl + Shift + F10**] or with right-click + [**Run**] and we test if it works correctly.
 
 
-### Графично приложение: \*\*\* Хвани бутона!
+### Graphical Application:: \*\*\* Catch the Button!
 
-Създайте забавно графично приложение **„хвани бутона“**. При преместване на курсора на мишката върху бутона той се премества на случайна позиция. Така се създава усещане, че **„бутонът бяга от мишката и е трудно да се хване“**. При „хващане“ на бутона се показва съобщение-поздрав.
+Create a fun graphical application **“catch the button”**: a form consisting of one button. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs form the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-01.png)
 
-Ще започнем със същия код от предната задача. Нека променим името на приложението ни на **Catch the Button!** и този път ще зададем размера на прозореца:
+We will begin with the same code from our last exercise. Lets change the name of our application to **Catch the Button!** and this time we will set the window size:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-02.png)
 
-Ще имаме следните компоненти:
-- **Button** - бутонът, който трябва да **хванем**.
-- **Label** - съобщението-поздрав.
+We will have the following components:
+- **Button** - the button which we have to **catch**.
+- **Label** - the congratulations message.
 
-Създаваме бутон с **текст "Catch me!"** и **команда - функцията `on_click()`**, която ще напишем по-късно. Визуализираме компонентите чрез метода **`pack()`**. Нека и двата компонента са **най-отгоре (top)**:
+We create a button containing **text "Catch me!"** and **command - the function `on_click()`** which we will define later. We visualize the components by using the method **`pack()`**. Let both components be **on the top (top)**:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-03.png)
 
-В нашата задача ще ползваме т.нар. операция **binding**. Това представлява **хващане** на промяна и изпълняване на определена функция. Чрез този код указваме на програмата ни, че при преместване на курсора на мишката върху бутона, ще се изпълни функцията **`on_enter()`**, а при преместването на курсора на мишката извън бутона, ще се изпълни функцията **`on_leave()`**:
+In our exercise we will use the so called **binding** operation. This represents **catching** of a change and executing a specified function. Using this code we instruct our program to execute the function **`on_enter()`** when the mouse cursor is over the button and to execute the function **`on_leave()`** when the mouse cursor leaves the button the button:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-04.png)
 
-За преместването на бутона на случайна позиция ще използваме **`random`**:
+In order to move the button to a random position we use **`random`**:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-05.png)
 
-Нека имплементираме трите функции, които са програмната логика в приложението ни:
-  * **`on_enter(self, event)`** - избираме случайни **`x`** и **`y`** координати, които ще се променят всеки път, когато преместим курсора на мишката върху бутона; променяме и местоположението на бутона - в нашия пример ще бъде **статично отдясно**, но може да направите своя логика и да променяте всеки път посоката на бутона, заедно със случайните числа за координати.
-  * **`on_leave(self, event)`** - когато курсора на мишката не е върху бутона, нашият поздрав не трябва да се показва; конфигурираме нашия **label** да **няма текст**.
-  * **`on_click()`** - когато кликнем върху бутона, нашия **label** вече е с текст - **You win!**.
+Let's implement the three functions which represent the program logic in our application:
+  * **`on_enter(self, event)`** - we select random **`x`** and **`y`** coordinates which will change every time we move our cursor over the button; we also change the location of the button - in our example it will be **static to the right**, but you can create your own logic and change the direction of the buton together with the random numbers selected for coordiantes.
+  * **`on_leave(self, event)`** - when the cursor of the mouse is not over the button, our congratulation should not appear; we configure our **label** to **not have text**.
+  * **`on_click()`** - when we click the button, our **label** will now display text - **You win!**.
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-06.png)
 
-Възможно е не всичко да тръгне гладко от първия път. Примерите по-горе съдържат **неизучаван материал** и имат за цел да ви запалят любопитството и да ви накарат да се поразровите в Интернет и **да потърсите сами решения** за възникващите трудности.
+It is possible that not everything will run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and to **look for solutions** to the emerging problems **
 
-Ако имате проблеми със задачите по-горе, питайте във **форума на СофтУни**: https://softuni.bg/forum.
+If you are having trouble with the above exercises, feel free to ask in the **SoftUni forum**: https://softuni.bg/forum.
