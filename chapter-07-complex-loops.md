@@ -597,29 +597,29 @@ except ValueError:
 ```
 
 
-## Упражнения: уеб приложения с по-сложни цикли
+## Exercise: web applications with more complex loops
 
-Сега вече знаем как да повтаряме група действия, използвайки **цикли**. Нека направим нещо интересно: **уеб базирана игра**. Да, истинска игра, с графика, с гейм логика. Да се позабавляваме. Ще бъде сложно, но ако не разберете нещо как точно работи, няма проблем. Сега още навлизаме в програмирането. Има време, ще напреднете с технологиите. Засега следвайте стъпките.
+Now we know how to repeat a group of actions using **loops**. Let's do something interesting: **web based game**. Yes, a real game, with graphics and game logic. Let's have fun. It will be complicated, but if you do not understand exactly how it works, there is no problem. Now we are still entering programming. There is time, you will advance with technology. For now, follow the steps.
 
-### Задача: уеб игра "Обстреляй плодовете!"
+### Task: web game "Shoot the fruits!"
 
-**Условие**: Да се разработи **Flask уеб приложение** – игра, в която играчът **стреля по плодове**, подредени в таблица. Успешно уцелените плодове изчезват, а играчът получава точки за всеки уцелен плод. При уцелване на **динамит**, плодовете се взривяват и играта свършва (както в игри като Fruit Ninja). Стрелбата се извършва по колони, отгоре надолу или отдолу нагоре, а местоположението на удара (колоната под обстрел) се задава чрез скролер (scroll bar). Заради неточността на скролера, играчът не е съвсем сигурен по коя колона ще стреля. Така при всеки изстрел има шанс да не улучи и това прави играта по-интересна (подобно на прашката в Angry Birds).
+**Condition**: Develop a **Flask web application** – a game in which the player **shoots at fruits**, arranged in a table. Successfully hit fruits disappear, and the player receives points for each hit fruit. The shooting is performed on columns, from top to bottom or from bottom to top, and the location of the hit (the column under fire) is set by a scroll bar. Due to the inaccuracy of the scroller, the player is not quite sure which column to shoot at. So with each shot there is a chance not to hit and this makes the game more interesting (similar to the slingshot in Angry Birds).
 
-Играта ни трябва да изглежда по този начин:
+Our game should look like this:
 
 ![](/assets/chapter-7-1-images/15.Fruits-01.png) 
 
 ![](/assets/chapter-7-1-images/15.Fruits-02.png)
 
-Следват стъпките за имплементация на уеб приложението "Обстреляй плодовете!".
+The following are the steps for implementing the "Shoot the Fruits!" Web application.
 
-### Празно PyCharm решение
+### Empty PyCharm solution
 
-Създаваме празно решение в PyCharm, за да организираме кода от приложението:
+We create a empty solution in PyCharm to organize the code from the application:
 
 ![](/assets/chapter-7-1-images/15.Blank-Python-project-01.png)
 
-След това, задаваме смислено име на проекта, например "**Fruits-Web-Game**". Също така, задаваме Python интерпретатора на този по подразбиране:
+Then, we give a meaningful name to the project, for example "**Fruits-Web-Game**". Also, set the Python interpreter to the default one:
 
 ![](/assets/chapter-7-1-images/15.Blank-Python-project-02.png)
 
