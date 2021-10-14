@@ -1,25 +1,26 @@
-# Глава 6.1. Вложени цикли
+# Chapter 6.1. Nested Loops
 
-В настоящата глава ще разгледаме **вложените цикли** и как да използваме **`for`** цикли за **чертане** на различни **фигурки на конзолата**, които се състоят от символи и знаци, разположени в редове и колони на конзолата. Ще използваме **единични** и **вложени цикли** (цикли един в друг), **изчисления** и **проверки**, за да отпечатваме на конзолата прости и не чак толкова прости фигурки по зададени размери.
+In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
 
-## Видео
+
+## Video: 
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: 
+  Watch the video lesson of this chapter here: 
   https://www.youtube.com/watch?v=kkxl1bitNAg.
 </div>
 
 
-### Пример: правоъгълник от 10 x 10 звездички
+### Example: Rectangle Made of 10 x 10 Stars
 
-Да се начертае в конзолата правоъгълник от **10 x 10** звездички.
+Print on the console a rectangle made out of **10 x 10** stars.
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |(няма)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
