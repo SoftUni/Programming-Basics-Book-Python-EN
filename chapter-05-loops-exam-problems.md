@@ -312,24 +312,24 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 ## Problem: hospital
 
-За даден период от време, всеки ден в болницата пристигат пациенти за преглед. Тя разполага **първоначално** със **7 лекари**. Всеки лекар може да преглежда **само по един пациент на ден**, но понякога има недостиг на лекари, затова **останалите пациенти се изпращат в други болници**. **Всеки трети ден** болницата прави изчисления и **ако броят на непрегледаните пациенти е по-голям от броя на прегледаните, се назначава още един лекар**. Като назначаването става преди да започне приемът на пациенти за деня.
+For a given amount of time, patients arrive for a checkup in the hospital every day. She **initially** has **7 doctors**. Each of them can **check one patient a day only**, but sometimes there's a shortage of doctors, so **the other patients are sent to other hospitals**. **Every third day** the hospital calculates **whether the count of patients that haven't been examined is higher than those that've been, and if so, an additional doctor is assigned**. The assignment happens before the start of the day.
 
-Напишете програма, която изчислява **за дадения период броя на прегледаните и непрегледаните пациенти**.
+Write a program that calculates **the count of treated and untreated patients for the given period.**.
 
-### Входни данни
+### Input
 
-Входът се чете от **конзолата** и съдържа:
-  * На първия ред – **периода**, за който трябва да направите изчисления. **Цяло число** в интервала [**1 … 1000**].
-  * На следващите редове (равни на броя на дните) – **броя пациенти**, които пристигат за преглед за **текущия ден**. Цяло число в интервала [**0 … 10 000**].
+The input is read from the **console** and contains:
+  * On the first line – **the period** for which we'll be calculating. **Integer** in range [**1 … 1000**].
+  * On the following lines (equal to the number of days) – **the count of patients** that arrive for a checkup **in the current day**. Integer in range [**0 … 10 000**].
 
-### Изходни данни
+### Output
 
-Да се **отпечатат** на конзолата **2 реда**:
+**Print** to the console **2 lines**:
 
-* На **първия ред**: "**Treated patients: {брой прегледани пациенти}.**"
-* На **втория ред**: "**Untreated patients: {брой непрегледани пациенти}.**"
+* On **the first line**: "**Treated patients: {count of treated patients}.**"
+* On **the second line**: "**Untreated patients: {count of untreated patients}.**"
 
-### Примерен вход и изход
+### Example input and output
 
 <table>
 <thead>
