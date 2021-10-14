@@ -31,7 +31,7 @@ How does the example work? We initialize **a loop with a variable `i`**. The def
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
 
 
-###Example: Rectangle Made of N x N Stars
+###Example: Rectangle Made of N x N Asterisks
 
 Write a program that reads a positive number **n** and prints on the console **a rectangle of N x N asterisks**. 
 
@@ -50,16 +50,16 @@ The task is similar to the previous one:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#1](https://judge.softuni.org/Contests/Practice/Index/1055#1).
 
 
-## Вложени цикли
+## Nested loops
 
-Вложените цикли представляват конструкция, при която **в тялото на един цикъл** (външен) **се изпълнява друг цикъл** (вътрешен). За всяко завъртане на външния цикъл, вътрешният се извърта **целият**. Това се случва по следния начин:
+A **nested loop** is a construction where **the body of one loop** (the outer one) **stays inside another loop** (the inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
 
- - При стартиране на изпълнение на вложени цикли първо **стартира външният цикъл**: извършва се **инициализация** на неговата управляваща променлива и след проверка за край на цикъла, се изпълнява кодът в тялото му.
- - След това се **изпълнява вътрешният цикъл**. Извършва се инициализация на началната стойност на управляващата му променлива, прави се проверка за край на цикъла и се изпълнява кодът в тялото му.
- - При достигане на зададената стойност за **край на вътрешния цикъл**, програмата се връща една стъпка нагоре и се продължава започналото изпълнение на външния цикъл. Променя се с една стъпка управляващата променлива за външния цикъл, проверява се дали условието за край е удовлетворено и **започва ново изпълнение на вложения (вътрешния) цикъл**.
- - Това се повтаря, докато променливата на външния цикъл достигне условието за **край на цикъла**.
+ - When nested loops start executing, **the outer loop starts** first: **initialization** of its control variable is performed and after checking for end of the loop, the code in its body is executed.
+  - After that, **the inner loop is executed**. The control variable's start position is initialized, a check for end of the loop is made and the code in its body is executed.
+ - When the set value for **end of the loop** is reached, the program goes back one step up and continues executing the previous outer loop. The control variable of the outer loop changes with one step, a check is made to see if the condition for end of the loop is met and **a new execution of the nested \(inner\) loop is started**.
+ - This is repeated until the variable of the outer loop meets the condition to **end the loop**.
 
-Ето и един **пример**, с който нагледно да илюстрираме вложените цикли. Целта е да се отпечата отново правоъгълник от **N x N звездички**, като за всеки ред се извърта цикъл от **1** до **N**, а за всяка колона се извърта вложен цикъл от **1** до **N**:
+Here is an **example** that illustrates nested loops. The aim is again to print a rectangle made of **N x N asterisk**, in which for each row a loop iterates from **1** to **N**, and for each column a nested loop is executed from **1** to **N**:
 
 ![](/assets/chapter-6-1-images/00.Nested-loops-01.png)
 
