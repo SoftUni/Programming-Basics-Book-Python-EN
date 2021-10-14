@@ -3,8 +3,7 @@
 In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
 
-
-## Video: 
+## Video 
 
 <div class="video-player">
   Watch the video lesson of this chapter here: 
@@ -18,36 +17,37 @@ Print on the console a rectangle made out of **10 x 10** stars.
 
 |Input|Output|
 |---|---|
-|(няма)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
+|(None)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
 #### Hints and Guidelines
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-Как работи примерът? Инициализира се **цикъл с променлива `i`**. Началната стойност по подразбиране на променливата е **`i = 0`**. С всяка итерация на цикъла променливата се увеличава с **1**, докато е **по-малка от 10**. Така кодът в тялото на цикъла се изпълнява **10 пъти** - от **0<sup>-ия</sup>** до **9<sup>-ия</sup>** път включително. В тялото на цикъла се печата на нов ред в конзолата **`'*' * 10`**, което създава низ (стринг) от 10 звездички.
-
-#### Тестване в Judge системата
-
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
+How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is  **`i = 0`**. With each iteration of the cycle, the variable increases by **1** until it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 stars.
 
 
-### Пример: правоъгълник от N x N звездички
+#### Testing in the Judge System
 
-Да се напише програма, която въвежда цяло положително число **n** и печата на конзолата **правоъгълник от N x N звездички**.
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+
+###Example: Rectangle Made of N x N Stars
+
+Write a program that reads a positive number **n** and prints on the console **a rectangle of N x N asterisks**. 
+
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\*\*</code><br><code>\*\*</code>|3|<code>\*\*\*</code><br><code>\*\*\*</code><br><code>\*\*\*</code>|4|<code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е аналогична с предходната:
+The task is similar to the previous one: 
 
 ![](/assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#1](https://judge.softuni.org/Contests/Practice/Index/1055#1).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#1](https://judge.softuni.org/Contests/Practice/Index/1055#1).
 
 
 ## Вложени цикли
