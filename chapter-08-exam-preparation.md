@@ -47,7 +47,7 @@ The course **"Programing Basics"** finishes with a **practical exam**. There are
 </table>
 
 #### Input
-**6 integers** are read from the console (one per line): 
+From the console **6 integers** are read (one per line): 
 **x1, y1, x2, y2, x3, y3.**
 -	All input numbers are in the range [**-1000 … 1000**].
 -	It's guaranteed that **y2 = y3**.
@@ -67,7 +67,7 @@ Print on the console **the triangle area**.
 
 #### Hints and Guidelines
 
-It is extremely important in these types of tasks, in which some coordinates are given, to pay attention to the ** order ** in which they are submitted, as well as to correctly understand which of the coordinates we will use and in what way.  In this case, the input is in order **x1, y1, x2, y2, x3, y3**. If we do not follow this sequence, the solution becomes wrong. First, we write the code that reads the input data:
+It is extremely important in these types of tasks, in which some coordinates are given, to pay attention to the **order** in which they are submitted, as well as to correctly understand which of the coordinates we will use and in what way.  In this case, the input is in order **x1, y1, x2, y2, x3, y3**. If we do not follow this sequence, the solution becomes wrong. First, we write the code that reads the input data:
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-03.png)
 
@@ -75,7 +75,7 @@ We have to calculate **the side** and **the height** of the triangle. From the e
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-04.png)
   
-We will use the formula familiar to us from school for finding the ** area of a triangle ** to calculate the area.
+We will use the formula familiar to us from school for finding the **area of a triangle** to calculate the area.
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-05.png)
 
@@ -128,7 +128,7 @@ We calculate how many **bricks** the workers transport in a single course:
 
 ![](/assets/chapter-8-1-images/02.Bricks-02.png)
 
-By dividing the total number of **bricks transported for 1 course**, we will obtain the number of **courses** needed to carry them. We will use the **`math.ceil (…)`** function to round the result up. ** Remember ** to add **`import math`** at the beginning of the working file so that the **`math.ceil (…)`** function can work. When the bricks can be transferred with **an exact number of courses**, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be **the number of exact courses** but with a decimal fraction.  The decimal part will be rounded up and we will get the required **1 course** for the remaining bricks.
+By dividing the total number of **bricks transported for 1 course**, we will obtain the number of **courses** needed to carry them. We will use the **`math.ceil (…)`** function to round the result up. **Remember** to add **`import math`** at the beginning of the working file so that the **`math.ceil (…)`** function can work. When the bricks can be transferred with **an exact number of courses**, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be **the number of exact courses** but with a decimal fraction.  The decimal part will be rounded up and we will get the required **1 course** for the remaining bricks.
 
 ![](/assets/chapter-8-1-images/02.Bricks-03.png)
 
@@ -238,7 +238,7 @@ To find out if **the point** is inside of the figure, we will divide **the figur
 ![](/assets/chapter-8-1-images/04.Point-in-figure-02.png)
 ![](/assets/chapter-8-1-images/04.Point-in-figure-03.png)
 
-A sufficient condition is the ** point ** to be located in one of them to be in the ** figure **. 
+A sufficient condition is the **point** to be located in one of them to be in the **figure**. 
 
 We read the input from the console:
 
@@ -594,7 +594,7 @@ The output contains all **numbers in batches of four**, in ascending order, one 
 
 #### Hints and Guidelines
 
-We read the input data from the console. We also create the additional variable ** `count` **, which will keep track of whether **an existing number of ranges**: 
+We read the input data from the console. We also create the additional variable **`count`**, which will keep track of whether **an existing number of ranges**: 
 
 ![](/assets/chapter-8-1-images/11.Increasing-4-numbers-01.png)
 
