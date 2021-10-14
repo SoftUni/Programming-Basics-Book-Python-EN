@@ -252,7 +252,7 @@ The input is read from the console and **contains exactly 2 lines**:
   * If **the money is enough**:
     * "**Yes! He will live a carefree life and will have {N} dollars left.**" – where **N** are the remaining money.
   *	If **the money is NOT enough**:
-    * "**He will need {М} dollars to survive.**" – where **M** is the amount **lacking**.
+    * "**He will need {M} dollars to survive.**" – where **M** is the amount **lacking**.
 
 ### Example input & output
 
@@ -303,7 +303,7 @@ With the help of a **`for` loop** we loop through all years. **We begin at 1800*
 
 ![](/assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
-At the end we print the results, and we do a **check whether the inheritance** (**`inheritance`**) has been enough for him to live without working or not. If the inheritance (**`inheritance`**) is **a positive number**, we print: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", while if it's a **negative number**: "**`He will need {М} dollars to survive.`**". We don't forget to format the sum with 2-digit precision after the decimal point.
+At the end we print the results, and we do a **check whether the inheritance** (**`inheritance`**) has been enough for him to live without working or not. If the inheritance (**`inheritance`**) is **a positive number**, we print: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", while if it's a **negative number**: "**`He will need {M} dollars to survive.`**". We don't forget to format the sum with 2-digit precision after the decimal point.
 
 **Hint**: Think about using the function **`abs(…)`** when printing the output and the inheritance is not enough.
 
