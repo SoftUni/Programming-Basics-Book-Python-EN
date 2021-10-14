@@ -259,7 +259,7 @@ The input is read from the console and **contains exactly 2 lines**:
 <tr>
 <th align="left"><strong>Input</strong></th>
 <th align="left"><strong>Output</strong></th>
-<th align="left"><strong>Explanations</strong></th>
+<th align="left"><strong>Explanation</strong></th>
 </tr>
 </thead>
 <tbody>
