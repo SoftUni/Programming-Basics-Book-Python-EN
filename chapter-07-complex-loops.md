@@ -206,7 +206,7 @@ We will solve the problem by implementing **Euclid's algorithm**:
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#6](https://judge.softuni.org/Contests/Practice/Index/1057#6).
 
 
-## While True + break цикъл
+## While True + break loop
 
 The next type of loop construction that we will be familiar with while studying programming is the `while True` + `break` loop (for short `while` + `break` loop). Its idea **is to repeat a block of code** over and over again until **explicit termination of the loop**, usually after a `if` statement in the body of the loop. Here's what this loop looks like in Python code:
 
@@ -623,86 +623,86 @@ Then, we give a meaningful name to the project, for example "**Fruits-Web-Game**
 
 ![](/assets/chapter-7-1-images/15.Blank-Python-project-02.png)
 
-Ще създадем нашето уеб приложение, ползвайки библиотеката **Flask**, с която вече се запознахме. Както вече знаем, преди да започнем да пишем код, трябва да я инсталираме. Отиваме в настройките на PyCharm [**File**] -> [**Settings**] и след това в [**Project: Fruit-Web-Game**] -> [**Project Interpreter**]. Там, натискаме бутона **`+`**, търсим и инсталираме **`Flask`**.
+ЩWe will create our web application using the **Flask** library, which we have already met. As we already know, before we start writing code, we need to install it. We go to PyCharm settings [**File**] -> [**Settings**] and then to [**Project: Fruit-Web-Game**] -> [**Project Interpreter**]. There, press the **`+`** button, search for and install **`Flask`**.
 
-Сега трябва да вземем структурата на проекта от предоставените ни ресурси.
+Now we need to take the structure of the project from the resources provided to us.
 
-След това, добавяме **ресурсите** за играта (те са част от файловете със заданието за този проект и могат да бъдат свалени от [тук](https://github.com/SoftUni/Programming-Basics-Book-CSharp-Python/tree/master/assets/chapter-7-1-assets)). Копираме ги от Windows Explorer и ги поставяме в папката на проекта в PyCharm с **copy/paste**. След като поставим ресурсите, структурата на проекта трябва да изглежда така:
+Then, we add the **resources** for the game (they are part of the task files for this project and can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-CSharp-Python/tree/master/assets/chapter-7-1-assets)). We copy them from Windows Explorer and paste them in the project folder in PyCharm with **copy/paste**. Once we have placed the resources, the structure of the project should look like this:
 
 ![](/assets/chapter-7-1-images/15.Fruits-06.png)
 
-Ако отворим **app.py** и го пуснем с десен бутон -> [**Run 'app'**], би трябвало да се отвори приложението, след което да натиснем върху линка в конзолата и да се отвори нашия уеб браузър:
+If we open **app.py** and launch it with the right button -> [**Run 'app'**], we should open the application, then click on the link in the console and open our web browser :
 
 ![](/assets/chapter-7-1-images/15.Fruits-07.png)
 
-Сега създаваме контролите за играта. Целта е да добавим **скролиращи ленти** (scroll bars), с които играчът да се прицелва, и бутон за стартиране на **нова игра**. Затова трябва да редактираме файла **templates/index.html**. Изтриваме "**Hello World**" и на негово място въвеждаме следния код:
+Now we create the controls for the game. The goal is to add **scroll bars**, with which the player can aim, and a button to start a **new game**. Therefore, we need to edit the **templates/index.html** file. Delete "**Hello World**" and enter the following code in its place:
   
 ![](/assets/chapter-7-1-images/15.Fruits-08.png)
 
-Този код създава уеб форма **`<form>`** със скролер (поле) **`position`** за задаване на число в интервала [**0 … 100**] и бутон [**Fire Top**] за изпращане на данните от формата към сървъра. Действието, което ще обработи данните, се казва **`/FireTop`**, което означава функция **`fire_top()`**, която се намира във файла **app.py**. Следват още две подобни форми с бутони [**Fire Bottom**] и [**New Game**].
+This code creates a web form **`<form>`** with a scroller (field) **`position`** to set a number in the interval [**0 … 100**] and a button [**Fire Top**] to send the form data to the server. The action that will process the data is called **`/FireTop`**, which means the **`fire_top()`** function, which is located in the **app.py** file. There are two more similar forms with buttons [**Fire Bottom**] and [**New Game**].
 
-Сега трябва да подготвим плодовете за рисуване в изгледа (view). Добавяме следния код в **app.py** файла:
+Now we need to prepare the fruits for drawing in the view. Add the following code to the **app.py** file:
 
 ![](/assets/chapter-7-1-images/15.Fruits-09.png) 
 
-Горният код дефинира полета за **брой редове, брой колони**, за **таблицата с плодовете** (игралното поле), за натрупаните от играча **точки** и информация дали играта е активна или е **свършила** (поле **`gameOver`**). Игралното поле е с размери 9 колони на 3 реда и съдържа за всяко поле текст какво има в него: **`apple`, `banana`, `orange`, `kiwi`, `empty` или `dynamite`**. Главното действие **`index()`** подготвя игралното поле за чертане като записва елементите на играта и извиква изгледа, който ги чертае в страницата на играта (в уеб браузъра като HTML).
+The above code defines the fields for **number of rows, number of columns**, for **fruit table** (playing field), for the **points** accumulated by the player and information whether the game is active or  **finished** (field **`gameOver`**). The playing field is 9 columns in 3 rows and contains text for each field: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**. The main action **`index()`** prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).
 
-Трябва да генерираме случайни плодове. За да направим това, трябва да напишем метод **`generate_random_fruits()`** с кода от картинката по-долу. Този код записва в таблицата (матрицата) **`fruits`** имена на различни картинки и така изгражда игралното поле. Във всяка клетка от таблицата се записва една от следните стойности: **`apple`, `banana`, `orange`, `kiwi`, `empty` или `dynamite`**. След това, за да се нарисува съответното изображение в изгледа, към текста от таблицата ще се долепи **`.png`** и така ще се получи името на файла с картинката, която да се вмъкне в HTML страницата като част от игралното поле. Попълването на игралното поле (9 колони с по 3 реда) става в изгледа **`index.html`**, с два вложени **`for`** цикъла (за ред и за колона).
+We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, in order to draw the corresponding image in the view, **`.png`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
 
-За да се генерират случайни плодове, за всяка клетка се генерира **случайно число** между 0 и 8 (вж. класа **`random`** в Python). Ако числото e 0 или 1, се слага **`аpple`**, ако е между 2 и 3, се слага **`banana`** и т.н. Ако числото е 8, се поставя **`dynamite`**. Така плодовете се появяват 2 пъти по-често отколкото динамита. Ето и кода:
+To generate random fruits, a **random number** between 0 and 8 is generated for each cell (see class **`random`** in Python). If the number is 0 or 1, put **`аpple`**, if it is between 2 and 3, put **`banana`**, etc. If the number is 8, set **`dynamite`**. Thus, fruits appear 2 times more often than dynamite. Here is the code:
 
 ![](/assets/chapter-7-1-images/15.Fruits-10.png)
 
-Чертане на плодовете в **`index.html`**:
+Drawing the fruit in **`index.html`**:
 
-За да **попълним игралното поле** с плодовете, трябва да завъртим **два вложени цикъла** (за редовете и за колоните). Всеки ред се състои от 9 на брой картинки, всяка от които съдържа **`apple`, `banana`** или друг плод, или празно поле **`empty`**, или **`dynamite`**. Картинките се чертаят като се отпечата HTML таг за вмъкване на картинка: **`<img src="/images/apple.png" />`**. Девет картинки се подреждат една след друга на всеки от редовете, а след тях се преминава на нов ред с **`<br>`**. Това се повтаря три пъти за трите реда. Накрая се отпечатват точките на играча. Ето как изглежда **кодът** за чертане на игралното поле и точките:
+In order to **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field  **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.png" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
 
 ![](/assets/chapter-7-1-images/15.Fruits-11.png)
 
-Обърнете внимание на къдравите скоби – те служат за превключване между езика **HTML** и езика **Python** и идват от **Jinja2** синтаксиса за рисуване на динамични уеб страници.
+Note the curly braces – they are used to switch between the languages - **HTML** and **Python** and come from **Jinja2** syntax for drawing dynamic web pages.
 
-Стартираме проекта с [**Shift+F10**]. Очаква се да бъде генерирано случайно игрово поле с плодове с размери 9 на 3 и да се визуализира в уеб страницата чрез поредица картинки:
+We start the project with [**Shift+F10**]. It is expected that a random fruit field with sizes 9 by 3 will be generated and visualized on the web page through a series of pictures:
 
 ![](/assets/chapter-7-1-images/15.Fruits-12.png)
 
-Сега играта е донякъде направена: игралното поле се генерира случайно и се визуализира успешно (ако не сте допуснали грешка някъде). Остава да реализираме същината на играта: **стрелянето по плодовете**.
+Now the game is somewhat done: the playing field is randomly generated and visualized successfully (if you haven't made a mistake somewhere). It remains to realize the essence of the game: **shooting at the fruits**.
 
-За целта добавяме действията [**New Game**], [**Fire Top**] и [**Fire Bottom**] във файла **app.py**:
+To do this, add the actions [**New Game**], [**Fire Top**] and [**Fire Bottom**] to the file **app.py**:
 
 ![](/assets/chapter-7-1-images/15.Fruits-13.png) 
 
-Чрез горния код дефинираме три действия:
-*	**`reset()`** – стартира нова игра, като генерира ново случайно игрално поле с плодове и експлозиви, нулира точките на играча и прави играта валидна **(`gameOver = false`)**. Това действие е доста просто и може да се тества веднага с [**Shift+F10**], преди да се напишат другите.
-*	**`fire_top()`** – стреля по ред **0** на позиция **`position`** (число от 0 до 100), взета от потребителя. Извиква се стреляне в посока **надолу** (+1) от ред **0** (най-горния). Самото стреляне е по-сложно като логика и ще бъде разгледано след малко.
-*	**`fire_bottom()`** – стреля по ред **2** на позиция **`position`** (число от 0 до 100), взета от потребителя. Извиква се стреляне в посока **нагоре** (-1) от ред **2** (най-долния).
+Using the above code we define three actions:
+*	**`reset()`** – launches a new game by generating a new random playing field with fruits and explosives, resets the player's points and makes the game valid **(`gameOver = false`)**. This action is quite simple and can be tested immediately with [**Shift+F10**] before writing the others..
+*	**`fire_top()`** – shoots in line **0** at **`position`** (number from 0 to 100), taken by the user. A **down** (+1) shooting from row **0** (top) is called. The shooting itself is more complex in logic and will be discussed shortly.
+*	**`fire_bottom()`** – shoots in line **2** at **`position`** (number from 0 to 100), taken by the user. A shoot in the **up** (-1) direction from row **2** (bottom) is called.
 
-Имплементираме "стрелянето" – метода **`fire(position, start_row, step)`**:
+We implement the "shooting" method **`fire(position, start_row, step)`**:
 
 ![](/assets/chapter-7-1-images/15.Fruits-14.png)
 
-Стрелянето работи по следния начин: първо се изчислява номера на колоната **`col`**, към която играчът се е прицелил. Входното число от скролера (между 0 и 100) се намаля до число между 0 и 8 (за всяка от 9-те колони). Номерът на реда **row** е или 0 (ако изстрелът е отгоре) или броят редове минус едно (ако изстрелът е отдолу). Съответно посоката на стрелба (стъпката) е **1** (надолу) или **-1** (нагоре).
+Shooting works as follows: first the number of the column **`col`**, to which the player is aiming is calculated. The input number from the scroller (between 0 and 100) s reduced to a number between 0 and 8 (for each of the 9 columns). The line number **row** is either 0 (if the shot at the top) or the number of lines minus one (if the shot is at the bottom). Accordingly, the direction of firing (the step) is **1** (down) or **-1** (up).
 
-За да се намери къде изстрелът поразява плод или динамит, се преминава в цикъл през всички клетки от игралното поле в прицелената колона и от първия до последния атакуван ред. Ако се срещне плод, той изчезва (замества се с **`empty`**) и се дават точки на играча. Ако се срещне **`dynamite`**, играта се отбелязва като свършила.
+To find where the shot hits a fruit or dynamite, go through a loop through all the cells of the playing field in the target column and from the first to the last attacked row. If a fruit is found, it disappears (replaced by **`empty`**) and points are given to the player. If **`dynamite`** is encountered, the game is marked as over.
 
-Оставаме на по-запалените читатели да имплементират по-сложно поведение, например да се дават различни точки при уцелване на различен плод, да се реализира анимация с експлозия (това не е твърде лесно), да се взимат точки при излишно стреляне в празна колона и подобни.
+We leave it to more avid readers to implement more complex behaviors, for example, to give different points when hitting a different fruit, to realize an animation with an explosion (this is not too easy), to take points when shooting unnecessarily in an empty column, and similar.
 
-**Тестваме** какво работи до момента като стартираме приложението с [**Ctrl + Shift + F10**]:
-*	**Нова игра** &rarr; бутонът за нова игра трябва да генерира ново игрално поле със случайно разположени плодове и експлозиви и да нулира точките на играча.
-*	**Стреляне отгоре** &rarr; стрелянето отгоре трябва да премахва най-горния плод в уцелената колона или да предизвиква край на играта при динамит. Всъщност при край на играта все още нищо няма да се случва, защото в изгледа този случай още не се разглежда.
-* **Стреляне отдолу** &rarr; стрелянето отдолу трябва да премахва най-долния плод в уцелената колона или да прекратява играта при уцелване на динамит.
+**We test** what works so far by running the application with [**Ctrl + Shift + F10**]:
+*	**New game** &rarr; the new game button must generate a new playing field with randomly placed fruits and explosives and reset the player's points.
+*	**Shooting from above** &rarr; shooting from above must remove the top fruit in the hit column or cause the end of the game in dynamite. In fact, at the end of the game, nothing will happen yet, because in the view this case is not yet considered.
+* **Shooting from below** &rarr; shooting from below must remove the bottom fruit in the hit column or stop the game when hitting dynamite.
 
 ![](/assets/chapter-7-1-images/15.Fruits-01.png)
  
-За момента при **"Край на играта"** нищо не се случва. Ако играчът уцели динамит, в приложението се отбелязва, че играта е свършила **(`game_оver = Тrue`)**, но този факт не се визуализира по никакъв начин. За да заработи приключването на играта, е необходимо да добавим няколко проверки в изгледа:
+For now, nothing is happening at **"End of Game"**.If the player hits dynamite, the application notes that the game is over **(`game_оver = Тrue`)**, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:
 
 ![](/assets/chapter-7-1-images/15.Fruits-15.png)
 
-Кодът по-горе проверява дали е свършила играта и показва съответно контролите за стреляне и игралното поле (при активна игра) или картинка с експлодирали плодове при край на играта.
+The code above checks if the game is over and shows respectively the shooting controls and the playing field (during active play) or a picture with exploded fruits at the end of the game.
 
-След промяната в кода на изгледа стартираме с [**Ctrl + Shift + F10**] и **тестваме** играта отново:
+After changing the code of the view, we start with [**Ctrl + Shift + F10**] and **test** the game again:
 
 ![](/assets/chapter-7-1-images/15.Fruits-16.png)
 
-Този път при уцелване на динамит, трябва да се появи дясната картинка и да се позволява единствено действието "нова игра" (бутонът [**New Game**]).
+This time when hitting dynamite, the right picture should appear and only the "new game" action should be allowed (the [**New Game**] button).
 
-Сложно ли беше? Успяхте ли да направите играта? Ако не сте успели, не се притеснявайте, това е сравнително сложен проект, който включва голяма доза неизучавана материя. Ако срещнете някакви затруднения, може да питате във **форума на СофтУни**: https://softuni.bg/forum.
+Was it complicated? Did you manage to make the game? If you fail, don't worry, this is a relatively complex project that involves a large amount of unstudied material. If you encounter any difficulties, you can ask in the **forum of SoftUni**: https://softuni.bg/forum.
