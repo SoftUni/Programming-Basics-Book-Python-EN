@@ -305,7 +305,7 @@ The input will be three parameters:
 
 #### Hints and pointers
 
-We take the input data and to the units of measure, we can add the function  **`lower()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit.**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
+We take the input data and to the units of measure, we can add the function  **`lower()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
 ![](/assets/chapter-3-1-images/08.Metric-converter-01.png)
 
