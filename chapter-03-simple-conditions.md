@@ -240,7 +240,7 @@ Here’s what the solution to the problem might look like:
 
 ![](/assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output
+Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output.
 
 #### Testing in the Judge System
 
