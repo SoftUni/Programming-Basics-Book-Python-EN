@@ -320,7 +320,7 @@ To date, we have written quite a lot of code and oftentimes there were mistakes,
 
 ### What is "debugging"?
 
-**Debugging** is the process of "**attaching**" to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called (**bugs**):
+**Debugging** is the process of "**attaching**" to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called **bugs**:
 
 ![](/assets/chapter-3-1-images/00.Debugging-01.png)
 ![](/assets/chapter-3-1-images/00.Debugging-02.png)
