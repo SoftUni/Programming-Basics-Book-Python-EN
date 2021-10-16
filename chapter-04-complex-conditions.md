@@ -1,14 +1,12 @@
 # Chapter 4.1. More Complex Conditions
 
-In the **current** chapter, we are going to examine **nested conditional statements** in the **Python** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"**, because **we put `if` condition** into **another `if` condition**. We are going to examine the **more complex logical conditions** through proper examples.
-
+In the **current** chapter, we are going to examine **nested conditional statements** in the **Python** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"** because **we put `if` condition** into **another `if` condition**. We are going to examine the **more complex logical conditions** through proper examples.
 
 ## Video
 <div class="video-player">
   Watch this chapter's video lesson here:
   https://www.youtube.com/watch?v=aeeje4nIzas.
 </div>
-
 
 ## Nested Conditions
 
@@ -56,7 +54,6 @@ After **reading the input data from the console**, the following **program logic
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#0](https://judge.softuni.org/Contests/Practice/Index/1051#0).
 
-
 ### Example: Small Shop
 
 A Bulgarian entrepreneur opens **small shops** in **a few cities** with different **prices** for the following **products**:
@@ -86,7 +83,6 @@ We **convert** all of the letters into **lower register** using the function **`
 #### Testing in the Judge System 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#1](https://judge.softuni.org/Contests/Practice/Index/1051#1).
-
 
 ## More Complex Conditions
 
@@ -120,7 +116,6 @@ result = a and b and c and d
 
 The program will run in the **following** way: **It starts** the check form **`a`**, **reads** it and accepts that it has a **`True`** value, after which it **checks** **`b`**. After it has **accepted** that **`a`** and **`b`** return **`True`**, **it checks the next** argument. It gets to **`c`** and sees that the variable has a **`False`** value. After the program accepts that argument **`c`** has a **`False`** value, it calculates the expression **before `c`**, **independent** of what the value of **`d`** is. That is why the evaluation of **`d`** is being **skipped** and the whole expression is calculated as **`False`**.
 
-
 ### Example: Point in a Rectangle
 
 Checks whether **point {x, y}** is placed **inside the rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**).
@@ -146,7 +141,6 @@ A point is internal for a given polygon if the following four conditions are app
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#2](https://judge.softuni.org/Contests/Practice/Index/1051#2).
 
-
 ## Logical "OR"
 
 The logical **"OR"** (operator **`or`**) means that **at least one** among a few conditions is fulfilled. Similar to the operator **`and`**, the logical **"OR"** accepts a few arguments of **bool** (conditional) type and returns **`True`** or **`False`**. We can easily guess that we **obtain** a value **`True`** whenever at least **one** of the arguments has a **`True`** value. This is shown at the truth table below:
@@ -156,7 +150,6 @@ In school, the teacher said: "Ivan or Peter should clean the board". For complet
 |a|b|a **`or`** b|
 |:-----:|:-----:|:-----:|
 |True<br>True<br>False<br>False|True<br>False<br>True<br>False|True<br>True<br>True<br>False|
-
 
 ### How does the `or` operator work?
 
@@ -196,7 +189,6 @@ We have to use a few conditional statements with logical "**OR**" (**`or`**):
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#3](https://judge.softuni.org/Contests/Practice/Index/1051#3).
 
-
 ## Logical Negation
 
 **Logical negation** (operator **`not`**) means that a given condition is **not fulfilled**.
@@ -228,11 +220,9 @@ A given **number is valid** if it is in the range [**100 … 200**] or it is **0
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#4](https://judge.softuni.org/Contests/Practice/Index/1051#4).
 
-
 ## The Parenthesis **`()`** Operator
 
 Like the rest of the operators in programming, the operators **`and`** and **`or`** have a priority, as in the case **`and`** is with higher priority than **`or`**. The operator **`()`** serves for **changing the priority of operators** and is being calculated first, just like in mathematics. Using parentheses also gives the code better readability and is considered a good practice.
-
 
 ## More Complex Conditions - Examples
 
@@ -263,14 +253,13 @@ The previous conditional statement can be simplified by this way:
 
 ![](/assets/chapter-4-1-images/06.Point-on-rectangle-border-03.png)
 
-The second way with an additional boolean variable is longer but it's also more readable than the first, right? We advise you when writing boolean conditions to make them **easier for reading than understanding** and not short. If you are forced to, use additional variables with similar names. Names of the boolean variables should be with reasonable names. They must hint at what value will be stored in them.
+The second way with an additional boolean variable is longer but it's also more readable than the first, right? We advise you when writing boolean conditions to make them **easier for reading than understanding** and not short. If you are forced to, use additional variables with similar names. Names of the boolean variables should be with reasonable names. They should hint at what value will be stored in them.
 
-All that's left is to write the code, that prints "**Inside / Outside**", if the point is not on one of the sides of the rectangle.
+All that's left is to write the code, that prints "**Inside / Outside**" if the point is not on one of the sides of the rectangle.
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#5](https://judge.softuni.org/Contests/Practice/Index/1051#5).
-
 
 ### Example: Fruit Shop
 
@@ -305,7 +294,6 @@ Write a program that **reads** from the console a **fruit** (banana / apple / �
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#6](https://judge.softuni.org/Contests/Practice/Index/1051#6).
-
 
 ### Example: Trade Fees
 
@@ -356,7 +344,6 @@ Let's write a program that prints **the day of the week** depending on the **giv
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#8](https://judge.softuni.org/Contests/Practice/Index/1051#8).
 
-
 ### Example: Animal Type
 
 Write a program that prints the type of the animal depending on its name: 
@@ -380,7 +367,6 @@ We can solve the example with a few **`if-elif`** conditional statements by doin
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#9](https://judge.softuni.org/Contests/Practice/Index/1051#9).
-
 
 ## What have we learned from this chapter?
 
@@ -425,7 +411,7 @@ Write a program that enters a **type of screening** (string), a number for **row
 
 #### Hints and Guidelines
 
-While reading the input, we could convert the screening type into small letters (with the function **`.lower()`**). We create and initialize a variable that will store the calculated income. In another variable, we calculate the full capacity of the hall. We use a **`if-elif`** conditional statement to calculate the income according to the type of the projection and print the result on the console in the given format (look for the needed **Python** functionality on the internet). 
+While reading the input, we could convert the screening type into small letters (with the function **`.lower()`**). We create and initialize a variable that will store the calculated income. In another variable, we calculate the full capacity of the hall. We use an **`if-elif`** conditional statement to calculate the income according to the type of the projection and print the result on the console in the given format (look for the needed **Python** functionality on the internet). 
 
 Sample code (parts of the code are blurred with the purpose to stimulate your thinking and solving skills):
 
@@ -434,7 +420,6 @@ Sample code (parts of the code are blurred with the purpose to stimulate your th
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#10](https://judge.softuni.org/Contests/Practice/Index/1051#10).
-
 
 ### Problem: Volleyball
 
