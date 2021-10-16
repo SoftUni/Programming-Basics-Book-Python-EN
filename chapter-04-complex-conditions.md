@@ -17,9 +17,9 @@ Pretty often the program logic requires the use of **`if`** or **`if-else`** sta
 ```python
 if condition1:
     if condition2:
-        # тяло
+        # body
     else:
-        # тяло
+        # body
 ```
 
 Nesting of*more than three conditional statements inside each other is not considered a good practice and has to be avoided, mostly through optimization of the structure/the algorithm of the code and/or by using another type of conditional statement, which we are going to examine below in this chapter.
@@ -42,7 +42,7 @@ Depending on **age** (decimal number and **gender** (**m** / **f**), print a per
 |----|----|----|------|
 |25<br>f|Ms.|13.5<br>m|Master|
 
-#### Решение
+#### Solution
 
 We should notice that the **output** of the program **depends on a few things**. **First**, we have to check what is the entered **gender** and **then** check the **age**. Respectively, we are going to use **a few** **`if-else`** blocks. These blocks will be **nested**, meaning from **the result** of the first, we are going to **define** which one of the **others** to execute.
 
@@ -144,7 +144,7 @@ A point is internal for a given polygon if the following four conditions are app
 
 #### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#2](https://judge.softuni.org/Contests/Practice/Index/1051#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#2](https://judge.softuni.org/Contests/Practice/Index/1051#2).
 
 
 ## Logical "OR"
@@ -234,286 +234,287 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051
 Like the rest of the operators in programming, the operators **`and`** and **`or`** have a priority, as in the case **`and`** is with higher priority than **`or`**. The operator **`()`** serves for **changing the priority of operators** and is being calculated first, just like in mathematics. Using parentheses also gives the code better readability and is considered a good practice.
 
 
-## По-сложни логически условия
+## More Complex Conditions - Examples
 
-Понякога условията може да са доста сложни, така че да изискват дълъг булев израз или поредица от проверки. Да разгледаме няколко такива примера.
+Sometimes the conditions may be **very complex**, so they can require a long bool expression or a sequence of conditions. Let's take a look at a few examples.
 
-### Пример: точка върху страна на правоъгълник
+### Example: Point on a Rectangle Border
 
-Да се напише програма, която проверява дали **точка {x, y}** се намира **върху някоя от страните на правоъгълник {x1, y1} - {x2, y2}**. Входните данни се четат от конзолата и се състоят от 6 реда: десетичните числа **x1**, **y1**, **x2**, **y2**, **x** и **y** (като се гарантира, че **x1 < x2** и **y1 < y2**). Да се отпечата "**Border**" (точката лежи на някоя от страните) или "**Inside / Outside**" (в противен случай).
+Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
 ![](/assets/chapter-4-1-images/06.Point-on-rectangle-border-01.png)
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>-3<br>12<br>3<br>12<br>-1|Border|2<br>-3<br>12<br>3<br>8<br>-1|Inside / Outside|
 
-#### Решение
+#### Solution
 
-Точка лежи върху някоя от страните на правоъгълник, ако:
+The point lies on any of the sides of the rectangle if:
 
-* **x** съвпада с **x1** или **x2** и същевременно **y** е между **y1** и **y2** или
-* **y** съвпада с **y1** или **y2** и същевременно **x** е между **x1** и **x2**.
+* **x** coincides with **x1** or **x2** and at the same time **y** is between **y1** and **y2** or
+* **y** coincides with **y1** or **y2** and at the same time **x** is between **x1** and **x2**.
 
 ![](/assets/chapter-4-1-images/06.Point-on-rectangle-border-02.png)
 
-Предходната проверка може да се опрости по този начин:
+The previous conditional statement can be simplified by this way:
 
 ![](/assets/chapter-4-1-images/06.Point-on-rectangle-border-03.png)
 
-Вторият начин с допълнителните булеви променливи е по-дълъг, но е много по-разбираем от първия, нали? Препоръчваме ви когато пишете булеви условия, да ги правите **лесни за четене и разбиране**, а не кратки. Ако се налага, ползвайте допълнителни променливи със смислени имена. Имената на булевите променливи трябва да подсказват каква стойност се съхранява в тях.
+The second way with an additional boolean variable is longer but it's also more readable than the first, right? We advise you when writing boolean conditions to make them **easier for reading than understanding** and not short. If you are forced to, use additional variables with similar names. Names of the boolean variables should be with reasonable names. They must hint at what value will be stored in them.
 
-Остава да се допише кода, за да отпечатва "**Inside / Outside**", ако точката не е върху някоя от страните на правоъгълника.
+All that's left is to write the code, that prints "**Inside / Outside**", if the point is not on one of the sides of the rectangle.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-След като допишете решението, може да го тествате тук: [https://judge.softuni.org/Contests/Practice/Index/1051#5](https://judge.softuni.org/Contests/Practice/Index/1051#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#5](https://judge.softuni.org/Contests/Practice/Index/1051#5).
 
 
-### Пример: магазин за плодове
+### Example: Fruit Shop
 
-Магазин за плодове в **работни дни** продава на следните **цени**:
+A fruit shop during **weekdays** sells at the following **prices**:
 
-|Плод|Цена|
+|Fruit|Price|
 |:-----:|:-----:|
 |banana<br>apple<br>orange<br>grapefruit<br>kiwi<br>pineapple<br>grapes|2.50<br>1.20<br>0.85<br>1.45<br>2.70<br>5.50<br>3.85|
 
-В почивни дни цените са **по-високи**:
+During the **weekend days** the prices are **higher**:
 
-|Плод|Цена|
+|Fruit|Price|
 |:-----:|:-----:|
 |banana<br>apple<br>orange<br>grapefruit<br>kiwi<br>pineapple<br>grapes|2.70<br>1.25<br>0.90<br>1.60<br>3.00<br>5.60<br>4.20|
 
-Напишете програма, която чете от конзолата **плод** (banana / apple / …), **ден от седмицата** (Monday / Tuesday / …) и **количество (десетично число)** и **пресмята цената** според цените от таблиците по-горе. Резултатът да се отпечата **закръглен с 2 цифри след десетичния знак**. При **невалиден ден** от седмицата или **невалидно име** на плод да се отпечата **“error”**.
+Write a program that **reads** from the console a **fruit** (banana / apple / …), **a day of the week** (Monday / Tuesday / …) and **a quantity (a decimal number)** and **calculates the price** according to the prices from the tables above. The result has to be printed **rounded up to 2 digits after the decimal point**. Print **“error”** if it is an **invalid day** of the week or an **invalid name** of a fruit.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |orange<br>Sunday<br>3|2.70|kiwi<br>Monday<br>2.5|6.75|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|----|----|----|
 |grapes<br>Saturday<br>0.5|2.10|tomato<br>Monday<br>0.5|error|
 
-#### Решение
+#### Solution
 
 ![](/assets/chapter-4-1-images/07.Fruit-shop-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#6](https://judge.softuni.org/Contests/Practice/Index/1051#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#6](https://judge.softuni.org/Contests/Practice/Index/1051#6).
 
 
-### Пример: търговски комисионни
+### Example: Trade Fees
 
-Фирма дава следните **комисионни** на търговците си според **града**, в който работят и **обема на продажбите s**:
+A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the **volume of sales s**:
 
-|Град|0 <= s <= 500|500 < s <= 1000|1000 < s <= 10000|s > 10000|
+|City|0 <= s <= 500|500 < s <= 1000|1000 < s <= 10000|s > 10000|
 |:----:|:----:|:----:|:----:|:----:|
 |Sofia<br>Varna<br>Plovdiv|5%<br>4.5%<br>5.5%|7%<br>7.5%<br>8%|8%<br>10%<br>12%|12%<br>13%<br>14.5%|
 
-Напишете програма, която чете име на **град** (стринг) и обем на **продажбите** (десетично число) и изчислява размера на  комисионната. Резултатът да се изведе закръглен с **2 десетични цифри след десетичния знак**. При **невалиден град или обем на продажбите** (отрицателно число) да се отпечата "**error**".
+Write a **program** that reads the name of a **city** (string) and the volume of **sales** (float) and calculates the rate of the commission fee. The result has to be shown rounded **up to 2 digits after the decimal point**. When there is an **invalid city or volume of sales** (a negative number), print "**error**".
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |-----|-----|-----|-----|-----|-----|
 |Sofia<br>1500|120.00|Plovdiv<br>499.99|27.50|Kaspichan<br>-50|error|
 
-#### Решение
+#### Solution
 
-При прочитането на входа можем да обърнем града в малки букви (с функцията **`.lower()`**). Първоначално задаваме комисионната да е **`-1`**. Тя ще бъде променена, ако градът и ценовият диапазон бъдат намерени в таблицата с комисионните. За да изчислим комисионната според града и обема на продажбите, се нуждаем от няколко вложени **`if` проверки**, както е в примерния код по-долу:
+When reading the input, we could convert the city into small letters (with the function **`.lower()`**). Initially, we set the commission fee to **`-1`**. It will be changed if the city and the price range are found in the table of commissions.
+To calculate the commission according to the city and volume of sales, we need a few nested **`if` statements**, as in the sample code below:
 
 ![](/assets/chapter-4-1-images/08.Trade-comissions-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#7](https://judge.softuni.org/Contests/Practice/Index/1051#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#7](https://judge.softuni.org/Contests/Practice/Index/1051#7).
 
-### Пример: ден от седмицата
+### Example: Day of the Week
 
-Нека напишем програма, която принтира **деня от седмицата** (на английски) според **въведеното число** (1 … 7) или "**Error**", ако е подаден невалиден ден.
+Let's write a program that prints **the day of the week** depending on the **given number** (1 … 7) or "**Error!**" if invalid input is given.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|
+|Input|Output|
 |-----|-----|
 |1<br>7<br>-1|Monday<br>Sunday<br>Error|
 
-#### Решение
+#### Solution
 
 ![](/assets/chapter-4-1-images/09.Day-of-week-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Добра практика</b> е на <b>първо</b> място да поставяме онези условия, които обработват <b>най-често случилите се ситуации</b>, а <b>конструкциите</b>, обработващи <b>по-рядко възникващи ситуации</b>, да оставим в <b>края на конструкцията</b>. Друга <b>добра практика</b> е да <b>подреждаме случайте</b> в <b>нарастващ ред</b>, без значение дали са целочислени или символни.</td>
+<td><b>It is a good practice</b> to put at the <b>first</b> place those <b><code>case</code> statements</b> that process <b>the most common situations</b> and leave the <b><code>case</code> constructions</b> processing <b>the more rear situations</b> at <b>the end, before the <code>default</code> construction</b>. Another <b>good practice</b> is to <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#8](https://judge.softuni.org/Contests/Practice/Index/1051#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#8](https://judge.softuni.org/Contests/Practice/Index/1051#8).
 
 
-### Пример: вид животно
+### Example: Animal Type
 
-Напишете програма, която принтира вида на животно според името му: 
+Write a program that prints the type of the animal depending on its name: 
 
 * dog -> **mammal**
 * crocodile, tortoise, snake -> **reptile**
 * others -> **unknown**
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |------|------|------|------|------|-----|
 |tortoise|reptile|dog|mammal|elephant|unknown|
 
-#### Решение
+#### Solution
 
-Можем да решим задачата чрез няколко **`if-elif`** проверки по следния начин:
+We can solve the example with a few **`if-elif`** conditional statements by doing so:
 
 ![](/assets/chapter-4-1-images/10.Animal-type-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#9](https://judge.softuni.org/Contests/Practice/Index/1051#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#9](https://judge.softuni.org/Contests/Practice/Index/1051#9).
 
 
-## Какво научихме от тази глава?
+## What have we learned from this chapter?
 
-Да си припомним новите конструкции и програмни техники, с които се запознахме в тази глава:
+Let's review the new constructions and program techniques we have met in this chapter:
 
-### Вложени проверки
+### Nested Conditions
 
 ```python
 if condition1:
     if condition2:
-        # тяло 
+        # body 
     else:
-        # тяло
+        # body
 ```
 
-### По-сложни проверки с and, or, not и ()
+### Complex Conditions with and, or, not and ()
 
 ```python
 if (x == left or x == right) and (y >= top or y <= bottom):
     print(...) 
 ```
 
-## Упражнения: по-сложни проверки
+## Exercises: More Complex Conditions 
 
-Нека сега да упражним работата с по-сложни проверки. Да решим няколко практически задачи.
+Let's practice using more complex conditions. We will solve a few practical exercises.
 
-### Задача: кино
+### Problem: Cinema
 
-В една кинозала столовете са наредени в **правоъгълна** форма в **r** реда и **c** колони. Има три вида прожекции с билети на **различни** цени:
+In a cinema hall, the chairs are ordered in a **rectangle** shape in **r** rows and **c** columns. There are three types of screenings with tickets of **different** prices:
 
-* **Premiere** – премиерна прожекция, на цена **12.00** лева.
-* **Normal** – стандартна прожекция, на цена **7.50** лева.
-* **Discount** – прожекция за деца, ученици и студенти на намалена цена от **5.00** лева.
+* **Premiere** – a premiere screening, with a price of **12.00** BGN.
+* **Normal** – a standard screening, with a price of **7.50** BGN.
+* **Discount** – a screening for children and students at a reduced price – **5.00** BGN.
 
-Напишете програма, която въвежда **тип прожекция** (стринг), брой **редове** и брой **колони** в залата (цели числа) и изчислява **общите приходи** от билети при **пълна зала**. Резултатът да се отпечата във формат като в примерите по-долу - с 2 цифри след десетичния знак.
+Write a program that enters a **type of screening** (string), a number for **rows** and a number for **columns** in the hall (integer numbers) and calculates **the total income** from tickets from a **full hall**. The result has to be printed in the same format as in the examples below – rounded up to 2 digits after the decimal point.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|----|-----|
 |Premiere<br>10<br>12|1440.00 leva|Normal<br>21<br>13|2047.50 leva|
 
-#### Насоки и подсказки 
+#### Hints and Guidelines
 
-При прочитането на входа можем да обърнем типа на прожекцията в малки букви (с функцията **`.lower()`**). Създаваме и променлива, която ще ни съхранява изчислените приходи. В друга променлива пресмятаме пълния капацитет на залата. Използваме **`if-elif`** условна конструкция, за да изчислим прихода в зависимост от вида на прожекцията и отпечатваме резултата на конзолата в зададения формат (потърсете нужната **Python** функционалност в интернет). 
+While reading the input, we could convert the screening type into small letters (with the function **`.lower()`**). We create and initialize a variable that will store the calculated income. In another variable, we calculate the full capacity of the hall. We use a **`if-elif`** conditional statement to calculate the income according to the type of the projection and print the result on the console in the given format (look for the needed **Python** functionality on the internet). 
 
-Примерен код на описаната идея (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+Sample code (parts of the code are blurred with the purpose to stimulate your thinking and solving skills):
 
 ![](/assets/chapter-4-1-images/11.Cinema-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#10](https://judge.softuni.org/Contests/Practice/Index/1051#10).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#10](https://judge.softuni.org/Contests/Practice/Index/1051#10).
 
 
-### Задача: волейбол
+### Problem: Volleyball
 
-Влади е студент, живее в София и си ходи от време на време до родния град. Той е много запален по волейбола, но е зает през работните дни и играе **волейбол** само през **уикендите** и в **празничните дни**. Влади играе **в София** всяка **събота**, когато **не е на работа** и **не си пътува до родния град**, както и в **2/3 от празничните дни**. Той пътува до **родния си град h пъти** в годината, където играе волейбол със старите си приятели в **неделя**. Влади **не е на работа 3/4 от уикендите**, в които е в София. Отделно, през **високосните години** Влади играе с **15% повече** волейбол от нормалното. Приемаме, че годината има точно **48 уикенда**, подходящи за волейбол. Напишете програма, която изчислява **колко пъти Влади е играл волейбол** през годината. **Закръглете резултата** надолу до най-близкото цяло число (напр. 2.15 -> 2; 9.95 -> 9).
+Vladimir is a student, lives in Sofia and goes to his hometown from time to time. He is very keen on volleyball, but is busy during weekdays and plays **volleyball** only during **weekends** and on **holidays**. Vladimir plays **in Sofia** every **Saturday** when **he is not working**, and **he is not traveling to his hometown** and also during **2/3 of the holidays**. He travels to his **hometown h times** a year, where he plays volleyball with his old friends on **Sunday**. Vladimir **is not working 3/4 of the weekends**, during which he is in Sofia. Furthermore, during **leap years** Vladimir plays **15% more** volleyball than usual. We accept that the year has exactly **48 weekends**, suitable for volleyball. 
+Write a program that calculates **how many times Vladimir has played volleyball** throughout the year. **Round the result** down to the nearest whole number (e.g. 2.15 -> 2; 9.95 -> 9).
 
-Входните данни се четат от конзолата:
+The input data is read from the console:
 
-* Първият ред съдържа думата “**leap**” (високосна година) или “**normal**” (нормална година с 365 дни).
-* Вторият ред съдържа цялото число **p** – брой празници в годината (които не са събота или неделя).
-* Третият ред съдържа цялото число **h** – брой уикенди, в които Влади си пътува до родния град.
+ * The first line contains the word “**leap**” (leap year) or “**normal**” (a normal year with 365 days).
+ * The second line contains the integer **p** – the count of holidays in the year (which are not Saturday or Sunday).
+ * The third line contains the integer **h** – the count of weekends, in which Vladimir travels to his hometown.
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |leap<br>5<br>2|45|normal<br>3<br>2|38|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |normal<br>11<br>6|44|leap<br>0<br>1|41|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Стандартно прочитаме входните данни от конзолата като за избягване на грешки при въвеждане обръщаме текста в малки букви с функцията **`.lower()`**. Последователно пресмятаме **уикендите прекарани в София**, **времето за игра в София** и **общото време за игра**. Накрая проверяваме дали годината е **високосна**, правим допълнителни изчисления при необходимост и извеждаме резултата на конзолата **закръглен надолу** до най-близкото **цяло число** (потърсете **Python** функция с такава функционалност в интернет).
+As usual, we read the input data from the console and, to avoid making mistakes, we convert the text into small letters with the function **`.lower()`**. Consequently, we calculate **the weekends spent in Sofia**, **the time for playing in Sofia** and **the common playtime**. At last, we check whether the year is a **leap**, we make additional calculations when necessary and we print the result on the console **rounded down** to the nearest **integer** (look for a **Python** class with such functionality).
 
-Примерен код на описаната идея (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+A sample code (parts of the code are blurred on purpose to stimulate independent thinking and solving skills):
 
 ![](/assets/chapter-4-1-images/12.Volleyball-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#11](https://judge.softuni.org/Contests/Practice/Index/1051#11).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#11](https://judge.softuni.org/Contests/Practice/Index/1051#11).
 
+### Problem: * Point in the Figure
 
-### Задача: * точка във фигурата
-
-Фигура се състои от **6 блокчета с размер h \* h**, разположени като на фигурата. Долният ляв ъгъл на сградата е на позиция {0, 0}. Горният десен ъгъл на фигурата е на позиция {**2\*h**, **4\*h**}. На фигурата координатите са дадени при **h = 2**:
+The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
 <p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
 
-Да се напише програма, която въвежда цяло число **h** и координатите на дадена **точка {x, y}** (цели числа) и отпечатва дали точката е вътре във фигурата (**inside**), вън от фигурата (**outside**) или на някоя от стените на фигурата (**border**).
+Write a program that enters an integer **h** and the coordinates of a given **point {x, y}** (integers) and prints whether the point is inside the figure (**inside**), outside of the figure (**outside**) or on any of the borders of the figure (**border**).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>3<br>10|outside|2<br>3<br>1|inside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |2<br>2<br>2|border|2<br>6<br>0|border|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |----|-----|-----|-----|
 |2<br>0<br>6|outside|15<br>13<br>55|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>29<br>37|inside|15<br>37<br>18|outside|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |-----|-----|-----|-----|
 |15<br>-4<br>7|outside|15<br>30<br>0|border|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Примерна логика за решаване на задачата (не е единствената правилна):
+A possible logic for solving the task (not the only correct one):
 
-* Може да разделим фигурата на **два правоъгълника** с обща стена:
+* We might split the figure into **two rectangles** with a common side:
 
 <p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.png" /></p>
 
-* Една точка е **външна (outside)** за фигурата, когато е едновременно **извън** двата правоъгълника.
-* Една точка е **вътрешна (inside)** за фигурата, ако е вътре в някой от правоъгълниците (изключвайки стените им) или лежи върху общата им стена.
-* В **противен случай** точката лежи на стената на правоъгълника (**border**).
+* A point is **outer (outside)** for the figure when it is **outside** both of the rectangles.
+* A point is **inner (inside)** for the figure if it is inside one of the rectangles (excluding their borders) or lies on their common side.
+* In **another case**, the point lies on the border of the rectangle (**border**).
 
-Примерен код (части от кода са замъглени с цел да се стимулира самостоятелно мислене и решение):
+Sample code (parts of the code are blurred to stimulate logical thinking and solving skills):
 
 ![](/assets/chapter-4-1-images/13.Point-in-the-figure-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1051#12](https://judge.softuni.org/Contests/Practice/Index/1051#12).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#12](https://judge.softuni.org/Contests/Practice/Index/1051#12).
