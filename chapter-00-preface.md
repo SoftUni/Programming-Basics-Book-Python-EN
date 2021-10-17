@@ -1,205 +1,208 @@
 # Предговор
 
-Книгата "**Основи на програмирането**" е официален учебник за **курса "Programming Basics"** в Софтуерния университет (СофтУни): [https://softuni.bg/courses/programming-basics](https://softuni.bg/courses/programming-basics). Тя запознава читателите с писането на **програмен код** на начално ниво (basic coding skills), работа със **среда за разработка** (IDE), използване на **променливи** и данни, **оператори** и **изрази**, работа с **конзолата** (четене на входни данни и печатане на резултати), използване на **условни конструкции** (**`if`**, **`if-else`**, **`if-elif-else`**), **цикли** (**`for`**, **`while`**, **`do-while`**) и работа с **функции** (деклариране и извикване на функции, подаване на параметри и връщане на стойност). Използват се езикът за програмиране **Python** и средата за разработка **PyCharm**. Обхванатият учебен материал дава базова подготовка за по-задълбочено изучаване на програмирането и подготвя читателите за приемния изпит в СофтУни.
+**"Programming Basics"** is the official textbook for the course **Programming Basics** in the Software University (SoftUni): [https://softuni.bg/courses/programming-basics](https://softuni.bg/courses/programming-basics). The book introduces readers with writing **programming code** at a beginner's level (basic coding skills), working with **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), usage of **conditional statements** (**`if`**, **`if-else`**, **`if-elif-else`**), **loops** (**`for`**, **`while`**, **`do-while`**) and working with **functions** (declaring and calling functions, passing parameters, and returning values).  The book uses **Python** programming language and **PyCharm** development environment. The covered training material provides basic preparation for a deeper study of programming and prepares readers for the entrance exam in SoftUni.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Тази книга ви дава само <b>първите стъпки към програмирането</b>. Тя обхваща съвсем начални умения, които предстои да развивате години наред, докато достигнете до ниво, достатъчно за започване на работа като програмист.</td>
+<td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, in order to reach a high enough level and start working as a programmer.</td>
 </tr></table>
 
-Книгата се използва и като неофициален **[учебник за училищните курсове по програмиране в професионалните гимназии](https://softuni.foundation/projects/applied-software-developer-profession/)**, изучаващи професиите "**Програмист**", "**Приложен програмист**" и "**Системен програмист**", както и като допълнително учебно пособие в началните курсове по програмиране в **средните училища, профилираните и математическите гимназии**, за паралелките с профил "информатика и информационни технологии".
+The book is also used as an unofficial **[textbook for school-level programming courses in the high schools](https://softuni.foundation/projects/applied-software-developer-profession/)**, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
 
-## За кого е тази книга?
+## Who is this book intended for?
 
-Тази книга е подходяща за **напълно начинаещи в програмирането**, които искат да опитат какво е да програмираш и да научат основните конструкции за създаване на програмен код, които се използват в софтуерната разработка, независимо от езиците за програмиране и използваните технологии. Книгата дава една **солидна основа** от практически умения, които се използват за по-нататъшно обучение в програмирането и разработката на софтуер.
+This book is suitable for **complete beginners in programming**, who want to try what programming is and learn the main constructions for writing programming code that are used in software development, regardless of programming languages and technologies used. The book provides a **solid basis** of practical skills that are used for further study in programming and software development.
 
-За всички, които не са преминали **[безплатния курс по основи на програмирането за напълно начинаещи в СофтУни](https://softuni.bg/apply)**, специално препоръчваме да го запишат **напълно безплатно**, защото програмиране се учи с правене, не с четене! На курса ще получите безплатно достъп до учебни занятия, обяснения и демонстрации на живо или онлайн (като видео уроци), **много практика и писане на код**, помощ при решаване на задачите след всяка тема, достъп до преподаватели, асистенти и ментори, както и форум и дискусионни групи за въпроси, достъп до общност от хиляди навлизащи в програмирането и всякаква друга помощ за начинаещия.
+For anyone who hadn't passed **[the free course on Programming Basics at SoftUni](https://softuni.bg/apply)**, we specially recommend to sign up for it **completely free**, because one learns programming by doing it, not by reading it! During the course you will get free access to lessons, explanations and live or online demonstrations (such as video tutorials), **a lot of practice and code writing**, help with the task solutions after each topic, access to trainers, assistants and mentors, as well as forums and discussion groups for any questions, access to a community of thousands of people who are new in programming, and any other help that a beginner might need.
 
-Безплатният курс в СофтУни за напълно начинаещи е подходящ за **ученици** (от 5 клас нагоре), **студенти** и **работещи** други професии, които искат да натрупат технически знания и да разберат дали им харесва да програмират и дали биха се занимавали сериозно с разработка на софтуер за напред.
+The free course for beginners in SoftUni is suitable for **school students** (of age 10+), **university students** and **workers** having any other professions, who want to gain technical knowledge, check if programming is what they like to do and understand if they would like to evolve in the software development field.
 
-**Нова група започва всеки месец**. Курсът "Programming Basics" в СофтУни се организира регулярно с няколко различни езика за програмиране, така че опитайте. Обучението е **безплатно** и може да се откажете по всяко време, ако не ви допадне. **Записването** за безплатно присъствено или онлайн обучение за стартиращи в програмирането е достъпно през **формата за кандидатстване в СофтУни**: https://softuni.bg/apply.
+**A new group starts each month**. The "Programming Basics" course at SoftUni is organized regularly using a few different programming languages as a basis. So, just check it out! The course is **free**, and you can quit any time you like. **Signing up** for free - live or online training is available via the **SoftUni application form**: https://softuni.bg/apply.
 
-## Защо избрахме езика Python?
+## Why did we choose the Python language?
 
-За настоящата книга избрахме езика **Python**, защото е **съвременен език** за програмиране от високо ниво и същевременно е лесен за научаване и **подходящ за начинаещи**. Като употреба **Python** е **широкоразпространен**, с добре развита екосистема, с многобройни библиотеки и технологични рамки и съответно дава много **перспективи** за развитие. **Python** комбинира парадигмите на процедурното, функционалното и обектно-ориентираното програмиране по съвременен начин с лесен за употреба синтаксис. В книгата ще използваме **езика Python** и средата за разработка **PyCharm**, която е достъпна безплатно от JetBrains.
+For this book we chose **Python**, because it is a **modern** language for high-level programming and at the same time it is easy to learn and suitable for **beginners**. As a use **Python** is **widespread**, with a well-developed ecosystem, numerous libraries and technological frameworks, and therefore gives many **prospects** for development. **Python** combines the paradigms of procedural, functional and object-oriented programming in a modern way with easy-to-use syntax. In the book, we'll use the **Python language** and the **PyCharm** development environment, which is available for free from JetBrains.
 
-Както ще обясним по-късно, **езикът за програмиране, с който стартираме, няма съществено значение**, но все пак трябва да ползваме някакъв програмен език, и в тази книга сме избрали именно **Python**. Книгата може да се намери преведена огледално и на други езици за програмиране като C# (вж. https://csharp-book.softuni.bg), Java (вж. https://java-book.softuni.bg), JavaScript (вж. https://js-book.softuni.bg) и C++ (вж. https://cpp-book.softuni.bg).
+As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **Python**. The book can also be found translated in other programming languages such as C# (see https://csharp-book.softuni.bg), Java (see https://java-book.softuni.bg), JavaScript (see https://js-book.softuni.bg) и C++ (see https://cpp-book.softuni.bg).
 
-## Книгата на други програмни езици: C#, Java, JavaScript, Python, C++, PHP
+## The book in other programming languages: C#, Java, JavaScript, Python, C++, PHP
 
-Настоящата книга по програмиране за напълно начинаещи е достъпна на няколко езика за програмиране (или е в процес на адаптация за тях):
-* [Основи на програмирането със C#](https://csharp-book.softuni.bg)
-* [Основи на програмирането с Java](https://java-book.softuni.bg)
-* [Основи на програмирането с JavaScript](https://js-book.softuni.bg)
-* [Основи на програмирането с Python](https://python-book.softuni.bg)
-* [Основи на програмирането със C++](https://cpp-book.softuni.bg)
-* [Основи на програмирането с PHP](https://php-book.softuni.bg)
+This programming book for complete beginners is available in several programming languages (or is in the process of being adapted for them):
+* [Programming basics with C#](https://csharp-book.softuni.bg)
+* [Programming basics with Java](https://java-book.softuni.bg)
+* [Programming basics with JavaScript](https://js-book.softuni.bg)
+* [Programming basics with Python](https://python-book.softuni.bg)
+* [Programming basics with със C++](https://cpp-book.softuni.bg)
+* [Programming basics with с PHP](https://php-book.softuni.bg)
 
-Ако предпочитате друг език, изберете си от списъка по-горе.
+If you prefer a different language, choose from the list above.
 
-## Програмиране се учи с много писане, не с четене!
+## Programming is learned by a lot of writing, not reading!
 
-Ако някой си мисли, че ще прочете една книга и ще се научи да програмира без да пише код и да решава здраво задачи, определено е в заблуда. Програмирането се учи с **много, много практика**, с писане на код всеки ден и решаване на стотици, дори хиляди задачи, сериозно и с постоянство, в продължение на години.
+If anyone thinks they're going to read a book and learn to program without writing a code and solve tasks hard, they're definitely delusional. Programming is learned with **many,  many practice**, with writing code every day and solving hundreds, even thousands of tasks, seriously and with perseverance, for years.
 
-Трябва **да решавате здраво задачи**, да бъркате, да се поправяте, да търсите решения и информация в Интернет, да пробвате, да експериментирате, да намирате по-добри решения, да свиквате с кода, със синтаксиса, с езика за програмиране, със средата за разработка, с търсенето на грешки и дебъгването на неработещ код, с разсъжденията над задачите, с алгоритмичното мислене, с разбиването на проблемите на стъпки и имплементацията на всяка стъпка, да трупате опит и да вдигате уменията си всеки ден, защото да се научиш да пишеш код е само **първата стъпка към професията "софтуерен инженер"**. Имате да учите много, наистина много!
+You need to **solve a lot of problems**, to make mistakes, to fix them, search for solutions and information on the Internet, to try, to experiment, to find better solutions, get used to the code, syntax, programming language, development environment, error search and debugging of non-working code, task reasoning, algorithmic thinking, breaking down problems in steps and implementing every step, gaining experience and lifting your skills every day, because learning to write code is just **the first step towards the profession of software engineer**. You have a lot to learn, really!
 
-Съветваме читателя като минимум **да пробва всички примери от книгата**, да си поиграе с тях, да ги променя и тества. Още по-важни от примерите, обаче, са **задачите за упражнения**, защото те развиват практическите умения на програмиста.
+We advise the reader, as a minimum, **to try all the examples from the book**, to play with them, to change and test them. Even more important than the examples, **are the exercises**, because they develop the practical skills of the developer.
 
-**Решавайте всички задачи от книгата**, защото програмиране се учи с практика! Задачите след всяка тема са внимателно подбрани, така че да покриват в дълбочина обхванатия учебен материал, а целта на решаването на всички задачи от всички обхванати теми е да дадат **цялостни умения за писане на програмен код** на начално ниво (каквато е целта и на тази книга). На курсовете в **СофтУни** не случайно **наблягаме на практиката** и решаването на задачи, и в повечето курсове писането на код в клас е над 70% от целия курс.
+**Solve all the tasks in the book**, because programming is learned by practice! The tasks after each topic are carefully selected to cover in-depth the covered learning
+material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses in **SoftUni** we purposefully **focus on practice** and problem-solving, and in most courses code writing occupies over 70% of the entire course.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Решавайте всички задачи за упражнения от книгата</b>. Иначе нищо няма да научите! Програмиране се учи с писане на много код и решаване на хиляди задачи!</td>
+<td><b>Solve all the exercises in the book</b>. Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td>
 </tr></table>
 
-## За Софтуерния университет (СофтУни)
+## About Software University(SoftUni)
 
-[Софтуерният университет (СофтУни)](https://softuni.bg) е **най-мащабният учебен център за софтуерни инженери в България**. През него преминават десетки хиляди студенти всяка година. СофтУни отваря врати през 2014 г. като продължение на усилията на **[д-р Светлин Наков](https://nakov.com)** масирано да изгражда **кадърни софтуерни специалисти** чрез истинско, съвременно и качествено образование, което комбинира фундаментални знания със съвременни софтуерни технологии и много практика.
+[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](https://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and a lot of practice.
 
-Софтуерният университет предоставя **качествено образование**, **професия**, **работа** и **възможност за придобиване на бакалавърска степен** за програмисти, софтуерни инженери и ИТ специалисти. СофтУни изгражда изключително успешно трайна **връзка между образование и индустрия**, като си сътрудничи със стотици софтуерни фирми, **осигурява работа и стажове** на своите студенти, предоставя качествени специалисти за софтуерната индустрия и директно отговаря на нуждите на работодателите чрез учебния процес.
+The Software University provides **quality education**, **occupation**, **work** and **the opportunity to acquire a bachelor's degree** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful lasting **relationship between education and industry**, collaborating with hundreds of software companies, **providing work and internships** to its students, providing quality specialists for the software industry and directly meeting the needs of employers through the learning process.
 
-### Безплатните курсове по програмиране в СофтУни
+### Free programming courses at SoftUni
 
-СофтУни организира **безплатни курсове по програмиране за напълно начинаещи** в цяла България - присъствено и онлайн. Целта е **всеки, който има интерес** към програмиране и технологии, **да опита програмирането** и да се увери сам дали то е интересно за него и дали иска да се занимава сериозно с разработка на софтуер. Можете да се запишете за **безплатния курс по основи на програмирането** от страницата за кандидатстване в СофтУни: https://softuni.bg/apply.
+SoftUni organizes **free programming courses for complete beginners** in Bulgaria - attendance and online. The goal is **anyone with an interest** in programming and technologies to **try programming** and to make sure whether it is interesting to him and whether he wants to be a software developer. You can sign up for the **free programming basics course** from the SoftUni application page: https://softuni.bg/apply.
 
-Безплатните курсове по основи на програмирането в СофтУни имат за цел да ви запознаят с **основните програмни конструкции** от света на софтуерната разработка, които ще можете да приложите при всеки един език за програмиране. Те включват работа с **данни**, **променливи** и **изрази**, използване на **проверки**, конструиране на **цикли** и дефиниране и извикване на **функции** и други похвати за изграждане на програмна логика. Обученията са **изключително практически насочени**, което означава, че **силно се набляга на упражнения**, а вие получавате възможността да приложите знанията си още докато ги усвоявате.
+The free programming basics courses at SoftUni aim to introduce you to **the main programming structures** from the world of software development that you will be able to apply in any programming language. These include working with **data**, **variables** and **expressions**, using **conditional statements**, constructing **loops** and defining and calling **functions**, and other techniques to build programming logic. The training is **practically focused** - which means there is a **strong emphasis on exercise**, and you get the opportunity to apply your knowledge as you learn.
 
-Настоящият **учебник по програмиране** съпътства безплатните курсове по програмиране за начинаещи в СофтУни и служи като допълнително учебно помагало, в помощ на учебния процес.
+This **programming textbook** accompanies free programming courses for beginners at SoftUni and serves as an additional learning aid to support the learning process.
 
-### Judge системата за проверка на задачите
+### Judge system for task verification
 
-**СофтУни Judge системата** (https://judge.softuni.org) представлява автоматизирана система в Интернет **за проверка на решения на задачи по програмиране чрез поредица от тестове**. Предаването и проверката на задачите се извършва в **реално време**: пращате решение и след секунди получавате отговор дали е вярно. Всеки **успешно** преминат тест дава предвидените за него точки. При вярно решение получавате всички точки за задачата. При частично вярно решение получавате част от точките за дадената задача. При напълно грешно решение, получавате 0 точки.
+**The SoftUni Judge system** (https://judge.softuni.org) is an automated system on the Internet **which checks solutions to programming tasks through a series of tests**. **Real-time** task transmission and verification: you send a solution and in seconds you get an answer if it's true. Each **successful** test gives the points provided for it. With a correct solution, you get all the points for the task. With a partially correct solution, you get some of the points for the task. With a completely wrong solution, you get 0 points.
 
-**Всички задачи от настоящата книга са достъпни за тестване в СофтУни Judge системата** и силно препоръчваме да ги тествате, след като ги решите, за да знаете дали не изпускате нещо и дали наистина решението ви работи правилно, според изискванията на задачата.
+**All tasks in this book are available for testing in the SoftUni Judge system** and we strongly recommend that you test them once you complete them, in order to know if you are missing something and whether your solution is working properly, as required by the task.
 
-Имайте предвид и някои **особености на SoftUni Judge системата**:
- - За всяка задача **Judge системата пази най-високия постигнат резултат**. Ако качите решение с грешен код или по-слаб резултат от предишното ви изпратено, системата няма да ви отнеме точки.
- - Изходните резултати на вашата програма се **сравняват** от системата стриктно с очаквания резултат. Всеки **излишен символ, липсваща запетайка или интервал** може доведе до 0 точки на съответния тест. **Изходът**, който Judge системата очаква, е **описан в условието на всяка задача** и към него **не трябва да се добавя нищо повече**.
+Keep in mind some **features of the SoftUni Judge system**:
+ - For each task **the Judge system keeps the highest achieved result**. If you upload a solution with the wrong code or a weaker result than your previous one sent, the system won't subtract points from your final score.
+ - The output results of your program are strictly **compared** by the system with the expected result. Any **redundant symbol missing, a comma, or space** may result in 0 points for the relevant test. **The output** expected by the Judge system is **given in the description of each exercise** and **there shouldn't be any other additions to it**.
 
-**Пример:** ако в изхода се изисква да се отпечата число (напр. **`25`**), не извеждайте описателни съобщения като **`The result is: 25`**, а отпечатайте точно каквото се изисква, т.е. само числото.
+**Example**: if a number is required to be printed in the output (e.g. **`25`**), do not display descriptive messages such as **`The result is: 25`**, but print exactly what is required, i.e. only the number.
 
-СофтУни Judge системата е **достъпна по всяко време** от нейния сайт: [https://judge.softuni.org](https://judge.softuni.org).
- - За вход използвайте автентикацията си от сайта на СофтУни: [https://softuni.bg](https://softuni.bg).
- - Използването на системата е **безплатно** и не е обвързано с участието в курсовете на СофтУни.
+The SoftUni Judge system is **available at any time** from its website: [https://judge.softuni.org](https://judge.softuni.org).
+ - To sign in, use your authentication from the SoftUni website: [https://softuni.bg](https://softuni.bg).
+ - Use of the system is **free of charge** and is not subject to participation in SoftUni courses.
 
-Убедени сме, че след няколко изпратени задачи, **ще ви хареса да получавате моментална обратна връзка** дали написаното от вас решение е вярно, и Judge системата ще ви стане най-любимия помощник при учене на програмирането.
+We are convinced that after a few sent solutions, you **will begin to like receiving instant feedback** on whether the solution you wrote is true, and the judge system will become your favorite assistant when learning to code.
 
 <a name="become-a-developer"></a>
-## Как се става програмист?
+## How do you become a programmer?
 
-Драги читатели, сигурно много от вас имат амбицията да стават програмисти, да си изкарват прехраната с разработка на софтуер или да работят в ИТ сектора. Затова сме приготвили за вас **кратко ръководство "Как се става програмист"**, за да ви ориентираме за стъпките към тази така желана професия.
+Dear readers, many of you must have the ambition to become programmers, make a living with software development, or work in the IT sector. That is why we have prepared for you a **short guide "How to become a programmer"** to navigate you on the steps to this much-desired profession.
 
-Програмист (на ниво започване на работа в софтуерна фирма) се става за **най-малко 1-2 години здраво учене и писане на код всеки ден**, решаване на няколко хиляди задачи по програмиране, разработка на няколко по-сериозни практически проекта и трупане на много опит с писането на код и разработката на софтуер. Не става за един месец, нито за два! Професията на софтуерния инженер изисква голям обем познания, покрити с много, много практика.
+A programmer (at the level of starting work in a software company) gets up for **at least 1-2 years of learning and writing code every day**, solving several thousand programming tasks, developing several practical projects and gaining a lot of experience with code writing and software development. It's not for a month or two! The profession of software engineer requires a large amount of knowledge, covered by extensive practice. 
 
-Има **4 основни групи умения**, които всички програмисти трябва да притежават. Повечето от тези умения са устойчиви във времето и не се влияят съществено от развитието на конкретните технологии (които се променят постоянно). Това са уменията, които **всеки добър програмист притежава** и към които всеки новобранец трябва да се стреми:
-* писане на код (20%)
-* алгоритмично мислене (30%)
-* фундаментални знания за професията (25%)
-* езици и технологии за разработка (25%)
+There are **4 main skill groups** that all programmers must have. Most of these skills are sustainable over time and are not significantly affected by the development of specific technologies (which change constantly). These are the skills that **every good programmer has** and which every rookie should aspire to obtain:
+* code writing (20%)
+* algorithmic thinking (30%)
+* fundamental knowledge of the profession (25%)
+* languages and development technologies (25%)
 
-### Умение #1 – кодене (20%)
+### Skill # 1 - Coding (20%)
 
-Да се научите **да пишете код** формира около 20% от минималните умения на програмиста, необходими за започване на работа в софтуерна фирма. Умението да кодиш включва следните компоненти:
-* работа с променливи, проверки, цикли
-* ползване на функции, методи, класове и обекти
-* работа с данни: масиви, списъци, хеш-таблици, стрингове
+Learning how **to write code** forms about 20% of the minimum skills required for a programmer to start work in a software company. The ability to code includes the following components:
+* work with variables, conditionals, loops
+* functions, methods, classes and objects 
+* work with data: arrays, hash tables, strings
 
-Умението да кодиш **може да се усвои за няколко месеца** усилено учене и здраво решаване на практически задачи с писане на код всеки ден. Настоящата книга покрива само първата точка от умението да кодиш: **работа с променливи, проверки и цикли**. Останалото остава да се научи в последващи обучения, курсове и книги.
+The ability to code **can be mastered in a few months** of hard studying and solving practical tasks by writing code every day. This book covers only the first point of the coding skill: **working with variables, conditionals and loops**. The rest remains to be learned in subsequent trainings, courses and books.
 
-Книгата (и курсовете, базирани на нея) дават само началото от едно дълго и сериозно учене, по пътя на професионалното програмиране. Ако не усвоите до съвършенство учебния материал от настоящата книга, няма как да станете програмист. Ще ви липсват фундаментални основи и ще ви става все по-трудно напред. Затова **отделете достатъчно внимание на основите на програмирането**: решавайте здраво задачи и пишете много код месеци наред, докато се научите **да решавате с лекота всички задачи от тази книга**. Тогава продължете напред.
+The book (and the courses based on it) give only the beginning of a long-term and serious study, on the path of professional programming. If you do not master the material from this book to perfection, you will not be able to become a programmer. You will lack programming fundamentals and it will become increasingly difficult for you to move forward. Therefore **pay enough attention to the basics of programming**: solve problems well and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
 
-Специално обръщаме внимание, че **езикът за програмиране няма съществено значение** за умението да кодиш. Или можеш да кодиш или не. Ако можеш да кодиш на **Python**, лесно ще се научиш да кодиш и на Java, и на C++, и на друг език. Затова **уменията да кодираш** се изучават доста сериозно в началните курсове за софтуерни инженери в СофтУни (вж. [учебния план](https://softuni.bg/curriculum)) и с тях стартира всяка книга за програмиране за напълно начинаещи, включително нашата.
+We pay special attention to the fact that **the programming language is not essential** for the ability to code. You can either code or not. If you can code in **Python**, you can easily learn to code in Java, C ++, and another language. That's why **coding skills** are studied quite seriously in the initial courses for software engineers at SoftUni (see [curriculim](https://softuni.bg/curriculum) and with them starts every programming book for complete beginners, including ours.
 
-### Умение #2 – алгоритмично мислене (30%)
+### Skill # 2 - algorithmic thinking (30%) 
 
-Алгоритмичното (логическо, инженерно, математическо, абстрактно) мислене формира около 30% от минималните умения на програмиста за старт в професията. **Алгоритмичното мислене** е умението да разбивате една задача на логическа последователност от стъпки (алгоритъм) и да намирате решение за всяка отделна стъпка, след което да сглобявате стъпките в работещо решение на първоначалната задача. Това е най-важното умение на програмиста.
+Algorithmic (logical, engineering, mathematical, abstract) thinking forms about 30% of the minimum skills for a start in the profession. **Algorithmic thinking** is the ability to break a task into a logical sequence of steps (algorithm) and to find a solution for each step, then to put them together in a working solution for the initial task. This is the most important skill that the programmer has.
 
-Как **да си изградим алгоритмично мислене**?
-* Алгоритмичното мислене се развива се чрез решаване на **много (1000+) задачи** по програмиране, възможно най-разнообразни. Това е рецептата: решаване на хиляди практически задачи, измисляне на алгоритъм за тях и имплементиране на алгоритъма, заедно с дебъгване на грешките по пътя.
-* Помагат физика, математика и/или подобни науки, но не са задължителни! Хората с **инженерни и технически наклонности** обикновено по-лесно се научават да мислят логически, защото имат вече изградени умения за решаване на проблеми, макар и не алгоритмични.
-* Способността **да решавате задачи по програмиране** (за която е нужно алгоритмично мислене) е изключително важна за програмиста. Много фирми изпитват единствено това умение при интервюта за работа.
+How **to build algorithmic thinking**?
+* Algorithms for thinking are developed by reviewing **many (1000+) programming tasks**, using the most diverse of them. This is the recipe: reducing thousands of practical tasks, inventing an algorithm for them and executing the algorithm, along with debugging errors along the way.
+* Physics, mathematics and/or similar sciences help, but they are not restraining! People with **engineering and technical inclinations** usually learn to think logically easily, because they already have the skills for solving problems, although not algorithmic. 
+* The ability **to solve programming tasks** (which requires algorithmic thinking) is extremely important for programmers. Many companies require only this skill in job interviews.
 
-Настоящата книга развива **начално ниво на алгоритмично мислене**, но съвсем не е достатъчна, за да ви направи добър програмист. За да станете кадърни в професията, ще трябва да добавите **умения за логическо мислене и решаване на задачи** отвъд обхвата на тази книга, например работа със **структури от данни** (масиви, списъци, матрици, хеш-таблици, дървовидни структури) и базови **алгоритми** (търсене, сортиране, обхождане на дървовидни структури, рекурсия и други).
+This book develops **a beginner's level of algorithmic thinking**, but it is absolutely not enough to make a good programmer. To become proficient in the professions, you will need to add **logical thinking skills and improve tasks** outside this book, such as **working with data structures** (arrays, lists, matrices, hash tables, tree structures) and basic **algorithms** (search, sorting, tree structures, recursion, etc.). 
 
-**Умения за алгоритмично мислене** се развиват сериозно в началните курсове за софтуерни инженери в СофтУни (вж. [учебния план](https://softuni.bg/curriculum)), както и в специализираните курсове по [структури от данни](https://softuni.bg/opencourses/data-structures) и [алгоритми](https://softuni.bg/opencourses/algorithms).
+**Algorithmic thinking skills** are prominently developed in the beginner courses for software engineering in SoftUni (see. [curriculum](https://softuni.bg/curriculum)), also in the specialized courses of [data structures](https://softuni.bg/opencourses/data-structures) and [algorithms](https://softuni.bg/opencourses/algorithms).
 
-Както може би се досещате, **езикът за програмиране няма значение** за развиването на алгоритмичното мислене. Да мислиш логически е универсално, дори не е свързано само с програмирането. Именно заради силно развитото логическото мислене се счита, че **програмистите са доста умни** и че прост човек не може да стане програмист.
+As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely for the well-developed logical thinking, it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
 
-### Умение #3 – фундаментални знания за професията (25%)
+### Skill #3 – fundamental knowledge of the profession (25%) 
 
-**Фундаменталните знания и умения** за програмирането, разработката на софтуер, софтуерното инженерство и компютърните науки формират около 25% от минималните умения на програмиста за започване на работа. Ето по-важните от тези знания и умения:
-* **базови математически концепции**, свързани с програмирането: координатни системи, вектори и матрици, дискретни и недискретни математически функции, крайни автомати и state machines, понятия от комбинаториката и статистика, сложност на алгоритъм, математическо моделиране и други
-* **умения да програмираш** - писане на код, работа с данни, ползване на условни конструкции и цикли, работа с масиви, списъци и асоциативни масиви, стрингове и текстообработка, работа с потоци и файлове, ползване на програмни интерфейси (APIs), работа с дебъгер и други
-* **структури от данни и алгоритми** - списъци, дървета, хеш-таблици, графи, търсене, сортиране, рекурсия, обхождане на дървовидни структури и други
-* **обектно-ориентирано програмиране** (ООП) – работа с класове, обекти, наследяване, полиморфизъм, абстракция, интерфейси, капсулация на данни, управление на изключения, шаблони за дизайн
-* **функционално програмиране** (ФП) - работа с ламбда функции, функции от по-висок ред, функции, които връщат като резултат функция, затваряне на състояние във функция (closure) и други
-* **бази данни** - релационни и нерелационни бази данни, моделиране на бази данни (таблици и връзки между тях), език за заявки SQL, технологии за обектно-релационен достъп до данни (ORM), транзакционност и управление на транзакции
-* **мрежово програмиране** - мрежови протоколи, мрежова комуникация, TCP/IP, понятия, инструменти и технологии от компютърните мрежи
-* взаимодействие **клиент-сървър**, комуникация между системи, back-end технологии, front-end технологии, MVC архитектури
-* **технологии за сървърнa (back-end) разработка** - архитектура на уеб сървър, HTTP протокол, MVC архитектура, REST архитектура, frameworks за уеб разработка, templating engines
-* **уеб front-end технологии (клиентска разработка)** - HTML, CSS, JS, HTTP, DOM, AJAX, комуникация с back-end, извикване на REST API, front-end frameworks, базови дизайн и UX (user experience) концепции
-* **мобилни технологии** - мобилни приложения, Android и iOS разработка, мобилен потребителски интерфейс (UI), извикване на сървърна логика
-* **вградени системи** - микроконтролери, управление на цифров и аналогов вход и изход, достъп до сензори, управление на периферия
-* **операционни системи** - работа с операционни системи (Linux, Windows и други), инсталация, конфигурация и базова системна администрация, работа с процеси, памет, файлова система, потребители, многозадачност, виртуализация и контейнери
-* **паралелно програмиране и асинхронност** - управление на нишки, асинхронни задачи, promises, общи ресурси и синхронизация на достъпа
-* **софтуерно инженерство** - сорс контрол системи, управление на разработката, планиране и управление на задачи, методологии за софтуерна разработка, софтуерни изисквания и прототипи, софтуерен дизайн, софтуерни архитектури, софтуерна документация
-* **софтуерно тестване** - компонентно тестване (unit testing), test-driven development, QA инженерство, докладване на грешки и тракери за грешки, автоматизация на тестването, билд процеси и непрекъсната интеграция
+**Fundamental knowledge and skills** for programming, software development, software engineering and computer science form about 25% of the developer's minimum start-up skills. Here are the most important of this knowledge and skills: 
+* **basic mathematical concepts** related to programming: coordinate systems, vectors and matrices, discrete and indiscreet mathematical functions, end machines and state machines, concepts of combination and statistics, algorithm complexity, mathematical modeling and others. 
+* **skills to program** - code writing, data work, use of conditional structures and loops, work with arrays, lists and associative arrays, strings and word processing, working with streams and files, using program interfaces (APIs), working with a debugger and others.
+* **data structures and algorithms** - lists, trees, hash tables, columns, search, sorting, recursive, tree crawling, etc.
+* **object-oriented programming** (OOP) – working with classes, objects, inheritance, polymorphism, abstraction, interfaces, data encapsulation, exception management, design templates.
+* **functional programming** (FP) - working with lambda functions, high order functions, functions that return a function as a result, closing a state in a function (closure) and more.
+* **databases** - relational and non-relational databases, database modeling (tables and links between them), SQL query language, object-relational data access (ORM) technologies, transactionality and transaction management.
+* **network programming** - network protocols, network communication, TCP/IP, concepts, tools and technologies from computer networks.
+* **client-server** interaction, communication between systems, back-end technologies, front-end technologies, MVC architectures.
+* **back-end development technologies** - web server architecture, HTTP protocol, MVC architecture, REST architecture, web development frameworks, templating engines.
+* **web front-end technologies (client development)** - HTML, CSS, JS, HTTP, DOM, AJAX, back-end communication, REST API call, front-end frameworks, basic design and UX (user experience) concepts.
+* **mobile technologies** - mobile applications, Android and iOS development, mobile user interface (UI), server logic call.
+* **built-in systems** - microcontrollers, digital and analog input and output control, sensor access, peripheral control.
+* **operating systems** - work with operating systems (Linux, Windows, etc.), installation, configuration and basic system administration, process handling, memory, file system, users, multitasking, virtualization and containers.
+* **parallel programming and asynchronousness** - thread management, asynchronous tasks, promises, common resources and access synchronization.
+* **software engineering** - source control systems, development management, task planning and management, software development methodologies, software requirements and prototypes, software design, software architectures, software documentation.
+* **software testing** - unit testing, test-driven development, QA engineering, error reporting and error trackers, test automation, building processes and continuous integration.
 
-Трябва да поясним и този път, че **езикът за програмиране няма значение** за усвояването на всички тези умения. Те се натрупват бавно, в течение на много години практика в професията. Някои знания са фундаментални и могат да се усвояват теоретично, но за пълното им разбиране и осъзнаването им в дълбочина, са необходими години практика.
+We must make it clear another time that **the programming language is irrelevant** to the uptake of all these skills. They accumulate slowly, over the course of many years of practice in the profession. Some knowledge is fundamental and can be learned theoretically, but it takes years of practice to fully understand them in depth.
 
-Фундаментални знания и умения за програмирането, разработката на софтуер, софтуерното инженерство и компютърните науки се учат по време на **[цялостната програма за софтуерни инженери в СофтУни](https://softuni.bg/curriculum)**, както и с редица [изборни курсове](https://softuni.bg/trainings/opencourses). Работата с разнообразни софтуерни библиотеки, програмни интерфейси (APIs), технологични рамки (frameworks) и софтуерни технологии и тяхното взаимодействие, постепенно изграждат тези знания и умения, така че не очаквайте да ги добиете от единичен курс, книга или проект.
+Fundamental knowledge and skills for programming, software development, software engineering and computer science are learned during **[the overall software engineer program in SofUni](https://softuni.bg/curriculum)**, as well as with a number of [additional courses](https://softuni.bg/trainings/opencourses). Working with a variety of software libraries, programming interfaces (APIs), frameworks and software technologies, and their interaction gradually build that knowledge and skills, so don't expect to get them from a single course, book, or project.
 
-За започване на работа като програмист обикновено са достатъчни само **начални познания в изброените по-горе области**, а задълбаването става на работното място според използваните технологии и инструменти за разработка в съответната фирма и екип.
+Only **initial knowledge in the areas listed above** is usually sufficient to start working as a programmer, and acquiring of a more in-depth knowledge takes place at the workplace according to the technologies and development tools used by the given company and team.
 
-### Умение #4 - езици за програмиране и софтуерни технологии (25%)
+### Skill #4 - programming languages and software technologies (25%) 
 
-**Езиците за програмиране и технологиите за софтуерна разработка** формират около 25% от минималните умения на програмиста. Те са най-обемни за научаване, но най-бързо се променят с времето. Ако погледнем **обявите за работа** от софтуерната индустрия, там често се споменават всякакви думички (като изброените по-долу), но всъщност в обявите мълчаливо **се подразбират първите три умения**: да кодиш, да мислиш алгоритмично и да владееш фундамента на компютърните науки и софтуерното инженерство.
+**Programming languages and software development technologies** form about 25% of the developer's minimum skills. They are the most voluminous to learn, but they change most quickly over time. If we look at **job advertisements** from the software industry, there are often all sorts of words mentioned (such as those listed below), but in fact, the ads silently **imply the first three skills**: to code, to think algorithmically and to be proficient at the foundation of computer science and software engineering.
 
-За тези чисто технологични умения вече **езикът за програмиране има значение**.
-* **Обърнете внимание**: само за тези 25% от професията има значение езикът за програмиране!
-* **За останалите 75% от уменията няма значение езикът** и тези умения са устойчиви във времето и преносими между различните езици и технологии.
+For these purely technological skills, **programming language is relevant**.
+* **Note**: only for this 25% of the profession does programming language matter!
+* **For the remaining 75% of skills, language does not matter** and these skills are time-resilient and transferable between different languages and technologies.
 
-Ето и някои често използвани езици и технологии (software development stacks), които се търсят от софтуерните фирми (актуални към януари 2018 г.):
-* **JavaScript** (JS) + ООП + ФП + бази данни + MongoDB или MySQL + HTTP + уеб програмиране + HTML + CSS + DOM + jQuery + Node.js + Express + Angular или React
-* **C#** + ООП + ФП + класовете от .NET + база данни SQL Server + Entity Framework (EF) + ASP.NET MVC + HTTP + HTML + CSS + JS + DOM + jQuеry
-* **Java** + Java API classes + ООП + ФП + бази данни + MySQL + HTTP + уеб програмиране + HTML + CSS + JS + DOM + jQuery + JSP/Servlets + Spring MVC или Java EE / JSF
-* **PHP** + ООП + бази данни + MySQL + HTTP + уеб програмиране + HTML + CSS + JS + DOM + jQuery + Laravel / Symfony / друг MVC framework за PHP
-* **Python** + ООП + ФП + бази данни + MongoDB или MySQL + HTTP + уеб програмиране + HTML + CSS + JS + DOM + jQuery + Django
-* **C++** + ООП + STL + Boost + native development + бази данни + HTTP + други езици
-* **Swift** + MacOS + iOS + Cocoa + Cocoa Touch + XCode + HTTP + REST + други езици
+Here are some commonly used software development stacks sought by software companies (up-to-date as of January 2018):
+* **JavaScript** (JS) + CMO + PH + databases + MongoDB or MySQL + HTTP + web programming + HTML + CSS + DOM + jQuery + Node.js + Express + Angular or React
+* **C#** + CMO + P + classes from .NET + DATABASE SQL Server + Entity Framework (EF) + ASP.NET MVC + HTTP + HTML + CSS + JS + DOM + jQuéry 
+* **Java** + Java API classes + CMO + AP + databases + MySQL + HTTP + web programming + HTML + CSS + JS + DOM + jQuery + JSP/Servlets + Spring MVC or Java EE / JSF
+* **PHP** + CMO + databases + MySQL + HTTP + web programming + HTML + CSS + JS + DOM + jQuery + Laravel / Symfony / other MVC framework for PHP 
+* **Python** + CMO + PH + databases + MongoDB or MySQL + HTTP + web programming + HTML + CSS + JS + DOM + jQuery + Django
+* **C++** + CMO + STL + Boost + native development + databases + HTTP + other languages 
+* **Swift** + MacOS + iOS + Cocoa + Cocoa Touch + XCode + HTTP + REST + other languages
 
-Ако изброените по-горе думички ви изглеждат страшни и абсолютно непонятни, значи сте съвсем в началото на кариерата си и имате **да учите още години** докато достигнете професията "**софтуерен инженер**". Не се притеснявайте, всеки програмист преминава през един или няколко технологични стека и се налага да изучи **съвкупност от взаимосвързани технологии**, но в основата на всичко това стои **умението да пишеш програмна логика (да кодиш)**, което се развива в тази книга, и умението **да мислиш алгоритмично** (да решаваш задачи по програмиране). Без тях не може!
+If the words listed above seem scary and absolutely incomprehensible to you, then you are quite at the beginning of your career and have **years to learn** until you reach the profession of **software engineer**. Don't worry, every programmer goes through one or more technological stacks and has to study a **set of interconnected technologies**, but at the heart of it all is the **ability to write programming logic (coding)** that develops in this book, and the **ability to think algorithmically** (to solve programming tasks). You can not do without them!
 
-### Езикът за програмиране няма значение!
+### Programming language doesn't matter!
 
-Както вече стана ясно, **разликата между езиците за програмиране** и по-точно между уменията на програмистите на различните езици и технологии, е в около **10-20% от уменията**.
-* Всички програмисти имат около **80-90% еднакви умения**, които не зависят от езика! Това са уменията да програмираш и да разработваш софтуер, които са много подобни в различните езици за програмиране и технологии за разработка.
-* Колкото повече езици и технологии владеете, толкова по-бързо ще учите нови и толкова по-малко ще усещате разлика между тях.
+As already made clear, **the difference between programming languages**, and more precisely between the skills of programmers in different languages and technologies, is in about **10-20% of skills**.
+* All programmers have about **80-90% of the same skills**, which do not depend on language! These are the skills to program and develop software, and they are very similar in different programming languages and development technologies.
+* The more languages and technologies you are proficient in, the faster you will learn new languages and the less you will feel a difference between them.
 
-Наистина, **езикът за програмиране почти няма съществено значение**, просто трябва да се научите да програмирате, а това започва с **коденето** (настоящата книга), продължава в по-сложните **концепции от програмирането** (като структури от данни, алгоритми, ООП и ФП) и включва усвояването на **фундаментални знания и умения за разработката на софтуер, софтуерното инженерство и компютърните науки**.
+Indeed, **the programming language is almost irrelevant**, you just need to learn to program, and this starts with **coding** (this book), continues in the more complex **concepts of programming** (such as data structures, algorithms, OOP and FP) and involves the uptake of **fundamental knowledge and skills for software development, software engineering and computer science**.
 
-Едва накрая, когато захванете конкретни технологии в даден софтуерен проект, ще ви трябват **конкретен език за програмиране**, познания за конкретни програмни библиотеки (APIs), работни рамки (frameworks) и софтуерни технологии (front-end UI технологии, back-end технологии, ORM технологии и други). Спокойно, ще ги научите, всички програмисти ги научават, но първо се научават на фундамента: **да програмират и то добре**.
+Finally, when you take on specific technologies in a software project, only then will you need a **specific programming language**, knowledge of specific program libraries (APIs), frameworks, and software technologies (front-end UI technologies, back-end technologies, ORM technologies, etc.). Relax, you will learn them, all programmers learn them, but first, they learn the foundation: **to code and to do it well**.
 
-Настоящата книга използва езика **Python**, но той не е съществен и може да се замени с Java, C#, JavaScript, PHP, C++, Ruby, Swift, Go, Kotlin или друг език. За овладяване на **професията "софтуерен разработчик"** е необходимо да се научите да **кодите** (20%), да се научите да **мислите алгоритмично** и да **решавате проблеми** (30%), да имате **фундаментални знания по програмиране и компютърни науки** (25%) и да владеете **конкретен език за програмиране и технологиите около него** (25%). Имайте търпение, за година-две всичко това може да се овладее на добро начално ниво, стига да сте сериозни и усърдни.
 
-## Книгата в помощ на учителите
+This book uses the **Python** language, but it is not essential and can be replaced by Java, C#, JavaScript, PHP, C++, Ruby, Swift, Go, Kotlin or any other language. To master **the profession of "software developer"** it is necessary to learn **to code** (20%), learn to **think algorithmically** and **solve problems** (30%), have **fundamental knowledge of programming and computer science** (25%) and know a **specific programming language and the technologies relevant to it** (25%). Be patient, for a year or two, all this can be achieved at a good starting level, as long as you are serious and diligent.
 
-Ако сте **учител по програмиране**, информатика или информационни технологии или искате **да преподавате програмиране**, тази книга ви дава нещо повече от добре структуриран учебен материал с много примери и задачи. **Безплатно** към книгата получаватe **качествено учебно съдържание** за преподаване в училище, на **български език**, съобразено с училищните изисквания:
+## The Book which helps teachers 
 
-* **Учебни презентации** (PowerPoint слайдове) за всяка една учебна тема, съобразени с 45-минутните часове в училищата – безплатно.
-* Добре разработени **задачи за упражнения** в клас и за домашно, с детайлно описани условия и примерен вход и изход – безплатно.
-* **Система за автоматизирана проверка на задачите** и домашните (Online Judge System), която да се използва от учениците, също безплатно.
-* **Видео-уроци** с методически указания от **безплатния курс за учители по програмиране**, който се провежда регулярно от СофтУни фондацията.
+If you are a **teacher of programming**, informatics or information technology or want **to teach programming**, this book gives you more
+than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in **Bulgarian language**, in accordance with the school requirements:
+
+* **Educational presentations** (PowerPoint slides) for each learning topic tailored to 45-minute hours in schools – free of charge.
+* Well-designed **tasks** for class and homework, with detailed conditions and sample entrance and exit – free of charge.
+* **An automated task and homework verification system** (Online Judge System) to be used by students, also free of charge.
+* **Video lessons** with methodological instructions from the free course for programming teachers, which is held regularly by the SoftUni Foundation.
  
-Всички тези **безплатни преподавателски ресурси** можете да намерите на сайта на СофтУни фондацията, заедно с учебно съдържание за цяла поредица от курсове по програмиране и софтуерни технологии. Изтеглете ги свободно от тук: https://softuni.foundation/projects/applied-software-developer-profession/.
+All these **free teaching resources** can be found on the SoftUni Foundation website, along with learning content for a whole series of programming courses and software technologies. Download them free from here: https://softuni.foundation/projects/applied-software-developer-profession/.
 
-## Историята на тази книга
+## The history behind this book
 
-Главен двигател и ръководител на проекта за създаване на настоящата **свободна книга по програмиране за начинаещи** с отворен код е **[д-р Светлин Наков](https://nakov.com)**. Той е основен идеолог и създател на учебното съдържание от **[курса "Основи на програмирането" в СофтУни](https://softuni.bg/courses/programming-basics)**, който е използван за основа на книгата.
+The main engine and project manager for the creation of the current **free programming book for beginners** with open source is **[Svetlin Nakov, PhD](https://nakov.com)**. He is a major ideologist and creator of the learning content from the **[course "Basics of Programming" at SoftUni](https://softuni.bg/courses/programming-basics)**, which was used as a foundation of this book.
 
-Всичко започва с масовите **безплатни курсове по основи на програмирането**, провеждани в цялата страна от 2014 г. насам, когато стартира инициативата "СофтУни". В началото тези курсове имат по-голям обхват и включват повече теория, но през 2016 г. д-р Светлин Наков изцяло ги преработва, обновява, опростява и **насочва много силно към практиката**. Така е създадено ядрото на **учебното съдържание от тази книга**.
+It all starts with the mass **free programming basics courses**, held across the country since 2014, when the SoftUni initiative was launched. In the beginning, these courses had a wider reach and included more theory, but in 2016 Svetlin Nakov, PhD completely revised them, renovated, simplified and **directed them to be more practical**. This is how the **learning content core of this book was created**.
 
-Безплатните обучения на СофтУни за старт в програмирането са може би най-мащабните, провеждани някога в България. До 2018 г. курсът на СофтУни по основи на програмирането **се провежда над 170 пъти в близо 40 български града** присъствено и многократно онлайн, с над 60 000 участника. Съвсем естествено възниква и нуждата да се напише **учебник** за десетките хиляди участници в курсовете на СофтУни по програмиране за начинаещи. На принципа на свободния софтуер и свободното знание, Светлин Наков повежда **екип от доброволци** и задвижва този open-source проект, първоначално за създаване на книга по основи на програмирането с езика C#, а по-късно и с други езици за програмиране.
+SoftUni's free programming start-up trainings are probably the largest ever conducted in Bulgaria. By 2018, SoftUni's basic programming course **is held over 170 times in nearly 40 Bulgarian cities** in person and repeatedly online, with over 60,000 participants. Quite naturally, the need to write a **textbook** for the tens of thousands of participants in SoftUni programming courses for beginners also arises. On the principle of free software and free knowledge, Svetlin Nakov led a **team of volunteers** and started this open-source project, initially to create a book based on programming with the C# language and later with other programming languages.
 
-Проектът е част от усилията на **[Фондация "Софтуерен университет"](https://softuni.foundation)** да създава и разпространява отворено учебно съдържание за обучение на софтуерни инженери и ИТ специалисти.
+The project is part of the efforts of **["Software University" foundation](https://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
 
 ### Authors team
 
@@ -213,52 +216,53 @@ The book is based on its initial C# variant ([Introduction to Programming with C
 
 Book cover design: Marina Shiderova.
 
-Книгата е написана в периода юни-октомври 2018.
+The book is written in the period June-October 2018.
 
 ## Официален сайт на книгата
 
-Настоящата книга по **Основи на програмирането с Python** за начинаещи е достъпна за свободно ползване в Интернет от адрес:
+The current book on **The basics of Python programming for beginners** is available for free use on the Internet from: 
 
 <p align="center"><strong><a href="https://python-book.softuni.bg">https://python-book.softuni.bg</a></strong></p>
 
-Това е **официалният сайт на книгата** и там ще бъде качвана нейната последна версия. Книгата е преведена огледално и на други езици за програмиране, посочени на нейния сайт.
+This is **the official website of the book** and there will be uploaded its latest version. The book has been similarly translated to other programming languages listed on its website. 
 
-## Форум за вашите въпроси
+## Forum for your questions 
 
-Задавайте вашите **въпроси към настоящата книга** по основи на програмирането във **форума на СофтУни:**
+Ask your **questions to this book** on Programming Basics in the **SoftUni’s forum**:
 
 <p align="center"><strong><a href="https://softuni.bg/forum">https://softuni.bg/forum</a></strong></p>
 
-В този дискусионен форум ще получите безплатно **адекватен отговор по всякакви въпроси от учебното съдържание на настоящия учебник**, както и по други въпроси от програмирането. Общността на СофтУни за навлизащи в програмирането е толкова голяма, че обикновено отговор на зададен въпрос се получава **до няколко минути**. Преподавателите, асистентите и менторите от СофтУни също отговарят постоянно на вашите въпроси.
+In this discussion forum, you will receive a free **adequate answer on any questions from the curriculum content of this textbook**, as well as on
+other programming issues. The SoftUni community for those entering programming is so large that usually an answer to a question is received **within a few minutes**. SoftUni's teachers, assistants and mentors also answer your questions constantly.
 
-Поради големия брой учащи по настоящия учебник, във форума можете да намерите **решение на практически всяка задача от него**, споделено от ваш колега. Хиляди студенти преди вас вече са решавали същите задачи, така че ако закъсате, потърсете из форума. Макар и задачите в курса "Основи на програмирането" да се сменят от време на време, споделянето е винаги насърчавано в СофтУни и затова лесно ще намерите решения и насоки за всички задачи.
+Due to a large number of students learning from this textbook, in the forum you can find a **solution to virtually any task from it**, shared by your colleague. Thousands of students before you have already solved the same tasks, so if you're in trouble, look around the forum. Although tasks in the Programming Basics course change from time to time, sharing is always encouraged in SoftUni, so you can easily find solutions and guidelines for all tasks.
 
-Ако все пак имате конкретен въпрос, например защо не тръгва дадена програма, над която умувате от няколко часа, **задайте го във форума** и ще получите отговор. Ще се учудите колко добронамерени и отзивчиви са обитателите на СофтУни форума.
+If you still have a specific question, such as why a program doesn't run, that you've been stuck with for a few hours, **ask it in the forum** and you'll get an answer. You will be surprised how well-intentioned and responsive the users of the SoftUni’s Forum are.
 
-## Официална Facebook страница на книгата
+## Official Facebook page of the book
 
-Книгата си има и **официална Facebook страница**, от която може да следите за новини около книгите от поредицата "Основи на програмирането", нови издания, събития и инициативи:
+The current book also has an **official Facebook page**, from which you can keep track of news around the books from the series "Basics of Programming", new editions, events and initiatives:
 
 <p align="center"><strong><a href="https://facebook.com/IntroProgrammingBooks/">fb.com/IntroProgrammingBooks</a></strong></p>
 
-## Лиценз и разпространение
+## License and distribution 
 
-Книгата се разпространява **безплатно** в електронен формат под отворен лиценз **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
+The book is distributed **for free** in electronic format under an open CC-BY-NC-SA license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
-Книгата се издава и разпространява **на хартия** от СофтУни и хартиено копие може да се закупи от рецепцията на СофтУни (вж. https://softuni.bg/contacts).
+The book is published and distributed **on paper** by SoftUni and a paper copy can be purchased from the SoftUni reception (see https://softuni.bg/contacts).
 
-**Сорс кодът** на книгата може да се намери в GitHub: https://github.com/SoftUni/Programming-Basics-Book-Python-BG.
+**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-Python-BG.
 
-Международен стандартен номер на книга ISBN: **978-619-00-0806-4**.
+International Standard Book Number ISBN: **978-619-00-0806-4**.
 
-## Докладване на грешки
+## Bug reports
 
-Ако откриете **грешки**, неточности или дефекти в книгата, можете да ги докладвате в официалния тракер на проекта:
+If you find **bugs**, inaccuracies or defects in the book, you can report them in the official tracker of the project:
 
 <p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-Python-BG/issues">https://github.com/SoftUni/Programming-Basics-Book-Python-BG/issues</a></strong></p>
 
-Не обещаваме, че ще поправим всичко, което ни изпратите, но пък имаме желание **постоянно да подобряваме качеството** на настоящата книга, така че докладваните безспорни грешки и всички разумни предложения ще бъдат разгледани.
+We can't promise that we will edit everything you send us, but we are willing to constantly improve the quality of this book, so that the reported errors and all reasonable suggestions will be addressed.
 
-## Приятно четене!
+## Enjoy your reading!
 
-И не забравяйте **да пишете код** в големи количества, да **пробвате примерите** от всяка тема и най-вече да **решавате задачите от упражненията**. Само с четене няма да се научите да програмирате, така че решавайте задачи здраво!
+And be sure **to write code** in large quantities, **try the examples** from each topic and, above all, **solve the tasks from the exercises**. You won't learn to program just by reading, so make sure you put time into solving exercises! 
