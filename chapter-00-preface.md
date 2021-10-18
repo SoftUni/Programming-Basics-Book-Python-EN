@@ -88,9 +88,9 @@ We are convinced that after a few sent solutions, you **will begin to like recei
 
 Dear readers, many of you must have the ambition to become programmers, make a living with software development, or work in the IT sector. That is why we have prepared for you a **short guide "How to become a programmer"** to navigate you on the steps to this much-desired profession.
 
-A programmer (at the level of starting work in a software company) gets up for **at least 1-2 years of learning and writing code every day**, solving several thousand programming tasks, developing several practical projects and gaining a lot of experience with code writing and software development. It's not for a month or two! The profession of software engineer requires a large amount of knowledge, covered by extensive practice. 
+Becoming a programmer (at the level of starting work in a software company) would take **at least 1-2 years of learning and writing code every day**, solving several thousand programming tasks, developing several practical projects and gaining a lot of experience with code writing and software development. It's not possible for a month or two! The profession of software engineer requires a large amount of knowledge, backed by extensive practice. 
 
-There are **4 main skill groups** that all programmers must have. Most of these skills are sustainable over time and are not significantly affected by the development of specific technologies (which change constantly). These are the skills that **every good programmer has** and which every rookie should aspire to obtain:
+There are **4 main skill groups** that all programmers must have. Most of these skills are preserved over time and are not significantly affected by the development of specific technologies (which change constantly). These are the skills that **every good programmer has** and which every rookie should aspire to obtain:
 * code writing (20%)
 * algorithmic thinking (30%)
 * fundamental knowledge of the profession (25%)
@@ -103,9 +103,9 @@ Learning how **to write code** forms about 20% of the minimum skills required fo
 * functions, methods, classes and objects 
 * work with data: arrays, hash tables, strings
 
-The ability to code **can be mastered in a few months** of hard studying and solving practical tasks by writing code every day. This book covers only the first point of the coding skill: **working with variables, conditionals and loops**. The rest remains to be learned in subsequent trainings, courses and books.
+The ability to code **can be learned in a few months** of intensive studying and solving practical tasks by writing code every day. This book covers only the first part of the coding skill: **working with variables, conditionals and loops**. The rest remains to be learned in subsequent trainings, courses and books.
 
-The book (and the courses based on it) give only the beginning of a long-term and serious study, on the path of professional programming. If you do not master the material from this book to perfection, you will not be able to become a programmer. You will lack programming fundamentals and it will become increasingly difficult for you to move forward. Therefore **pay enough attention to the basics of programming**: solve problems well and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
+The book (and the courses based on it) give only the beginning of a long-term and serious study, on the path to professional programming. You won't be able to become a programmer without mastering the material from this book. You will lack programming fundamentals and it will become increasingly difficult to move forward. Therefore **pay enough attention to the basics of programming**: solve problems and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
 
 We pay special attention to the fact that **the programming language is not essential** for the ability to code. You can either code or not. If you can code in **Python**, you can easily learn to code in Java, C ++, and another language. That's why **coding skills** are studied quite seriously in the initial courses for software engineers at SoftUni (see [curriculim](https://softuni.bg/curriculum) and with them starts every programming book for complete beginners, including ours.
 
