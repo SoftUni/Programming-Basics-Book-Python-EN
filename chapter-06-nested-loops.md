@@ -11,9 +11,9 @@ In the current chapter, we will be looking at **nested loops** and how to use `f
 </div>
 
 
-### Example: Rectangle Made of 10 x 10 Stars
+### Example: Rectangle Made of 10 x 10 Asterisks
 
-Print on the console a rectangle made out of **10 x 10** stars.
+Print on the console a rectangle made out of **10 x 10** asterisks.
 
 |Input|Output|
 |---|---|
@@ -23,7 +23,7 @@ Print on the console a rectangle made out of **10 x 10** stars.
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is  **`i = 0`**. With each iteration of the cycle, the variable increases by **1** until it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 stars.
+How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is  **`i = 0`**. With each iteration of the cycle, the variable increases by **1** until it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
 
 
 #### Testing in the Judge System
@@ -33,7 +33,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ###Example: Rectangle Made of N x N Asterisks
 
-Write a program that reads a positive number **n** and prints on the console **a rectangle of N x N asterisks**. 
+Write a program which receives a positive number **n** and prints on the console **a rectangle of N x N asterisks**. 
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -63,182 +63,180 @@ Here is an **example** that illustrates nested loops. The aim is again to print 
 
 ![](/assets/chapter-6-1-images/00.Nested-loops-01.png)
 
-В езика **Python**, когато стандартната начална стойност на променливата в цикъла (**`i = 0`**) не ни върши работа, можем да я променим със горепосочения синтаксис. Т.е. когато искаме цикълът да започва от **1** и да се върти до **`n`** включително, пишем: **`for i in range(1, n + 1)`**. Първата стойност в скобите указва началото на цикъла, а втората - края на цикъла, но не включително, т.е. цикълът свършва, преди да се достигне до нея.
+In **Python**, when the standard initial value of the variable in the loop (**`i = 0`**) does not work for us, we can change it with the above syntax. I.e. when we want the loop to start from **1** and rotate to **`n`** inclusive, we write: **`for i in range (1, n + 1)`**. The first value in parentheses indicates the beginning of the loop, and the second - the end of the loop, but not including, i.e. the loop ends before it is reached. 
 
-Да разгледаме примера по-горе. След инициализацията на **първия (външен) цикъл**, започва да се изпълнява неговото **тяло**, което съдържа **втория (вложен) цикъл**. Той сам по себе си печата на един ред **`n`** на брой звездички. След като **вътрешният** цикъл **приключи** изпълнението си при първата итерация на външния, то след това **външният ще продължи**, т.е. ще отпечата един празен ред на конзолата. **След това** ще се извърши **обновяване** на променливата на **първия** цикъл и отново ще бъде изпълнен целият **втори**  (вложен) цикъл. Вътрешният цикъл ще се изпълни толкова пъти, колкото се изпълнява тялото на външния цикъл, в случая **`n`** пъти.
+Let's look at the example above. After the initialization of the **first (outer) loop**, its **body**, which contains **the second (nested) loop**, starts to run. It itself prints one line **`n`** of asterisks. After the **internal** loop **completes** its execution in the first iteration of the external one, then **the external one will continue**, i.e. will print a blank line on the console. **Then** the **first** loop ** will be **updated** and the whole **second** (nested) loop will be executed again. The inner loop will be executed as many times as the body of the outer loop is executed, in this case **`n`** times. 
 
-### Пример: квадрат от звездички
+### Example: Square Made of Asterisks
 
-Да се начертае на конзолата квадрат от **N x N** звездички:
+Print on the console a square made of **N x N** asterisks:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\* \*</code><br><code>\* \*</code>|3|<code>\* \* \*</code><br><code>\* \* \*</code><br><code>\* \* \*</code>|4|<code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е аналогична на предходната. Разликата тук е, че трябва да обмислим как да печатаме интервал след звездичките по такъв начин, че да няма излишни интервали в началото или края:
+The problem is similar to the last one. The difference here is that we need to figure out how to add a whitespace after the asterisks so that there aren't any excess white spaces at the beginning and the end:
 
 ![](/assets/chapter-6-1-images/03.Square-01.png)
 
 #### Тестване в Judge системата
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#2](https://judge.softuni.org/Contests/Practice/Index/1055#2).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#2](https://judge.softuni.org/Contests/Practice/Index/1055#2).
 
+### Example: Triangle Made of Dollars
 
-### Пример: триъгълник от долари
+Write a program which receives an integer **n** and prints **a triangle made of dollars**.
 
-Да се напише програма, която въвежда число **n** и печата **триъгълник от долари**.
-
-|Вход|Изход|Вход|Изход|Вход|Изход
+|Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
 |3|<code>&dollar;</code><br><code>&dollar; &dollar;</code><br><code>&dollar; &dollar; &dollar;</code>|4|<code>&dollar;</code><br><code>&dollar; &dollar;</code><br><code>&dollar; &dollar; &dollar;</code><br><code>&dollar; &dollar; &dollar; &dollar;</code>|5|<code>&dollar;</code><br><code>&dollar; &dollar;</code><br><code>&dollar; &dollar; &dollar;</code><br><code>&dollar; &dollar; &dollar; &dollar;</code><br><code>&dollar; &dollar; &dollar; &dollar; &dollar;</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Задачата е **сходна** с тези за рисуване на **правоъгълник** и **квадрат**. Отново ще използваме **вложени цикли**, но тук има **уловка**. Разликата е в това, че **броя на колонките**, които трябва да разпечатаме, зависят от **реда**, на който се намираме, а не от входното число **`n`**. От примерните входни и изходни данни забелязваме, че **броят на доларите зависи** от това на кой **ред** се намираме към момента на печатането, т.е. 1 долар означава първи ред, 3 долара означават трети ред и т.н. Нека разгледаме долния пример по-подробно. Виждаме, че **променливата** на **вложения** цикъл е обвързана с променливата на **външния**. По този начин нашата програма печата желания триъгълник:
+The problem is **similar** to those for drawing **a rectangle** and **square**. Once again, we will use **nested loops**, but there is **a  catch** here. The difference is that **the number of columns** that we need to print depends on **the row**, on which we are and not on the input number **`n`**. From the example input and output data, we see that **the count of dollars depends** on which **row** we are on at the moment of the printing, i.e. 1 dollar means the first row, 3 dollars mean the third row, and so on. Let's see the following example in detail. We see that **the variable** of **the nested** loop is connected with the variable of **the outer** one. This way our program prints the desired triangle:
 
 ![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#3](https://judge.softuni.org/Contests/Practice/Index/1055#3).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#3](https://judge.softuni.org/Contests/Practice/Index/1055#3).
 
 
-### Пример: квадратна рамка
+### Example: Square Frame
 
-Да се напише програма, която въвежда цяло положително число **n** и чертае на конзолата **квадратна рамка** с размер **N x N**.
+Write a program which receives a positive integer **n** and draws on the console **a square frame** with a size of **N x N**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>+ - +</code><br><code>&#124; - &#124;</code><br><code>+ - +</code>|4|<code>+ - - +</code><br><code>&#124; - - &#124;</code><br><code>&#124; - - &#124;</code><br><code>+ - - +</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>+ - - - +</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>+ - - - +</code>|6|<code>+ - - - - +</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>+ - - - - +</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Можем да решим задачата по следния начин:
-* Четем от конзолата числото **`n`**.
-* Отпечатваме **горната част**: първо знак **`+`**, после **n-2** пъти **`-`** и накрая знак **`+`**.
-* Отпечатваме **средната част**: печатаме **n-2** реда като първо печатаме знак **`|`**, после **n-2** пъти **`-`** и накрая отново знак **`|`**. Това можем да го постигнем с вложени цикли.
-* Отпечатваме **долната част**: първо **`+`**, после **n-2** пъти **`-`** и накрая **`+`**.
+We can solve the problem in the following way:
+* We read from the console the number **`n`**.
+* We print **the upper part**: first a **`+`** sign, then **n-2** times **`-`** and in the end a **`+`** sign.
+* We print **the middle part**: we print **n-2** rows, as we first print a **`|`** sign, then **n-2** times **`-`** and in the end again a **`|`** sign. We can do this with nested loops.
+* We print **the lower part**: first a **`+`** sign, then **n-2** times **`-`** and in the end a **`+`** sign.
 
-Ето и примерна имплементация на описаната идея с вложени цикли:
+Here is an example implementation of the above idea with nested loops:
 
 ![](/assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#4](https://judge.softuni.org/Contests/Practice/Index/1055#4).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#4](https://judge.softuni.org/Contests/Practice/Index/1055#4).
 
 
-### Пример: ромбче от звездички
+### Problem: Rhombus Made of Asterisks
 
-Да се напише програма, която въвежда цяло положително число **n** и печата **ромбче от звездички** с размер **N**.
+Write a program which receives a positive integer **n** and prints **a rhombus made of asterisks** with size **N**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>\*</code>|2|<code>&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;</code><br>|
 
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code>|4|<code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-За решението на тази задача е нужно да **разделим** мислено **ромба** на **две части** - **горна**, която включва **и** средния ред, и **долна**. За **разпечатването** на всяка една част ще използваме **два** отделни цикъла, като оставяме на читателя сам да намери зависимостта между **`n`** и променливите на циклите. За първия цикъл може да използваме следните насоки:
+To solve this problem, we need to mentally **divide** **the rhombus** into **two parts** – the **upper** one, which **also** includes the middle row, and the **lower** one. For **the printing** of each part, we will use **two** separate loops, as we leave the reader to decide the dependency between **`n`** and the variables of the loops. For the first loop we can use the following guidelines:
 
-* Отпечатваме **`n-row`** интервала.
-* Отпечатваме **`*`**.
-* Отпечатваме **`row-1`** пъти **`*`**.
+* We print **`n-row`** whitespaces.
+* We print **`*`**.
+* We print **`row-1`** times **`*`**.
 
-**Втората** (долна) част ще разпечатаме по **аналогичен** начин, което отново оставяме на читателя да се опита да направи сам.
+**The second** (lower) part will be printed **similarly**, which again we leave to the reader to do..
 
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-  <td>В езика Python стандартната стъпка на <strong><code>for</code></strong> цикъла е положителна и е равна на 1. Ако искаме да я променим, трябва при аргументите на цикъла да използваме трети параметър: <code><b>for i in range (0, 100, 2)</b></code>. Третият параметър в случая показва, че променливата ще се увеличава от 0 до 99 включително, със стъпка 2.</td>
+In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#5](https://judge.softuni.org/Contests/Practice/Index/1055#5).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#5](https://judge.softuni.org/Contests/Practice/Index/1055#5).
 
-### Пример: коледна елха
+### Problem: Christmas Tree
 
-Да се напише програма, която въвежда число **n** (1 ≤ n ≤ 100) и печата коледна елха с височина **N + 1**.
+Write a program which receives a number **n** (1 ≤ n ≤ 100) and prints a Christmas tree with a height of **N + 1**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>&nbsp;&nbsp;&#124;&nbsp;&nbsp;</code><br><code>\*&nbsp;&#124;&nbsp;\*</code>|2|<code>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;</code><br><code>\*\*&nbsp;&#124;&nbsp;\*\*</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;</code><br><code>\*\*\*&nbsp;&#124;&nbsp;\*\*\*</code>|4|<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*\*&nbsp;&#124;&nbsp;\*\*\*&nbsp;</code><br><code>\*\*\*\*&nbsp;&#124;&nbsp;\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-От примерите виждаме, че елхата може да бъде **разделена** на **три** логически части. Първата част са **звездичките и празните места преди и след тях**, средната част е **` | `**, а последната част са отново **звездички**, като този път **празни** места има само **преди** тях. Разпечатването може да бъде постигнато само с **един цикъл** и операцията **умножаване на стринг**, която ще използваме един път за звездичките и един път за интервалите: 
+From the examples, we see that **the Christmas tree** can be **divided** into **three** logical parts. **The first** part is **the asterisks and the whitespaces before and after them**, **the middle** part is **` | `**, and **the last** part is again **asterisks**, but this time there are **whitespaces** only **before** them. The printing can be done with only **one loop** and the operation **string multiplication** , which we will use once for the asterisks and once for the whitespaces:
 
 ![](/assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#6](https://judge.softuni.org/Contests/Practice/Index/1055#6).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#6](https://judge.softuni.org/Contests/Practice/Index/1055#6).
 
 
-## Чертане на по-сложни фигури
+## Drawing more complex figures
 
-Да разгледаме как можем да чертаем на конзолата фигури с по-сложна логика на конструиране, за които трябва повече да помислим, преди да почнем да пишем.
+Let's look at how to **draw figures** using **nested loops** with more complex logic, for which we need to think more before coding.
 
-### Пример: слънчеви очила
-Да се напише програма, която въвежда цяло число **n** (3 ≤ n ≤ 100) и печата слънчеви очила с размер **5\*N x N** като в примерите:
+### Problem: Sunglasses
 
-|Вход|Изход|Вход|Изход|
+Write a program which receives an integer **n** (3 ≤ n ≤ 100) and prints sunglasses with a size of **5\*N x N** as found in the examples:
+
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code><br><code>\*////\*&#124;&#124;&#124;\*////\*</code><br><code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code>|4|<code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br><code>\*//////\*&#124;&#124;&#124;&#124;\*//////\*</code><br><code>\*//////\*&nbsp;&nbsp;&nbsp;&nbsp;\*//////\*</code><br><code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |5|<code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*////////\*&#124;&#124;&#124;&#124;&#124;\*////////\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-От примерите виждаме, че очилата могат да се разделят на **три части** – горна, средна и долна. По-долу е част от кода, с който задачата може да се реши.
-
-При рисуването на горния и долния ред трябва да се изпечатат **`2 * n`** звездички, **`n`** интервала и **`2 * n`** звездички:
+From the examples, we can see that the sunglasses can be divided into **three parts** – upper, middle, and lower. Below is part of the code with which the problem can be solved. When drawing the upper and lower rows we need to print **`2 * n`** asterisks, **`n`** whitespaces, and **`2 * n`** asterisks:
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-01.png)
 
-При печатането на **средната** част трябва да **проверим** дали редът е **`(n  -1) // 2 - 1`**, тъй като от примерите е видно, че на **този ред** трябва да печатаме **вертикални чертички** вместо интервали:
+
+When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 2 - 1`**, because in the examples we can see that in **this row** we need to print **vertical slashes** instead of whitespaces:
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#7](https://judge.softuni.org/Contests/Practice/Index/1055#7).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#7](https://judge.softuni.org/Contests/Practice/Index/1055#7).
 
-### Пример: къщичка
+### Problem: House
 
-Да се напише програма, която въвежда число **n** (2 ≤ **n** ≤ 100) и печата **къщичка** с размери **N x N**, точно като в примерите:
+Write a program which receives a number **n** (2 ≤ **n** ≤ 100) and prints **a house** with size **N x N**, just as in the examples:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>**</code><br><code>&#124;&#124;</code><br>|3|<code>-\*-</code><br><code>\*\*\*</code><br><code>&#124;\*&#124;</code>|4|<code>-\*\*-</code><br><code>\*\*\*\*</code><br><code>&#124;\*\*&#124;</code><br><code>&#124;\*\*&#124;</code>
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>--\*--</code><br><code>-\*\*\*-</code><br><code>\*\*\*\*\*</code><br><code>&#124;\*\*\*&#124;</code><br><code>&#124;\*\*\*&#124;</code>|8|<code>---\*\*---</code><br><code>--\*\*\*\*--</code><br><code>-\*\*\*\*\*\*-</code><br><code>\*\*\*\*\*\*\*\*</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br>|
 
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Разбираме от условието на задачата, че къщата е с размер **`n` x `n`**. Това, което виждаме от примерните вход и изход, е, че:
+We understand from the description of the problem that the house has size **`n` x `n`**. What we see from the example input and output is that:
 
-* Къщичката е разделена на 2 части: **покрив и основа**. 
+* The house is divided into two parts: **roof and base**.
 
 ![](/assets/chapter-6-1-images/09.House-01.png)
 
