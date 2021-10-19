@@ -42,10 +42,10 @@ If anyone thinks they're going to read a book and learn to program without writi
 
 You need to **solve a lot of problems**, to make mistakes, to fix them, search for solutions and information on the Internet, to try, to experiment, to find better solutions, get used to the code, syntax, programming language, development environment, error search and debugging of non-working code, task reasoning, algorithmic thinking, breaking down problems in steps and implementing every step, gaining experience and lifting your skills every day, because learning to write code is just **the first step towards the profession of software engineer**. You have a lot to learn, really!
 
-We advise the reader, as a minimum, **to try all the examples from the book**, to play with them, to change and test them. Even more important than the examples, **are the exercises**, because they develop the practical skills of the developer.
+We advise the reader, as a minimum, **to try all the examples from the book**, to interact with them, to change and test them. Even more important than the examples, **are the exercises**, because they develop the practical skills of a developer.
 
-**Solve all the tasks in the book**, because programming is learned by practice! The tasks after each topic are carefully selected to cover in-depth the covered learning
-material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses in **SoftUni** we purposefully **focus on practice** and problem-solving, and in most courses code writing occupies over 70% of the entire course.
+**Solve all the tasks in the book**, because programming is learned by practice! The tasks after each topic are carefully selected to cover in-depth the included learning
+material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses at **SoftUni** we purposefully **focus on practice** and problem-solving, and in most courses code writing makes up over 70% of the entire course.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>Solve all the exercises in the book</b>. Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td>
@@ -53,7 +53,7 @@ material. The purpose of solving all tasks from all the topics covered is to giv
 
 ## About Software University(SoftUni)
 
-[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students pass through it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](https://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and a lot of practice.
+[The Software University (SoftUni)](https://softuni.bg) is **the largest training center for software engineers in Bulgaria**. Tens of thousands of students enroll in it every year. SoftUni opened in 2014 as a continuation of **[Svetlin Nakov PhD's](https://nakov.com)** efforts to build **framed software specialists** through real, modern and quality education, which combines fundamental knowledge with modern software technologies and a lot of practice.
 
 The Software University provides **quality education**, **occupation**, **work** and **the opportunity to acquire a bachelor's degree** for programmers, software engineers and IT professionals. SoftUni builds an extremely successful lasting **relationship between education and industry**, collaborating with hundreds of software companies, **providing work and internships** to its students, providing quality specialists for the software industry and directly meeting the needs of employers through the learning process.
 
@@ -122,11 +122,11 @@ This book develops **a beginner's level of algorithmic thinking**, but it is abs
 
 **Algorithmic thinking skills** are prominently developed in the beginner courses for software engineering in SoftUni (see. [curriculum](https://softuni.bg/curriculum)), also in the specialized courses of [data structures](https://softuni.bg/opencourses/data-structures) and [algorithms](https://softuni.bg/opencourses/algorithms).
 
-As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely for the well-developed logical thinking, it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
+As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely because of the the well-developed logical thinking, it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
 
 ### Skill #3 – fundamental knowledge of the profession (25%) 
 
-**Fundamental knowledge and skills** for programming, software development, software engineering and computer science form about 25% of the developer's minimum start-up skills. Here are the most important of this knowledge and skills: 
+**Fundamental knowledge and skills** for programming, software development, software engineering and computer science form about 25% of the developer's minimum start-up skills. Here are the most important parts of this knowledge and skills: 
 * **basic mathematical concepts** related to programming: coordinate systems, vectors and matrices, discrete and indiscreet mathematical functions, end machines and state machines, concepts of combination and statistics, algorithm complexity, mathematical modeling and others. 
 * **skills to program** - code writing, data work, use of conditional structures and loops, work with arrays, lists and associative arrays, strings and word processing, working with streams and files, using program interfaces (APIs), working with a debugger and others.
 * **data structures and algorithms** - lists, trees, hash tables, columns, search, sorting, recursive, tree crawling, etc.
@@ -218,7 +218,7 @@ Book cover design: Marina Shiderova.
 
 The book is written in the period June-October 2018.
 
-## Официален сайт на книгата
+## Official website of the book
 
 The current book on **The basics of Python programming for beginners** is available for free use on the Internet from: 
 
