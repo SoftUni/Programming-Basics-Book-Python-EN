@@ -493,7 +493,7 @@ First we read the number **`n`** from the console:
 
 ![](/assets/chapter-8-1-images/09.Perfect-diamond-01.png)
 
-We start drawing **the upper half** of the diamond. We see that **each line** starts with some **empty spaces and <code>*</code>**.  If we take a closer look, we will notice that **the empty spaces** are always equal to **`n - index of row - 1`** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **empty spaces** and **the first star**. Let's not forget to use **`print(…, end='')`** instead of just **`print(…)`** to stay on **the same line**. At the end of the line we write **`print ()`** to move to a **new line**. Notice that we start counting from **1, not 0**. Then all we have to do is add **`-*`** a few times to **complete the line**. 
+We start drawing **the upper half** of the diamond. We see that **each line** starts with some **whitespaces and <code>*</code>**.  If we take a closer look, we will notice that **the whitespaces** are always equal to **`n - index of row - 1`** (the first row is n-1, the second – n-2, etc.). We will start by drawing the number of **whitespaces** and **the first asterisk**. Let's not forget to use **`print(…, end='')`** instead of just **`print(…)`** to stay on **the same line**. At the end of the line we write **`print ()`** to move to a **new line**. Notice that we start counting from **1, not 0**. Then all we have to do is add **`-*`** a few times to **complete the line**. 
 
 Here is the complete code for drawing **the upper part of the diamond**:
   
@@ -518,9 +518,9 @@ What remains is **to assemble the whole program**  by first reading the input, p
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#8](https://judge.softuni.org/Contests/Practice/Index/1059#8).
 
 
-### Problem: Rectangle with Stars in the Center
+### Problem: Rectangle with Asterisks in the Center
 
-Write a function that takes as a parameter an integer **n** and draws **a rectangle** with size **n with 2 stars in the center** as in the examples below.
+Write a function that takes as a parameter an integer **n** and draws **a rectangle** with size **n with 2 asterisks in the center** as in the examples below.
 
 #### Input
 
@@ -550,13 +550,13 @@ The first thing we can easily notice is that **the first and the last rows** con
 
 ![](/assets/chapter-8-1-images/10.Rectangle-with-stars-02.png)
 
-From the examples, we see that **the middle** part of the figure always has an **odd number** of rows. Note that when an **even number** is set, the number of rows is equal to **the previous odd** number (2 -> 1, 4 -> 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number **`n` is even**. Then we will draw **a rectangle without the asterisks**. Each row has for **the beginning and at the end** the symbol **`%`** and between them **`2 * n - 2`** empty spaces (the width is **`2 * n`** and we subtract 2 for the two percent at the end). Do not forget to move the code :or **the last line after the loop**:
+From the examples, we see that **the middle** part of the figure always has an **odd number** of rows. Note that when an **even number** is set, the number of rows is equal to **the previous odd** number (2 -> 1, 4 -> 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number **`n` is even**. Then we will draw **a rectangle without the asterisks**. Each row has for **the beginning and at the end** the symbol **`%`** and between them **`2 * n - 2`** whitespaces (the width is **`2 * n`** and we subtract 2 for the two percent at the end). Do not forget to move the code :or **the last line after the loop**:
 
 ![](/assets/chapter-8-1-images/10.Rectangle-with-stars-03.png)
 
 We can **start and test the code so far**. Everything without the two asterisks in the middle should work correctly.
 
-Now, **in the body** of the loop let's add the **asterisks**. We'll check if we're on the **middle row**. If we are in the middle, (we will check this by comparing **`i`** with **`floor(num_rows / 2)`**), we will draw **the row** together **with the asterisks**, if not – we will draw **a normal row**. **Remember** to add **`from math import floor`** at the beginning of the work file so that we can use the **`floor(…)`** function. The line with the asterisks has **`n-2` empty spaces** (**`n`** is half the length and we remove the asterisk and the percentage), **two stars**, and again **`n-2` empty spaces**. We leave out of the check the two percent at the beginning and the end of the row:
+Now, **in the body** of the loop let's add the **asterisks**. We'll check if we're on the **middle row**. If we are in the middle, (we will check this by comparing **`i`** with **`floor(num_rows / 2)`**), we will draw **the row** together **with the asterisks**, if not – we will draw **a normal row**. **Remember** to add **`from math import floor`** at the beginning of the work file so that we can use the **`floor(…)`** function. The line with the asterisks has **`n-2` whitespaces** (**`n`** is half the length and we remove the asterisk and the percentage), **two asterisks**, and again **`n-2` whitespaces**. We leave out of the check the two percent at the beginning and the end of the row:
   
 ![](/assets/chapter-8-1-images/10.Rectangle-with-stars-04.png)
 
