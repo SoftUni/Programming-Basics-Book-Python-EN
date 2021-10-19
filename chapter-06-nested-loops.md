@@ -244,7 +244,7 @@ We understand from the description of the problem that the house has size **`n` 
 * When **`n`** is odd, **the roof** has a sharp point and is one row larger than the **base**.
 
 ##### The Roof
-* It comprises **stars** and **dashes**.
+* It comprises **asterisks** and **dashes**.
 * At its highest part there are one or two asterisks, depending on whether **n** is even or odd, as well as dashes. 
 * At its lowest part, there are many asterisks and little to no dashes.
 * With each lower row, **the asterisks** increase by 2, and **the dashes** decrease also by 2.
@@ -263,7 +263,7 @@ We read the input number **`n`** from the console and write its value in a varia
 <td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into type <b><code>int</code></b>, because it is said that we will be given valid integers. If you are making more complex programs, it is a good practice to check the data. What will happen if instead of a number the user inputs the character "A"?</td>
 </tr></table>
 
-To draw **the roof**, we write down how many **stars** we start with a variable called **`stars`**:
+To draw **the roof**, we write down how many **asterisks** we start with a variable called **`asterisks`**:
 * If **`n`** is an **odd** number, there will be 1 star.
 * If it is **even**, there will be 2.
 
@@ -290,7 +290,7 @@ If we want to round up to the next largest integer. number, we need to use the m
 **`result = math.ceil(3 / 2)`**.
 
 After we have calculated the length of the roof, we make a loop from 0 to **`roof_length`**. On each iteration we will:
-* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in variable **`padding`**.
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - asterisks) / 2`**. We store it in variable **`padding`**.
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
@@ -345,7 +345,7 @@ What we know from the problem's description is that the diamond is **`n` x `n`**
 
 ##### Lower Part
 
-* With each row down, the stars get closer to each other. This means that space (**the dashes**) between them is getting smaller and space (**the dashes**) on the left and the right is getting larger.
+* With each row down, the asterisks get closer to each other. This means that space (**the dashes**) between them is getting smaller and space (**the dashes**) on the left and the right is getting larger.
 * The bottom-most part has 1 or 2 **asterisks**, depending on whether **n** is an even or odd number.
 
 ##### Upper and Lower Parts of the Diamond
@@ -426,7 +426,7 @@ Don't worry if you don't understand all of the code, how exactly it is written a
 
 ### Problem: Ratings – Visualization in a Web Environment
 
-Develop a web application for rating visualization (number from 0 to 100). Draw from 1 to 10 stars (with halves). Asterisks to be generated with a **`for`** cycle. 
+Develop a web application for rating visualization (number from 0 to 100). Draw from 1 to 10 stars (with halves). Stars to be generated with a **`for`** cycle. 
 
 ![](assets/chapter-6-1-images/11.Ratings-01.png)
 
@@ -455,13 +455,13 @@ We are now adding the **structure** of the project (the assignment files for thi
 For everything to work, we need to add the code. First we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code: 
 ![](assets/chapter-6-1-images/11.Ratings-07.png)
 
-The above code creates a web form **`<form>`** with one field **`" rating "`** for entering a number in the interval [**0… 100**] and a button [**Rate**] to send the data from the form to the server. Then, draw with three separate **for** loops the corresponding number of asterisks - filled, half-empty and empty. 
+The above code creates a web form **`<form>`** with one field **`" rating "`** for entering a number in the interval [**0… 100**] and a button [**Rate**] to send the data from the form to the server. Then, draw with three separate **for** loops the corresponding number of stars - filled, half-empty and empty. 
 
 The action that will process the data is called **`/DrawRatings`**, which means the function **`draw_ratings ()`** in the file **`app.py`**: 
 
 ![](assets/chapter-6-1-images/11.Ratings-08.png)
 
-The code from the function **`draw_ratings ()`** takes the entered number **`rating`** from the form and passes it to the function **`calc_rating (…)`**. The **`calc_rating (…)`** function computes and calculates the number of **full asterisks**, the number of **empty asterisks** and the number of **halves of asterisks**, then reloads the page, but with new ones submitted values of the variables for the asterisks. We implement it as follows:
+The code from the function **`draw_ratings ()`** takes the entered number **`rating`** from the form and passes it to the function **`calc_rating (…)`**. The **`calc_rating (…)`** function computes and calculates the number of **full stars**, the number of **empty stars** and the number of **halves of stars**, then reloads the page, but with new ones submitted values of the variables for the stars. We implement it as follows:
 
 ![](assets/chapter-6-1-images/11.Ratings-09.png)
 
