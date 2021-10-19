@@ -240,171 +240,173 @@ We understand from the description of the problem that the house has size **`n` 
 
 ![](/assets/chapter-6-1-images/09.House-01.png)
 
-* Когато **`n`** е четно число, върхът на къщичката е тъп.
-* Когато **`n`** е нечетно число, **покривът** е с остър връх и с един ред по-голям от **основата**.
+* When **`n`** is an even number, the point of the house is "dull".
+* When **`n`** is odd, **the roof** has a sharp point and is one row larger than the **base**.
 
-##### Покрив
-* Съставен е от **звезди** и **тирета**.
-* В най-високата си част има една или две звезди, спрямо това дали **n** e четно или нечетно, както и тирета.
-* В най-ниската си част има много звезди и малко или никакви тирета.
-* С всеки един ред по-надолу **звездите** се увеличават с 2, а **тиретата** намаляват също с 2.
+##### The Roof
+* It comprises **stars** and **dashes**.
+* At its highest part there are one or two asterisks, depending on whether **n** is even or odd, as well as dashes. 
+* At its lowest part, there are many asterisks and little to no dashes.
+* With each lower row, **the asterisks** increase by 2, and **the dashes** decrease also by 2.
 
-##### Основа
-* Дълга е **`n`** на брой реда.
-* Съставена е от **звезди** и **вертикални черти**.
-* Редовете са съставени от 2 **вертикални черти** - по една в началото и в края на реда, както и **звезди** между чертите с дължина на низа **`n - 2`**.  
 
-Прочитаме входното число **`n`** от конзолата и записваме стойността му в променлива:  
+##### The Base
+* The height is **`n`** rows.
+* It is made out of **asterisks** and **vertical slashes**.
+* Each row comprises 2 **vertical slashes** – one in the beginning and one at the end of the row, and also **asterisks** between the vertival slashes with a string length of **`n - 2`**.    
+
+We read the input number **`n`** from the console and write its value in a variable: 
 
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Много е важно да проверяваме дали са валидни входните данни!</b> В тези задачи не е проблем директно да обръщаме прочетеният вход от конзолата в тип <b><code>int</code></b>, защото изрично е казано, че ще получаваме валидни целочислени числа. Ако обаче правим по-сериозни приложения, е добра практика да проверяваме данните. Какво ще стане, ако вместо число потребителят въведе например буквата "А"?</td>
+<td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into type <b><code>int</code></b>, because it is said that we will be given valid integers. If you are making more complex programs, it is a good practice to check the data. What will happen if instead of a number the user inputs the character "A"?</td>
 </tr></table>
 
-За да начертаем **покрива**, записваме колко ще е началният брой **звезди** в променлива **`stars`**:
-* Ако **`n`** е **нечетно** число, ще е 1 брой.
-* Ако **`n`** е **четно**, ще са 2 броя.
+To draw **the roof**, we write down how many **stars** we start with a variable called **`stars`**:
+* If **`n`** is an **odd** number, there will be 1 star.
+* If it is **even**, there will be 2.
 
 ![](/assets/chapter-6-1-images/09.House-03.png)
 
-Изчисляваме дължината на **покрива**. Тя е равна на половината от **`n`**. Резултата записваме в променливата **`roof_length`**:
+Calculate the length of **the roof**. It equals half of **`n`**. Write the result in the variable **`roof_length`**:
 
 ![](/assets/chapter-6-1-images/09.House-04.png)
 
-**Забележка:** За да използваме **`math.ceil()`**, която закръгля към по-голямото цяло число, без значение от дробната част, е необходимо да въведем библиотеката **`math`**. Това става с командата **`import math`**. Препоръчително е да напишем **`import math`** (както и всички други import-и) още в началото на файла.
+**Note:** To use **`math.ceil ()`**, which rounds to the larger integer, regardless of the fractional part, it is necessary to add the library **`math`**. This is done with the command **`import math`**. It is recommended to write **`import math`** (as well as all other imports) at the beginning of the file. 
 
-Важно е да съобразим, че когато **`n`** е нечетно число, дължината на покрива е по-голяма с един ред от тази на **основата**. 
+It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**.
 
-В езика **Python**, когато два целочислени типа се делят и има остатък, то резултатът ще е число с остатък. Ако искаме да извършим чисто целочислено деление без остатък, е необходимо да използваме оператора **`//`**.
+In **Python**, when two integer types are divisible and there is a remainder, the result will be a number with a remainder. If we want to perform a pure integer division without a remainder, it is necessary to use the operator **`//`**. 
 
-Пример:
+Example:
 
 ```python
-result1 = 3 / 2    # резултат 1.5
-result2 = 3 // 2   # резултат 1
+result1 = 3 / 2    # result 1.5
+result2 = 3 // 2   # result 1
 ```
 
-Ако искаме да закръглим резултата нагоре, трябва да използваме метода **`math.cail(…)`**:
+If we want to round up to the next largest integer. number, we need to use the method **`math.cail(…)`**:
 **`result = math.ceil(3 / 2)`**.
 
-След като сме изчислили дължината на покрива, завъртаме цикъл от 0 до **`roof_length`**. На всяко повторение ще:
-* Изчисляваме броя **тирета**, които трябва да изрисуваме. Броят ще е равен на **`(n - stars) / 2`**. Записваме го в променлива **`padding`**.
+After we have calculated the length of the roof, we make a loop from 0 to **`roof_length`**. On each iteration we will:
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in variable **`padding`**.
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
-* Отпечатваме на конзолата: "**тирета**" (**`padding`** на брой пъти) + "**звезди**" (**`stars`** пъти) + "**тирета**" (**`padding`** пъти). 
+* We print on the console: "**dash**" (**`padding / 2`** times) + "**asterisks**" (**`asterisks`** times) + "**dash**" (**`padding / 2`** times):
 
 ![](/assets/chapter-6-1-images/09.House-06.png)
 
-* Преди да завърши въртенето на цикъла увеличаваме **`stars`** (броя на **звездите**) с 2.
+* Before the iteration is over, we add 2 to **`asterisks`** (the number of **the asterisks**).
 
 ![](/assets/chapter-6-1-images/09.House-07.png)
 
-След като сме приключили с покрива, е време за **основата**. Тя е по-лесна за печатане:
-* Започваме с цикъл от 0 до **`n`** (изключено).
-* Отпечатваме на конзолата: **`|`** + **`*`** (**`n - 2`** на брой пъти) + **`|`**.
+After we have finished with the **roof**, it is time for **the base**. It is easier to print:
+* We start with a loop from 0 to n (exclusive).
+* We print on the console: `|` + `*` (**`n - 2`** times) + `|`.
 
 ![](/assets/chapter-6-1-images/09.House-08.png)
 
-Ако всичко сме написали както трябва, задачата ни е решена.
+If we have written everything correctly, our problem should be solved. 
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#8](https://judge.softuni.org/Contests/Practice/Index/1055#8).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#8](https://judge.softuni.org/Contests/Practice/Index/1055#8).
 
-### Пример: диамант
+### Example: Diamond
 
-Да се напише програма, която приема цяло число **n** (1 ≤ **n** ≤ 100) и печата диамант с размер **N**, като в следните примери:
+Write a program which receives an integer **n** (1 ≤ **n** ≤ 100) and prints a diamond with size **N**, as in the following examples:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |1|<code>\*</code><br>|2|<code>\*\*</code>|3|<code>-\*-</code><br><code>\*-\*</code><br><code>-\*-</code>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |4|<code>-\*\*-</code><br><code>\*--\*</code><br><code>-\*\*-</code>|5|<code>--\*--</code><br><code>-\*-\*-</code><br><code>\*---\*</code><br><code>-\*-\*-</code><br><code>--\*--</code><br>|6|<code>--\*\*--</code><br><code>-\*--\*-</code><br><code>\*----\*</code><br><code>-\*--\*-</code><br><code>--\*\*--</code><br>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |7|<code>---\*---</code><br><code>--\*-\*--</code><br><code>-\*---\*-</code><br><code>\*-----\*</code><br><code>-\*---\*-</code><br><code>--\*-\*--</code><br><code>---\*---</code><br>|8|<code>---\*\*---</code><br><code>--\*--\*--</code><br><code>-\*----\*-</code><br><code>\*------\*</code><br><code>-\*----\*-</code><br><code>--\*--\*--</code><br><code>---\*\*---</code><br>|9|<code>----\*----</code><br><code>---\*-\*---</code><br><code>--\*---\*--</code><br><code>-\*-----\*-</code><br><code>\*-------\*</code><br><code>-\*-----\*-</code><br><code>--\*---\*--</code><br><code>---\*-\*---</code><br><code>----\*----</code>|
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Това, което знаем от условието на задачата, е че диамантът е с размер **`n` x `n`**. От примерните вход и изход можем да си направим извода, че всички редове съдържат точно по **`n`** символа и всички редове, с изключение на горните върхове, имат по **2 звезди**. Можем мислено да разделим диаманта на 2 части:
-* **Горна** част. Тя започва от горния връх до средата.
-* **Долна** част. Тя започва от реда след средата до най-долния връх включително.
+What we know from the problem's description is that the diamond is **`n` x `n`** in size. From the example input and output we can conclude that all rows contain exactly **`n`** symbols, and all the rows, except for the top and bottom ones, have **2 asterisks**. We can mentally divide the diamond into 2 parts:
+* **Upper** part. It starts from the upper tip down to the middle.
+* **Lower** part. It starts from the row below the middle one and goes down to the lower tip (inclusive).
 
-##### Горна част
+##### Upper Part
 
-* Ако **`n`** е **нечетно**, то тя започва с **1 звезда**.
-* Ако **`n`** е **четно**, то тя започва с **2 звезди**.
-* С всеки ред надолу звездите се отдалечават една от друга.
-* Пространството между, преди и след **звездите** е запълнено с **тирета**.
+* If **n** is an **odd** number, it asterisks with **1 asterisk**.
+* If **n** is an **even** number, it asterisks with **2 asterisks**.
+* With each row down, the asterisks get further away from each other.
+* The space between, before, and after **the asterisks** is filled up with **dashes**.
 
-##### Долна част
+##### Lower Part
 
-* С всеки ред надолу звездите се приближават една към друга. Това означава, че пространството (**тиретата**) между тях намалява, а пространството (**тиретата**) отляво и отдясно се увеличава.
-* В най-долната си част е с 1 или 2 **звезди**, спрямо това дали **`n`** е четно или не.
+* With each row down, the stars get closer to each other. This means that space (**the dashes**) between them is getting smaller and space (**the dashes**) on the left and the right is getting larger.
+* The bottom-most part has 1 or 2 **asterisks**, depending on whether **n** is an even or odd number.
 
-##### Горна и долна част на диаманта
+##### Upper and Lower Parts of the Diamond
 
-* На всеки ред звездите са заобиколени от външни **тирета**, с изключение на средния ред.
-* На всеки ред има пространство между двете **звезди**, с изключение на първия и последния ред (понякога **звездата е 1**).
+* On each row, except the middle one, the asterisks are surrounded by inner and outer **dashes**.
+* On each row, there is space between the two **asterisks**, except on the first and the last row (sometimes **the asterisk is 1**).
 
-Прочитаме стойността на **`n`** от конзолата, като я конвертираме до тип **`int`**:
+We read the value of **`n`** from the console, converting it to type **`int`**: 
 
 ![](/assets/chapter-6-1-images/10.Diamond-01.png)
 
-Започваме да печатаме на конзолата горната част на диаманта. Първото нещо, което трябва да направим, е да изчислим началната стойност на външната бройка **тирета `left_right`** (тиретата от външната част на **звездите**). Тя е равна на **`(n - 1) / 2`**, закръглено надолу:
+We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `left_right`** (the dashes on the outer side of **the asterisks**). It is equal to **`(n - 1) / 2`**, rounded down:
 
 ![](/assets/chapter-6-1-images/10.Diamond-02.png)
 
-След като сме изчислили **`left_right`**, започваме да чертаем **горната част** на диаманта. Може да започнем, като завъртим **цикъл** от **`0`** до **`(n + 1) // 2 `** (т.е. закръглено надолу).  
+After we have calculated **`left_right`**, we start drawing **the upper part** of the diamond. We can start by running a **loop** from **`(n + 1) // 2 `** (i.e. rounded down).
 
-При всяко завъртане на цикъла трябва да се изпълнят следните стъпки:
+At each iteration of the loop the following steps must be taken:
 
-* Печатане на левите **тирета** на конзолата (с дължина **`left_right`**) и веднага след тях първата **звезда**.
+* We print on the console the left **dashes** (with length **`left_right`**) and right after them the first **asterisks**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-03.png)
 
-* Изчисляване на разстоянието между двете **звезди**. Може да го направим като извадим от **`n`** дължината на външните **тирета**, както и числото 2 (бройката на **звездите**, т.е. очертанията на диаманта). Резултата от тази разлика записваме в променлива **`mid`**.
+* We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes**, and the number 2 (the number of **the asterisks**, i.e. the diamond's outline). We need to store the result of the subtraction in a variable **`mid`**. 
 
 ![](/assets/chapter-6-1-images/10.Diamond-04.png)
 
-* Ако стойността на **`mid`** е по-малка от 0, то тогава знаем, че на този ред трябва да има 1 звезда. Ако е по-голяма или равно на 0, то тогава трябва да начертаем **тирета** с дължина **`mid`** и една **звезда** след тях.
-* Печатаме на конзолата десните външни **тирета** с дължина също **`left_right`**. 
+* If the **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **asterisks** after them.
+
+* We print on the console the right outer **dashes** with length **`left_right`**. 
 
 ![](/assets/chapter-6-1-images/10.Diamond-05.png)
 
-* В края на цикъла намаляваме стойността на **`left_right`** с 1 (**звездите** се отдалечават).
+* At the end of the loop, we decrease **`left_right`** by 1 (**the asterisks** are moving away from each other).
 
-Готови сме с горната част.
+We are ready with the upper part.
 
 Чертането на долната част е доста подобно на това на горната част. Разликата е, че вместо да намаляме стойността на **`left_right`** с 1 към края на цикъла, ще я увеличаваме с 1 в началото на цикъла. Също така **цикълът ще се върти от 0 до `(n - 1) // 2`**:
+Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`left_right`** with 1 at the end of the loop, we will increase it with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) // 2`**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-06.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Повторението на код се смята за лоша практика</b>, защото кодът става доста труден за поддръжка. Нека си представим, че имаме парче код (напр. логиката за чертането на ред от диаманта) на още няколко места и решаваме да направим промяна. За целта би било необходимо да минем през всичките места и да направим промените. А сега нека си представим, че трябва да използвате код не 1, 2 или 3 пъти, а десетки пъти. Начин за справяне с този проблем е като се използват <b>функции</b>. Можете да потърсите допълнителна информация за тях в Интернет или да прегледате <a href="/chapter-10-methods.md">Глава 10. Функции</a>.</td>
+<td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) in a few more places and we decide to change it. For this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can search for more information about them on the Internet or view <a href="chapter-10-functions.md">Chapter “10” (Functions)</a>.</td>
 </tr></table>
 
-Ако сме написали всичко коректно, задачата ни е решена.
+If we have written all correctly, then the problem is solved.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1055#9](https://judge.softuni.org/Contests/Practice/Index/1055#9).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#9](https://judge.softuni.org/Contests/Practice/Index/1055#9).
 
 
-## Какво научихме от тази глава?
+## What did you learn from this chapter?
 
-Запознахме се с един от начините за създаване на низове:
+We learned about one of the ways to create strings: 
 
 ```python
 print_me = '*' * 5
 ```
 
-Научихме се да чертаем фигури с вложени **`for`** цикли:
+We learned how to draw figures using nested **`for`** loops:
 
 ```python
 for row in range(5):
@@ -416,60 +418,59 @@ for row in range(5):
     print()
 ```
 
-## Упражнения: Чертане на фигурки в уеб среда
+## Lab: Drawing Figures in a Web Environment 
 
-Сега, след като свикнахме с **вложените цикли** и как да ги използваме, за да чертаем фигурки на конзолата, можем да се захванем с нещо още по-интересно: да видим как циклите могат да се използват за **чертане в уеб среда**. Ще направим уеб приложение, което визуализира числов рейтинг (число от 0 до 100) със звездички. Такава визуализация се среща често в сайтове за електронна търговия, ревюта на продукти, оценки на събития, рейтинг на приложения и други.
+Now that we got used to **nested loops** and the way to use them to draw figures on the console, we can get into something even more interesting: we can see how loops can be used to **draw in a Web environment**. We will make a web application that visualizes a number rating (a number from 0 to 100) with stars. This kind of visualization is common in e-commerce sites, reviews of products, event rating, rating of apps, and others.
 
-Не се притеснявайте, ако не разберете целия код, как точно е направен и как точно работи проектът. Нормално е, сега се учим да пишем код, не сме стигнали до технологиите за уеб разработка. Ако имате трудности да си напишете проекта, следвайки описаните стъпки, питайте в СофтУни форума: https://softuni.bg/forum.
+Don't worry if you don't understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.
 
-### Задача: рейтинги – визуализация в уеб среда
+### Problem: Ratings – Visualization in a Web Environment
 
-Да се разработи уеб приложение за визуализация на рейтинг (число от 0 до 100). Чертаят се от 1 до 10 звездички (с половинки). Звездичките да се генерират с **`for`** цикъл. 
+Develop a web application for rating visualization (number from 0 to 100). Draw from 1 to 10 stars (with halves). Asterisks to be generated with a **`for`** cycle. 
 
 ![](assets/chapter-6-1-images/11.Ratings-01.png)
 
-#### Насоки и подсказки
+#### Hints and Guidelines
 
-Започваме като създаваме нов проект в **PyCharm** от [**File**] -> [**New Project**] (или от началния прозорец):
+We start by creating a new project in **PyCharm** from [**File**] -> [**New Project**] (or from the start window): 
 
 ![](assets/chapter-6-1-images/11.Ratings-02.png)
 
-Даваме смислено име на проекта, например "Ratings". Избираме тип на текущия **Python интерпретатор**. Нека да е този по подразбиране:
+We give a meaningful name to the project, for example "Ratings". We choose the type of the current **Python interpreter**. Let this be the default:
 
 ![](assets/chapter-6-1-images/11.Ratings-03.png)
 
-Ще използваме отново библиотеката Flask, която служи за създаване на уеб приложения. Преди да започнем да пишем код, трябва да инсталираме Flask. Нека си припомним как ставаше това. Отиваме в настройките на PyCharm [**File**] -> [**Settings**] -> [**Project: Ratings**] -> [**Project Interpreter**]. Там, натискаме бутона **`+`**:
+We will again use the Flask library, which is used to create web applications. Before we can start coding, we need to install Flask. Let's remember how this happened. We go to the settings of PyCharm [**File**] -> [**Settings**] -> [**Project: Ratings**] -> [**Project Interpreter**]. There, we press the **`+`** button: 
 
 ![](assets/chapter-6-1-images/11.Ratings-04.png)
 
-Търсим **Flask** в прозореца, който излиза и натискаме бутона [**Install Package**]:
+Look for **Flask** in the window that appears and click the [**Install Package**] button: 
 
 ![](assets/chapter-6-1-images/11.Ratings-05.png)
 
-Сега добавяме **структурата** на проекта (файловете със заданието за този проект могат да бъдат свалени от [тук](https://github.com/SoftUni/Programming-Basics-Book-Python-BG/tree/chapter-06-nested-loops/assets/chapter-6-1-assets)). Копираме ги от Windows Explorer и ги поставяме в папката на проекта **Ratings** с Copy/Paste:
+We are now adding the **structure** of the project (the assignment files for this project can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-Python-BG/tree/chapter-06-nested-loops/assets/chapter-6-1-assets)). Copy them from Windows Explorer and paste them in the **Ratings** project folder with Copy/Paste: 
 
 ![](assets/chapter-6-1-images/11.Ratings-06.png)
 
-За да заработи всичко, трябва да допишем кода. Първо отиваме във файла **index.html** (от папка templates) и търсим **TODO** секциите. На тяхно място въвеждаме следния код:
-
+For everything to work, we need to add the code. First we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code: 
 ![](assets/chapter-6-1-images/11.Ratings-07.png)
 
-Горният код създава уеб форма **`<form>`** с едно поле **`"rating"`** за въвеждане на число в интервала [**0 … 100**] и бутон [**Rate**] за изпращане на данните от формата към сървъра. След което, рисува с три отделни **for** цикъла съответния брой звездички - запълнени, полупразни и празни.
+The above code creates a web form **`<form>`** with one field **`" rating "`** for entering a number in the interval [**0… 100**] and a button [**Rate**] to send the data from the form to the server. Then, draw with three separate **for** loops the corresponding number of asterisks - filled, half-empty and empty. 
 
-Действието, което ще обработи данните, се казва **`/DrawRatings`**, което означава функция **`draw_ratings()`** във файла **`app.py`**:
+The action that will process the data is called **`/DrawRatings`**, which means the function **`draw_ratings ()`** in the file **`app.py`**: 
 
 ![](assets/chapter-6-1-images/11.Ratings-08.png)
 
-Кодът от функцията **`draw_ratings()`** взима въведеното число **`rating`** от формата и го подава на функцията **`calc_rating(…)`**. Функцията **`calc_rating(…)`** извършва пресмятания и изчислява броя **пълни звездички**, броя **празни звездички** и броя **половинки звездички**, след което зарежда отново страницата, но вече с подадени нови стойности на променливите за звездичките. Имплементираме я по следния начин:
+The code from the function **`draw_ratings ()`** takes the entered number **`rating`** from the form and passes it to the function **`calc_rating (…)`**. The **`calc_rating (…)`** function computes and calculates the number of **full asterisks**, the number of **empty asterisks** and the number of **halves of asterisks**, then reloads the page, but with new ones submitted values of the variables for the asterisks. We implement it as follows:
 
 ![](assets/chapter-6-1-images/11.Ratings-09.png)
 
-Стартираме проекта с [**Ctrl+Shift+F10**] (или с [**Десен бутон**] -> [**Run 'app'**]) и изчакваме да се зареди:
+We start the project with [**Ctrl+Shift+F10**] (or with [**Right button**] -> [**Run 'app'**]) and wait for it to load: 
 
 ![](assets/chapter-6-1-images/11.Ratings-10.png)
 
-Отиваме на посочения адрес и се наслаждаваме на готовия проект:
+We go to the specified address and enjoy the finished project: 
 
 ![](assets/chapter-6-1-images/11.Ratings-11.png)
 
-Ако имате проблеми с примерния проект по-горе, може да задавате въпроси във **форума на СофтУни**: [https://softuni.bg/forum](https://softuni.bg/forum).
+If you have problems with the sample project above, you can ask questions in the **SoftUni forum**:  [https://softuni.bg/forum](https://softuni.bg/forum).
