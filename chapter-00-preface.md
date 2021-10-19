@@ -122,11 +122,11 @@ This book develops **a beginner's level of algorithmic thinking**, but it is abs
 
 **Algorithmic thinking skills** are prominently developed in the beginner courses for software engineering in SoftUni (see. [curriculum](https://softuni.bg/curriculum)), also in the specialized courses of [data structures](https://softuni.bg/opencourses/data-structures) and [algorithms](https://softuni.bg/opencourses/algorithms).
 
-As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely because of the the well-developed logical thinking, it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
+As you may guess, **the programing language does not matter** for the development of algorithmic thinking. To think logically is universal, even if it's not related only to programming. Precisely because of the well-developed logical thinking, it is considered that **developers are quite smart** and that a simple-minded person could not be a developer.
 
 ### Skill #3 – fundamental knowledge of the profession (25%) 
 
-**Fundamental knowledge and skills** for programming, software development, software engineering and computer science form about 25% of the developer's minimum start-up skills. Here are the most important parts of this knowledge and skills: 
+**Fundamental knowledge and skills** for programming, software development, software engineering and computer science form about 25% of the developer's minimum start-up skills. Here are the most important parts of these skills and knowledge: 
 * **basic mathematical concepts** related to programming: coordinate systems, vectors and matrices, discrete and indiscreet mathematical functions, end machines and state machines, concepts of combination and statistics, algorithm complexity, mathematical modeling and others. 
 * **skills to program** - code writing, data work, use of conditional structures and loops, work with arrays, lists and associative arrays, strings and word processing, working with streams and files, using program interfaces (APIs), working with a debugger and others.
 * **data structures and algorithms** - lists, trees, hash tables, columns, search, sorting, recursive, tree crawling, etc.
