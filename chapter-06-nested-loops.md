@@ -383,7 +383,6 @@ At each iteration of the loop the following steps must be taken:
 
 We are ready with the upper part.
 
-Чертането на долната част е доста подобно на това на горната част. Разликата е, че вместо да намаляме стойността на **`left_right`** с 1 към края на цикъла, ще я увеличаваме с 1 в началото на цикъла. Също така **цикълът ще се върти от 0 до `(n - 1) // 2`**:
 Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`left_right`** with 1 at the end of the loop, we will increase it with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) // 2`**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-06.png)
