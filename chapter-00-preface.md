@@ -72,7 +72,7 @@ This **programming textbook** accompanies free programming courses for beginners
 
 Keep in mind some **features of the SoftUni Judge system**:
  - For each task **the Judge system keeps the highest achieved result**. If you upload a solution with the wrong code or a weaker result than your previous one sent, the system won't subtract points from your final score.
- - The output results of your program are strictly **compared** by the system with the expected result. Any **redundant symbol missing, a comma, or space** may result in 0 points for the relevant test. **The output** expected by the Judge system is **given in the description of each exercise** and **there shouldn't be any other additions to it**.
+ - The output results of your program are strictly **compared** by the system with the expected result. Any **redundant symbol, missing a comma, or space** may result in 0 points for the relevant test. **The output** expected by the Judge system is **given in the description of each exercise** and **there shouldn't be any other additions to it**.
 
 **Example**: if a number is required to be printed in the output (e.g. **`25`**), do not display descriptive messages such as **`The result is: 25`**, but print exactly what is required, i.e. only the number.
 
