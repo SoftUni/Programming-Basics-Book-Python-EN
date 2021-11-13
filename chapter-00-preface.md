@@ -24,13 +24,12 @@ For this book we chose **Python**, because it is a **modern** language for high-
 
 As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **Python**. The book can also be found translated in other programming languages such as C# (see https://csharp-book.softuni.bg), Java (see https://java-book.softuni.bg), JavaScript (see https://js-book.softuni.bg) и C++ (see https://cpp-book.softuni.bg).
 
-## The book in other programming languages: C#, Java, JavaScript, Python, C++, PHP
+## The book in other programming languages: C#, Java, JavaScript, C++, PHP
 
 This programming book for complete beginners is available in several programming languages (or is in the process of being adapted for them):
 * [Programming basics with C#](https://csharp-book.softuni.bg)
 * [Programming basics with Java](https://java-book.softuni.bg)
 * [Programming basics with JavaScript](https://js-book.softuni.bg)
-* [Programming basics with Python](https://python-book.softuni.bg)
 * [Programming basics with със C++](https://cpp-book.softuni.bg)
 * [Programming basics with с PHP](https://php-book.softuni.bg)
 
