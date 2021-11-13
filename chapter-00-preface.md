@@ -106,7 +106,7 @@ The ability to code **can be learned in a few months** of intensive studying and
 
 The book (and the courses based on it) give only the beginning of a long-term and serious study, on the path to professional programming. You won't be able to become a programmer without mastering the material from this book. You will lack programming fundamentals and it will become increasingly difficult to move forward. Therefore **pay enough attention to the basics of programming**: solve problems and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
 
-We pay special attention to the fact that **the programming language is not essential** for the ability to code. You can either code or not. If you can code in **Python**, you can easily learn to code in Java, C ++, and another language. That's why **coding skills** are studied quite seriously in the initial courses for software engineers at SoftUni (see [curriculim](https://softuni.bg/curriculum) and with them starts every programming book for complete beginners, including ours.
+We pay special attention to the fact that **the programming language is not essential** for the ability to code. You can either code or not. If you can code in **Python**, you can easily learn to code in Java, C ++, and another language. That's why **coding skills** are studied quite seriously in the initial courses for software engineers at SoftUni (see [curriculim](https://softuni.bg/curriculum)) and with them starts every programming book for complete beginners, including ours.
 
 ### Skill # 2 - algorithmic thinking (30%) 
 
