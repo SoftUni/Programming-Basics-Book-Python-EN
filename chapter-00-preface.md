@@ -30,8 +30,8 @@ This programming book for complete beginners is available in several programming
 * [Programming basics with C#](https://csharp-book.softuni.bg)
 * [Programming basics with Java](https://java-book.softuni.bg)
 * [Programming basics with JavaScript](https://js-book.softuni.bg)
-* [Programming basics with със C++](https://cpp-book.softuni.bg)
-* [Programming basics with с PHP](https://php-book.softuni.bg)
+* [Programming basics with C++](https://cpp-book.softuni.bg)
+* [Programming basics with PHP](https://php-book.softuni.bg)
 
 If you prefer a different language, choose from the list above.
 
