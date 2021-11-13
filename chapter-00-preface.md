@@ -58,7 +58,7 @@ The Software University provides **quality education**, **occupation**, **work**
 
 ### Free programming courses at SoftUni
 
-SoftUni organizes **free programming courses for complete beginners** in Bulgaria - attendance and online. The goal is **anyone with an interest** in programming and technologies to **try programming** and to make sure whether it is interesting to him and whether he wants to be a software developer. You can sign up for the **free programming basics course** from the SoftUni application page: https://softuni.bg/apply.
+SoftUni organizes **free programming courses for complete beginners** in Bulgaria - attendance and online. The goal is **anyone with an interest** in programming and technologies to **try programming** and to make sure whether it is interesting to them and whether they want to be a software developer. You can sign up for the **free programming basics course** from the SoftUni application page: https://softuni.bg/apply.
 
 The free programming basics courses at SoftUni aim to introduce you to **the main programming structures** from the world of software development that you will be able to apply in any programming language. These include working with **data**, **variables** and **expressions**, using **conditional statements**, constructing **loops** and defining and calling **functions**, and other techniques to build programming logic. The training is **practically focused** - which means there is a **strong emphasis on exercise**, and you get the opportunity to apply your knowledge as you learn.
 
