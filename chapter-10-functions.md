@@ -143,7 +143,7 @@ Let’s look at another example of function definition which has a few parameter
 
 ### Example: integer sign
 
-Create a function which prints if the given integer is positive, negative or zero.
+Create a function which prints whether the given integer is positive, negative or zero.
 
 #### Sample Input and Output
 
@@ -155,11 +155,11 @@ Create a function which prints if the given integer is positive, negative or zer
 
 #### Hints
 
-The first step is to **create** a function and giving it a descriptive name such as **`print_sign`**. This function will have only one parameter – integer number which sign we want to check:
+The first step is to **create** a function and give it a descriptive name such as **`print_sign`**. This function will have only one parameter – integer number, which sign we want to check:
 
 ![](/assets/chapter-10-images/06.Print-sign-01.png)
 
-Next, we want to **implement** the logic which will check whether the input value is positive, negative or zero. Looking at the examples we can conclude there are three cases to consider – the integer is bigger than zero, the integer is equal to zero and the integer is less than zero which means we need to check **three conditions** in the function’s body. 
+Next, we want to **implement** the logic which will check whether the input value is positive, negative or zero. Looking at the examples we can conclude there are three cases to consider – the integer is bigger than zero, the integer is equal to zero and the integer is less than zero, which means we need to check **three conditions** in the function’s body. 
 
 Then we need to read the input value and call our function:
 
@@ -196,11 +196,11 @@ Create a function which prints triangle as shown in the examples.
 
 #### Hints
 
-Before creating a function, which prints numbers on a single line with initial and final value, we must read the input from the console. Next, we choose a meaningful name for our function which shortly describes its purpose. This might be **`print_line`** and we can now build it:
+Before creating a function which prints numbers on a single line with initial and final value, we must read the input from the console. Next, we choose a meaningful name for our function which shortly describes its purpose. This might be **`print_line`** and we can now build it:
 
 ![](/assets/chapter-10-images/08.Print-triangle-01.png)
 
-Looking at the problems regarding console drawing we remember that it is a good practice to **divide the completion of the figure** in several steps. We can simplify the problem by dividing the triangle to three sections – upper, mid, and lower segment.
+Looking at the problems regarding console drawing, we remember that it is a good practice to **divide the completion of the figure** in several steps. We can simplify the problem by dividing the triangle to three sections – upper, mid, and lower segment.
 
 Our next step will be to print the **upper segment** of the triangle’s body:
 
@@ -231,11 +231,11 @@ Draw filled square in the console with a side length N as it is shown in the exa
 
 #### Hints
 
-The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Let don’t forget that we need to choose **descriptive name** and define as a **parameter** the length of the side of the square:
+The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Lets not forget that we need to choose **descriptive name** and define the length of the side of the square as a **parameter**:
 
 ![](/assets/chapter-10-images/09.Draw-filled-square-01.png)
 
-Next step is to create a function which draws on the console the lines in the middle. Again, we think of a descriptive enough name, say **`print_middle_row`**:
+Next step is to create a function which draws to the console the lines in the middle. Again, we think of a descriptive enough name, say **`print_middle_row`**:
 
 ![](/assets/chapter-10-images/09.Draw-filled-square-02.png)
 
@@ -250,7 +250,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ## Returned value by function
 
-Up until now we were looking at functions that execute a particular action such as printing some text, value, or string of characters on the console. Other than such functions, there also can be functions which **return** a value as a **result** of their execution – for example this could the multiplication of two numbers. It will be these functions which will be the topic of our discussion in the next few lines.
+Up until now we were looking at functions that execute a particular action such as printing some text, value, or string of characters on the console. Other than such functions, there also can be functions which **return** a value as a **result** of their execution – for example, this could the multiplication of two numbers. It will be these functions which will be the topic of our discussion in the next few lines.
 
 ### The **`return`** keyword
 
@@ -273,7 +273,7 @@ After the **`return`** keyword in a given function, the execution of the functio
 ![](/assets/chapter-10-images/10.Return-operator-03.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
-</td><td>In the programming it is incompatible to place two <code><b>return</b></code> keywords one after another as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
+</td><td>In programming it is meaningless to place two <code><b>return</b></code> keywords one after another as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
 </table>
 
 ### Use case of a returned value from a function
@@ -687,6 +687,6 @@ Our variable **`result`** in which we will save the value of the result we will 
 
 To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve "N-th number" problem, while to create the string we will proceed as in "Number to a numeral system"
 
-#### Тестване в Judge системата
+#### Testing in the Judge system
 
-Тествайте решението си тук: [https://judge.softuni.org/Contests/Practice/Index/1063#14](https://judge.softuni.org/Contests/Practice/Index/1063#14).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#14](https://judge.softuni.org/Contests/Practice/Index/1063#14).
