@@ -31,7 +31,7 @@ How does the example work? We initialize **a loop with a variable `i`**. The def
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
 
 
-###Example: Rectangle Made of N x N Asterisks
+### Example: Rectangle Made of N x N Asterisks
 
 Write a program which receives a positive number **n** and prints on the console **a rectangle of N x N asterisks**. 
 
