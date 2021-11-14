@@ -158,8 +158,8 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
-In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<td>In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
 </tr></table>
 
 #### Testing in the Judge System
