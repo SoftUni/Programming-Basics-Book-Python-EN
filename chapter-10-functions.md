@@ -57,13 +57,13 @@ The functions **allow** us to use a piece of code **several** times. Working on 
 
 * **def**. The key word **`def`** in Python expresses the intention to declare a new function.
 * **Name of the function**. The name of the function is **defined by the developer** and follows after the keyword **def**. It is important to describe the **functionality** which is bound to be executed by the function’s instructions listed in its body. In our example the name of the function is **`calculate_square`** which hints us that the aim of the given problem is to calculate the squared value of a number.
-* **List of parameters**. It is introduced in between the parentheses which we put after the name of the function. Here we list the parameters which we want to include in the function. There might be a single parameter, several parameters or zero parameters (basic function). If we don’t have a parameter, we leave the parentheses empty. In the function **`calculate_square`** there is only one parameter called **`num`**.
-* **Colon**. After the closing bracket we put colon sign which initiates the beginning of the function’s body.
-* **Implementation of function (body)**. The body of the function is the place to put our algorithm (instructions) which solves the problem we deal with. The body, per se, implement the **logic** of the function. In the particular example we estimate the squared value of a given number which is **num*num**. the body is always indented and on a new line after the colon.
+* **List of parameters**. It is introduced in between the parentheses, which we put after the name of the function. Here we list the parameters which we want to include in the function. There might be a single parameter, several parameters or zero parameters (basic function). If we don’t have a parameter, we leave the parentheses empty. In the function **`calculate_square`** there is only one parameter called **`num`**.
+* **Colon**. After the closing bracket we put a colon sign which initiates the beginning of the function’s body.
+* **Implementation of function (body)**. The body of the function is the place to put our algorithm (instructions) which solves the problem we deal with. The body, per se, implements the **logic** of the function. In the particular example we estimate the squared value of a given number which is **num*num**. the body is always indented and on a new line after the colon.
 
 Within the definition of a function, it is important to follow this exact **structure** of the function’s elements.
 
-When declaring a given variable in the body of a function, it is called local variable for the function. The scope of the variable in which it exists and can be used starts with the line on which we have defined it and spans to the last instruction, part of the function’s body. This space of definition is called **field of scope** for the variable. 
+When declaring a given variable in the body of a function, it is called a local variable for the function. The scope of the variable in which it exists and can be used starts with the line on which we have defined it and spans to the last instruction, part of the function’s body. This space of definition is called **field of scope** for the variable. 
 
 <table>
 <tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
@@ -73,7 +73,7 @@ When declaring a given variable in the body of a function, it is called local va
 
 ### Calling a function
 
-Calling of the function is regarded as the **beginning of the execution** of the code which is in the **function’s body**. This is accomplished as the name of the function is called, followed by the parentheses. If the function expects input arguments for its parameters, they must be inserted in the parentheses in the same order in which the parameters were defined in the parentheses. An example that follows:
+The calling of the function is regarded as the **beginning of the execution** of the code which is in the **function’s body**. This is accomplished as the name of the function is called, followed by the parentheses. If the function expects input arguments for its parameters, they must be inserted in the parentheses in the same order in which the parameters were defined in the parentheses. An example that follows:
 
 ![](/assets/chapter-10-images/03.Invoking-functions-01.png)
 
@@ -119,7 +119,7 @@ The program which contains four functions called inside another function is read
 
 ## Functions with parameters (complex functions)
 
-To solve our problem using function, often in our practice we need an **additional knowledge** which varies with the problem we need to solve. **The parameters of a function** are supplementing us with this knowledge hence the behaviour of the function depends on these parameters. 
+To solve our problem using function, often in our practice we need an **additional knowledge** which varies with the problem we need to solve. **The parameters of a function** are supplementing us with this knowledge, hence the behaviour of the function depends on these parameters. 
 
 ### Use of parameters in a function
 
@@ -129,7 +129,7 @@ This is an example of **definition** of a function which uses a **set of paramet
 
 ![](/assets/chapter-10-images/05.Function-parameters-01.png)
 
-In this example we will be using two parameters called **`start`** and **`end`**, respectively. After the definition of the function, it can be used in the program – we **call** the function including **arguments** for our parameters:
+In this example, we will be using two parameters called **`start`** and **`end`**, respectively. After the definition of the function, it can be used in the program – we **call** the function including **arguments** for our parameters:
 
 ![](/assets/chapter-10-images/05.Function-parameters-02.png)
 
@@ -137,7 +137,7 @@ In this case the numerical value of the argument is declared directly in the fun
 
 When declaring **parameters**, they can be of **any** type (integer, string etc.) and each parameter has to have a meaningful name. It’s important to notice that when the function is called, the **arguments** must be put in the **exact same order** as the parameters, declared in the definition of the function.
 
-Let’s look at another example of function definition which has a few parameters, each of different type:
+Let’s look at another example of function definition which has a few parameters, each of a different type:
 
 ![](/assets/chapter-10-images/05.Function-parameters-03.png)
 
@@ -200,7 +200,7 @@ Before creating a function which prints numbers on a single line with initial an
 
 ![](/assets/chapter-10-images/08.Print-triangle-01.png)
 
-Looking at the problems regarding console drawing, we remember that it is a good practice to **divide the completion of the figure** in several steps. We can simplify the problem by dividing the triangle to three sections – upper, mid, and lower segment.
+Looking at the problems regarding console drawing, we remember that it is a good practice to **divide the completion of the figure** in several steps. We can simplify the problem by dividing the triangle into three sections – upper, mid, and lower segment.
 
 Our next step will be to print the **upper segment** of the triangle’s body:
 
@@ -210,7 +210,7 @@ After that we need to print the **center line**:
 
 ![](/assets/chapter-10-images/08.Print-triangle-03.png)
 
-Finally, we print the **bottom segment** of the triangle as this time the step of the for loop is negative one:
+Finally, we print the **bottom segment** of the triangle, as this time the step of the for loop is negative one:
 
 ![](/assets/chapter-10-images/08.Print-triangle-04.png)
 
@@ -221,7 +221,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Example: drawing filled square
 
-Draw filled square in the console with a side length N as it is shown in the examples.
+Draw filled square to the console with a side length N as it is shown in the examples.
 
 #### Sample Input and Output
 
@@ -231,7 +231,7 @@ Draw filled square in the console with a side length N as it is shown in the exa
 
 #### Hints
 
-The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Lets not forget that we need to choose **descriptive name** and define the length of the side of the square as a **parameter**:
+The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Let's not forget that we need to choose a **descriptive name** and define the length of the side of the square as a **parameter**:
 
 ![](/assets/chapter-10-images/09.Draw-filled-square-01.png)
 
@@ -250,7 +250,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ## Returned value by function
 
-Up until now we were looking at functions that execute a particular action such as printing some text, value, or string of characters on the console. Other than such functions, there also can be functions which **return** a value as a **result** of their execution – for example, this could the multiplication of two numbers. It will be these functions which will be the topic of our discussion in the next few lines.
+Up until now we were looking at functions that execute a particular action such as printing some text, value, or a string of characters on the console. Other than such functions, there also can be functions which **return** a value as a **result** of their execution – for example, this could the multiplication of two numbers. It will be these functions which will be the topic of our discussion in the next few lines.
 
 ### The **`return`** keyword
 
@@ -258,9 +258,9 @@ To return a value which is the result of the function’s execution we use the r
 
 ![](/assets/chapter-10-images/10.Return-operator-01.png)
 
-The **`return`** keyword can be used in functions which do not return anything (the **`return`** keyword must be last in the end of the function). The presence of the keyword allows the function to stop its execution without returning a value. In this case, the use of the keyword is helpful only to terminate the execution of the function. It is also possible the **`return`** keyword to be used in more than one places in the function’s body.
+The **`return`** keyword can be used in functions which do not return anything (the **`return`** keyword must be last in the end of the function). The presence of the keyword allows the function to stop its execution without returning a value. In this case, the use of the keyword is helpful only to terminate the execution of the function. It is also possible for the **`return`** keyword to be used in more than one place in the function’s body.
 
-In the following example we have a function which compares two numbers and returns as a result either **`-1`**, **`0`** or **`1`**, depending on whether the first argument is smaller, equal, or bigger than the second argument of the function. The function uses the **`return`** keyword on three different instances to return different value depending on the arguments fed to the function.
+In the following example, we have a function which compares two numbers and returns as a result either **`-1`**, **`0`** or **`1`**, depending on whether the first argument is smaller, equal, or bigger than the second argument of the function. The function uses the **`return`** keyword on three different instances to return different values depending on the arguments fed to the function.
 
 ![](/assets/chapter-10-images/10.Return-operator-02.png)
 
@@ -273,12 +273,12 @@ After the **`return`** keyword in a given function, the execution of the functio
 ![](/assets/chapter-10-images/10.Return-operator-03.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
-</td><td>In programming it is meaningless to place two <code><b>return</b></code> keywords one after another as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
+</td><td>In programming it is meaningless to place two <code><b>return</b></code> keywords one after another, as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
 </table>
 
 ### Use case of a returned value from a function
 
-After a function is executed and value is returned by its execution, this value can be used in a **several** ways. For once, we can **assign this value to a variable**:
+After a function is executed and the value is returned by its execution, this value can be used in a **several** ways. For once, we can **assign this value to a variable**:
 
 ![](/assets/chapter-10-images/10.Return-operator-04.png)
 
@@ -317,7 +317,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Example: power of number
 
-First, we need to read the input values from the console. Next step will be to create a function which accepts two arguments as its parameters (a number and its power), and returns as a result a float type number.
+First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments as its parameters (a number and its power), and returns as a result a float type number.
 
 #### Sample Input and Output
 
@@ -327,7 +327,7 @@ First, we need to read the input values from the console. Next step will be to c
 
 #### Hints
 
-First, we need to read the input values from the console. Next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a **`float`** type number:
+First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a **`float`** type number:
 
 ![](/assets/chapter-10-images/12.Number-power-01.png)
 
