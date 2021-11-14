@@ -264,7 +264,7 @@ We read the input number **`n`** from the console and write its value in a varia
 <td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into type <b><code>int</code></b>, because it is said that we will be given valid integers. If you are making more complex programs, it is a good practice to check the data. What will happen if instead of a number the user inputs the character "A"?</td>
 </tr></table>
 
-To draw **the roof**, we write down how many **asterisks** we start with a variable called **`asterisks`**:
+To draw **the roof**, we write down how many **asterisks** we start with a variable called **`stars`**:
 * If **`n`** is an **odd** number, there will be 1 star.
 * If it is **even**, there will be 2.
 
