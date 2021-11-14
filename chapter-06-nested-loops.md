@@ -366,7 +366,7 @@ After we have calculated **`left_right`**, we start drawing **the upper part** o
 
 At each iteration of the loop the following steps must be taken:
 
-* We print on the console the left **dashes** (with length **`left_right`**) and right after them the first **asterisks**:
+* We print on the console the left **dashes** (with length **`left_right`**) and right after them the first **asterisk**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-03.png)
 
@@ -374,7 +374,7 @@ At each iteration of the loop the following steps must be taken:
 
 ![](/assets/chapter-6-1-images/10.Diamond-04.png)
 
-* If the **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **asterisks** after them.
+* If the **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **asterisk** after them.
 
 * We print on the console the right outer **dashes** with length **`left_right`**. 
 
