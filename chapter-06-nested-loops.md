@@ -452,7 +452,7 @@ We are now adding the **structure** of the project (the assignment files for thi
 
 ![](assets/chapter-6-1-images/11.Ratings-06.png)
 
-For everything to work, we need to add the code. First we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code: 
+For everything to work, we need to add the code. First we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code:
 ![](assets/chapter-6-1-images/11.Ratings-07.png)
 
 The above code creates a web form **`<form>`** with one field **`" rating "`** for entering a number in the interval [**0… 100**] and a button [**Rate**] to send the data from the form to the server. Then, draw with three separate **for** loops the corresponding number of stars - filled, half-empty and empty. 
