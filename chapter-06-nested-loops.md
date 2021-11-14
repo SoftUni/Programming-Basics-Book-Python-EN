@@ -154,7 +154,7 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 * We print **`*`**.
 * We print **`row-1`** times **`*`**.
 
-**The second** (lower) part will be printed **similarly**, which again we leave to the reader to do..
+**The second** (lower) part will be printed **similarly**, which again we leave to the reader to do.
 
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
