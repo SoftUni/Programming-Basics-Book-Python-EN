@@ -184,7 +184,7 @@ This book uses the **Python** language, but it is not essential and can be repla
 ## The Book which helps teachers 
 
 If you are a **teacher of programming**, informatics or information technology or want **to teach programming**, this book gives you more
-than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in **Bulgarian language**, in accordance with the school requirements:
+than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in **English language**, in accordance with the school requirements:
 
 * **Educational presentations** (PowerPoint slides) for each learning topic tailored to 45-minute hours in schools – free of charge.
 * Well-designed **tasks** for class and homework, with detailed conditions and sample entrance and exit – free of charge.
