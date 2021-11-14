@@ -339,8 +339,8 @@ What we know from the problem's description is that the diamond is **`n` x `n`**
 
 ##### Upper Part
 
-* If **n** is an **odd** number, it asterisks with **1 asterisk**.
-* If **n** is an **even** number, it asterisks with **2 asterisks**.
+* If **n** is an **odd** number, it starts with **1 asterisk**.
+* If **n** is an **even** number, it starts with **2 asterisks**.
 * With each row down, the asterisks get further away from each other.
 * The space between, before, and after **the asterisks** is filled up with **dashes**.
 
