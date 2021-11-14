@@ -291,15 +291,15 @@ If we want to round up to the next largest integer number, we need to use the me
 **`result = math.ceil(3 / 2)`**.
 
 After we have calculated the length of the roof, we make a loop from 0 to **`roof_length`**. On each iteration we will:
-* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - asterisks) / 2`**. We store it in variable **`padding`**.
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in variable **`padding`**.
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
-* We print on the console: "**dash**" (**`padding / 2`** times) + "**asterisks**" (**`asterisks`** times) + "**dash**" (**`padding / 2`** times):
+* We print on the console: "**dash**" (**`padding / 2`** times) + "**stars**" (**`stars`** times) + "**dash**" (**`padding / 2`** times):
 
 ![](/assets/chapter-6-1-images/09.House-06.png)
 
-* Before the iteration is over, we add 2 to **`asterisks`** (the number of **the asterisks**).
+* Before the iteration is over, we add 2 to **`stars`** (the number of **the asterisks**).
 
 ![](/assets/chapter-6-1-images/09.House-07.png)
 
