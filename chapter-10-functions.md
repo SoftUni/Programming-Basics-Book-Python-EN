@@ -342,11 +342,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 Up to this point we looked at functions which **do not return any value** and functions which **return only one value**. In practice, it is often sensible for a function to return **more than one value**.
 
-To achieve this in **Python**, after the **`return`** keyword we list the values which are bound to be returned, separated by a comma. The following function accept as parameters two integers (**`x`** and **`y`**) and **returns two values** - the integer and the remainder of their division:
+To achieve this in **Python**, after the **`return`** keyword we list the values which are bound to be returned, separated by a comma. The following function accepts as parameters two integers (**`x`** and **`y`**) and **returns two values** - the integer and the remainder of their division:
 
 ![](/assets/chapter-10-images/13.Return-multiple-values-01.png)
 
-Calling the function works as with functions which do not return value or return a single value. To use the returned values, we can **assign** them to variables whose names are separated by commas as it demonstrated with **`a`** and **`b`**. After the execution of this example, **`a`** will hold the value **`3`** while **`b`** will hold the value **`4`**.
+Calling the function works as with functions which do not return a value or return a single value. To use the returned values, we can **assign** them to variables whose names are separated by commas as it demonstrated with **`a`** and **`b`**. After the execution of this example, **`a`** will hold the value **`3`** while **`b`** will hold the value **`4`**.
 
 ## Variations of functions
 
@@ -374,7 +374,7 @@ As we already noticed, we can call this function using different combination of 
 
 ## Nested functions (local functions)
 
-Let’s consider the following function which calculates area of a circle:
+Let’s consider the following function which calculates the area of a circle:
 
 ![](/assets/chapter-10-images/15.Nested-functions-01.png)
 
@@ -384,7 +384,7 @@ We see that in this piece of code, in the function **`circle_circumference(…)`
 
 ### Why using local functions?
 
-With practice we will find that when we write a program often it appears that we need to use our function **only once**. Another often faced scenarios is when the function of interest gets too long. We already mentioned that when a function uses too many lines of code, the code gets hard to maintain. In these cases, we can be assisted by the **nested functions**. They present us with the possibility to declare a function within a function, where a nested function can be used independently. This contributes to the function’s code as it makes it **cleaner** and **improves its readability**. This in turn improves the correction time if a bug is spotted later and minimizes the probability of error when changes are made to the code. 
+With practice we will find that when we write a program, often it appears that we need to use our function **only once**. Other often faced scenarios are when the function of interest gets too long. We already mentioned that when a function uses too many lines of code, the code gets hard to maintain. In these cases, we can be assisted by the **nested functions**. They present us with the possibility to declare a function within a function, where a nested function can be used independently. This contributes to the function’s code as it makes it **cleaner** and **improves its readability**. This in turn improves the correction time if a bug is spotted later and minimizes the probability of error when changes are made to the code. 
 
 ### Declaration of nested function
 
@@ -442,7 +442,7 @@ Some examples of **inappropriate** naming of parameters:
 
 ### More good practices in working with functions
 
-Let’s again recall how a function should execute **only one** particular **task** in the program. If this cannot be achieved, next thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** making the function’s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as demonstrated:
+Let’s again recall how a function should execute **only one** particular **task** in the program. If this cannot be achieved, thenext thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** making the function’s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as demonstrated:
 
 ![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
