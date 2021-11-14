@@ -362,7 +362,7 @@ We start drawing the upper part of the diamond. The first thing we need to do is
 
 ![](/assets/chapter-6-1-images/10.Diamond-02.png)
 
-After we have calculated **`left_right`**, we start drawing **the upper part** of the diamond. We can start by running a **loop** from **`(n + 1) // 2 `** (i.e. rounded down).
+After we have calculated **`left_right`**, we start drawing **the upper part** of the diamond. We can start by running a **loop** from **`(n + 1) // 2`** (i.e. rounded down).
 
 At each iteration of the loop the following steps must be taken:
 
