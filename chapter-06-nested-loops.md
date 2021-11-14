@@ -274,7 +274,7 @@ Calculate the length of **the roof**. It equals half of **`n`**. Write the resul
 
 ![](/assets/chapter-6-1-images/09.House-04.png)
 
-**Note:** To use **`math.ceil ()`**, which rounds to the larger integer, regardless of the fractional part, it is necessary to add the library **`math`**. This is done with the command **`import math`**. It is recommended to write **`import math`** (as well as all other imports) at the beginning of the file. 
+**Note:** To use **`math.ceil ()`**, which rounds to the larger integer, regardless of the fractional part, it is necessary to import the library **`math`**. This is done with the command **`import math`**. It is recommended to write **`import math`** (as well as all other imports) at the beginning of the file. 
 
 It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**.
 
