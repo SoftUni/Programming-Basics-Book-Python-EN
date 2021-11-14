@@ -26,7 +26,7 @@ To create programs, write program code (commands), execute it and other operatio
 
 Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
 
-Overall, compiled languages work slower than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code more quickly and re-execute (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
+Overall, compiled languages work slower than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code quicker and re-execute (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
 
 **The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a **programming language**, **a compiler or interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
@@ -166,7 +166,7 @@ Then we hit the **[Install]** button.
 
 ![](/assets/chapter-1-images/00.PyCharm-05.PNG)
 
-After PyCharm installs, we'll see an information screen, where we can tick a box that says **[Run PyCharm]** which will start our IDE. After **PyCharm has started**, a screen similar to the one below will be displayed:
+After PyCharm installs, we'll see an information screen, where we can tick a box that says **[Run PyCharm]** which is going to start our IDE. After **PyCharm has started**, a screen similar to the one below will be displayed:
 
 ![](/assets/chapter-1-images/01.Hello-python-01.PNG)
 
@@ -199,10 +199,10 @@ We will give our project a **meaningful name**, such as `FirstStepsInProgramming
 
 PyCharm will create an **empty project** for us and we can add Python files to it. We'll add a new Python file - **[File]** or right click on our project -> **[New]** -> **[Python File]** and give it a meaningful name like `HelloPython.py`.
 
-We can adjust the version and location of the Python interpreter, which we'll be using. We must have a Python interpreter, otherwise, we won't be able to execute the programs we've written. It's possible to have more than one version of Python on the same computer but for ease of use, in the beginning **just install the latest version and use that**. If you haven't already installed Python, please do so before you continue.
+We can adjust the version and location of the Python interpreter, which we're going to be using. We must have a Python interpreter, otherwise, we won't be able to execute the programs we've written. It's possible to have more than one version of Python on the same computer but for ease of use, in the beginning **just install the latest version and use that**. If you haven't already installed Python, please do so before you continue.
 
 ### Writing Program Code
-Writing Python code requires no additional preparation – creating a file with the `.py` extension is all we need. So let's directly proceed with writing our first line of code. We'll write the following command:
+Writing Python code requires no additional preparation – creating a file with the `.py` extension is all we need. So let's directly proceed with writing our first line of code. We will write the following command:
 ```python
 print('Hello Python')
 ```
@@ -256,7 +256,7 @@ Print('Hello Python')
 
 In the example above, `print` is written incorrectly and the capital letter needs to be changed to lowercase.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td>In Python we don't use a <b>semicolon (;)</b> в края на at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td>In Python we don't use a <b>semicolon (;)</b> at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
 
 A missing **quotation mark** or **closing bracket** can also cause issues – the program will either **function improperly** or **not execute at all**. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example:
 ```python
@@ -273,7 +273,7 @@ First of all, we learned **what programming is** – **issuing commands written 
 Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
 
 ## First Steps in Programming – Exercises
-Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex – programs with graphical and web user interface.
+Welcome to the exercises. We are now going to write a couple of console applications, which will help us take a few more steps into programming. After that we will show you how to program something more complex – programs with a graphical and web user interface.
 
 ### Problem: console-based program 'Expression'
 Write a console-based **Python** program that **calculates** and **prints** the value of the following numerical expression:
@@ -301,7 +301,7 @@ Create a Python file and name it **`nums_1_to_20.py`**:
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-01.PNG)
 
-Inside the file write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
+Inside the file write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a more clever way. Don't worry, there is, but we will mention it later on.
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-02.PNG)
 
@@ -316,7 +316,7 @@ Let's now **start the program** and check whether the result is what we're expec
 ### Testing in the Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/1046#2](https://judge.softuni.org/Contests/Practice/Index/1046#2).
-Now try and **think of a cleverer way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.bg/search?q=for+loop+python)" on the Internet.
+Now try and **think of a more clever way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.bg/search?q=for+loop+python)" on the Internet.
 
 ### Problem: Triangle of 55 stars
 Write a **Python console program** that prints a **triangle of 55 stars** on 10 lines:
@@ -443,11 +443,11 @@ And try to start our application with **[Ctrl + Shift + F10]** or right-click + 
 ![](/assets/chapter-1-images/07.Numbers-sum-07.PNG)
 
 #### Application Logic
-Now we'll write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the **`calculate`** command upon the button's initialization:
+Now we're going to write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the **`calculate`** command upon the button's initialization:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-08.PNG)
 
-Then we'll write the **`calculate`** function's code:
+Then we write the **`calculate`** function's code:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-09.PNG)
 
@@ -470,7 +470,7 @@ The code you see above **intercepts number-handling errors** (catches exceptions
 
 ![](/assets/chapter-1-images/07.Numbers-sum-14.PNG) ![](/assets/chapter-1-images/07.Numbers-sum-15.PNG)
 
-Does that seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. A time will come when this will to be easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and **lots of practice**.
+Does that seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. There will come a time when this becomes easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and **lots of practice**.
 
 ### Web Application: 'Numbers Summator'
 Now we are going to create something even more complex, but also more interesting: a Web application that **calculates the sum of two numbers**. By entering two numbers in the first two text fields and clicking the **[Calculate]** button, **their sum is calculated** and the result is displayed in the third text field.
@@ -506,7 +506,7 @@ If all goes well, you'll receive the following message on the same screen:
 ![](/assets/chapter-1-images/08.Numbers-sum-web-06.PNG)
 
 #### Creating the Project Structure
-Let's create the structure of our project. To do that, we'll create a Python file named **`app.py`** where we'll keep our program code. Then we need a folder which we'll call **templates** and an HTML file named **`index.html`** which will help visualize our content in the browser.
+Let's create the structure of our project. To do that, we're going to create a Python file named **`app.py`** where we will keep our program code. Then we need a folder which we'll call **templates** and an HTML file named **`index.html`** which will help visualize our content in the browser.
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-07.PNG)
 
