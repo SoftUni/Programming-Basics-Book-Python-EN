@@ -235,7 +235,7 @@ Write a program which receives a number **n** (2 ≤ **n** ≤ 100) and prints *
 
 #### Hints and Guidelines
 
-We understand from the description of the problem that the house has size **`n` x `n`**. What we see from the example input and output is that:
+We understand from the description of the problem that the house is with a size of **`n` x `n`**. What we see from the example input and output is that:
 
 * The house is divided into two parts: **roof and base**.
 
