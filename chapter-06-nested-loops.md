@@ -440,7 +440,7 @@ We give a meaningful name to the project, for example "Ratings". We choose the t
 
 ![](assets/chapter-6-1-images/11.Ratings-03.png)
 
-We will again use the Flask library, which is used to create web applications. Before we can start coding, we need to install Flask. Let's remember how this happened. We go to the settings of PyCharm [**File**] -> [**Settings**] -> [**Project: Ratings**] -> [**Project Interpreter**]. There, we press the **`+`** button: 
+We will again use the Flask library, which is used to create web applications. Before we can start coding, we need to install Flask. Let's recall how to do this. We go to the settings of PyCharm [**File**] -> [**Settings**] -> [**Project: Ratings**] -> [**Project Interpreter**]. There, we press the **`+`** button: 
 
 ![](assets/chapter-6-1-images/11.Ratings-04.png)
 
