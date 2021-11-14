@@ -1,6 +1,6 @@
 # Chapter 10. Functions
 
-In this chapter the topic of **functions** will be introduced together with cases, in which they might be useful as well as the **primary concepts** when working with functions. It will be demonstrated why it is a **good practice** to use functions, how to **define** them and how to **call** them. The concept of a **parameter** and a **returned value** of a function as well as how we can further use the returned value from the function will be introduced. At the end of the chapter we'll look at what the **best practices** are when dealing with functions.
+In this chapter, the topic of **functions** will be introduced, together with cases in which they might be useful, as well as the **primary concepts** when working with functions. It will be demonstrated why it is a **good practice** to use functions, how to **define** them and how to **call** them. The concept of a **parameter** and a **returned value** of a function, as well as how we can further use the returned value from the function, will be introduced. At the end of the chapter we'll look at what the **best practices** are when dealing with functions.
 
 
 ## Video
@@ -422,7 +422,7 @@ If you can't think of an appropriate name, there is a good possibility that the 
 
 ### Naming of the function’s parameters
 
-In the naming of the **parameters** of the functions, the same rules apply as for the naming of functions. The differences are that it is nice to name a parameter using noun or a pair of adjective and noun, respectively. It should be noted that it is a good practice the name of the parameter to hint about its type.
+In the naming of the **parameters** of the functions, the same rules apply as for the naming of functions. The differences are that it is nice to name a parameter using a noun or a pair of an adjective and a noun, respectively. It should be noted that it is a good practice for the name of the parameter to hint at its type.
 
 Some examples of **appropriate** naming of parameters:
 *  **`first_name`**
@@ -442,13 +442,13 @@ Some examples of **inappropriate** naming of parameters:
 
 ### More good practices in working with functions
 
-Let’s again recapture how a function should execute **only one** particular **task** in the program. If this cannot be achieved, next thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** function’s name to become so long, it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as it is demonstrated:
+Let’s again recall how a function should execute **only one** particular **task** in the program. If this cannot be achieved, next thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** making the function’s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as demonstrated:
 
 ![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
 ### Structure and formatting of the code
 
-In writing functions caution must be applied to use the correct **indentation** (one Tab into the function). In **Python** incompatible **indentation** leads to a direct error and does not allow the interpreter to execute the code.
+In writing functions, caution must be applied to use the correct **indentation** (one Tab into the function). In **Python**, incompatible **indentation** leads to a direct error and does not allow the interpreter to execute the code.
 
 An example of a **correctly** formatted Python code:
 
@@ -458,7 +458,7 @@ An example of a **incorrectly** formatted Python code (for this reason the last 
 
 ![](/assets/chapter-10-images/16.Good-practice-02.png)
 
-Another good rule of thumb is to leave **one empty line** between the loops and the conditional statements as well as **two empty lines** after the definition of a function. Also, try to **avoid long and complex expressions**. Practice shows that these practices improve the readability of the code and save time to the developer.
+Another good rule of thumb is to leave **one empty line** between the loops and the conditional statements as well as **two empty lines** after the definition of a function. Also, try to **avoid long and complex expressions**. Practice shows that these practices improve the readability of the code and save the developer's time.
 
 ## What did we learn from this chapter?
 
@@ -467,16 +467,16 @@ In this chapter were introduced the fundamental concepts of working with functio
 * Explored the **structure** of a function and how to **declare** and **call** it. 
 * Looked at examples of **complex** functions and their implementation in a program.
 * Discovered what is a **signature** and **returned value** as well as the context of the **`return`** keyword.
-* Got acquainted with the **good practices** in working with functions – how to name them, their parameters, how to format the code, etc.
+* Got acquainted with the **good practices** in working with functions – how to name them and their parameters, how to format the code, etc.
 
 ## Exercises
 
-To consolidate our knowledge of working with functions, a few problems will be solved as an exercise. Each exercise will ask for a function with specific functionality. Then the function must be called with arguments being passed to the predefined parameters read as inputs from the console. Inputs and outputs beneath each exercise are given as an example.
+To consolidate our knowledge about working with functions, a few problems will be solved as an exercise. Each exercise will ask for a function with specific functionality. Then the function must be called, with arguments being passed to the predefined parameters read as inputs from the console. Inputs and outputs beneath each exercise are given as an example.
 
 
 ### Exercise: "Hello, Name!"
 
-Write a function which receives as a parameter name and prints on the console "*Hello, \<name\>!*".
+Write a function which receives a name as a parameter and prints to the console "*Hello, \<name\>!*".
 
 #### Sample Input and Output
 
@@ -486,7 +486,7 @@ Write a function which receives as a parameter name and prints on the console "*
 
 #### Hints
 
-Define function **`print_name(name)`** and implement its functionality. Then take as an input argument a string variable (name) and call the function, passing the read name.
+Define function **`print_name(name)`** and implement its functionality. Then take a string variable (name) as an input argument and call the function, passing the read name.
 
 #### Testing in Judge platform
 
@@ -503,9 +503,9 @@ Create a function called **`get_min(a, b)`**, which returns the smaller number o
 |---|---|---|---|
 |1<br>2<br>3|1|-100<br>-101<br>-102|-102|
 
-#### Насоки и подсказки
+#### Hints
 
-Define a function **`get_min(a, b)`** and implement its functionality after which call it as it’s shown. To find the smaller of three numbers, first process one pair and the result can be combined with the third number such as:
+Define a function **`get_min(a, b)`** and implement its functionality, after which call it as it’s shown. To find the smallest of three numbers, first process one pair, and the result can be combined with the third number such as:
 
 ```python
    minimum = get_min(get_min(number1, number2), number3)
@@ -518,7 +518,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Exercise: String repetition
 
-Write a function called **`repeat_string(str, count)`**, which receives one argument of type string, another argument **N** of type integer and returns the string argument **N** times. The result of the function must be printed on the console.
+Write a function called **`repeat_string(str, count)`**, which receives one argument of type string, another argument **N** of type integer and returns the string argument **N** times. The result of the function must be printed to the console.
 
 #### Sample Input and Output
 
@@ -528,7 +528,7 @@ Write a function called **`repeat_string(str, count)`**, which receives one argu
 
 #### Hints
 
-Finish the function as the input argument of type string must be concatenated to the current output of the loop:
+Finish the function, as the input argument of type string must be concatenated to the current output of the loop:
 
 ![](/assets/chapter-10-images/17.Repeated-string-01.png)
 
@@ -549,7 +549,7 @@ Write a function **`find_nth_digit(number, index)`**, which receives a number an
 
 #### Hints
 
-To execute the algorithm, it will be used **`while`** loop which is running until the number become zero. At each iteration of the **`while`** loop, it will be checked if the current index of the digit matches with the index passed to the function. If it matches, the digit of the number (**`number % 10`**) with this index will be returned from the function. If not, then another digit will be removed from the current number (**`number = number / 10`**). Cautious must be taken which is checked as the index starts from 1 from right to left. When the current index matches with the given one, the returned value of the function will be the digit from the number with the matched index.
+To execute the algorithm, we'll use a **`while`** loop which is running until the number becomes zero. At each iteration of the **`while`** loop, we'll check if the current index of the digit matches with the index passed to the function. If it matches, the digit of the number (**`number % 10`**) with this index will be returned from the function. If not, then another digit will be removed from the current number (**`number = number / 10`**). Caution must be taken when checking, as the index starts from 1 from right to left. When the current index matches with the given one, the returned value of the function will be the digit from the number with the matched index.
 
 #### Testing in Judge platform
 
@@ -558,7 +558,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Exercise: Number to a numeral system
 
-Write a function called **`integer_to_base(number, to_base)`**, which receives for parameters an integer and a number which indicates the base of the system. The function returns the input number converted to the required numeral system. Next, the result of the function must be printed on the console. The integer number will always be of base 10 while the required base will be between 2 and 10.
+Write a function called **`integer_to_base(number, to_base)`**, which receives as parameters an integer, and a number which indicates the base of the system. The function returns the input number converted to the required numeral system. Next, the result of the function must be printed to the console. The integer will always be of base 10 while the required base will be between 2 and 10.
 
 #### Sample Input and Output
 
@@ -585,14 +585,14 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Exercise: Notifications
 
-Write a program reads an integer **N** and enters **N** **messages** each of which can be of multiple lines. For each of the messages’ type will be used different number of parameters. Each message begins with **`message_type`**, **`success`**, **`warning`** or **`error`**:
-   - When **`message_type`** is **`success`** read **`operation`** + **`message`** (each on a new line).
-   - When **`message_type`** is **`warning`** read only **`message`**.
-   - When **`message_type`** is **`error`** read **`operation`** + **`message`** + **`errorCode`** (each on a new line).
+Write a program that reads an integer **N** and enters **N** **messages**, each of which can be of multiple lines. For each of the messages’ type will be used a different number of parameters. Each message begins with **`message_type`**, **`success`**, **`warning`** or **`error`**:
+   - When **`message_type`** is **`success`**, read **`operation`** + **`message`** (each on a new line).
+   - When **`message_type`** is **`warning`**, read only **`message`**.
+   - When **`message_type`** is **`error`**, read **`operation`** + **`message`** + **`errorCode`** (each on a new line).
 
-Each **read message** must be printed in the console, formatted depending on its **`message_type`**. After the first line from each output, the next line must be filled with **as many equal signs as characters (including spaces)** are used on the **first line** of each printed message. After the last line of each message, an **empty line** must be included before the beginning of the next message (look at the given output).
+Each **read message** must be printed to the console, formatted depending on its **`message_type`**. After the first line from each output, the next line must be filled with **as many equal signs as characters (including spaces)** are used on the **first line** of each printed message. After the last line of each message, an **empty line** must be included before the beginning of the next message (look at the given output).
 
-In the exercise have to be used four functions: **`show_success_message()`**, **`show_warning_message()`**, **`show_error_message()`** and **`read_and_process_message()`**:
+In the exercise, you have to use four functions: **`show_success_message()`**, **`show_warning_message()`**, **`show_error_message()`** and **`read_and_process_message()`**:
 
 ![](/assets/chapter-10-images/19.Notifications-01.png)
 
@@ -600,13 +600,13 @@ In the exercise have to be used four functions: **`show_success_message()`**, **
 
 |Input|Output|
 |---|---|
-|4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has not email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has not email assigned.</code><br><code>=========================================</code>|
+|4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has no email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has no email assigned.</code><br><code>=========================================</code>|
 
 #### Hints
 
 Define and implement the four given functions.
 
-In the function **`read_and_process_message()`** the type of the message is read from the console and depending on the type of the message, the remaining elements are also read which can appear on either one, two or three consecutive lines depending on the type of the message. Next, the required method is called to execute the printing of the message.
+In the function **`read_and_process_message()`** the type of the message is read from the console and depending on the type of the message, the remaining elements are also read, which can appear on either one, two or three consecutive lines, depending on the type of the message. Next, the required method is called to execute the printing of the message.
 
 #### Testing in Judge platform
 
@@ -615,7 +615,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Numbers to words
 
-Write a function **`letterize(number)`**, which reads integer and translates it into words using the following requirements:
+Write a function **`letterize(number)`**, which reads an integer and translates it into words using the following requirements:
 * Print each word on the same line (including minus sign if applicable) as shown in the output.
 * If the number is bigger than **999**, the output must be "**too large**".
 * If the number is smaller than **-999**, the output must be "**too small**".
@@ -653,7 +653,7 @@ Write a function **`encrypt(letter)`**, which encrypts a given letter in the fol
 * It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result.
 * At the beginning of the string, which represents the result, we will insert the symbol which matches the following condition:
   * ASCII code of the letter + the last digit of the ASCII code of the letter.
-* After that at the end of the string, which represents the result, you concatenate the character which matches the following condition:
+* After that, at the end of the string, which represents the result, you concatenate the character which matches the following condition:
   * ASCII code of the letter - the first digit of the ASCII code of the letter.
 * The function should return the encrypted string.
 
@@ -683,9 +683,9 @@ Encrypt the symbols and add them to the encrypted string. In the end, as a resul
 
 #### Hints
 
-Our variable **`result`** in which we will save the value of the result we will give the initial value **""** (empty string). We must recur a loop **`n`** times so that in each iteration we will add the encrypted symbol to the result string.
+Our variable **`result`**, in which we will save the value of the result, we will give the initial value **""** (empty string). We must run a loop **`n`** times, so that in each iteration we can add the encrypted symbol to the result string.
 
-To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve "N-th number" problem, while to create the string we will proceed as in "Number to a numeral system"
+To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve "N-th number" problem, while to create the string, we will proceed as in "Number to a numeral system"
 
 #### Testing in the Judge system
 
