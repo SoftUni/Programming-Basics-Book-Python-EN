@@ -51,7 +51,7 @@ The functions **allow** us to use a piece of code **several** times. Working on 
 
 ### Declaration of functions
 
-**Function declaration** can be considered as a registration of a given functionality within a program so that this functionality can be recognized and later used in the rest of the program where necessary. With the next example we will explore the element of which a function is composed:
+**Function declaration** can be considered as a registration of a given functionality within a program so that this functionality can be recognized and later used in the rest of the program where necessary. In the next example, we will explore the element of which a function is composed:
 
 ![](/assets/chapter-10-images/02.Declaring-functions-02.png)
 
