@@ -287,7 +287,7 @@ result1 = 3 / 2    # result 1.5
 result2 = 3 // 2   # result 1
 ```
 
-If we want to round up to the next largest integer. number, we need to use the method **`math.cail(…)`**:
+If we want to round up to the next largest integer number, we need to use the method **`math.cail(…)`**:
 **`result = math.ceil(3 / 2)`**.
 
 After we have calculated the length of the roof, we make a loop from 0 to **`roof_length`**. On each iteration we will:
