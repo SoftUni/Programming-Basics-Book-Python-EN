@@ -295,7 +295,7 @@ After we have calculated the length of the roof, we make a loop from 0 to **`roo
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
-* We print on the console: "**dash**" (**`padding / 2`** times) + "**stars**" (**`stars`** times) + "**dash**" (**`padding / 2`** times):
+* We print on the console: "**dashes**" (**`padding`** times) + "**asterisks**" (**`stars`** times) + "**dashes**" (**`padding`** times):
 
 ![](/assets/chapter-6-1-images/09.House-06.png)
 
