@@ -15,7 +15,7 @@ In this chapter, the topic of **functions** will be introduced, together with ca
 
 So far, we learnt that dividing our code into **smaller units** (functions), each of which being responsible for a specific functionality is more practical in general. Each unit is concerned with **distinct functionality**, in which case not only is it easier to process the problem we are facing, but also improves the **debugging** and **readability** of the code.
 
-When we think about writing code, the function in practice can be considered as **encapsulated set of instructions** which implement a required functionality. This set of instructions (i.e. the function) has its own structure, separated from the rest of the code. Throughout the code, we can **always** call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if there are any.   
+When we think about writing code, the function in practice can be considered as an **encapsulated set of instructions** which implement a required functionality. This set of instructions (i.e. the function) has its own structure, separated from the rest of the code. Throughout the code, we can **always** call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if there are any.   
 
 A function can be called as many times as we need to solve our problem. This prevents us from typing one functionality several times, which in turn reduces the risk of error if the function is changed afterwards.
 
