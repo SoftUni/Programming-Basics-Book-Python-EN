@@ -87,7 +87,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Example: Triangle Made of Dollars
 
-Write a program which receives an integer **n** and prints **a triangle made of dollars**.
+Write a program which receives an integer **n** and prints **a triangle made of dollars** of size **n**.
 
 |Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
