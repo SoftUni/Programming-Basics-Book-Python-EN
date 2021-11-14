@@ -317,7 +317,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Example: power of number
 
-First, we need to read the input values from the console. Next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a float type number.
+First, we need to read the input values from the console. Next step will be to create a function which accepts two arguments as its parameters (a number and its power), and returns as a result a float type number.
 
 #### Sample Input and Output
 
@@ -340,13 +340,13 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 ### Functions, returning several values
 
-Up to this point we looked at functions which **do not return any value** and functions which **return only one value**. In practice, it is often sensible for a function to return **more than one values**.
+Up to this point we looked at functions which **do not return any value** and functions which **return only one value**. In practice, it is often sensible for a function to return **more than one value**.
 
 To achieve this in **Python**, after the **`return`** keyword we list the values which are bound to be returned, separated by a comma. The following function accept as parameters two integers (**`x`** and **`y`**) and **returns two values** - the integer and the remainder of their division:
 
 ![](/assets/chapter-10-images/13.Return-multiple-values-01.png)
 
-Calling the function is works as with functions which does not return value or return a single value. To use the returned values, we can **assign** them to variables whose names are separated by commas as it demonstrated with **`a`** and **`b`**. After the execution of this example, **`a`** will hold for a value **`3`** while **`b`** will hold for value **`4`**.
+Calling the function works as with functions which do not return value or return a single value. To use the returned values, we can **assign** them to variables whose names are separated by commas as it demonstrated with **`a`** and **`b`**. After the execution of this example, **`a`** will hold the value **`3`** while **`b`** will hold the value **`4`**.
 
 ## Variations of functions
 
@@ -354,7 +354,7 @@ In many programming languages **identically** named functions can be used throug
 
 ### Function’s signature
 
-In programming the way, a function is **recognized**, is by looking at **both** its fundamental components - **name** and **list** of parameters, declared during the definition of the function. These components define its **specification** so that is also called **signature** of the function:
+In programming, the way a function is **recognized** is by looking at **both** its fundamental components - **name** and **list** of parameters, declared during the definition of the function. These components define its **specification**, and that's also known as **signature** of the function:
 
 ![](/assets/chapter-10-images/14.Overloading-01.png)
 
@@ -384,7 +384,7 @@ We see that in this piece of code, in the function **`circle_circumference(…)`
 
 ### Why using local functions?
 
-With practice we will find that when we write a program often it appears that we need to use our function **only once**. Another often faced scenarios is when the function of interest gets too long. We already mentioned that when a function uses too many lines of code, the code gets hard to maintain. In these cases, we can be assisted by the **nested functions**. They present us with the possibility to declare a function within a function, which nested function can be used even once. This contributes to the function’s code as it makes it **cleaner** and **improves its readability**. This in turn improves the correction time if a bug is spotted later and minimizes the probability of error when changes are made on the code. 
+With practice we will find that when we write a program often it appears that we need to use our function **only once**. Another often faced scenarios is when the function of interest gets too long. We already mentioned that when a function uses too many lines of code, the code gets hard to maintain. In these cases, we can be assisted by the **nested functions**. They present us with the possibility to declare a function within a function, where a nested function can be used independently. This contributes to the function’s code as it makes it **cleaner** and **improves its readability**. This in turn improves the correction time if a bug is spotted later and minimizes the probability of error when changes are made to the code. 
 
 ### Declaration of nested function
 
@@ -392,19 +392,19 @@ Let’s again have a look at the example from before:
 
 ![](/assets/chapter-10-images/15.Nested-functions-01.png)
 
-In this example the function **`cirlce_diameter(…)`** is nested as it is declared inside the body of the function **`circle_circumference(…)`**. This means that the function **`cirlce_diameter(…)`** can be used only inside the function **`circle_circumference(…)`** but not outside it. If we try to call the function **`cirlce_diameter(…)`** outside the function **`circle_circumference(…)`** this will cause an error during the execution of the program.
+In this example the function **`cirlce_diameter(…)`** is nested as it is declared inside the body of the function **`circle_circumference(…)`**. This means that the function **`cirlce_diameter(…)`** can be used only inside the function **`circle_circumference(…)`** but not outside of it. If we try to call the function **`cirlce_diameter(…)`** outside the function **`circle_circumference(…)`** this will cause an error during the execution of the program.
 
-Nested functions do have access to all variables which are declared inside the parenting function. In the discussed example **`pi`** can be used in the body of the function **`cirlce_diameter(…)`**. This asset of the nested functions can make them a preferred choice to solve a particular problem. This functionality saves writing time and decrease the amount of used code which would otherwise be used to declare parameters and variables, already used in the parenting functions.
+Nested functions have access to all variables which are declared inside the parenting function. In the discussed example **`pi`** can be used in the body of the function **`cirlce_diameter(…)`**. This asset of the nested functions can make them a preferred choice to solve a particular problem. This functionality saves writing time and decrease the amount of used code which would otherwise be used to declare parameters and variables, already used in the parenting functions.
 
 ## Classic approaches in the use of functions
 
-In this section of the chapter, it will be looked at some **classic approaches** regarding the functions used in a program such as naming conventions, appearance and structure of the function’s code.
+In this section of the chapter, we'll look at some **classic approaches** regarding the functions used in a program such as naming conventions, appearance and structure of the function’s code.
 
 ### Naming conventions
 
-When naming a given function it is beneficial to use **meaningful names**. As each function is **in charge** of some functionality of the problem, it must be taken into account **what task it will execute** inside the program which makes it a good practice to **name the function after the task it executes**.
+When naming a given function, it is beneficial to use **meaningful names**. As each function is **in charge** of some functionality of the problem, it must be taken into account **what task it will execute** inside the program which makes it a good practice to **name the function after the task it executes**.
 
-In **Python** the convention suggest that the functions must be written in lower cases as the words used to name the function must be separated by an **underscore (`_`)** if more than one. A good practice is if function’s name constitutes of a verb or a pair of verb and noun, respectively. 
+In **Python**, the convention suggests that the functions must be written in lower cases, as well as that the words used to name the function must be separated by an **underscore (`_`)** (if there's more than one word). A good practice is that the function’s name consists of a verb, or a pair of a verb and a noun, respectively. 
 
 Some examples of **appropriate** naming of functions:
 *  **`find_student`**
@@ -418,7 +418,7 @@ Some examples of **inappropriate** naming of functions:
 *	**`SampleMethod`**
 *	**`DIRTYHack`**
 
-If it cannot be thought of an appropriate name, there is a good possibility that the function is responsible for more than one functionality or lacks clearly defined goal. In such a case, it is better to think of how the function can be subdivided into smaller functions.
+If you can't think of an appropriate name, there is a good possibility that the function is responsible for more than one functionality or lacks a clearly defined goal. In such cases, it is better to think of how the function can be subdivided into smaller functions.
 
 ### Naming of the function’s parameters
 
