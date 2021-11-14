@@ -15,7 +15,7 @@ In this chapter the topic of **functions** will be introduced together with case
 
 So far, we learnt that dividing our code into **smaller units** (functions), each of which being responsible for a specific functionality is more practical in general. Each unit is concerned with **distinct functionality**, in which case not only is it easier to process the problem we are facing, but also improves the **debugging** and **readability** of the code.
 
-When we think about writing code, the function in practice can be considered as **encapsulated set of instructions** which implement a required functionality. This set of instructions (i.e. the function) has its own structure, separated from the rest of the code. Throughout the code, we can **always** call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if any.   
+When we think about writing code, the function in practice can be considered as **encapsulated set of instructions** which implement a required functionality. This set of instructions (i.e. the function) has its own structure, separated from the rest of the code. Throughout the code, we can **always** call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if there are any.   
 
 A function can be called as many times as we need to solve our problem. This prevents us from typing one functionality several times, which in turn reduces the risk of error if the function is changed afterwards.
 
@@ -23,35 +23,35 @@ We will look at two types of functions – "**basic** functions" (without parame
 
 <table>
 <tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>In the object-oriented programming (which is out of the scope of this book) the functions are part of higher-level objects called <b>classes</b>, where function is called <b>methods</b>. In other programming languages the functions are called <b>procedures</b>. </td>
+<td>In the object-oriented programming (which is out of the scope of this book) the functions are part of higher-level objects called <b>classes</b>, where functions are called <b>methods</b>. In other programming languages the functions are called <b>procedures</b>. </td>
 </tr>
 </table>
 
 ### Basic functions
 
-The **basic** functions are responsible for the execution of an **action** which **contributes** to the solving of a particular problem. Such an action can be printing a string on the console, performing a conditional statement check, going through loop, etc.
+The **basic** functions are responsible for the execution of an **action** which **contributes** to the solving of a particular problem. Such an action can be printing a string to the console, performing a conditional statement check, going through a loop, etc.
 
 Now, let’s look at the following **example of a basic function**:
 
 ![](/assets/chapter-10-images/01.Simple-function-01.png)
 
-The purpose of this function is to print a headline, which in this case is a string of dashes. Because of this, it is called **'print_header'**. The parentheses **always** follow the name of the function, irrespective of its name. It is important the names of our functions to describe the purpose of the function. Later in this chapter, we will look more in-depth of the naming convections regarding functions.
+The purpose of this function is to print a headline, which in this case is a string of dashes. Because of this, it is called **'print_header'**. The parentheses **always** follow the name of the function, irrespective of its name. It is important the names of our functions to describe the purpose of the function. Later in this chapter, we will learn more in-depth about the naming conventions regarding functions.
 
-The **function declaration** is always followed by a **colon**, which is followed by the set of instructions (an algorithm), used for solving a particular problem, described by the name of the function. This part of the code is also referred as the **body** of the function which contains the machine code (the instructions). It is positioned on a new line after the function’s declaration. It is written with an indentation compared to the function-defining line. The body of the function is always indented four spaces or single Tab from the level at which the function declaration begins. This separates the body of the function as a single block of instructions. 
+The **function declaration** is always followed by a **colon**, which is followed by the set of instructions (an algorithm), used for solving a particular problem, described by the name of the function. This part of the code is also referred as the **body** of the function which contains the machine code (the instructions). It is positioned on a new line after the function’s declaration. It is written with an indentation compared to the function-defining line. The body of the function is always indented four spaces, or single Tab from the level at which the function declaration begins. This separates the body of the function as a single block of instructions. 
 
-If the given snippet of code is present in a program which is to bea executed, the function will not affect the program at this stage because the function is declared but not called yet.
+If the given snippet of code is present in a program which is to be executed, the function will not affect the program at this stage, because the function is declared, but not called yet.
 
 ### Why should we use functions?
 
-So far, we found that the functions help with the logical differentiation of a longer code to less complicated, easier to comprehend pieces. Working with functions gives to our code advantages such as better structure and greater cohesion. 
+So far, we found that the functions help with the logical differentiation of a longer code to less complicated, easier to digest pieces. Working with functions gives to our code advantages, such as better structure and greater cohesion. 
 
-The usage of functions **prevents us from code repetition**. The repeating code is **bad** practice as it heavily **impedes** the code’s maintenance and leads to errors. If a single of code functionality is present in our program several times throughout the code, and we need to change something to this functionality afterwards, we need to correct same piece of code as many times as we have it in the program. The likelihood of missing one spot in the redaction of the code in this case is great, which result to an unpredictable behaviour. This is the reason why it is a good practice, if we do use a fragment of a code **more than once**, to define it as a **separate function**. 
+The usage of functions **prevents us from code repetition**. The repeating code is **bad** practice as it heavily **impedes** the code’s maintenance and leads to errors. If a single of code functionality is present in our program several times throughout the code, and we need to change something to this functionality afterwards, we need to correct the same piece of code as many times as we have it in the program. The likelihood of missing one spot in the redaction of the code in this case is high, which results in an unpredictable behaviour. This is the reason why it is a good practice, if we do use a fragment of a code **more than once**, to define it as a **separate function**. 
 
-The functions **allow** us to use a piece of **code several** times. Working on more and more problems, you will notice that with the use of already existing functions you will save a lot of time and effort. 
+The functions **allow** us to use a piece of code **several** times. Working on more and more problems, you will notice that with the use of already existing functions you will save a lot of time and effort. 
 
 ### Declaration of functions
 
-**Function declaration** can be considered as a registration of a given functionality within a program so that this functionality can be recognize and later used in the rest of the program where necessary. With the next example we will explore the element of which a function is composed:
+**Function declaration** can be considered as a registration of a given functionality within a program so that this functionality can be recognized and later used in the rest of the program where necessary. With the next example we will explore the element of which a function is composed:
 
 ![](/assets/chapter-10-images/02.Declaring-functions-02.png)
 
@@ -83,7 +83,7 @@ As the calling of a function is a command by itself, we can call a function from
 
 ![](/assets/chapter-10-images/03.Invoking-functions-02.png)
 
-There is also a possibility the function to be called in** its own body**. This is called **recursion** , for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
+There is also a possibility the function to be called in **its own body**. This is called **recursion** , for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
 
 ### Example: empty receipt
 
@@ -109,7 +109,7 @@ First, we need to create the function which **prints the header** of the receipt
 
 Similar to the first function, we will create another two functions which will print out the center part of the receipt (body) and the bottom of the receipt (footer). We will call them **`print_receipt_body`** and **`print_receipt_footer`**. 
 
-Next, we will create **another one function** which wraps the three functions and call them one after another. Finally, we will call the function **`print_receipt`** in our program:
+Next, we will create **another function** which wraps the three functions and call them one after another. Finally, we will call the function **`print_receipt`** in our program:
 
 ![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
@@ -123,7 +123,7 @@ To solve our problem using function, often in our practice we need an **addition
 
 ### Use of parameters in a function
 
-As we just mentioned, the parameters **can be zero or as many as needed**. When they are declared, commas are used to separate them from each other. The parameters can be of any type (number, string, etc.). Follows an example which demonstrates how exactly the parameters are being used in a body of a function.
+As we just mentioned, the parameters **can be zero or as many as needed**. When they are declared, commas are used to separate them from each other. The parameters can be of any type (number, string, etc.). The following is an example which demonstrates how exactly the parameters are being used in a body of a function.
 
 This is an example of **definition** of a function which uses a **set of parameters**:
 
@@ -135,7 +135,7 @@ In this example we will be using two parameters called **`start`** and **`end`**
 
 In this case the numerical value of the argument is declared directly in the function (e.g. **`5`** for **`start`** and **`10`** for **`end`**).
 
-When declaring **parameters**, they can be of **any** type (integer, string etc.) and each parameter has to have a meaningful name. It’s important to notice that when the function is called, the arguments** must be put in the **exact same order** as the parameters, declared in the definition of the function.
+When declaring **parameters**, they can be of **any** type (integer, string etc.) and each parameter has to have a meaningful name. It’s important to notice that when the function is called, the **arguments** must be put in the **exact same order** as the parameters, declared in the definition of the function.
 
 Let’s look at another example of function definition which has a few parameters, each of different type:
 
