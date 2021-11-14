@@ -15,7 +15,7 @@ In this chapter, the topic of **functions** will be introduced, together with ca
 
 So far, we learnt that dividing our code into **smaller units** (functions), each of which being responsible for a specific functionality is more practical in general. Each unit is concerned with **distinct functionality**, in which case not only is it easier to process the problem we are facing, but also improves the **debugging** and **readability** of the code.
 
-When we think about writing code, the function in practice can be considered as an **encapsulated set of instructions** which implement a required functionality. This set of instructions (i.e. the function) has its own structure, separated from the rest of the code. Throughout the code, we can **always** call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if there are any.   
+When we think about writing code, the function in practice can be considered as an **encapsulated set of instructions** which implement a required functionality. This set of instructions (i.e., the function) has its own structure, separated from the rest of the code. Throughout the code, we can **always** call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if there are any.   
 
 A function can be called as many times as we need to solve our problem. This prevents us from typing one functionality several times, which in turn reduces the risk of error if the function is changed afterwards.
 
@@ -83,7 +83,7 @@ As the calling of a function is a command by itself, we can call a function from
 
 ![](/assets/chapter-10-images/03.Invoking-functions-02.png)
 
-There is also a possibility the function to be called in **its own body**. This is called **recursion** , for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
+There is also a possibility the function to be called in **its own body**. This is called **recursion**, for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
 
 ### Example: empty receipt
 
@@ -133,7 +133,7 @@ In this example, we will be using two parameters called **`start`** and **`end`*
 
 ![](/assets/chapter-10-images/05.Function-parameters-02.png)
 
-In this case the numerical value of the argument is declared directly in the function (e.g. **`5`** for **`start`** and **`10`** for **`end`**).
+In this case the numerical value of the argument is declared directly in the function (e.g., **`5`** for **`start`** and **`10`** for **`end`**).
 
 When declaring **parameters**, they can be of **any** type (integer, string etc.) and each parameter has to have a meaningful name. It’s important to notice that when the function is called, the **arguments** must be put in the **exact same order** as the parameters, declared in the definition of the function.
 
@@ -196,7 +196,7 @@ Create a function which prints triangle as shown in the examples.
 
 #### Hints
 
-Before creating a function which prints numbers on a single line with initial and final value, we must read the input from the console. Next, we choose a meaningful name for our function which shortly describes its purpose. This might be **`print_line`** and we can now build it:
+Before creating a function, which prints numbers on a single line with initial and final value, we must read the input from the console. Next, we choose a meaningful name for our function which shortly describes its purpose. This might be **`print_line`** and we can now build it:
 
 ![](/assets/chapter-10-images/08.Print-triangle-01.png)
 
@@ -442,7 +442,7 @@ Some examples of **inappropriate** naming of parameters:
 
 ### More good practices in working with functions
 
-Let’s again recall how a function should execute **only one** particular **task** in the program. If this cannot be achieved, thenext thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** making the function’s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as demonstrated:
+Let’s again recall how a function should execute **only one** particular **task** in the program. If this cannot be achieved, the next thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** making the function’s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as demonstrated:
 
 ![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
@@ -636,11 +636,11 @@ Write a function **`letterize(number)`**, which reads an integer and translates 
 
 We can first print **the hundreds** as a text – **`(the number / 100) % 10`**, after that **the tens** – **`(the number / 10) % 10`** and at the end **the ones** – **`(the number % 10)`**.
 
-The first special case is when the number is exactly **rounded to 100** (e.g. 100, 200, 300 etc...). In this case we print "one-hundred", "two-hundred", "three-hundred" etc.
+The first special case is when the number is exactly **rounded to 100** (e.g., 100, 200, 300 etc...). In this case we print "one-hundred", "two-hundred", "three-hundred" etc.
 
-The second special case is when the number formed by the last two digits of the input number is **less than 10** (e.g. 101, 305, 609, etc). In this case, we print "one-hundred and one", "three-hundred and five", "six-hundred and nine", etc.
+The second special case is when the number formed by the last two digits of the input number is **less than 10** (e.g., 101, 305, 609, etc). In this case, we print "one-hundred and one", "three-hundred and five", "six-hundred and nine", etc.
 
-The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** (e.g. 111, 814, 919, etc.). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen", etc.
+The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** (e.g., 111, 814, 919, etc.). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen", etc.
 
 #### Testing in Judge platform
 
@@ -657,7 +657,7 @@ Write a function **`encrypt(letter)`**, which encrypts a given letter in the fol
   * ASCII code of the letter - the first digit of the ASCII code of the letter.
 * The function should return the encrypted string.
 
-Пример:
+Example:
 * j &rarr; **p16i**
   * ASCII code of **j** is **106** &rarr; First digit - **1**, last digit - **6**.
   * Concatenate the first and the last digit &rarr; **16**.
