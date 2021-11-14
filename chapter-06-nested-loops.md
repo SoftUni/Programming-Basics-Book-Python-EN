@@ -304,7 +304,7 @@ After we have calculated the length of the roof, we make a loop from 0 to **`roo
 ![](/assets/chapter-6-1-images/09.House-07.png)
 
 After we have finished with the **roof**, it is time for **the base**. It is easier to print:
-* We start with a loop from 0 to n (exclusive).
+* We start with a loop from 0 to `n` (exclusive).
 * We print on the console: `|` + `*` (**`n - 2`** times) + `|`.
 
 ![](/assets/chapter-6-1-images/09.House-08.png)
