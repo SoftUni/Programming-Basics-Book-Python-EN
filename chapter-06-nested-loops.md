@@ -33,7 +33,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Example: Rectangle Made of N x N Asterisks
 
-Write a program which receives a positive number **n** and prints on the console **a rectangle of N x N asterisks**. 
+Write a program which receives a positive number **n** and prints on the console **a rectangle made out of N x N asterisks**. 
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
