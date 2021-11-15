@@ -1,6 +1,6 @@
 # Chapter 3.1. Simple conditions
 
-In the current chapter, we will take a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`**, **`if-elif`** and **`else`**) by implementing appropriate examples and also we are going to take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
+In the current chapter, we're going to be taking a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`**, **`if-elif`** and **`else`**) by implementing appropriate examples and also we are going to take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
 ## Video
 
@@ -557,7 +557,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 ### Problem: Speed Assessment
 
-Write a program, that **reads input data from the console - speed** (decimal number) and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10 up to 50**, print "**average**". For speeds **over 50 and up to 150**, print "**fast**". For speeds **over 150 and up to 1000**, print "**ultra fast**". For higher speeds, print "**extremely fast**".
+Write a program, that **reads input data from the console - speed** (decimal number) and prints **speed information**. For speed **up to 10** (inclusive), print "**slow**". For speed **over 10 up to 50**, print "**average**". For speed **over 50 and up to 150**, print "**fast**". For speed **over 150 and up to 1000**, print "**ultra fast**". For any higher speed, print "**extremely fast**".
 
 #### Sample Input and Output
 | Input | Output |
@@ -601,7 +601,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 ### Problem: Time + 15 Minutes
 
-Write a program that reads **two integers - hours and minutes** based on a 24-hour day and calculates what will be the time **after 15 minutes**. The result should be printed in the following format **`hh:mm`**. Hours should always be between 0 and 23, while minutes should always be between 0 and 59. Hours should be written with one or two digits as needed, while the minutes should always be written with two digits - add a **leading zero**, as needed.
+Write a program that reads **two integers - hours and minutes** based on a 24-hour day and calculates what time it will be **15 minutes later**. The result should be printed in the following format **`hh:mm`**. Hours should always be between 0 and 23, while minutes should always be between 0 and 59. Hours should be written with one or two digits as needed, while the minutes should always be written with two digits - add a **leading zero**, as needed.
 
 #### Sample Input and Output
 
@@ -615,7 +615,7 @@ Write a program that reads **two integers - hours and minutes** based on a 24-ho
 
 #### Hints and pointers
 
-Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** when appropriate.
+Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** where appropriate.
 
 #### Testing in the Judge System
 
@@ -653,7 +653,7 @@ Write a program that converts numbers in the range of [**0 … 100**] in text.
 
 #### Hints and pointers
 
-Firstly, we should check for **single-digit numbers** and if this is the case, print the corresponding word. Then we can check if the number is a **double-digit number**. These can be printed in two parts: left part (**tens** = number / 10) and right part (**units** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
+Firstly, we should check for **single-digit numbers** and if this is the case, print the corresponding word. Then we can check if the number is a **double-digit number**. These can be printed in two parts: left part (**double-digit** = number / 10) and right part (**single-digit** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#15](https://judge.softuni.org/Contests/Practice/Index/1049#15).
