@@ -1,11 +1,11 @@
 # Chapter 3.1. Simple conditions
 
-In the present chapter, we will take a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`**, **`if-elif`** and **`else`**) by implementing appropriate examples and also we will take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
+In the current chapter, we will take a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`**, **`if-elif`** and **`else`**) by implementing appropriate examples and also we are going to take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
 ## Video
 
 <div class="video-player">
-  Watch video-tutorial about this chapter here: 
+  Watch the video-tutorial about this chapter here: 
   https://www.youtube.com/watch?v=cQIl0wQLVRE.
 </div>
 
@@ -86,7 +86,7 @@ You can test the solution example here:
 
 ## If-else conditional constructs
 
-The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if Boolean expression`**) returns a negative result (**`False`**). Written in this way, the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive** (**`True`**) - a set of instructions is executed. By contrast, when the result is **negative** (**`False`**) - a different set is executed. The format of this structure is as follows:
+The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if Boolean expression`**) returns a negative result (**`False`**). Written in this way, the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive** (**`True`**) - a set of instructions is executed. By contrast, when the result is **negative** (**`False`**) - a different set is executed. The format of this structure is as shown:
 
 ```python
 if condition:
@@ -108,7 +108,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 
 ## About blocks of code
 
-By pressing **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other structures) and we want to perform a series of operations, we put them in a block after the condition.
+By pressing the **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other structures) and we want to perform a series of operations, we put them in a block after the condition.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution.</td>
@@ -145,7 +145,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 ### Problem: Finding the Greater Number
 
-Write a program that reads two integers and outputs the larger.
+Write a program that reads two integers and outputs the number of higher value between the two .
 
 Our first task is to  **read** the two numbers. After which through the use of a simple  **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
 
@@ -262,7 +262,7 @@ Three athletes finish with some **number of seconds** (between **1** and **50**)
 
 #### Hints and pointers
 
-Firstly, we sum the three numbers, to obtain the seconds total. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
+Firstly, we sum the three numbers, to obtain the total seconds. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
 - If the result is between 0 and 59, we print 0 minutes + calculated seconds.
 - If the result is between 60 and 119, we print 1 minute + calculated seconds minus 60.
 - If the result is between 120 and 179, we print 2 minutes + calculated seconds minus 120.
@@ -289,7 +289,7 @@ Write a program, that **converts distance** between the following **8 units of m
 | 1 meter (m) | 3.2808399 feet (ft)  |
 | 1 meter (m) | 1.0936133 yards (yd) |
 
-The input will be three parameters:
+The input will consist of three parameters:
 
 - First line: A number.
 - Second: Input unit of measure.
@@ -316,11 +316,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 ## Debugging - simple operations with a debugger
 
-To date, we have written quite a lot of code and oftentimes there were mistakes, were there? Now we can show you a tool to make finding mistakes easier.
+So far, we have written quite a lot of code and oftentimes there have been mistakes, haven't there? Now we can show you a tool to make finding mistakes easier.
 
 ### What is "debugging"?
 
-**Debugging** is the process of "**attaching**" to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called **bugs**:
+**Debugging** is the process of "**attaching**" to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what its evaluation route is, what the intermediate values of the declared variables at each step of the execution are, among other useful information and thus allowing us to locate errors - the so-called **bugs**:
 
 ![](/assets/chapter-3-1-images/00.Debugging-01.png)
 ![](/assets/chapter-3-1-images/00.Debugging-02.png)
@@ -557,7 +557,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 ### Problem: Speed Assessment
 
-Write a program, that **reads input data from the console - speed** (decimal number) and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10 up to 50**, print "**average**". For speeds **over 50 and up to 150**, print "**fast**". For speeds **over 150 and up to 1000**, print "**ultra fast**". For higher speed, print "**extremely fast**".
+Write a program, that **reads input data from the console - speed** (decimal number) and prints **speed information**. For speeds **up to 10** (inclusive), print "**slow**". For speed **over 10 up to 50**, print "**average**". For speeds **over 50 and up to 150**, print "**fast**". For speeds **over 150 and up to 1000**, print "**ultra fast**". For higher speeds, print "**extremely fast**".
 
 #### Sample Input and Output
 | Input | Output |
@@ -577,7 +577,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 Write a program that reads input data from the console - **the measures of a geometric shape** and **calculates its surface area**. There are four types of shapes: **square**, **rectangle**, **circle** and **triangle**.
 
-The first line of the input is the type of shape (**`square`**, **`rectangle`**, **`circle`**, **`triangle`**):
+The first line of input is the type of shape (**`square`**, **`rectangle`**, **`circle`**, **`triangle`**):
 * If the shape is a **square**, the next argument will be one number - the length of its side.
 * If the shape is a **rectangle**, the next argument will be two numbers - the lengths of its sides.
 * If the shape is a **circle**, the next argument will be one number - the radius of the circle.
