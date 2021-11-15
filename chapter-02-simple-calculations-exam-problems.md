@@ -8,7 +8,7 @@ Before going to the tasks, we are going to revise the most important aspects of 
 
 ### Reading an Integer
 
-We need to create a variable to store the integer (for example, **`num`**) and use a standard command for reading input from the console (the function **`input(…)`**), combined with the function **`int(…)`** which converts string to an integer:
+We need to create a variable to store the integer (for example, **`num`**) and use a standard command for reading input from the console (the function **`input(…)`**), combined with the function **`int(…)`** which converts a string to an integer:
 
 ```python
 num = int(input())
@@ -24,15 +24,15 @@ num = float(input())
 
 ## Printing Text Using Placeholders
 
-**Placeholder** is an expression which is replaced with a particular value while printing an output. The funtion **`print(…)`** supports printing a string based on a placeholder, there are a few ways to do that, as we reviewed in the previous chapter:
+A **placeholder** is an expression that is replaced with a particular value while printing an output. The function **`print(…)`** supports printing a string based on a placeholder, there are a few ways to do that, as we reviewed in the previous chapter:
 
-  * The first argument that we pass to the funtion is the formatted string, followed by the symbol **`%`** and the number of arguments, equal to the number of placeholders, placed in brackets:
+  * The first argument that we pass to the function is the formatted string, followed by the symbol **`%`** and the number of arguments, equal to the number of placeholders, placed in brackets:
 
 ```python
 print("You are %s %s, a %d-years old person from %s." % ("Ivan", "Ivanov", "16", "Burgas"))
 ```
 
-  * The second way are the so-called "f-strings", where before the formatted string we put the symbol **`f`** and the arguments are in the string between curled brackets **`{}`**:
+  * The second way is the so-called "f-strings", where before the formatted string we put the symbol **`f`** and the arguments are in the string between curled brackets **`{}`**:
     
 ```python
 first_name = "Ivan"
@@ -46,7 +46,7 @@ There are other ways to format a string and the more curious of you can check th
 
 ## Arithmetic Operators
 
-Let' s revise the main arithmetic operators for simple calculations.
+Let's revise the main arithmetic operators for simple calculations.
 
 ### Operator +
 
@@ -87,7 +87,7 @@ str = firstName + " " + lastName + " is " + age + " years old";
 
 ## Exam Tasks
 
-Now, after having revised how to make simple calculations and how to read and print numbers from the console, let' s go to the tasks. We will solve a few **problems from a SoftUni entrance exam**.
+Now, after having revised how to make simple calculations and how to read and print numbers from the console, let's go to the tasks. We will solve a few **problems from a SoftUni entrance exam**.
 
 
 ## Task: Training Lab
@@ -125,11 +125,11 @@ Try to solve the problem on your own first. If you do not succeed, go through th
 
 As with any programming task, **it is important to build an idea for its solution**, before having started to write code. Let's carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab, where the number depends on the hall length and height. We notice that the provided input data will be **in meters** and the information about how much space the working places and hallway take, will be **in centimeters**. To do the calculations, we will use the same measuring units, no matter whether we choose to convert length and height into centimeters or the other data in meters. The first option is used for the presented solution. 
 
-Next, we have to calculate **how many columns and how many rows** with desks will fit. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **divide the difference by 70 cm** (the length of a workplace). We find the rows by dividing **the length by 120 cm**. Both operations can result in **a real number** with a whole and a fractional part, but we have to **store only the whole part in a variable**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the lost places for entrance door and podium). This is how we calculate the needed value.
+Next, we have to calculate **how many columns and how many rows** with desks will fit. We can calculate the columns by **subtracting the width by the necessary space for the hallway (100 cm)** and **dividing the difference by 70 cm** (the length of a workplace). We find the rows by dividing **the length by 120 cm**. Both operations can result in **a real number** with a whole and a fractional part, but we have to **store only the whole part in a variable**. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the lost places for entrance door and podium). This is how we calculate the needed value.
 
 #### Choosing Data Types
 
-From the example, we see that a real number with whole and fractional part can be given as an input, therefore, it is not appropriate to choose data type **`int`**. This is why we use **`float`**. Choosing data type for the next variables depends on the method we choose to solve the problem. As with any programming task, this one has **more than one way to be solved**.
+From the example, we see that a real number with whole and fractional parts can be given as an input, therefore, it is not appropriate to choose data type **`int`**. This is why we use **`float`**. Choosing a data type for the next variables depends on the method we choose to solve the problem. As with any programming task, this one has **more than one way to be solved**.
 
 #### Solution
 
@@ -148,7 +148,7 @@ Let's move to the calculations. The special part here is that after having divid
 <td><b>Search in Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in Python or we are dealing with one that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-In this case, we can try with the following search: "[***Python get whole number part of float***](https://www.google.com/?q=python+get+whole+number+part+of+float)". One possible way is to use the method **`math.trunc(…)`** and don't forget to refer to the **`math`** library. The code down below is blurred on purpose and it should be completed by the reader:
+In this case, we can try with the following search: "[***Python gets whole number part of float***](https://www.google.com/?q=python+get+whole+number+part+of+float)". One possible way is to use the method **`math.trunc(…)`** and don't forget to refer to the **`math`** library. The code down below is blurred on purpose and it should be completed by the reader:
 
 ![](/assets/chapter-2-2-images/01.Training-lab-04.png)
 
@@ -188,7 +188,7 @@ Print on the console **one floating-point number: the earnings of all fruits and
 **Clarification for the first example:**
 
 * Vegetables cost: 0.194 BGN. \* 10 kg. = **1.94 BGN.**
-* Fruits cost: 19.4 BGN. \* 10 kg.  = **194 BGN.**
+* Fruits cost: 19.4 BGN. \* 10 kg. = **194 BGN.**
 * Total: **195.94 BGN. = 101 EUR**. 
 
 | Input    | Output      |
@@ -205,7 +205,7 @@ Let's first go through the problem requirements. In this case, we have to calcul
 
 #### Choosing Data Types
 
-After we have a clear idea of how to solve the task, we can continue with choosing appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values will be of **`int`** type. The prices of the fruits and vegetables are said to be  **two floating-point numbers** and therefore, the variables will be of **`float`** type.
+After we have a clear idea of how to solve the task, we can continue with choosing appropriate data types. Let's go through the **input**: we have **two integers** for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values will be of **`int`** type. The prices of the fruits and vegetables are said to be **two floating-point numbers** and therefore, the variables will be of **`float`** type.
 
 We can also declare two variables to store the income from the fruits and vegetables separately. The **output** should be a **floating-point number**, so the result should be **`float`** type.
 
@@ -216,7 +216,7 @@ It is time to get to the solution. We can divide it into three smaller tasks:
 * **Doing the calculations**.
 * **Printing the output** on the console.
 
-In order to read the input, we declare variables, which we have to name carefully, so that they can give us a hint about the values they store. With **`input(…)`**, we read values from the console and with the functions **`int(…)`** and **`float(…)`**, we convert the particular string value into int and double:
+To read the input, we declare variables, which we have to name carefully so that they can give us a hint about the values they store. With **`input(…)`**, we read values from the console and with the functions **`int(…)`** and **`float(…)`**, we convert the particular string value into int and double:
 
 ![](/assets/chapter-2-2-images/02.Vegetable-market-01.png)
 
@@ -293,7 +293,7 @@ We calculate the area of a single tile by **multiplying its two sides with one a
 
 #### Choosing Data Types
 
-The length of the side of the ground, the width and the length of the bench, will be given as **integers**, therefore, in order to store their values, we can use the system function **`int(…)`**. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use **`float(…)`**.
+The length of the side of the ground, the width and the length of the bench will be given as **integers**, therefore, to store their values, we can use the system function **`int(…)`**. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use **`float(…)`**.
 
 #### Solution
 
@@ -338,8 +338,8 @@ The exchange office has a **commission fee of 0% to 5% from the final sum in eur
 
 Three numbers are read from the console: 
 * On the first line – **number of Bitcoins**. Integer within the range of [**0 … 20**].
-* On the second line – **number of Chinese yuans**. Floating-point number within the range of [**0.00 … 50 000.00**].
-* On the third line – **commission fee**. Floating-point number within the range of [**0.00 … 5.00**].
+* On the second line – **number of Chinese yuans**. Floating point number within the range of [**0.00 … 50 000.00**].
+* On the third line – **commission fee**. Floating point number within the range of [**0.00 … 5.00**].
 
 ### Output Data
 
@@ -369,7 +369,7 @@ Let's first think of the way we can solve the task, before having started to wri
 
 #### Idea for Solution
 
-We see that the **number of bitcoins** and **the number of Chinese yuans** will be given in the input. The **output** should be in euro. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR, therefore, we **first have to calculate the whole sum** that Pesho has in BGN, and then **calculate the output**.
+We see that the **number of bitcoins** and **the number of Chinese yuans** will be given in the input. The **output** should be in euros. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR, therefore, we **first have to calculate the whole sum** that Pesho has in BGN, and then **calculate the output**.
 
 As we have information for the exchange rate of Bitcoins to BGN, we can directly exchange them. On the other hand, to get the value of **Chinese yuans in BGN**, first, we have to **exchange them in USD**, and then the **USD to BGN**. Finally, we will **sum the two values** and calculate how much euro that is.
 
@@ -377,7 +377,7 @@ Only the final step is left: **calculating the commission fee** and subtracting 
 
 #### Choosing Data Types
 
-**Bitcoins** are given as **an integer**, therefore, we can declare a variable using the **`int(…)`** function. For **Chinese yuan and commission fee** we obtain **a floating-point number**, therefore, we are going to use **`float(…)`**.
+**Bitcoins** are given as **an integer**, therefore, we can declare a variable using the **`int(…)`** function. For **Chinese yuan and commission fee**, we obtain **a floating-point number**, therefore, we are going to use **`float(…)`**.
 
 #### Solution
 
@@ -391,7 +391,7 @@ After we have built an idea on how to solve the task and we have chosen the data
 
 ![](/assets/chapter-2-2-images/04.Money-01.png)
 
-We do the necessary calculations: 
+Then we do the necessary calculations: 
 
 ![](/assets/chapter-2-2-images/04.Money-02.png)
 
@@ -419,7 +419,7 @@ Ivan is a programmer in an American company, and he **works** at home **approxim
 ### Input Data
 
 **Three numbers** are read from the console.
- * On the first line – **work days per month**. An integer within the range of [**5 … 30**].
+ * On the first line – **workdays per month**. An integer within the range of [**5 … 30**].
  * On the second line – **daily earnings**. A floating-point number within the range of [**10.00 … 2000.00**].
  * On the third line – **exchange rate of USD to BGN** /1 dollar = X BGN/. A floating-point number within the range of [**0.99 … 1.99**].
 
@@ -429,7 +429,7 @@ Print one number on the console – **the average daily earnings in BGN**. The r
 
 ### Example Input and Output
 
-| Input        | Output          |
+|Input|Output|
 |---------------|------------------|
 |21<br>75.00<br>1.59|74.61| 
 
@@ -450,11 +450,11 @@ Firstly, we have to analyze the task and think of a way to solve it. Then, we wi
 
 #### Idea for Solution
 
-Let's first calculate **how much the monthly salary** of Ivan is. We do that by **multiplying the working days per month by his daily earnings**. We **multiply the result** by 12, to calculate his salary for 12 months, and then, we multiply it **by 2.5**, so that we can calculate the bonus. After having summed up the two values, we calculate **his annual income**. Then, we will reduce **the annual income by 25% taxes**. We can do that by multiplying the total income by **0.25** and substract the result out of it. Depending on the exchange rate, **we exchange the USD to BGN** and after that, we divide the result by 365.
+Let's first calculate **how much the monthly salary** of Ivan is. We do that by **multiplying the working days per month by his daily earnings**. We **multiply the result** by 12, to calculate his salary for 12 months, and then, we multiply it **by 2.5**, so that we can calculate the bonus. After having summed up the two values, we calculate **his annual income**. Then, we will reduce **the annual income by 25% taxes**. We can do that by multiplying the total income by **0.25** and subtracting the result out of it. Depending on the exchange rate, **we exchange the USD to BGN** and after that, we divide the result by 365.
 
 #### Choosing Data Types
 
-**The working days** per month are given as **an integer**, therefore, we can convert the string into int with the function **`int(…)`**. For both **the earned money** and **the exchange rate of USD to EUR**, we will obtain **a floating-point number**, therefore, we will use the function **`float(…)`**.
+**The working days** per month are given as **an integer**, therefore, we can convert the string into an int with the function **`int(…)`**. For both **the earned money** and **the exchange rate of USD to EUR**, we will obtain **a floating-point number**, therefore, we will use the function **`float(…)`**.
 
 #### Solution
 
@@ -463,11 +463,11 @@ Again: after we have an idea of how to solve the problem and we have considered 
 * **Doing the calculations**.
 * **Printing the output** on the console.
 
-We **declare the variables** that we are going to use by trying to choose **meaningful names**. We create a variable to store the arguments passed to the function, by converting the string to integer or floating number by using **`int(…)/float(…)`**:
+Then we **declare the variables** that we are going to use by trying to choose **meaningful names**. We create a variable to store the arguments passed to the function, by converting the string to integer or floating number by using **`int(…)/float(…)`**:
 
 ![](/assets/chapter-2-2-images/05.Daily-earnings-01.png)
 
-We do the calculations:
+After that we do the calculations:
 
 ![](/assets/chapter-2-2-images/05.Daily-earnings-02.png)
 
