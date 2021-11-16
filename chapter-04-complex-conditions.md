@@ -494,7 +494,7 @@ A possible logic for solving the task (not the only correct one):
 
 * A point is **outer (outside)** for the figure when it is **outside** both of the rectangles.
 * A point is **inner (inside)** for the figure if it is inside one of the rectangles (excluding their borders) or lies on their common side.
-* In **another case**, the point lies on the border of the rectangle (**border**).
+* In **every other case**, the point lies on the border of the rectangle (**border**).
 
 Sample code (parts of the code are blurred to stimulate logical thinking and solving skills):
 
