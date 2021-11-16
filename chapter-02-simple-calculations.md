@@ -1,7 +1,7 @@
 # Chapter 2.1. Simple Calculations
 
-In this chapter we are going to get familiar with the following concepts and programming techniques:
-- How to work with **data types and variables**, which are necessary to process numbers and strings.
+In this chapter we are going to become familiar with the following concepts and programming techniques:
+- How to work with **data types and variables**, which are necessary when processing numbers and strings.
 - How to **print** a result on the console.
 - How to **read** user input.
 - How to do simple **arithmetic operations**: add, subtract, multiply, divide, string concatenation.
@@ -86,7 +86,7 @@ The next command **`area = a * a`** assigns to a new variable **`area`** the res
 
 The last line **`print('Square area = ', area)`** prints the given text and next to it, the calculated area of the square, held in the variable **`area`** is concatenated.
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0).
 
@@ -147,7 +147,7 @@ Let's start the program to make sure that, when we input a value in inches, we r
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
@@ -176,7 +176,7 @@ Here is the result if we call the function with the name "Ivan":
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-00.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
@@ -203,7 +203,7 @@ Here is the result which we will get after execution of this example:
 
 Pay attention to how each variable has to be given in the **order, in which we want it to print**. Essentially, the template (**placeholder**) **accepts all types of variables** and this makes it very convenient for use when printing.
 
-### Testing in the Judge system
+### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
@@ -271,14 +271,14 @@ Dividing numbers is done using the **`/`** operator.
 Here are a few examples with the division operator:
 
 ```python
-print(10 / 2.5) # Резултат: 4
-print(10 / 4)   # Резултат: 2.5
-print(10 / 6)   # Резултат: 1.6666666666666667
+print(10 / 2.5) # Result: 4
+print(10 / 4)   # Result: 2.5
+print(10 / 6)   # Result: 1.6666666666666667
 
-print(5 / 0)    # Резултат: ZeroDivisionError: division by zero
-print(-5 / 0)   # Резултат: ZeroDivisionError: division by zero
-print(0 / 0)    # Резултат: ZeroDivisionError: division by zero
-print(2.5 / 0)  # Резултат: ZeroDivisionError: float division by zero
+print(5 / 0)    # Result: ZeroDivisionError: division by zero
+print(-5 / 0)   # Result: ZeroDivisionError: division by zero
+print(0 / 0)    # Result: ZeroDivisionError: division by zero
+print(2.5 / 0)  # Result: ZeroDivisionError: float division by zero
 ```
 
 ### Raising to power: operator **`**`**
@@ -478,7 +478,7 @@ Because we want the program to work for both integer and floating point numbers,
 
 ![](/assets/chapter-2-1-images/05.Trapezoid-area-03.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
@@ -539,7 +539,7 @@ Let's try the program with **radius `r = 10`**:
 
 ![](/assets/chapter-2-1-images/00.Circle-area-01.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
@@ -573,12 +573,12 @@ The function **`max(a, b)`** is used to find the bigger value between **`a`** an
 When starting the program with the values from the coordinate system, the following result is given:
 ![](/assets/chapter-2-1-images/00.Rectangle-area-02.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
 
-## What did we learn in this chapter?
+## What have we learned in this chapter?
 
 Let's summarize what we have learned in this chapter:
 
@@ -623,7 +623,7 @@ The code inputs an integer through **`a = int(input('a = '))`**, afterwards it c
 
 ![](/assets/chapter-2-1-images/01.Square-area-04.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0). You have to get 100 points (completely correct solution):
 
@@ -634,7 +634,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem:	Inches to Centimeters
 
-Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For the purpose **it multiplies the inches by 2.54** (because one inch = 2.54 centimeters).
+Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For the purpose **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
 
 #### Hints and Guidelines
 
@@ -668,7 +668,7 @@ It is recommended to **change the settings of your computer** to use a **decimal
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-08.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
@@ -695,7 +695,7 @@ We **run** the program using [**Ctrl + Shift + F10**] or with right click - [**R
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-03.png)
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
@@ -716,7 +716,7 @@ We add to the existing PyCharm project one more Python file named "concatenate_d
 
 Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter an exemplary data.
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
@@ -725,7 +725,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads three numbers from the console **b1, b2 and h and calculates the area of a trapezoid** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
-#### Example input and output
+#### Example Input and Output
 
 | Input          |  Output  |    
 |---------------|---------|
@@ -744,7 +744,7 @@ Again, we have to add to the existing PyCharm project another **Python file** na
 
 **Test** your solution locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter an exemplary data.
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
@@ -753,7 +753,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads from the console a **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
-#### Example input and output
+#### Example Input and Output
 
 | Input  |           Output                                          |    
 |-------|----------------------------------------------------------|
@@ -766,7 +766,7 @@ For the calculations you may use the following formulas:
 -	**`area = math.pi * r * r`**.
 -	**`perimeter = 2 * math.pi * r`**.
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
@@ -777,7 +777,7 @@ A **rectangle** is defined by the **coordinates** of both of its opposite corner
 
 ![](/assets/chapter-2-1-images/07.Rectangle-area-01.png)
 
-#### Example input and output
+#### Example Input and Output
 
 | Input                                | Output               |
 | ------------------------------------ | ------------------- |
@@ -785,7 +785,7 @@ A **rectangle** is defined by the **coordinates** of both of its opposite corner
 | 30<br>40<br>70<br>-10                | 2000<br>180         |
 | 600.25<br>500.75<br>100.50<br>-200.5 | 350449.6875<br>2402 |
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
@@ -794,7 +794,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. ЗRound the result to **2 digits after the decimal point using `round(area, 2)`**.
 
-#### Example input and output
+#### Example Input and Output
 
 | Input                | Output                 |
 | ------------------- | --------------------- |
@@ -803,7 +803,7 @@ Write a program that reads from the console **a side and height of a triangle** 
 | 7.75 <br>8.45       | Triangle area = 32.74 |
 | 1.23456 <br>4.56789 | Triangle area = 2.82  |
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#7](https://judge.softuni.org/Contests/Practice/Index/1047#7).
 
@@ -812,7 +812,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
-#### Example input and output
+#### Example Input and Output
 
 | Input | Output |
 | ---- | ----- |
@@ -821,16 +821,16 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 | -5.5 | 22.1  |
 | 32.3 | 90.14 |
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#8](https://judge.softuni.org/Contests/Practice/Index/1047#8).
 
 
 ### Problem:	Converter – from Radians to Degrees
 
-Write a program, that reads **an angle in [radians](https://bg.wikipedia.org/wiki/Радиан)** (**`rad`**) and converts it to **[degrees](https://bg.wikipedia.org/wiki/Градус_(ъгъл))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** when before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
+Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** when before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
-#### Example input and output
+#### Example Input and Output
 
 | Input   | Output |
 | ------ | ----- |
@@ -839,7 +839,7 @@ Write a program, that reads **an angle in [radians](https://bg.wikipedia.org/wik
 | 0.7854 | 45    |
 | 0.5236 | 30    |
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#9](https://judge.softuni.org/Contests/Practice/Index/1047#9).
 
@@ -848,7 +848,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and **levs** (BGN): **1 USD = 1.79549 BGN**.
 
-#### Example input and output
+#### Example Input and Output
 
 | Input | Output      |
 | ---- | ---------- |
@@ -856,22 +856,22 @@ Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (
 | 100  | 179.55 BGN |
 | 12.5 | 22.44 BGN  |
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#10](https://judge.softuni.org/Contests/Practice/Index/1047#10).
 
 
-### Problem:	\* Currency Converter
+### Problem: * Currency Converter
 
 Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
-|  Курс  |   USD   |   EUR   |   GBP   |
-|:------:|:-------:|:-------:|:-------:|
-| 1 BGN  | 1.79549 | 1.95583 | 2.53405 |
+|  Exchange Rate   |   USD   |   EUR   |   GBP   |
+|:----------------:|:-------:|:-------:|:-------:|
+|      1 BGN       | 1.79549 | 1.95583 | 2.53405 |
 
 **The input** is **sum for conversion**, **input currency** and **output currency**. **The output** is one number – the converted value of the above currency rates, rounded **2 digits** after the decimal point.  
 
-#### Example input and output
+#### Sample Input and Output
 
 | Input                 | Output      |
 | -------------------- | ---------- |
@@ -880,7 +880,7 @@ Write a program for **conversion of money from one currency into another**. It h
 | 12.35<br>EUR<br>GBP  | 9.53 GBP   |
 | 150.35<br>USD<br>EUR | 138.02 EUR |
  
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#11](https://judge.softuni.org/Contests/Practice/Index/1047#11).
 
@@ -889,7 +889,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that enters **a birth date** in format **dd-MM-yyyy** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
-#### Example input and output
+#### Sample Input and Output
 
 | Input       | Output      |
 | ---------- | ---------- |
@@ -903,7 +903,7 @@ Write a program that enters **a birth date** in format **dd-MM-yyyy** and calcul
 * Look for information about the data type **``datetime``** in Python and in particular look at the methods **``strptime(str, format)``**, **``timedelta(days=n)``**. With their help you can solve the problem without the need to calculate days, months and leap years.
 * **Don't print** anything additional on the console except for the wanted date!
 
-#### Testing in the Judge system
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#12](https://judge.softuni.org/Contests/Practice/Index/1047#12).
 
@@ -1028,4 +1028,4 @@ Let's implement the three functions which represent the program logic in our app
 
 It is possible that not everything will run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and to **look for solutions** to the emerging problems **
 
-If you are having trouble with the above exercises, feel free to ask in the **SoftUni forum**: https://softuni.bg/forum.
+If you are having problems with the tasks above, feel free to ask questions in the **SoftUni forum**: https://softuni.bg/forum.
