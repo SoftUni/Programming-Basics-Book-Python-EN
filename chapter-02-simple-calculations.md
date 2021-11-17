@@ -16,15 +16,15 @@ In this chapter we are going to become familiar with the following concepts and 
 </div>
 
 
-## Calculations in programming
+## Calculations in Programming
 
-We know that computers are machines which process data. All **data** is held in the computer memory (RAM memory) as **variables**. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each **variable** in Python has a **name** and **value**. Here is how to define a variable, assigning a value to it at the time of declaration:
+We know that computers are machines that process data. All **data** is held in the computer memory (RAM memory) as **variables**. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each **variable** in Python has a **name** and **value**. Here is how to define a variable, assigning a value to it at the time of declaration:
 
 ![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
 
-After processing, data is still held in variables (i.e. somewhere in the computer memory, set aside by our program).
+After processing, data is still held in variables (i.e. somewhere in the computer memory, allocated by our program).
 
-## Data types and Variables
+## Data Types and Variables
 
 In programming, each variable stores a certain **value** of a particular **type**. For example, data types can be: **number**, **letter**, **text** (string), **date**, **color**, **image**, **list** and others. Here are some examples of data types and their values:
 
@@ -35,7 +35,7 @@ In programming, each variable stores a certain **value** of a particular **type*
 
 In **Python** the data type is automatically defined by the variable's assigned value. It is not defined explicitly upon declaration of variables (as opposed to C#, Java and C++).
 
-## Printing outcomes on the console
+## Printing Results on the Console
 
 In order to print text, numbers or other data on the console, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
 
@@ -72,11 +72,11 @@ area = a * a
 print('Square area = ', area)
 ```
 
-Here is how this program would work for a square with side equal to 3:
+Here is how this program would work for a square with a side equal to 3:
 
 ![](/assets/chapter-2-1-images/00.Square-area-01.png)
 
-Try to type in an invalid number, for example "**hello**". You will recieve an **error** message during execution of the program (exception). This is normal. Later on, we will learn how to tackle these errors and how to make the user type another number.
+Try to type in an invalid number, for example "**hello**". You will recieve an **error** message during execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. 
 
 #### How does the example work?
 
