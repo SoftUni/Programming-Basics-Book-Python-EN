@@ -300,7 +300,7 @@ Write a program that reads from the console an **integer `n`** and draws a **Chr
 
 ### Input
 
-The input is read from the console - one an **integer `n`** within the range [**3 … 100**].
+The input is read from the console - one **integer `n`** within the range [**3 … 100**].
 
 ### Output
 
