@@ -223,7 +223,7 @@ We will also do the same for the rest of the defined values:
 
 ![](/assets/chapter-8-2-images/03.Flowers-02.png)
 
-Our next sub-task is to **read** properly **the input** data from the console. We will do that in an already familiar manner but this way **we combine** separate functions - one to **read** a line from the console and another to **convert** in a numeric data type: 
+Our next sub-task is to **read** properly **the input** data from the console. We will do that in an already familiar manner but this way **we combine two** separate functions - one to **read** a line from the console and another to **convert** in a numeric data type: 
 
 ![](/assets/chapter-8-2-images/03.Flowers-03.png)
 
