@@ -280,7 +280,7 @@ Before executing the code of the **`for`** loop, we will create variables where 
 
 ![](/assets/chapter-8-2-images/05.Grades-02.png)
 
-We run the **loop** and inside it, we **declare one more** variable, in which we will store the **currently** entered grade. The variable will be of the type **`float`** and on every iteration we test **for its value**. According to this value, **we increase** the number of students in the relevant group by **1**, as we should not forget to also increase the **total** amount of the grades, which we also track:
+We run the **loop** and inside it, we **declare one more** variable, in which we will store the **currently** entered grade. The variable will be of the type **`float`** and on every iteration we check **what is its value**. According to this value, **we increase** the number of students in the relevant group by **1**, as we should not forget to also increase the **total** amount of the grades, which we also track:
 
 ![](/assets/chapter-8-2-images/05.Grades-03.png)
 
