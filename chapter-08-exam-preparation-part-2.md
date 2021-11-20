@@ -28,8 +28,7 @@ Let's examine a **real exam topic**, the problems it contains and their solution
 Write a program that calculates **what is the distance passed by a car (in kilometers)**, if we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. To calculate the distance, you need to **convert the minutes into hours** \(for example 70 minutes = 1.1666 hours\).
 
 ### Input
-
- **4 arguments** are given as parameters of the function:
+Read **4 lines** from the console:
 * **The start speed in km/h** – an integer within the range [**1 … 300**].
 * **The first time in minutes** – an integer within the range [**1 … 1000**].
 * **The second time in minutes** – an integer within the range [**1 … 1000**].
