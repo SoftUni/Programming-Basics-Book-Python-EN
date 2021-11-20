@@ -189,9 +189,9 @@ The price for arranging a bouquet is always **2 lv** (BGN). Write a program that
 
 The input is read from the **console** and contains **exactly 5 arguments**:
 
-* **The number** of the puchared **chrysanthemums** – whole number inside the interval of [**0 … 200**].
-* **The number** of the puchared **roses** – whole number inside the interval of [**0 … 200**].
-* **The number** of the puchared **tullips** – whole number inside the interval of [**0 … 200**].
+* **The number** of the puchared **chrysanthemums** – integer number inside the interval of [**0 … 200**].
+* **The number** of the puchared **roses** – integer number inside the interval of [**0 … 200**].
+* **The number** of the puchared **tullips** – integer number inside the interval of [**0 … 200**].
 * **The season** – [**Spring, Summer, Autumn, Winter**].
 * **If the day is a holiday** – [**Y - yes / N - no**].
 
