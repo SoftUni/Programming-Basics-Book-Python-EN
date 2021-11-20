@@ -146,7 +146,7 @@ The result must be **formatted up to the second symbol** after the decimal point
 
 ### Hints and Guidelines
 
-The following task requires our problem to accept more input data and to perform a larger amount of calculations, even though the solution is **identical**. Accepting the input data is done **familiarly**. Pay attention that in **input** part of the description is said that all input data will be **real numbers** and for this reason we will use **`float`**.
+The following task requires our problem to accept more input data and to perform a larger amount of calculations, even though the solution is **identical**. Accepting the input data is done **familiarly**. Pay attention that in **input** part of the description is said that all input data will be **real numbers** and for this reason we will use **`float`** type.
 
 Now that we already have everything for executing the programming logic, we can move to the following part. How can we **calculate** what is the **needed** number of tiles that will be sufficient to cover the entire floor? The requirement is that tiles have a **triangular** shape, which can confuse, but practically, the task needs just **simple calculations**. We can calculate the **common part of the floor** by the formula for finding a rectangle area, as well as the **area of a single tile** using the relevant formula for the triangle area.
 
