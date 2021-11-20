@@ -67,7 +67,7 @@ Such a description may look **misleading** and incomplete at first glance, which
 On condition for **input** will be submitted **four** separate rows, for this reason we will have to call the function **`input()`** four times:
 ![](/assets/chapter-8-2-images/01.Distance-01.png)
 
-Next we have to **convert the input data** in a suitible **type** so we can do the needed computations. We choose type **`int`** because in the description of the problem is mentioned that the input data is going to be in a **determined interval**, for which this data type is enough.
+Next we have to **convert the input data** in a suitible **type** so we can do the needed computations. We choose type **`int`** because in the description of the problem is mentioned that the input data is going to be in a **determined interval**, for which this data type is enough. We perform the data **conversion** as follows:
 
 ![](/assets/chapter-8-2-images/01.Distance-02.png)
 
