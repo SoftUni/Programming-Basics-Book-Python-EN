@@ -2,7 +2,7 @@
 
 > This is work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
 
-The free book "**Programming Basics with Python**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops and functions) using the **Python**.
+The free book "**Programming Basics with Python**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops and functions) using the **Python** programming language.
 
 <a href="#"><img src="/assets/Python-Programming-Basics-Book-Cover.png" alt="Book Programming Basics with Python - Cover" class="readme-book-cover-image" /></a>
 
