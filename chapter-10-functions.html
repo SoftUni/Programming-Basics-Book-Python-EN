@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>10. Methods · GitBook</title>
+        <title>10. Methods · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -441,7 +443,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="chapter-10-functions"><a name="chapter-10-functions" class="plugin-anchor" href="#chapter-10-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 10. Functions</h1>
-<p>In this chapter the topic of <strong>functions</strong> will be introduced together with cases, in which they might be useful as well as the <strong>primary concepts</strong> when working with functions. It will be demonstrated why it is a <strong>good practice</strong> to use functions, how to <strong>define</strong> them and how to <strong>call</strong> them. The concept of a <strong>parameter</strong> and a <strong>returned value</strong> of a function as well as how we can further use the returned value from the function will be introduced. At the end of the chapter will be looked at what are the <strong>best practices</strong> when dealing with functions.</p>
+<p>In this chapter, the topic of <strong>functions</strong> will be introduced, together with cases in which they might be useful, as well as the <strong>primary concepts</strong> when working with functions. It will be demonstrated why it is a <strong>good practice</strong> to use functions, how to <strong>define</strong> them and how to <strong>call</strong> them. The concept of a <strong>parameter</strong> and a <strong>returned value</strong> of a function, as well as how we can further use the returned value from the function, will be introduced. At the end of the chapter, we&apos;ll look at what the <strong>best practices</strong> are when dealing with functions.</p>
 <h2 id="video"><a name="video" class="plugin-anchor" href="#video"><i class="fa fa-link" aria-hidden="true"></i></a>Video</h2>
 <div class="video-player">
   Watch the interactive video to this chapter here:
@@ -451,38 +453,38 @@
 
 <h2 id="what-is-a-function"><a name="what-is-a-function" class="plugin-anchor" href="#what-is-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>What is a function?</h2>
 <p>So far, we learnt that dividing our code into <strong>smaller units</strong> (functions), each of which being responsible for a specific functionality is more practical in general. Each unit is concerned with <strong>distinct functionality</strong>, in which case not only is it easier to process the problem we are facing, but also improves the <strong>debugging</strong> and <strong>readability</strong> of the code.</p>
-<p>When we think about writing code, the function in practice can be considered as <strong>encapsulated set of instructions</strong> which implement a required functionality. This set of instructions (i.e. the function) has its own structure, separated from the rest of the code. Throughout the code, we can <strong>always</strong> call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if any.   </p>
+<p>When we think about writing code, the function in practice can be considered as an <strong>encapsulated set of instructions</strong> which implement a required functionality. This set of instructions (i.e., the function) has its own structure, separated from the rest of the code. Throughout the code, we can <strong>always</strong> call the function when we need its functionality, simply by typing its name and giving appropriate arguments for its parameters, if there are any.   </p>
 <p>A function can be called as many times as we need to solve our problem. This prevents us from typing one functionality several times, which in turn reduces the risk of error if the function is changed afterwards.</p>
 <p>We will look at two types of functions &#x2013; &quot;<strong>basic</strong> functions&quot; (without parameters) and &quot;<strong>complex</strong>&quot; functions (with parameters).</p>
 <table>
 <tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
-<td>In the object-oriented programming (which is out of the scope of this book) the functions are part of higher-level objects called <b>classes</b>, where function is called <b>methods</b>. In other programming languages the functions are called <b>procedures</b>. </td>
+<td>In the object-oriented programming (which is out of the scope of this book) the functions are part of higher-level objects called <b>classes</b>, where functions are called <b>methods</b>. In other programming languages the functions are called <b>procedures</b>. </td>
 </tr>
 </table>
 
 <h3 id="basic-functions"><a name="basic-functions" class="plugin-anchor" href="#basic-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Basic functions</h3>
-<p>The <strong>basic</strong> functions are responsible for the execution of an <strong>action</strong> which <strong>contributes</strong> to the solving of a particular problem. Such an action can be printing a string on the console, performing a conditional statement check, going through loop, etc.</p>
+<p>The <strong>basic</strong> functions are responsible for the execution of an <strong>action</strong> which <strong>contributes</strong> to the solving of a particular problem. Such an action can be printing a string to the console, performing a conditional statement check, going through a loop, etc.</p>
 <p>Now, let&#x2019;s look at the following <strong>example of a basic function</strong>:</p>
 <p><img src="assets/chapter-10-images/01.Simple-function-01.png" alt=""></p>
-<p>The purpose of this function is to print a headline, which in this case is a string of dashes. Because of this, it is called <strong>&apos;print_header&apos;</strong>. The parentheses <strong>always</strong> follow the name of the function, irrespective of its name. It is important the names of our functions to describe the purpose of the function. Later in this chapter, we will look more in-depth of the naming convections regarding functions.</p>
-<p>The <strong>function declaration</strong> is always followed by a <strong>colon</strong>, which is followed by the set of instructions (an algorithm), used for solving a particular problem, described by the name of the function. This part of the code is also referred as the <strong>body</strong> of the function which contains the machine code (the instructions). It is positioned on a new line after the function&#x2019;s declaration. It is written with an indentation compared to the function-defining line. The body of the function is always indented four spaces or single Tab from the level at which the function declaration begins. This separates the body of the function as a single block of instructions. </p>
-<p>If the given snippet of code is present in a program which is to bea executed, the function will not affect the program at this stage because the function is declared but not called yet.</p>
+<p>The purpose of this function is to print a headline, which in this case is a string of dashes. Because of this, it is called <strong>&apos;print_header&apos;</strong>. The parentheses <strong>always</strong> follow the name of the function, irrespective of its name. It is important the names of our functions to describe the purpose of the function. Later in this chapter, we will learn more in-depth about the naming conventions regarding functions.</p>
+<p>The <strong>function declaration</strong> is always followed by a <strong>colon</strong>, which is followed by the set of instructions (an algorithm), used for solving a particular problem, described by the name of the function. This part of the code is also referred as the <strong>body</strong> of the function which contains the machine code (the instructions). It is positioned on a new line after the function&#x2019;s declaration. It is written with an indentation compared to the function-defining line. The body of the function is always indented four spaces, or single Tab from the level at which the function declaration begins. This separates the body of the function as a single block of instructions. </p>
+<p>If the given snippet of code is present in a program which is to be executed, the function will not affect the program at this stage, because the function is declared, but not called yet.</p>
 <h3 id="why-should-we-use-functions"><a name="why-should-we-use-functions" class="plugin-anchor" href="#why-should-we-use-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Why should we use functions?</h3>
-<p>So far, we found that the functions help with the logical differentiation of a longer code to less complicated, easier to comprehend pieces. Working with functions gives to our code advantages such as better structure and greater cohesion. </p>
-<p>The usage of functions <strong>prevents us from code repetition</strong>. The repeating code is <strong>bad</strong> practice as it heavily <strong>impedes</strong> the code&#x2019;s maintenance and leads to errors. If a single of code functionality is present in our program several times throughout the code, and we need to change something to this functionality afterwards, we need to correct same piece of code as many times as we have it in the program. The likelihood of missing one spot in the redaction of the code in this case is great, which result to an unpredictable behaviour. This is the reason why it is a good practice, if we do use a fragment of a code <strong>more than once</strong>, to define it as a <strong>separate function</strong>. </p>
-<p>The functions <strong>allow</strong> us to use a piece of <strong>code several</strong> times. Working on more and more problems, you will notice that with the use of already existing functions you will save a lot of time and effort. </p>
+<p>So far, we found that the functions help with the logical differentiation of a longer code to less complicated, easier to digest pieces. Working with functions gives to our code advantages, such as better structure and greater cohesion. </p>
+<p>The usage of functions <strong>prevents us from code repetition</strong>. The repeating code is <strong>bad</strong> practice as it heavily <strong>impedes</strong> the code&#x2019;s maintenance and leads to errors. If a single of code functionality is present in our program several times throughout the code, and we need to change something to this functionality afterwards, we need to correct the same piece of code as many times as we have it in the program. The likelihood of missing one spot in the redaction of the code in this case is high, which results in an unpredictable behaviour. This is the reason why it is a good practice, if we do use a fragment of a code <strong>more than once</strong>, to define it as a <strong>separate function</strong>. </p>
+<p>The functions <strong>allow</strong> us to use a piece of code <strong>several</strong> times. Working on more and more problems, you will notice that with the use of already existing functions you will save a lot of time and effort. </p>
 <h3 id="declaration-of-functions"><a name="declaration-of-functions" class="plugin-anchor" href="#declaration-of-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Declaration of functions</h3>
-<p><strong>Function declaration</strong> can be considered as a registration of a given functionality within a program so that this functionality can be recognize and later used in the rest of the program where necessary. With the next example we will explore the element of which a function is composed:</p>
+<p><strong>Function declaration</strong> can be considered as a registration of a given functionality within a program so that this functionality can be recognized and later used in the rest of the program where necessary. In the next example, we will explore the element of which a function is composed:</p>
 <p><img src="assets/chapter-10-images/02.Declaring-functions-02.png" alt=""></p>
 <ul>
 <li><strong>def</strong>. The key word <strong><code>def</code></strong> in Python expresses the intention to declare a new function.</li>
 <li><strong>Name of the function</strong>. The name of the function is <strong>defined by the developer</strong> and follows after the keyword <strong>def</strong>. It is important to describe the <strong>functionality</strong> which is bound to be executed by the function&#x2019;s instructions listed in its body. In our example the name of the function is <strong><code>calculate_square</code></strong> which hints us that the aim of the given problem is to calculate the squared value of a number.</li>
-<li><strong>List of parameters</strong>. It is introduced in between the parentheses which we put after the name of the function. Here we list the parameters which we want to include in the function. There might be a single parameter, several parameters or zero parameters (basic function). If we don&#x2019;t have a parameter, we leave the parentheses empty. In the function <strong><code>calculate_square</code></strong> there is only one parameter called <strong><code>num</code></strong>.</li>
-<li><strong>Colon</strong>. After the closing bracket we put colon sign which initiates the beginning of the function&#x2019;s body.</li>
-<li><strong>Implementation of function (body)</strong>. The body of the function is the place to put our algorithm (instructions) which solves the problem we deal with. The body, per se, implement the <strong>logic</strong> of the function. In the particular example we estimate the squared value of a given number which is <strong>num*num</strong>. the body is always indented and on a new line after the colon.</li>
+<li><strong>List of parameters</strong>. It is introduced in between the parentheses, which we put after the name of the function. Here we list the parameters which we want to include in the function. There might be a single parameter, several parameters or zero parameters (basic function). If we don&#x2019;t have a parameter, we leave the parentheses empty. In the function <strong><code>calculate_square</code></strong> there is only one parameter called <strong><code>num</code></strong>.</li>
+<li><strong>Colon</strong>. After the closing bracket we put a colon sign which initiates the beginning of the function&#x2019;s body.</li>
+<li><strong>Implementation of function (body)</strong>. The body of the function is the place to put our algorithm (instructions) which solves the problem we deal with. The body, per se, implements the <strong>logic</strong> of the function. In the particular example we estimate the squared value of a given number which is <strong>num*num</strong>. the body is always indented and on a new line after the colon.</li>
 </ul>
 <p>Within the definition of a function, it is important to follow this exact <strong>structure</strong> of the function&#x2019;s elements.</p>
-<p>When declaring a given variable in the body of a function, it is called local variable for the function. The scope of the variable in which it exists and can be used starts with the line on which we have defined it and spans to the last instruction, part of the function&#x2019;s body. This space of definition is called <strong>field of scope</strong> for the variable. </p>
+<p>When declaring a given variable in the body of a function, it is called a local variable for the function. The scope of the variable in which it exists and can be used starts with the line on which we have defined it and spans to the last instruction, part of the function&#x2019;s body. This space of definition is called <strong>field of scope</strong> for the variable. </p>
 <table>
 <tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>Some programming languages such as C or C++ distinguish between the <b>declaration</b> and the <b>definition</b> of a function. The <strong>declaration</strong> of a function informs the compiler or the interpreter that a function with its given name exists without imposing implementation. The <strong>definition</strong> of a function brings in the implementation of the function&#x2019;s body. Within the <strong>Python</strong> language this division into two steps does not exist, which in turn means that each function which is declared must also include some functionality (in the body).</td>
@@ -490,12 +492,12 @@
 </table>
 
 <h3 id="calling-a-function"><a name="calling-a-function" class="plugin-anchor" href="#calling-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Calling a function</h3>
-<p>Calling of the function is regarded as the <strong>beginning of the execution</strong> of the code which is in the <strong>function&#x2019;s body</strong>. This is accomplished as the name of the function is called, followed by the parentheses. If the function expects input arguments for its parameters, they must be inserted in the parentheses in the same order in which the parameters were defined in the parentheses. An example that follows:</p>
+<p>The calling of the function is regarded as the <strong>beginning of the execution</strong> of the code which is in the <strong>function&#x2019;s body</strong>. This is accomplished as the name of the function is called, followed by the parentheses. If the function expects input arguments for its parameters, they must be inserted in the parentheses in the same order in which the parameters were defined in the parentheses. An example that follows:</p>
 <p><img src="assets/chapter-10-images/03.Invoking-functions-01.png" alt=""></p>
 <p>The given function can be called plenty of times from <strong>any</strong> location in the code. It&#x2019;s important to mention that if a function in <strong>Python</strong> is defined somewhere inside the code, the program will only recognize it if it is called after its definition within the code of the program.</p>
 <p>As the calling of a function is a command by itself, we can call a function from inside another function:</p>
 <p><img src="assets/chapter-10-images/03.Invoking-functions-02.png" alt=""></p>
-<p>There is also a possibility the function to be called in<strong> its own body</strong>. This is called <strong>recursion</strong> , for which additional information can be found in <a href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F" target="_blank">Wikipedia</a> and we strongly encourage you to do your own research on the internet.</p>
+<p>There is also a possibility the function to be called in <strong>its own body</strong>. This is called <strong>recursion</strong>, for which additional information can be found in <a href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F" target="_blank">Wikipedia</a> and we strongly encourage you to do your own research on the internet.</p>
 <h3 id="example-empty-receipt"><a name="example-empty-receipt" class="plugin-anchor" href="#example-empty-receipt"><i class="fa fa-link" aria-hidden="true"></i></a>Example: empty receipt</h3>
 <p>Write a function which prints empty receipt. The function should call another three functions: function which prints the headline of the receipt, function which prints the body of the receipt and function which prints the bottom of the receipt.</p>
 <table>
@@ -539,24 +541,24 @@
 <p>First, we need to create the function which <strong>prints the header</strong> of the receipt. Its name should be short and sensible which describes the task the function will execute. For example, it can be called <strong><code>print_receipt_header</code></strong> and its body will contain the following code:</p>
 <p><img src="assets/chapter-10-images/04.Print-receipt-01.png" alt=""></p>
 <p>Similar to the first function, we will create another two functions which will print out the center part of the receipt (body) and the bottom of the receipt (footer). We will call them <strong><code>print_receipt_body</code></strong> and <strong><code>print_receipt_footer</code></strong>. </p>
-<p>Next, we will create <strong>another one function</strong> which wraps the three functions and call them one after another. Finally, we will call the function <strong><code>print_receipt</code></strong> in our program:</p>
+<p>Next, we will create <strong>another function</strong> which wraps the three functions and call them one after another. Finally, we will call the function <strong><code>print_receipt</code></strong> in our program:</p>
 <p><img src="assets/chapter-10-images/04.Print-receipt-02.png" alt=""></p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>The program which contains four functions called inside another function is ready and we can run it and test it locally after which we should send it for a quality check to the Judge platform: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#0</a>.</p>
 <h2 id="functions-with-parameters-complex-functions"><a name="functions-with-parameters-complex-functions" class="plugin-anchor" href="#functions-with-parameters-complex-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Functions with parameters (complex functions)</h2>
-<p>To solve our problem using function, often in our practice we need an <strong>additional knowledge</strong> which varies with the problem we need to solve. <strong>The parameters of a function</strong> are supplementing us with this knowledge hence the behaviour of the function depends on these parameters. </p>
+<p>To solve our problem using function, often in our practice we need an <strong>additional knowledge</strong> which varies with the problem we need to solve. <strong>The parameters of a function</strong> are supplementing us with this knowledge, hence the behaviour of the function depends on these parameters. </p>
 <h3 id="use-of-parameters-in-a-function"><a name="use-of-parameters-in-a-function" class="plugin-anchor" href="#use-of-parameters-in-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Use of parameters in a function</h3>
-<p>As we just mentioned, the parameters <strong>can be zero or as many as needed</strong>. When they are declared, commas are used to separate them from each other. The parameters can be of any type (number, string, etc.). Follows an example which demonstrates how exactly the parameters are being used in a body of a function.</p>
+<p>As we just mentioned, the parameters <strong>can be zero or as many as needed</strong>. When they are declared, commas are used to separate them from each other. The parameters can be of any type (number, string, etc.). The following is an example which demonstrates how exactly the parameters are being used in a body of a function.</p>
 <p>This is an example of <strong>definition</strong> of a function which uses a <strong>set of parameters</strong>:</p>
 <p><img src="assets/chapter-10-images/05.Function-parameters-01.png" alt=""></p>
-<p>In this example we will be using two parameters called <strong><code>start</code></strong> and <strong><code>end</code></strong>, respectively. After the definition of the function, it can be used in the program &#x2013; we <strong>call</strong> the function including <strong>arguments</strong> for our parameters:</p>
+<p>In this example, we will be using two parameters called <strong><code>start</code></strong> and <strong><code>end</code></strong>, respectively. After the definition of the function, it can be used in the program &#x2013; we <strong>call</strong> the function including <strong>arguments</strong> for our parameters:</p>
 <p><img src="assets/chapter-10-images/05.Function-parameters-02.png" alt=""></p>
-<p>In this case the numerical value of the argument is declared directly in the function (e.g. <strong><code>5</code></strong> for <strong><code>start</code></strong> and <strong><code>10</code></strong> for <strong><code>end</code></strong>).</p>
-<p>When declaring <strong>parameters</strong>, they can be of <strong>any</strong> type (integer, string etc.) and each parameter has to have a meaningful name. It&#x2019;s important to notice that when the function is called, the arguments<strong> must be put in the </strong>exact same order** as the parameters, declared in the definition of the function.</p>
-<p>Let&#x2019;s look at another example of function definition which has a few parameters, each of different type:</p>
+<p>In this case the numerical value of the argument is declared directly in the function (e.g., <strong><code>5</code></strong> for <strong><code>start</code></strong> and <strong><code>10</code></strong> for <strong><code>end</code></strong>).</p>
+<p>When declaring <strong>parameters</strong>, they can be of <strong>any</strong> type (integer, string etc.) and each parameter has to have a meaningful name. It&#x2019;s important to notice that when the function is called, the <strong>arguments</strong> must be put in the <strong>exact same order</strong> as the parameters, declared in the definition of the function.</p>
+<p>Let&#x2019;s look at another example of function definition which has a few parameters, each of a different type:</p>
 <p><img src="assets/chapter-10-images/05.Function-parameters-03.png" alt=""></p>
 <h3 id="example-integer-sign"><a name="example-integer-sign" class="plugin-anchor" href="#example-integer-sign"><i class="fa fa-link" aria-hidden="true"></i></a>Example: integer sign</h3>
-<p>Create a function which prints if the given integer is positive, negative or zero.</p>
+<p>Create a function which prints whether the given integer is positive, negative or zero.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -581,9 +583,9 @@
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
-<p>The first step is to <strong>create</strong> a function and giving it a descriptive name such as <strong><code>print_sign</code></strong>. This function will have only one parameter &#x2013; integer number which sign we want to check:</p>
+<p>The first step is to <strong>create</strong> a function and give it a descriptive name such as <strong><code>print_sign</code></strong>. This function will have only one parameter &#x2013; integer number, which sign we want to check:</p>
 <p><img src="assets/chapter-10-images/06.Print-sign-01.png" alt=""></p>
-<p>Next, we want to <strong>implement</strong> the logic which will check whether the input value is positive, negative or zero. Looking at the examples we can conclude there are three cases to consider &#x2013; the integer is bigger than zero, the integer is equal to zero and the integer is less than zero which means we need to check <strong>three conditions</strong> in the function&#x2019;s body. </p>
+<p>Next, we want to <strong>implement</strong> the logic which will check whether the input value is positive, negative or zero. Looking at the examples we can conclude there are three cases to consider &#x2013; the integer is bigger than zero, the integer is equal to zero and the integer is less than zero, which means we need to check <strong>three conditions</strong> in the function&#x2019;s body. </p>
 <p>Then we need to read the input value and call our function:</p>
 <p><img src="assets/chapter-10-images/06.Print-sign-02.png" alt=""></p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
@@ -619,17 +621,17 @@
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
 <p>Before creating a function, which prints numbers on a single line with initial and final value, we must read the input from the console. Next, we choose a meaningful name for our function which shortly describes its purpose. This might be <strong><code>print_line</code></strong> and we can now build it:</p>
 <p><img src="assets/chapter-10-images/08.Print-triangle-01.png" alt=""></p>
-<p>Looking at the problems regarding console drawing we remember that it is a good practice to <strong>divide the completion of the figure</strong> in several steps. We can simplify the problem by dividing the triangle to three sections &#x2013; upper, mid, and lower segment.</p>
+<p>Looking at the problems regarding console drawing, we remember that it is a good practice to <strong>divide the completion of the figure</strong> in several steps. We can simplify the problem by dividing the triangle into three sections &#x2013; upper, mid, and lower segment.</p>
 <p>Our next step will be to print the <strong>upper segment</strong> of the triangle&#x2019;s body:</p>
 <p><img src="assets/chapter-10-images/08.Print-triangle-02.png" alt=""></p>
 <p>After that we need to print the <strong>center line</strong>:</p>
 <p><img src="assets/chapter-10-images/08.Print-triangle-03.png" alt=""></p>
-<p>Finally, we print the <strong>bottom segment</strong> of the triangle as this time the step of the for loop is negative one:</p>
+<p>Finally, we print the <strong>bottom segment</strong> of the triangle, as this time the step of the for loop is negative one:</p>
 <p><img src="assets/chapter-10-images/08.Print-triangle-04.png" alt=""></p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#2</a>.</p>
 <h3 id="example-drawing-filled-square"><a name="example-drawing-filled-square" class="plugin-anchor" href="#example-drawing-filled-square"><i class="fa fa-link" aria-hidden="true"></i></a>Example: drawing filled square</h3>
-<p>Draw filled square in the console with a side length N as it is shown in the examples.</p>
+<p>Draw filled square to the console with a side length N as it is shown in the examples.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -650,32 +652,32 @@
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
-<p>The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Let don&#x2019;t forget that we need to choose <strong>descriptive name</strong> and define as a <strong>parameter</strong> the length of the side of the square:</p>
+<p>The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Let&apos;s not forget that we need to choose a <strong>descriptive name</strong> and define the length of the side of the square as a <strong>parameter</strong>:</p>
 <p><img src="assets/chapter-10-images/09.Draw-filled-square-01.png" alt=""></p>
-<p>Next step is to create a function which draws on the console the lines in the middle. Again, we think of a descriptive enough name, say <strong><code>print_middle_row</code></strong>:</p>
+<p>Next step is to create a function which draws to the console the lines in the middle. Again, we think of a descriptive enough name, say <strong><code>print_middle_row</code></strong>:</p>
 <p><img src="assets/chapter-10-images/09.Draw-filled-square-02.png" alt=""></p>
 <p>Finally, we call the created functions to draw the square:</p>
 <p><img src="assets/chapter-10-images/09.Draw-filled-square-03.png" alt=""></p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#3</a>.</p>
 <h2 id="returned-value-by-function"><a name="returned-value-by-function" class="plugin-anchor" href="#returned-value-by-function"><i class="fa fa-link" aria-hidden="true"></i></a>Returned value by function</h2>
-<p>Up until now we were looking at functions that execute a particular action such as printing some text, value, or string of characters on the console. Other than such functions, there also can be functions which <strong>return</strong> a value as a <strong>result</strong> of their execution &#x2013; for example this could the multiplication of two numbers. It will be these functions which will be the topic of our discussion in the next few lines.</p>
+<p>Up until now we were looking at functions that execute a particular action such as printing some text, value, or a string of characters on the console. Other than such functions, there also can be functions which <strong>return</strong> a value as a <strong>result</strong> of their execution &#x2013; for example, this could the multiplication of two numbers. It will be these functions which will be the topic of our discussion in the next few lines.</p>
 <h3 id="the-return-keyword"><a name="the-return-keyword" class="plugin-anchor" href="#the-return-keyword"><i class="fa fa-link" aria-hidden="true"></i></a>The <strong><code>return</code></strong> keyword</h3>
 <p>To return a value which is the result of the function&#x2019;s execution we use the return keyword. It must be <strong>used in the body</strong> of the function and indicates to the program to <strong>stop execution</strong> of the function and <strong>returns value</strong> to the caller of the function which is written as an argument after the keyword &#x2018;return&#x2019;. In the example that follows, there is a function which reads two names from the console, concatenates them, and returns them as a result:</p>
 <p><img src="assets/chapter-10-images/10.Return-operator-01.png" alt=""></p>
-<p>The <strong><code>return</code></strong> keyword can be used in functions which do not return anything (the <strong><code>return</code></strong> keyword must be last in the end of the function). The presence of the keyword allows the function to stop its execution without returning a value. In this case, the use of the keyword is helpful only to terminate the execution of the function. It is also possible the <strong><code>return</code></strong> keyword to be used in more than one places in the function&#x2019;s body.</p>
-<p>In the following example we have a function which compares two numbers and returns as a result either <strong><code>-1</code></strong>, <strong><code>0</code></strong> or <strong><code>1</code></strong>, depending on whether the first argument is smaller, equal, or bigger than the second argument of the function. The function uses the <strong><code>return</code></strong> keyword on three different instances to return different value depending on the arguments fed to the function.</p>
+<p>The <strong><code>return</code></strong> keyword can be used in functions which do not return anything (the <strong><code>return</code></strong> keyword must be last in the end of the function). The presence of the keyword allows the function to stop its execution without returning a value. In this case, the use of the keyword is helpful only to terminate the execution of the function. It is also possible for the <strong><code>return</code></strong> keyword to be used in more than one place in the function&#x2019;s body.</p>
+<p>In the following example, we have a function which compares two numbers and returns as a result either <strong><code>-1</code></strong>, <strong><code>0</code></strong> or <strong><code>1</code></strong>, depending on whether the first argument is smaller, equal, or bigger than the second argument of the function. The function uses the <strong><code>return</code></strong> keyword on three different instances to return different values depending on the arguments fed to the function.</p>
 <p><img src="assets/chapter-10-images/10.Return-operator-02.png" alt=""></p>
 <p>It is important to notice that the returned value by the function can be of a <strong>different type</strong> compared to the argument&#x2019;s type - string, integer, floating point number etc.</p>
 <h4 id="the-code-after-return-is-unreachable"><a name="the-code-after-return-is-unreachable" class="plugin-anchor" href="#the-code-after-return-is-unreachable"><i class="fa fa-link" aria-hidden="true"></i></a>The code after <code>return</code> is unreachable</h4>
 <p>After the <strong><code>return</code></strong> keyword in a given function, the execution of the function is terminated, and the execution of the program continues where the function was last called. If there are other instructions written after the <strong><code>return</code></strong> keyword, they will not be executed. Some IDEs (including <strong>PyCharm</strong>) will inform you with the following warning:</p>
 <p><img src="assets/chapter-10-images/10.Return-operator-03.png" alt=""></p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px">
-</td><td>In the programming it is incompatible to place two <code>return</code> keywords one after another as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
+</td><td>In programming it is meaningless to place two <code>return</code> keywords one after another, as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
 </table>
 
 <h3 id="use-case-of-a-returned-value-from-a-function"><a name="use-case-of-a-returned-value-from-a-function" class="plugin-anchor" href="#use-case-of-a-returned-value-from-a-function"><i class="fa fa-link" aria-hidden="true"></i></a>Use case of a returned value from a function</h3>
-<p>After a function is executed and value is returned by its execution, this value can be used in a <strong>several</strong> ways. For once, we can <strong>assign this value to a variable</strong>:</p>
+<p>After a function is executed and the value is returned by its execution, this value can be used in a <strong>several</strong> ways. For once, we can <strong>assign this value to a variable</strong>:</p>
 <p><img src="assets/chapter-10-images/10.Return-operator-04.png" alt=""></p>
 <p>Another way to accommodate the returned value is to use it directly in an <strong>expression</strong>:</p>
 <p><img src="assets/chapter-10-images/10.Return-operator-05.png" alt=""></p>
@@ -706,7 +708,7 @@
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#4</a>.</p>
 <h3 id="example-power-of-number"><a name="example-power-of-number" class="plugin-anchor" href="#example-power-of-number"><i class="fa fa-link" aria-hidden="true"></i></a>Example: power of number</h3>
-<p>First, we need to read the input values from the console. Next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a float type number.</p>
+<p>First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments as its parameters (a number and its power), and returns as a result a float type number.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -727,20 +729,20 @@
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
-<p>First, we need to read the input values from the console. Next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a <strong><code>float</code></strong> type number:</p>
+<p>First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a <strong><code>float</code></strong> type number:</p>
 <p><img src="assets/chapter-10-images/12.Number-power-01.png" alt=""></p>
 <p>After we have done the necessary calculation, we must call the defined function and print the result.</p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#5</a>.</p>
 <h3 id="functions-returning-several-values"><a name="functions-returning-several-values" class="plugin-anchor" href="#functions-returning-several-values"><i class="fa fa-link" aria-hidden="true"></i></a>Functions, returning several values</h3>
-<p>Up to this point we looked at functions which <strong>do not return any value</strong> and functions which <strong>return only one value</strong>. In practice, it is often sensible for a function to return <strong>more than one values</strong>.</p>
-<p>To achieve this in <strong>Python</strong>, after the <strong><code>return</code></strong> keyword we list the values which are bound to be returned, separated by a comma. The following function accept as parameters two integers (<strong><code>x</code></strong> and <strong><code>y</code></strong>) and <strong>returns two values</strong> - the integer and the remainder of their division:</p>
+<p>Up to this point we looked at functions which <strong>do not return any value</strong> and functions which <strong>return only one value</strong>. In practice, it is often sensible for a function to return <strong>more than one value</strong>.</p>
+<p>To achieve this in <strong>Python</strong>, after the <strong><code>return</code></strong> keyword we list the values which are bound to be returned, separated by a comma. The following function accepts as parameters two integers (<strong><code>x</code></strong> and <strong><code>y</code></strong>) and <strong>returns two values</strong> - the integer and the remainder of their division:</p>
 <p><img src="assets/chapter-10-images/13.Return-multiple-values-01.png" alt=""></p>
-<p>Calling the function is works as with functions which does not return value or return a single value. To use the returned values, we can <strong>assign</strong> them to variables whose names are separated by commas as it demonstrated with <strong><code>a</code></strong> and <strong><code>b</code></strong>. After the execution of this example, <strong><code>a</code></strong> will hold for a value <strong><code>3</code></strong> while <strong><code>b</code></strong> will hold for value <strong><code>4</code></strong>.</p>
+<p>Calling the function works as with functions which do not return a value or return a single value. To use the returned values, we can <strong>assign</strong> them to variables whose names are separated by commas as it demonstrated with <strong><code>a</code></strong> and <strong><code>b</code></strong>. After the execution of this example, <strong><code>a</code></strong> will hold the value <strong><code>3</code></strong> while <strong><code>b</code></strong> will hold the value <strong><code>4</code></strong>.</p>
 <h2 id="variations-of-functions"><a name="variations-of-functions" class="plugin-anchor" href="#variations-of-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Variations of functions</h2>
 <p>In many programming languages <strong>identically</strong> named functions can be used throughout the code using only different parameters which is considered as <strong>function overloading</strong>. Python does not support this functionality, but a similar effect can be achieved with the unconditional parameters introduced earlier. </p>
 <h3 id="functions-signature"><a name="functions-signature" class="plugin-anchor" href="#functions-signature"><i class="fa fa-link" aria-hidden="true"></i></a>Function&#x2019;s signature</h3>
-<p>In programming the way, a function is <strong>recognized</strong>, is by looking at <strong>both</strong> its fundamental components - <strong>name</strong> and <strong>list</strong> of parameters, declared during the definition of the function. These components define its <strong>specification</strong> so that is also called <strong>signature</strong> of the function:</p>
+<p>In programming, the way a function is <strong>recognized</strong> is by looking at <strong>both</strong> its fundamental components - <strong>name</strong> and <strong>list</strong> of parameters, declared during the definition of the function. These components define its <strong>specification</strong>, and that&apos;s also known as <strong>signature</strong> of the function:</p>
 <p><img src="assets/chapter-10-images/14.Overloading-01.png" alt=""></p>
 <p>In this example the signature of the function is its name <strong><code>print_name</code></strong> as well as its parameter <strong><code>name</code></strong>.</p>
 <p>If in a program we have functions with <strong>identical names</strong> but <strong>different parameters</strong>, we are looking at function overloading. This functionality is not implemented in Python. </p>
@@ -750,22 +752,22 @@
 <p>As we already noticed, we can call this function using different combination of arguments which recall closely matched variants of the function:</p>
 <p><img src="assets/chapter-10-images/07.Optional-parameters-02.png" alt=""></p>
 <h2 id="nested-functions-local-functions"><a name="nested-functions-local-functions" class="plugin-anchor" href="#nested-functions-local-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Nested functions (local functions)</h2>
-<p>Let&#x2019;s consider the following function which calculates area of a circle:</p>
+<p>Let&#x2019;s consider the following function which calculates the area of a circle:</p>
 <p><img src="assets/chapter-10-images/15.Nested-functions-01.png" alt=""></p>
 <h3 id="what-is-a-local-variable"><a name="what-is-a-local-variable" class="plugin-anchor" href="#what-is-a-local-variable"><i class="fa fa-link" aria-hidden="true"></i></a>What is a local variable?</h3>
 <p>We see that in this piece of code, in the function <strong><code>circle_circumference(&#x2026;)</code></strong> there is <strong>another</strong> function called <strong><code>circle_diameter(&#x2026;)</code></strong>. This function is also known as <strong>nested function</strong> or <strong>local function</strong>. The nested functions can be declared in every other function. They are only visible and can be called in the scope of the function in which they are declared. In the last example the function <strong><code>circle_diameter(&#x2026;)</code></strong> can be called only inside the body of the function <strong><code>circle_circumference(&#x2026;)</code></strong> rather than outside its body. </p>
 <h3 id="why-using-local-functions"><a name="why-using-local-functions" class="plugin-anchor" href="#why-using-local-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Why using local functions?</h3>
-<p>With practice we will find that when we write a program often it appears that we need to use our function <strong>only once</strong>. Another often faced scenarios is when the function of interest gets too long. We already mentioned that when a function uses too many lines of code, the code gets hard to maintain. In these cases, we can be assisted by the <strong>nested functions</strong>. They present us with the possibility to declare a function within a function, which nested function can be used even once. This contributes to the function&#x2019;s code as it makes it <strong>cleaner</strong> and <strong>improves its readability</strong>. This in turn improves the correction time if a bug is spotted later and minimizes the probability of error when changes are made on the code. </p>
+<p>With practice we will find that when we write a program, often it appears that we need to use our function <strong>only once</strong>. Other often faced scenarios are when the function of interest gets too long. We already mentioned that when a function uses too many lines of code, the code gets hard to maintain. In these cases, we can be assisted by the <strong>nested functions</strong>. They present us with the possibility to declare a function within a function, where a nested function can be used independently. This contributes to the function&#x2019;s code as it makes it <strong>cleaner</strong> and <strong>improves its readability</strong>. This in turn improves the correction time if a bug is spotted later and minimizes the probability of error when changes are made to the code. </p>
 <h3 id="declaration-of-nested-function"><a name="declaration-of-nested-function" class="plugin-anchor" href="#declaration-of-nested-function"><i class="fa fa-link" aria-hidden="true"></i></a>Declaration of nested function</h3>
 <p>Let&#x2019;s again have a look at the example from before:</p>
 <p><img src="assets/chapter-10-images/15.Nested-functions-01.png" alt=""></p>
-<p>In this example the function <strong><code>cirlce_diameter(&#x2026;)</code></strong> is nested as it is declared inside the body of the function <strong><code>circle_circumference(&#x2026;)</code></strong>. This means that the function <strong><code>cirlce_diameter(&#x2026;)</code></strong> can be used only inside the function <strong><code>circle_circumference(&#x2026;)</code></strong> but not outside it. If we try to call the function <strong><code>cirlce_diameter(&#x2026;)</code></strong> outside the function <strong><code>circle_circumference(&#x2026;)</code></strong> this will cause an error during the execution of the program.</p>
-<p>Nested functions do have access to all variables which are declared inside the parenting function. In the discussed example <strong><code>pi</code></strong> can be used in the body of the function <strong><code>cirlce_diameter(&#x2026;)</code></strong>. This asset of the nested functions can make them a preferred choice to solve a particular problem. This functionality saves writing time and decrease the amount of used code which would otherwise be used to declare parameters and variables, already used in the parenting functions.</p>
+<p>In this example the function <strong><code>cirlce_diameter(&#x2026;)</code></strong> is nested as it is declared inside the body of the function <strong><code>circle_circumference(&#x2026;)</code></strong>. This means that the function <strong><code>cirlce_diameter(&#x2026;)</code></strong> can be used only inside the function <strong><code>circle_circumference(&#x2026;)</code></strong> but not outside of it. If we try to call the function <strong><code>cirlce_diameter(&#x2026;)</code></strong> outside the function <strong><code>circle_circumference(&#x2026;)</code></strong> this will cause an error during the execution of the program.</p>
+<p>Nested functions have access to all variables which are declared inside the parenting function. In the discussed example <strong><code>pi</code></strong> can be used in the body of the function <strong><code>cirlce_diameter(&#x2026;)</code></strong>. This asset of the nested functions can make them a preferred choice to solve a particular problem. This functionality saves writing time and decrease the amount of used code which would otherwise be used to declare parameters and variables, already used in the parenting functions.</p>
 <h2 id="classic-approaches-in-the-use-of-functions"><a name="classic-approaches-in-the-use-of-functions" class="plugin-anchor" href="#classic-approaches-in-the-use-of-functions"><i class="fa fa-link" aria-hidden="true"></i></a>Classic approaches in the use of functions</h2>
-<p>In this section of the chapter, it will be looked at some <strong>classic approaches</strong> regarding the functions used in a program such as naming conventions, appearance and structure of the function&#x2019;s code.</p>
+<p>In this section of the chapter, we&apos;ll look at some <strong>classic approaches</strong> regarding the functions used in a program such as naming conventions, appearance and structure of the function&#x2019;s code.</p>
 <h3 id="naming-conventions"><a name="naming-conventions" class="plugin-anchor" href="#naming-conventions"><i class="fa fa-link" aria-hidden="true"></i></a>Naming conventions</h3>
-<p>When naming a given function it is beneficial to use <strong>meaningful names</strong>. As each function is <strong>in charge</strong> of some functionality of the problem, it must be taken into account <strong>what task it will execute</strong> inside the program which makes it a good practice to <strong>name the function after the task it executes</strong>.</p>
-<p>In <strong>Python</strong> the convention suggest that the functions must be written in lower cases as the words used to name the function must be separated by an <strong>underscore (<code>_</code>)</strong> if more than one. A good practice is if function&#x2019;s name constitutes of a verb or a pair of verb and noun, respectively. </p>
+<p>When naming a given function, it is beneficial to use <strong>meaningful names</strong>. As each function is <strong>in charge</strong> of some functionality of the problem, it must be taken into account <strong>what task it will execute</strong> inside the program which makes it a good practice to <strong>name the function after the task it executes</strong>.</p>
+<p>In <strong>Python</strong>, the convention suggests that the functions must be written in lower cases, as well as that the words used to name the function must be separated by an <strong>underscore (<code>_</code>)</strong> (if there&apos;s more than one word). A good practice is that the function&#x2019;s name consists of a verb, or a pair of a verb and a noun, respectively. </p>
 <p>Some examples of <strong>appropriate</strong> naming of functions:</p>
 <ul>
 <li><strong><code>find_student</code></strong></li>
@@ -780,9 +782,9 @@
 <li><strong><code>SampleMethod</code></strong></li>
 <li><strong><code>DIRTYHack</code></strong></li>
 </ul>
-<p>If it cannot be thought of an appropriate name, there is a good possibility that the function is responsible for more than one functionality or lacks clearly defined goal. In such a case, it is better to think of how the function can be subdivided into smaller functions.</p>
+<p>If you can&apos;t think of an appropriate name, there is a good possibility that the function is responsible for more than one functionality or lacks a clearly defined goal. In such cases, it is better to think of how the function can be subdivided into smaller functions.</p>
 <h3 id="naming-of-the-functions-parameters"><a name="naming-of-the-functions-parameters" class="plugin-anchor" href="#naming-of-the-functions-parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Naming of the function&#x2019;s parameters</h3>
-<p>In the naming of the <strong>parameters</strong> of the functions, the same rules apply as for the naming of functions. The differences are that it is nice to name a parameter using noun or a pair of adjective and noun, respectively. It should be noted that it is a good practice the name of the parameter to hint about its type.</p>
+<p>In the naming of the <strong>parameters</strong> of the functions, the same rules apply as for the naming of functions. The differences are that it is nice to name a parameter using a noun or a pair of an adjective and a noun, respectively. It should be noted that it is a good practice for the name of the parameter to hint at its type.</p>
 <p>Some examples of <strong>appropriate</strong> naming of parameters:</p>
 <ul>
 <li><strong><code>first_name</code></strong></li>
@@ -802,15 +804,15 @@
 <li><strong><code>lastName</code></strong></li>
 </ul>
 <h3 id="more-good-practices-in-working-with-functions"><a name="more-good-practices-in-working-with-functions" class="plugin-anchor" href="#more-good-practices-in-working-with-functions"><i class="fa fa-link" aria-hidden="true"></i></a>More good practices in working with functions</h3>
-<p>Let&#x2019;s again recapture how a function should execute <strong>only one</strong> particular <strong>task</strong> in the program. If this cannot be achieved, next thing to do is to look at how to <strong>separate</strong> the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to <strong>avoid</strong> function&#x2019;s name to become so long, it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to <strong>divide</strong> the function&#x2019;s tasks into a few shorter functions within the function as it is demonstrated:</p>
+<p>Let&#x2019;s again recall how a function should execute <strong>only one</strong> particular <strong>task</strong> in the program. If this cannot be achieved, the next thing to do is to look at how to <strong>separate</strong> the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to <strong>avoid</strong> making the function&#x2019;s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to <strong>divide</strong> the function&#x2019;s tasks into a few shorter functions within the function as demonstrated:</p>
 <p><img src="assets/chapter-10-images/04.Print-receipt-02.png" alt=""></p>
 <h3 id="structure-and-formatting-of-the-code"><a name="structure-and-formatting-of-the-code" class="plugin-anchor" href="#structure-and-formatting-of-the-code"><i class="fa fa-link" aria-hidden="true"></i></a>Structure and formatting of the code</h3>
-<p>In writing functions caution must be applied to use the correct <strong>indentation</strong> (one Tab into the function). In <strong>Python</strong> incompatible <strong>indentation</strong> leads to a direct error and does not allow the interpreter to execute the code.</p>
+<p>In writing functions, caution must be applied to use the correct <strong>indentation</strong> (one Tab into the function). In <strong>Python</strong>, incompatible <strong>indentation</strong> leads to a direct error and does not allow the interpreter to execute the code.</p>
 <p>An example of a <strong>correctly</strong> formatted Python code:</p>
 <p><img src="assets/chapter-10-images/16.Good-practice-01.png" alt=""></p>
 <p>An example of a <strong>incorrectly</strong> formatted Python code (for this reason the last line is underlined in red):</p>
 <p><img src="assets/chapter-10-images/16.Good-practice-02.png" alt=""></p>
-<p>Another good rule of thumb is to leave <strong>one empty line</strong> between the loops and the conditional statements as well as <strong>two empty lines</strong> after the definition of a function. Also, try to <strong>avoid long and complex expressions</strong>. Practice shows that these practices improve the readability of the code and save time to the developer.</p>
+<p>Another good rule of thumb is to leave <strong>one empty line</strong> between the loops and the conditional statements as well as <strong>two empty lines</strong> after the definition of a function. Also, try to <strong>avoid long and complex expressions</strong>. Practice shows that these practices improve the readability of the code and save the developer&apos;s time.</p>
 <h2 id="what-did-we-learn-from-this-chapter"><a name="what-did-we-learn-from-this-chapter" class="plugin-anchor" href="#what-did-we-learn-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What did we learn from this chapter?</h2>
 <p>In this chapter were introduced the fundamental concepts of working with functions, and:</p>
 <ul>
@@ -818,12 +820,12 @@
 <li>Explored the <strong>structure</strong> of a function and how to <strong>declare</strong> and <strong>call</strong> it. </li>
 <li>Looked at examples of <strong>complex</strong> functions and their implementation in a program.</li>
 <li>Discovered what is a <strong>signature</strong> and <strong>returned value</strong> as well as the context of the <strong><code>return</code></strong> keyword.</li>
-<li>Got acquainted with the <strong>good practices</strong> in working with functions &#x2013; how to name them, their parameters, how to format the code, etc.</li>
+<li>Got acquainted with the <strong>good practices</strong> in working with functions &#x2013; how to name them and their parameters, how to format the code, etc.</li>
 </ul>
 <h2 id="exercises"><a name="exercises" class="plugin-anchor" href="#exercises"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises</h2>
-<p>To consolidate our knowledge of working with functions, a few problems will be solved as an exercise. Each exercise will ask for a function with specific functionality. Then the function must be called with arguments being passed to the predefined parameters read as inputs from the console. Inputs and outputs beneath each exercise are given as an example.</p>
+<p>To consolidate our knowledge about working with functions, a few problems will be solved as an exercise. Each exercise will ask for a function with specific functionality. Then the function must be called, with arguments being passed to the predefined parameters read as inputs from the console. Inputs and outputs beneath each exercise are given as an example.</p>
 <h3 id="exercise-hello-name"><a name="exercise-hello-name" class="plugin-anchor" href="#exercise-hello-name"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: &quot;Hello, Name!&quot;</h3>
-<p>Write a function which receives as a parameter name and prints on the console &quot;<em>Hello, \<name\>!</name\></em>&quot;.</p>
+<p>Write a function which receives a name as a parameter and prints to the console &quot;<em>Hello, \<name\>!</name\></em>&quot;.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -840,7 +842,7 @@
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
-<p>Define function <strong><code>print_name(name)</code></strong> and implement its functionality. Then take as an input argument a string variable (name) and call the function, passing the read name.</p>
+<p>Define function <strong><code>print_name(name)</code></strong> and implement its functionality. Then take a string variable (name) as an input argument and call the function, passing the read name.</p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#7</a>.</p>
 <h3 id="exercise-smaller-number"><a name="exercise-smaller-number" class="plugin-anchor" href="#exercise-smaller-number"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Smaller number</h3>
@@ -864,14 +866,14 @@
 </tr>
 </tbody>
 </table>
-<h4 id="&#x43D;&#x430;&#x441;&#x43E;&#x43A;&#x438;-&#x438;-&#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x438;"><a name="&#x43D;&#x430;&#x441;&#x43E;&#x43A;&#x438;-&#x438;-&#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x438;" class="plugin-anchor" href="#&#x43D;&#x430;&#x441;&#x43E;&#x43A;&#x438;-&#x438;-&#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x438;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x41D;&#x430;&#x441;&#x43E;&#x43A;&#x438; &#x438; &#x43F;&#x43E;&#x434;&#x441;&#x43A;&#x430;&#x437;&#x43A;&#x438;</h4>
-<p>Define a function <strong><code>get_min(a, b)</code></strong> and implement its functionality after which call it as it&#x2019;s shown. To find the smaller of three numbers, first process one pair and the result can be combined with the third number such as:</p>
+<h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
+<p>Define a function <strong><code>get_min(a, b)</code></strong> and implement its functionality, after which call it as it&#x2019;s shown. To find the smallest of three numbers, first process one pair, and the result can be combined with the third number such as:</p>
 <pre><code class="lang-python">   minimum = get_min(get_min(number1, number2), number3)
 </code></pre>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#8</a>.</p>
 <h3 id="exercise-string-repetition"><a name="exercise-string-repetition" class="plugin-anchor" href="#exercise-string-repetition"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: String repetition</h3>
-<p>Write a function called <strong><code>repeat_string(str, count)</code></strong>, which receives one argument of type string, another argument <strong>N</strong> of type integer and returns the string argument <strong>N</strong> times. The result of the function must be printed on the console.</p>
+<p>Write a function called <strong><code>repeat_string(str, count)</code></strong>, which receives one argument of type string, another argument <strong>N</strong> of type integer and returns the string argument <strong>N</strong> times. The result of the function must be printed to the console.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -892,7 +894,7 @@
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
-<p>Finish the function as the input argument of type string must be concatenated to the current output of the loop:</p>
+<p>Finish the function, as the input argument of type string must be concatenated to the current output of the loop:</p>
 <p><img src="assets/chapter-10-images/17.Repeated-string-01.png" alt=""></p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#9</a>.</p>
@@ -922,11 +924,11 @@
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
-<p>To execute the algorithm, it will be used <strong><code>while</code></strong> loop which is running until the number become zero. At each iteration of the <strong><code>while</code></strong> loop, it will be checked if the current index of the digit matches with the index passed to the function. If it matches, the digit of the number (<strong><code>number % 10</code></strong>) with this index will be returned from the function. If not, then another digit will be removed from the current number (<strong><code>number = number / 10</code></strong>). Cautious must be taken which is checked as the index starts from 1 from right to left. When the current index matches with the given one, the returned value of the function will be the digit from the number with the matched index.</p>
+<p>To execute the algorithm, we&apos;ll use a <strong><code>while</code></strong> loop which is running until the number becomes zero. At each iteration of the <strong><code>while</code></strong> loop, we&apos;ll check if the current index of the digit matches with the index passed to the function. If it matches, the digit of the number (<strong><code>number % 10</code></strong>) with this index will be returned from the function. If not, then another digit will be removed from the current number (<strong><code>number = number / 10</code></strong>). Caution must be taken when checking, as the index starts from 1 from right to left. When the current index matches with the given one, the returned value of the function will be the digit from the number with the matched index.</p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#10</a>.</p>
 <h3 id="exercise-number-to-a-numeral-system"><a name="exercise-number-to-a-numeral-system" class="plugin-anchor" href="#exercise-number-to-a-numeral-system"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Number to a numeral system</h3>
-<p>Write a function called <strong><code>integer_to_base(number, to_base)</code></strong>, which receives for parameters an integer and a number which indicates the base of the system. The function returns the input number converted to the required numeral system. Next, the result of the function must be printed on the console. The integer number will always be of base 10 while the required base will be between 2 and 10.</p>
+<p>Write a function called <strong><code>integer_to_base(number, to_base)</code></strong>, which receives as parameters an integer, and a number which indicates the base of the system. The function returns the input number converted to the required numeral system. Next, the result of the function must be printed to the console. The integer will always be of base 10 while the required base will be between 2 and 10.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -963,14 +965,14 @@
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#11</a>.</p>
 <h3 id="exercise-notifications"><a name="exercise-notifications" class="plugin-anchor" href="#exercise-notifications"><i class="fa fa-link" aria-hidden="true"></i></a>Exercise: Notifications</h3>
-<p>Write a program reads an integer <strong>N</strong> and enters <strong>N</strong> <strong>messages</strong> each of which can be of multiple lines. For each of the messages&#x2019; type will be used different number of parameters. Each message begins with <strong><code>message_type</code></strong>, <strong><code>success</code></strong>, <strong><code>warning</code></strong> or <strong><code>error</code></strong>:</p>
+<p>Write a program that reads an integer <strong>N</strong> and enters <strong>N</strong> <strong>messages</strong>, each of which can be of multiple lines. For each of the messages&#x2019; type will be used a different number of parameters. Each message begins with <strong><code>message_type</code></strong>, <strong><code>success</code></strong>, <strong><code>warning</code></strong> or <strong><code>error</code></strong>:</p>
 <ul>
-<li>When <strong><code>message_type</code></strong> is <strong><code>success</code></strong> read <strong><code>operation</code></strong> + <strong><code>message</code></strong> (each on a new line).</li>
-<li>When <strong><code>message_type</code></strong> is <strong><code>warning</code></strong> read only <strong><code>message</code></strong>.</li>
-<li>When <strong><code>message_type</code></strong> is <strong><code>error</code></strong> read <strong><code>operation</code></strong> + <strong><code>message</code></strong> + <strong><code>errorCode</code></strong> (each on a new line).</li>
+<li>When <strong><code>message_type</code></strong> is <strong><code>success</code></strong>, read <strong><code>operation</code></strong> + <strong><code>message</code></strong> (each on a new line).</li>
+<li>When <strong><code>message_type</code></strong> is <strong><code>warning</code></strong>, read only <strong><code>message</code></strong>.</li>
+<li>When <strong><code>message_type</code></strong> is <strong><code>error</code></strong>, read <strong><code>operation</code></strong> + <strong><code>message</code></strong> + <strong><code>errorCode</code></strong> (each on a new line).</li>
 </ul>
-<p>Each <strong>read message</strong> must be printed in the console, formatted depending on its <strong><code>message_type</code></strong>. After the first line from each output, the next line must be filled with <strong>as many equal signs as characters (including spaces)</strong> are used on the <strong>first line</strong> of each printed message. After the last line of each message, an <strong>empty line</strong> must be included before the beginning of the next message (look at the given output).</p>
-<p>In the exercise have to be used four functions: <strong><code>show_success_message()</code></strong>, <strong><code>show_warning_message()</code></strong>, <strong><code>show_error_message()</code></strong> and <strong><code>read_and_process_message()</code></strong>:</p>
+<p>Each <strong>read message</strong> must be printed to the console, formatted depending on its <strong><code>message_type</code></strong>. After the first line from each output, the next line must be filled with <strong>as many equal signs as characters (including spaces)</strong> are used on the <strong>first line</strong> of each printed message. After the last line of each message, an <strong>empty line</strong> must be included before the beginning of the next message (look at the given output).</p>
+<p>In the exercise, you have to use four functions: <strong><code>show_success_message()</code></strong>, <strong><code>show_warning_message()</code></strong>, <strong><code>show_error_message()</code></strong> and <strong><code>read_and_process_message()</code></strong>:</p>
 <p><img src="assets/chapter-10-images/19.Notifications-01.png" alt=""></p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -982,18 +984,18 @@
 </thead>
 <tbody>
 <tr>
-<td>4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has not email assigned</td>
-<td><code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has not email assigned.</code><br><code>=========================================</code></td>
+<td>4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has no email assigned</td>
+<td><code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has no email assigned.</code><br><code>=========================================</code></td>
 </tr>
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
 <p>Define and implement the four given functions.</p>
-<p>In the function <strong><code>read_and_process_message()</code></strong> the type of the message is read from the console and depending on the type of the message, the remaining elements are also read which can appear on either one, two or three consecutive lines depending on the type of the message. Next, the required method is called to execute the printing of the message.</p>
+<p>In the function <strong><code>read_and_process_message()</code></strong> the type of the message is read from the console and depending on the type of the message, the remaining elements are also read, which can appear on either one, two or three consecutive lines, depending on the type of the message. Next, the required method is called to execute the printing of the message.</p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#12</a>.</p>
 <h3 id="numbers-to-words"><a name="numbers-to-words" class="plugin-anchor" href="#numbers-to-words"><i class="fa fa-link" aria-hidden="true"></i></a>Numbers to words</h3>
-<p>Write a function <strong><code>letterize(number)</code></strong>, which reads integer and translates it into words using the following requirements:</p>
+<p>Write a function <strong><code>letterize(number)</code></strong>, which reads an integer and translates it into words using the following requirements:</p>
 <ul>
 <li>Print each word on the same line (including minus sign if applicable) as shown in the output.</li>
 <li>If the number is bigger than <strong>999</strong>, the output must be &quot;<strong>too large</strong>&quot;.</li>
@@ -1040,9 +1042,9 @@
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
 <p>We can first print <strong>the hundreds</strong> as a text &#x2013; <strong><code>(the number / 100) % 10</code></strong>, after that <strong>the tens</strong> &#x2013; <strong><code>(the number / 10) % 10</code></strong> and at the end <strong>the ones</strong> &#x2013; <strong><code>(the number % 10)</code></strong>.</p>
-<p>The first special case is when the number is exactly <strong>rounded to 100</strong> (e.g. 100, 200, 300 etc...). In this case we print &quot;one-hundred&quot;, &quot;two-hundred&quot;, &quot;three-hundred&quot; etc.</p>
-<p>The second special case is when the number formed by the last two digits of the input number is <strong>less than 10</strong> (e.g. 101, 305, 609, etc). In this case, we print &quot;one-hundred and one&quot;, &quot;three-hundred and five&quot;, &quot;six-hundred and nine&quot;, etc.</p>
-<p>The third special case is when the number formed by the last two digits of the input number is <strong>larger than 10 and smaller than 20</strong> (e.g. 111, 814, 919, etc.). In this case, we print &quot;one-hundred and eleven&quot;, &quot;eight-hundred and fourteen&quot;, &quot;nine-hundred and nineteen&quot;, etc.</p>
+<p>The first special case is when the number is exactly <strong>rounded to 100</strong> (e.g., 100, 200, 300 etc...). In this case we print &quot;one-hundred&quot;, &quot;two-hundred&quot;, &quot;three-hundred&quot; etc.</p>
+<p>The second special case is when the number formed by the last two digits of the input number is <strong>less than 10</strong> (e.g., 101, 305, 609, etc). In this case, we print &quot;one-hundred and one&quot;, &quot;three-hundred and five&quot;, &quot;six-hundred and nine&quot;, etc.</p>
+<p>The third special case is when the number formed by the last two digits of the input number is <strong>larger than 10 and smaller than 20</strong> (e.g., 111, 814, 919, etc.). In this case, we print &quot;one-hundred and eleven&quot;, &quot;eight-hundred and fourteen&quot;, &quot;nine-hundred and nineteen&quot;, etc.</p>
 <h4 id="testing-in-judge-platform"><a name="testing-in-judge-platform" class="plugin-anchor" href="#testing-in-judge-platform"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge platform</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#13" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#13</a>.</p>
 <h3 id="problem-string-encryption"><a name="problem-string-encryption" class="plugin-anchor" href="#problem-string-encryption"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: String Encryption</h3>
@@ -1053,13 +1055,13 @@
 <li>ASCII code of the letter + the last digit of the ASCII code of the letter.</li>
 </ul>
 </li>
-<li>After that at the end of the string, which represents the result, you concatenate the character which matches the following condition:<ul>
+<li>After that, at the end of the string, which represents the result, you concatenate the character which matches the following condition:<ul>
 <li>ASCII code of the letter - the first digit of the ASCII code of the letter.</li>
 </ul>
 </li>
 <li>The function should return the encrypted string.</li>
 </ul>
-<p>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x440;:</p>
+<p>Example:</p>
 <ul>
 <li>j &#x2192; <strong>p16i</strong><ul>
 <li>ASCII code of <strong>j</strong> is <strong>106</strong> &#x2192; First digit - <strong>1</strong>, last digit - <strong>6</strong>.</li>
@@ -1105,10 +1107,10 @@
 </tbody>
 </table>
 <h4 id="hints"><a name="hints" class="plugin-anchor" href="#hints"><i class="fa fa-link" aria-hidden="true"></i></a>Hints</h4>
-<p>Our variable <strong><code>result</code></strong> in which we will save the value of the result we will give the initial value <strong>&quot;&quot;</strong> (empty string). We must recur a loop <strong><code>n</code></strong> times so that in each iteration we will add the encrypted symbol to the result string.</p>
-<p>To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve &quot;N-th number&quot; problem, while to create the string we will proceed as in &quot;Number to a numeral system&quot;</p>
-<h4 id="&#x442;&#x435;&#x441;&#x442;&#x432;&#x430;&#x43D;&#x435;-&#x432;-judge-&#x441;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x430;&#x442;&#x430;"><a name="&#x442;&#x435;&#x441;&#x442;&#x432;&#x430;&#x43D;&#x435;-&#x432;-judge-&#x441;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x430;&#x442;&#x430;" class="plugin-anchor" href="#&#x442;&#x435;&#x441;&#x442;&#x432;&#x430;&#x43D;&#x435;-&#x432;-judge-&#x441;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x430;&#x442;&#x430;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x422;&#x435;&#x441;&#x442;&#x432;&#x430;&#x43D;&#x435; &#x432; Judge &#x441;&#x438;&#x441;&#x442;&#x435;&#x43C;&#x430;&#x442;&#x430;</h4>
-<p>&#x422;&#x435;&#x441;&#x442;&#x432;&#x430;&#x439;&#x442;&#x435; &#x440;&#x435;&#x448;&#x435;&#x43D;&#x438;&#x435;&#x442;&#x43E; &#x441;&#x438; &#x442;&#x443;&#x43A;: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#14" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#14</a>.</p>
+<p>Our variable <strong><code>result</code></strong>, in which we will save the value of the result, we will give the initial value <strong>&quot;&quot;</strong> (empty string). We must run a loop <strong><code>n</code></strong> times, so that in each iteration we can add the encrypted symbol to the result string.</p>
+<p>To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve &quot;N-th number&quot; problem, while to create the string, we will proceed as in &quot;Number to a numeral system&quot;</p>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1063#14" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1063#14</a>.</p>
 
                                 
                                 </section>
@@ -1152,7 +1154,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10. Methods","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-10-functions.md","mtime":"2021-11-01T10:00:27.995Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10. Methods","level":"1.20","depth":1,"next":{"title":"11. Tricks and Hacks","level":"1.21","depth":1,"path":"chapter-11-tricks-and-hacks.md","ref":"chapter-11-tricks-and-hacks.md","articles":[]},"previous":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"path":"chapter-09-problems-for-champions-part-2.md","ref":"chapter-09-problems-for-champions-part-2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-10-functions.md","mtime":"2021-11-21T18:49:05.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1175,6 +1177,10 @@
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         

@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>8.2. Practical Exam Preparation – part II · GitBook</title>
+        <title>8.2. Practical Exam Preparation – part II · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -463,7 +465,7 @@
 <h2 id="problem-distance"><a name="problem-distance" class="plugin-anchor" href="#problem-distance"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Distance</h2>
 <p>Write a program that calculates <strong>what is the distance passed by a car (in kilometers)</strong>, if we know <strong>the initial speed</strong> (km/h), <strong>the initial time frame</strong> in minutes, then the <strong>speed is increased by 10%</strong>, <strong>the second time frame</strong>, then the <strong>speed is decreased by 5%</strong>, and the <strong>time until the end</strong> of the trip. To calculate the distance, you need to <strong>convert the minutes into hours</strong> (for example 70 minutes = 1.1666 hours).</p>
 <h3 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h3>
-<p> <strong>4 arguments</strong> are given as parameters of the function:</p>
+<p>Read <strong>4 lines</strong> from the console:</p>
 <ul>
 <li><strong>The start speed in km/h</strong> &#x2013; an integer within the range [<strong>1 &#x2026; 300</strong>].</li>
 <li><strong>The first time in minutes</strong> &#x2013; an integer within the range [<strong>1 &#x2026; 1000</strong>].</li>
@@ -521,7 +523,7 @@
 </ul>
 <p>On condition for <strong>input</strong> will be submitted <strong>four</strong> separate rows, for this reason we will have to call the function <strong><code>input()</code></strong> four times:
 <img src="assets/chapter-8-2-images/01.Distance-01.png" alt=""></p>
-<p>Next we have to <strong>convert the input data</strong> in a suitible <strong>type</strong> so we can do the needed computations. We choose type <strong><code>int</code></strong> because in the description of the problem is mentioned that the input data is going to be in a <strong>determined interval</strong>, for which this data type is enough.</p>
+<p>Next we have to <strong>convert the input data</strong> in a suitible <strong>type</strong> so we can do the needed computations. We choose type <strong><code>int</code></strong> because in the description of the problem is mentioned that the input data is going to be in a <strong>determined interval</strong>, for which this data type is enough. We perform the data <strong>conversion</strong> as follows:</p>
 <p><img src="assets/chapter-8-2-images/01.Distance-02.png" alt=""></p>
 <p>In this way, we solved successfully the <strong>first sub-problem</strong> - receiving the input data.</p>
 <p>We initially <strong>store</strong> one <strong>variable</strong> that will be used multiple times. This centralization approach gives us <strong>flexibility</strong> and the <strong>possibility</strong> to <strong>modify</strong> the final result of the program with minimum effort. In case we need to change the value, we must do it in <strong>only one place in the code</strong>, which saves us time and effort:</p>
@@ -609,7 +611,7 @@ The following must be printed on the console as a <strong>single line</strong>:<
 </tbody>
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
-<p>The following task requires our problem to accept more input data and to perform a larger amount of calculations, even though the solution is <strong>identical</strong>. Accepting the input data is done <strong>familiarly</strong>. Pay attention that in <strong>input</strong> part of the description is said that all input data will be <strong>real numbers</strong> and for this reason we will use <strong><code>float</code></strong>.</p>
+<p>The following task requires our problem to accept more input data and to perform a larger amount of calculations, even though the solution is <strong>identical</strong>. Accepting the input data is done <strong>familiarly</strong>. Pay attention that in <strong>input</strong> part of the description is said that all input data will be <strong>real numbers</strong> and for this reason we will use <strong><code>float</code></strong> type.</p>
 <p>Now that we already have everything for executing the programming logic, we can move to the following part. How can we <strong>calculate</strong> what is the <strong>needed</strong> number of tiles that will be sufficient to cover the entire floor? The requirement is that tiles have a <strong>triangular</strong> shape, which can confuse, but practically, the task needs just <strong>simple calculations</strong>. We can calculate the <strong>common part of the floor</strong> by the formula for finding a rectangle area, as well as the <strong>area of a single tile</strong> using the relevant formula for the triangle area.</p>
 <p>To calculate the <strong>number of tiles</strong> that are needed, <strong>we divide the floor area by the area of a single tile</strong> (we should not forget to add the 5 additional tiles, that were mentioned in the requirements).</p>
 <table>
@@ -655,9 +657,9 @@ The following must be printed on the console as a <strong>single line</strong>:<
 <h3 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h3>
 <p>The input is read from the <strong>console</strong> and contains <strong>exactly 5 arguments</strong>:</p>
 <ul>
-<li><strong>The number</strong> of the puchared <strong>chrysanthemums</strong> &#x2013; whole number inside the interval of [<strong>0 &#x2026; 200</strong>].</li>
-<li><strong>The number</strong> of the puchared <strong>roses</strong> &#x2013; whole number inside the interval of [<strong>0 &#x2026; 200</strong>].</li>
-<li><strong>The number</strong> of the puchared <strong>tullips</strong> &#x2013; whole number inside the interval of [<strong>0 &#x2026; 200</strong>].</li>
+<li><strong>The number</strong> of the puchared <strong>chrysanthemums</strong> &#x2013; integer number inside the interval of [<strong>0 &#x2026; 200</strong>].</li>
+<li><strong>The number</strong> of the puchared <strong>roses</strong> &#x2013; integer number inside the interval of [<strong>0 &#x2026; 200</strong>].</li>
+<li><strong>The number</strong> of the puchared <strong>tullips</strong> &#x2013; integer number inside the interval of [<strong>0 &#x2026; 200</strong>].</li>
 <li><strong>The season</strong> &#x2013; [<strong>Spring, Summer, Autumn, Winter</strong>].</li>
 <li><strong>If the day is a holiday</strong> &#x2013; [<strong>Y - yes / N - no</strong>].</li>
 </ul>
@@ -715,7 +717,7 @@ The following must be printed on the console as a <strong>single line</strong>:<
 <p><img src="assets/chapter-8-2-images/03.Flowers-01.png" alt=""></p>
 <p>We will also do the same for the rest of the defined values:</p>
 <p><img src="assets/chapter-8-2-images/03.Flowers-02.png" alt=""></p>
-<p>Our next sub-task is to <strong>read</strong> properly <strong>the input</strong> data from the console. We will do that in an already familiar manner but this way <strong>we combine</strong> separate functions - one to <strong>read</strong> a line from the console and another to <strong>convert</strong> in a numeric data type: </p>
+<p>Our next sub-task is to <strong>read</strong> properly <strong>the input</strong> data from the console. We will do that in an already familiar manner but this way <strong>we combine two</strong> separate functions - one to <strong>read</strong> a line from the console and another to <strong>convert</strong> in a numeric data type: </p>
 <p><img src="assets/chapter-8-2-images/03.Flowers-03.png" alt=""></p>
 <p>Let&apos;s think of the most appropriate way to <strong>structure</strong> our programming logic. By the requirements, it becomes clear that the path of the program is divided mainly into two parts: <strong>spring / summer</strong> and <strong>autumn / winter</strong>. We can do the separation by a conditional statement, by storing variables in advance for the <strong>prices</strong> of the individual flowers, as well as for the <strong>final result</strong>:</p>
 <p><img src="assets/chapter-8-2-images/03.Flowers-04.png" alt=""></p>
@@ -776,7 +778,7 @@ The following must be printed on the console as a <strong>single line</strong>:<
 <p><img src="assets/chapter-8-2-images/05.Grades-01.png" alt=""></p>
 <p>Before executing the code of the <strong><code>for</code></strong> loop, we will create variables where we will store <strong>the number of students</strong> for each group: poor results (up to 2.99), results from 3 to 3.99, from 4 to 4.99 and grades above 5. We will also need one more variable, where we will store <strong>the sum of all grades</strong>, via which we will calculate the average grade of all students:</p>
 <p><img src="assets/chapter-8-2-images/05.Grades-02.png" alt=""></p>
-<p>We run the <strong>loop</strong> and inside it, we <strong>declare one more</strong> variable, in which we will store the <strong>currently</strong> entered grade. The variable will be of the type <strong><code>float</code></strong> and on every iteration we test <strong>for its value</strong>. According to this value, <strong>we increase</strong> the number of students in the relevant group by <strong>1</strong>, as we should not forget to also increase the <strong>total</strong> amount of the grades, which we also track:</p>
+<p>We run the <strong>loop</strong> and inside it, we <strong>declare one more</strong> variable, in which we will store the <strong>currently</strong> entered grade. The variable will be of the type <strong><code>float</code></strong> and on every iteration we check <strong>what is its value</strong>. According to this value, <strong>we increase</strong> the number of students in the relevant group by <strong>1</strong>, as we should not forget to also increase the <strong>total</strong> amount of the grades, which we also track:</p>
 <p><img src="assets/chapter-8-2-images/05.Grades-03.png" alt=""></p>
 <p>We can calculate what <strong>percentage</strong> is taken by a particular <strong>group of students</strong> from the total number by <strong>multiplying the number of students</strong> in the relevant group by <strong>100</strong> and then dividing this by the <strong>total number of students</strong>. </p>
 <p><strong>The final result</strong> is formed in a well-known way <strong>up to the second symbol</strong> after the decimal point.</p>
@@ -785,7 +787,7 @@ The following must be printed on the console as a <strong>single line</strong>:<
 <h2 id="problem-christmas-hat"><a name="problem-christmas-hat" class="plugin-anchor" href="#problem-christmas-hat"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Christmas Hat</h2>
 <p>Write a program that reads from the console an <strong>integer <code>n</code></strong> and draws a <strong>Christmas hat</strong> with a width of <strong>4 * <code>n</code> + 1 columns</strong> and a height of <strong>2 * <code>n</code> + 5 rows</strong>, as in the examples below.</p>
 <h3 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h3>
-<p>The input is read from the console - one an <strong>integer <code>n</code></strong> within the range [<strong>3 &#x2026; 100</strong>].</p>
+<p>The input is read from the console - one <strong>integer <code>n</code></strong> within the range [<strong>3 &#x2026; 100</strong>].</p>
 <h3 id="output"><a name="output" class="plugin-anchor" href="#output"><i class="fa fa-link" aria-hidden="true"></i></a>Output</h3>
 <p>Print on the console a <strong>Christmas hat</strong>, exactly like in the examples.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
@@ -949,7 +951,7 @@ The following must be printed on the console as a <strong>single line</strong>:<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8.2. Practical Exam Preparation – part II","level":"1.17","depth":1,"next":{"title":"9.1. Problems for Champions – Part I","level":"1.18","depth":1,"path":"chapter-09-problems-for-champions.md","ref":"chapter-09-problems-for-champions.md","articles":[]},"previous":{"title":"8.1. Practical Exam Preparation – part I","level":"1.16","depth":1,"path":"chapter-08-exam-preparation.md","ref":"chapter-08-exam-preparation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-08-exam-preparation-part-2.md","mtime":"2021-11-01T10:00:27.995Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8.2. Practical Exam Preparation – part II","level":"1.17","depth":1,"next":{"title":"9.1. Problems for Champions – Part I","level":"1.18","depth":1,"path":"chapter-09-problems-for-champions.md","ref":"chapter-09-problems-for-champions.md","articles":[]},"previous":{"title":"8.1. Practical Exam Preparation – part I","level":"1.16","depth":1,"path":"chapter-08-exam-preparation.md","ref":"chapter-08-exam-preparation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-08-exam-preparation-part-2.md","mtime":"2021-11-21T18:49:05.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -972,6 +974,10 @@ The following must be printed on the console as a <strong>single line</strong>:<
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         

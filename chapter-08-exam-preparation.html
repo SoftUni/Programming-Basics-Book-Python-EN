@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>8.1. Practical Exam Preparation – part I · GitBook</title>
+        <title>8.1. Practical Exam Preparation – part I · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -444,7 +446,9 @@
 <p>In <strong>the present chapter</strong>, we will examine a few <strong>problems</strong> with a level of <strong>difficulty</strong> that can be expected in <strong>the problems</strong> of the practical <strong>exam</strong> in &#x201C;Programming Basics&#x201D;. We will <strong>review</strong> and <strong>practice</strong> all the knowledge that was gained from this book and through the &quot;Programming Basics&quot; course.</p>
 <h2 id="video"><a name="video" class="plugin-anchor" href="#video"><i class="fa fa-link" aria-hidden="true"></i></a>Video</h2>
 <div class="video-player">
-  Watch a video tutorial on this chapter here: <a target="_blank" https:="" www.youtube.com="" watch?v="OYuT5_j1OVE." <="" div="">
+  Watch a video tutorial on this chapter here: <a target="_blank" href="https://www.youtube.com/watch?v=OYuT5_j1OVE">
+  https://www.youtube.com/watch?v=OYuT5_j1OVE</a>.
+</div>
 
 <h2 id="the-programming-basics-practical-exam"><a name="the-programming-basics-practical-exam" class="plugin-anchor" href="#the-programming-basics-practical-exam"><i class="fa fa-link" aria-hidden="true"></i></a>The &quot;Programming Basics&quot; Practical Exam</h2>
 <p>The course <strong>&quot;Programing Basics&quot;</strong> finishes with a <strong>practical exam</strong>. There are <strong>6</strong> problems included, and you will have <strong>4 hours</strong> to solve them. <strong>Each</strong> of the exam problems will <strong>cover</strong> one of the studied <strong>topics</strong> during the course. Problem topics are as follows:</p>
@@ -460,7 +464,7 @@
 <p><strong>All exams and homework</strong> are automatically <strong>tested</strong> through the online <strong>Judge system</strong>: <a href="https://judge.softuni.org" target="_blank">https://judge.softuni.org</a>. For <strong>each</strong> of the problems, there are <strong>visible</strong> (zero points) tests that help you understand what is expected of the problem and fix your mistakes, as well as <strong>competition</strong> tests that are <strong>hidden</strong> and check if your solution is working properly. In the <strong>Judge</strong> system, you can log in with your <strong>softuni.bg account</strong>.</p>
 <p><strong>How</strong> does the testing in the <strong>Judge</strong> system work? <strong>You upload</strong> the source code and from the menu below you choose to compile as a <strong>Python</strong> program. The program is being <strong>tested</strong> with a series of tests, giving <strong>points</strong> for each <strong>successful</strong> test.</p>
 <h2 id="problems-with-simple-calculations"><a name="problems-with-simple-calculations" class="plugin-anchor" href="#problems-with-simple-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Problems with Simple Calculations</h2>
-<p><strong>The first</strong>  problem of the &quot;Programming Basics&quot; Practical Exam covers <strong>simple calculations without checks and loops</strong>. Here are a few examples:</p>
+<p><strong>The first</strong> problem of the &quot;Programming Basics&quot; Practical Exam covers <strong>simple calculations without checks and loops</strong>. Here are a few examples:</p>
 <h3 id="problem-2d-triangle-area"><a name="problem-2d-triangle-area" class="plugin-anchor" href="#problem-2d-triangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: 2D Triangle Area</h3>
 <table>
    <tr>
@@ -520,9 +524,9 @@
 </tbody>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>It is extremely important in these types of tasks, in which some coordinates are given, to pay attention to the <strong>order</strong> in which they are submitted, as well as to correctly understand which of the coordinates we will use and in what way.  In this case, the input is in order <strong>x1, y1, x2, y2, x3, y3</strong>. If we do not follow this sequence, the solution becomes wrong. First, we write the code that reads the input data:</p>
+<p>It is extremely important in these types of tasks, in which some coordinates are given, to pay attention to the <strong>order</strong> in which they are submitted, as well as to correctly understand which of the coordinates we will use and in what way. In this case, the input is in order <strong>x1, y1, x2, y2, x3, y3</strong>. If we do not follow this sequence, the solution becomes wrong. First, we write the code that reads the input data:</p>
 <p><img src="assets/chapter-8-1-images/01.Triangle-area-03.png" alt=""></p>
-<p>We have to calculate <strong>the side</strong> and <strong>the height</strong> of the triangle. From the examples and the condition <strong><code>y2 = y3</code></strong> we notice that one <strong>side</strong> is always parallel to the horizontal axis. It means that its <strong>length</strong> is equal to the length of the segment between its coordinates <strong><code>x2</code> and <code>x3</code></strong>,  which is equal to the difference between the larger and the smaller coordinates. Similarly, we can calculate <strong>the height</strong>. It will always be equal to the difference between <strong><code>y1</code> and <code>y2</code></strong>(or <strong><code>y3</code></strong>,  as they are equal). Since we do not know if <strong><code>x2</code></strong> is greater than <strong><code>x3</code></strong>, or <strong><code>y1</code></strong> will be below or above the triangle side, we will use <strong>the absolute values</strong> of the difference to always get positive numbers because one segment cannot have a negative length.</p>
+<p>We have to calculate <strong>the side</strong> and <strong>the height</strong> of the triangle. From the examples and the condition <strong><code>y2 = y3</code></strong> we notice that one <strong>side</strong> is always parallel to the horizontal axis. It means that its <strong>length</strong> is equal to the length of the segment between its coordinates <strong><code>x2</code> and <code>x3</code></strong>, which is equal to the difference between the larger and the smaller coordinates. Similarly, we can calculate <strong>the height</strong>. It will always be equal to the difference between <strong><code>y1</code> and <code>y2</code></strong>(or <strong><code>y3</code></strong>, as they are equal). Since we do not know if <strong><code>x2</code></strong> is greater than <strong><code>x3</code></strong>, or <strong><code>y1</code></strong> will be below or above the triangle side, we will use <strong>the absolute values</strong> of the difference to always get positive numbers because one segment cannot have a negative length.</p>
 <p><img src="assets/chapter-8-1-images/01.Triangle-area-04.png" alt=""></p>
 <p>We will use the formula familiar to us from school for finding the <strong>area of a triangle</strong> to calculate the area.</p>
 <p><img src="assets/chapter-8-1-images/01.Triangle-area-05.png" alt=""></p>
@@ -555,7 +559,7 @@
 <tr>
 <td>120<br>2<br>30</td>
 <td>2</td>
-<td>We have <strong>2</strong> workers, each transporting <strong>30</strong> bricks per course. In total, workers are transporting <strong>60</strong>  bricks per course. To transport <strong>120</strong> bricks, exactly <strong>2</strong> courses are needed.</td>
+<td>We have <strong>2</strong> workers, each transporting <strong>30</strong> bricks per course. In total, workers are transporting <strong>60</strong> bricks per course. To transport <strong>120</strong> bricks, exactly <strong>2</strong> courses are needed.</td>
 </tr>
 </tbody>
 </table>
@@ -596,7 +600,7 @@
 <p><img src="assets/chapter-8-1-images/02.Bricks-01.png" alt=""></p>
 <p>We calculate how many <strong>bricks</strong> the workers transport in a single course:</p>
 <p><img src="assets/chapter-8-1-images/02.Bricks-02.png" alt=""></p>
-<p>By dividing the total number of <strong>bricks transported for 1 course</strong>, we will obtain the number of <strong>courses</strong> needed to carry them. We will use the <strong><code>math.ceil (&#x2026;)</code></strong> function to round the result up. <strong>Remember</strong> to add <strong><code>import math</code></strong> at the beginning of the working file so that the <strong><code>math.ceil (&#x2026;)</code></strong> function can work. When the bricks can be transferred with <strong>an exact number of courses</strong>, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be <strong>the number of exact courses</strong> but with a decimal fraction.  The decimal part will be rounded up and we will get the required <strong>1 course</strong> for the remaining bricks.</p>
+<p>By dividing the total number of <strong>bricks transported for 1 course</strong>, we will obtain the number of <strong>courses</strong> needed to carry them. We will use the <strong><code>math.ceil (&#x2026;)</code></strong> function to round the result up. <strong>Remember</strong> to add <strong><code>import math</code></strong> at the beginning of the working file so that the <strong><code>math.ceil (&#x2026;)</code></strong> function can work. When the bricks can be transferred with <strong>an exact number of courses</strong>, the division will return a whole number and there will be nothing to round. Accordingly, if not, the result of the division will be <strong>the number of exact courses</strong> but with a decimal fraction. The decimal part will be rounded up and we will get the required <strong>1 course</strong> for the remaining bricks.</p>
 <p><img src="assets/chapter-8-1-images/02.Bricks-03.png" alt=""></p>
 <p>In the end, we print the result on the console:</p>
 <p><img src="assets/chapter-8-1-images/02.Bricks-04.png" alt=""></p>
@@ -605,7 +609,7 @@
 <h2 id="problems-with-simple-condition"><a name="problems-with-simple-condition" class="plugin-anchor" href="#problems-with-simple-condition"><i class="fa fa-link" aria-hidden="true"></i></a>Problems with Simple Condition</h2>
 <p><strong>The second</strong> problem of the &quot;Programming Basics&quot; Practical Exam covers <strong>conditional statements and simple calculations</strong>. Here are a few examples:</p>
 <h3 id="problem-point-on-a-segment"><a name="problem-point-on-a-segment" class="plugin-anchor" href="#problem-point-on-a-segment"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Point on a Segment</h3>
-<p>On a horizontal line <strong>a horizontal segment</strong> is placed, set with the <strong>x</strong> coordinates at both ends: <strong>first</strong> and <strong>second</strong>. <strong>A point</strong> is located <strong>on</strong> the same horizontal line and is set with its <strong>x coordinate</strong>. Write a program that checks whether the point is <strong>inside or outside of the segment</strong> and calculates <strong>the distance to the nearest end</strong> of the segment.</p>
+<p>On a horizontal line, <strong>a horizontal segment</strong> is placed, set with the <strong>x</strong> coordinates at both ends: <strong>first</strong> and <strong>second</strong>. <strong>A point</strong> is located <strong>on</strong> the same horizontal line and is set with its <strong>x coordinate</strong>. Write a program that checks whether the point is <strong>inside or outside of the segment</strong> and calculates <strong>the distance to the nearest end</strong> of the segment.</p>
 <h4 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h4>
 <p>From the console <strong>3 integers</strong> are read (one per line):</p>
 <ul>
@@ -670,9 +674,9 @@
 </tbody>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>First we read the input: </p>
+<p>First, we read the input: </p>
 <p><img src="assets/chapter-8-1-images/03.Point-on-segment-04.png" alt=""></p>
-<p>Since we do not know which <strong>point</strong>  is on the left and which is on the right, we will create two variables to mark this. Since <strong>the left point</strong> is always the one with the smaller <strong>x coordinate</strong>, we will use the <strong><code>min(&#x2026;)</code></strong> function to find it. Accordingly, <strong>the right point</strong> is always the one with a larger <strong>x coordinate</strong> and we will use the <strong><code>max(&#x2026;)</code></strong> function. We will also find the distance from <strong>the point x</strong> to <strong>the two points</strong>. Since we do not know their position relative to each other, we will use the <strong><code>abs(&#x2026;)</code></strong> function to get a positive result: </p>
+<p>Since we do not know which <strong>point</strong> is on the left and which is on the right, we will create two variables to mark this. Since <strong>the left point</strong> is always the one with the smaller <strong>x coordinate</strong>, we will use the <strong><code>min(&#x2026;)</code></strong> function to find it. Accordingly, <strong>the right point</strong> is always the one with a larger <strong>x coordinate</strong> and we will use the <strong><code>max(&#x2026;)</code></strong> function. We will also find the distance from <strong>the point x</strong> to <strong>the two points</strong>. Since we do not know their position relative to each other, we will use the <strong><code>abs(&#x2026;)</code></strong> function to get a positive result: </p>
 <p><img src="assets/chapter-8-1-images/03.Point-on-segment-05.png" alt=""></p>
 <p>The shorter of the two <strong>distances</strong> we will find by using <strong><code>min(&#x2026;)</code></strong>:</p>
 <p><img src="assets/chapter-8-1-images/03.Point-on-segment-06.png" alt=""></p>
@@ -686,7 +690,7 @@
 <p>Write a program that checks if a point (with coordinates <strong>x</strong> and <strong>y</strong>) is <strong>inside</strong> or <strong>outside</strong> of the given figure:</p>
 <p><img src="assets/chapter-8-1-images/04.Point-in-figure-01.png" alt=""></p>
 <h4 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h4>
-<p>From the console are read <strong>two integers</strong> (one per line): <strong>x</strong> &#x438; <strong>y</strong>.</p>
+<p>From the console are read <strong>two integers</strong> (one per line): <strong>x</strong> and <strong>y</strong>.</p>
 <p>All inputs are integers in the range <strong>[-1000 &#x2026; 1000]</strong>.</p>
 <h4 id="output"><a name="output" class="plugin-anchor" href="#output"><i class="fa fa-link" aria-hidden="true"></i></a>Output</h4>
 <p>Print on the console &quot;<strong>in</strong>&quot; or &quot;<strong>out</strong>&quot; &#x2013; whether the point is <strong>inside</strong> or <strong>outside</strong> the figure (the outline is inside).</p>
@@ -731,12 +735,12 @@
 <p>To find out if <strong>the point</strong> is inside of the figure, we will divide <strong>the figure</strong> into 2 rectangles:</p>
 <p><img src="assets/chapter-8-1-images/04.Point-in-figure-02.png" alt="">
 <img src="assets/chapter-8-1-images/04.Point-in-figure-03.png" alt=""></p>
-<p>A sufficient condition is the <strong>point</strong> to be located in one of them to be in the <strong>figure</strong>. </p>
+<p>A sufficient condition is the <strong>point</strong> to be located in one of them and be in the <strong>figure</strong>. </p>
 <p>We read the input from the console:</p>
 <p><img src="assets/chapter-8-1-images/04.Point-in-figure-04.png" alt=""></p>
 <p>We will initialize two variables that will mark whether <strong>the point</strong> is in one of the rectangles:</p>
 <p><img src="assets/chapter-8-1-images/04.Point-in-figure-05.png" alt=""></p>
-<p>When printing the message, we will check whether any of the variables has accepted a value of <strong><code>True</code></strong>. It&apos;s enough <strong>only one</strong> of them to be <strong><code>True</code></strong>  so that the point is in the figure.</p>
+<p>When printing the message, we will check whether any of the variables has accepted a value of <strong><code>True</code></strong>. It&apos;s enough <strong>only one</strong> of them to be <strong><code>True</code></strong> so that the point is in the figure.</p>
 <p><img src="assets/chapter-8-1-images/04.Point-in-figure-06.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1059#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1059#3</a>.</p>
@@ -747,8 +751,8 @@
 <h4 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h4>
 <p>The input is read from the console and consists of two lines:</p>
 <ul>
-<li>On the first line there is an integer <strong>d</strong> in the interval [<strong>1&#x2026; 31</strong>] - day. The number of the day does not exceed the number of days in the respective month (e.g. 28 for February).</li>
-<li>On the second line there is an integer <strong>m</strong> in the interval [<strong>1&#x2026; 12</strong>] - month. Month 1 is January, month 2 is February,&#x2026;, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04). </li>
+<li>On the first line, there is an integer <strong>d</strong> in the interval [<strong>1&#x2026; 31</strong>] - day. The number of the day does not exceed the number of days in the respective month (e.g. 28 for February).</li>
+<li>On the second line, there is an integer <strong>m</strong> in the interval [<strong>1&#x2026; 12</strong>] - month. Month 1 is January, month 2 is February,&#x2026;, month 12 is December. The month may contain a leading zero (e.g. April may be written as 4 or 04). </li>
 </ul>
 <h4 id="output"><a name="output" class="plugin-anchor" href="#output"><i class="fa fa-link" aria-hidden="true"></i></a>Output</h4>
 <p>Print a single line containing the date after 5 days in the format <strong>day.month</strong> on the console. The month must be a two-digit number with a leading zero, if necessary. The day must be written without a leading zero.</p>
@@ -798,7 +802,7 @@
 <p><img src="assets/chapter-8-1-images/05.Date-after-5-days-03.png" alt=""></p>
 <p>We check if <strong>the day</strong> has exceeded the number of days in <strong>the month</strong>. If so, we must deduct the days of the month from the obtained day to calculate which day of the next month our day corresponds to:</p>
 <p><img src="assets/chapter-8-1-images/05.Date-after-5-days-04.png" alt=""></p>
-<p>After we have passed to <strong>the next month</strong>,  this should be noted by increasing the initial one by 1. We need to check if it has become greater than 12 and if it has, to adjust it. Because we cannot skip more than <strong>one month</strong> when we increase by 5 days, the following check is enough:</p>
+<p>After we have passed to <strong>the next month</strong>, this should be noted by increasing the initial one by 1. We need to check if it has become greater than 12 and if it has, to adjust it. Because we cannot skip more than <strong>one month</strong> when we increase by 5 days, the following check is enough:</p>
 <p><img src="assets/chapter-8-1-images/05.Date-after-5-days-05.png" alt=""></p>
 <p>The only thing that remains is to print the result on the console. It is important to <strong>format the output</strong> correctly to display the leading zero in the first 9 months. This is done by adding a <strong>formatted string</strong> <strong><code>%02d</code></strong> for the second element: </p>
 <p><img src="assets/chapter-8-1-images/05.Date-after-5-days-06.png" alt=""></p>
@@ -807,10 +811,10 @@
 <h3 id="problem-sums-of-three-numbers"><a name="problem-sums-of-three-numbers" class="plugin-anchor" href="#problem-sums-of-three-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sums of Three Numbers</h3>
 <p>There are <strong>3 integers</strong> given. Write a program that checks if <strong>the sum of two of the numbers is equal to the third one</strong>. For example, if the numbers are <strong>3</strong>, <strong>5</strong>, and <strong>2</strong>, the sum of two of the numbers is equal to the third one: <strong>2 + 3 = 5</strong>.</p>
 <h4 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h4>
-<p>From the console are read <strong>three integers</strong>, one per line. The numbers are in the range  [<strong>1 &#x2026; 1000</strong>].</p>
+<p>From the console are read <strong>three integers</strong>, one per line. The numbers are in the range [<strong>1 &#x2026; 1000</strong>].</p>
 <h4 id="output"><a name="output" class="plugin-anchor" href="#output"><i class="fa fa-link" aria-hidden="true"></i></a>Output</h4>
 <ul>
-<li>Print a single line on the console containing the solution of the problem in the format &quot;<strong>a + b = c</strong>&quot;, where <strong>a</strong>, <strong>b</strong> and <strong>c</strong> are among the three input numbers and  <strong>a &#x2264; b</strong>.</li>
+<li>Print a single line on the console containing the solution of the problem in the format &quot;<strong>a + b = c</strong>&quot;, where <strong>a</strong>, <strong>b</strong> and <strong>c</strong> are among the three input numbers and <strong>a &#x2264; b</strong>.</li>
 <li>If the problem has no solution, print &#x201C;<strong>No</strong>&#x201D; on the console.</li>
 </ul>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
@@ -861,7 +865,7 @@
 </ul>
 <p>We will write <strong>a template</strong>, which will later be complemented by the required code. If none of the above three conditions is met, we will make our program print &quot;<strong>No</strong>&quot;:</p>
 <p><img src="assets/chapter-8-1-images/06.Sums-3-numbers-02.png" alt=""></p>
-<p>Now it remains to understand the order in which <strong>the two addends</strong> will be displayed at the output of the program. For this purpose we will make a <strong>nested condition</strong>, which checks which of the two numbers is the greater. In the first case, it will be as follows: </p>
+<p>Now it remains to understand the order in which <strong>the two addends</strong> will be displayed at the output of the program. For this purpose, we will make a <strong>nested condition</strong>, which checks which of the two numbers is the greater. In the first case, it will be as follows: </p>
 <p><img src="assets/chapter-8-1-images/06.Sums-3-numbers-03.png" alt=""></p>
 <p>Similarly, we will supplement the other two cases. The full code of the program will look like this:</p>
 <p><img src="assets/chapter-8-1-images/06.Sums-3-numbers-04.png" alt=""></p>
@@ -951,7 +955,7 @@
 <p>To solve this problem, we need to think in a bit <strong>more algorithmic way</strong>. A <strong>sequence of numbers</strong> is given to us, and we need to check whether each <strong>subsequent</strong> one will be <strong>larger than the previous one</strong> and if so, we count how long is the sequence in which this condition is fulfilled. Then we have to find <strong>which sequence</strong> of these is <strong>the longest one</strong>. To do this, let&apos;s create some variables that we will use during solving the problem: </p>
 <p><img src="assets/chapter-8-1-images/08.Increasing-numbers-01.png" alt=""></p>
 <p>The variable <strong><code>n</code></strong> is <strong>the count of numbers</strong> we get from the console. In <strong><code>count_current_longest</code></strong> we&apos;ll keep <strong>the number of elements</strong> in the increasing sequence we are <strong>currently counting</strong>. For example, in the sequence: 5, 6, 1, 2, 3 <strong><code>count_current_longest</code></strong> will be 2 when we reach <strong>the second element</strong> of the counting (5, <strong>6</strong>, 1, 2, 3) and will become 3 when we have reached <strong>the last element</strong> (5, 6, 1, 2, <strong>3</strong>) because the increasing row 1, 2, 3 has 3 elements. We will use <strong><code>count_longest</code></strong> to keep <strong>the longest</strong> increasing sequence. The other variables we will use are <strong><code>a</code></strong> - the number we are at <strong>at the moment</strong>, and <strong><code>a_prev</code></strong> - <strong>the previous number</strong>, which we will compare with <strong><code>a</code></strong> to find out whether the row <strong>is growing</strong>. </p>
-<p>We begin to run the numbers and check if the present number <strong><code>a</code></strong> s larger than the previous <strong><code>a_prev</code></strong>. If this is true, then the row <strong>is growing</strong>, and we need to increase its number by <strong>1</strong>. This is stored in the variable that tracks the length of the sequence we are currently in &#x2013; <strong><code>count_current_longest</code></strong>. If the number <strong><code>&#x430;</code></strong> <strong>isn&apos;t bigger</strong> than the previous one, it means that <strong>a new sequence</strong> starts, and we have to start the count from <strong>1</strong>. Finally, after all the checks are done, <strong><code>a_prev</code></strong> becomes <strong>the number</strong> that we&apos;re <strong>currently</strong> using, and we start the loop from the beginning with <strong>the next</strong> entered <strong><code>&#x430;</code></strong>.</p>
+<p>We begin to run the numbers and check if the present number <strong><code>a</code></strong> is larger than the previous <strong><code>a_prev</code></strong>. If this is true, then the row <strong>is growing</strong>, and we need to increase its number by <strong>1</strong>. This is stored in the variable that tracks the length of the sequence we are currently in &#x2013; <strong><code>count_current_longest</code></strong>. If the number <strong><code>a</code></strong> <strong>isn&apos;t bigger</strong> than the previous one, it means that <strong>a new sequence</strong> starts, and we have to start the count from <strong>1</strong>. Finally, after all the checks are done, <strong><code>a_prev</code></strong> becomes <strong>the number</strong> that we&apos;re <strong>currently</strong> using, and we start the loop from the beginning with <strong>the next</strong> entered <strong><code>a</code></strong>.</p>
 <p>Here is a sample implementation of the algorithm described:</p>
 <p><img src="assets/chapter-8-1-images/08.Increasing-numbers-02.png" alt=""></p>
 <p>What remains is to see which of all sequences is <strong>the longest</strong>. We will do this by checking in the loop if <strong>the sequence</strong> we are <strong>currently</strong> in has become longer than <strong>the longest one by now</strong>. The whole loop will look like this:</p>
@@ -1007,9 +1011,9 @@
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>In tasks for drawing figures, the most important thing to consider is <strong>the sequence</strong> in which we will draw. Which elements are <strong>repeated</strong> and with what <strong>steps</strong>? We can see that <strong>the top and the bottom</strong> parts of the diamond are <strong>the same</strong>. The easiest way to solve the problem is by creating <strong>a loop</strong> that draws <strong>the upper part</strong>, and then <strong>another loop</strong> that draws <strong>the bottom part</strong> (opposite to the top one).</p>
-<p>First we read the number <strong><code>n</code></strong> from the console: </p>
+<p>First, we read the number <strong><code>n</code></strong> from the console: </p>
 <p><img src="assets/chapter-8-1-images/09.Perfect-diamond-01.png" alt=""></p>
-<p>We start drawing <strong>the upper half</strong> of the diamond. We see that <strong>each line</strong> starts with some <strong>whitespaces and <code>*</code></strong>.  If we take a closer look, we will notice that <strong>the whitespaces</strong> are always equal to <strong><code>n - index of row - 1</code></strong> (the first row is n-1, the second &#x2013; n-2, etc.). We will start by drawing the number of <strong>whitespaces</strong> and <strong>the first asterisk</strong>. Let&apos;s not forget to use <strong><code>print(&#x2026;, end=&apos;&apos;)</code></strong> instead of just <strong><code>print(&#x2026;)</code></strong> to stay on <strong>the same line</strong>. At the end of the line we write <strong><code>print ()</code></strong> to move to a <strong>new line</strong>. Notice that we start counting from <strong>1, not 0</strong>. Then all we have to do is add <strong><code>-*</code></strong> a few times to <strong>complete the line</strong>. </p>
+<p>We start drawing <strong>the upper half</strong> of the diamond. We see that <strong>each line</strong> starts with some <strong>whitespaces and <code>*</code></strong>. If we take a closer look, we will notice that <strong>the whitespaces</strong> are always equal to <strong><code>n - index of row - 1</code></strong> (the first row is n-1, the second &#x2013; n-2, etc.). We will start by drawing the number of <strong>whitespaces</strong> and <strong>the first asterisk</strong>. Let&apos;s not forget to use <strong><code>print(&#x2026;, end=&apos;&apos;)</code></strong> instead of just <strong><code>print(&#x2026;)</code></strong> to stay on <strong>the same line</strong>. At the end of the line, we write <strong><code>print ()</code></strong> to move to a <strong>new line</strong>. Notice that we start counting from <strong>1, not 0</strong>. Then all we have to do is add <strong><code>-*</code></strong> a few times to <strong>complete the line</strong>. </p>
 <p>Here is the complete code for drawing <strong>the upper part of the diamond</strong>:</p>
 <p><img src="assets/chapter-8-1-images/09.Perfect-diamond-02.png" alt=""></p>
 <p>What remains is to <strong>complete each line</strong> with the required number of <strong><code>-*</code></strong> elements. On each row we have to add <strong><code>i - 1</code></strong> such <strong>items</strong> (on the first 1-1 -&gt; 0, the second -&gt; 1, etc.)</p>
@@ -1018,7 +1022,7 @@
 <p>To draw <strong>the bottom part</strong> of the diamond, we have to reverse <strong>the upper part</strong>. We&apos;ll count from <strong><code>n - 2</code></strong> because if we start from <strong><code>n - 1</code></strong>, we will draw the middle row twice. Be sure to add <strong><code>reversed (&#x2026;)</code></strong> to <strong><code>range (&#x2026;)</code></strong> of the main loop. </p>
 <p>Here is the code for drawing <strong>the bottom part of the diamond</strong>:</p>
 <p><img src="assets/chapter-8-1-images/09.Perfect-diamond-04.png" alt=""></p>
-<p>What remains is <strong>to assemble the whole program</strong>  by first reading the input, printing the top part of the diamond, and then the bottom part of the diamond.</p>
+<p>What remains is <strong>to assemble the whole program</strong> by first reading the input, printing the top part of the diamond, and then the bottom part of the diamond.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1059#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1059#8</a>.</p>
 <h3 id="problem-rectangle-with-asterisks-in-the-center"><a name="problem-rectangle-with-asterisks-in-the-center" class="plugin-anchor" href="#problem-rectangle-with-asterisks-in-the-center"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle with Asterisks in the Center</h3>
@@ -1069,17 +1073,17 @@
 <p><img src="assets/chapter-8-1-images/10.Rectangle-with-stars-01.png" alt=""></p>
 <p>The first thing we can easily notice is that <strong>the first and the last rows</strong> contain <strong><code>2 * n</code></strong> symbols <strong><code>%</code></strong>. We will start with this and then draw the middle part of the rectangle:</p>
 <p><img src="assets/chapter-8-1-images/10.Rectangle-with-stars-02.png" alt=""></p>
-<p>From the examples, we see that <strong>the middle</strong> part of the figure always has an <strong>odd number</strong> of rows. Note that when an <strong>even number</strong> is set, the number of rows is equal to <strong>the previous odd</strong> number (2 -&gt; 1, 4 -&gt; 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number <strong><code>n</code> is even</strong>. Then we will draw <strong>a rectangle without the asterisks</strong>. Each row has for <strong>the beginning and at the end</strong> the symbol <strong><code>%</code></strong> and between them <strong><code>2 * n - 2</code></strong> whitespaces (the width is <strong><code>2 * n</code></strong> and we subtract 2 for the two percent at the end). Do not forget to move the code :or <strong>the last line after the loop</strong>:</p>
+<p>From the examples, we see that <strong>the middle</strong> part of the figure always has an <strong>odd number</strong> of rows. Note that when an <strong>even number</strong> is set, the number of rows is equal to <strong>the previous odd</strong> number (2 -&gt; 1, 4 -&gt; 3, etc.). We create a variable that represents the number of rows that our rectangle will have, and correct it if the number <strong><code>n</code> is even</strong>. Then we will draw <strong>a rectangle without the asterisks</strong>. Each row has for <strong>the beginning and at the end</strong> the symbol <strong><code>%</code></strong> and between them <strong><code>2 * n - 2</code></strong> whitespaces (the width is <strong><code>2 * n</code></strong> and we subtract 2 for the two percent at the end). Do not forget to move the code or <strong>the last line after the loop</strong>:</p>
 <p><img src="assets/chapter-8-1-images/10.Rectangle-with-stars-03.png" alt=""></p>
 <p>We can <strong>start and test the code so far</strong>. Everything without the two asterisks in the middle should work correctly.</p>
-<p>Now, <strong>in the body</strong> of the loop let&apos;s add the <strong>asterisks</strong>. We&apos;ll check if we&apos;re on the <strong>middle row</strong>. If we are in the middle, (we will check this by comparing <strong><code>i</code></strong> with <strong><code>floor(num_rows / 2)</code></strong>), we will draw <strong>the row</strong> together <strong>with the asterisks</strong>, if not &#x2013; we will draw <strong>a normal row</strong>. <strong>Remember</strong> to add <strong><code>from math import floor</code></strong> at the beginning of the work file so that we can use the <strong><code>floor(&#x2026;)</code></strong> function. The line with the asterisks has <strong><code>n-2</code> whitespaces</strong> (<strong><code>n</code></strong> is half the length and we remove the asterisk and the percentage), <strong>two asterisks</strong>, and again <strong><code>n-2</code> whitespaces</strong>. We leave out of the check the two percent at the beginning and the end of the row:</p>
+<p>Now, <strong>in the body</strong> of the loop let&apos;s add the <strong>asterisks</strong>. We&apos;ll check if we&apos;re on the <strong>middle row</strong>. If we are in the middle, (we will check this by comparing <strong><code>i</code></strong> with <strong><code>floor(num_rows / 2)</code></strong>), we will draw <strong>the row</strong> together <strong>with the asterisks</strong>, if not &#x2013; we will draw <strong>a normal row</strong>. <strong>Remember</strong> to add <strong><code>from the math import floor</code></strong> at the beginning of the work file so that we can use the <strong><code>floor(&#x2026;)</code></strong> function. The line with the asterisks has <strong><code>n-2</code> whitespaces</strong> (<strong><code>n</code></strong> is half the length and we remove the asterisk and the percentage), <strong>two asterisks</strong>, and again <strong><code>n-2</code> whitespaces</strong>. We leave out of the check the two percent at the beginning and the end of the row:</p>
 <p><img src="assets/chapter-8-1-images/10.Rectangle-with-stars-04.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1059#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1059#9</a>.</p>
 <h2 id="problems-with-nested-loops"><a name="problems-with-nested-loops" class="plugin-anchor" href="#problems-with-nested-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Problems with Nested Loops</h2>
 <p><strong>The last</strong> (sixth) problem of the &quot;Programming Basics&quot; Practical Exam requires using of <strong>several nested loops and more complex logic inside them</strong>. The problems examine participants&apos; ability to think algorithmically and to solve non-trivial coding problems that require nested loops. Here are some examples of exam problems.</p>
 <h3 id="problem-increasing-4-numbers"><a name="problem-increasing-4-numbers" class="plugin-anchor" href="#problem-increasing-4-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Increasing 4 Numbers</h3>
-<p>For a given pair of numbers <strong>a</strong> and <strong>b</strong> generate all four number <strong>n1, n2, n3, n4,</strong> for which <strong>a &#x2264; n1 &lt; n2 &lt; n3 &lt; n4 &#x2264; b</strong>.</p>
+<p>For a given pair of numbers, <strong>a</strong> and <strong>b</strong> generate all four numbers <strong>n1, n2, n3, n4,</strong> for which <strong>a &#x2264; n1 &lt; n2 &lt; n3 &lt; n4 &#x2264; b</strong>.</p>
 <h4 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h4>
 <p>The input contains two integers <strong>a</strong> and <strong>b</strong> in the interval [<strong>0&#x2026; 1000</strong>], one per line.</p>
 <h4 id="output"><a name="output" class="plugin-anchor" href="#output"><i class="fa fa-link" aria-hidden="true"></i></a>Output</h4>
@@ -1124,7 +1128,7 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We read the input data from the console. We also create the additional variable <strong><code>count</code></strong>, which will keep track of whether <strong>an existing number of ranges</strong>: </p>
 <p><img src="assets/chapter-8-1-images/11.Increasing-4-numbers-01.png" alt=""></p>
-<p>We will most easily solve the problem if we logically divide it <strong>into parts</strong>. If we are required to draw all the rows from a number between <strong><code>a</code></strong> and <strong><code>b</code></strong>, we will do it using <strong>one loop</strong> that takes all the numbers from <strong><code>a</code></strong> to <strong><code>b</code></strong>. Let&apos;s think about how to do this with <strong>series of two numbers</strong>. The answer is easy &#x2013; we will use <strong>nested loops</strong>:</p>
+<p>We will most easily solve the problem if we logically divide it <strong>into parts</strong>. If we are required to draw all the rows from a number between <strong><code>a</code></strong> and <strong><code>b</code></strong>, we will do it using <strong>one loop</strong> that takes all the numbers from <strong><code>a</code></strong> to <strong><code>b</code></strong>. Let&apos;s think about how to do this with a <strong>series of two numbers</strong>. The answer is easy &#x2013; we will use <strong>nested loops</strong>:</p>
 <p><img src="assets/chapter-8-1-images/11.Increasing-4-numbers-02.png" alt=""></p>
 <p>We can test the incomplete program to see if it&apos;s accurate so far. It must print all pairs of numbers <strong><code>i</code></strong>, <strong><code>j</code></strong> for which <strong><code>i &#x2264; j</code></strong>.</p>
 <p>Since each <strong>next number</strong> of the row must be <strong>greater</strong> than <strong>the previous one</strong>, the second loop will run around <strong><code>i + 1</code></strong> (the next greater number). Accordingly, if <strong>there is no sequence</strong> of two incremental numbers (<strong><code>a</code></strong> and <strong><code>b</code></strong> are equal), the second loop <strong>will not be fulfilled</strong>, and nothing will be printed on the console.</p>
@@ -1199,7 +1203,7 @@ The important thing here is knowing the corresponding coordinates so we can corr
 <p><img src="assets/chapter-8-1-images/12.Generating-rectangles-04.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1059#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1059#11</a>.</p>
-</a></div>
+
                                 
                                 </section>
                             
@@ -1242,7 +1246,7 @@ The important thing here is knowing the corresponding coordinates so we can corr
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"8.1. Practical Exam Preparation – part I","level":"1.16","depth":1,"next":{"title":"8.2. Practical Exam Preparation – part II","level":"1.17","depth":1,"path":"chapter-08-exam-preparation-part-2.md","ref":"chapter-08-exam-preparation-part-2.md","articles":[]},"previous":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-08-exam-preparation.md","mtime":"2021-11-01T10:00:27.995Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"8.1. Practical Exam Preparation – part I","level":"1.16","depth":1,"next":{"title":"8.2. Practical Exam Preparation – part II","level":"1.17","depth":1,"path":"chapter-08-exam-preparation-part-2.md","ref":"chapter-08-exam-preparation-part-2.md","articles":[]},"previous":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-08-exam-preparation.md","mtime":"2021-11-21T18:49:05.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1265,6 +1269,10 @@ The important thing here is knowing the corresponding coordinates so we can corr
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         

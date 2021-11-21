@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>2.2. Simple Calculations – Exam Problems · GitBook</title>
+        <title>2.2. Simple Calculations – Exam Problems · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -445,7 +447,7 @@
 <h2 id="reading-numbers-from-the-console"><a name="reading-numbers-from-the-console" class="plugin-anchor" href="#reading-numbers-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading Numbers from the Console</h2>
 <p>Before going to the tasks, we are going to revise the most important aspects of what we have studied in the previous chapter. We will start by reading numbers from the console.</p>
 <h3 id="reading-an-integer"><a name="reading-an-integer" class="plugin-anchor" href="#reading-an-integer"><i class="fa fa-link" aria-hidden="true"></i></a>Reading an Integer</h3>
-<p>We need to create a variable to store the integer (for example, <strong><code>num</code></strong>) and use a standard command for reading input from the console (the function <strong><code>input(&#x2026;)</code></strong>), combined with the function <strong><code>int(&#x2026;)</code></strong> which converts string to an integer:</p>
+<p>We need to create a variable to store the integer (for example, <strong><code>num</code></strong>) and use a standard command for reading input from the console (the function <strong><code>input(&#x2026;)</code></strong>), combined with the function <strong><code>int(&#x2026;)</code></strong> which converts a string to an integer:</p>
 <pre><code class="lang-python">num = int(input())
 </code></pre>
 <h3 id="reading-a-floating-point-number"><a name="reading-a-floating-point-number" class="plugin-anchor" href="#reading-a-floating-point-number"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a Floating-Point Number</h3>
@@ -453,14 +455,14 @@
 <pre><code class="lang-python">num = float(input())
 </code></pre>
 <h2 id="printing-text-using-placeholders"><a name="printing-text-using-placeholders" class="plugin-anchor" href="#printing-text-using-placeholders"><i class="fa fa-link" aria-hidden="true"></i></a>Printing Text Using Placeholders</h2>
-<p><strong>Placeholder</strong> is an expression which is replaced with a particular value while printing an output. The funtion <strong><code>print(&#x2026;)</code></strong> supports printing a string based on a placeholder, there are a few ways to do that, as we reviewed in the previous chapter:</p>
+<p>A <strong>placeholder</strong> is an expression that is replaced with a particular value while printing an output. The function <strong><code>print(&#x2026;)</code></strong> supports printing a string based on a placeholder, there are a few ways to do that, as we reviewed in the previous chapter:</p>
 <ul>
-<li>The first argument that we pass to the funtion is the formatted string, followed by the symbol <strong><code>%</code></strong> and the number of arguments, equal to the number of placeholders, placed in brackets:</li>
+<li>The first argument that we pass to the function is the formatted string, followed by the symbol <strong><code>%</code></strong> and the number of arguments, equal to the number of placeholders, placed in brackets:</li>
 </ul>
 <pre><code class="lang-python">print(<span class="hljs-string">&quot;You are %s %s, a %d-years old person from %s.&quot;</span> % (<span class="hljs-string">&quot;Ivan&quot;</span>, <span class="hljs-string">&quot;Ivanov&quot;</span>, <span class="hljs-string">&quot;16&quot;</span>, <span class="hljs-string">&quot;Burgas&quot;</span>))
 </code></pre>
 <ul>
-<li>The second way are the so-called &quot;f-strings&quot;, where before the formatted string we put the symbol <strong><code>f</code></strong> and the arguments are in the string between curled brackets <strong><code>{}</code></strong>:</li>
+<li>The second way is the so-called &quot;f-strings&quot;, where before the formatted string we put the symbol <strong><code>f</code></strong> and the arguments are in the string between curled brackets <strong><code>{}</code></strong>:</li>
 </ul>
 <pre><code class="lang-python">first_name = <span class="hljs-string">&quot;Ivan&quot;</span>
 last_name = <span class="hljs-string">&quot;Ivanov&quot;</span>
@@ -470,7 +472,7 @@ print(f<span class="hljs-string">&quot;You are {first_name} {last_name}, a {age}
 </code></pre>
 <p>There are other ways to format a string and the more curious of you can check them in the following article, as well as find the difference between them:<a href="https://cito.github.io/blog/f-strings/" target="_blank">https://cito.github.io/blog/f-strings/</a></p>
 <h2 id="arithmetic-operators"><a name="arithmetic-operators" class="plugin-anchor" href="#arithmetic-operators"><i class="fa fa-link" aria-hidden="true"></i></a>Arithmetic Operators</h2>
-<p>Let&apos; s revise the main arithmetic operators for simple calculations.</p>
+<p>Let&apos;s revise the main arithmetic operators for simple calculations.</p>
 <h3 id="operator-"><a name="operator-" class="plugin-anchor" href="#operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Operator +</h3>
 <pre><code class="lang-python">result = <span class="hljs-number">3</span> + <span class="hljs-number">5</span> <span class="hljs-comment"># the result is 8</span>
 </code></pre>
@@ -493,7 +495,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <span class="hljs-comment"># Ivan Ivanov is 19 years old</span>
 </code></pre>
 <h2 id="exam-tasks"><a name="exam-tasks" class="plugin-anchor" href="#exam-tasks"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Tasks</h2>
-<p>Now, after having revised how to make simple calculations and how to read and print numbers from the console, let&apos; s go to the tasks. We will solve a few <strong>problems from a SoftUni entrance exam</strong>.</p>
+<p>Now, after having revised how to make simple calculations and how to read and print numbers from the console, let&apos;s go to the tasks. We will solve a few <strong>problems from a SoftUni entrance exam</strong>.</p>
 <h2 id="task-training-lab"><a name="task-training-lab" class="plugin-anchor" href="#task-training-lab"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Training Lab</h2>
 <p><strong>A training lab</strong> has a rectangular size <strong>l</strong> x <strong>w</strong> meters, without columns on the inside. The hall is divided into two parts- left and right, with a hallway approximately in the middle. In both parts, there are <strong>rows with desks</strong>. In the back of the hall, there is a big <strong>entrance door</strong>. In the front, there is a <strong>podium</strong> for the lecturer. A single <strong>working place</strong> takes up <strong>70 x 120 cm</strong> (a table with size 70 x 40 cm + space for a chair and passing through with size 70 x 80 cm). <strong>The hallway</strong> width is at least <strong>100 cm</strong>. It is calculated that due to the <strong>entrance door</strong> (which has 160 cm opening) <strong>exactly one working space is lost</strong>, and due to the <strong>podium</strong> (which has a size of 160 x 120 cm) exactly <strong>two working spaces</strong> are lost. Write a program that reads the size of the training lab as input parameters and calculates the <strong>number of working places in it</strong> (look at the figure).</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
@@ -530,9 +532,9 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <p>Try to solve the problem on your own first. If you do not succeed, go through the hints.</p>
 <h4 id="idea-for-solution"><a name="idea-for-solution" class="plugin-anchor" href="#idea-for-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Idea for Solution</h4>
 <p>As with any programming task, <strong>it is important to build an idea for its solution</strong>, before having started to write code. Let&apos;s carefully go through the problem requirements. We have to write a program that calculates the number of working places in a training lab, where the number depends on the hall length and height. We notice that the provided input data will be <strong>in meters</strong> and the information about how much space the working places and hallway take, will be <strong>in centimeters</strong>. To do the calculations, we will use the same measuring units, no matter whether we choose to convert length and height into centimeters or the other data in meters. The first option is used for the presented solution. </p>
-<p>Next, we have to calculate <strong>how many columns and how many rows</strong> with desks will fit. We can calculate the columns by <strong>subtracting the width by the necessary space for the hallway (100 cm)</strong> and <strong>divide the difference by 70 cm</strong> (the length of a workplace). We find the rows by dividing <strong>the length by 120 cm</strong>. Both operations can result in <strong>a real number</strong> with a whole and a fractional part, but we have to <strong>store only the whole part in a variable</strong>. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the lost places for entrance door and podium). This is how we calculate the needed value.</p>
+<p>Next, we have to calculate <strong>how many columns and how many rows</strong> with desks will fit. We can calculate the columns by <strong>subtracting the width by the necessary space for the hallway (100 cm)</strong> and <strong>dividing the difference by 70 cm</strong> (the length of a workplace). We find the rows by dividing <strong>the length by 120 cm</strong>. Both operations can result in <strong>a real number</strong> with a whole and a fractional part, but we have to <strong>store only the whole part in a variable</strong>. In the end, we multiply the number of rows by the number of columns and divide it by 3 (the lost places for entrance door and podium). This is how we calculate the needed value.</p>
 <h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
-<p>From the example, we see that a real number with whole and fractional part can be given as an input, therefore, it is not appropriate to choose data type <strong><code>int</code></strong>. This is why we use <strong><code>float</code></strong>. Choosing data type for the next variables depends on the method we choose to solve the problem. As with any programming task, this one has <strong>more than one way to be solved</strong>.</p>
+<p>From the example, we see that a real number with whole and fractional parts can be given as an input, therefore, it is not appropriate to choose data type <strong><code>int</code></strong>. This is why we use <strong><code>float</code></strong>. Choosing a data type for the next variables depends on the method we choose to solve the problem. As with any programming task, this one has <strong>more than one way to be solved</strong>.</p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>It is time to go to the solution. We can divide it into three smaller tasks: </p>
 <ul>
@@ -547,7 +549,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <td><b>Search in Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in Python or we are dealing with one that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-<p>In this case, we can try with the following search: &quot;<a href="https://www.google.com/?q=python+get+whole+number+part+of+float" target="_blank"><strong><em>Python get whole number part of float</em></strong></a>&quot;. One possible way is to use the method <strong><code>math.trunc(&#x2026;)</code></strong> and don&apos;t forget to refer to the <strong><code>math</code></strong> library. The code down below is blurred on purpose and it should be completed by the reader:</p>
+<p>In this case, we can try with the following search: &quot;<a href="https://www.google.com/?q=python+get+whole+number+part+of+float" target="_blank"><strong><em>Python gets whole number part of float</em></strong></a>&quot;. One possible way is to use the method <strong><code>math.trunc(&#x2026;)</code></strong> and don&apos;t forget to refer to the <strong><code>math</code></strong> library. The code down below is blurred on purpose and it should be completed by the reader:</p>
 <p><img src="assets/chapter-2-2-images/01.Training-lab-04.png" alt=""></p>
 <p>With <strong><code>print(&#x2026;)</code></strong> we print the result in the console:</p>
 <p><img src="assets/chapter-2-2-images/01.Training-lab-05.png" alt=""></p>
@@ -584,7 +586,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <p><strong>Clarification for the first example:</strong></p>
 <ul>
 <li>Vegetables cost: 0.194 BGN. * 10 kg. = <strong>1.94 BGN.</strong></li>
-<li>Fruits cost: 19.4 BGN. * 10 kg.  = <strong>194 BGN.</strong></li>
+<li>Fruits cost: 19.4 BGN. * 10 kg. = <strong>194 BGN.</strong></li>
 <li>Total: <strong>195.94 BGN. = 101 EUR</strong>. </li>
 </ul>
 <table>
@@ -606,7 +608,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <h4 id="idea-for-solution"><a name="idea-for-solution" class="plugin-anchor" href="#idea-for-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Idea for Solution</h4>
 <p>Let&apos;s first go through the problem requirements. In this case, we have to calculate <strong>the total income</strong> from the harvest. It equals <strong>the sum of the earnings from the fruits and vegetables</strong> which we can calculate by multiplying <strong>the price per kilogram by the quantity</strong>. The input is given in BGN and the output should be in euros. It is assumed that 1 EUR equals 1.94 BGN, therefore, to get the wanted <strong>output value, we have to divide the sum by 1.94</strong>.</p>
 <h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
-<p>After we have a clear idea of how to solve the task, we can continue with choosing appropriate data types. Let&apos;s go through the <strong>input</strong>: we have <strong>two integers</strong> for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values will be of <strong><code>int</code></strong> type. The prices of the fruits and vegetables are said to be  <strong>two floating-point numbers</strong> and therefore, the variables will be of <strong><code>float</code></strong> type.</p>
+<p>After we have a clear idea of how to solve the task, we can continue with choosing appropriate data types. Let&apos;s go through the <strong>input</strong>: we have <strong>two integers</strong> for total kilograms of vegetables and fruits, therefore, the variables we declare to store their values will be of <strong><code>int</code></strong> type. The prices of the fruits and vegetables are said to be <strong>two floating-point numbers</strong> and therefore, the variables will be of <strong><code>float</code></strong> type.</p>
 <p>We can also declare two variables to store the income from the fruits and vegetables separately. The <strong>output</strong> should be a <strong>floating-point number</strong>, so the result should be <strong><code>float</code></strong> type.</p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>It is time to get to the solution. We can divide it into three smaller tasks:</p>
@@ -615,7 +617,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <li><strong>Doing the calculations</strong>.</li>
 <li><strong>Printing the output</strong> on the console.</li>
 </ul>
-<p>In order to read the input, we declare variables, which we have to name carefully, so that they can give us a hint about the values they store. With <strong><code>input(&#x2026;)</code></strong>, we read values from the console and with the functions <strong><code>int(&#x2026;)</code></strong> and <strong><code>float(&#x2026;)</code></strong>, we convert the particular string value into int and double:</p>
+<p>To read the input, we declare variables, which we have to name carefully so that they can give us a hint about the values they store. With <strong><code>input(&#x2026;)</code></strong>, we read values from the console and with the functions <strong><code>int(&#x2026;)</code></strong> and <strong><code>float(&#x2026;)</code></strong>, we convert the particular string value into int and double:</p>
 <p><img src="assets/chapter-2-2-images/02.Vegetable-market-01.png" alt=""></p>
 <p>We do the necessary calculations:</p>
 <p><img src="assets/chapter-2-2-images/02.Vegetable-market-02.png" alt=""></p>
@@ -688,7 +690,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <p>It is required to calculate the <strong>number of tiles</strong> that have to be placed, as well as the <strong>time for placing them</strong>. To <strong>find that number</strong>, we have to calculate <strong>the area that needs to be covered</strong> and <strong>divide it by the area per tile</strong>. By the requirements of the problem, the ground is square, therefore, we find the total area by multiplying its side by its value  <strong><code>N * N</code></strong>. After that, we calculate <strong>the area that the bench takes up</strong> by multiplying its two sides as well <strong><code>M * O</code></strong>. After subtracting the area of the bench from the area of the whole ground, we obtain the area that needs to be repaired.</p>
 <p>We calculate the area of a single tile by <strong>multiplying its two sides with one another</strong> <strong><code>W * L</code></strong>. As we already stated, now we have to <strong>divide the area for covering by the area of a single tile</strong>. This way, we find the number of necessary tiles. We multiply it by <strong>0.2</strong> (the time needed for changing a tile). Now, we have the wanted output.</p>
 <h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
-<p>The length of the side of the ground, the width and the length of the bench, will be given as <strong>integers</strong>, therefore, in order to store their values, we can use the system function <strong><code>int(&#x2026;)</code></strong>. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use <strong><code>float(&#x2026;)</code></strong>.</p>
+<p>The length of the side of the ground, the width and the length of the bench will be given as <strong>integers</strong>, therefore, to store their values, we can use the system function <strong><code>int(&#x2026;)</code></strong>. We will be given floating-point numbers for the width and the length of the tiles and this is why we will use <strong><code>float(&#x2026;)</code></strong>.</p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>As in the previous tasks, we can divide the solution into three smaller tasks:</p>
 <ul>
@@ -719,8 +721,8 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <p>Three numbers are read from the console: </p>
 <ul>
 <li>On the first line &#x2013; <strong>number of Bitcoins</strong>. Integer within the range of [<strong>0 &#x2026; 20</strong>].</li>
-<li>On the second line &#x2013; <strong>number of Chinese yuans</strong>. Floating-point number within the range of [<strong>0.00 &#x2026; 50 000.00</strong>].</li>
-<li>On the third line &#x2013; <strong>commission fee</strong>. Floating-point number within the range of [<strong>0.00 &#x2026; 5.00</strong>].</li>
+<li>On the second line &#x2013; <strong>number of Chinese yuans</strong>. Floating point number within the range of [<strong>0.00 &#x2026; 50 000.00</strong>].</li>
+<li>On the third line &#x2013; <strong>commission fee</strong>. Floating point number within the range of [<strong>0.00 &#x2026; 5.00</strong>].</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print one number on the console &#x2013; <strong>the result of the exchange of currencies</strong>. The output should be rounded <strong>to the second decimal place</strong>.</p>
@@ -769,11 +771,11 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Let&apos;s first think of the way we can solve the task, before having started to write code.</p>
 <h4 id="idea-for-solution"><a name="idea-for-solution" class="plugin-anchor" href="#idea-for-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Idea for Solution</h4>
-<p>We see that the <strong>number of bitcoins</strong> and <strong>the number of Chinese yuans</strong> will be given in the input. The <strong>output</strong> should be in euro. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR, therefore, we <strong>first have to calculate the whole sum</strong> that Pesho has in BGN, and then <strong>calculate the output</strong>.</p>
+<p>We see that the <strong>number of bitcoins</strong> and <strong>the number of Chinese yuans</strong> will be given in the input. The <strong>output</strong> should be in euros. The exchange rates that we have to work with are specified in the task. We notice that we can only exchange the sum in BGN to EUR, therefore, we <strong>first have to calculate the whole sum</strong> that Pesho has in BGN, and then <strong>calculate the output</strong>.</p>
 <p>As we have information for the exchange rate of Bitcoins to BGN, we can directly exchange them. On the other hand, to get the value of <strong>Chinese yuans in BGN</strong>, first, we have to <strong>exchange them in USD</strong>, and then the <strong>USD to BGN</strong>. Finally, we will <strong>sum the two values</strong> and calculate how much euro that is.</p>
 <p>Only the final step is left: <strong>calculating the commission fee</strong> and subtracting the new sum from the total one. We will obtain a <strong>floating-point number</strong> for the commission fee, which will be a particular <strong>percent of the total sum</strong>. Let&apos;s divide it by 100, to calculate its <strong>percentage value</strong>. Then we will multiply it by the sum in euro and divide the result from the same sum. Print the final sum on the console.</p>
 <h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
-<p><strong>Bitcoins</strong> are given as <strong>an integer</strong>, therefore, we can declare a variable using the <strong><code>int(&#x2026;)</code></strong> function. For <strong>Chinese yuan and commission fee</strong> we obtain <strong>a floating-point number</strong>, therefore, we are going to use <strong><code>float(&#x2026;)</code></strong>.</p>
+<p><strong>Bitcoins</strong> are given as <strong>an integer</strong>, therefore, we can declare a variable using the <strong><code>int(&#x2026;)</code></strong> function. For <strong>Chinese yuan and commission fee</strong>, we obtain <strong>a floating-point number</strong>, therefore, we are going to use <strong><code>float(&#x2026;)</code></strong>.</p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>After we have built an idea on how to solve the task and we have chosen the data structures that we are going to use, it is time to get to <strong>writing the code</strong>. As in the previous tasks, we can divide the solution into three smaller tasks:</p>
 <ul>
@@ -783,7 +785,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 </ul>
 <p><strong>We declare the variables</strong> that we are going to use and again we have to choose <strong>meaningful names</strong>, which are going to give us hints about the values they store. We initialize their values: we create variables, where we will store the string arguments passed to the function and convert them to int or double:</p>
 <p><img src="assets/chapter-2-2-images/04.Money-01.png" alt=""></p>
-<p>We do the necessary calculations: </p>
+<p>Then we do the necessary calculations: </p>
 <p><img src="assets/chapter-2-2-images/04.Money-02.png" alt=""></p>
 <p>Finally, we <strong>calculate the commission fee</strong> and <strong>subtract it from the sum in euro</strong>. Let&apos;s pay attention to the way we could write this: <strong><code>euro -= commission * euro</code></strong> is the short way to write <strong><code>euro = euro - (commission * euro)</code></strong>. In this case, we use a <strong>combined assignment operator</strong> (<strong><code>-=</code></strong>) that <strong>subtracts the value of the operand to the right from the one to the left</strong>. The operator for multiplication (<strong><code>*</code></strong>) has a <strong>higher priority</strong> than the combined operator, this is why the expression <strong><code>commission * euro</code></strong> is performed first and then its value is divided.</p>
 <p>Finally, we have to print the result in the console. We should notice that we have to format the output <strong>to the second decimal place</strong>. The difference between this and the previous task is that here, even if the number is an integer, <strong>we have to print it to the second decimal place</strong> (for example <strong><code>5.00</code></strong>). One way to do so is to use the function <strong><code>print(&#x2026;)</code></strong> and to format a string using a placeholder(<strong><code>%.2f</code></strong>). By using it, we can covert a number into a string, saving the specified numbers after the decimal point:</p>
@@ -798,7 +800,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p><strong>Three numbers</strong> are read from the console.</p>
 <ul>
-<li>On the first line &#x2013; <strong>work days per month</strong>. An integer within the range of [<strong>5 &#x2026; 30</strong>].</li>
+<li>On the first line &#x2013; <strong>workdays per month</strong>. An integer within the range of [<strong>5 &#x2026; 30</strong>].</li>
 <li>On the second line &#x2013; <strong>daily earnings</strong>. A floating-point number within the range of [<strong>10.00 &#x2026; 2000.00</strong>].</li>
 <li>On the third line &#x2013; <strong>exchange rate of USD to BGN</strong> /1 dollar = X BGN/. A floating-point number within the range of [<strong>0.99 &#x2026; 1.99</strong>].</li>
 </ul>
@@ -848,9 +850,9 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Firstly, we have to analyze the task and think of a way to solve it. Then, we will choose data types and, finally, we will write the code.</p>
 <h4 id="idea-for-solution"><a name="idea-for-solution" class="plugin-anchor" href="#idea-for-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Idea for Solution</h4>
-<p>Let&apos;s first calculate <strong>how much the monthly salary</strong> of Ivan is. We do that by <strong>multiplying the working days per month by his daily earnings</strong>. We <strong>multiply the result</strong> by 12, to calculate his salary for 12 months, and then, we multiply it <strong>by 2.5</strong>, so that we can calculate the bonus. After having summed up the two values, we calculate <strong>his annual income</strong>. Then, we will reduce <strong>the annual income by 25% taxes</strong>. We can do that by multiplying the total income by <strong>0.25</strong> and substract the result out of it. Depending on the exchange rate, <strong>we exchange the USD to BGN</strong> and after that, we divide the result by 365.</p>
+<p>Let&apos;s first calculate <strong>how much the monthly salary</strong> of Ivan is. We do that by <strong>multiplying the working days per month by his daily earnings</strong>. We <strong>multiply the result</strong> by 12, to calculate his salary for 12 months, and then, we multiply it <strong>by 2.5</strong>, so that we can calculate the bonus. After having summed up the two values, we calculate <strong>his annual income</strong>. Then, we will reduce <strong>the annual income by 25% taxes</strong>. We can do that by multiplying the total income by <strong>0.25</strong> and subtracting the result out of it. Depending on the exchange rate, <strong>we exchange the USD to BGN</strong> and after that, we divide the result by 365.</p>
 <h4 id="choosing-data-types"><a name="choosing-data-types" class="plugin-anchor" href="#choosing-data-types"><i class="fa fa-link" aria-hidden="true"></i></a>Choosing Data Types</h4>
-<p><strong>The working days</strong> per month are given as <strong>an integer</strong>, therefore, we can convert the string into int with the function <strong><code>int(&#x2026;)</code></strong>. For both <strong>the earned money</strong> and <strong>the exchange rate of USD to EUR</strong>, we will obtain <strong>a floating-point number</strong>, therefore, we will use the function <strong><code>float(&#x2026;)</code></strong>.</p>
+<p><strong>The working days</strong> per month are given as <strong>an integer</strong>, therefore, we can convert the string into an int with the function <strong><code>int(&#x2026;)</code></strong>. For both <strong>the earned money</strong> and <strong>the exchange rate of USD to EUR</strong>, we will obtain <strong>a floating-point number</strong>, therefore, we will use the function <strong><code>float(&#x2026;)</code></strong>.</p>
 <h4 id="solution"><a name="solution" class="plugin-anchor" href="#solution"><i class="fa fa-link" aria-hidden="true"></i></a>Solution</h4>
 <p>Again: after we have an idea of how to solve the problem and we have considered the data types that we are going to use, we can start <strong>writing the program</strong>. As in the previous tasks, we can divide the solution into three smaller tasks:</p>
 <ul>
@@ -858,9 +860,9 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
 <li><strong>Doing the calculations</strong>.</li>
 <li><strong>Printing the output</strong> on the console.</li>
 </ul>
-<p>We <strong>declare the variables</strong> that we are going to use by trying to choose <strong>meaningful names</strong>. We create a variable to store the arguments passed to the function, by converting the string to integer or floating number by using <strong><code>int(&#x2026;)/float(&#x2026;)</code></strong>:</p>
+<p>Then we <strong>declare the variables</strong> that we are going to use by trying to choose <strong>meaningful names</strong>. We create a variable to store the arguments passed to the function, by converting the string to integer or floating number by using <strong><code>int(&#x2026;)/float(&#x2026;)</code></strong>:</p>
 <p><img src="assets/chapter-2-2-images/05.Daily-earnings-01.png" alt=""></p>
-<p>We do the calculations:</p>
+<p>After that we do the calculations:</p>
 <p><img src="assets/chapter-2-2-images/05.Daily-earnings-02.png" alt=""></p>
 <p>We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, <strong>writing brackets is recommended when using more operators</strong>, as this way the code is <strong>easily readable</strong> and chances of making a mistake are smaller.</p>
 <p>Finally, we have to print the result on the console. We notice <strong>that the number has to be rounded up to the second digit after the decimal point</strong>. To do that, we can use the same placeholder, just like the previous task:</p>
@@ -910,7 +912,7 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"next":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"previous":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-02-simple-calculations-exam-problems.md","mtime":"2021-11-01T10:00:27.987Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"next":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"previous":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations-exam-problems.md","mtime":"2021-11-21T18:49:05.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -933,6 +935,10 @@ str = firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <s
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         

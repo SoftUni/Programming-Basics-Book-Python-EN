@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>5.2. Loops - Exam Problems · GitBook</title>
+        <title>5.2. Loops - Exam Problems · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -442,7 +444,7 @@
                                 
                                 <h1 id="chapter-52-iterations-loops---exam-problems"><a name="chapter-52-iterations-loops---exam-problems" class="plugin-anchor" href="#chapter-52-iterations-loops---exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 5.2 Iterations (loops) - exam problems</h1>
 <p>In the previous chapter we learned how to run a command block <strong>more than once</strong>. That&apos;s why we implemented <strong><code>for</code> loop</strong> and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams.  For some of them we&#x2019;ll show detailed solved examples, while for others there&#x2019;ll be tips only. Before we begin, we&#x2019;ll recall the <strong><code>for</code> loop</strong> construction:</p>
-<p><img src="assets/chapter-5-2-images/00.For-construction-01.png" alt=""></p>
+<p><img src="assets/chapter-5-2-images/00.For-construction-01.png" alt=""> </p>
 <p><strong><code>for</code> loops</strong> consist of:</p>
 <ul>
 <li><strong>Initialization block</strong>, where the variable-counter (<strong><code>i</code></strong>) is declared, and with the help of the <strong><code>range(&#x2026;)</code></strong> function built into Python, we define what its starting and ending value will be.</li>
@@ -619,7 +621,7 @@ The cycle consists of:</p>
 <li>&quot;<strong>Yes! {N}</strong>&quot; &#x2013; where <strong>N</strong> are the remaining money after the purchase</li>
 </ul>
 </li>
-<li>If they&apos;re not:<ul>
+<li>If its not:<ul>
 <li>&quot;<strong>No! {M}</strong>&quot; &#x2013; where <strong>M</strong> is the amount of money <strong>lacking</strong></li>
 </ul>
 </li>
@@ -655,7 +657,7 @@ The cycle consists of:</p>
 
 <h3 id="tips-and-advice"><a name="tips-and-advice" class="plugin-anchor" href="#tips-and-advice"><i class="fa fa-link" aria-hidden="true"></i></a>Tips and advice</h3>
 <p>Solving this problem, like the previous one, again can be divided in three parts &#x2013; <strong>reading</strong> the input data, <strong>processing</strong> it and <strong>outputting</strong> a result.</p>
-<p>As we already know, in most of the scripting languages, in Python as well, we don&apos;t bother defining the types of the variables that we declare. The interpreter decides on its own what it&apos;ll be. For Lily&apos;s (<strong><code>age</code></strong>) and a single toy&apos;s price (<strong><code>present_price</code></strong>) in the problem&apos;s description it&apos;s said that they&apos;ll be <strong>integers</strong>. That&apos;s why we&apos;ll use <strong>the built-in function <code>int()</code></strong> to convert the read value from string to integer. When the <strong><code>input()</code></strong> function is used, the input&apos;s value in the console is always (<strong><code>string</code></strong>), that&apos;s why if a conversion to another type is needed, we can use <strong>the built-in functions of Python</strong> for this problem. For the washing machine&apos;s price, (<strong><code>price_of_washing_machine</code></strong>), we know that it&apos;s a <strong>fractional number and we choose the <code>float</code> type</strong>. In the code below <strong>we declare</strong> and <strong>initialize</strong> (assign a value) to the variables:</p>
+<p>As we already know, like in most scripting languages, in Python as well, we don&apos;t bother defining the types of the variables that we declare. The interpreter decides on its own what it&apos;ll be. For Lily&apos;s (<strong><code>age</code></strong>) and a single toy&apos;s price (<strong><code>present_price</code></strong>) in the problem&apos;s description it&apos;s said that they&apos;ll be <strong>integers</strong>. That&apos;s why we&apos;ll use <strong>the built-in function <code>int()</code></strong> to convert the read value from string to integer. When the <strong><code>input()</code></strong> function is used, the input&apos;s value in the console is always (<strong><code>string</code></strong>), that&apos;s why if a conversion to another type is needed, we can use <strong>the built-in functions of Python</strong> for this problem. For the washing machine&apos;s price, (<strong><code>price_of_washing_machine</code></strong>), we know that it&apos;s a <strong>fractional number and we choose the <code>float</code> type</strong>. In the code below <strong>we declare</strong> and <strong>initialize</strong> (assign a value) to the variables:</p>
 <p><img src="assets/chapter-5-2-images/02.Smart-lilly-01.png" alt=""></p>
 <p>In order to solve the problem, we&apos;ll need a couple of helper variables &#x2013; for <strong>the toys&apos; count</strong> (<strong><code>number_of_toys</code></strong>) for <strong>the saved money</strong> (<strong><code>saved_money</code></strong>) and for <strong>the money received on each birthday</strong> (<strong><code>money_for_birthday</code></strong>). We initially assign 10 to <strong><code>money_for_birthday</code></strong>, because in the description it&apos;s said that the first sum received by Lily is 10 USD:</p>
 <p><img src="assets/chapter-5-2-images/02.Smart-lilly-02.png" alt=""></p>
@@ -665,12 +667,12 @@ The cycle consists of:</p>
 <p><img src="assets/chapter-5-2-images/02.Smart-lilly-04.png" alt=""></p>
 <p>At the end we print the results, taking in account the required formatting, meaning the sum has to be <strong>rounded to 2 digits after the decimal point</strong>:</p>
 <p><img src="assets/chapter-5-2-images/02.Smart-lilly-05.png" alt=""></p>
-<p>In some programming languages there&apos;s a construction called <strong>conditional operator (<code>?:</code>)</strong> (also known as ternary operator), as it&apos;s shorter to write. It has the following syntax in Python: <strong><code>operand1 if operand2 else operand3</code></strong>. The second operand is our condition and it has to be of <strong>bool type</strong> (meaning it has to return <strong><code>true/false</code></strong>). If <strong><code>operand2</code></strong> returns <strong><code>true</code></strong>, it&apos;ll execute <strong><code>operand1</code></strong>, and if it returns <strong><code>false</code></strong> &#x2013; <strong><code>operand3</code></strong>. In our case we check whether Lily&apos;s <strong>saved money</strong> are enough to buy a washing machine. If they&apos;re higher or equal to its price, the check <strong><code>saved_money &gt;= price_of_washing_machine</code></strong> will return <strong><code>true</code></strong> and it&apos;ll print &quot;<strong>Yes! &#x2026;</strong>&quot;, while if it&apos;s lower &#x2013; the result will be <strong><code>false</code></strong> and &quot;<strong>No! &#x2026;</strong>&quot; will be printed. Of course, instead of the ternary operator, we can use simple <strong><code>if</code></strong> expressions.</p>
+<p>In some programming languages there&apos;s a construction called <strong>conditional operator (<code>?:</code>)</strong> (also known as ternary operator), as it&apos;s shorter to write. It has the following syntax in Python: <strong><code>operand1 if operand2 else operand3</code></strong>. The second operand is our condition and it has to be of <strong>bool type</strong> (meaning it has to return <strong><code>true/false</code></strong>). If <strong><code>operand2</code></strong> returns <strong><code>true</code></strong>, it&apos;ll execute <strong><code>operand1</code></strong>, and if it returns <strong><code>false</code></strong> &#x2013; <strong><code>operand3</code></strong>. In our case we check whether Lily&apos;s <strong>saved money</strong> is enough to buy a washing machine. If its higher or equal to its price, the check <strong><code>saved_money &gt;= price_of_washing_machine</code></strong> will return <strong><code>true</code></strong> and it&apos;ll print &quot;<strong>Yes! &#x2026;</strong>&quot;, while if it&apos;s lower &#x2013; the result will be <strong><code>false</code></strong> and &quot;<strong>No! &#x2026;</strong>&quot; will be printed. Of course, instead of the ternary operator, we can use simple <strong><code>if</code></strong> expressions.</p>
 <p>More about ternary operators: <a href="https://book.pythontips.com/en/latest/ternary_operators.html" target="_blank">https://book.pythontips.com/en/latest/ternary_operators.html</a>.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1054#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1054#1</a>.</p>
 <h2 id="problem-returning-to-the-past"><a name="problem-returning-to-the-past" class="plugin-anchor" href="#problem-returning-to-the-past"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Returning to the past</h2>
-<p>Ivancho is <strong>18 years old</strong> and receives an inheritance of <strong>X USD</strong> and <strong>a time-travelling machine</strong>. He decides <strong>to travel back to 1800</strong>, but he doesn&apos;t know <strong>whether the money</strong> will <strong>be enough</strong> to live without working. Write <strong>a program that calculates</strong> whether Ivancho <strong>will have enough money</strong>, so as to live without working <strong>until a given year, including it</strong>. We accept that <strong>each even year</strong> (1800, 1802, etc.) he&apos;ll <strong>spend 12 000 dollars</strong>. For <strong>each odd year</strong> (1801, 1803, etc.) he&apos;ll spend <strong>12 000 + 50 * [Ivancho&apos;s age in the taken year]</strong>.</p>
+<p>Ivancho is <strong>18 years old</strong> and receives an inheritance of <strong>X USD</strong> and <strong>a time-travelling machine</strong>. He decides <strong>to travel back to 1800</strong>, but he doesn&apos;t know <strong>whether the money</strong> is <strong>be enough</strong> to live without working. Write <strong>a program that calculates</strong> whether Ivancho <strong>will have enough money</strong>, so as to live without working <strong>until a given year, including the year itself</strong>. We accept that <strong>each even year</strong> (1800, 1802, etc.) he&apos;ll <strong>spend 12 000 dollars</strong>. For <strong>each odd year</strong> (1801, 1803, etc.) he&apos;ll spend <strong>12 000 + 50 * [Ivancho&apos;s age in the given year]</strong>.</p>
 <h3 id="input"><a name="input" class="plugin-anchor" href="#input"><i class="fa fa-link" aria-hidden="true"></i></a>Input</h3>
 <p>The input is read from the console and <strong>contains exactly 2 lines</strong>:</p>
 <ul>
@@ -803,7 +805,7 @@ The cycle consists of:</p>
 <li>If the day is a <strong>second</strong> one, the remainder of division by <strong>3</strong> will be <strong>2</strong> (<strong><code>2 % 3 = 2</code></strong>) and the check will return <strong><code>false</code></strong>.</li>
 <li>If the day is a <strong>fourth</strong> one, the remainder of the division will be <strong>1</strong> (<strong><code>4 % 3 = 1</code></strong>) and the check will again return <strong><code>false</code></strong>.</li>
 </ul>
-<p>If the check <strong><code>day % 3 == 0</code></strong> returns <strong><code>true</code></strong>, there&apos;ll also be a check whether the count of untreated patients is higher than the treated&apos;s count: <strong><code>untreated_patients &gt; treated_patients</code></strong>. If the result is again <strong><code>true</code></strong>, then the count of doctors (<strong><code>count_of_doctors</code></strong>) will increase.</p>
+<p>If the conditional check <strong><code>day % 3 == 0</code></strong> returns <strong><code>true</code></strong>, there&apos;ll also be a check whether the count of untreated patients is higher than the treated&apos;s count: <strong><code>untreated_patients &gt; treated_patients</code></strong>. If the result is again <strong><code>true</code></strong>, then the count of doctors (<strong><code>count_of_doctors</code></strong>) will increase.</p>
 <p>After that we check whether the patients&apos; count for the current day (<strong><code>current_patients</code></strong>) is higher than the doctors&apos; count (<strong><code>count_of_doctors</code></strong>). If the patients&apos; count is <strong>higher</strong>:</p>
 <ul>
 <li>We increase the value of the variable <strong><code>treated_patients</code></strong> with the doctors&apos; count (<strong><code>count_of_doctors</code></strong>).</li>
@@ -970,7 +972,7 @@ The percentage of <b>train-transported</b> cargo: 16/25*100 = <b>64.00%</b><br>
 </li>
 <li>If <strong><code>tons</code></strong> is <strong>higher than 11</strong>, we increase <strong><code>train_tons</code></strong> by <strong><code>tons</code></strong>.</li>
 </ul>
-<p>Before we print our output, we have to <strong>calculate the percentage of tons transported by each vehicle</strong> and <strong>the average price per ton</strong>. For the average price we&apos;ll declare another additional variable <strong><code>total_price</code></strong>, in which we&apos;ll <strong>sum the total price of all transported loads</strong> (with van, truck and train). The average price will be calculated by dividing <strong><code>total_price</code></strong> by <strong><code>sum_of_tons</code></strong>. You&apos;re left with <strong>calculating yourself</strong> the percentage of tons transported by each vehicle and printing the output, adhering to the format from the problem&apos;s description.</p>
+<p>Before we print our output, we have to <strong>calculate the percentage of tons transported by each vehicle</strong> and <strong>the average price per ton</strong>. For the average price we&apos;ll declare another additional variable <strong><code>total_price</code></strong>, in which we&apos;ll <strong>sum the total price of all transported loads</strong> (with van, truck and train). The average price will be calculated by dividing <strong><code>total_price</code></strong> by <strong><code>sum_of_tons</code></strong>. You&apos;re left with <strong>calculated by yourself</strong> the percentage of tons transported by each vehicle and printing the output, adhering to the format as shown in the problem&apos;s description.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1054#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1054#5</a>.</p>
 
@@ -1016,7 +1018,7 @@ The percentage of <b>train-transported</b> cargo: 16/25*100 = <b>64.00%</b><br>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"next":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"previous":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-05-loops-exam-problems.md","mtime":"2021-11-01T10:00:27.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"next":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"previous":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-05-loops-exam-problems.md","mtime":"2021-11-21T18:49:05.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1039,6 +1041,10 @@ The percentage of <b>train-transported</b> cargo: 16/25*100 = <b>64.00%</b><br>
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         

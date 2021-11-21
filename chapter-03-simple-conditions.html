@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.1. Simple Conditions · GitBook</title>
+        <title>3.1. Simple Conditions · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -441,10 +443,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="chapter-31-simple-conditions"><a name="chapter-31-simple-conditions" class="plugin-anchor" href="#chapter-31-simple-conditions"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 3.1. Simple conditions</h1>
-<p>In the present chapter, we will take a look at the <strong>conditional constructs in the Python programming language</strong>. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (<strong><code>if</code></strong>, <strong><code>if-elif</code></strong> and <strong><code>else</code></strong>) by implementing appropriate examples and also we will take a look at the range in which a variable lives (its <strong>scope</strong>). Finally, we will go over different <strong>debugging</strong> techniques, to follow the programming steps through which our program goes during its run.</p>
+<p>In the current chapter, we&apos;re going to be taking a look at the <strong>conditional constructs in the Python programming language</strong>. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (<strong><code>if</code></strong>, <strong><code>if-elif</code></strong> and <strong><code>else</code></strong>) by implementing appropriate examples and also we are going to take a look at the range in which a variable lives (its <strong>scope</strong>). Finally, we will go over different <strong>debugging</strong> techniques, to follow the programming steps through which our program goes during its run.</p>
 <h2 id="video"><a name="video" class="plugin-anchor" href="#video"><i class="fa fa-link" aria-hidden="true"></i></a>Video</h2>
 <div class="video-player">
-  Watch video-tutorial about this chapter here: 
+  Watch the video-tutorial about this chapter here: 
   https://www.youtube.com/watch?v=cQIl0wQLVRE.
 </div>
 
@@ -504,7 +506,7 @@
 <p>You can test the solution example here:
 <a href="https://judge.softuni.org/Contests/Practice/Index/1049#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#0</a>.</p>
 <h2 id="if-else-conditional-constructs"><a name="if-else-conditional-constructs" class="plugin-anchor" href="#if-else-conditional-constructs"><i class="fa fa-link" aria-hidden="true"></i></a>If-else conditional constructs</h2>
-<p>The <strong><code>if</code></strong> conditional can also have an <strong><code>else</code></strong> option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning <strong><code>if Boolean expression</code></strong>) returns a negative result (<strong><code>False</code></strong>). Written in this way, the <strong>conditional statement</strong> is called <strong><code>if-else</code></strong> and its behavior is as follows: if the result of the condition is <strong>positive</strong> (<strong><code>True</code></strong>) - a set of instructions is executed. By contrast, when the result is <strong>negative</strong> (<strong><code>False</code></strong>) - a different set is executed. The format of this structure is as follows:</p>
+<p>The <strong><code>if</code></strong> conditional can also have an <strong><code>else</code></strong> option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning <strong><code>if Boolean expression</code></strong>) returns a negative result (<strong><code>False</code></strong>). Written in this way, the <strong>conditional statement</strong> is called <strong><code>if-else</code></strong> and its behavior is as follows: if the result of the condition is <strong>positive</strong> (<strong><code>True</code></strong>) - a set of instructions is executed. By contrast, when the result is <strong>negative</strong> (<strong><code>False</code></strong>) - a different set is executed. The format of this structure is as shown:</p>
 <pre><code class="lang-python"><span class="hljs-keyword">if</span> condition:
     <span class="hljs-comment"># Condition body to be executed if a condition is true</span>
 <span class="hljs-keyword">else</span>:
@@ -516,7 +518,7 @@
 <h4 id="testing-in-judge-system"><a name="testing-in-judge-system" class="plugin-anchor" href="#testing-in-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#1</a>.</p>
 <h2 id="about-blocks-of-code"><a name="about-blocks-of-code" class="plugin-anchor" href="#about-blocks-of-code"><i class="fa fa-link" aria-hidden="true"></i></a>About blocks of code</h2>
-<p>By pressing <strong>tab key</strong> we create a block of code through which a group of commands can be executed. When we have code in <strong>if, elif, else</strong> (and other structures) and we want to perform a series of operations, we put them in a block after the condition.</p>
+<p>By pressing the <strong>tab key</strong> we create a block of code through which a group of commands can be executed. When we have code in <strong>if, elif, else</strong> (and other structures) and we want to perform a series of operations, we put them in a block after the condition.</p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution.</td>
 </tr></table>
@@ -536,7 +538,7 @@
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#2</a>.</p>
 <h3 id="problem-finding-the-greater-number"><a name="problem-finding-the-greater-number" class="plugin-anchor" href="#problem-finding-the-greater-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Finding the Greater Number</h3>
-<p>Write a program that reads two integers and outputs the larger.</p>
+<p>Write a program that reads two integers and outputs the number of higher value between the two .</p>
 <p>Our first task is to  <strong>read</strong> the two numbers. After which through the use of a simple  <strong><code>if-else</code></strong> structure, in combination with the <strong>greater than operator</strong> (<strong><code>&gt;</code></strong>), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.</p>
 <p><img src="assets/chapter-3-1-images/04.Greater-number-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
@@ -654,7 +656,7 @@
 </tbody>
 </table>
 <h4 id="hints-and-pointers"><a name="hints-and-pointers" class="plugin-anchor" href="#hints-and-pointers"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and pointers</h4>
-<p>Firstly, we sum the three numbers, to obtain the seconds total. As we know that <strong>1 minute = 60 seconds</strong>, we should calculate the minutes and seconds in the range 0 to 59:</p>
+<p>Firstly, we sum the three numbers, to obtain the total seconds. As we know that <strong>1 minute = 60 seconds</strong>, we should calculate the minutes and seconds in the range 0 to 59:</p>
 <ul>
 <li>If the result is between 0 and 59, we print 0 minutes + calculated seconds.</li>
 <li>If the result is between 60 and 119, we print 1 minute + calculated seconds minus 60.</li>
@@ -704,7 +706,7 @@
 </tr>
 </tbody>
 </table>
-<p>The input will be three parameters:</p>
+<p>The input will consist of three parameters:</p>
 <ul>
 <li>First line: A number.</li>
 <li>Second: Input unit of measure.</li>
@@ -739,9 +741,9 @@
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#7</a>.</p>
 <h2 id="debugging---simple-operations-with-a-debugger"><a name="debugging---simple-operations-with-a-debugger" class="plugin-anchor" href="#debugging---simple-operations-with-a-debugger"><i class="fa fa-link" aria-hidden="true"></i></a>Debugging - simple operations with a debugger</h2>
-<p>To date, we have written quite a lot of code and oftentimes there were mistakes, were there? Now we can show you a tool to make finding mistakes easier.</p>
+<p>So far, we have written quite a lot of code and oftentimes there have been mistakes, haven&apos;t there? Now we can show you a tool to make finding mistakes easier.</p>
 <h3 id="what-is-debugging"><a name="what-is-debugging" class="plugin-anchor" href="#what-is-debugging"><i class="fa fa-link" aria-hidden="true"></i></a>What is &quot;debugging&quot;?</h3>
-<p><strong>Debugging</strong> is the process of &quot;<strong>attaching</strong>&quot; to a program&apos;s execution, which allows us to follow closely the execution of our program. We can follow <strong>line by line</strong> the events in our program, what is its evaluation route, what are the intermediate values of the declared variables at each step of the execution, among other useful information and thus allowing us to locate errors - the so-called <strong>bugs</strong>:</p>
+<p><strong>Debugging</strong> is the process of &quot;<strong>attaching</strong>&quot; to a program&apos;s execution, which allows us to follow closely the execution of our program. We can follow <strong>line by line</strong> the events in our program, what its evaluation route is, what the intermediate values of the declared variables at each step of the execution are, among other useful information and thus allowing us to locate errors - the so-called <strong>bugs</strong>:</p>
 <p><img src="assets/chapter-3-1-images/00.Debugging-01.png" alt="">
 <img src="assets/chapter-3-1-images/00.Debugging-02.png" alt=""></p>
 <h3 id="debugging-in-pycharm"><a name="debugging-in-pycharm" class="plugin-anchor" href="#debugging-in-pycharm"><i class="fa fa-link" aria-hidden="true"></i></a>Debugging in PyCharm</h3>
@@ -1033,7 +1035,7 @@
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#10</a>.</p>
 <h3 id="problem-speed-assessment"><a name="problem-speed-assessment" class="plugin-anchor" href="#problem-speed-assessment"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Speed Assessment</h3>
-<p>Write a program, that <strong>reads input data from the console - speed</strong> (decimal number) and prints <strong>speed information</strong>. For speeds <strong>up to 10</strong> (inclusive), print &quot;<strong>slow</strong>&quot;. For speed <strong>over 10 up to 50</strong>, print &quot;<strong>average</strong>&quot;. For speeds <strong>over 50 and up to 150</strong>, print &quot;<strong>fast</strong>&quot;. For speeds <strong>over 150 and up to 1000</strong>, print &quot;<strong>ultra fast</strong>&quot;. For higher speed, print &quot;<strong>extremely fast</strong>&quot;.</p>
+<p>Write a program, that <strong>reads input data from the console - speed</strong> (decimal number) and prints <strong>speed information</strong>. For speed <strong>up to 10</strong> (inclusive), print &quot;<strong>slow</strong>&quot;. For speed <strong>over 10 up to 50</strong>, print &quot;<strong>average</strong>&quot;. For speed <strong>over 50 and up to 150</strong>, print &quot;<strong>fast</strong>&quot;. For speed <strong>over 150 and up to 1000</strong>, print &quot;<strong>ultra fast</strong>&quot;. For any higher speed, print &quot;<strong>extremely fast</strong>&quot;.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -1069,7 +1071,7 @@
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#11</a>.</p>
 <h3 id="problem-areas-of-figures"><a name="problem-areas-of-figures" class="plugin-anchor" href="#problem-areas-of-figures"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Areas of Figures</h3>
 <p>Write a program that reads input data from the console - <strong>the measures of a geometric shape</strong> and <strong>calculates its surface area</strong>. There are four types of shapes: <strong>square</strong>, <strong>rectangle</strong>, <strong>circle</strong> and <strong>triangle</strong>.</p>
-<p>The first line of the input is the type of shape (<strong><code>square</code></strong>, <strong><code>rectangle</code></strong>, <strong><code>circle</code></strong>, <strong><code>triangle</code></strong>):</p>
+<p>The first line of input is the type of shape (<strong><code>square</code></strong>, <strong><code>rectangle</code></strong>, <strong><code>circle</code></strong>, <strong><code>triangle</code></strong>):</p>
 <ul>
 <li>If the shape is a <strong>square</strong>, the next argument will be one number - the length of its side.</li>
 <li>If the shape is a <strong>rectangle</strong>, the next argument will be two numbers - the lengths of its sides.</li>
@@ -1107,7 +1109,7 @@
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#12</a>.</p>
 <h3 id="problem-time--15-minutes"><a name="problem-time--15-minutes" class="plugin-anchor" href="#problem-time--15-minutes"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Time + 15 Minutes</h3>
-<p>Write a program that reads <strong>two integers - hours and minutes</strong> based on a 24-hour day and calculates what will be the time <strong>after 15 minutes</strong>. The result should be printed in the following format <strong><code>hh:mm</code></strong>. Hours should always be between 0 and 23, while minutes should always be between 0 and 59. Hours should be written with one or two digits as needed, while the minutes should always be written with two digits - add a <strong>leading zero</strong>, as needed.</p>
+<p>Write a program that reads <strong>two integers - hours and minutes</strong> based on a 24-hour day and calculates what time it will be <strong>15 minutes later</strong>. The result should be printed in the following format <strong><code>hh:mm</code></strong>. Hours should always be between 0 and 23, while minutes should always be between 0 and 59. Hours should be written with one or two digits as needed, while the minutes should always be written with two digits - add a <strong>leading zero</strong>, as needed.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -1140,7 +1142,7 @@
 </tbody>
 </table>
 <h4 id="hints-and-pointers"><a name="hints-and-pointers" class="plugin-anchor" href="#hints-and-pointers"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and pointers</h4>
-<p>Add 15 minutes and check using a set of conditions. If minutes are over 59 <strong>increase the hours</strong> by 1 and <strong>decrease the minutes</strong> by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a <strong>leading zero</strong> when appropriate.</p>
+<p>Add 15 minutes and check using a set of conditions. If minutes are over 59 <strong>increase the hours</strong> by 1 and <strong>decrease the minutes</strong> by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a <strong>leading zero</strong> where appropriate.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#13" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#13</a>.</p>
 <h3 id="problem-tree-equal-numbers"><a name="problem-tree-equal-numbers" class="plugin-anchor" href="#problem-tree-equal-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Tree equal numbers</h3>
@@ -1196,7 +1198,7 @@
 </tbody>
 </table>
 <h4 id="hints-and-pointers"><a name="hints-and-pointers" class="plugin-anchor" href="#hints-and-pointers"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and pointers</h4>
-<p>Firstly, we should check for <strong>single-digit numbers</strong> and if this is the case, print the corresponding word. Then we can check if the number is a <strong>double-digit number</strong>. These can be printed in two parts: left part (<strong>tens</strong> = number / 10) and right part (<strong>units</strong> = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.</p>
+<p>Firstly, we should check for <strong>single-digit numbers</strong> and if this is the case, print the corresponding word. Then we can check if the number is a <strong>double-digit number</strong>. These can be printed in two parts: left part (<strong>double-digit</strong> = number / 10) and right part (<strong>single-digit</strong> = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#15" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#15</a>.</p>
 
@@ -1242,7 +1244,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"next":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"previous":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-03-simple-conditions.md","mtime":"2021-11-01T10:00:27.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"next":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"previous":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions.md","mtime":"2021-11-21T18:49:05.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1265,6 +1267,10 @@
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         

@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>2.1. Simple Calculations · GitBook</title>
+        <title>2.1. Simple Calculations · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -441,9 +443,9 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="chapter-21-simple-calculations"><a name="chapter-21-simple-calculations" class="plugin-anchor" href="#chapter-21-simple-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 2.1. Simple Calculations</h1>
-<p>In this chapter we are going to get familiar with the following concepts and programming techniques:</p>
+<p>In this chapter we are going to become familiar with the following concepts and programming techniques:</p>
 <ul>
-<li>How to work with <strong>data types and variables</strong>, which are necessary to process numbers and strings.</li>
+<li>How to work with <strong>data types and variables</strong>, which are necessary when processing numbers and strings.</li>
 <li>How to <strong>print</strong> a result on the console.</li>
 <li>How to <strong>read</strong> user input.</li>
 <li>How to do simple <strong>arithmetic operations</strong>: add, subtract, multiply, divide, string concatenation.</li>
@@ -456,11 +458,11 @@
 </div>
 
 
-<h2 id="calculations-in-programming"><a name="calculations-in-programming" class="plugin-anchor" href="#calculations-in-programming"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations in programming</h2>
-<p>We know that computers are machines which process data. All <strong>data</strong> is held in the computer memory (RAM memory) as <strong>variables</strong>. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each <strong>variable</strong> in Python has a <strong>name</strong> and <strong>value</strong>. Here is how to define a variable, assigning a value to it at the time of declaration:</p>
+<h2 id="calculations-in-programming"><a name="calculations-in-programming" class="plugin-anchor" href="#calculations-in-programming"><i class="fa fa-link" aria-hidden="true"></i></a>Calculations in Programming</h2>
+<p>We know that computers are machines that process data. All <strong>data</strong> is held in the computer memory (RAM memory) as <strong>variables</strong>. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each <strong>variable</strong> in Python has a <strong>name</strong> and <strong>value</strong>. Here is how to define a variable, assigning a value to it at the time of declaration:</p>
 <p><img src="assets/chapter-2-1-images/00.Declaring-variables-01.png" alt=""></p>
-<p>After processing, data is still held in variables (i.e. somewhere in the computer memory, set aside by our program).</p>
-<h2 id="data-types-and-variables"><a name="data-types-and-variables" class="plugin-anchor" href="#data-types-and-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Data types and Variables</h2>
+<p>After processing, data is still held in variables (i.e. somewhere in the computer memory, allocated by our program).</p>
+<h2 id="data-types-and-variables"><a name="data-types-and-variables" class="plugin-anchor" href="#data-types-and-variables"><i class="fa fa-link" aria-hidden="true"></i></a>Data Types and Variables</h2>
 <p>In programming, each variable stores a certain <strong>value</strong> of a particular <strong>type</strong>. For example, data types can be: <strong>number</strong>, <strong>letter</strong>, <strong>text</strong> (string), <strong>date</strong>, <strong>color</strong>, <strong>image</strong>, <strong>list</strong> and others. Here are some examples of data types and their values:</p>
 <ul>
 <li><strong>int</strong> - integer: 1, 2, 3, 4, 5, ...</li>
@@ -469,7 +471,7 @@
 <li><strong>datetime</strong> - date: 21-12-2017, 25/07/1995, ...</li>
 </ul>
 <p>In <strong>Python</strong> the data type is automatically defined by the variable&apos;s assigned value. It is not defined explicitly upon declaration of variables (as opposed to C#, Java and C++).</p>
-<h2 id="printing-outcomes-on-the-console"><a name="printing-outcomes-on-the-console" class="plugin-anchor" href="#printing-outcomes-on-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Printing outcomes on the console</h2>
+<h2 id="printing-results-on-the-console"><a name="printing-results-on-the-console" class="plugin-anchor" href="#printing-results-on-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Printing Results on the Console</h2>
 <p>In order to print text, numbers or other data on the console, we need to call the built-in function <strong><code>print()</code></strong>. It allows us to print the value of a variable as well as to directly print a string or a number:</p>
 <pre><code class="lang-python">print(<span class="hljs-number">9</span>)  <span class="hljs-comment"># prints a number</span>
 
@@ -491,14 +493,14 @@ print(msg)  <span class="hljs-comment"># prints value of a variable</span>
 area = a * a
 print(<span class="hljs-string">&apos;Square area = &apos;</span>, area)
 </code></pre>
-<p>Here is how this program would work for a square with side equal to 3:</p>
+<p>Here is how this program would work for a square with a side equal to 3:</p>
 <p><img src="assets/chapter-2-1-images/00.Square-area-01.png" alt=""></p>
-<p>Try to type in an invalid number, for example &quot;<strong>hello</strong>&quot;. You will recieve an <strong>error</strong> message during execution of the program (exception). This is normal. Later on, we will learn how to tackle these errors and how to make the user type another number.</p>
+<p>Try to type in an invalid number, for example &quot;<strong>hello</strong>&quot;. You will recieve an <strong>error</strong> message during execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. </p>
 <h4 id="how-does-the-example-work"><a name="how-does-the-example-work" class="plugin-anchor" href="#how-does-the-example-work"><i class="fa fa-link" aria-hidden="true"></i></a>How does the example work?</h4>
 <p>The first line <strong><code>a = int(input(&apos;a = &apos;))</code></strong> prints a message which tells the user to input the side of the square <strong>a</strong>, then it reads a text (string) and converts it into an integer (this is called parsing) utilizing the function <strong><code>int(&#x2026;)</code></strong>. The result is assigned to a variable with the name <strong><code>a</code></strong>.</p>
 <p>The next command <strong><code>area = a * a</code></strong> assigns to a new variable <strong><code>area</code></strong> the result of the multiplication of <strong><code>a</code></strong> by <strong><code>a</code></strong>.</p>
 <p>The last line <strong><code>print(&apos;Square area = &apos;, area)</code></strong> prints the given text and next to it, the calculated area of the square, held in the variable <strong><code>area</code></strong> is concatenated.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#0</a>.</p>
 <h2 id="reading-of-a-sequence-of-numbers"><a name="reading-of-a-sequence-of-numbers" class="plugin-anchor" href="#reading-of-a-sequence-of-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Reading of a sequence of numbers</h2>
 <p>When we want to read <strong>several numbers from the console</strong>, if they are given <strong>each on a new line</strong>, we read them one by one like so:</p>
@@ -534,7 +536,7 @@ print(<span class="hljs-string">&apos;Centimeters = &apos;</span>, centimeters)
 </code></pre>
 <p>Let&apos;s start the program to make sure that, when we input a value in inches, we recieve a correct result in centimeters:</p>
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#1</a>.</p>
 <h2 id="reading-a-text-from-the-console"><a name="reading-a-text-from-the-console" class="plugin-anchor" href="#reading-a-text-from-the-console"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a Text from the Console</h2>
 <p>To read a <strong>text</strong> (string) from the console, again, we have to <strong>declare a new variable</strong> and use the standard <strong>command for reading a text from the console</strong>:</p>
@@ -549,7 +551,7 @@ print(name, end=<span class="hljs-string">&apos;!&apos;</span>)
 <p>By default, the built-in function <strong><code>print(&#x2026;)</code></strong> prints the result and continues to the next line. This is because <strong><code>print(&#x2026;)</code></strong> uses the parameter <strong><code>end</code></strong>, which by default has the value <strong><code>\n</code></strong> (new line). In order to stay on the same line, we can change the value of <strong><code>end=&apos;&apos;</code></strong>.</p>
 <p>Here is the result if we call the function with the name &quot;Ivan&quot;:</p>
 <p><img src="assets/chapter-2-1-images/03.Greeting-by-name-00.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#2</a>.</p>
 <h2 id="concatenating-text-and-numbers"><a name="concatenating-text-and-numbers" class="plugin-anchor" href="#concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Concatenating Text and Numbers</h2>
 <p>When printing text, numbers and other data, <strong>we can concatenate them</strong> by using templates <strong><code>{0}</code></strong>, <strong><code>{1}</code></strong>, <strong><code>{2}</code></strong> etc. In programming these <strong>templates</strong> are called <strong>placeholders</strong>. </p>
@@ -565,7 +567,7 @@ print(<span class="hljs-string">&apos;You are {0} {1}, a {2}-years old person fr
 <p>Here is the result which we will get after execution of this example:</p>
 <p><img src="assets/chapter-2-1-images/00.Placeholders-01.png" alt=""></p>
 <p>Pay attention to how each variable has to be given in the <strong>order, in which we want it to print</strong>. Essentially, the template (<strong>placeholder</strong>) <strong>accepts all types of variables</strong> and this makes it very convenient for use when printing.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#3</a>.</p>
 <h3 id="more-on-printing-formatted-text"><a name="more-on-printing-formatted-text" class="plugin-anchor" href="#more-on-printing-formatted-text"><i class="fa fa-link" aria-hidden="true"></i></a>More on printing formatted text</h3>
 <p>It is possible for one number of a <strong>template</strong> to be used several times and it is not required for the templates of the function <strong><code>.format(&#x2026;)</code></strong> to be numbered consecutively. Here is an example:</p>
@@ -602,14 +604,14 @@ product = a * b  <span class="hljs-comment"># 35</span>
 <p>Dividing numbers is done using the <strong><code>/</code></strong> operator. </p>
 <p><strong>Note:</strong> <strong>Dividing by 0</strong> causes an <strong>error</strong> during execution (runtime exception) - <strong>ZeroDivisionError</strong>.</p>
 <p>Here are a few examples with the division operator:</p>
-<pre><code class="lang-python">print(<span class="hljs-number">10</span> / <span class="hljs-number">2.5</span>) <span class="hljs-comment"># &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;: 4</span>
-print(<span class="hljs-number">10</span> / <span class="hljs-number">4</span>)   <span class="hljs-comment"># &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;: 2.5</span>
-print(<span class="hljs-number">10</span> / <span class="hljs-number">6</span>)   <span class="hljs-comment"># &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;: 1.6666666666666667</span>
+<pre><code class="lang-python">print(<span class="hljs-number">10</span> / <span class="hljs-number">2.5</span>) <span class="hljs-comment"># Result: 4</span>
+print(<span class="hljs-number">10</span> / <span class="hljs-number">4</span>)   <span class="hljs-comment"># Result: 2.5</span>
+print(<span class="hljs-number">10</span> / <span class="hljs-number">6</span>)   <span class="hljs-comment"># Result: 1.6666666666666667</span>
 
-print(<span class="hljs-number">5</span> / <span class="hljs-number">0</span>)    <span class="hljs-comment"># &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;: ZeroDivisionError: division by zero</span>
-print(<span class="hljs-number">-5</span> / <span class="hljs-number">0</span>)   <span class="hljs-comment"># &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;: ZeroDivisionError: division by zero</span>
-print(<span class="hljs-number">0</span> / <span class="hljs-number">0</span>)    <span class="hljs-comment"># &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;: ZeroDivisionError: division by zero</span>
-print(<span class="hljs-number">2.5</span> / <span class="hljs-number">0</span>)  <span class="hljs-comment"># &#x420;&#x435;&#x437;&#x443;&#x43B;&#x442;&#x430;&#x442;: ZeroDivisionError: float division by zero</span>
+print(<span class="hljs-number">5</span> / <span class="hljs-number">0</span>)    <span class="hljs-comment"># Result: ZeroDivisionError: division by zero</span>
+print(<span class="hljs-number">-5</span> / <span class="hljs-number">0</span>)   <span class="hljs-comment"># Result: ZeroDivisionError: division by zero</span>
+print(<span class="hljs-number">0</span> / <span class="hljs-number">0</span>)    <span class="hljs-comment"># Result: ZeroDivisionError: division by zero</span>
+print(<span class="hljs-number">2.5</span> / <span class="hljs-number">0</span>)  <span class="hljs-comment"># Result: ZeroDivisionError: float division by zero</span>
 </code></pre>
 <h3 id="raising-to-power-operator-"><a name="raising-to-power-operator-" class="plugin-anchor" href="#raising-to-power-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Raising to power: operator <strong>`</strong>`**</h3>
 <p>To <strong>raise to power</strong> in Python the operator <code>**</code> is used:</p>
@@ -735,7 +737,7 @@ print(<span class="hljs-string">&apos;Trapezoid area = &apos;</span> + str(area)
 </code></pre>
 <p>Because we want the program to work for both integer and floating point numbers, we use <strong><code>float(&#x2026;)</code></strong>. If we start the program and we input for the sides respectively <strong><code>3</code></strong>, <strong><code>4</code></strong> &#x438; <strong><code>5</code></strong>, we will get the following result:</p>
 <p><img src="assets/chapter-2-1-images/05.Trapezoid-area-03.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#4</a>.</p>
 <h2 id="rounding-of-numbers"><a name="rounding-of-numbers" class="plugin-anchor" href="#rounding-of-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Rounding of numbers</h2>
 <p>Sometimes when we work with floating point numbers we need to convert the numbers to the same type of format. This conversion is called <strong>rounding</strong>. <strong>Python</strong> offers several methods for rounding of numbers:</p>
@@ -783,7 +785,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </code></pre>
 <p>Let&apos;s try the program with <strong>radius <code>r = 10</code></strong>:</p>
 <p><img src="assets/chapter-2-1-images/00.Circle-area-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#5</a>.</p>
 <h3 id="example-area-of-a-rectangle"><a name="example-area-of-a-rectangle" class="plugin-anchor" href="#example-area-of-a-rectangle"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Area of a rectangle</h3>
 <p>A rectangle is given with <strong>coordinates of its two opposite corners</strong>. You have to calculate its <strong>area and perimeter</strong>:</p>
@@ -806,9 +808,9 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <p>The function <strong><code>max(a, b)</code></strong> is used to find the bigger value between <strong><code>a</code></strong> and <strong><code>b</code></strong> and analogically <strong><code>min(a, b)</code></strong> - to find the smaller value between the two.</p>
 <p>When starting the program with the values from the coordinate system, the following result is given:
 <img src="assets/chapter-2-1-images/00.Rectangle-area-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#6</a>.</p>
-<h2 id="what-did-we-learn-in-this-chapter"><a name="what-did-we-learn-in-this-chapter" class="plugin-anchor" href="#what-did-we-learn-in-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What did we learn in this chapter?</h2>
+<h2 id="what-have-we-learned-in-this-chapter"><a name="what-have-we-learned-in-this-chapter" class="plugin-anchor" href="#what-have-we-learned-in-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What have we learned in this chapter?</h2>
 <p>Let&apos;s summarize what we have learned in this chapter:</p>
 <ul>
 <li><strong>Reading text</strong>: <strong><code>str = input()</code></strong>.</li>
@@ -837,12 +839,12 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <p><img src="assets/chapter-2-1-images/01.Square-area-03.png" alt=""></p>
 <p>The code inputs an integer through <strong><code>a = int(input(&apos;a = &apos;))</code></strong>, afterwards it calculates <strong><code>area = a * a</code></strong> and finally prints the value of the variable <strong><code>area</code></strong>. We <strong>start</strong> the program using [<strong>Ctrl + Shift + F10</strong>] or with right-click - [<strong>Run</strong>], and we <strong>test</strong> it with different inputs:</p>
 <p><img src="assets/chapter-2-1-images/01.Square-area-04.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#0</a>. You have to get 100 points (completely correct solution):</p>
 <p><img src="assets/chapter-2-1-images/01.Square-area-05.png" alt=""></p>
 <p><img src="assets/chapter-2-1-images/01.Square-area-06.png" alt=""></p>
 <h3 id="problem----inches-to-centimeters"><a name="problem----inches-to-centimeters" class="plugin-anchor" href="#problem----inches-to-centimeters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Inches to Centimeters</h3>
-<p>Write a program that <strong>reads a number from the console</strong> (not necessarily an integer) and converts the number from <strong>inches to centimeters.</strong> For the purpose <strong>it multiplies the inches by 2.54</strong> (because one inch = 2.54 centimeters).</p>
+<p>Write a program that <strong>reads a number from the console</strong> (not necessarily an integer) and converts the number from <strong>inches to centimeters.</strong> For the purpose <strong>it multiplies the inches by 2.54</strong> (because 1 inch = 2.54 centimeters).</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>First, we create a <strong>new Python file</strong> in the project &quot;SimpleCalculations&quot;.  We right-click the solution <strong>SimpleCalculations</strong> and choose [<strong>New</strong>] -&gt; [<strong>Python File</strong>]. We name it &quot;inches_to_centimeters&quot;:</p>
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-02.png" alt=""></p>
@@ -861,7 +863,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <p>It is recommended to <strong>change the settings of your computer</strong> to use a <strong>decimal point</strong>: In Windows this can be done from the Control Panel:</p>
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-07.png" alt=""></p>
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-08.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#1</a>.</p>
 <p>The solution should be accepted as a completely correct one:</p>
 <p><img src="assets/chapter-2-1-images/02.Inches-to-centimeters-09.png" alt=""></p>
@@ -874,7 +876,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <p><img src="assets/chapter-2-1-images/03.Greeting-by-name-02.png" alt=""></p>
 <p>We <strong>run</strong> the program using [<strong>Ctrl + Shift + F10</strong>] or with right click - [<strong>Run</strong>] to test if it runs correctly:</p>
 <p><img src="assets/chapter-2-1-images/03.Greeting-by-name-03.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here:  <a href="https://judge.softuni.org/Contests/Practice/Index/1047#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#2</a>.</p>
 <h3 id="problem----concatenating-text-and-numbers"><a name="problem----concatenating-text-and-numbers" class="plugin-anchor" href="#problem----concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Concatenating Text and Numbers</h3>
 <p>Write a program, that reads a first name, last name, age and city from the console and prints a message of the following kind: <strong><code>You are &lt;firstName&gt; &lt;lastName&gt;, a &lt;age&gt;-years old person from &lt;town&gt;</code></strong>.</p>
@@ -884,11 +886,11 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <p><strong>The code</strong> that prints the message described in the problem requirements should be finished:</p>
 <p><img src="assets/chapter-2-1-images/04.Concatenate-data-02.png" alt=""></p>
 <p>Next, the solution should be tested locally using [<strong>Ctrl + Shift + F10</strong>] or with right click - [<strong>Run</strong>] and enter an exemplary data.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#3</a>.</p>
 <h3 id="problem----trapezoid-area"><a name="problem----trapezoid-area" class="plugin-anchor" href="#problem----trapezoid-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Trapezoid Area</h3>
 <p>Write a program that reads three numbers from the console <strong>b1, b2 and h and calculates the area of a trapezoid</strong> with bases <strong>b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2</strong>.</p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -913,11 +915,11 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <p>Again, we have to add to the existing PyCharm project another <strong>Python file</strong> named &quot;trapezoid_area&quot; and to write the <strong>code which reads the input data from the console, calculates the the trapezoid area and prints it</strong>. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself.</p>
 <p><img src="assets/chapter-2-1-images/05.Trapezoid-area-02.png" alt=""></p>
 <p><strong>Test</strong> your solution locally using [<strong>Ctrl + Shift + F10</strong>] or with right click - [<strong>Run</strong>] and enter an exemplary data.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#4</a>.</p>
 <h3 id="problem----circle-area-and-perimeter"><a name="problem----circle-area-and-perimeter" class="plugin-anchor" href="#problem----circle-area-and-perimeter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Circle Area and Perimeter</h3>
 <p>Write a program that reads from the console a <strong>number r</strong> and calculates and prints <strong>the area and perimeter of a circle</strong> with <strong>radius r</strong>.</p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -942,12 +944,12 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <li><strong><code>area = math.pi * r * r</code></strong>.</li>
 <li><strong><code>perimeter = 2 * math.pi * r</code></strong>.</li>
 </ul>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#5</a>.</p>
 <h3 id="problem-rectangle-area"><a name="problem-rectangle-area" class="plugin-anchor" href="#problem-rectangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Rectangle Area</h3>
 <p>A <strong>rectangle</strong> is defined by the <strong>coordinates</strong> of both of its opposite corners (x1, y1) &#x2013; (x2, y2). Calculate its <strong>area and perimeter</strong>. <strong>The input</strong> is read from the console. The numbers <strong>x1, y1, x2 and y2</strong> are given one per line. <strong>The output</strong> is printed on the console and it has to contain two lines, each with one number &#x2013; the area and the perimeter.</p>
 <p><img src="assets/chapter-2-1-images/07.Rectangle-area-01.png" alt=""></p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -970,11 +972,11 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#6</a>.</p>
 <h3 id="problem----triangle-area"><a name="problem----triangle-area" class="plugin-anchor" href="#problem----triangle-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Triangle Area</h3>
 <p>Write a program that reads from the console <strong>a side and height of a triangle</strong> and calculates its area. Use the <strong>formula</strong> for triangle area: <strong>area = a * h / 2</strong>. &#x417;Round the result to <strong>2 digits after the decimal point using <code>round(area, 2)</code></strong>.</p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -1001,11 +1003,11 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#7</a>.</p>
 <h3 id="problem----converter-&#x2013;-from-&#xB0;c-degrees-to-&#xB0;f-degrees"><a name="problem----converter-&#x2013;-from-&#xB0;c-degrees-to-&#xB0;f-degrees" class="plugin-anchor" href="#problem----converter-&#x2013;-from-&#xB0;c-degrees-to-&#xB0;f-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Converter &#x2013; from &#xB0;C Degrees to &#xB0;F Degrees</h3>
 <p>Write a program that reads <strong>degrees on Celsius scale</strong> (&#xB0;C) and converts them to <strong>degrees on Fahrenheit scale</strong> (&#xB0;F). Look on the Internet for a proper <a href="https://bfy.tw/3rGh" title="Search in Google" target="_blank">formula</a> to do the calculations. Round the result to <strong>2 digits after the decimal point</strong>.</p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -1032,11 +1034,11 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#8</a>.</p>
 <h3 id="problem----converter-&#x2013;-from-radians-to-degrees"><a name="problem----converter-&#x2013;-from-radians-to-degrees" class="plugin-anchor" href="#problem----converter-&#x2013;-from-radians-to-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    Converter &#x2013; from Radians to Degrees</h3>
-<p>Write a program, that reads <strong>an angle in <a href="https://bg.wikipedia.org/wiki/&#x420;&#x430;&#x434;&#x438;&#x430;&#x43D;" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it to <strong><a href="https://bg.wikipedia.org/wiki/&#x413;&#x440;&#x430;&#x434;&#x443;&#x441;_(&#x44A;&#x433;&#x44A;&#x43B;" target="_blank">degrees</a>)</strong> (<strong><code>deg</code></strong>). Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in Python programs is available through <strong><code>math.pi</code></strong> when before that we have to refer to <strong>the math library</strong> using <strong><code>import math</code></strong>. Round the result to the nearest integer number using the method <strong><code>round()</code></strong>.</p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<p>Write a program, that reads <strong>an angle in <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it to <strong><a href="https://en.wikipedia.org/wiki/Degree_(angle" target="_blank">degrees</a>)</strong> (<strong><code>deg</code></strong>). Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in Python programs is available through <strong><code>math.pi</code></strong> when before that we have to refer to <strong>the math library</strong> using <strong><code>import math</code></strong>. Round the result to the nearest integer number using the method <strong><code>round()</code></strong>.</p>
+<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -1063,11 +1065,11 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#9</a>.</p>
 <h3 id="problem-converter-&#x2013;-usd-to-bgn"><a name="problem-converter-&#x2013;-usd-to-bgn" class="plugin-anchor" href="#problem-converter-&#x2013;-usd-to-bgn"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Converter &#x2013; USD to BGN</h3>
 <p>Write a program for <strong>conversion of US dollars</strong> (USD) <strong>into Bulgarian levs</strong> (BGN). <strong>Round</strong> the result to <strong>2 digits</strong> after the decimal point. Use a fixed rate between a <strong>dollar</strong> (USD) and <strong>levs</strong> (BGN): <strong>1 USD = 1.79549 BGN</strong>.</p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -1090,14 +1092,14 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#10</a>.</p>
-<h3 id="problem-----currency-converter"><a name="problem-----currency-converter" class="plugin-anchor" href="#problem-----currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    * Currency Converter</h3>
+<h3 id="problem--currency-converter"><a name="problem--currency-converter" class="plugin-anchor" href="#problem--currency-converter"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Currency Converter</h3>
 <p>Write a program for <strong>conversion of money from one currency into another</strong>. It has to support the following currencies: <strong>BGN, USD, EUR, GBP</strong>. Use the following fixed currency rates:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">&#x41A;&#x443;&#x440;&#x441;</th>
+<th style="text-align:center">Exchange Rate</th>
 <th style="text-align:center">USD</th>
 <th style="text-align:center">EUR</th>
 <th style="text-align:center">GBP</th>
@@ -1113,7 +1115,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tbody>
 </table>
 <p><strong>The input</strong> is <strong>sum for conversion</strong>, <strong>input currency</strong> and <strong>output currency</strong>. <strong>The output</strong> is one number &#x2013; the converted value of the above currency rates, rounded <strong>2 digits</strong> after the decimal point.  </p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -1140,11 +1142,11 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tr>
 </tbody>
 </table>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#11</a>.</p>
 <h3 id="problem-----date-calculations-&#x2013;-1000-days-on-the-earth"><a name="problem-----date-calculations-&#x2013;-1000-days-on-the-earth" class="plugin-anchor" href="#problem-----date-calculations-&#x2013;-1000-days-on-the-earth"><i class="fa fa-link" aria-hidden="true"></i></a>Problem:    ** Date Calculations &#x2013; 1000 Days on the Earth</h3>
 <p>Write a program that enters <strong>a birth date</strong> in format <strong>dd-MM-yyyy</strong> and calculates the date on which <strong>1000 days</strong> are turned since this birth date and prints it in the same format.</p>
-<h4 id="example-input-and-output"><a name="example-input-and-output" class="plugin-anchor" href="#example-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Example input and output</h4>
+<h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
 <tr>
@@ -1180,7 +1182,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <li>Look for information about the data type <strong><code>datetime</code></strong> in Python and in particular look at the methods <strong><code>strptime(str, format)</code></strong>, <strong><code>timedelta(days=n)</code></strong>. With their help you can solve the problem without the need to calculate days, months and leap years.</li>
 <li><strong>Don&apos;t print</strong> anything additional on the console except for the wanted date!</li>
 </ul>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#12</a>.</p>
 <h2 id="gui-applications-with-numerical-expressions"><a name="gui-applications-with-numerical-expressions" class="plugin-anchor" href="#gui-applications-with-numerical-expressions"><i class="fa fa-link" aria-hidden="true"></i></a>GUI Applications with Numerical Expressions</h2>
 <p>To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a <strong>desktop application</strong> with graphical user interface. In it, we will use calculations with floating point numbers.</p>
@@ -1261,7 +1263,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </ul>
 <p><img src="assets/chapter-2-1-images/14.Catch-the-button-06.png" alt=""></p>
 <p>It is possible that not everything will run smoothly from the first try. These exercises above go <strong>beyond the material learned</strong> and their purpose is to strengthen your interest and make you search the web and to <strong>look for solutions</strong> to the emerging problems **</p>
-<p>If you are having trouble with the above exercises, feel free to ask in the <strong>SoftUni forum</strong>: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
+<p>If you are having problems with the tasks above, feel free to ask questions in the <strong>SoftUni forum</strong>: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
 
                                 
                                 </section>
@@ -1305,7 +1307,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2021-11-01T10:00:27.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2021-11-21T18:49:05.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1328,6 +1330,10 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         

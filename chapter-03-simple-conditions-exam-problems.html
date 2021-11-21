@@ -1,15 +1,15 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3.2. Simple Conditions – Exam Problems · GitBook</title>
+        <title>3.2. Simple Conditions – Exam Problems · Programming Basics with Python</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
-        
+        <meta name="identifier" content="978-619-00-1403-4" scheme="ISBN">
         
     
     <link rel="stylesheet" href="gitbook/style.css">
@@ -26,6 +26,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
                 
             
                 
@@ -61,8 +65,6 @@
     
 
         
-    
-    <meta name="google-site-verification" content="TODO">
     
     
     
@@ -441,7 +443,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="chapter-32-simple-conditions-&#x2013;-exam-tasks"><a name="chapter-32-simple-conditions-&#x2013;-exam-tasks" class="plugin-anchor" href="#chapter-32-simple-conditions-&#x2013;-exam-tasks"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 3.2. Simple Conditions &#x2013; Exam Tasks</h1>
-<p>In the previous chapter, we went through <strong>the simple conditional statements</strong> in Python, which we can use to execute different actions depending on a given condition. We mentioned what is the scope of a variable (it&apos;s <strong><code>scope</code></strong>) and how to track the execution of our program step by step (the so-called <strong>debugging</strong>). In this chapter, working with <strong>simple conditions</strong> by going through some exam tasks. To do this, let&apos;s first revise their construction:</p>
+<p>In the previous chapter, we went through <strong>the simple conditional statements</strong> in Python, which we can use to execute different actions depending on a given condition. We mentioned what is the <strong><code>scope</code></strong> of a variable and how to track the execution of our program step by step (the so-called <strong>debugging</strong>). In this chapter, we&apos;ll be working with <strong>simple conditions</strong> by going through some exam tasks. To do this, let&apos;s first revise their construction:</p>
 <pre><code class="lang-python"><span class="hljs-keyword">if</span> bool expression:
     <span class="hljs-comment"># condition body</span>
 <span class="hljs-keyword">else</span>:
@@ -471,7 +473,7 @@
 <li>The second line contains the word &quot;<strong>day</strong>&quot; or &quot;<strong>night</strong>&quot; &#x2013; traveling during the day or the night.</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
-<p>Print on the console <strong>the lowest price</strong> for the given number of kilometers.</p>
+<p>Print to the console <strong>the lowest price</strong> for the given number of kilometers.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
 <thead>
@@ -510,9 +512,9 @@
 </tbody>
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
-<p>We will read the input data and depending on the distance, we will choose the cheapest transport. To do that, we will write a few conditional statements.</p>
+<p>We will read the input data and, depending on the distance, we will choose the cheapest transport. To do that, we will write a few conditional statements.</p>
 <h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing the Input Data</h4>
-<p>In the task, we are given <strong>information about the input and output data</strong>. Therefore, in the first <strong>two lines</strong> from the solution, we will declare and initialize the two <strong>variables</strong> that are going to store <strong>the values of the input data</strong>. <strong>The first line</strong> contains <strong>an integer</strong> and that is why the declared variable will be converted with the function <strong><code>int(&#x2026;)</code></strong>. <strong>The second line</strong> contains <strong>a word</strong>, therefore, the variable will be of <strong><code>string</code></strong> type:</p>
+<p>In the task, we are given <strong>information about the input and output data</strong>. Therefore, in the first <strong>two lines</strong> of the solution, we will declare and initialize the two <strong>variables</strong> that are going to store <strong>the values of the input data</strong>. <strong>The first line</strong> contains <strong>an integer</strong> and that is why the declared variable will be converted with the function <strong><code>int(&#x2026;)</code></strong>. <strong>The second line</strong> contains <strong>a word</strong>, therefore, the variable will be of <strong><code>string</code></strong> type:</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-01.png" alt=""></p>
 <p>Before starting with the conditional statements, we need to <strong>declare</strong> one more <strong>variable</strong> that stores the value of <strong>the transport price</strong>:</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-02.png" alt=""></p>
@@ -522,7 +524,7 @@
 <p><img src="assets/chapter-3-2-images/01.Transport-price-03.png" alt=""></p>
 <p>To calculate <strong>the taxi rate</strong>, we will use a conditional statement of type <strong><code>if-else</code></strong>:</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-04.png" alt=""></p>
-<p>After having done that, now we can start calculating <strong>the transport price</strong> itself. The constraints in the task refer to <strong>the distance</strong> that the student wants to travel. This is why, we will use an <strong><code>if-elif-else</code></strong> statement that will help us find <strong>the price</strong> of the transport, depending on the given kilometers:</p>
+<p>After having done that, now we can start calculating <strong>the transport price</strong> itself. The constraints in the task refer to <strong>the distance</strong> that the student wants to travel. This is why we will use an <strong><code>if-elif-else</code></strong> statement that will help us find <strong>the price</strong> of the transport, depending on the given kilometers:</p>
 <p><img src="assets/chapter-3-2-images/01.Transport-price-05.png" alt=""></p>
 <p>First, we check whether the kilometers are <strong>less than 20</strong>, as the task specifies that the student can only use <strong>a taxi</strong> for <strong>less than 20 kilometers</strong>. If the condition is <strong>true</strong> (returns <strong><code>true</code></strong>), the variable that is created to store the value of the transport (<strong><code>price</code></strong>), will store the corresponding value. This value equals <strong>the starting fee</strong> that we will <strong>sum</strong> with its <strong>rate</strong>, <strong>multiplied</strong> by <strong>the distance</strong> that the student has to travel.</p>
 <p>If the condition of the variable <strong>is not true</strong> (returns <strong><code>false</code></strong>), the next step of our program is to check whether the kilometers are <strong>less than 100</strong>. We do that because the task specifies that in this range, <strong>a bus</strong> can be used as well. <strong>The price</strong> per kilometer of a bus <strong>is cheaper</strong> than a taxi one. Therefore, if the result of the condition is <strong>true</strong>, we store <strong>a value</strong>, equal to the result of the <strong>multiplication</strong> of <strong>the rate</strong> of the bus by <strong>the distance</strong> to the variable for the transportation <strong><code>price</code></strong> in the <strong><code>elif</code></strong> statement body.</p>
@@ -543,9 +545,9 @@
 <li>The fourth line contains a number <strong>H &#x2013; the hours that the worker is absent</strong> &#x2013; a floating-point number in the range of [<strong>1.0 &#x2026; 24.00</strong>].</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
-<p>Print on the console <strong>one of the two possible states</strong>:</p>
+<p>Print to the console <strong>one of the two possible states</strong>:</p>
 <ul>
-<li>To what extent the pool has filled up and how many percent each pipe has contributed with. All percent values must be formatted to an integer (without rounding).<ul>
+<li>To what extent the pool has filled up and how many percents each pipe has contributed with. All percent values must be formatted to an integer (without rounding).<ul>
 <li>&quot;The pool is <strong>[x]</strong>% full. Pipe 1: <strong>[y]</strong>%. Pipe 2: <strong>[z]</strong>%.&quot;</li>
 </ul>
 </li>
@@ -600,7 +602,7 @@
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input is read from the console and consists of an integer &#x2013; <strong>the number of holidays</strong> in the range of [<strong>0 &#x2026; 365</strong>].</p>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
-<p><strong>Two lines</strong> have to be printed on the console: </p>
+<p><strong>Two lines</strong> have to be printed to the console: </p>
 <ul>
 <li>If Tom&apos;s time for games <strong>is above the norm</strong> for the current year: <ul>
 <li><strong>On the first line</strong> print: <strong>&quot;Tom will run away&quot;</strong>.</li>
@@ -653,7 +655,7 @@
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1050#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1050#2</a>.</p>
 <h2 id="task-harvest"><a name="task-harvest" class="plugin-anchor" href="#task-harvest"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Harvest</h2>
-<p>In a vineyard with an area of X square meters, <strong>40% of the harvest goes for wine production</strong>. <strong>Y kilograms of grapes</strong> are extracted from a <strong>1 square meters vineyard</strong>. <strong>2,5 kg of grapes</strong> is needed for <strong>1 liter of wine</strong>. The wanted quantity of wine for sale is <strong>Z liters</strong>.</p>
+<p>In a vineyard with an area of X square meters, <strong>40% of the harvest goes for wine production</strong>. <strong>Y kilograms of grapes</strong> are extracted from a <strong>1 square meter vineyard</strong>. <strong>2,5 kg of grapes</strong> is needed for <strong>1 liter of wine</strong>. The wanted quantity of wine for sale is <strong>Z liters</strong>.</p>
 <p>Write a program that <strong>calculates how much wine can be produced</strong> and whether that quantity is enough. <strong>If it is enough, the rest is divided between the vineyard workers equally</strong>.</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input data is read from the console and consists of <strong>exactly 4 lines</strong>: </p>
@@ -664,7 +666,7 @@
 <li>Fourth line: <strong>number of workers</strong> &#x2013; an integer in the range of [<strong>1 &#x2026; 20</strong>].</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
-<p>The following has to be printed on the console:</p>
+<p>The following has to be printed to the console:</p>
 <ul>
 <li>If the <strong>produced</strong> wine is <strong>less than the needed quantity</strong>:<ul>
 <li><strong>&quot;It will be a tough winter! More {insufficient wine}} liters wine needed.&quot;</strong><br>&lt;/br&gt; * <strong>The result</strong> has to be <strong>rounded down to the nearest integer</strong>.</li>
@@ -698,13 +700,13 @@
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.</p>
 <h4 id="processing-the-input-data-and-performing-the-calculations"><a name="processing-the-input-data-and-performing-the-calculations" class="plugin-anchor" href="#processing-the-input-data-and-performing-the-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Processing the Input Data and performing the calculations</h4>
-<p>First, we have to <strong>check</strong> what <strong>the input data</strong> will be, so that we can choose what <strong>variables</strong> we will use. The code bellow is blured on purpose and it should be written by the reader:</p>
+<p>First, we have to <strong>check</strong> what <strong>the input data</strong> will be, so that we can choose what <strong>variables</strong> we will use. The code bellow is blurred on purpose and it should be written by the reader:</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-01.png" alt=""></p>
 <p>To solve the task, based on the input data, we have to <strong>calculate</strong> how many <strong>liters of wine</strong> will be produced. From the task requirements, we see that to <strong>calculate</strong> the quantity of <strong>wine in liters</strong>, we first, have to find <strong>the number of grapes in kilograms</strong>, which we will get from the harvest. For that, we will declare a variable that keeps a <strong>value</strong>, equal to <strong>40%</strong> of the result from the <strong>multiplication</strong> of the vineyard area by the number of grapes, which is extracted from 1 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">m</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span>.</p>
 <p>After having done these calculations, we are ready to <strong>calculate the quantity of wine in liters</strong> that will be produced from the harvest as well. For that, we declare one more variable that stores that <strong>quantity</strong>. To calculate, we have to <strong>divide the number of grapes in kg by 2.5</strong>:</p>
 <p><img src="assets/chapter-3-2-images/04.Harvest-02.png" alt=""></p>
 <h4 id="checking-the-conditions-and-processing-output-data"><a name="checking-the-conditions-and-processing-output-data" class="plugin-anchor" href="#checking-the-conditions-and-processing-output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Checking the Conditions and Processing Output Data</h4>
-<p>After having done the necessary calculations, the next step is to <strong>check</strong> whether the liters of wine that have been produced, <strong>is enough</strong>. For that, we will use <strong>a simple conditional statement</strong> of the <strong><code>if-else</code></strong> type and we will check whether the liters of wine from the harvest are <strong>more than</strong> or <strong>equal to</strong> the <strong>needed liters</strong>. </p>
+<p>After having done the necessary calculations, the next step is to <strong>check</strong> whether the liters of wine that have been produced <strong>are enough</strong>. For that, we will use <strong>a simple conditional statement</strong> of the <strong><code>if-else</code></strong> type and we will check whether the liters of wine from the harvest are <strong>more than</strong> or <strong>equal to</strong> the <strong>needed liters</strong>. </p>
 <p>If the condition returns <strong><code>true</code></strong>, from the task requirement we see that <strong>on the first line</strong> we have to print <strong>the wine that has been produced from the harvest</strong>. That value has to be <strong>rounded down to the nearest integer</strong>, which we will do by using both the method <strong><code>math.floor(&#x2026;)</code></strong> and a <strong>placeholder</strong> when printing it.</p>
 <p>On the second line, we have to print the results by <strong>rounding them up to the higher integer</strong>, which we will do by using the method <strong><code>math.ceil(&#x2026;)</code></strong>. The values that we have to print are <strong>the quantity of wine left</strong> and <strong>the quantity that each worker gets</strong>. The wine left is equal to <strong>the difference</strong> between the produced liters of wine and the needed liters of wine. 
 We calculate the value of that quantity in a new variable, which we declare and initialize in the <strong><code>if</code> condition body</strong>, before printing the first line. We calculate the quantity of wine that <strong>each worker gets</strong> by dividing the wine left by the number of workers:</p>
@@ -725,7 +727,7 @@ We calculate the value of that quantity in a new variable, which we declare and 
 <li>On <strong>the third</strong> line are <strong>the number of all workers</strong> &#x2013; <strong>an integer in the range of</strong> [<strong>0 &#x2026; 200</strong>].</li>
 </ul>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
-<p><strong>Print one line</strong> on the console: </p>
+<p><strong>Print one line</strong> to the console: </p>
 <ul>
 <li>If <strong>the time is enough</strong>:<ul>
 <li><strong>&quot;Yes!{the hours left} hours left.&quot;</strong></li>
@@ -758,7 +760,7 @@ We calculate the value of that quantity in a new variable, which we declare and 
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.</p>
 <h4 id="reading-the-input-data"><a name="reading-the-input-data" class="plugin-anchor" href="#reading-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Reading the Input Data</h4>
-<p><strong>First</strong>, we have to read the input data to solve the problem. The code bellow is blured on purpose and it should be written by the reader:</p>
+<p><strong>First</strong>, we have to read the input data to solve the problem. The code bellow is blurred on purpose and it should be written by the reader:</p>
 <p><img src="assets/chapter-3-2-images/05.Firm-01.png" alt=""></p>
 <h4 id="auxiliary-calculations"><a name="auxiliary-calculations" class="plugin-anchor" href="#auxiliary-calculations"><i class="fa fa-link" aria-hidden="true"></i></a>Auxiliary Calculations</h4>
 <p>The next step is to calculate <strong>the number of total working hours</strong> by multiplying the working days by 8 (every working day is 8 hours long) with the number of workers and then sum them with the overtime. <strong>The working days</strong> equal <strong>90% of the days</strong> that the firm has. <strong>The overtime</strong> equals the result of the multiplication of the number of workers by 2 (the possible hours of overtime) and then it is multiplied by the number of days that the firm has. From the task requirements, we see that <strong>the hours</strong> should be <strong>rounded down to the nearest integer</strong>, which we will do with the method <strong><code>math.floor(&#x2026;)</code></strong>:</p>
@@ -813,7 +815,7 @@ We calculate the value of that quantity in a new variable, which we declare and 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts"],"pluginsConfig":{"meta":{"content":"TODO","data":[],"name":"google-site-verification"},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://python-book.softuni.org/"},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"TODO"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2021-11-01T10:00:27.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-01T10:01:07.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"next":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"previous":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"path":"chapter-03-simple-conditions.md","ref":"chapter-03-simple-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions-exam-problems.md","mtime":"2021-11-21T18:49:05.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -836,6 +838,10 @@ We calculate the value of that quantity in a new variable, which we declare and 
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
         
     
         
