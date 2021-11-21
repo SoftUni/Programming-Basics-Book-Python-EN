@@ -1,4 +1,12 @@
 {
+    "title": 
+        "Programming Basics with Python",
+    "description": 
+        "Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises.",
+    "isbn": 
+        "978-619-00-1403-4",
+    "language":
+        "en",
     "plugins": [
         "ga",
         "meta",
@@ -9,14 +17,7 @@
     ],
     "pluginsConfig": {
         "ga": {
-            "token": "TODO"
-        },
-        "meta": {
-            "name": "google-site-verification",
-            "content": "TODO"
-        },
-        "sitemap": {
-            "hostname": "https://python-book.softuni.org/"
+            "token": "UA-11309924-36"
         },
         "scripts": {
             "files": [
