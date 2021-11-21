@@ -13,7 +13,8 @@
         "anchors",
         "expandable-chapters-small",
         "katex",
-        "scripts"
+        "scripts",
+        "page-toc-button"
     ],
     "pluginsConfig": {
         "ga": {
