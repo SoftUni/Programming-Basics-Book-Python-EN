@@ -33,11 +33,11 @@ In programming, each variable stores a certain **value** of a particular **type*
 - **str** - text (string) of symbols: 'a', 'Hello', 'Hi', 'Beer', ...
 - **datetime** - date: 21-12-2017, 25/07/1995, ...
 
-In **Python** the data type is automatically defined by the variable's assigned value. It is not defined explicitly upon declaration of variables (as opposed to C#, Java and C++).
+In **Python**, the data type is defined by the value that is assigned and is not explicitly specified when declaring variables (as opposed to C#, Java and C++).  
 
-## Printing Results on the Console
+## Printing Results on the Screen
 
-In order to print text, numbers or other data on the console, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
+In order to print text, numbers or other result on the screen, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
 
 ```python
 print(9)  # prints a number
@@ -48,23 +48,23 @@ msg = 'Hello, Python!'
 print(msg)  # prints value of a variable
 ```
 
-## Reading Integers from the Console
+## Reading User Input in Integer Type
 
-In order to read an integer number from the console, we have to **declare a variable** and to use the built-in functions `input(…)` for reading a text line from the system console and `int(…)` to convert the text line into an integer number:
+To read a user input as an integer, it is necessary to **declare a variable** and use the built-in functions `input (…)` to read a text line from the console and `int (…)` to convert a text value to numerical: 
 
 ```python
 num = int(input())
 ```
 
-If it weren't for this conversion, for the program **every number** will be just **text** with which **we wouldn't be able to do** arithmetic operations. When using `input(…)` we can include a message for the user which guides them towards what is required from them to type as input, for example:
+If it weren't for this conversion, for the program **every number** will be just **text** with which **we wouldn't be able to do** arithmetic operations. When using `input(…)` we can include a prompt to the user to tell them what we want them to enter, for example: 
 
 ```python
 size = int(input('Enter the size = '))
 ```
 
-### Example: Calculation of the area of a square with side **а**
+### Example: Calculating a Square Area with Length of a Side **a**
 
-Let's take the following program as an example. It reads an integer, multiplies it by itslef (i.e. **squares it **) and prints the result of the multiplication. This is how we can calculate the area of a square by using a given length of its side **a**:
+Let's take the following program as an example. It reads an integer, multiplies it by itself (i.e. **squares it**) and prints the result of the multiplication. This is how we can calculate the area of a square by using a given length of its side **a**:
 
 ```python
 a = int(input('a = '))
@@ -72,11 +72,11 @@ area = a * a
 print('Square area = ', area)
 ```
 
-Here is how this program would work for a square with a side equal to 3:
+Here is how the program would work for a square with a side equal to 3:
 
 ![](/assets/chapter-2-1-images/00.Square-area-01.png)
 
-Try to type in an invalid number, for example "**hello**". You will recieve an **error** message during execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. 
+Try to type in an invalid number, for example "**hello**". You will receive an **error** message during execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. 
 
 #### How does the example work?
 
@@ -90,9 +90,9 @@ The last line **`print('Square area = ', area)`** prints the given text and next
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0).
 
-## Reading of a sequence of numbers
+## Reading a Sequence of Numbers
 
-When we want to read **several numbers from the console**, if they are given **each on a new line**, we read them one by one like so:
+When we want to read **several numbers from the console**, if they are given **each on a new line**, we read them sequentially like this: 
 ```python
 num1 = input()
 num2 = input()
@@ -105,7 +105,7 @@ If we type in the following input:
 20
 30
 ```
-we will recieve the following result:
+we will receive the following result:
 ```
 10 20 30
 ```
@@ -118,11 +118,11 @@ If we type in the following input:
 ```
 100 200 300
 ```
-we will recieve the following result:
+we will receive the following result:
 ```
 600
 ```
-How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will recieve 3 elements: `'100'`, `'200'` и `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
+How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will receive 3 elements: `'100'`, `'200'` и `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
 
 
 ## Reading Floating Point Numbers
@@ -133,9 +133,9 @@ To read a user input as a **floating-point number **, we need to **declare a var
 num = float(input())
 ```
 
-### Example: Conversion of inches to centimeters
+### Example: Conversion of Inches to Centimeters
 
-Let's write a program which reads a fractional number in inches and converts it to centimeters:
+Let's write a program that reads a fractional number in inches and converts it to centimeters:
 
 ```python
 inches = float(input('Inches = '))
@@ -143,7 +143,7 @@ centimeters = inches * 2.54
 print('Centimeters = ', centimeters)
 ```
 
-Let's start the program to make sure that, when we input a value in inches, we recieve a correct result in centimeters:
+Let's start the program to make sure that, when we input a value in inches, we receive a correct result in centimeters:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
@@ -986,7 +986,7 @@ def convert(self):
             bg="red", fg="black")
 ```
 
-This way we catch the error in a **try block** and when we input something different than a number we will recieve the message **That's not a number!**.
+This way we catch the error in a **try block** and when we input something different than a number we will receive the message **That's not a number!**.
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-08.png)
 
