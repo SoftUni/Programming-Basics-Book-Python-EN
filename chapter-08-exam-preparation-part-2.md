@@ -110,7 +110,7 @@ Haralambi has some **savings** that he wants to use to **change the tiles** on t
 
 ### Input
 
-We submit 7 numbers as parameters of the function:
+Read **7 lines** from the console:
 
 * **The savings**.
 * **The width** of the floor.
