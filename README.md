@@ -1,6 +1,6 @@
 # Free Book "Programming Basics with Python"
 
-> This is work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this will take a few months (or years). Please be patient. We will officially announce when the translation is completed.
+> This is a work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this is going to take a few months (or years). Please be patient. We will officially announce when the translation is completed.
 
 The free book "**Programming Basics with Python**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops and functions) using the **Python** programming language.
 
@@ -54,7 +54,7 @@ Brief information about this edition:
 * Edition: **Faber Publishing, Sofia, Dec 2021** (expected)
 * License: **CC-BY-SA**
 * Source code: https://github.com/SoftUni/Programming-Basics-Book-Python-EN
-* Всички автори, редактори и **участници в проекта**: Бончо Вълков, Венцислав Петров, Владимир Дамяновски, Илия Илиев, Йордан Даракчиев, Мартин Царев, Миглен Евлогиев, Милена Ангелова, Мирела Дамянова, Николай Костов, Петър Иванов, Петя Господинова, Светлин Наков, Таня Евтимова, Таня Станева, Теодор Куртев, Христо Минков, Aлександър Кръстев, Александър Лазаров, Ангел Димитриев, Васко Викторов, Венцислав Петров, Даниел Цветков, Димитър Татарски, Димо Димов, Диян Тончев, Елена Роглева, Живко Недялков, Жулиета Атанасова, Захария Пехливанова, Ивелин Кирилов, Искра Николова, Калин Примов, Кристиян Памидов, Любослав Любенов, Николай Банкин, Николай Димов, Павлин Петков, Петър Иванов, Росица Ненова, Руслан Филипов, Светлин Наков, Стефка Василева, Теодор Куртев, Тоньо Желев, Християн Христов, Христо Христов, Цветан Илиев, Юлиан Линев, Яница Вълева, Марина Шидерова.
+* All authors, editors and **project participants**: Boncho Valkov, Ventsislav Petrov, Vladimir Damyanovski, Iliya Iliev, Yordan Darakchiev, Martin Tsarev, Miglen Evlogiev, Milena Angelova, Mirela Damyanova, Nikolay Kostov, Petar Ivanov, Petya Gospodinova, Svetlin Nakov, Tanya Evtimova, Tanya Staneva, Teodor Kurtev, Hristo Minkov, Alexander Krastev, Alexander Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkova, Zhuliko Nedyalkova, Zhuliva , Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristian Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristian Hristov, Hristo Hristov, Tsvetan Iliev, Julian Linev, Yanitsa Valeva , Marina Shiderova, Jordan Liubenov.
 
 ## Free Practical Programming Course
 
