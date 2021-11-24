@@ -994,7 +994,7 @@ This way we catch the error in a **try block** and when we input something diffe
 Finally we **run the application** with [**Ctrl + Shift + F10**] or with right-click + [**Run**] and we test if it works correctly.
 
 
-### Graphical Application:: \*\*\* Catch the Button!
+### Graphical Application: \*\*\* Catch the Button!
 
 Create a fun graphical application **“catch the button”**. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs form the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
 
