@@ -127,7 +127,7 @@ How does the code mentioned above work? By using `.split(…)` we separate the e
 
 ## Reading Floating Point Numbers
 
-To read a user input as a **floating-point number **, we need to **declare a variable**, this time using the function **`float(…)`** which converts the given text value to a fractional number:
+To read a user input as a **floating-point number**, we need to **declare a variable**, this time using the function **`float(…)`** which converts the given text value to a fractional number:
 
 ```python
 num = float(input())
@@ -143,7 +143,7 @@ centimeters = inches * 2.54
 print('Centimeters = ', centimeters)
 ```
 
-Let's start the program to make sure that, when we input a value in inches, we receive a correct result in centimeters:
+Let's start the program and make sure that when we input a value in inches, we receive a correct result in centimeters:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
@@ -162,7 +162,7 @@ str = input()
 
 ### Example: Greeting by Name
 
-Let's write a program that asks the user for their name and salutes them with the text "Hello, {name}!".
+Let's write a program that asks the user for their name and salutes them with the text "**Hello, _{name}_!**".
 
 ```python           
 name = input()
@@ -170,7 +170,7 @@ print('Hello, ', end='')
 print(name, end='!')
 ```
 
-By default, the built-in function **`print(…)`** prints the result and continues to the next line. This is because **`print(…)`** uses the parameter **`end`**, which by default has the value **`\n`** (new line). In order to stay on the same line, we can change the value of **`end=''`**.
+By default, the built-in function **`print(…)`** prints the result and continues to the next line. This is because **`print(…)`** uses the parameter **`end`**, which by default has a value **`\n`** (new line). In order to stay on the same line, we can change the value of **`end=''`**.
 
 Here is the result if we call the function with the name "Ivan":
 
@@ -185,7 +185,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 When printing text, numbers and other data, **we can concatenate them** by using templates **`{0}`**, **`{1}`**, **`{2}`** etc. In programming these **templates** are called **placeholders**. 
 
-In **Python** we use the built-in method **`.format(…)`** to list the variables which we want to be put in place of the templates(placeholders). Example: we type in **first name** and **familiy name** of a student as well as their **age** and **hometown** and we print text in the format “You are _{name}_ _{family name}_, a _{age}_-years old person from _{hometown}_.”. The following is a solution with text templates:
+In **Python** we use the built-in method **`.format(…)`**, through which we list the variables we want to put in place of the templates (placeholders). Example: we type in **first name** and **last name** of a student as well as their **age** and **hometown** and we print text in the format “You are _{name}_ _{family name}_, a _{age}_-year-old person from _{hometown}_.”. The following is a solution with text templates:
 
 ```python
 first_name = input()
@@ -193,7 +193,7 @@ last_name = input()
 age = int(input())
 town = input()
 
-print('You are {0} {1}, a {2}-years old person from {3}.'
+print('You are {0} {1}, a {2}-year-old person from {3}.'
       .format(first_name, last_name, age, town))
 ```
 
@@ -201,13 +201,13 @@ Here is the result which we will get after execution of this example:
 
 ![](/assets/chapter-2-1-images/00.Placeholders-01.png)
 
-Pay attention to how each variable has to be given in the **order, in which we want it to print**. Essentially, the template (**placeholder**) **accepts all types of variables** and this makes it very convenient for use when printing.
+Note how each variable must be passed in the **order, in which we want it to print**. Essentially, the template (**placeholder**) **accepts all types of variables** and this creates great convenience when printing. 
 
 ### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
-### More on printing formatted text
+### More on Printing Formatted Text
 
 It is possible for one number of a **template** to be used several times and it is not required for the templates of the function **`.format(…)`** to be numbered consecutively. Here is an example:
 
@@ -222,13 +222,13 @@ The result is:
 ```
 
 
-## Arithmetic operations
+## Arithmetic Operations
 
 Let's examine the basic arithmetic operations in programming.
 
-### Summing up Numbers: Operator **`+`**
+### Summing Numbers: Operator **`+`**
 
-We can sum up numbers using the **`+`** operator:
+We can sum numbers by using the **`+`** operator:
 
 ```python
 a = 5
@@ -238,7 +238,7 @@ sum = a + b  # the result is 12
 
 ### Subtracting Numbers: Operator **`-`**
 
-Subtracting numbers is done using the **`-`** operator:
+Subtracting numbers is done with the **`-`** operator:
 
 ```python
 a = int(input())
@@ -264,7 +264,7 @@ product = a * b  # 35
 
 ### Dividing Numbers: Operator /
 
-Dividing numbers is done using the **`/`** operator. 
+Dividing numbers is done with the **`/`** operator. 
 
 **Note:** **Dividing by 0** causes an **error** during execution (runtime exception) - **ZeroDivisionError**.
 
@@ -281,7 +281,7 @@ print(0 / 0)    # Result: ZeroDivisionError: division by zero
 print(2.5 / 0)  # Result: ZeroDivisionError: float division by zero
 ```
 
-### Raising to power: operator **`**`**
+### Raising to a Power: Operator **`**`**
 
 To **raise to power** in Python the operator `**` is used:
 
@@ -307,7 +307,7 @@ The result is the following **big integer**:
 
 ## Concatenating Text and Numbers
 
-Besides for summing up numbers, the operator + is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called "concatenation". Here is how we can concatenate a text with a number by the + operator:
+Besides for summing numbers, the operator + is also used for joining pieces of text (concatenation of two strings one after another). In programming, joining two pieces of text is called "concatenation". Here is how we can concatenate a text with a number using the + operator:
 
 ```python
 first_name = 'Maria'
@@ -318,7 +318,7 @@ str = first_name + ' ' + last_name + ' @ ' + str(age)
 print(str)  # Maria Ivanova @ 19
 ```
 
-In Python we cannot concatenate a number to a given text directly. That is why the number is first parsed to text utilizing the function **`str(…)`**.
+In Python, we cannot directly concatenate a number to a given text, so we first parse the number to text utilizing the **`str (…)`** function. 
 
 Here is another example:
 
@@ -330,7 +330,7 @@ sum = 'The sum is: ' + str(a) + str(b)
 print(sum)  # The sum is 1.52.5
 ```
 
-Did you notice something strange? Maybe you expected the numbers a and b to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
+Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
 
 ```python
 a = 1.5
@@ -340,7 +340,7 @@ sum = 'The sum is: ' + str(int(a + b))
 print(sum)  # The sum is: 4
 ```
 
-### Repeating Text: operator *
+### Repeating Text: Operator *
 
 The operator `*` can be used to **repeat a given text a number of times**:
 ```py
@@ -352,7 +352,7 @@ This feature of the operator for multiplication can lead to the following **wron
 count = input()   # Enter 20
 print(5 * count)  # 2020202020, not 100
 ```
-If we want to multiply a number, read from the console, by 5, we first have to transform it to an integer using the function `int()`:
+If we want to multiply a number read from the console by 5, we first have to convert it to an integer using the function `int()`:
 ```py
 count = int(input())  # Enter 20
 print(5 * count)      # 100
@@ -360,9 +360,10 @@ print(5 * count)      # 100
 
 
 ## Printing Formatted Text in Python 
-In Python there are **several ways** to print **formatted text**, i.e. text, combined with numbers, values of variables and expressions. We have already encountered some of them, but let's get into more detail.
 
-### Printing with commas
+In Python there are **several ways** to print **formatted text**, i.e. text, combined with numbers, values of variables and expressions. We have already encountered some of them, but let's look at the issue in more detail.
+
+### Printing with Commas
 
 When printing using `print(…)` we can list multiple values with commas:
 ```python
@@ -375,7 +376,7 @@ The result is the following:
 ```
 width = 5 ; height = 7 ; area = 35
 ```
-As you can see from this example, when using this method for printing, each two values are separated by an **interval**.
+As you can see from the example, in such printing every two values of the listed are separated by an **interval**.
 
 ### Concatenating text with the operator +
 
@@ -393,14 +394,14 @@ Because in Python text cannot be directly concatenated with numbers, they first 
 
 ### Formatting strings `%d`, `%s`, `%f`
 
-Printing with templates can be done using **formatting strings** (also used in C and Java). Here is an example: 
+Printing with templates can be done with **formatting strings** (also used in C and Java). Here is an example: 
 ```python
 width = 5
 height = 7
 text = "area"
 print('width = %d ; height = %d ; %s = %d' % (width, height, text, width * height))
 ```
-In the example above we use the operator `%`, which substitutes values in a **text template**, given as a sequence of elements in brackets. The following main **placeholders** are used (formatting strings): `%d` signifies an integer, `%f` signifies a floating point number, `%s` signifies text. The outcome of the code above is the same as in the last examples:
+In the example above we use the operator `%`, which substitutes values in a **text template**, given as a sequence of elements in brackets. The following main **placeholders** are used (formatting strings): `%d` signifies an integer, `%f` signifies a floating-point number, `%s` signifies text. The outcome of the code above is the same as in the last examples:
 ```
 width = 5 ; height = 7 ; area = 35
 ```
@@ -438,7 +439,7 @@ The result is the same again:
 width = 5 ; height = 7 ; area = 35
 ```
 
-### Formatting using f-string
+### Formatting Using f-string
 
 Maybe the easieast, the most intuitive and the shortest way to **format text and numbers** in Python is to use the **f-string syntax**:
 ```python
@@ -446,12 +447,12 @@ width = 5
 height = 7
 print(f'width = {width} ; height = {height} ; area = {width * height}')
 ```
-Using the **f-string formatting** is very easy: we put a prefix `f` before the string and inside the string at whichever positions we put values of variables and expressions in curly brackets `{expression}`. In the example above we have three expressions: `{width}`, `{height}` and `{width * height}` which are calculated and are substituted by their text value. We can use text expressions, integer expressions, floating point expressions and all other kinds of expressions.
+Using the **f-string formatting** is very easy: we put a prefix `f` in front of the string and insert values of variables and expressions in curly braces `{expression}` in random positions. In the example above we have three expressions: `{width}`, `{height}` and `{width * height}` which are calculated and are substituted by their text value. We can use text expressions, integer expressions, floating point expressions and all other kinds of expressions.
 
 Formatting with **f-string** in Python is **the recommedned method** for printing formatted text because it uses the shortest syntax and the code is easily read and understood.
 
 
-## Numerical expressions
+## Numerical Expressions
 
 In programming, we can calculate **numerical expressions**, for example:
 
@@ -459,7 +460,7 @@ In programming, we can calculate **numerical expressions**, for example:
 expr = (3 + 5) * (4 – 2)  # 16
 ```
 
-The standard rule for priorities of arithmetic operations is applied: **multiplying and dividing are always done before adding and subtracting**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
+The standard rule for priorities of arithmetic operations is applied: **multiplication and division are always done before addition and subtraction**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
 
 ### Example: Calculating Trapezoid Area
 
@@ -474,7 +475,7 @@ area = (b1 + b2) * h / 2
 print('Trapezoid area = ' + str(area))
 ```
 
-Because we want the program to work for both integer and floating point numbers, we use **`float(…)`**. If we start the program and we input for the sides respectively **`3`**, **`4`** и **`5`**, we will get the following result:
+Because we want the program to work for both integer and floating-point numbers, we use **`float(…)`**. If we start the program and we input for the sides respectively **`3`**, **`4`** and **`5`**, we will get the following result:
 
 ![](/assets/chapter-2-1-images/05.Trapezoid-area-03.png)
 
@@ -483,23 +484,23 @@ Because we want the program to work for both integer and floating point numbers,
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
 
-## Rounding of numbers
+## Rounding of Numbers
 
 Sometimes when we work with floating point numbers we need to convert the numbers to the same type of format. This conversion is called **rounding**. **Python** offers several methods for rounding of numbers:
 
-* **`math.ceil(…)`** - **rounding upwards**, to the next (bigger) integer number:
+* **`math.ceil(…)`** - **rounding up**, to the next (bigger) integer number:
 
 ```python
 up = math.ceil(23.45)  # up = 24
 ```
 
-* **`math.floor(…)`** - **rounding downwards**, to the previous (smaller) integer number:
+* **`math.floor(…)`** - **rounding down**, to the previous (smaller) integer number:
 
 ```python
 down = math.floor(45.67)  # down = 45
 ```
 
-* **`round(…)`** - rounding is done following the **basic rule for rounding** - if the decimal part is smaller than 5, rounding is downwards and it is the opposite if the decimal part is bigger than 5 - rounding is upwards:
+* **`round(…)`** - rounding is done following the **basic rule for rounding** - if the decimal part is less than 5, the rounding is down and vice versa, if it is greater than 5 - up: 
 
 ```python
 round(5.439)  # 5
@@ -517,7 +518,7 @@ round(123.512, 0)  # 124.0
 
 ### Example: Perimeter and area of a circle: 
 
-Let's write a program which, when given the **radius r** of a circle, **calculates the area and the perimeter** of the circle.
+Let's write a program that, when given the **radius r** of a circle, **calculates the area and the perimeter** of the circle.
 
 Formulas:
 - Area = π \* r \* r
@@ -544,7 +545,7 @@ Let's try the program with **radius `r = 10`**:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
 
-### Example: Area of a rectangle
+### Example: Area of a Rectangle
 
 A rectangle is given with **coordinates of its two opposite corners**. You have to calculate its **area and perimeter**:
 
@@ -592,9 +593,9 @@ Let's summarize what we have learned in this chapter:
 
 Let's strengthen the knowledge gained throughout this chapter with a few more exercises.
 
-### Creating a new project in PyCharm
+### Creating a New Project in PyCharm
 
-We have to create a new project in PyCharm (from [**Create New Project**] or [**File**] -> [**New Project**])in order to better organize our problems for exercise. The idea of this **project** is for it to contain **one Python file for each problem** of the exercises:
+We have to create a new project in PyCharm (from [**Create New Project**] or [**File**] -> [**New Project**]) in order to better organize our problems for exercise. The idea of this **project** is for it to contain **one Python file for each problem** of the exercises:
 
 * We start PyCharm.
 * We create a new project: [**Create New Project**] (or [**File**] -> [**New Project**]).
@@ -650,7 +651,7 @@ Next, we have to write **the program code**:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-04.png)
 
-Let's test it with floating point numbers, for example **2.5**:
+Let's test it with floating-point numbers, for example **2.5**:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-05.png)
 
@@ -658,7 +659,7 @@ Let's test it with floating point numbers, for example **2.5**:
 <td>Depending on the regional settings of the operation system, it is possible instead of using a <b>decimal point</b> (US settings), to use a <b>decimal comma</b> (BG settings).</td>
 </tr></table>
 
-If the program expects a decimal point and instead a number with a decimal comma you enter the opposite (to enter a decimal point, when a decimal comma is expected), the following error will be produced:
+If the program expects a decimal point and a decimal comma is entered, or vice versa (a decimal point is entered when a decimal comma is expected), the following error will occur:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-06.png)
 
@@ -679,7 +680,7 @@ The solution should be accepted as a completely correct one:
 
 ### Problem: Greeting by Name
 
-Write a program that **reads a person's name ** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
+Write a program that **reads a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
 
 #### Hints and Guidelines
 
@@ -700,9 +701,9 @@ We **run** the program using [**Ctrl + Shift + F10**] or with right click - [**R
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
 
-### Problem:	Concatenating Text and Numbers
+### Problem: Concatenating Text and Numbers
 
-Write a program, that reads a first name, last name, age and city from the console and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-years old person from <town>`**.
+Write a program, that reads a first name, last name, age and city from the console and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-year-old person from <town>`**.
 
 #### Hints and Guidelines
 
@@ -710,11 +711,11 @@ We add to the existing PyCharm project one more Python file named "concatenate_d
 
 ![](/assets/chapter-2-1-images/04.Concatenate-data-01.png)
 
-**The code** that prints the message described in the problem requirements should be finished:
+**The code**, which prints the message described in the condition of the task, is purposefully blurred and must be added by the reader: 
 
 ![](/assets/chapter-2-1-images/04.Concatenate-data-02.png)
 
-Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter an exemplary data.
+Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
 
 #### Testing in the Judge System
 
@@ -727,7 +728,7 @@ Write a program that reads three numbers from the console **b1, b2 and h and cal
 
 #### Example Input and Output
 
-| Input          |  Output  |    
+| Input         |  Output |    
 |---------------|---------|
 | 8<br>13<br>7  | 73.5    | 
 | 12<br>8<br>5  | 50      | 
@@ -738,11 +739,11 @@ The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an a
 
 #### Hints and Guidelines
 
-Again, we have to add to the existing PyCharm project another **Python file** named "trapezoid_area" and to write the **code which reads the input data from the console, calculates the the trapezoid area and prints it**. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself.
+Again, we have to add to the existing PyCharm project another **Python file** named "trapezoid_area" and to write the **code which reads the input data from the console, calculates the trapezoid area and prints it**. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself.
 
 ![](/assets/chapter-2-1-images/05.Trapezoid-area-02.png)
 
-**Test** your solution locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter an exemplary data.
+**Test** your solution locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
 
 #### Testing in the Judge System
 
@@ -755,7 +756,7 @@ Write a program that reads from the console a **number r** and calculates and pr
 
 #### Example Input and Output
 
-| Input  |           Output                                          |    
+| Input |           Output                                         |    
 |-------|----------------------------------------------------------|
 | 3     | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388|
 | 4.5   | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081|
@@ -779,7 +780,7 @@ A **rectangle** is defined by the **coordinates** of both of its opposite corner
 
 #### Example Input and Output
 
-| Input                                | Output               |
+| Input                                | Output              |
 | ------------------------------------ | ------------------- |
 | 60<br>20<br>10<br>50                 | 1500<br>160         |
 | 30<br>40<br>70<br>-10                | 2000<br>180         |
@@ -790,13 +791,13 @@ A **rectangle** is defined by the **coordinates** of both of its opposite corner
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
 
-### Problem:	Triangle Area
+### Problem: Triangle Area
 
-Write a program that reads from the console **a side and height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. ЗRound the result to **2 digits after the decimal point using `round(area, 2)`**.
+Write a program that reads from the console **a side and a height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `round(area, 2)`**.
 
 #### Example Input and Output
 
-| Input                | Output                 |
+| Input               | Output                |
 | ------------------- | --------------------- |
 | 20 <br>30           | Triangle area = 300   |
 | 15 <br>35           | Triangle area = 262.5 |
@@ -810,7 +811,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem:	Converter – from °C Degrees to °F Degrees
 
-Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://bfy.tw/3rGh "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
+Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://shorturl.at/irvMR "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
 #### Example Input and Output
 
@@ -828,7 +829,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem:	Converter – from Radians to Degrees
 
-Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** when before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
+Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** but before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
 #### Example Input and Output
 
@@ -846,7 +847,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem: Converter – USD to BGN
 
-Write a program for **conversion of US dollars** (USD) **into Bulgarian levs** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and **levs** (BGN): **1 USD = 1.79549 BGN**.
+Write a program for **conversion of US dollars** (USD) **to Bulgarian leva** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and a **lev** (BGN): **1 USD = 1.79549 BGN**.
 
 #### Example Input and Output
 
@@ -863,7 +864,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem: * Currency Converter
 
-Write a program for **conversion of money from one currency into another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
+Write a program for **conversion of money from one currency to another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
 |  Exchange Rate   |   USD   |   EUR   |   GBP   |
 |:----------------:|:-------:|:-------:|:-------:|
@@ -887,7 +888,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem:	** Date Calculations – 1000 Days on the Earth
 
-Write a program that enters **a birth date** in format **dd-MM-yyyy** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
+Write a program that enters **a birth date** in the format **`dd-MM-yyyy`** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 
 #### Sample Input and Output
 
@@ -908,19 +909,19 @@ Write a program that enters **a birth date** in format **dd-MM-yyyy** and calcul
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#12](https://judge.softuni.org/Contests/Practice/Index/1047#12).
 
 
-## GUI Applications with Numerical Expressions
+## Graphical Applications with Numerical Expressions
 
-To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **desktop application** with graphical user interface. In it, we will use calculations with floating point numbers.
+To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **desktop application** with graphical user interface. We will use calculations with floating-point numbers in it.
 
 ### Graphical Application: Converter from BGN to EUR
 
-We need to create **a graphical application** (GUI application), that calculates the value in  **Euro** (EUR) of monetary amount given in **Bulgarian levs** (BGN). We use a fixed rate BGN / EUR: **1.95583**.
+We need to create **a graphical application** (GUI application), that calculates the value in  **Euro** (EUR) of monetary amount given in **Bulgarian leva** (BGN). We use a fixed rate BGN / EUR: **1.95583**.
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-01.png)
 
-**Note:** This exercise goes beyond the material learned in this book and its purpose is not to teach you how to program GUI applications, but to strengthen your interest in software development. Let's get to work.
+**Note:** This exercise goes beyond the material learned in this book and aims not to teach you how to program GUI applications, but to strengthen your interest in software development. Let's get to work.
 
-We add to the existing PyCharm project one more Python file. We name it "BGN_to_EUR_converter". In order to create a Graphical Application using Python we will us the standard library [**tkinter**](https://docs.python.org/3/library/tkinter.html#module-tkinter).
+We add to the existing PyCharm project one more Python file. We name it "BGN_to_EUR_converter". In order to create a Graphical Application using Python we will use the standard library [**tkinter**](https://docs.python.org/3/library/tkinter.html#module-tkinter).
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-02.png)
 
@@ -964,11 +965,11 @@ On the last line we input the result of our **Label `output`** and we set the co
 
 We run the application with [Ctrl + Shift + F10] or with right-click + [Run], and we test if it works correctly.
 
-We are bound to have an issue with this code. What will happen if we input something different than a number?
+We will have a problem with this code. What will happen if we input something different than a number?
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-07.png)
 
-We can **catch** this error and prompt a user-friendly message in our application. In order to do this, lets change the code of our program logic:
+We can **catch** this error and prompt a user-friendly message in our application. In order to do this, let's change the code of our program logic:
 
 ```python
 def convert(self):
@@ -986,7 +987,7 @@ def convert(self):
             bg="red", fg="black")
 ```
 
-This way we catch the error in a **try block** and when we input something different than a number we will receive the message **That's not a number!**.
+This way we catch the error in a **try block** and when we input something different than a number we will receive a message **That's not a number!**.
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-08.png)
 
@@ -995,11 +996,11 @@ Finally we **run the application** with [**Ctrl + Shift + F10**] or with right-c
 
 ### Graphical Application:: \*\*\* Catch the Button!
 
-Create a fun graphical application **“catch the button”**: a form consisting of one button. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs form the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
+Create a fun graphical application **“catch the button”**. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs form the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-01.png)
 
-We will begin with the same code from our last exercise. Lets change the name of our application to **Catch the Button!** and this time we will set the window size:
+We will begin with the same code from our last exercise. Let's change the name of our application to **Catch the Button!** and this time we will set the window size:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-02.png)
 
@@ -1007,11 +1008,11 @@ We will have the following components:
 - **Button** - the button which we have to **catch**.
 - **Label** - the congratulations message.
 
-We create a button containing **text "Catch me!"** and **command - the function `on_click()`** which we will define later. We visualize the components by using the method **`pack()`**. Let both components be **on the top (top)**:
+We create a button containing **text "Catch me!"** and **command - the function `on_click()`**, which we will define later. We visualize the components by using the method **`pack()`**. Let both components be **on the top (top)**:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-03.png)
 
-In our exercise we will use the so called **binding** operation. This represents **catching** of a change and executing a specified function. Using this code we instruct our program to execute the function **`on_enter()`** when the mouse cursor is over the button and to execute the function **`on_leave()`** when the mouse cursor leaves the button the button:
+In our exercise we will use the so called **binding** operation. This represents **catching** of a change and executing a specified function. Using this code we instruct our program to execute the function **`on_enter()`** when the mouse cursor is over the button and to execute the function **`on_leave()`** when the mouse cursor leaves the button:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-04.png)
 
@@ -1020,12 +1021,12 @@ In order to move the button to a random position we use **`random`**:
 ![](/assets/chapter-2-1-images/14.Catch-the-button-05.png)
 
 Let's implement the three functions which represent the program logic in our application:
-  * **`on_enter(self, event)`** - we select random **`x`** and **`y`** coordinates which will change every time we move our cursor over the button; we also change the location of the button - in our example it will be **static to the right**, but you can create your own logic and change the direction of the buton together with the random numbers selected for coordiantes.
+  * **`on_enter(self, event)`** - we select random **`x`** and **`y`** coordinates which will change every time we move our cursor over the button; we also change the location of the button - in our example it will be **static to the right**, but you can create your own logic and change the direction of the button together with the random numbers selected for coordiantes.
   * **`on_leave(self, event)`** - when the cursor of the mouse is not over the button, our congratulation should not appear; we configure our **label** to **not have text**.
   * **`on_click()`** - when we click the button, our **label** will now display text - **You win!**.
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-06.png)
 
-It is possible that not everything will run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and to **look for solutions** to the emerging problems **
+It is possible that not everything will run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and to **look for solutions** to the emerging problems.
 
 If you are having problems with the tasks above, feel free to ask questions in the **SoftUni forum**: https://softuni.bg/forum.
