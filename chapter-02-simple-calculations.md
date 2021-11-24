@@ -4,7 +4,7 @@ In this chapter we are going to become familiar with the following concepts and 
 - How to work with **data types and variables**, which are necessary when processing numbers and strings.
 - How to **print** a result on the console.
 - How to **read** user input.
-- How to do simple **arithmetic operations**: add, subtract, multiply, divide, string concatenation.
+- How to do simple **arithmetic operations**: addition, subtraction, multiplication, division, string concatenation.
 - How to **round** numbers.
 
 
