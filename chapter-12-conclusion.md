@@ -92,7 +92,6 @@ Here are some recommended **resources**, that will be useful for your developmen
 * https://stackoverflow.com - **Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
 * https://fb.com/groups/bg.developers - **"Programing Bulgaria @ Facebook"** group is one of the biggest Bulgarian communities for programmers related to software development on Facebook.
 * https://www.meetup.com/find/tech/ - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
-* If you are interested in IT events, tech conferences, studying, and interns, look inside the **sites for IT events** such as https://techevents.bg, https://dev.bg and https://iteventz.bg.
 
 
 ## Good Luck to All of You!
