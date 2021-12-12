@@ -35,7 +35,7 @@ Overall, compiled languages work slower than their interpreted counterparts. The
 Programming with **Python** is usually done in the development environment **PyCharm** which is developed and distributed by JetBrains. You can download it from: [https://www.jetbrains.com/pycharm](https://www.jetbrains.com/pycharm).
 Here's what the PyCharm environment looks like in action:
 
-![](/assets/chapter-1-images/PyCharm-IDE-in-action.PNG)
+![](/assets/chapter-1-images/PyCharm-IDE-in-action.png)
 
 Alternatives to PyCharm for writing code in Python are **Visual Studio Code** (https://code.visualstudio.com), **Atom** (https://atom.io), **Eclipse for Python** (https://www.eclipse.org) together with the add-on **PyDev** (https://pydev.org) and others. In this book we'll use the development environment PyCharm.
 
