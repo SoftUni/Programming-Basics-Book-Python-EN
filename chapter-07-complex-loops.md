@@ -28,7 +28,7 @@ The **stride** is **part** of the **'range'** function, that specifies the **amo
 
 By default, range in Python uses a step **value of `1`** and is not added to the **`range`** function. If we want our step to be **different from 1**, when writing the **`range`** function, we add another number as the last parameter, which is our step. With a step of **`10`**, the loop would appear as below: 
 
-![](/assets/chapter-7-1-images/00.Step-explanation-01.png)
+![](/assets/chapter-7-1-images/00.Step-explanation-01.PNG)
 
 Here is a series of sample problems, the solution of which will help us better understand the use of a **step** in a **`for`** loop.
 
@@ -42,7 +42,7 @@ We can solve the problem using the following sequence of actions (algorithm):
   * We run a **`for` loop** from **1** to **`n`** (including **`n`**) with a stride of **3**.
   * In the **body of the loop** we print the value of the current step.
   
-![](/assets/chapter-7-1-images/01.Numbers-1-to-n-01.png)
+![](/assets/chapter-7-1-images/01.Numbers-1-to-n-01.PNG)
 
 #### Testing in the Judge System
 
@@ -60,7 +60,7 @@ We can solve the problem in the following manner:
   * We define the stride size: **-1**.
   * In the **body of the loop** we print the value of the current step.
 
-![](/assets/chapter-7-1-images/02.Numbers-n-to-1-01.png)
+![](/assets/chapter-7-1-images/02.Numbers-n-to-1-01.PNG)
 
 #### Testing in the Judge System
 
@@ -73,7 +73,7 @@ In the following example, we will use the standard size 1 stride.
 
 Write a program that prints the numbers **from 1 to 2^n** (two to the power of n). For example, **if n = 10**, then the output would be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
-![](/assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.png)
+![](/assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.PNG)
 
 #### Testing in the Judge System
 
@@ -90,7 +90,7 @@ Here is how we can solve the problem:
   * For the **step** of the loop we set a value of **2**.
   * In the **body of the loop**: we print the value of the current number and **increase the current number `num` 4 times** (as per the problem description).
 
-![](/assets/chapter-7-1-images/04.Even^2-01.png)
+![](/assets/chapter-7-1-images/04.Even^2-01.PNG)
 
 #### Testing in the Judge System
 
@@ -106,7 +106,7 @@ The next type of loops that we will become familiar with, which are called **`wh
 
 In programming, the **`while` loop** is used when we want to **repeat** the execution of a specific logic block until **a specific condition is met**. Any expression that returns either **`true`** or **`false`** (a Boolean) can be used as a "**condition**". When the **condition** becomes **invalid**, the **`while`** loop **is interrupted** and the program **proceeds** to execute the code after the loop. The **`while` loop** structure looks like this:
 
-![](/assets/chapter-7-1-images/00.While-loop-01.png)
+![](/assets/chapter-7-1-images/00.While-loop-01.PNG)
 
 Here is a series of sample problems, the solutions of which will help us better understand the use of the **`while`** loop.
 
@@ -123,7 +123,7 @@ Here is how we can solve the problem:
 
 Here is a sample implementation of this idea:
 
-![](/assets/chapter-7-1-images/05.Numbers-2k+1-01.png)
+![](/assets/chapter-7-1-images/05.Numbers-2k+1-01.PNG)
  
 #### Testing in the Judge System
 
@@ -143,7 +143,7 @@ To solve the problem, we can use the following algorithm:
 
 Here is a sample implementation of the algorithm using a **`while` loop**:
 
-![](/assets/chapter-7-1-images/06.Numbers-in-range-1..100-01.png)
+![](/assets/chapter-7-1-images/06.Numbers-in-range-1..100-01.PNG)
 
 #### Testing in the Judge System
 
@@ -199,7 +199,7 @@ We will solve the problem by implementing **Euclid's algorithm**:
    * On variable **`a`** we assign the **previous** value of the variable **`b`**.
 * Once the loop is complete and we have found the GCD, we print it on the screen.
 
-![](/assets/chapter-7-1-images/07.GCD-01.png)
+![](/assets/chapter-7-1-images/07.GCD-01.PNG)
 
 #### Testing in the Judge System
 
@@ -210,7 +210,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 
 The next type of loop construction that we will become familiar with while studying programming is the `while True` + `break` loop (for short `while` + `break` loop). Its idea **is to repeat a block of code** over and over again until **explicit termination of the loop**, usually after a `if` statement in the body of the loop. Here's what this loop looks like in Python code:
 
-![](/assets/chapter-7-1-images/00.Do-while-01.png)
+![](/assets/chapter-7-1-images/00.Do-while-01.PNG)
 
 The above example is called “**inverted `while` loop**”, because the condition for exiting the loop is at the end, not at the beginning. In essence, the above construction is an “infinite loop” with a check, of a given condition, for an exit inside the body of the cycle.
 
@@ -238,7 +238,7 @@ Here is how we can calculate factorial in more detail:
    * We decrement **`n`** with **1**.
 * Outside the body of the loop we print the final factorial value.
 
-![](/assets/chapter-7-1-images/08.Factorial-01.png)
+![](/assets/chapter-7-1-images/08.Factorial-01.PNG)
 
 #### Testing in the Judge System
 
@@ -259,9 +259,9 @@ We can use the following idea to solve the problem:
    * We assign a new value to **`n`**,  which is the result of removing the last digit of **`n`**.
 * outside the body of the loop, we print the final value of the sum.
 
-![](/assets/chapter-7-1-images/09.Sum-digits-01.png)
+![](/assets/chapter-7-1-images/09.Sum-digits-01.PNG)
 
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;" /></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px;" /></td>
 <td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
 <code><strong>n // 10</strong></code>: <b>deletes</b> the last digit of <code><strong>n</strong></code>.</td>
 </tr></table>
@@ -279,14 +279,14 @@ So far, we were introduced to various types of loops, learning what structures t
 
 An **infinite loop** **runs infinitely** the code of its body. With the infinite **`while`** loops the end check is a conditional expression that **always** returns **`true`**. Here is an example of an **infinite `while`** loop:
 
-![](/assets/chapter-7-1-images/00.Infinite-while-loop-01.png)
+![](/assets/chapter-7-1-images/00.Infinite-while-loop-01.PNG)
 
 
 ### The Break Operator
 
 We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **`break`** operator comes in handy in this situation.
 
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
@@ -311,7 +311,7 @@ Here are some examples of composite numbers:
 * If it is divisible by any of the numbers, it is **composite**.
 * If it is not divisible by any of the numbers, then it is **prime**.
 
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, to check the divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
@@ -329,7 +329,7 @@ The steps of the **"prime checking algorithm"** are given below in bigger detail
 
 Here is a sample implementation of the prime checking algorithm, described above:
 
-![](/assets/chapter-7-1-images/10.Check-if-prime-01.png)
+![](/assets/chapter-7-1-images/10.Check-if-prime-01.PNG)
 
 What remains is to add a **condition that checks if the input number is greater than 1**, because, by definition numbers such as 0, 1, -1 and -2 are not prime.
 
@@ -354,7 +354,7 @@ Here is an idea for the solution:
 
 Here is an example implementation of the idea:
 
-![](/assets/chapter-7-1-images/00.Break-in-infinite-loop-01.png)
+![](/assets/chapter-7-1-images/00.Break-in-infinite-loop-01.PNG)
 
 Note: although the code above is correct, it will not work if the user enters text instead of a number, for example "**Invalid number**". Then the parse of the text to a number will break and the program will display **error message (exception)**. We will learn very soon how to deal with this problem and how to catch and handle exceptions using the **`try-except` construct**.
 #### Testing in the Judge System
@@ -368,25 +368,25 @@ Now since we know what **nested loops** are and how the **`break`** operator wor
 
 The desired result is:
 
-![](/assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.png)
+![](/assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.PNG)
 
 Here is a **wrong implementation**, that looks right at first glance:
 
-![](/assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.png)
+![](/assets/chapter-7-1-images/00.Nested-and-break-desired-result-02.PNG)
 
 If we leave our function that way, our result will be as follows:
 
-![](/assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.png)
+![](/assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.PNG)
 
 Why is this so? As we can see, the result is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td> When we use the <b><code>break</code></b> <b>operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
 What is the **correct solution**? One way to solve the problem is by declaring a **`bool` variable**, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to **`True`** and exit the inner loop with **`break`**, and in the next check, we exit the outer loop. Here is an example implementation of this idea:
 
-![](/assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png)
+![](/assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.PNG)
 
 In this manner, when **`i + j = 2`**, the program will set the variable **`has_to_end = True`** and will exit the inner loop. Upon the next iteration of the outer loop, via the **`if`** check, the function will not reach the inner loop and will interrupt its execution.
 
@@ -408,7 +408,7 @@ In programming, **exceptions** are notifications of an event that disrupts the n
 
 The **`try-except`** construction has different options, but for now we will get acquainted only with the most basic of them
 
- ![](/assets/chapter-7-1-images/00.Try...except-01.png)
+ ![](/assets/chapter-7-1-images/00.Try...except-01.PNG)
 
 
 
@@ -430,7 +430,7 @@ Here's how we can solve the problem:
 
 Here is an example implementation of the described idea:
 
-![](/assets/chapter-7-1-images/11.Wrong-numbers-try-except-01.png)
+![](/assets/chapter-7-1-images/11.Wrong-numbers-try-except-01.PNG)
 
 #### Testing in the Judge system
 
@@ -482,7 +482,7 @@ An idea to solve the problem:
 
 Example implementation:
 
-![](/assets/chapter-7-1-images/12.Fibonacci-01.png)
+![](/assets/chapter-7-1-images/12.Fibonacci-01.PNG)
 
 #### Testing in the Judge System
 
@@ -516,7 +516,7 @@ We can solve the problem with **two nested loops** (by rows and columns) with pr
 
 Here is an example implementation:
 
-![](/assets/chapter-7-1-images/13.Pyramid-01.png)
+![](/assets/chapter-7-1-images/13.Pyramid-01.PNG)
 
 #### Testing in the Judge System
 
@@ -548,7 +548,7 @@ We can solve the problem by using **two nested loops** and some simple calculati
 
 Here is an example implementation:
 
-![](/assets/chapter-7-1-images/14.Table-with-numbers-01.png)
+![](/assets/chapter-7-1-images/14.Table-with-numbers-01.PNG)
 
 #### Testing in the Judge System
 
@@ -607,9 +607,9 @@ Now we know how to repeat a group of actions using **loops**. Let's do something
 
 Our game should look like this:
 
-![](/assets/chapter-7-1-images/15.Fruits-01.png) 
+![](/assets/chapter-7-1-images/15.Fruits-01.PNG) 
 
-![](/assets/chapter-7-1-images/15.Fruits-02.png)
+![](/assets/chapter-7-1-images/15.Fruits-02.PNG)
 
 Shown below, are the steps for implementing the "Shoot the Fruits!" Web application.
 
@@ -617,11 +617,11 @@ Shown below, are the steps for implementing the "Shoot the Fruits!" Web applicat
 
 We create a empty solution in PyCharm to organize the code from the application:
 
-![](/assets/chapter-7-1-images/15.Blank-Python-project-01.png)
+![](/assets/chapter-7-1-images/15.Blank-Python-project-01.PNG)
 
 Then, we give a meaningful name to the project, for example "**Fruits-Web-Game**". Also, set the Python interpreter to the default one:
 
-![](/assets/chapter-7-1-images/15.Blank-Python-project-02.png)
+![](/assets/chapter-7-1-images/15.Blank-Python-project-02.PNG)
 
 We will create our web application using the **Flask** library, which we have already met. As we already know, before we start writing code, we need to install it. We go to PyCharm settings [**File**] -> [**Settings**] and then to [**Project: Fruit-Web-Game**] -> [**Project Interpreter**]. There, press the **`+`** button, search for and install **`Flask`**.
 
@@ -629,47 +629,47 @@ Now we need to take the structure of the project from the resources provided to 
 
 Then, we add the **resources** for the game (they are part of the task files for this project and can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-CSharp-Python/tree/master/assets/chapter-7-1-assets)). We copy them from Windows Explorer and paste them in the project folder in PyCharm with **copy/paste**. Once we have placed the resources, the structure of the project should look like this:
 
-![](/assets/chapter-7-1-images/15.Fruits-06.png)
+![](/assets/chapter-7-1-images/15.Fruits-06.PNG)
 
 If we open **app.py** and launch it with the right button -> [**Run 'app'**], we should open the application, then click on the link in the console and open our web browser :
 
-![](/assets/chapter-7-1-images/15.Fruits-07.png)
+![](/assets/chapter-7-1-images/15.Fruits-07.PNG)
 
 Now we create the controls for the game. The goal is to add **scroll bars**, with which the player can aim, and a button to start a **new game**. Therefore, we need to edit the **templates/index.html** file. Delete "**Hello World**" and enter the following code in its place:
   
-![](/assets/chapter-7-1-images/15.Fruits-08.png)
+![](/assets/chapter-7-1-images/15.Fruits-08.PNG)
 
 This code creates a web form **`<form>`** with a scroller (field) **`position`** to set a number in the interval [**0 … 100**] and a button [**Fire Top**] to send the form data to the server. The action that will process the data is called **`/FireTop`**, which means the **`fire_top()`** function, which is located in the **app.py** file. There are two more similar forms with buttons [**Fire Bottom**] and [**New Game**].
 
 Now we need to prepare the fruits for drawing in the view. Add the following code to the **app.py** file:
 
-![](/assets/chapter-7-1-images/15.Fruits-09.png) 
+![](/assets/chapter-7-1-images/15.Fruits-09.PNG) 
 
 The above code defines the fields for **number of rows, number of columns**, for **fruit table** (playing field), for the **points** accumulated by the player and information whether the game is active or  **finished** (field **`gameOver`**). The playing field is 9 columns in 3 rows and contains text for each field: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**. The main action **`index()`** prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).
 
-We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, in order to draw the corresponding image in the view, **`.png`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
+We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, in order to draw the corresponding image in the view, **`.PNG`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
 
 To generate random fruits, a **random number** between 0 and 8 is generated for each cell (see class **`random`** in Python). If the number is 0 or 1, put **`аpple`**, if it is between 2 and 3, put **`banana`**, etc. If the number is 8, set **`dynamite`**. Thus, fruits appear 2 times more often than dynamite. Here is the code:
 
-![](/assets/chapter-7-1-images/15.Fruits-10.png)
+![](/assets/chapter-7-1-images/15.Fruits-10.PNG)
 
 Drawing the fruit in **`index.html`**:
 
-In order to **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field  **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.png" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
+In order to **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field  **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.PNG" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
 
-![](/assets/chapter-7-1-images/15.Fruits-11.png)
+![](/assets/chapter-7-1-images/15.Fruits-11.PNG)
 
 Note the curly braces – they are used to switch between the languages - **HTML** and **Python** and come from **Jinja2** syntax for drawing dynamic web pages.
 
 We start the project with [**Shift+F10**]. It is expected that a random fruit field with sizes 9 by 3 will be generated and visualized on the web page through a series of pictures:
 
-![](/assets/chapter-7-1-images/15.Fruits-12.png)
+![](/assets/chapter-7-1-images/15.Fruits-12.PNG)
 
 Now the game is somewhat done: the playing field is randomly generated and visualized successfully (if you haven't made a mistake somewhere). It remains to realize the essence of the game: **shooting at the fruits**.
 
 To do this, add the actions [**New Game**], [**Fire Top**] and [**Fire Bottom**] to the file **app.py**:
 
-![](/assets/chapter-7-1-images/15.Fruits-13.png) 
+![](/assets/chapter-7-1-images/15.Fruits-13.PNG) 
 
 Using the code above we define three actions:
 *	**`reset()`** – launches a new game by generating a new random playing field with fruits and explosives, resets the player's points and makes the game valid **(`gameOver = false`)**. This action is quite simple and can be tested immediately with [**Shift+F10**] before writing the others..
@@ -678,7 +678,7 @@ Using the code above we define three actions:
 
 We implement the "shooting" method **`fire(position, start_row, step)`**:
 
-![](/assets/chapter-7-1-images/15.Fruits-14.png)
+![](/assets/chapter-7-1-images/15.Fruits-14.PNG)
 
 Shooting works as follows: first the number of the column **`col`**, to which the player is aiming is calculated. The input number from the scroller (between 0 and 100) s reduced to a number between 0 and 8 (for each of the 9 columns). The line number **row** is either 0 (if the shot at the top) or the number of lines minus one (if the shot is at the bottom). Accordingly, the direction of firing (the step) is **1** (down) or **-1** (up).
 
@@ -691,17 +691,17 @@ We leave it to more avid readers to implement more complex behaviors, for exampl
 *	**Shooting from above** ; shooting from above must remove the top fruit in the hit column or cause the end of the game in dynamite. In fact, at the end of the game, nothing will happen yet, because in the view this case is not yet considered.
 * **Shooting from below** ; shooting from below must remove the bottom fruit in the hit column or stop the game when hitting dynamite.
 
-![](/assets/chapter-7-1-images/15.Fruits-01.png)
+![](/assets/chapter-7-1-images/15.Fruits-01.PNG)
  
 For now, nothing is happening at **"End of Game"**.If the player hits dynamite, the application notes that the game is over **(`game_оver = Тrue`)**, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:
 
-![](/assets/chapter-7-1-images/15.Fruits-15.png)
+![](/assets/chapter-7-1-images/15.Fruits-15.PNG)
 
 The code above checks if the game is over and shows respectively the shooting controls and the playing field (during active play) or a picture with exploded fruits at the end of the game.
 
 After changing the code of the view, we start with [**Ctrl + Shift + F10**] and **test** the game again:
 
-![](/assets/chapter-7-1-images/15.Fruits-16.png)
+![](/assets/chapter-7-1-images/15.Fruits-16.PNG)
 
 This time when hitting dynamite, the right picture should appear and only the "new game" action should be allowed (the [**New Game**] button).
 

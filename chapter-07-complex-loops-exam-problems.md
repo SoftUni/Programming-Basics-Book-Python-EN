@@ -56,27 +56,27 @@ We can split the solution of the problem into 3 parts:
 
 За For **reading** of **input** data we will declare two integer variables **`int`**: **`n`** and **`l`**.
 
-![](/assets/chapter-7-2-images/01.stupid-password-generator-1.png)
+![](/assets/chapter-7-2-images/01.stupid-password-generator-1.PNG)
 
 #### Printing Output
 
 One of the ways to find a solution for this problem is to create **five** **`for`** nested loops, one for each variable. To ensure that the last digit is **greater** than the first two, we will use the built-in method **`max(…)`**:
 
-![](/assets/chapter-7-2-images/01.stupid-password-generator-2.png)
+![](/assets/chapter-7-2-images/01.stupid-password-generator-2.PNG)
 
 **Did you know that…?** 
 
 * For convenience we can use the ASCII value of the symbol **"а"** directly in the declarations of the loops - **`97`**:
 
-![](/assets/chapter-7-2-images/01.stupid-password-generator-3.png)
+![](/assets/chapter-7-2-images/01.stupid-password-generator-3.PNG)
 
 * If we are not sure about a given value of a symbol or we want to take the values of dynamically generated symbols, we can use the built-in function **`ord(char)`**, which returns the integer representation of the character:
 
-![](/assets/chapter-7-2-images/01.stupid-password-generator-4.png)
+![](/assets/chapter-7-2-images/01.stupid-password-generator-4.PNG)
     
 * Or the opposite, we can generate a character from a given integer, using a built-in function in Python **`chr(number)`**:
     
-![](/assets/chapter-7-2-images/01.stupid-password-generator-5.png)
+![](/assets/chapter-7-2-images/01.stupid-password-generator-5.PNG)
     
 * **Python** has a wide range of built-in functions and methods for working with strings. Look for more information on the following functions: **`str(number)`**, **`.lower()`**, **`.format(*args, **kwargs)`**, **`.swapcase()`**, **`.upper()`**.
 
@@ -122,11 +122,11 @@ Print on the console **all magic numbers**, separated by **space**.
 
 Here is an example implementation of the idea:
 
-![](/assets/chapter-7-2-images/02.magic-numbers-1.png)
+![](/assets/chapter-7-2-images/02.magic-numbers-1.PNG)
 
 In the previous chapter, we reviewed other loop constructions. Let's look at the sample solution of the same problem using the **`while`** loop. First, we need to store the **input magical number** in a suitable variable:
 
-![](/assets/chapter-7-2-images/02.magic-numbers-2.png)
+![](/assets/chapter-7-2-images/02.magic-numbers-2.PNG)
 
 Then we will start writing **`while`** loops.
 - We will initialize **first digit**: **`a = 1`**.
@@ -135,7 +135,7 @@ Then we will start writing **`while`** loops.
 - At **the end** of each loop, we will **increase** the digit by one: **`a += 1`**, **`b += 1`**, **`c += 1`** etc.
 - In the **innermost ** loop, we will make **the check** and if necessary, we will print on the console.
 
-![](/assets/chapter-7-2-images/02.magic-numbers-3.png)
+![](/assets/chapter-7-2-images/02.magic-numbers-3.PNG)
 
 As we can see, we can solve a problem using different types of loops. Of course, each task has its most appropriate choice. To practice each type of loop – try to solve each of the following problems with all the learned loops.
 
@@ -185,7 +185,7 @@ The **first** part is ordinary - we read **three** integer numbers from the cons
 
 We have already seen examples of the **second** part – initialization of the **`for`** loop. It is a bit **tricky** - the explanation mentions that the numbers have to be printed in **reversed order**. This means that the **initial** value of the variable **`i`** will be **bigger**, and from the examples, we can see that it is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`** suggests that the step would be **decreased by 1**:
 
-![](/assets/chapter-7-2-images/03.stop-number-1.png)
+![](/assets/chapter-7-2-images/03.stop-number-1.PNG)
 
 After we have initialized the **`for`**  loop, it is time for the **third** part of the problem - **checking** the condition if the given **number is divisible both by 2 and 3 without remainder**. We will do this using one simple **`if`** condition that we will leave to the reader to do by themselves.
 

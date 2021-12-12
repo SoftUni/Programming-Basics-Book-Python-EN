@@ -64,21 +64,21 @@ Such a description may look **misleading** and incomplete at first glance, which
 * **Summing up**.
 
 On condition for **input** will be submitted **four** separate rows, for this reason we will have to call the function **`input()`** four times:
-![](/assets/chapter-8-2-images/01.Distance-01.png)
+![](/assets/chapter-8-2-images/01.Distance-01.PNG)
 
 Next we have to **convert the input data** in a suitible **type** so we can do the needed computations. We choose type **`int`** because in the description of the problem is mentioned that the input data is going to be in a **determined interval**, for which this data type is enough. We perform the data **conversion** as follows:
 
-![](/assets/chapter-8-2-images/01.Distance-02.png)
+![](/assets/chapter-8-2-images/01.Distance-02.PNG)
 
 In this way, we solved successfully the **first sub-problem** - receiving the input data.
 
 We initially **store** one **variable** that will be used multiple times. This centralization approach gives us **flexibility** and the **possibility** to **modify** the final result of the program with minimum effort. In case we need to change the value, we must do it in **only one place in the code**, which saves us time and effort:
 
-![](/assets/chapter-8-2-images/01.Distance-03.png)
+![](/assets/chapter-8-2-images/01.Distance-03.PNG)
 
 <table>
 <tr>
-<td width=10%><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<td width=10%><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><strong>Avoiding repetitive code</strong> (centralization of the program logic) in the tasks that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large applications in a real work environment, and its exercising in an initial stage of training will help you build a quality programming style.
 </td>
 </tr>
@@ -91,11 +91,11 @@ We calculate the **travel time** (in hours) by **dividing the time by 60** (minu
 * The next step is to **decrease the speed** by **5%**, as per the problem description.
 * We calculate the **remaining distance** in the manner described in the first two points.
 
-![](/assets/chapter-8-2-images/01.Distance-04.png)
+![](/assets/chapter-8-2-images/01.Distance-04.PNG)
 
 Up until now, we were able to **solve two** of the **most important sub-problems**, namely the **receiving data input** and **their processing**. What remains is to **calculate the final result**. As by the description, we are required to **format it** up to **2** symbols after the decimal point, we can do this in the following **manner**:
 
-![](/assets/chapter-8-2-images/01.Distance-05.png)
+![](/assets/chapter-8-2-images/01.Distance-05.PNG)
 
 In case you worked accurately and wrote the program using the input data given in the task description, you will be convinced that it works properly.
 
@@ -154,7 +154,7 @@ To calculate the **number of tiles** that are needed, **we divide the floor area
 
 <table>
 <tr>
-<td width="10%"><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<td width="10%"><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Pay attention that the requirements state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>math.ceil(…)</strong></code>.
 </td>
 </tr>
@@ -162,7 +162,7 @@ To calculate the **number of tiles** that are needed, **we divide the floor area
 
 We can find the final result by **calculating the total amount** that is needed to cover the entire floor, by **summing up the tile price and the price that will be paid to the workman**, that we have from the input data. We can figure out that **the total costs** for tiles can be calculated by **multiplying the number of tiles by the price per tile**. We will find out whether the amount that we have will be sufficient by comparing the savings (based on the input data) and the total costs:
 
-![](/assets/chapter-8-2-images/02.Change-Tiles-01.png)
+![](/assets/chapter-8-2-images/02.Change-Tiles-01.PNG)
 
 ### Testing in the Judge System
 
@@ -217,19 +217,19 @@ Print on the console 1 number – **the price of flowers**, formatted up to the 
 
 After carefully reading the requirements, we understand that once again we need to do **simple calculations**, however, this time we will need **additional** logical **conditions**. We need to pay more **attention** to the moment of **making changes** in the final price, to be able to properly build the logic of our program. Again, the bold text gives us sufficient **guidelines** on how to proceed. For a start, we will separate the already **defined** values in **variables**, as we did in the previous tasks:
 
-![](/assets/chapter-8-2-images/03.Flowers-01.png)
+![](/assets/chapter-8-2-images/03.Flowers-01.PNG)
 
 We will also do the same for the rest of the defined values:
 
-![](/assets/chapter-8-2-images/03.Flowers-02.png)
+![](/assets/chapter-8-2-images/03.Flowers-02.PNG)
 
 Our next sub-task is to **read** properly **the input** data from the console. We will do that in an already familiar manner but this way **we combine two** separate functions - one to **read** a line from the console and another to **convert** in a numeric data type: 
 
-![](/assets/chapter-8-2-images/03.Flowers-03.png)
+![](/assets/chapter-8-2-images/03.Flowers-03.PNG)
 
 Let's think of the most appropriate way to **structure** our programming logic. By the requirements, it becomes clear that the path of the program is divided mainly into two parts: **spring / summer** and **autumn / winter**. We can do the separation by a conditional statement, by storing variables in advance for the **prices** of the individual flowers, as well as for the **final result**:
 
-![](/assets/chapter-8-2-images/03.Flowers-04.png)
+![](/assets/chapter-8-2-images/03.Flowers-04.PNG)
 
 What remains is to perform **a few checks** regarding **the discounts** of the different types of flowers, depending on the season, and to modify the final result. 
 
@@ -274,15 +274,15 @@ The results must be **formatted up to the second symbol** after the decimal poin
 
 By requirements, we see that **first** we will receive **the number** of students, and then, **their grades**. For that reason, **first**, we will obtain **the number** of students, as we will convert the value we have read to **`int`**. To process the grades themselves, we will use a **`for`** loop. Every iteration of the loop will read and process one grade:
 
-![](/assets/chapter-8-2-images/05.Grades-01.png)
+![](/assets/chapter-8-2-images/05.Grades-01.PNG)
 
 Before executing the code of the **`for`** loop, we will create variables where we will store **the number of students** for each group: poor results (up to 2.99), results from 3 to 3.99, from 4 to 4.99 and grades above 5. We will also need one more variable, where we will store **the sum of all grades**, via which we will calculate the average grade of all students:
 
-![](/assets/chapter-8-2-images/05.Grades-02.png)
+![](/assets/chapter-8-2-images/05.Grades-02.PNG)
 
 We run the **loop** and inside it, we **declare one more** variable, in which we will store the **currently** entered grade. The variable will be of the type **`float`** and on every iteration we check **what is its value**. According to this value, **we increase** the number of students in the relevant group by **1**, as we should not forget to also increase the **total** amount of the grades, which we also track:
 
-![](/assets/chapter-8-2-images/05.Grades-03.png)
+![](/assets/chapter-8-2-images/05.Grades-03.PNG)
 
 We can calculate what **percentage** is taken by a particular **group of students** from the total number by **multiplying the number of students** in the relevant group by **100** and then dividing this by the **total number of students**. 
 
@@ -382,19 +382,19 @@ Print on one line **all combinations** corresponding to the requirements, follow
 
 By requirements, we have input data on **3 rows**, each of which is represented by one character of the **ASCII table** ([https://www.asciitable.com/](https://www.asciitable.com/)). We could use the already defined function in Python, **`ord(…)`** through which we will receive the ASCII code of the symbol:
 
-![](/assets/chapter-8-2-images/06.Letters-01.png)
+![](/assets/chapter-8-2-images/06.Letters-01.PNG)
 
 Let's think of how we can achieve the **final result**. In case the task requirement is to print all characters, from the starting to the end one (by skipping a particular letter), what should we do?
 
 The easiest and most efficient way is to use a **loop**, by passing through **all characters** and printing those that are **different** from the **letter** that we need to skip. In Python, we can go around all the symbols from 'a' to 'z' the following way:
 
-![](/assets/chapter-8-2-images/06.Letters-02.png)
+![](/assets/chapter-8-2-images/06.Letters-02.PNG)
 
 The function **`chr(…)`** will convert the received ASCII code into a symbol. The result of running the code is all letters from **a** to **z** included, printed on a single line and separated by spaces. Does this look like the final result of our task? We must find a **way** to print **3 characters**, as required, instead of **1**. Running such a program very much looks like a slot machine. We often win in slots, if we arrange a few identical characters in a row. Let's say that the machine has space for three characters. When we **stop** on a particular **character** in the first place, the other two places will **continue** rolling characters among all possible ones. In our case, **all possible characters** are the letters from the starting to the end one, entered by the user, and the solution of our program is identical to the way a slot machine works.
 
 We use a **loop** that runs through **all characters** from the starting to the end letter (included). On **each iteration** of the **first** loop, we run a **second** one with the same parameters (but **only if** the letter of the first loop is valid, i.e. does not match the one that we must exclude, by requirements). In each iteration of the **second** loop, we run **one** more with the **same parameters** and the same **condition**. This way we have three nested loops and in the body of **the latter** we will add the symbols to the final result:
 
-![](/assets/chapter-8-2-images/06.Letters-03.png)
+![](/assets/chapter-8-2-images/06.Letters-03.PNG)
 
 Let's not forget that we also need to print the **total number of valid combinations** that we have found, and they must be printed on the **same line**, separated by a space. We leave this sub-task to the reader.
 

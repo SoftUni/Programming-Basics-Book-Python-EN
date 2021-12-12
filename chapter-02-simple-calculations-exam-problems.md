@@ -108,8 +108,8 @@ Print an integer in the console: **the number of working places** in the trainin
 
 | Input  | Output | Figure |
 |---------|-------|--------|
-|15<br>8.9  |129  | ![](/assets/chapter-2-2-images/01.Training-lab-01.png)       | 
-|8.4<br>5.2 |39    | ![](/assets/chapter-2-2-images/01.Training-lab-02.png)        |
+|15<br>8.9  |129  | ![](/assets/chapter-2-2-images/01.Training-lab-01.PNG)       | 
+|8.4<br>5.2 |39    | ![](/assets/chapter-2-2-images/01.Training-lab-02.PNG)        |
 
 #### Clarification of the Examples
 
@@ -140,21 +140,21 @@ It is time to go to the solution. We can divide it into three smaller tasks:
 
 The first thing we have to do is read the input from the console. With **`input(…)`** we read the values from the console and with the function **`float(…)`** string is converted into **`float`**.
 
-![](/assets/chapter-2-2-images/01.Training-lab-03.png)
+![](/assets/chapter-2-2-images/01.Training-lab-03.PNG)
 
 Let's move to the calculations. The special part here is that after having divided the numbers, we have to store only the whole part of the result in a variable. 
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Search in Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in Python or we are dealing with one that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
 In this case, we can try with the following search: "[***Python gets whole number part of float***](https://www.google.com/?q=python+get+whole+number+part+of+float)". One possible way is to use the method **`math.trunc(…)`** and don't forget to refer to the **`math`** library. The code down below is blurred on purpose and it should be completed by the reader:
 
-![](/assets/chapter-2-2-images/01.Training-lab-04.png)
+![](/assets/chapter-2-2-images/01.Training-lab-04.PNG)
 
 With **`print(…)`** we print the result in the console:
 
-![](/assets/chapter-2-2-images/01.Training-lab-05.png)
+![](/assets/chapter-2-2-images/01.Training-lab-05.PNG)
 
 ### Testing in the Judge System
 
@@ -218,15 +218,15 @@ It is time to get to the solution. We can divide it into three smaller tasks:
 
 To read the input, we declare variables, which we have to name carefully so that they can give us a hint about the values they store. With **`input(…)`**, we read values from the console and with the functions **`int(…)`** and **`float(…)`**, we convert the particular string value into int and double:
 
-![](/assets/chapter-2-2-images/02.Vegetable-market-01.png)
+![](/assets/chapter-2-2-images/02.Vegetable-market-01.PNG)
 
 We do the necessary calculations:
 
-![](/assets/chapter-2-2-images/02.Vegetable-market-02.png)
+![](/assets/chapter-2-2-images/02.Vegetable-market-02.PNG)
 
 The task does not specify a special output format, therefore, we just have to calculate the requested value and print it on the console. As in mathematics and so in programming, the division has a priority over addition. However, in this task, first, we have to **calculate the sum** of the two input values and then **divide by 1.94**. To give priority to addition, we can use brackets. With **`print(…)`** we print the output on the console:
 
-![](/assets/chapter-2-2-images/02.Vegetable-market-03.png)
+![](/assets/chapter-2-2-images/02.Vegetable-market-03.PNG)
 
 ### Testing in the Judge System
 
@@ -283,7 +283,7 @@ Each number should be on a new line and rounded to the second decimal place.
 
 Let's make a draft to clarify the task requirements. It can look the following way:
 
-![](/assets/chapter-2-2-images/03.Change-tiles-01.png)
+![](/assets/chapter-2-2-images/03.Change-tiles-01.PNG)
 
 #### Idea for Solution
 
@@ -305,19 +305,19 @@ As in the previous tasks, we can divide the solution into three smaller tasks:
 
 The first thing we have to do is go through **the input** of the task. It is important to pay attention to the sequence they are given in. With **`input(…)`** we read values from the console and with **`int(…)`** and **`float(…)`**, we convert the particular string value into **`int`** or **`float`**:
 
-![](/assets/chapter-2-2-images/03.Change-tiles-02.png)
+![](/assets/chapter-2-2-images/03.Change-tiles-02.PNG)
 
 After we have initialized the variables and have stored the corresponding values in them, we move to the **calculations**. The code below is blurred on purpose, so the reader can think by himself over it:
 
-![](/assets/chapter-2-2-images/03.Change-tiles-03.png)
+![](/assets/chapter-2-2-images/03.Change-tiles-03.PNG)
 
 **We calculate the values** that we have to print on the console. **The number** of necessary **tiles** is obtained by **dividing the area** that needs to be covered **by the area of a tile**:
 
-![](/assets/chapter-2-2-images/03.Change-tiles-04.png)
+![](/assets/chapter-2-2-images/03.Change-tiles-04.PNG)
 
 In the task is specified that the number of the output should be rounded **to the second decimal place**. That is why we cannot just print the value with **`print(…)`**. We will use the method **`round(…)`**, which is rounding to the closest integer number with exactly n-numbers after the decimal place. For example, the number 1.35 will be rounded to 1, and 1.65 - to 2:
 
-![](/assets/chapter-2-2-images/03.Change-tiles-05.png)
+![](/assets/chapter-2-2-images/03.Change-tiles-05.PNG)
 
 ### Testing in the Judge System
 
@@ -389,21 +389,21 @@ After we have built an idea on how to solve the task and we have chosen the data
 
 **We declare the variables** that we are going to use and again we have to choose **meaningful names**, which are going to give us hints about the values they store. We initialize their values: we create variables, where we will store the string arguments passed to the function and convert them to int or double:
 
-![](/assets/chapter-2-2-images/04.Money-01.png)
+![](/assets/chapter-2-2-images/04.Money-01.PNG)
 
 Then we do the necessary calculations: 
 
-![](/assets/chapter-2-2-images/04.Money-02.png)
+![](/assets/chapter-2-2-images/04.Money-02.PNG)
 
 Finally, we **calculate the commission fee** and **subtract it from the sum in euro**. Let's pay attention to the way we could write this: **`euro -= commission * euro`** is the short way to write **`euro = euro - (commission * euro)`**. In this case, we use a **combined assignment operator** (**`-=`**) that **subtracts the value of the operand to the right from the one to the left**. The operator for multiplication (**`*`**) has a **higher priority** than the combined operator, this is why the expression **`commission * euro`** is performed first and then its value is divided.
 
 Finally, we have to print the result in the console. We should notice that we have to format the output **to the second decimal place**. The difference between this and the previous task is that here, even if the number is an integer, **we have to print it to the second decimal place** (for example **`5.00`**). One way to do so is to use the function **`print(…)`** and to format a string using a placeholder(**`%.2f`**). By using it, we can covert a number into a string, saving the specified numbers after the decimal point:
 
-![](/assets/chapter-2-2-images/04.Money-03.png)
+![](/assets/chapter-2-2-images/04.Money-03.PNG)
 
 Let's pay attention to something that applies to all other problems of this type: written like that, the solution of the task is pretty detailed. As the task itself is not too complex, in theory, we could write one big expression, where right after having taken the input, we calculate the output. For example, such an expression would look like this:
 
-![](assets/chapter-2-2-images/04.Money-04.png)
+![](assets/chapter-2-2-images/04.Money-04.PNG)
 
 This code would print a correct result, **but it is hard to read**. It won't be easy to find out how it works and whether it contains any mistakes, as well as finding such and correcting them. **Instead of one complex expression**, it is **better to write a few simpler ones** and store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable.
 
@@ -465,17 +465,17 @@ Again: after we have an idea of how to solve the problem and we have considered 
 
 Then we **declare the variables** that we are going to use by trying to choose **meaningful names**. We create a variable to store the arguments passed to the function, by converting the string to integer or floating number by using **`int(…)/float(…)`**:
 
-![](/assets/chapter-2-2-images/05.Daily-earnings-01.png)
+![](/assets/chapter-2-2-images/05.Daily-earnings-01.PNG)
 
 After that we do the calculations:
 
-![](/assets/chapter-2-2-images/05.Daily-earnings-02.png)
+![](/assets/chapter-2-2-images/05.Daily-earnings-02.PNG)
 
 We could write an expression that calculates the annual income without brackets as well. As multiplication is an operation that has a higher priority over addition, it will be performed first. Despite that, **writing brackets is recommended when using more operators**, as this way the code is **easily readable** and chances of making a mistake are smaller.
 
 Finally, we have to print the result on the console. We notice **that the number has to be rounded up to the second digit after the decimal point**. To do that, we can use the same placeholder, just like the previous task:
 
-![](/assets/chapter-2-2-images/05.Daily-earnings-03.png)
+![](/assets/chapter-2-2-images/05.Daily-earnings-03.PNG)
 
 ### Testing in the Judge system
 

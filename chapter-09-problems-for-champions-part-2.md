@@ -74,7 +74,7 @@ The input of our task consists of a few components:
 
 The first part is simple:
 
-![Input read](/assets/chapter-9-2-images/01.Passion-days-01.png)
+![Input read](/assets/chapter-9-2-images/01.Passion-days-01.PNG)
 
 But in the second part is a detail that we need to take into consideration. The requirements state the following:
 
@@ -82,7 +82,7 @@ But in the second part is a detail that we need to take into consideration. The 
 
 This is where we need to take into consideration the fact that inside **our array we should start processing commands**, but **only after we receive** the command **"mall.Enter"**. How can we do that? Using a **`while`** or a **`do-while`** loop is a good option. Here is an exemplary solution of how **to skip** all commands before processing the command **"mall.Enter"**:
 
-![Input filter](/assets/chapter-9-2-images/01.Passion-days-02.png)
+![Input filter](/assets/chapter-9-2-images/01.Passion-days-02.PNG)
 
 Here is the place to say that by calling **`input()`** after the end of the loop is used to **pass from the first command** for processing.
 
@@ -94,7 +94,7 @@ Let's examine the first two problems for our algorithm. The first problem concer
 
 This is how the code may look like using two loops like this:
 
-![Main loop](/assets/chapter-9-2-images/01.Passion-days-03.png)
+![Main loop](/assets/chapter-9-2-images/01.Passion-days-03.PNG)
 
 The next part of the algorithm is to **process the symbols from the commands**, according to the following rules in the requirements:
 
@@ -112,7 +112,7 @@ The other problem is how **to skip a particular symbol** if it is not an operati
 
 An exemplary condition for the first part of the requirements looks like this:
 
-![Case check](/assets/chapter-9-2-images/01.Passion-days-04.png)
+![Case check](/assets/chapter-9-2-images/01.Passion-days-04.PNG)
 
 **Note**: the variable **`purchases`** is of **`int`** type, in which we store the number of all purchases.
 
@@ -148,11 +148,11 @@ The expression is solved **without considering the mathematical rules** for calc
 
 The expression
 
-![First example](/assets/chapter-9-2-images/02.X-expression-01.png)
+![First example](/assets/chapter-9-2-images/02.X-expression-01.PNG)
 
 is solved in the following way:
 
-![First example explained](/assets/chapter-9-2-images/02.X-expression-02.png)
+![First example explained](/assets/chapter-9-2-images/02.X-expression-02.PNG)
 
 Bonny is very pretty, but not as wise, so she will need our help to master the power of Expressions.
 
@@ -191,7 +191,7 @@ As usual, we will first read and process the input, after that, we will solve th
 
 The input data will consist of exactly one text line read from the console. To have access to each expression, we have to read the input with **`input()`** function and then convert the string into an array of symbols. Using the function **`pop(…)`** we can process each symbol:
 
-![Expression Read](/assets/chapter-9-2-images/02.X-expression-03.png)
+![Expression Read](/assets/chapter-9-2-images/02.X-expression-03.PNG)
 
 #### Algorithm for Solving the Problem
 
@@ -200,13 +200,13 @@ For the tasks of our problem we need to use some variables:
 * One variable will store our **current result**.
 * And our final variable will store the **current operator** from our expression.
 
-![Variable declearation](/assets/chapter-9-2-images/02.X-expression-04.png)
+![Variable declearation](/assets/chapter-9-2-images/02.X-expression-04.PNG)
 
 We have to clarify that in the code above, by default the operator is **`+`**, so that the first meet number can be summed with our result.
 
 Now that we already have our starting variables, we must decide **what will be the main structure** of our program. By the requirements, we understand that **each expression ends with `=`**, i.e. we must read and process symbols until we reach a **`=`**. This is followed by an accurately written **`while` loop**.
 
-![Main loop](/assets/chapter-9-2-images/02.X-expression-05.png)
+![Main loop](/assets/chapter-9-2-images/02.X-expression-05.PNG)
 
 Our next step is to process our **`symbol`** variable. We have 3 possible cases for it:
 
@@ -217,24 +217,24 @@ Our next step is to process our **`symbol`** variable. We have 3 possible cases 
 
 - If the symbol is an **operator**, i.e. it is **`+`**, **`-`**, **`*`** or **`/`**.
 
-![Main checks](/assets/chapter-9-2-images/02.X-expression-06.png)
+![Main checks](/assets/chapter-9-2-images/02.X-expression-06.PNG)
 
 Let's examine the actions that we need to undertake in the relevant cases that we defined:
 
 - If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expression_operator` variable**.
 - If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if **`expression_operator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (**`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**).
 
-![Number checks](/assets/chapter-9-2-images/02.X-expression-07.png)
+![Number checks](/assets/chapter-9-2-images/02.X-expression-07.PNG)
 
 - If our symbol is a **`(`**, this indicates the **beginning of a sub-expression** (an expression in brackets). By definition, **the sub-expression must be calculated before modifying the result of the whole expression** (the actions in brackets are performed first). This means that we will have a local result for the sub-expression and a local operator.
 
-![Inner expression checks](/assets/chapter-9-2-images/02.X-expression-08.png)
+![Inner expression checks](/assets/chapter-9-2-images/02.X-expression-08.PNG)
 
 After that, to **calculate the sub-expression value**, we will use the same methods that we used for calculating the main expression – we use a **`while` loop** to **read symbols** (until we reach an **`)`** symbol). Depending on whether the read symbol is a number or an operator, we modify the result of the sub-expression. The implementation of these operations is identical to the above-described implementation for calculating expressions. This is why we believe the reader will be able to easily handle it.
 
 After finishing the result calculation for our sub-expression, we **modify the result of the whole expression** depending on the value of the **`expression_operator`**.
 
-![Operator checks](/assets/chapter-9-2-images/02.X-expression-09.png)
+![Operator checks](/assets/chapter-9-2-images/02.X-expression-09.PNG)
 
 #### Formatting the Output
 
@@ -314,29 +314,29 @@ We have 3 lines in the input data:
 
 Reading the input data is simple:
 
-![Input read](/assets/chapter-9-2-images/03.Bulls-and-cows-01.png)
+![Input read](/assets/chapter-9-2-images/03.Bulls-and-cows-01.PNG)
 
 #### Algorithm for Solving the Problem
 
 Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution is found:
 
-![Flag set](/assets/chapter-9-2-images/03.Bulls-and-cows-02.png)
+![Flag set](/assets/chapter-9-2-images/03.Bulls-and-cows-02.PNG)
 
 If after finishing our algorithm this flag is still **`False`**, then we will print **`No`** on the console, as specified in the requirements:
 
-![No case](/assets/chapter-9-2-images/03.Bulls-and-cows-03.png)
+![No case](/assets/chapter-9-2-images/03.Bulls-and-cows-03.PNG)
 
 Let's start analyzing our problem. What we need to do is **analyze all numbers from `1111` to `9999`**, excluding those that contain zeroes (for example **`9011`**, **`3401`**, etc. are invalid). What is the easiest way to **generate** all these **numbers**? We will **use nested loops**. As we have a **4-digit number**, we will have **4 nested loops**, as each of them will generate **an individual digit in our number** for testing:
 
-![Digit generation](/assets/chapter-9-2-images/03.Bulls-and-cows-04.png)
+![Digit generation](/assets/chapter-9-2-images/03.Bulls-and-cows-04.PNG)
 
 Thanks to these loops, **we have access to every digit** of all numbers that we need to check. Our next step is to **separate the secret number into digits**. This can be achieved very easily by **slicing the string (string slicing)**. An alternative solution is to access the symbols by index:
 
-![Guess set](/assets/chapter-9-2-images/03.Bulls-and-cows-05.png)
+![Guess set](/assets/chapter-9-2-images/03.Bulls-and-cows-05.PNG)
 
 Only two last steps remain until we start analyzing how many cows and bulls there are in a particular number. Accordingly, the first one is **the declaration of counter variables** in the nested loops, to **count the cows and bulls** for the current number. The second step is to make **copies of the digits of the current number** that we will analyze, to prevent problems upon working with nested loops, in case we make changes to them.
 
-![Checks set](/assets/chapter-9-2-images/03.Bulls-and-cows-06.png)
+![Checks set](/assets/chapter-9-2-images/03.Bulls-and-cows-06.PNG)
 
 We are ready to start analyzing the generated numbers. What logic can we use? The easiest way to check how many cows and bulls there are inside a number is via a **sequence of `if-elif` conditions**. Yes, this is not the most optimal way, but to stick to what is covered in the current book, we will use this approach.
 
@@ -344,13 +344,13 @@ What conditions do we need?
 
 The condition for the bulls is very simple – we check whether the **first digit** of the generated number matches the **same digit** in the secret number. We remove the digits that are already checked to avoid repetitions of bulls and cows:
 
-![Single check](/assets/chapter-9-2-images/03.Bulls-and-cows-07.png)
+![Single check](/assets/chapter-9-2-images/03.Bulls-and-cows-07.PNG)
 
 We repeat the action for the second, third, and fourth digits.
 
 Our conditional statement for cows can be done by this method - we check if the **first digit** from the generated number **matches with the second**, **the third**, or **the fourth** digit of the secret number. Example:
 
-![Case check](/assets/chapter-9-2-images/03.Bulls-and-cows-08.png)
+![Case check](/assets/chapter-9-2-images/03.Bulls-and-cows-08.PNG)
 
 After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one**, or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one**, or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
@@ -358,7 +358,7 @@ After that, we sequentially check whether the **second digit** of the generated 
 
 After completing all conditions, we just need to **check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console**. If this is true, we print the current number on the console:
 
-![Root check](/assets/chapter-9-2-images/03.Bulls-and-cows-09.png)
+![Root check](/assets/chapter-9-2-images/03.Bulls-and-cows-09.PNG)
 
 ### Testing in the Judge System
 

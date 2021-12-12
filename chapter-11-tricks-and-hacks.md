@@ -105,7 +105,7 @@ In programming variables keep data, and for the code to be more understandable, 
 * You should be careful with uppercase and lowercase letters, because Python distinguishes them. For example, **`age`** and **`Age`** are different variables.
 * The names of the variables **cannot coincide with keywords** in the Python language, for example **`for`** is an invalid name for a variable.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Although using capital letters in the names of variables is allowed, <strong>in Python it is not recommended</strong> and is considered a bad style of naming.</td>
 </tr></table>
 
@@ -148,21 +148,21 @@ More about the **shortcuts in PyCharm** can be found in the website of JetBrains
 
 In **PyCharm** there are the so-called **code snippets** (code snippets), which write a block of code by using a code template. For example, by writing the short code "**`iter`**" and then pressing **[Tab]** code **`for ... in ...:`** is generated in the body of our program, in the place of the short code. This is called “unfolding a code snippet”. On the figure below you can see the "**`iter`**" snippet in action:
 
-![](/assets/chapter-11-images/01.Code-snippet-01.png)
+![](/assets/chapter-11-images/01.Code-snippet-01.PNG)
 
 ### Creating Your Own Code Snippet
 
 In this section we are going to show you how to **make your own code snippet**. We will see **how to make live template** for **two nested loops**. In order to begin we must create a new empty project and go to [**File**] -> [**Settings**], as shown on the picture:
 
-![](/assets/chapter-11-images/01.Code-snippet-02.png) 
+![](/assets/chapter-11-images/01.Code-snippet-02.PNG) 
 
 In the window that we opened we must choose [**Editor**] -> [**Live Templates**], and from the section we should choose the arrow **before** the checkbox for **Python**. This is where all the existing snippets for **Python** are located:
 
-![](/assets/chapter-11-images/01.Code-snippet-03.png) 
+![](/assets/chapter-11-images/01.Code-snippet-03.PNG) 
 
 We choose a snippet, for example **`iter`**, we explore it:
 
-![](/assets/chapter-11-images/01.Code-snippet-04.png) 
+![](/assets/chapter-11-images/01.Code-snippet-04.PNG) 
 
 We see many things we haven't seen before yet, but don't worry, we will become acquainted with them later. For now we want to create our own snippet. In order to do so we choose the button Add (the green **+** on the right). From the list we choose [**1. Live Template**]. In the bottom part of the window, on the place of **Abbreviation**, we should write a short name, which will be used to call the snippet (for example **`ff`**, for **`for, for`**), for **Description** we give a usefull description and for **Template Text** we input the following:
 
@@ -172,15 +172,15 @@ for $I$ in $LIST1$:
         $END$
 ```
 
-![](/assets/chapter-11-images/01.Code-snippet-05.png) 
+![](/assets/chapter-11-images/01.Code-snippet-05.PNG) 
 
 We receive a warning to choose context, or the cases our snippet will show (the red text under Template text). We choose **Define** and from the appered menu we check **Python**.
 
-![](/assets/chapter-11-images/01.Code-snippet-06.png) 
+![](/assets/chapter-11-images/01.Code-snippet-06.PNG) 
 
 Now, if we write **`ff`** in PyCharm, our **new live template** appears:
 
-![](/assets/chapter-11-images/01.Code-snippet-07.png) 
+![](/assets/chapter-11-images/01.Code-snippet-07.PNG) 
 
 ## Code Debugging Techniques
 
@@ -202,19 +202,19 @@ for i in range(1, 100):
 
 We will place a **breakpoint** on the function **`print(…)`**. For this, we will need to move our cursor to the line, which prints on the console, and press [**CTRL + F8**]. A **breakpoint**, where the program will  **stop** its execution:
 
-![](/assets/chapter-11-images/02.Debugger-01.png) 
+![](/assets/chapter-11-images/02.Debugger-01.PNG) 
 
 In order to start  **the program in debug mode**, we choose [**Run**] -> [**Debug...**] or press [**Alt + Shift + F9**]:
 
-![](/assets/chapter-11-images/02.Debugger-02.png) 
+![](/assets/chapter-11-images/02.Debugger-02.PNG) 
 
 After starting the program, we can see that it **stops executing** at line 2, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**. In order to go to **the next line** e use the key [**F8**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
 
-![Debugger](/assets/chapter-11-images/02.Debugger-03.png) 
+![Debugger](/assets/chapter-11-images/02.Debugger-03.PNG) 
 
 From the **Debugger** window, we can observe **the changes in the local variables**. The window opens when we start debugging. To open it manually , we should choose [**View**] -> [**Tool Windows**] -> [**Debug**]:
 
-![Debugger](/assets/chapter-11-images/02.Debugger-04.png) 
+![Debugger](/assets/chapter-11-images/02.Debugger-04.PNG) 
 
 ## A guide to tricks
 
