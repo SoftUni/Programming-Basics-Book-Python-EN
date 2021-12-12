@@ -2,7 +2,7 @@
 
 In the previous chapter we learned how to run a command block **more than once**. That's why we implemented **`for` loop** and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams.  For some of them we’ll show detailed solved examples, while for others there’ll be tips only. Before we begin, we’ll recall the **`for` loop** construction:
 
-![](/assets/chapter-5-2-images/00.For-construction-01.PNG) 
+![](/assets/chapter-5-2-images/00.For-construction-01.png) 
 
 **`for` loops** consist of:
  * **Initialization block**, where the variable-counter (**`i`**) is declared, and with the help of the **`range(…)`** function built into Python, we define what its starting and ending value will be.
@@ -104,19 +104,19 @@ The program that solves this problem can be divided theoretically into three par
   
 Before we transition to the real reading of the input, we have to **declare our variables**, in which the data will be stored:
 
-![](/assets/chapter-5-2-images/01.Histogram-01.PNG)
+![](/assets/chapter-5-2-images/01.Histogram-01.png)
 
 We declare variables **`p1_percentage`**, **`p2_percentage`**, etc., in which we’ll store the percentages, as well as **`cnt_p1`**, **`cnt_p2`**, etc., in which we’ll keep the count of numbers for the respective group.
 
 After we’ve declared the needed variables, we can move on to reading the number **`n`** from the console:
 
-![](/assets/chapter-5-2-images/01.Histogram-02.PNG)
+![](/assets/chapter-5-2-images/01.Histogram-02.png)
 
 #### Processing the input data
   
 In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to its respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers (**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
 
-![](/assets/chapter-5-2-images/01.Histogram-03.PNG)
+![](/assets/chapter-5-2-images/01.Histogram-03.png)
 
 After we’ve found out how many numbers there are in each group, we can move on to calculating the percentages, which is also the main part of the problem. We’ll use the following formula:
 
@@ -124,7 +124,7 @@ After we’ve found out how many numbers there are in each group, we can move on
 
 It doesn’t matter whether we’ll divide by **100** (an **`integer`** type), or **100.0**(a **`float`** type), since the **division** will take place and the result will be saved to the variable. Example: **5 / 2 = 2.5**, and **5 / 2.0 = 2.5**. In **`Python 3`**, there’s no difference whether we’ll be dividing by an integer or a real number - if the result is a real number itself, then it will be saved in the variable as a floating-point number. But in **`Python 2.7`** we have to convert the numbers to a **`float`** type, in order to get the correct result – a real number. Having that in mind, the first variable’s formula will look like this:
 
-![](/assets/chapter-5-2-images/01.Histogram-04.PNG)
+![](/assets/chapter-5-2-images/01.Histogram-04.png)
 
 To better understand what’s happening, let’s look at the following example:
 
@@ -144,7 +144,7 @@ After reading the numbers, we have two of them in the first group, and we have o
   
 The last step is to print the calculated results. In the problem’s description it’s said that the percentages have to be with **2-digit precision after the decimal point**. To achieve this, we have to write **`.2f`** after the placeholder.
 
-![](/assets/chapter-5-2-images/01.Histogram-05.PNG)
+![](/assets/chapter-5-2-images/01.Histogram-05.png)
 
 ### Testing in the Judge system
 
@@ -208,23 +208,23 @@ Solving this problem, like the previous one, again can be divided in three parts
 
 As we already know, like in most scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpreter decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price (**`present_price`**) in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this problem. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
 
-![](/assets/chapter-5-2-images/02.Smart-lilly-01.PNG)
+![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
 In order to solve the problem, we'll need a couple of helper variables – for **the toys' count** (**`number_of_toys`**) for **the saved money** (**`saved_money`**) and for **the money received on each birthday** (**`money_for_birthday`**). We initially assign 10 to **`money_for_birthday`**, because in the description it's said that the first sum received by Lily is 10 USD:
 
-![](/assets/chapter-5-2-images/02.Smart-lilly-02.PNG)
+![](/assets/chapter-5-2-images/02.Smart-lilly-02.png)
  
 With a **`for` loop** we go through each of Lily's birthdays. When the loop variable is an **even number**, it means that Lily has **received money** and we add them to her savings. At the same time, we **subtract 1 USD** - the money taken by her brother. After that we **increase** the value of the variable **`money_for_birthday`**, meaning we increase the sum with 10 for the next time she receives money for her birthday. Contrary, when the loop variable is an **odd number**, we increase the **toys**' count. Checking whether it's even or odd happens with a **division with remainder** (**`%`**) **by 2** – when the remainder is 0, the number is even, and when the remainder's 1 - it's odd:
  
-![](/assets/chapter-5-2-images/02.Smart-lilly-03.PNG)
+![](/assets/chapter-5-2-images/02.Smart-lilly-03.png)
  
 We add the money from the sold toys to Lily's savings:
 
-![](/assets/chapter-5-2-images/02.Smart-lilly-04.PNG)
+![](/assets/chapter-5-2-images/02.Smart-lilly-04.png)
 
 At the end we print the results, taking in account the required formatting, meaning the sum has to be **rounded to 2 digits after the decimal point**:
 
-![](/assets/chapter-5-2-images/02.Smart-lilly-05.PNG)
+![](/assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
 In some programming languages there's a construction called **conditional operator (`?:`)** (also known as ternary operator), as it's shorter to write. It has the following syntax in Python: **`operand1 if operand2 else operand3`**. The second operand is our condition and it has to be of **bool type** (meaning it has to return **`true/false`**). If **`operand2`** returns **`true`**, it'll execute **`operand1`**, and if it returns **`false`** – **`operand3`**. In our case we check whether Lily's **saved money** is enough to buy a washing machine. If its higher or equal to its price, the check **`saved_money >= price_of_washing_machine`** will return **`true`** and it'll print "**Yes! …**", while if it's lower – the result will be **`false`** and "**No! …**" will be printed. Of course, instead of the ternary operator, we can use simple **`if`** expressions.
 
@@ -297,11 +297,11 @@ The input is read from the console and **contains exactly 2 lines**:
 
 The method of solving this problem isn't unlike the previous ones, so we begin by **declaring and initializing** the needed variables. In the problem's description it's said that Ivancho's age is 18, so we declare the variable **`years`** with the initial value **18**. We read other variables from the console: 
 
-![](/assets/chapter-5-2-images/03.Back-to-the-past-01.PNG)
+![](/assets/chapter-5-2-images/03.Back-to-the-past-01.png)
 
 With the help of a **`for` loop** we loop through all years. **We begin at 1800** – the year when Ivancho travels back in time, and we end at **the year until he has to live**. In the loop we check whether the current year is **even** or **odd**. We check it with **division with remainder** (**`%`**) by 2. If the year is **even**, from the inheritance (**`inheritance`**) we subtract **12000**, while if it's **odd**, from the inheritance (**`inheritance`**) we subtract **12000 + 50 * (Ivancho's age)**:
 
-![](/assets/chapter-5-2-images/03.Back-to-the-past-02.PNG)
+![](/assets/chapter-5-2-images/03.Back-to-the-past-02.png)
 
 At the end we print the results, and we do a **check whether the inheritance** (**`inheritance`**) has been enough for him to live without working or not. If the inheritance (**`inheritance`**) is **a positive number**, we print: "**`Yes! He will live a carefree life and will have {N} dollars left.`**", while if it's a **negative number**: "**`He will need {M} dollars to survive.`**". We don't forget to format the sum with 2-digit precision after the decimal point.
 
@@ -378,7 +378,7 @@ The input is read from the **console** and contains:
 
 Again, we begin by **declaring and initializing** the needed variables. The period, for which we have to do our calculations, we read from the console and assign to the variable **`period`**. We'll need a couple of additional variables: the count of treated patients (**`treated_patients`**), the count of untreated patients (**`untreated_patients`**) and the count of doctors (**`count_of_doctors`**), which is initially 7: 
 
-![](/assets/chapter-5-2-images/04.Hospital-01.PNG)
+![](/assets/chapter-5-2-images/04.Hospital-01.png)
 
 With the help of the **`for` loop** we go through all days in the given period (**`period`**). For each day we read the number of patients from the console (**`current_patients`**). The addition of doctors is said in the problem's description to happen **every third day**, **BUT** only if the untreated patients' count is **higher** than the treated's count. That's why we check whether the day is a third one – with the arithmetic operator for division with remainder (**`%`**): **`day % 3 == 0`**.
 
@@ -395,7 +395,7 @@ After that we check whether the patients' count for the current day (**`current_
  
 If the patients' count is **lower**, we increase only the variable **`treated_patients`** with the current day's count of patients (**`current_patients`**):
 
-![](/assets/chapter-5-2-images/04.Hospital-02.PNG)
+![](/assets/chapter-5-2-images/04.Hospital-02.png)
 
 At the end we only have to print the count of treated and untreated patients.
 

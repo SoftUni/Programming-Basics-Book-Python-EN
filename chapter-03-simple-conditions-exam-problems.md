@@ -58,11 +58,11 @@ We will read the input data and, depending on the distance, we will choose the c
 
 In the task, we are given **information about the input and output data**. Therefore, in the first **two lines** of the solution, we will declare and initialize the two **variables** that are going to store **the values of the input data**. **The first line** contains **an integer** and that is why the declared variable will be converted with the function **`int(…)`**. **The second line** contains **a word**, therefore, the variable will be of **`string`** type:
 
-![](/assets/chapter-3-2-images/01.Transport-price-01.PNG)
+![](/assets/chapter-3-2-images/01.Transport-price-01.png)
 
 Before starting with the conditional statements, we need to **declare** one more **variable** that stores the value of **the transport price**:
 
-![](/assets/chapter-3-2-images/01.Transport-price-02.PNG)
+![](/assets/chapter-3-2-images/01.Transport-price-02.png)
 
 #### Checking the conditions and calculating
 
@@ -70,15 +70,15 @@ After having **declared and initialized** the input data and the variable that s
 
 The task specifies that the rates of two of the vehicles **do not depend** on whether it is **day** or **night**, but the rate of one of the transports (taxi) **depends**. This is why the **first condition** will be whether it is **day or night** so that it is clear which rate the taxi will be **using**. To do that, we **declare one more variable** that stores **the value of the taxi rate**:
 
-![](/assets/chapter-3-2-images/01.Transport-price-03.PNG)
+![](/assets/chapter-3-2-images/01.Transport-price-03.png)
 
 To calculate **the taxi rate**, we will use a conditional statement of type **`if-else`**:
 
-![](/assets/chapter-3-2-images/01.Transport-price-04.PNG)
+![](/assets/chapter-3-2-images/01.Transport-price-04.png)
 
 After having done that, now we can start calculating **the transport price** itself. The constraints in the task refer to **the distance** that the student wants to travel. This is why we will use an **`if-elif-else`** statement that will help us find **the price** of the transport, depending on the given kilometers:
 
-![](/assets/chapter-3-2-images/01.Transport-price-05.PNG)
+![](/assets/chapter-3-2-images/01.Transport-price-05.png)
 
 First, we check whether the kilometers are **less than 20**, as the task specifies that the student can only use **a taxi** for **less than 20 kilometers**. If the condition is **true** (returns **`true`**), the variable that is created to store the value of the transport (**`price`**), will store the corresponding value. This value equals **the starting fee** that we will **sum** with its **rate**, **multiplied** by **the distance** that the student has to travel.
 
@@ -90,7 +90,7 @@ If this condition **does not return `true`** as a result, we have to store **a v
 
 After we have checked the distance **conditions** and we have **calculated the price of the cheapest transport**, we have to **print it**. The task **does not** specify how to format the result, therefore, we just print **the variable**:
 
-![](/assets/chapter-3-2-images/01.Transport-price-06.PNG)
+![](/assets/chapter-3-2-images/01.Transport-price-06.png)
 
 ### Testing in the Judge System
 
@@ -133,11 +133,11 @@ To solve the task, we read the input data, write a few conditional statements, d
 
 From the task requirements we note that our program must have **four lines** from which we read **the input data**. The first **three** consist of **integers** and that is why the **variables** that will store their values will be of **`int`** type. We know that the **fourth** line will be a **floating-point number**, therefore, the variable we use will be of **`float`** type:
 
-![](/assets/chapter-3-2-images/02.Pipes-in-pool-01.PNG)
+![](/assets/chapter-3-2-images/02.Pipes-in-pool-01.png)
 
 Our next step is to **declare and initialize** a variable in which we are going to calculate how many **liters** the pool has **filled up** for the **time** the worker was **absent**. We do the calculations by **summing** the values of the flow rates of the **two pipes** and **multiplying** them by the **hours** that are given as input data:
 
-![](/assets/chapter-3-2-images/02.Pipes-in-pool-02.PNG)
+![](/assets/chapter-3-2-images/02.Pipes-in-pool-02.png)
 
 #### Checking the Conditions and Processing Output Data
 
@@ -147,7 +147,7 @@ We do that with a simple **`if-else`** statement, where the condition will be wh
 
 The ratio has to be in **percentage**, that is why all the calculations so far will be **multiplied by 100**. The values will be printed using **placeholders**, and as there is a condition for **the result in percentage** to be formatted to **two digits** after **the decimal** point **without rounding**, we will use the method **`math.trunc(…)`**:
 
-![](/assets/chapter-3-2-images/02.Pipes-in-pool-03.PNG)
+![](/assets/chapter-3-2-images/02.Pipes-in-pool-03.png)
 
 However, if **the condition** returns **`false`**, that means that **the quantity of water** is **more** than the **volume** of the pool, therefore, it has **overflown**. Again, the output data has to be on **one line**, but this time it should contain only two values – one of the **hours** when the worker was absent, and the **quantity of water**, which is the difference between the incoming water and the volume of the pool.
 
@@ -192,23 +192,23 @@ To solve the problem, we will read the input data. Then, we will write a few con
 
 From the task we see that **the input data** will be read only on **the first line** and will be **an integer** in the range of [**0 … 365**]. This is why we will use a variable of **`int`** type:
 
-![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-01.PNG)
+![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-01.png)
 
 To solve the problem, **first**, we have to calculate **the total minutes** the owner of Tom is playing with him. We see that not only does the sleepy cat has to play with his owner during **the holidays**, but also during **the working days**. **The number** that we read from the console refers to **the holidays**.
 
 Out next step is to **calculate**, with the help of that number, how many **the working days** of the owner are, as without them we cannot calculate **the total minutes for play**. As the total number of days per year is ***365*** and the number of holidays is **X**, that means that the number of working days is **365 - X***. We store **the difference** in a new variable that only stores this value:
 
-![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-02.PNG)
+![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-02.png)
 
 Once we have **the number of days for playing**, we can calculate **the time for games** of Tom in minutes. Its **value is equal** to the **result of the multiplication of the working days by 63** minutes (the task specifies that during working days, the time for play is 63 minutes per day), **summed with the result of the multiplication of the holidays by 127** minutes (the task specifies that during holidays, the time for play is 127 minutes per day):
 
-![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-03.PNG)
+![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-03.png)
 
 In the task condition, we see that we have to **print the difference** between the two values in **hours** and **minutes** as output data. That is why we **subtract** the **total** time for play from the norm of **30 000** minutes and **store** the result in a **new** variable. After that, we **divide** that variable by 60 to get the **hours**, and then, to find out how many the **minutes** are, we use **modular division with the operator `%`**, as again we divide the variable of the difference by 60.
 
 Here we have to note that if the total **time for the playing** of Tom is **less** than **30,000** when **subtracting** the norm from it, we will obtain **a negative number**. To **neutralize** the number in the division, we use **the function `math.fabs(…)`** when finding the difference:
 
-![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-04.PNG)
+![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png)
 
 #### Checking the Conditions
 
@@ -218,7 +218,7 @@ The time for games is already calculated, which leads us to the **next** step �
 
 Whatever the result of the conditional statement is, we have to print how much **the difference in hours and minutes** is. We will do that with a **placeholder** and the variables that store the values of the hours and the minutes, as the formatting will be according to the task requirements for output: 
 
-![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-05.PNG)
+![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png)
 
 ### Testing in the Judge System
 
@@ -266,13 +266,13 @@ To solve the problem, we will read the input data. Then, we will write a few con
 
 First, we have to **check** what **the input data** will be, so that we can choose what **variables** we will use. The code bellow is blurred on purpose and it should be written by the reader:
 
-![](/assets/chapter-3-2-images/04.Harvest-01.PNG)
+![](/assets/chapter-3-2-images/04.Harvest-01.png)
 
 To solve the task, based on the input data, we have to **calculate** how many **liters of wine** will be produced. From the task requirements, we see that to **calculate** the quantity of **wine in liters**, we first, have to find **the number of grapes in kilograms**, which we will get from the harvest. For that, we will declare a variable that keeps a **value**, equal to **40%** of the result from the **multiplication** of the vineyard area by the number of grapes, which is extracted from 1 $$m^2$$.
 
 After having done these calculations, we are ready to **calculate the quantity of wine in liters** that will be produced from the harvest as well. For that, we declare one more variable that stores that **quantity**. To calculate, we have to **divide the number of grapes in kg by 2.5**:
 
-![](/assets/chapter-3-2-images/04.Harvest-02.PNG)
+![](/assets/chapter-3-2-images/04.Harvest-02.png)
 
 #### Checking the Conditions and Processing Output Data
 
@@ -283,11 +283,11 @@ If the condition returns **`true`**, from the task requirement we see that **on 
 On the second line, we have to print the results by **rounding them up to the higher integer**, which we will do by using the method **`math.ceil(…)`**. The values that we have to print are **the quantity of wine left** and **the quantity that each worker gets**. The wine left is equal to **the difference** between the produced liters of wine and the needed liters of wine. 
 We calculate the value of that quantity in a new variable, which we declare and initialize in the **`if` condition body**, before printing the first line. We calculate the quantity of wine that **each worker gets** by dividing the wine left by the number of workers:
 
-![](/assets/chapter-3-2-images/04.Harvest-03.PNG)
+![](/assets/chapter-3-2-images/04.Harvest-03.png)
 
 If the condition returns **`false`**, we have to **print the difference** between **the needed liters** and the **liters of wine produced from the harvest**. There is a specification that the result has to be **rounded down to the nearest integer**, which we will do by using the method **`math.floor(…)`**:
 
-![](/assets/chapter-3-2-images/04.Harvest-04.PNG)
+![](/assets/chapter-3-2-images/04.Harvest-04.png)
 
 ### Testing in the Judge System
 
@@ -331,13 +331,13 @@ To solve the problem, we will read the input data. Then, we will write a few con
 
 **First**, we have to read the input data to solve the problem. The code bellow is blurred on purpose and it should be written by the reader:
 
-![](/assets/chapter-3-2-images/05.Firm-01.PNG)
+![](/assets/chapter-3-2-images/05.Firm-01.png)
 
 #### Auxiliary Calculations
 
 The next step is to calculate **the number of total working hours** by multiplying the working days by 8 (every working day is 8 hours long) with the number of workers and then sum them with the overtime. **The working days** equal **90% of the days** that the firm has. **The overtime** equals the result of the multiplication of the number of workers by 2 (the possible hours of overtime) and then it is multiplied by the number of days that the firm has. From the task requirements, we see that **the hours** should be **rounded down to the nearest integer**, which we will do with the method **`math.floor(…)`**:
 
-![](/assets/chapter-3-2-images/05.Firm-02.PNG)
+![](/assets/chapter-3-2-images/05.Firm-02.png)
 
 #### Checking the Conditions
 
@@ -347,7 +347,7 @@ If **the time is enough**, we print the result that is specified in the task req
 
 If **the time is not enough**, we print the additional hours that are needed for finishing the project. They equal the difference between **the hours for the project** and **the total working hours**: 
 
-![](/assets/chapter-3-2-images/05.Firm-03.PNG)
+![](/assets/chapter-3-2-images/05.Firm-03.png)
 
 ### Testing in the Judge System
 

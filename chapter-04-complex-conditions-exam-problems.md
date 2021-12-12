@@ -92,25 +92,25 @@ If the student arrives with more than one minute difference compared to the exam
 
 According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`int`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for the **intege**r.
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-01.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-01.png)
 
 Examining the expected output, we can create variables that contain the different output data types, to avoid using the so-called **"magic strings"** in the code.
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-02.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-02.png)
 
 #### Calculations
 
 After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for an easier and more accurate comparison:
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-03.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-03.png)
 
 Let's also calculate the **student arrival time** using the same logic:
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-04.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-04.png)
 
 What remains is to calculate the difference between the two times, to determine **when** and **what time compared to the exam time** the student arrived at:
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-05.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-05.png)
 
 Our next step is to do the required **checks and calculations**, and finally, we are going to print the output. Let's separate the code into **two** parts.
 
@@ -123,19 +123,19 @@ After that, according to the condition, we will check whether the difference in 
 
 In all other cases, we assume that the student **was late**, which we set as **default**, and no additional check is needed:
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-06.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
 
 Finally, we need to print **what is the time difference between exam start time and student arrival time**, as well as whether this time difference indicates the time of arrival **before or after the exam start**.
 
 We check whether the time difference is **more than** one hour, to print hours and minutes in the required **format**, or **less than** one hour, to print **only minutes** as a format and description. We also need to do one more check – whether the time of student's arrival is **before** or **after** the exam start time.
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-07.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
 #### Printing the Result
 
 Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time **(not even a minute difference)**, we do not need to print a second result. This is why we apply the following **condition**:
 
-![](/assets/chapter-4-2-images/01.On-time-for-the-exam-08.PNG)
+![](/assets/chapter-4-2-images/01.On-time-for-the-exam-08.png)
 
 Actually, for the task, printing the result **on the console** can be done at a much earlier stage – during the calculations. This, however, is not a very good practice. **Why?**
 
@@ -203,7 +203,7 @@ Typically, as for the other tasks, we can separate the solution into the followi
 
 While reading the requirements carefully, we understand that we expect **two** lines of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. We can pick **`float`** as a variable for the budget and – **`string`** for the season: 
 
-![](/assets/chapter-4-2-images/02.Trip-01.PNG)
+![](/assets/chapter-4-2-images/02.Trip-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Always take into consideration what <strong>value type</strong> is passed in the input data, as well as what type these need to be converted to, for the program conditions to work properly!</td>
@@ -213,7 +213,7 @@ While reading the requirements carefully, we understand that we expect **two** l
 
 Let's create and initialize the variables needed for applying the logic and calculations:
 
-![](/assets/chapter-4-2-images/02.Trip-02.PNG)
+![](/assets/chapter-4-2-images/02.Trip-02.png)
 
 Similar to the example in the previous task, we can initialize variables with some of the output results, to spare additional initialization.
 
@@ -225,21 +225,21 @@ Based on the way we arrange the logical scheme (the order in which we will check
 
 After that, we need to apply a condition to check the value of the **season**. Based on it, we will determine what percentage of the budget will be spent, as well as where the programmer will stay – in a **hotel** or a **camp**. This is a sample code that may be used to implement the above idea:
 
-![](/assets/chapter-4-2-images/02.Trip-03.PNG)
+![](/assets/chapter-4-2-images/02.Trip-03.png)
 
 We can optimize the conditionал check by assigning a **default value** and then checking one variant less. **This saves one logical step**. For example, this block:
 
-![](/assets/chapter-4-2-images/02.Trip-04.PNG)
+![](/assets/chapter-4-2-images/02.Trip-04.png)
 
 can be shortened like so:
 
-![](/assets/chapter-4-2-images/02.Trip-05.PNG)
+![](/assets/chapter-4-2-images/02.Trip-05.png)
 
 #### Printing the Result
 
 What remains is to display the calculated result on the console:
 
-![](/assets/chapter-4-2-images/02.Trip-06.PNG)
+![](/assets/chapter-4-2-images/02.Trip-06.png)
 
 ### Testing in the Judge System
 
@@ -292,17 +292,17 @@ The problem is not complex, but there are a lot of lines of code to write.
 
 Upon reading the requirements, we understand that we expect **three** lines of input data. The first two lines are **integers** (within the specified range), and the third one – **an arithmetical symbol**.
 
-![](/assets/chapter-4-2-images/03.Operations-01.PNG)
+![](/assets/chapter-4-2-images/03.Operations-01.png)
 
 #### Calculations
 
 Let's create and initialize the variables needed for the logic and calculations. In one variable we will store **the calculations output**, and in the other one, we will use it for the **final output** of the program.
 
-![](/assets/chapter-4-2-images/03.Operations-02.PNG)
+![](/assets/chapter-4-2-images/03.Operations-02.png)
 
 When carefully reading the requirements, we understand that there are cases where we don't need to do **any** calculations, and simply display a result. Therefore, we can first check if the second number is **`0`** (zero), as well as whether the operation is a **division** or a **modular division**, and then initialize the output.
 
-![](/assets/chapter-4-2-images/03.Operations-03.PNG)
+![](/assets/chapter-4-2-images/03.Operations-03.png)
 
 Let's place the output as a value upon initializing the **`output`** parameter. This way we can apply only **one condition** – whether it is needed to **recalculate** or **replace** this output. 
 
@@ -310,27 +310,27 @@ Based on the approach that we choose, our next condition will be either a simple
 
 From the requirements we can see that for **summing up** (**`+`**), **subtraction** (**`-`**) or **multiplying** (**`*`**) the expected output has the same structure: **"{n1} {operator} {n2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure:
 
-![](/assets/chapter-4-2-images/03.Operations-04.PNG)
+![](/assets/chapter-4-2-images/03.Operations-04.png)
 
 We finish the solution by applying conditions for summing up, subtraction and multiplying:
 
-![](/assets/chapter-4-2-images/03.Operations-05.PNG)
+![](/assets/chapter-4-2-images/03.Operations-05.png)
 
 For short and clear conditions, such as the above example for even and odd numbers, you can use a **ternary operator**. Let's examine the possibility to apply a condition **with** or **without** a ternary operator.
 
 **Without using a ternary operator** the code is longer but easier to read:
 
-![](/assets/chapter-4-2-images/03.Operations-06.PNG)
+![](/assets/chapter-4-2-images/03.Operations-06.png)
 
 **Upon using a ternary operator** the code is much shorter, but may require additional efforts to read and understand the logic:
 
-![](/assets/chapter-4-2-images/03.Operations-07.PNG)
+![](/assets/chapter-4-2-images/03.Operations-07.png)
 
 #### Printing the Output
 
 Finally, what remains is to print the calculated result on the console:
 
-![](/assets/chapter-4-2-images/03.Operations-08.PNG)
+![](/assets/chapter-4-2-images/03.Operations-08.png)
 
 ### Testing in the Judge System
 
@@ -391,27 +391,27 @@ We will read the input data and perform the calculations described in the task r
 
 Let's read the requirements carefully and examine what we expect to take as **input data**, what is expected to **return as a result**, as well as what the **main steps** for solving the problem are. For a start, let's process and save the input data in **appropriate variables**:
 
-![](/assets/chapter-4-2-images/04.Match-tickets-01.PNG)
+![](/assets/chapter-4-2-images/04.Match-tickets-01.png)
 
 #### Calculations
 
 Let's create and initialize the variables needed for doing the calculations:
 
-![](/assets/chapter-4-2-images/04.Match-tickets-02.PNG)
+![](/assets/chapter-4-2-images/04.Match-tickets-02.png)
 
 Let's review the requirements once again. We need to perform **two** different block calculations. By the first set of calculations, we must understand what part of the budget has to be spent on **transportation**. You will notice that the logic for doing these calculations only depends on the **number of people in the group**. Therefore, we will do a logical breakdown according to the number of football fans. We will use a conditional statement – a sequence of **`if-elif`** blocks:
 
-![](/assets/chapter-4-2-images/04.Match-tickets-03.PNG)
+![](/assets/chapter-4-2-images/04.Match-tickets-03.png)
 
 By the second set of calculations, we need to find out what amount will be needed to **purchase tickets** for the group. According to the requirements, this only depends on the type of tickets that we need to buy. Let's use **`if-elif`** conditional statement:
 
-![](/assets/chapter-4-2-images/04.Match-tickets-04.PNG)
+![](/assets/chapter-4-2-images/04.Match-tickets-04.png)
 
 Once we have calculated the **transportation costs** and **ticket costs**, what remains is to calculate the final result and understand if the group of football fans will **attend** Euro Cup 2016 or **not**, by the provided available parameters. 
 
 For the output, to spare one **condition** in the construction, we will assume that the group can, by default, attend Euro Cup 2016:
 
-![](/assets/chapter-4-2-images/04.Match-tickets-05.PNG)
+![](/assets/chapter-4-2-images/04.Match-tickets-05.png)
 
 #### Printing the Result
 
@@ -475,13 +475,13 @@ We will read the input data and do the calculations according to the provided pr
 
 According to the task requirements, we expect two lines of input data - the first line is the **month in which the stay is planned**, and the second - the **number of stays**. Let's process and store the input data in the appropriate parameters:
 
-![](/assets/chapter-4-2-images/05.Hotel-room-01.PNG)
+![](/assets/chapter-4-2-images/05.Hotel-room-01.png)
 
 #### Calculations
 
 Now let's create and initialize the variables needed for the calculations:
 
-![](/assets/chapter-4-2-images/05.Hotel-room-02.PNG)
+![](/assets/chapter-4-2-images/05.Hotel-room-02.png)
 
 When doing an additional analysis of the requirements, we understand that our main logic depends on what month is passed and what is the number of **stays**.
 
@@ -489,17 +489,17 @@ In general, there are different approaches and ways to apply the above condition
 
 Let's start with the first group of months: **May** and **October**. For these two months, **the price for a stay is the same** for both types of accommodation – a **studio** or an **apartment**. Therefore, the only thing that remains is to apply an internal condition regarding the **number of stays** and recalculate the **relevant price** (if needed):
 
-![](/assets/chapter-4-2-images/05.Hotel-room-03.PNG)
+![](/assets/chapter-4-2-images/05.Hotel-room-03.png)
 
 To some extent, the **logic** and **calculations** will be **identical** for the following months: 
 
-![](/assets/chapter-4-2-images/05.Hotel-room-04.PNG)
+![](/assets/chapter-4-2-images/05.Hotel-room-04.png)
 
-![](/assets/chapter-4-2-images/05.Hotel-room-05.PNG)
+![](/assets/chapter-4-2-images/05.Hotel-room-05.png)
 
 After calculating the relevant prices and the total amount for the stay, now let's prepare the formatted result. Before that, we should store it in our output **variables** - **`studio_info`** and **`apartment_info`**:
 
-![](/assets/chapter-4-2-images/05.Hotel-room-06.PNG)
+![](/assets/chapter-4-2-images/05.Hotel-room-06.png)
 
 To calculate the output parameters, we will use the **formatting** **`.2f`**. This formatting **rounds the decimal** number up to a specified number of characters after the decimal point. In our case, we will round the decimal number up to **2 digits** after the decimal point.
 

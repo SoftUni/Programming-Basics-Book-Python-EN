@@ -33,7 +33,7 @@ The **basic** functions are responsible for the execution of an **action** which
 
 Now, let’s look at the following **example of a basic function**:
 
-![](/assets/chapter-10-images/01.Simple-function-01.PNG)
+![](/assets/chapter-10-images/01.Simple-function-01.png)
 
 The purpose of this function is to print a headline, which in this case is a string of dashes. Because of this, it is called **'print_header'**. The parentheses **always** follow the name of the function, irrespective of its name. It is important the names of our functions to describe the purpose of the function. Later in this chapter, we will learn more in-depth about the naming conventions regarding functions.
 
@@ -53,7 +53,7 @@ The functions **allow** us to use a piece of code **several** times. Working on 
 
 **Function declaration** can be considered as a registration of a given functionality within a program so that this functionality can be recognized and later used in the rest of the program where necessary. In the next example, we will explore the element of which a function is composed:
 
-![](/assets/chapter-10-images/02.Declaring-functions-02.PNG)
+![](/assets/chapter-10-images/02.Declaring-functions-02.png)
 
 * **def**. The key word **`def`** in Python expresses the intention to declare a new function.
 * **Name of the function**. The name of the function is **defined by the developer** and follows after the keyword **def**. It is important to describe the **functionality** which is bound to be executed by the function’s instructions listed in its body. In our example the name of the function is **`calculate_square`** which hints us that the aim of the given problem is to calculate the squared value of a number.
@@ -75,13 +75,13 @@ When declaring a given variable in the body of a function, it is called a local 
 
 The calling of the function is regarded as the **beginning of the execution** of the code which is in the **function’s body**. This is accomplished as the name of the function is called, followed by the parentheses. If the function expects input arguments for its parameters, they must be inserted in the parentheses in the same order in which the parameters were defined in the parentheses. An example that follows:
 
-![](/assets/chapter-10-images/03.Invoking-functions-01.PNG)
+![](/assets/chapter-10-images/03.Invoking-functions-01.png)
 
 The given function can be called plenty of times from **any** location in the code. It’s important to mention that if a function in **Python** is defined somewhere inside the code, the program will only recognize it if it is called after its definition within the code of the program.
 
 As the calling of a function is a command by itself, we can call a function from inside another function:
 
-![](/assets/chapter-10-images/03.Invoking-functions-02.PNG)
+![](/assets/chapter-10-images/03.Invoking-functions-02.png)
 
 There is also a possibility the function to be called in **its own body**. This is called **recursion**, for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
 
@@ -105,13 +105,13 @@ Write a function which prints empty receipt. The function should call another th
 
 First, we need to create the function which **prints the header** of the receipt. Its name should be short and sensible which describes the task the function will execute. For example, it can be called **`print_receipt_header`** and its body will contain the following code:
 
-![](/assets/chapter-10-images/04.Print-receipt-01.PNG)
+![](/assets/chapter-10-images/04.Print-receipt-01.png)
 
 Similar to the first function, we will create another two functions which will print out the center part of the receipt (body) and the bottom of the receipt (footer). We will call them **`print_receipt_body`** and **`print_receipt_footer`**. 
 
 Next, we will create **another function** which wraps the three functions and call them one after another. Finally, we will call the function **`print_receipt`** in our program:
 
-![](/assets/chapter-10-images/04.Print-receipt-02.PNG)
+![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
 #### Testing in Judge platform
 
@@ -127,11 +127,11 @@ As we just mentioned, the parameters **can be zero or as many as needed**. When 
 
 This is an example of **definition** of a function which uses a **set of parameters**:
 
-![](/assets/chapter-10-images/05.Function-parameters-01.PNG)
+![](/assets/chapter-10-images/05.Function-parameters-01.png)
 
 In this example, we will be using two parameters called **`start`** and **`end`**, respectively. After the definition of the function, it can be used in the program – we **call** the function including **arguments** for our parameters:
 
-![](/assets/chapter-10-images/05.Function-parameters-02.PNG)
+![](/assets/chapter-10-images/05.Function-parameters-02.png)
 
 In this case the numerical value of the argument is declared directly in the function (e.g., **`5`** for **`start`** and **`10`** for **`end`**).
 
@@ -139,7 +139,7 @@ When declaring **parameters**, they can be of **any** type (integer, string etc.
 
 Let’s look at another example of function definition which has a few parameters, each of a different type:
 
-![](/assets/chapter-10-images/05.Function-parameters-03.PNG)
+![](/assets/chapter-10-images/05.Function-parameters-03.png)
 
 ### Example: integer sign
 
@@ -157,13 +157,13 @@ Create a function which prints whether the given integer is positive, negative o
 
 The first step is to **create** a function and give it a descriptive name such as **`print_sign`**. This function will have only one parameter – integer number, which sign we want to check:
 
-![](/assets/chapter-10-images/06.Print-sign-01.PNG)
+![](/assets/chapter-10-images/06.Print-sign-01.png)
 
 Next, we want to **implement** the logic which will check whether the input value is positive, negative or zero. Looking at the examples we can conclude there are three cases to consider – the integer is bigger than zero, the integer is equal to zero and the integer is less than zero, which means we need to check **three conditions** in the function’s body. 
 
 Then we need to read the input value and call our function:
 
-![](/assets/chapter-10-images/06.Print-sign-02.PNG)
+![](/assets/chapter-10-images/06.Print-sign-02.png)
 
 #### Testing in Judge platform
 
@@ -176,11 +176,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 The following example will demonstrate the use of default arguments:
 
-![](/assets/chapter-10-images/07.Optional-parameters-01.PNG)
+![](/assets/chapter-10-images/07.Optional-parameters-01.png)
 
 The given function **`print_numbers(…)`** can be called in several ways:
 
-![](/assets/chapter-10-images/07.Optional-parameters-02.PNG)
+![](/assets/chapter-10-images/07.Optional-parameters-02.png)
 
 On the first line the parameters use the following arguments – **`start = 5`**, **`end = 10`**. With the second line the arguments will be - **`start = 0`**, **`end = 15`**. With the third line we have **`start = 0`**, **`end = 100`**. The last line will use **`start = 35`**, **`end = 40`**.
 
@@ -198,21 +198,21 @@ Create a function which prints triangle as shown in the examples.
 
 Before creating a function, which prints numbers on a single line with initial and final value, we must read the input from the console. Next, we choose a meaningful name for our function which shortly describes its purpose. This might be **`print_line`** and we can now build it:
 
-![](/assets/chapter-10-images/08.Print-triangle-01.PNG)
+![](/assets/chapter-10-images/08.Print-triangle-01.png)
 
 Looking at the problems regarding console drawing, we remember that it is a good practice to **divide the completion of the figure** in several steps. We can simplify the problem by dividing the triangle into three sections – upper, mid, and lower segment.
 
 Our next step will be to print the **upper segment** of the triangle’s body:
 
-![](/assets/chapter-10-images/08.Print-triangle-02.PNG)
+![](/assets/chapter-10-images/08.Print-triangle-02.png)
 
 After that we need to print the **center line**:
 
-![](/assets/chapter-10-images/08.Print-triangle-03.PNG)
+![](/assets/chapter-10-images/08.Print-triangle-03.png)
 
 Finally, we print the **bottom segment** of the triangle, as this time the step of the for loop is negative one:
 
-![](/assets/chapter-10-images/08.Print-triangle-04.PNG)
+![](/assets/chapter-10-images/08.Print-triangle-04.png)
 
 #### Testing in Judge platform
 
@@ -233,15 +233,15 @@ Draw filled square to the console with a side length N as it is shown in the exa
 
 The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Let's not forget that we need to choose a **descriptive name** and define the length of the side of the square as a **parameter**:
 
-![](/assets/chapter-10-images/09.Draw-filled-square-01.PNG)
+![](/assets/chapter-10-images/09.Draw-filled-square-01.png)
 
 Next step is to create a function which draws to the console the lines in the middle. Again, we think of a descriptive enough name, say **`print_middle_row`**:
 
-![](/assets/chapter-10-images/09.Draw-filled-square-02.PNG)
+![](/assets/chapter-10-images/09.Draw-filled-square-02.png)
 
 Finally, we call the created functions to draw the square:
 
-![](/assets/chapter-10-images/09.Draw-filled-square-03.PNG)
+![](/assets/chapter-10-images/09.Draw-filled-square-03.png)
 
 #### Testing in Judge platform
 
@@ -256,13 +256,13 @@ Up until now we were looking at functions that execute a particular action such 
 
 To return a value which is the result of the function’s execution we use the return keyword. It must be **used in the body** of the function and indicates to the program to **stop execution** of the function and **returns value** to the caller of the function which is written as an argument after the keyword ‘return’. In the example that follows, there is a function which reads two names from the console, concatenates them, and returns them as a result:
 
-![](/assets/chapter-10-images/10.Return-operator-01.PNG)
+![](/assets/chapter-10-images/10.Return-operator-01.png)
 
 The **`return`** keyword can be used in functions which do not return anything (the **`return`** keyword must be last in the end of the function). The presence of the keyword allows the function to stop its execution without returning a value. In this case, the use of the keyword is helpful only to terminate the execution of the function. It is also possible for the **`return`** keyword to be used in more than one place in the function’s body.
 
 In the following example, we have a function which compares two numbers and returns as a result either **`-1`**, **`0`** or **`1`**, depending on whether the first argument is smaller, equal, or bigger than the second argument of the function. The function uses the **`return`** keyword on three different instances to return different values depending on the arguments fed to the function.
 
-![](/assets/chapter-10-images/10.Return-operator-02.PNG)
+![](/assets/chapter-10-images/10.Return-operator-02.png)
 
 It is important to notice that the returned value by the function can be of a **different type** compared to the argument’s type - string, integer, floating point number etc.
 
@@ -270,7 +270,7 @@ It is important to notice that the returned value by the function can be of a **
 
 After the **`return`** keyword in a given function, the execution of the function is terminated, and the execution of the program continues where the function was last called. If there are other instructions written after the **`return`** keyword, they will not be executed. Some IDEs (including **PyCharm**) will inform you with the following warning:
 
-![](/assets/chapter-10-images/10.Return-operator-03.PNG)
+![](/assets/chapter-10-images/10.Return-operator-03.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" />
 </td><td>In programming it is meaningless to place two <code><b>return</b></code> keywords one after another, as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
@@ -280,15 +280,15 @@ After the **`return`** keyword in a given function, the execution of the functio
 
 After a function is executed and the value is returned by its execution, this value can be used in a **several** ways. For once, we can **assign this value to a variable**:
 
-![](/assets/chapter-10-images/10.Return-operator-04.PNG)
+![](/assets/chapter-10-images/10.Return-operator-04.png)
 
 Another way to accommodate the returned value is to use it directly in an **expression**:
 
-![](/assets/chapter-10-images/10.Return-operator-05.PNG)
+![](/assets/chapter-10-images/10.Return-operator-05.png)
 
 The third method of using the returned value of our function is to **pass** this value to **another function** via parameter:
 
-![](/assets/chapter-10-images/10.Return-operator-06.PNG)
+![](/assets/chapter-10-images/10.Return-operator-06.png)
 
 ### Example: calculating area of a triangle
 
@@ -304,11 +304,11 @@ Write a function which calculates the area of a triangle, given the base and hei
 
 First, create a function which calculates the surface area based on two input parameters – length of the side **a** and length of the height **h**:
 
-![](/assets/chapter-10-images/11.Calculate-triangle-area-01.PNG)
+![](/assets/chapter-10-images/11.Calculate-triangle-area-01.png)
 
 The next step will be to read the input values and **call the function** using them. The result is **formatted in an appropriate variable** and appears on the screen:
 
-![](/assets/chapter-10-images/11.Calculate-triangle-area-02.PNG)
+![](/assets/chapter-10-images/11.Calculate-triangle-area-02.png)
 
 #### Testing in Judge platform
 
@@ -329,7 +329,7 @@ First, we need to read the input values from the console. The next step will be 
 
 First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a **`float`** type number:
 
-![](/assets/chapter-10-images/12.Number-power-01.PNG)
+![](/assets/chapter-10-images/12.Number-power-01.png)
 
 After we have done the necessary calculation, we must call the defined function and print the result.
 
@@ -344,7 +344,7 @@ Up to this point we looked at functions which **do not return any value** and fu
 
 To achieve this in **Python**, after the **`return`** keyword we list the values which are bound to be returned, separated by a comma. The following function accepts as parameters two integers (**`x`** and **`y`**) and **returns two values** - the integer and the remainder of their division:
 
-![](/assets/chapter-10-images/13.Return-multiple-values-01.PNG)
+![](/assets/chapter-10-images/13.Return-multiple-values-01.png)
 
 Calling the function works as with functions which do not return a value or return a single value. To use the returned values, we can **assign** them to variables whose names are separated by commas as it demonstrated with **`a`** and **`b`**. After the execution of this example, **`a`** will hold the value **`3`** while **`b`** will hold the value **`4`**.
 
@@ -356,7 +356,7 @@ In many programming languages **identically** named functions can be used throug
 
 In programming, the way a function is **recognized** is by looking at **both** its fundamental components - **name** and **list** of parameters, declared during the definition of the function. These components define its **specification**, and that's also known as **signature** of the function:
 
-![](/assets/chapter-10-images/14.Overloading-01.PNG)
+![](/assets/chapter-10-images/14.Overloading-01.png)
 
 In this example the signature of the function is its name **`print_name`** as well as its parameter **`name`**.
 
@@ -366,17 +366,17 @@ If in a program we have functions with **identical names** but **different param
 
 Different options to call functions in **Python** can be achieved with the use of **default arguments** or more precisely with the dynamic allocation of arguments to declared parameters of the function. Let’s look at the example from earlier with a function using a couple of default arguments:
 
-![](/assets/chapter-10-images/07.Optional-parameters-01.PNG)
+![](/assets/chapter-10-images/07.Optional-parameters-01.png)
 
 As we already noticed, we can call this function using different combination of arguments which recall closely matched variants of the function:
 
-![](/assets/chapter-10-images/07.Optional-parameters-02.PNG)
+![](/assets/chapter-10-images/07.Optional-parameters-02.png)
 
 ## Nested functions (local functions)
 
 Let’s consider the following function which calculates the area of a circle:
 
-![](/assets/chapter-10-images/15.Nested-functions-01.PNG)
+![](/assets/chapter-10-images/15.Nested-functions-01.png)
 
 ### What is a local variable?
 
@@ -390,7 +390,7 @@ With practice we will find that when we write a program, often it appears that w
 
 Let’s again have a look at the example from before:
 
-![](/assets/chapter-10-images/15.Nested-functions-01.PNG)
+![](/assets/chapter-10-images/15.Nested-functions-01.png)
 
 In this example the function **`cirlce_diameter(…)`** is nested as it is declared inside the body of the function **`circle_circumference(…)`**. This means that the function **`cirlce_diameter(…)`** can be used only inside the function **`circle_circumference(…)`** but not outside of it. If we try to call the function **`cirlce_diameter(…)`** outside the function **`circle_circumference(…)`** this will cause an error during the execution of the program.
 
@@ -444,7 +444,7 @@ Some examples of **inappropriate** naming of parameters:
 
 Let’s again recall how a function should execute **only one** particular **task** in the program. If this cannot be achieved, the next thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** making the function’s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as demonstrated:
 
-![](/assets/chapter-10-images/04.Print-receipt-02.PNG)
+![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
 ### Structure and formatting of the code
 
@@ -452,11 +452,11 @@ In writing functions, caution must be applied to use the correct **indentation**
 
 An example of a **correctly** formatted Python code:
 
-![](/assets/chapter-10-images/16.Good-practice-01.PNG)
+![](/assets/chapter-10-images/16.Good-practice-01.png)
 
 An example of a **incorrectly** formatted Python code (for this reason the last line is underlined in red):
 
-![](/assets/chapter-10-images/16.Good-practice-02.PNG)
+![](/assets/chapter-10-images/16.Good-practice-02.png)
 
 Another good rule of thumb is to leave **one empty line** between the loops and the conditional statements as well as **two empty lines** after the definition of a function. Also, try to **avoid long and complex expressions**. Practice shows that these practices improve the readability of the code and save the developer's time.
 
@@ -530,7 +530,7 @@ Write a function called **`repeat_string(str, count)`**, which receives one argu
 
 Finish the function, as the input argument of type string must be concatenated to the current output of the loop:
 
-![](/assets/chapter-10-images/17.Repeated-string-01.PNG)
+![](/assets/chapter-10-images/17.Repeated-string-01.png)
 
 #### Testing in Judge platform
 
@@ -576,7 +576,7 @@ To solve the problem, a variable will be declared in which the result of the cur
 
 Fill up the missing part of the following function:
 
-![](/assets/chapter-10-images/18.Integer-to-base-01.PNG)
+![](/assets/chapter-10-images/18.Integer-to-base-01.png)
 
 #### Testing in Judge platform
 
@@ -594,7 +594,7 @@ Each **read message** must be printed to the console, formatted depending on its
 
 In the exercise, you have to use four functions: **`show_success_message()`**, **`show_warning_message()`**, **`show_error_message()`** and **`read_and_process_message()`**:
 
-![](/assets/chapter-10-images/19.Notifications-01.PNG)
+![](/assets/chapter-10-images/19.Notifications-01.png)
 
 #### Sample Input and Output
 

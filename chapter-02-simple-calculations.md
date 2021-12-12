@@ -20,7 +20,7 @@ In this chapter we are going to become familiar with the following concepts and 
 
 We know that computers are machines that process data. All **data** is held in the computer memory (RAM memory) as **variables**. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each **variable** in Python has a **name** and **value**. Here is how to define a variable, assigning a value to it at the time of declaration:
 
-![](/assets/chapter-2-1-images/00.Declaring-variables-01.PNG)
+![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
 
 After processing, data is still held in variables (i.e. somewhere in the computer memory, allocated by our program).
 
@@ -74,7 +74,7 @@ print('Square area = ', area)
 
 Here is how the program would work for a square with a side equal to 3:
 
-![](/assets/chapter-2-1-images/00.Square-area-01.PNG)
+![](/assets/chapter-2-1-images/00.Square-area-01.png)
 
 Try to type in an invalid number, for example "**hello**". You will receive an **error** message during execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. 
 
@@ -145,7 +145,7 @@ print('Centimeters = ', centimeters)
 
 Let's start the program and make sure that when we input a value in inches, we receive a correct result in centimeters:
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
 #### Testing in the Judge System
 
@@ -174,7 +174,7 @@ By default, the built-in function **`print(…)`** prints the result and continu
 
 Here is the result if we call the function with the name "Ivan":
 
-![](/assets/chapter-2-1-images/03.Greeting-by-name-00.PNG)
+![](/assets/chapter-2-1-images/03.Greeting-by-name-00.png)
 
 #### Testing in the Judge System
 
@@ -199,7 +199,7 @@ print('You are {0} {1}, a {2}-year-old person from {3}.'
 
 Here is the result which we will get after execution of this example:
 
-![](/assets/chapter-2-1-images/00.Placeholders-01.PNG)
+![](/assets/chapter-2-1-images/00.Placeholders-01.png)
 
 Note how each variable must be passed in the **order, in which we want it to print**. Essentially, the template (**placeholder**) **accepts all types of variables** and this creates great convenience when printing. 
 
@@ -250,7 +250,7 @@ print(result)
 
 Here is the result of the execution of this program (with numbers 10 and 3):
 
-![](/assets/chapter-2-1-images/00.Subtracting-01.PNG)
+![](/assets/chapter-2-1-images/00.Subtracting-01.png)
 
 ### Multiplying Numbers: Operator **`*`**
 
@@ -477,7 +477,7 @@ print('Trapezoid area = ' + str(area))
 
 Because we want the program to work for both integer and floating-point numbers, we use **`float(…)`**. If we start the program and we input for the sides respectively **`3`**, **`4`** and **`5`**, we will get the following result:
 
-![](/assets/chapter-2-1-images/05.Trapezoid-area-03.PNG)
+![](/assets/chapter-2-1-images/05.Trapezoid-area-03.png)
 
 #### Testing in the Judge System
 
@@ -538,7 +538,7 @@ print('Perimeter = ', perimeter)
 ```
 Let's try the program with **radius `r = 10`**:
 
-![](/assets/chapter-2-1-images/00.Circle-area-01.PNG)
+![](/assets/chapter-2-1-images/00.Circle-area-01.png)
 
 #### Testing in the Judge System
 
@@ -572,7 +572,7 @@ print('Perimeter = ', perimeter)
 The function **`max(a, b)`** is used to find the bigger value between **`a`** and **`b`** and analogically **`min(a, b)`** - to find the smaller value between the two.
 
 When starting the program with the values from the coordinate system, the following result is given:
-![](/assets/chapter-2-1-images/00.Rectangle-area-02.PNG)
+![](/assets/chapter-2-1-images/00.Rectangle-area-02.png)
 
 #### Testing in the Judge System
 
@@ -600,7 +600,7 @@ We have to create a new project in PyCharm (from [**Create New Project**] or [**
 * We start PyCharm.
 * We create a new project: [**Create New Project**] (or [**File**] -> [**New Project**]).
 
-![](/assets/chapter-2-1-images/00.New-project-PyCharm-01.PNG)
+![](/assets/chapter-2-1-images/00.New-project-PyCharm-01.png)
 
 ### Problem:	Calculating Square Area
 
@@ -610,27 +610,27 @@ The first exercise from this topic is the following: write a console program tha
 
 We create a **new file** in the existing PyCharm project. Right-click on **SimpleCalculations** and choose [**New**] -> [**Python File**]:
 
-![](/assets/chapter-2-1-images/01.Square-area-01.PNG)
+![](/assets/chapter-2-1-images/01.Square-area-01.png)
 
 A **dialog box** will open letting us choose a **name** for the file. We name it "square_area":
 
-![](/assets/chapter-2-1-images/01.Square-area-02.PNG)
+![](/assets/chapter-2-1-images/01.Square-area-02.png)
 
 We already have a solution with one console application in it. What remains is to write the **code for solving this problem**. For this purpose, we go to the file and we write the following code:
 
-![](/assets/chapter-2-1-images/01.Square-area-03.PNG)
+![](/assets/chapter-2-1-images/01.Square-area-03.png)
 
 The code inputs an integer through **`a = int(input('a = '))`**, afterwards it calculates **`area = a * a`** and finally prints the value of the variable **`area`**. We **start** the program using [**Ctrl + Shift + F10**] or with right-click - [**Run**], and we **test** it with different inputs:
 
-![](/assets/chapter-2-1-images/01.Square-area-04.PNG)
+![](/assets/chapter-2-1-images/01.Square-area-04.png)
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0). You have to get 100 points (completely correct solution):
 
-![](/assets/chapter-2-1-images/01.Square-area-05.PNG)
+![](/assets/chapter-2-1-images/01.Square-area-05.png)
 
-![](/assets/chapter-2-1-images/01.Square-area-06.PNG)
+![](/assets/chapter-2-1-images/01.Square-area-06.png)
 
 
 ### Problem:	Inches to Centimeters
@@ -641,19 +641,19 @@ Write a program that **reads a number from the console** (not necessarily an int
 
 First, we create a **new Python file** in the project "SimpleCalculations".  We right-click the solution **SimpleCalculations** and choose [**New**] -> [**Python File**]. We name it "inches_to_centimeters":
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-02.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
 
 Next, we have to write **the program code**:
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-03.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
 
 **Start the program** with [**Ctrl + Shift + F10**] or with right-click - [**Run**]:
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-04.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-04.png)
 
 Let's test it with floating-point numbers, for example **2.5**:
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-05.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-05.png)
 
 <table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Depending on the regional settings of the operation system, it is possible instead of using a <b>decimal point</b> (US settings), to use a <b>decimal comma</b> (BG settings).</td>
@@ -661,13 +661,13 @@ Let's test it with floating-point numbers, for example **2.5**:
 
 If the program expects a decimal point and a decimal comma is entered, or vice versa (a decimal point is entered when a decimal comma is expected), the following error will occur:
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-06.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-06.png)
 
 It is recommended to **change the settings of your computer** to use a **decimal point**: In Windows this can be done from the Control Panel:
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-07.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-07.png)
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-08.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-08.png)
 
 #### Testing in the Judge System
 
@@ -675,7 +675,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 The solution should be accepted as a completely correct one:
 
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-09.PNG)
+![](/assets/chapter-2-1-images/02.Inches-to-centimeters-09.png)
 
 
 ### Problem: Greeting by Name
@@ -686,15 +686,15 @@ Write a program that **reads a person's name** and prints **`Hello, <name>!`**, 
 
 First, we create a **new Python file** named "greeting_by_name" in the project "SimpleCalculations":
 
-![](/assets/chapter-2-1-images/03.Greeting-by-name-01.PNG)
+![](/assets/chapter-2-1-images/03.Greeting-by-name-01.png)
 
 Next, **we have to write the code** of the program. If you have any difficulties, you can use the code from the example below:
 
-![](/assets/chapter-2-1-images/03.Greeting-by-name-02.PNG)
+![](/assets/chapter-2-1-images/03.Greeting-by-name-02.png)
 
 We **run** the program using [**Ctrl + Shift + F10**] or with right click - [**Run**] to test if it runs correctly:
 
-![](/assets/chapter-2-1-images/03.Greeting-by-name-03.PNG)
+![](/assets/chapter-2-1-images/03.Greeting-by-name-03.png)
 
 #### Testing in the Judge System
 
@@ -709,11 +709,11 @@ Write a program, that reads a first name, last name, age and city from the conso
 
 We add to the existing PyCharm project one more Python file named "concatenate_data". We **write the code** which reads the input from the console:
 
-![](/assets/chapter-2-1-images/04.Concatenate-data-01.PNG)
+![](/assets/chapter-2-1-images/04.Concatenate-data-01.png)
 
 **The code**, which prints the message described in the condition of the task, is purposefully blurred and must be added by the reader: 
 
-![](/assets/chapter-2-1-images/04.Concatenate-data-02.PNG)
+![](/assets/chapter-2-1-images/04.Concatenate-data-02.png)
 
 Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
 
@@ -735,13 +735,13 @@ Write a program that reads three numbers from the console **b1, b2 and h and cal
 
 The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
 
-![](/assets/chapter-2-1-images/05.Trapezoid-area-01.PNG)
+![](/assets/chapter-2-1-images/05.Trapezoid-area-01.png)
 
 #### Hints and Guidelines
 
 Again, we have to add to the existing PyCharm project another **Python file** named "trapezoid_area" and to write the **code which reads the input data from the console, calculates the trapezoid area and prints it**. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself.
 
-![](/assets/chapter-2-1-images/05.Trapezoid-area-02.PNG)
+![](/assets/chapter-2-1-images/05.Trapezoid-area-02.png)
 
 **Test** your solution locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
 
@@ -776,7 +776,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 A **rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2 and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
 
-![](/assets/chapter-2-1-images/07.Rectangle-area-01.PNG)
+![](/assets/chapter-2-1-images/07.Rectangle-area-01.png)
 
 #### Example Input and Output
 
@@ -917,21 +917,21 @@ To exercise working with variables and calculations with operators and numerical
 
 We need to create **a graphical application** (GUI application), that calculates the value in  **Euro** (EUR) of monetary amount given in **Bulgarian leva** (BGN). We use a fixed rate BGN / EUR: **1.95583**.
 
-![](/assets/chapter-2-1-images/13.Currency-converter-01.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-01.png)
 
 **Note:** This exercise goes beyond the material learned in this book and aims not to teach you how to program GUI applications, but to strengthen your interest in software development. Let's get to work.
 
 We add to the existing PyCharm project one more Python file. We name it "BGN_to_EUR_converter". In order to create a Graphical Application using Python we will use the standard library [**tkinter**](https://docs.python.org/3/library/tkinter.html#module-tkinter).
 
-![](/assets/chapter-2-1-images/13.Currency-converter-02.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-02.png)
 
 First, we create a Graphical **Application**, which represents a rectangle **Frame** for components. At this stage, everything will be done without explanations, as if it is **magic**:
 
-![](/assets/chapter-2-1-images/13.Currency-converter-03.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-03.png)
 
 Now we can add the components of our application to the so called **function** which we will call with the function **__init__**, or the so called **constructor**:
 
-![](/assets/chapter-2-1-images/13.Currency-converter-04.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-04.png)
 
 We order the following UI components:
 
@@ -942,11 +942,11 @@ We order the following UI components:
 
 Our components are found in the function **`create_widgets()`**. We add text for visualization on the first **Label**, named **`label`**. **`numberEntry`** is **Entry** where the conversion value will be input. **`convertButton`** will **catch** an event and execute **command** (in our task it will call the function **`convert()`** which we will write shortly). **`output`** is our **Label** for displaying a result after we have input a value and we have clicked a button:
 
-![](/assets/chapter-2-1-images/13.Currency-converter-05.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-05.png)
 
 After we have initialized our components, we have to visualize them. This is easly done using the built-in method from **tkinter** - **`pack()`**:
 
-![](/assets/chapter-2-1-images/13.Currency-converter-06.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-06.png)
 
 It is left to write the **code** (program logic) for conversion from leva to euro. We will do this by using the function **`convert()`**:
 
@@ -967,7 +967,7 @@ We run the application with [Ctrl + Shift + F10] or with right-click + [Run], an
 
 We will have a problem with this code. What will happen if we input something different than a number?
 
-![](/assets/chapter-2-1-images/13.Currency-converter-07.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-07.png)
 
 We can **catch** this error and prompt a user-friendly message in our application. In order to do this, let's change the code of our program logic:
 
@@ -989,7 +989,7 @@ def convert(self):
 
 This way we catch the error in a **try block** and when we input something different than a number we will receive a message **That's not a number!**.
 
-![](/assets/chapter-2-1-images/13.Currency-converter-08.PNG)
+![](/assets/chapter-2-1-images/13.Currency-converter-08.png)
 
 Finally we **run the application** with [**Ctrl + Shift + F10**] or with right-click + [**Run**] and we test if it works correctly.
 
@@ -998,11 +998,11 @@ Finally we **run the application** with [**Ctrl + Shift + F10**] or with right-c
 
 Create a fun graphical application **“catch the button”**. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs form the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
 
-![](/assets/chapter-2-1-images/14.Catch-the-button-01.PNG)
+![](/assets/chapter-2-1-images/14.Catch-the-button-01.png)
 
 We will begin with the same code from our last exercise. Let's change the name of our application to **Catch the Button!** and this time we will set the window size:
 
-![](/assets/chapter-2-1-images/14.Catch-the-button-02.PNG)
+![](/assets/chapter-2-1-images/14.Catch-the-button-02.png)
 
 We will have the following components:
 - **Button** - the button which we have to **catch**.
@@ -1010,22 +1010,22 @@ We will have the following components:
 
 We create a button containing **text "Catch me!"** and **command - the function `on_click()`**, which we will define later. We visualize the components by using the method **`pack()`**. Let both components be **on the top (top)**:
 
-![](/assets/chapter-2-1-images/14.Catch-the-button-03.PNG)
+![](/assets/chapter-2-1-images/14.Catch-the-button-03.png)
 
 In our exercise we will use the so called **binding** operation. This represents **catching** of a change and executing a specified function. Using this code we instruct our program to execute the function **`on_enter()`** when the mouse cursor is over the button and to execute the function **`on_leave()`** when the mouse cursor leaves the button:
 
-![](/assets/chapter-2-1-images/14.Catch-the-button-04.PNG)
+![](/assets/chapter-2-1-images/14.Catch-the-button-04.png)
 
 In order to move the button to a random position we use **`random`**:
 
-![](/assets/chapter-2-1-images/14.Catch-the-button-05.PNG)
+![](/assets/chapter-2-1-images/14.Catch-the-button-05.png)
 
 Let's implement the three functions which represent the program logic in our application:
   * **`on_enter(self, event)`** - we select random **`x`** and **`y`** coordinates which will change every time we move our cursor over the button; we also change the location of the button - in our example it will be **static to the right**, but you can create your own logic and change the direction of the button together with the random numbers selected for coordiantes.
   * **`on_leave(self, event)`** - when the cursor of the mouse is not over the button, our congratulation should not appear; we configure our **label** to **not have text**.
   * **`on_click()`** - when we click the button, our **label** will now display text - **You win!**.
 
-![](/assets/chapter-2-1-images/14.Catch-the-button-06.PNG)
+![](/assets/chapter-2-1-images/14.Catch-the-button-06.png)
 
 It is possible that not everything will run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and to **look for solutions** to the emerging problems.
 

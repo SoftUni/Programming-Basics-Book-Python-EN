@@ -25,7 +25,7 @@ The result from a comparison is the so-called Boolean value – **`True`** or **
 
 ### Examples of number comparisons
 
-![](/assets/chapter-3-1-images/00.Comparing-numbers-01.PNG)
+![](/assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
 Note that when printing **`true`** and **`false`** values in **Python**, they are capialized, **`True`** and **`False`**, respectively.
 
@@ -59,7 +59,7 @@ In Python we can use the following operators to compare data:
 
 Here is an example:
 
-![](assets/chapter-3-1-images/00.Comparing-numbers-02.PNG)
+![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
 ## Simple if comparisons
 
@@ -74,7 +74,7 @@ if condition:
 
 We take the grade as an input in the console and check if it is excellent (**`≥ 5.50`**).
 
-![](assets/chapter-3-1-images/01.ExcellentResult.PNG)
+![](assets/chapter-3-1-images/01.ExcellentResult.png)
 
 Test the example code locally. Try entering different grades, for example, **4.75**, **5.49**, **5.50** and **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**".
 
@@ -99,7 +99,7 @@ else:
 
 Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
-![](assets/chapter-3-1-images/02.Excellent-or-not.PNG)
+![](assets/chapter-3-1-images/02.Excellent-or-not.png)
 
 #### Testing in Judge System
 
@@ -116,19 +116,19 @@ By pressing the **tab key** we create a block of code through which a group of c
 
 Here is an example of bad indentation:
 
-![](/assets/chapter-3-1-images/00.Brackets-tip-01.PNG)
+![](/assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
 The above code will either give an error because it is incorrectly formatted, or its execution will display the wrong result on the console:
 
-![](/assets/chapter-3-1-images/00.Brackets-tip-02.PNG)
+![](/assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
 With correct indentation:
 
-![](/assets/chapter-3-1-images/00.Brackets-tip-03.PNG)
+![](/assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
 The following output will be printed on the console:
 
-![](/assets/chapter-3-1-images/00.Brackets-tip-04.PNG)
+![](/assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
 ### Problem: Even or Odd
 
@@ -136,7 +136,7 @@ Write a program that checks whether a given integer number is **even** or **odd*
 
 The problem can be solved with a single **`if-else`** structure and the operator **`%`**, which returns the **division remainder** of two numbers:
 
-![](/assets/chapter-3-1-images/03.Even-or-odd-01.PNG)
+![](/assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
 #### Testing in the Judge System
 
@@ -149,7 +149,7 @@ Write a program that reads two integers and outputs the number of higher value b
 
 Our first task is to  **read** the two numbers. After which through the use of a simple  **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
 
-![](/assets/chapter-3-1-images/04.Greater-number-01.PNG)
+![](/assets/chapter-3-1-images/04.Greater-number-01.png)
 
 #### Testing in the Judge System
 
@@ -162,7 +162,7 @@ Every variable has a scope in which it exists, called **variable scope**. This s
 
 In the example below, on the last line we try to print the variable **`my_name`**, which is defined in the **`else` structure**. We will get an **error**, because in this case the body of the  **`else`** clause, in which we initialize the variable, is not executed. However, there is no problem to print the variable **`can_drive`** because the program entered the body of the **`if`** clause and initialized the variable. As you can see the variables **`can_drive`** and **`my_name`** are colored yellow.  This is a warning from  **PyCharm**, that we may get an error. Therefore, we should be careful where we initialize the variables.
 
-![](/assets/chapter-3-1-images/00.Variable-scope-01.PNG)
+![](/assets/chapter-3-1-images/00.Variable-scope-01.png)
 
 ## Conditional chaining
 
@@ -234,11 +234,11 @@ We are given an **integer** – several points. Additional **bonus points** are 
 
 We can calculate the base and additional bonus score with a series of **`if-elif-else`** statements. For the  **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus score - further 2 cases** (whether the number is even or odd):
 
-![](/assets/chapter-3-1-images/06.Bonus-score-01.PNG)
+![](/assets/chapter-3-1-images/06.Bonus-score-01.png)
 
 Here’s what the solution to the problem might look like:
 
-![](/assets/chapter-3-1-images/06.Bonus-score-02.PNG)
+![](/assets/chapter-3-1-images/06.Bonus-score-02.png)
 
 Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output.
 
@@ -268,7 +268,7 @@ Firstly, we sum the three numbers, to obtain the total seconds. As we know that 
 - If the result is between 120 and 179, we print 2 minutes + calculated seconds minus 120.
 - If the seconds are less than 10, we print the number with a leading zero.
 
-![](/assets/chapter-3-1-images/07.Sum-seconds-01.PNG)
+![](/assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
 #### Testing in the Judge System
 
@@ -307,7 +307,7 @@ The input will consist of three parameters:
 
 We take the input data and to the units of measure, we can add the function  **`lower()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
-![](/assets/chapter-3-1-images/08.Metric-converter-01.PNG)
+![](/assets/chapter-3-1-images/08.Metric-converter-01.png)
 
 #### Testing in the Judge System
 
@@ -322,14 +322,14 @@ So far, we have written quite a lot of code and oftentimes there have been mista
 
 **Debugging** is the process of "**attaching**" to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what its evaluation route is, what the intermediate values of the declared variables at each step of the execution are, among other useful information and thus allowing us to locate errors - the so-called **bugs**:
 
-![](/assets/chapter-3-1-images/00.Debugging-01.PNG)
-![](/assets/chapter-3-1-images/00.Debugging-02.PNG)
+![](/assets/chapter-3-1-images/00.Debugging-01.png)
+![](/assets/chapter-3-1-images/00.Debugging-02.png)
 
 ### Debugging in PyCharm
 
 By pressing [**Shift + F9**], we start the program in **Debug mode**. We move on to the **next line** of execution with [**F7**]:
 
-![](/assets/chapter-3-1-images/00.Debugging-03.PNG)
+![](/assets/chapter-3-1-images/00.Debugging-03.png)
 
 With [**Ctrl + F8**] we create **breakpoints**, which we can reach directly using [**Shift + F9**] (when starting the program in **Debug mode**).
 
@@ -343,11 +343,11 @@ We create empty solution in PyCharm so we can organize the solutions to the task
 
 We start PyCharm and create a new **Project:** [**File**] -> [**New Project**].
 
-![](/assets/chapter-3-1-images/00.PyCharm-01.PNG)
+![](/assets/chapter-3-1-images/00.PyCharm-01.png)
 
 Select **Pure Python** from the field on the left and set the project directory, putting the name of your project in place of the **untitled** one:  
 
-![](/assets/chapter-3-1-images/00.PyCharm-02.PNG)
+![](/assets/chapter-3-1-images/00.PyCharm-02.png)
 
 Now we have an empty project (no files in it).
 
@@ -368,23 +368,23 @@ The first exercise for this topic is to write a **console application**, which *
 
 We create a new **python** file (**.py**) by right-clicking on the folder we created and selecting [**New**] -> [**Python File**]:
 
- ![](/assets/chapter-3-1-images/00.PyCharm-03.PNG)
+ ![](/assets/chapter-3-1-images/00.PyCharm-03.png)
 
 A dialog box will open, where we need to specify a name for our file. Since our task is to check if a grade is excellent, let’s name the file **excellent_result**:
 
- ![](/assets/chapter-3-1-images/00.PyCharm-04.PNG)
+ ![](/assets/chapter-3-1-images/00.PyCharm-04.png)
  
 We already have a Project with a single file in it. Now we have to write the code to solve the problem. To this effect we write the following code:
 
- ![](/assets/chapter-3-1-images/01.ExcellentResult-01.PNG)
+ ![](/assets/chapter-3-1-images/01.ExcellentResult-01.png)
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
 
- ![](/assets/chapter-3-1-images/01.ExcellentResult-02.PNG) 
+ ![](/assets/chapter-3-1-images/01.ExcellentResult-02.png) 
 
- ![](/assets/chapter-3-1-images/01.ExcellentResult-03.PNG)
+ ![](/assets/chapter-3-1-images/01.ExcellentResult-03.png)
 
 
 ### Problem: Excellent Grade or Not
@@ -404,18 +404,18 @@ The next exercise for this topic is to write a **console program**, which **read
 
 Firstly, we create a **new Python file** in our project. After that, we  **write the code** the program. You may use the following example code as a hint:
 
- ![](/assets/chapter-3-1-images/02.Excellent-or-not-01.PNG)
+ ![](/assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
 After that, we **run the program**, as usual with [**Shift + F10**], so we can test its functionality:
 
- ![](/assets/chapter-3-1-images/02.Excellent-or-not-02.PNG)
- ![](/assets/chapter-3-1-images/02.Excellent-or-not-03.PNG)
+ ![](/assets/chapter-3-1-images/02.Excellent-or-not-02.png)
+ ![](/assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
 #### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
 
-![](/assets/chapter-3-1-images/02.Excellent-or-not-04.PNG)
+![](/assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
 ### Problem: Even or Odd
@@ -437,7 +437,7 @@ Again, firstly we must create a **new Python file**. Then the check if a number 
 
 Now we have to **run** the program with [**Ctrl+F5**] and test it:  
 
-![](/assets/chapter-3-1-images/03.Even-or-odd-02.PNG)
+![](/assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
 #### Testing in the Judge System
 
@@ -461,11 +461,11 @@ Write a program that reads input data from the console. As input data enter **tw
 
 As usual, first, we need to create a **new Python file**. For the main logic, we need a single **`if-else`** construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself: 
 
-![](/assets/chapter-3-1-images/04.Greater-number-01.PNG)
+![](/assets/chapter-3-1-images/04.Greater-number-01.png)
 
 When we are done with the implementation of the solution, we **run** the program with [**Shift + F10**] and test it:
 
-![](/assets/chapter-3-1-images/04.Greater-number-02.PNG)
+![](/assets/chapter-3-1-images/04.Greater-number-02.png)
 
 #### Testing in the Judge System
 

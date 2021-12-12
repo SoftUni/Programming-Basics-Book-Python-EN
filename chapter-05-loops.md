@@ -15,13 +15,13 @@ In this chapter we will become familiar with how to **repeat blocks of commands*
 
 In programming it is often required **to execute a block with commands multiple times**. For this reason we are using **loops**. We can see an example for **`for` loop**, which goes through the numbers from 1 to 10 and prints them:
 
-![](/assets/chapter-5-1-images/00.For-loop-01.PNG)
+![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
 The loop starts with the **operator `for`** and passes through all values of particular variable in given range, for example all numbers from 1 to 10 included (without 11) and for each value it performs series of commands.
 
 Upon declaring the loop, you can specify a **start value** and **end value**, while the end value is not included in the range. **The body of the loop** is a block with at least one commands. THe figure below shows the structure of a **`for` loop**:
 
-![](/assets/chapter-5-1-images/00.For-loop-02.PNG)
+![](/assets/chapter-5-1-images/00.For-loop-02.png)
 
 In most cases a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perfomrm a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
 
@@ -33,11 +33,11 @@ Write a program that **prints the numbers from 1 to 100**. The program does not 
 
 We can solve the problem using a **`for` loop** , via which we will pass through the numbers from 1 to 100 using the **`i`** variable, and print the numbers in the body of the loop:
 
-![](/assets/chapter-5-1-images/01.Numbers-1-to-100-01.PNG)
+![](/assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
 **Start** the program with [**Ctrl+Shift+F10**] or with right click - **Run** and **test it**:
 
-![](/assets/chapter-5-1-images/01.Numbers-1-to-100-02.PNG)
+![](/assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
 #### Test in the Judge system
 
@@ -53,7 +53,7 @@ Write a program that finds all numbers in range [**1 … 1000**], that end in 7.
 
 We can solve the problem by combining a **`for` loop** for passing through the numbers between 1 and 1000 and a condition to **check** if each of the numbers end in 7. Of course, there are other solutions, but let's solve the problem using **loop + condition**:
 
-![](/assets/chapter-5-1-images/02.Numbers-ending-in-7-01.PNG)
+![](/assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
 #### Test in the Judge system
 
@@ -68,7 +68,7 @@ Write a program that prints the letters from the Latin alphabet: **a, b, c, …,
 
 It is good to know that the **`for` loops** don't work only with numbers. We can solve the task by running a **`for` loop**, that goes sequentially through all letters in the Latin alphabet:
 
-![](/assets/chapter-5-1-images/03.Latin-letters-01.PNG)
+![](/assets/chapter-5-1-images/03.Latin-letters-01.png)
 
 #### Test in the Judge system
 
@@ -103,7 +103,7 @@ We can solve the problem with summing up numbers in the following way:
  
 Here is the source code for the solution:
 
-![](/assets/chapter-5-1-images/04.Sum-numbers-01.PNG)
+![](/assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
 #### Testing in the Judge System
 
@@ -128,7 +128,7 @@ Write a program that enters **n integers** (**n** > 0) and finds **the max** amo
 
 We will first enter one number **`n`** (the number of integers that are about to be entered). We assign the current maximum **`max`**an initial neutral value, for example **-10000000000000**. Using a **`for` loop**, that is iterated **n-1 times**, we read one integer **`num`**.  If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the **`max`** value. Finally, in **`max`**  we must have stored the highest number. We print the number on the console.:
 
-![](/assets/chapter-5-1-images/05.Max-number-01.PNG)
+![](/assets/chapter-5-1-images/05.Max-number-01.png)
 
 #### Testing in the Judge System
 
@@ -151,7 +151,7 @@ Write a program that enters **n integers** (**n** > 0) and finds **the min** amo
 
 The problem is completely identical to the previous one, except this time we will start with another neutral starting value:
 
-![](/assets/chapter-5-1-images/06.Min-number-01.PNG)
+![](/assets/chapter-5-1-images/06.Min-number-01.png)
 
 #### Testing in the Judge System
 
@@ -172,7 +172,7 @@ Write a program that reads an input **2 \* n integers** and checks if ** the sum
 
 We will first input the number **n**, after that the first **n** numbers (**left** half) and we sum them up. We will then proceed with inputting more **n** numbers (**right** half) and sum them up. We calculate **the difference ** between the sums by absolute value: **`math.fabs(rightSum - leftSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + the difference **.
 
-![](/assets/chapter-5-1-images/07.Left-and-right-sum-01.PNG)
+![](/assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
 #### Testing in the Judge System
 
@@ -195,7 +195,7 @@ Write a program that inputs **n integers** and checks whether **the sum of the n
 
 Input the numbers one by one and calculate the two **sums** (of the numbers on **even** positions and the numbers on **odd** positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (**"Yes" + sum** in case of difference of 0 or **"No" + the difference ** in any other case):
 
-![](/assets/chapter-5-1-images/08.Odd-even-sum-01.PNG)
+![](/assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
 #### Testing in the Judge System
 
@@ -221,7 +221,7 @@ Write a program that inputs **text** (string), calculates and prints **the sum o
 
 We read the input text **`line`**, null the sum and run a loop, which goes through each symbol from the text. We check each letter **`c`** and verify if it is a vowel, and accordingly, add its value to the sum:
 
-![](/assets/chapter-5-1-images/09.Vowels-sum-01.PNG)
+![](/assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
 #### Testing in the Judge System
 
@@ -232,11 +232,11 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 We can repeat a block of code with a **`for` loop**:
 
-![](/assets/chapter-5-1-images/00.For-loop-01.PNG)
+![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
 We can read a sequence of **`n`** numbers from the console:
 
-![](/assets/chapter-5-1-images/00.For-loop-03.PNG)
+![](/assets/chapter-5-1-images/00.For-loop-03.png)
 
 ## Exercises: Repetitions (loops)
 
@@ -246,7 +246,7 @@ Now, that we've become acquainted with the loops, it's time **to consolidate our
 
 Create new project in PyCharm (from [**File**] -> [**New Project**]), in order to organise better the exercise tasks. The purpose of this **project** is to contain **one Python file for each task** from the exercises:
   
-![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.PNG)
+![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.png)
 
 ### Problem: Element equal to the sum of the rest
 
@@ -327,7 +327,7 @@ In the current chapter we learned about **loops** as a programming construction 
 
 The purpose of the following exercise is to play with a **drawing library**, also known as **"turtle graphics"**. We will build a graphical application in which we will **draw various figures**, by moving our **"turtle"** across the screen via operations like "move 100 positions ahead", "turn 30 degrees to the right", "move 50 more positions ahead". The application will look approximately like this:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-01.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
 Let's first get familiar with **the concept of drawing "Turtle Graphics""**. Take a look at the following sources:
 
@@ -337,27 +337,27 @@ Let's first get familiar with **the concept of drawing "Turtle Graphics""**. Tak
 
 We will start by creating a new **project in PyCharm**:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-02.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
 In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. It defines class **`Turtle`**, which represents **drawing turtle**. In order to use it, we add the following code in the beginning of the Python file:
   
-![](/assets/chapter-5-1-images/13.Turtle-graphics-03.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
 After that for the drawing we add the code:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-04.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
 The above code moves and rotates the turtle, which is located in the center of the screen in the beginning (in the middle of the form) and draws an equilateral triangle. You can edit it and play with it. **Start** the app:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-05.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-05.png)
 
 Now you can modify the turtle code and make it more complex, in order for the turtle to make a more complex figure: 
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-06.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
 Again **start** the app to see the result:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-7.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-7.png)
 
 Now our turtle draws more complex figures via a nice animated motion.
 
@@ -365,7 +365,7 @@ Now our turtle draws more complex figures via a nice animated motion.
 
 Add a new Python file, with the name **hexagon**, which will draw a hexagon:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-8.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-8.png)
 
 **Hint:**
 
@@ -377,7 +377,7 @@ With loop repeat the following 6 times:
 
 Add new Python file **star.py**, which draws a star with 5 beams (**pentagram**), as on the figure below:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-9.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-9.png)
 
 **Hints:** Change the colour: **`my_turtle.color("green")`**. 
 
@@ -389,7 +389,7 @@ Repeat 5 times the following in a loop:
 
 Add new Python file **spiral.py**, which draws spiral with 20 beamsas on the figure below:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-10.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
 **Hint:** Draw in a loop by moving ahead and rotating. In each step, decrease the length gradually of the forward step and rotate 60 degrees..
 
@@ -397,13 +397,13 @@ Add new Python file **spiral.py**, which draws spiral with 20 beamsas on the fig
 
 Add a new Python file **sun.py**, which draws a sun with 36 beams, as on the figure below:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-11.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 
 ### Problem: * Draw a Spiral Triangles with the Turtle
 
 Add new Python file **triangle.py**, which draws three triangles with 22 beams each, as on the figure below:
 
-![](/assets/chapter-5-1-images/13.Turtle-graphics-12.PNG)
+![](/assets/chapter-5-1-images/13.Turtle-graphics-12.png)
 
 **Hint:** Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles. 
 
