@@ -23,7 +23,7 @@ Print on the console a rectangle made out of **10 x 10** asterisks.
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is  **`i = 0`**. With each iteration of the cycle, the variable increases by **1** until it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
+How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is  **`i = 0`**. With each iteration of the loop, the variable increases by **1** while it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
 
 
 #### Testing in the Judge System
@@ -31,9 +31,9 @@ How does the example work? We initialize **a loop with a variable `i`**. The def
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
 
 
-###Example: Rectangle Made of N x N Asterisks
+### Example: Rectangle Made of N x N Asterisks
 
-Write a program which receives a positive number **n** and prints on the console **a rectangle of N x N asterisks**. 
+Write a program which receives a positive number **n** and prints on the console **a rectangle made out of N x N asterisks**. 
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -87,7 +87,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Example: Triangle Made of Dollars
 
-Write a program which receives an integer **n** and prints **a triangle made of dollars**.
+Write a program which receives an integer **n** and prints **a triangle made of dollars** of size **n**.
 
 |Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
@@ -154,11 +154,12 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 * We print **`*`**.
 * We print **`row-1`** times **`*`**.
 
-**The second** (lower) part will be printed **similarly**, which again we leave to the reader to do..
+**The second** (lower) part will be printed **similarly**, which again we leave to the reader to do.
 
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td>In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
 </tr></table>
 
 #### Testing in the Judge System
@@ -234,7 +235,7 @@ Write a program which receives a number **n** (2 ≤ **n** ≤ 100) and prints *
 
 #### Hints and Guidelines
 
-We understand from the description of the problem that the house has size **`n` x `n`**. What we see from the example input and output is that:
+We understand from the description of the problem that the house is with a size of **`n` x `n`**. What we see from the example input and output is that:
 
 * The house is divided into two parts: **roof and base**.
 
@@ -259,11 +260,11 @@ We read the input number **`n`** from the console and write its value in a varia
 
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into type <b><code>int</code></b>, because it is said that we will be given valid integers. If you are making more complex programs, it is a good practice to check the data. What will happen if instead of a number the user inputs the character "A"?</td>
 </tr></table>
 
-To draw **the roof**, we write down how many **asterisks** we start with a variable called **`asterisks`**:
+To draw **the roof**, we write down how many **asterisks** we start with a variable called **`stars`**:
 * If **`n`** is an **odd** number, there will be 1 star.
 * If it is **even**, there will be 2.
 
@@ -273,7 +274,7 @@ Calculate the length of **the roof**. It equals half of **`n`**. Write the resul
 
 ![](/assets/chapter-6-1-images/09.House-04.png)
 
-**Note:** To use **`math.ceil ()`**, which rounds to the larger integer, regardless of the fractional part, it is necessary to add the library **`math`**. This is done with the command **`import math`**. It is recommended to write **`import math`** (as well as all other imports) at the beginning of the file. 
+**Note:** To use **`math.ceil ()`**, which rounds to the larger integer, regardless of the fractional part, it is necessary to import the library **`math`**. This is done with the command **`import math`**. It is recommended to write **`import math`** (as well as all other imports) at the beginning of the file. 
 
 It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of the **base**.
 
@@ -286,24 +287,24 @@ result1 = 3 / 2    # result 1.5
 result2 = 3 // 2   # result 1
 ```
 
-If we want to round up to the next largest integer. number, we need to use the method **`math.cail(…)`**:
+If we want to round up to the next largest integer number, we need to use the method **`math.cail(…)`**:
 **`result = math.ceil(3 / 2)`**.
 
 After we have calculated the length of the roof, we make a loop from 0 to **`roof_length`**. On each iteration we will:
-* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - asterisks) / 2`**. We store it in variable **`padding`**.
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. We store it in variable **`padding`**.
 
 ![](/assets/chapter-6-1-images/09.House-05.png)
 
-* We print on the console: "**dash**" (**`padding / 2`** times) + "**asterisks**" (**`asterisks`** times) + "**dash**" (**`padding / 2`** times):
+* We print on the console: "**dashes**" (**`padding`** times) + "**asterisks**" (**`stars`** times) + "**dashes**" (**`padding`** times):
 
 ![](/assets/chapter-6-1-images/09.House-06.png)
 
-* Before the iteration is over, we add 2 to **`asterisks`** (the number of **the asterisks**).
+* Before the iteration is over, we add 2 to **`stars`** (the number of **the asterisks**).
 
 ![](/assets/chapter-6-1-images/09.House-07.png)
 
 After we have finished with the **roof**, it is time for **the base**. It is easier to print:
-* We start with a loop from 0 to n (exclusive).
+* We start with a loop from 0 to `n` (exclusive).
 * We print on the console: `|` + `*` (**`n - 2`** times) + `|`.
 
 ![](/assets/chapter-6-1-images/09.House-08.png)
@@ -338,8 +339,8 @@ What we know from the problem's description is that the diamond is **`n` x `n`**
 
 ##### Upper Part
 
-* If **n** is an **odd** number, it asterisks with **1 asterisk**.
-* If **n** is an **even** number, it asterisks with **2 asterisks**.
+* If **n** is an **odd** number, it starts with **1 asterisk**.
+* If **n** is an **even** number, it starts with **2 asterisks**.
 * With each row down, the asterisks get further away from each other.
 * The space between, before, and after **the asterisks** is filled up with **dashes**.
 
@@ -361,11 +362,11 @@ We start drawing the upper part of the diamond. The first thing we need to do is
 
 ![](/assets/chapter-6-1-images/10.Diamond-02.png)
 
-After we have calculated **`left_right`**, we start drawing **the upper part** of the diamond. We can start by running a **loop** from **`(n + 1) // 2 `** (i.e. rounded down).
+After we have calculated **`left_right`**, we start drawing **the upper part** of the diamond. We can start by running a **loop** from **`(n + 1) // 2`** (i.e. rounded down).
 
 At each iteration of the loop the following steps must be taken:
 
-* We print on the console the left **dashes** (with length **`left_right`**) and right after them the first **asterisks**:
+* We print on the console the left **dashes** (with length **`left_right`**) and right after them the first **asterisk**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-03.png)
 
@@ -373,7 +374,7 @@ At each iteration of the loop the following steps must be taken:
 
 ![](/assets/chapter-6-1-images/10.Diamond-04.png)
 
-* If the **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **asterisks** after them.
+* If the **`mid`** is lower than 0, we know that on the row there should be only 1 star. If it is higher or equal to 0 then we have to print **dashes** with length **`mid`** and one **asterisk** after them.
 
 * We print on the console the right outer **dashes** with length **`left_right`**. 
 
@@ -383,11 +384,11 @@ At each iteration of the loop the following steps must be taken:
 
 We are ready with the upper part.
 
-Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`left_right`** with 1 at the end of the loop, we will increase it with 1 at the beginning of the loop. Also, **the loop will be from 0 to `(n - 1) // 2`**:
+Printing the lower part is very similar to that of the upper part. The difference is that instead of decreasing **`left_right`** with 1 at the end of the loop, we will increase it with 1 at the beginning of the loop. Also, **the loop will iterate from 0 to `(n - 1) // 2`**:
 
 ![](/assets/chapter-6-1-images/10.Diamond-06.png)
 
-<td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) in a few more places and we decide to change it. For this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can search for more information about them on the Internet or view <a href="chapter-10-functions.md">Chapter “10” (Functions)</a>.</td>
+<td><b>Repeating a code is considered bad practice</b> because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond) in a few more places and we decide to change it. In order to do this, we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2, or 3 times but tens of times. A way to overcome this problem is to use <b>functions</b>. You can search for more information about them on the Internet or view <a href="chapter-10-functions.md">Chapter “10” (Functions)</a>.</td>
 </tr></table>
 
 If we have written all correctly, then the problem is solved.
@@ -439,7 +440,7 @@ We give a meaningful name to the project, for example "Ratings". We choose the t
 
 ![](assets/chapter-6-1-images/11.Ratings-03.png)
 
-We will again use the Flask library, which is used to create web applications. Before we can start coding, we need to install Flask. Let's remember how this happened. We go to the settings of PyCharm [**File**] -> [**Settings**] -> [**Project: Ratings**] -> [**Project Interpreter**]. There, we press the **`+`** button: 
+We will again use the Flask library, which is used to create web applications. Before we can start coding, we need to install Flask. Let's recall how to do this. We go to the settings of PyCharm [**File**] -> [**Settings**] -> [**Project: Ratings**] -> [**Project Interpreter**]. There, we press the **`+`** button: 
 
 ![](assets/chapter-6-1-images/11.Ratings-04.png)
 
@@ -451,7 +452,7 @@ We are now adding the **structure** of the project (the assignment files for thi
 
 ![](assets/chapter-6-1-images/11.Ratings-06.png)
 
-For everything to work, we need to add the code. First we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code: 
+For everything to work, we need to add the code. First we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code:
 ![](assets/chapter-6-1-images/11.Ratings-07.png)
 
 The above code creates a web form **`<form>`** with one field **`" rating "`** for entering a number in the interval [**0… 100**] and a button [**Rate**] to send the data from the form to the server. Then, draw with three separate **for** loops the corresponding number of stars - filled, half-empty and empty. 

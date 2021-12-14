@@ -12,22 +12,22 @@ In the current chapter, we are going to see some tricks, hacks and techniques, w
 
 The right formatting of our code will make it **easier to read and understand** in case someone else needs to work with it. This is important because in practice we will need to work in a team with other people and it is highly important to write our code in a way that our colleagues can **quickly understand** it.
 
-There are some defined rules for correct formatting of the code, which are collected in one place and are called **conventions**. The conventions are a group of rules, generally accepted by the programmers using a given language, which are massively used. These conventions help to build norms in given languages - what is the best way to write and what are the **good practices**. It is accepted that if a programmer follows them then his code is easy to read and understand.
+There are some defined rules for correct formatting of code, which are collected in one place and are called **conventions**. The conventions are a group of rules, generally accepted by the programmers using a given language, which are massively used. These conventions help to build norms in given languages - what the best way to write is and what **good practices** are. It is accepted that if a programmer follows them then their code will be easy to read and understand.
 
-The **Python** language is created by the organization **Python Software Foundation** (PSF). The good practices to write can be different in each project, but the most of the are done by the authors of the language (mostyly Guido van Rossum). You should know that, even if you do not follow the imposed conventions recommended by **PSF**, the code will **work** (as long as it is written correctly), but simply **will not be easy to understand**. Of course, this is not fatal on a base level, but the faster you get used to writing quality code, the better.
+The **Python** language is created by the organization **Python Software Foundation** (PSF). Good writing practices can be different in each project, but most of the are done by the authors of the language (mostly Guido van Rossum). You should know that, even if you do not follow the imposed conventions recommended by **PSF**, the code will **work** (as long as it is written correctly), but simply **will not be easy to understand**. Of course, this is not fatal on a base level, but the faster you get used to writing quality code, the better.
 
 The official **Python code convention** by PSF is publicated in the page **PEP 8 &ndash; Style Guide for Python Code**: [https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/). It is important to note that in the examples which we gave untill now and the ones that we will give in this book, are guided by it.
 
-For formatting the code, PSF recommends each inside level to be **4 spaces inside** (or one tab), as it is in the example bellow. **The language do not accept mixing tabs with spaces**:
+For formatting the code, PSF recommends each inside level to be **4 spaces inside** (or one tab), as it is in the example bellow. **The language does not accept mixing tabs with spaces**:
 
 ```python
 if some_condition:
     print("Inside the if statement")
 ```
 
-It is possible that instead of 4, to use 2 spaces, but it is not recommended.
+It is possible to instead of using 4, to use 2 spaces, but it is not recommended.
  
-Here is how two nested constructions look. Each block starts 4 intervals inside. The number of spaces in the beginning of each row indicates what is the indentation level:
+Here is how two nested constructions look. Each block starts 4 intervals inside. The number of spaces in the beginning of each row indicates what the indentation level is:
 
 ```python
 if some_condition:
@@ -39,7 +39,7 @@ if some_condition:
 
 The formatting of the code in **Python** is extremely important in order for it to work. Code that is not formatted throws an **error**.
 
-This is an example for **badly formatted code** according to the accepted conventions for writing code in Python:
+This is an example of **badly formatted code** according to the accepted conventions for writing code in Python:
    
 ```python
 if some_condition:
@@ -83,7 +83,7 @@ for i in range(5):
     print(i)
 ```
 
-This key combination can help us if we work with a badly formatted code. However, automatic formatting does not affect the naming of our variables (as well as other elements in the code), which we have to take care of ourselves.
+This key combination can help us if we work with badly formatted code. However, automatic formatting does not affect the naming of our variables (as well as other elements in the code), which we have to take care of ourselves.
 
 ## Naming Code Elements
 
@@ -102,10 +102,10 @@ In programming variables keep data, and for the code to be more understandable, 
 * The name should be **short and descriptive** and to explain what the variable serves for.
 * The name should only contain the letters **a-z**, **A-Z**, **the numbers 0-9**, and **the symbol '\_'**.
 * It is accepted in Python for the variables to follow the **`lowercase_with_underscores`** convention.
-* You should be careful about uppercase and lowercase letters, because Python distinguishes them. For example, **`age`** and **`Age`** are different variables.
+* You should be careful with uppercase and lowercase letters, because Python distinguishes them. For example, **`age`** and **`Age`** are different variables.
 * The names of the variables **cannot coincide with keywords** in the Python language, for example **`for`** is an invalid name for a variable.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Although using capital letters in the names of variables is allowed, <strong>in Python it is not recommended</strong> and is considered a bad style of naming.</td>
 </tr></table>
 
@@ -123,7 +123,7 @@ Here are some examples for **badly named variables**, even though the names are 
 * **`Start_Index`** (contaions capital letters).
 * **`lastNegativeNumber_Index`** (missing '\_' before each word).
 
-At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gaining you will see the need for conventions for writing quality code in order to be able to work more easily and faster in a team. You will understand that the work with a code, which is written without complying with any rules for code quality, is annoying.
+At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gained you will see the need for conventions for writing quality code in order to be able to work easier and faster in a team. You will understand working with code, which is written without complying with any rules for code quality, is annoying.
 
 ## Shortcuts in in PyCharm
 
@@ -164,7 +164,7 @@ We choose a snippet, for example **`iter`**, we explore it:
 
 ![](/assets/chapter-11-images/01.Code-snippet-04.png) 
 
-We see many things we haven't seen yet, but don't worry, we will become acquainted with them later. For now we want to create our own snippet. In order to do so we choose the button Add (the green **+** on the right). From the list we choose [**1. Live Template**]. In the bottom part of the window, on the place of **Abbreviation**, we should write a short name, which will be used to call the snippet (for example **`ff`**, for **`for, for`**), for **Description** we give a usefull description and for **Template Text** we input the following:
+We see many things we haven't seen before yet, but don't worry, we will become acquainted with them later. For now we want to create our own snippet. In order to do so we choose the button Add (the green **+** on the right). From the list we choose [**1. Live Template**]. In the bottom part of the window, on the place of **Abbreviation**, we should write a short name, which will be used to call the snippet (for example **`ff`**, for **`for, for`**), for **Description** we give a usefull description and for **Template Text** we input the following:
 
 ```
 for $I$ in $LIST1$:
@@ -218,7 +218,7 @@ From the **Debugger** window, we can observe **the changes in the local variable
 
 ## A guide to tricks
 
-In this section, we will briefly show **tricks and techniques** of the programming with the **Python** language, some of which are already mentioned in this book, which will be very useful, if you take a programming exam for beginners:
+In this section, we will briefly show **tricks and techniques** of programming with the **Python** language, some of which are already mentioned in this book, which will be very useful, if you were to take a programming exam for beginners:
 
 ### Inserting Variable Values in Strings
 

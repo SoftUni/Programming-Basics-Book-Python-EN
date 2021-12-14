@@ -1,12 +1,12 @@
 # Preface
 
-**"Programming Basics"** is the official textbook for the course **Programming Basics** in the Software University (SoftUni): [https://softuni.bg/courses/programming-basics](https://softuni.bg/courses/programming-basics). The book introduces readers with writing **programming code** at a beginner's level (basic coding skills), working with **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), usage of **conditional statements** (**`if`**, **`if-else`**, **`if-elif-else`**), **loops** (**`for`**, **`while`**, **`do-while`**) and working with **functions** (declaring and calling functions, passing parameters, and returning values).  The book uses **Python** programming language and **PyCharm** development environment. The covered training material provides basic preparation for a deeper study of programming and prepares readers for the entrance exam in SoftUni.
+**"Programming Basics"** is the official textbook for the course **Programming Basics** in the Software University (SoftUni): [https://softuni.bg/courses/programming-basics](https://softuni.bg/courses/programming-basics). The book introduces readers with writing **programming code** at a beginner's level (basic coding skills), working with **development environment** (IDE), using **variables** and data, **operators** and **expressions**, working with the **console** (reading input data and printing output), usage of **conditional statements** (**`if`**, **`if-else`**, **`if-elif-else`**), **loops** (**`for`**, **`while`**) and working with **functions** (declaring and calling functions, passing parameters, and returning values).  The book uses **Python** programming language and **PyCharm** development environment. The covered training material provides basic preparation for a deeper study of programming and prepares readers for the entrance exam in SoftUni.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>This book only gives you <b>the first steps to programming</b>. It covers very basic skills that you must develop for years, in order to reach a high enough level and start working as a programmer.</td>
 </tr></table>
 
-The book is also used as an unofficial **[textbook for school-level programming courses in the high schools](https://softuni.foundation/projects/applied-software-developer-profession/)**, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools.**, and specialty "informatics and IT".
+The book is also used as an unofficial **[textbook for school-level programming courses in the high schools](https://softuni.foundation/projects/applied-software-developer-profession/)**, studying professions like "**Programmer**", "**Application Programmer**" and "**System Programmer**", as well as an additional teaching tool in the initial programming courses at the **secondary schools, mathematical and professional high schools**, and specialty "informatics and IT".
 
 ## Who is this book intended for?
 
@@ -24,15 +24,14 @@ For this book we chose **Python**, because it is a **modern** language for high-
 
 As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **Python**. The book can also be found translated in other programming languages such as C# (see https://csharp-book.softuni.bg), Java (see https://java-book.softuni.bg), JavaScript (see https://js-book.softuni.bg) и C++ (see https://cpp-book.softuni.bg).
 
-## The book in other programming languages: C#, Java, JavaScript, Python, C++, PHP
+## The book in other programming languages: C#, Java, JavaScript, C++, PHP
 
 This programming book for complete beginners is available in several programming languages (or is in the process of being adapted for them):
 * [Programming basics with C#](https://csharp-book.softuni.bg)
 * [Programming basics with Java](https://java-book.softuni.bg)
 * [Programming basics with JavaScript](https://js-book.softuni.bg)
-* [Programming basics with Python](https://python-book.softuni.bg)
-* [Programming basics with със C++](https://cpp-book.softuni.bg)
-* [Programming basics with с PHP](https://php-book.softuni.bg)
+* [Programming basics with C++](https://cpp-book.softuni.bg)
+* [Programming basics with PHP](https://php-book.softuni.bg)
 
 If you prefer a different language, choose from the list above.
 
@@ -40,14 +39,14 @@ If you prefer a different language, choose from the list above.
 
 If anyone thinks they're going to read a book and learn to program without writing a code and solve tasks hard, they're definitely delusional. Programming is learned with **many,  many practice**, with writing code every day and solving hundreds, even thousands of tasks, seriously and with perseverance, for years.
 
-You need to **solve a lot of problems**, to make mistakes, to fix them, search for solutions and information on the Internet, to try, to experiment, to find better solutions, get used to the code, syntax, programming language, development environment, error search and debugging of non-working code, task reasoning, algorithmic thinking, breaking down problems in steps and implementing every step, gaining experience and lifting your skills every day, because learning to write code is just **the first step towards the profession of software engineer**. You have a lot to learn, really!
+You need to **solve a lot of problems**, to make mistakes, to fix them, search for solutions and information on the Internet, to try, to experiment, to find better solutions, get used to the code, syntax, programming language, development environment, error search and debugging of non-working code, task reasoning, algorithmic thinking, breaking down problems in steps and implementing every step, gaining experience and improving your skills every day, because learning to write code is just **the first step towards the profession of software engineer**. You have a lot to learn, really!
 
 We advise the reader, as a minimum, **to try all the examples from the book**, to interact with them, to change and test them. Even more important than the examples, **are the exercises**, because they develop the practical skills of a developer.
 
 **Solve all the tasks in the book**, because programming is learned by practice! The tasks after each topic are carefully selected to cover in-depth the included learning
 material. The purpose of solving all tasks from all the topics covered is to give **complete writing skills to a program code** at the beginners level (as is the purpose of this book). During the courses at **SoftUni** we purposefully **focus on practice** and problem-solving, and in most courses code writing makes up over 70% of the entire course.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><b>Solve all the exercises in the book</b>. Otherwise you won't learn anything! Programming is learned by writing a lot of code and solving thousands of problems!</td>
 </tr></table>
 
@@ -59,7 +58,7 @@ The Software University provides **quality education**, **occupation**, **work**
 
 ### Free programming courses at SoftUni
 
-SoftUni organizes **free programming courses for complete beginners** in Bulgaria - attendance and online. The goal is **anyone with an interest** in programming and technologies to **try programming** and to make sure whether it is interesting to him and whether he wants to be a software developer. You can sign up for the **free programming basics course** from the SoftUni application page: https://softuni.bg/apply.
+SoftUni organizes **free programming courses for complete beginners** in Bulgaria - attendance and online. The goal is **anyone with an interest** in programming and technologies to **try programming** and to make sure whether it is interesting to them and whether they want to be a software developer. You can sign up for the **free programming basics course** from the SoftUni application page: https://softuni.bg/apply.
 
 The free programming basics courses at SoftUni aim to introduce you to **the main programming structures** from the world of software development that you will be able to apply in any programming language. These include working with **data**, **variables** and **expressions**, using **conditional statements**, constructing **loops** and defining and calling **functions**, and other techniques to build programming logic. The training is **practically focused** - which means there is a **strong emphasis on exercise**, and you get the opportunity to apply your knowledge as you learn.
 
@@ -73,7 +72,7 @@ This **programming textbook** accompanies free programming courses for beginners
 
 Keep in mind some **features of the SoftUni Judge system**:
  - For each task **the Judge system keeps the highest achieved result**. If you upload a solution with the wrong code or a weaker result than your previous one sent, the system won't subtract points from your final score.
- - The output results of your program are strictly **compared** by the system with the expected result. Any **redundant symbol missing, a comma, or space** may result in 0 points for the relevant test. **The output** expected by the Judge system is **given in the description of each exercise** and **there shouldn't be any other additions to it**.
+ - The output results of your program are strictly **compared** by the system with the expected result. Any **redundant symbol, missing a comma, or space** may result in 0 points for the relevant test. **The output** expected by the Judge system is **given in the description of each exercise** and **there shouldn't be any other additions to it**.
 
 **Example**: if a number is required to be printed in the output (e.g. **`25`**), do not display descriptive messages such as **`The result is: 25`**, but print exactly what is required, i.e. only the number.
 
@@ -107,7 +106,7 @@ The ability to code **can be learned in a few months** of intensive studying and
 
 The book (and the courses based on it) give only the beginning of a long-term and serious study, on the path to professional programming. You won't be able to become a programmer without mastering the material from this book. You will lack programming fundamentals and it will become increasingly difficult to move forward. Therefore **pay enough attention to the basics of programming**: solve problems and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
 
-We pay special attention to the fact that **the programming language is not essential** for the ability to code. You can either code or not. If you can code in **Python**, you can easily learn to code in Java, C ++, and another language. That's why **coding skills** are studied quite seriously in the initial courses for software engineers at SoftUni (see [curriculim](https://softuni.bg/curriculum) and with them starts every programming book for complete beginners, including ours.
+We pay special attention to the fact that **the programming language is not essential** for the ability to code. You can either code or not. If you can code in **Python**, you can easily learn to code in Java, C ++, and another language. That's why **coding skills** are studied quite seriously in the initial courses for software engineers at SoftUni (see [curriculim](https://softuni.bg/curriculum)) and with them starts every programming book for complete beginners, including ours.
 
 ### Skill # 2 - algorithmic thinking (30%) 
 
@@ -185,7 +184,7 @@ This book uses the **Python** language, but it is not essential and can be repla
 ## The Book which helps teachers 
 
 If you are a **teacher of programming**, informatics or information technology or want **to teach programming**, this book gives you more
-than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in **Bulgarian language**, in accordance with the school requirements:
+than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in **English language**, in accordance with the school requirements:
 
 * **Educational presentations** (PowerPoint slides) for each learning topic tailored to 45-minute hours in schools – free of charge.
 * Well-designed **tasks** for class and homework, with detailed conditions and sample entrance and exit – free of charge.
@@ -247,19 +246,19 @@ The current book also has an **official Facebook page**, from which you can keep
 
 ## License and distribution 
 
-The book is distributed **for free** in electronic format under an open CC-BY-NC-SA license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
+The book is distributed **for free** in electronic format under an open license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
 The book is published and distributed **on paper** by SoftUni and a paper copy can be purchased from the SoftUni reception (see https://softuni.bg/contacts).
 
-**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-Python-BG.
+**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-Python-EN.
 
-International Standard Book Number ISBN: **978-619-00-0806-4**.
+International Standard Book Number (ISBN): **978-619-00-1403-4**.
 
 ## Bug reports
 
 If you find **bugs**, inaccuracies or defects in the book, you can report them in the official tracker of the project:
 
-<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-Python-BG/issues">https://github.com/SoftUni/Programming-Basics-Book-Python-BG/issues</a></strong></p>
+<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-Python-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-Python-EN/issues</a></strong></p>
 
 We can't promise that we will edit everything you send us, but we are willing to constantly improve the quality of this book, so that the reported errors and all reasonable suggestions will be addressed.
 

@@ -1,10 +1,10 @@
 # Chapter 1. First Steps in Programming
-In this chapter we are going to find out **what programming** is at its core. We will get familiar with the idea of **programming languages** and explore the environments for software development (**Integrated Development Environment** – IDEs); we'll see how to work with them, in particular with **PyCharm**. We will write and execute our **first program** written in the programming language Python and then we'll exercise on a few tasks: we will create a console-based program, a graphical application and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we'll learn how to avoid them.
+In this chapter we are going to find out **what programming** is at its core. We are going to become familiar with the idea of **programming languages** and explore the environments for software development (**Integrated Development Environment** – IDEs); we'll see how to work with them, in particular with **PyCharm**. We will write and execute our **first program** written in the programming language Python and then we're going to practice with a few tasks: we will create a console-based program, a graphical application and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we're going to learn how to avoid them.
 
 ## Video
 
 <div class="video-player">
-  Watch a video lesson on what we'll learn in this chapter: <a target="_blank"
+  Watch a video lesson on what we're going to be learning in this chapter: <a target="_blank"
   href="https://www.youtube.com/watch?v=LUUIDcwBDss">
   https://www.youtube.com/watch?v=LUUIDcwBDss</a>.
 </div>
@@ -13,11 +13,11 @@ In this chapter we are going to find out **what programming** is at its core. We
 To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
 
 ## Computer programs
-**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book we'll cover programming in general, as well as Python's particular syntax and semantics. We'll examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book we're going to cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
 Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
-To make creating programs, writing program code (commands), executing it and other operations that have to do with programming more convenient, we need a **development environment** (IDE) like **PyCharm**.
+To create programs, write program code (commands), execute it and other operations that have to do with making programming more convenient, we need a **development environment** (IDE) like **PyCharm**.
 
 ### Programming languages, compilers, interpreters and development environments
 **Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
@@ -26,11 +26,11 @@ To make creating programs, writing program code (commands), executing it and oth
 
 Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
 
-Overall, compiled languages work more slowly than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code more quickly and re-execute (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
+Overall, compiled languages work slower than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code quicker and re-execute (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
 
 **The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a **programming language**, **a compiler or interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
-**Development environments** are convenient because they incorporate everything necessary to develop a program, so there's no need to leave the environment. If we don't use a development environment, we'll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which will cost a lot of time. This is why most programmers use IDEs for everyday work.
+**Development environments** are convenient because they incorporate everything necessary to develop a program, so there's no need to leave the environment. If we don't use a development environment, we'll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which would cost a lot of time. This is why most programmers use IDEs for everyday work.
 
 Programming with **Python** is usually done in the development environment **PyCharm** which is developed and distributed by JetBrains. You can download it from: [https://www.jetbrains.com/pycharm](https://www.jetbrains.com/pycharm).
 Here's what the PyCharm environment looks like in action:
@@ -64,7 +64,7 @@ Installing Python is quite simple. Just go to https://python.org/downloads and d
 
 On **Windows** the installation is a straightforward process of clicking **[Next]**, **[Next]** and **[Finish]**. On **Linux**, you need to use a package installer like `sudo apt-get install python3`.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
   <td>Use <b>Python version 3.x or newer</b>. Python 2 is an outdated technology and although it's accessible by default on many systems, it's problematic and many of the examples in this book won't work on it.</td>
 </tr></table>
 
@@ -148,27 +148,27 @@ The Community version of PyCharm is freely distributed by JetBrains and can be d
 The installation is typical for Windows - simply use the **[Next]** and **[Finish]** buttons. There's a Linux version available as well.
 In the following paragraphs we've described in detail **every step of the PyCharm Community 2018 installation process**. After we download the installation file and run it, we're greeted with the following screen:
 
-![](/assets/chapter-1-images/00.PyCharm-01.PNG)
+![](/assets/chapter-1-images/00.PyCharm-01.png)
 
 We hit **[Next]**, which takes us to the screen you see below:
 
-![](/assets/chapter-1-images/00.PyCharm-02.PNG)
+![](/assets/chapter-1-images/00.PyCharm-02.png)
 
 A window with PyCharm's installation panel is loaded:
 
-![](/assets/chapter-1-images/00.PyCharm-03.PNG)
+![](/assets/chapter-1-images/00.PyCharm-03.png)
 
 We tick the box which allows us to choose a shortcut depending on our operating system [**.py**] and [**Download and install JRE x86 by JetBrains**], and then click [**Next**]:
 
-![](/assets/chapter-1-images/00.PyCharm-04.PNG)
+![](/assets/chapter-1-images/00.PyCharm-04.png)
 
 Then we hit the **[Install]** button.
 
-![](/assets/chapter-1-images/00.PyCharm-05.PNG)
+![](/assets/chapter-1-images/00.PyCharm-05.png)
 
-After PyCharm installs, we'll see an information screen, where we can tick a box that says **[Run PyCharm]** which will start our IDE. After **PyCharm has started**, a screen similar to the one below will be displayed:
+After PyCharm installs, we'll see an information screen, where we can tick a box that says **[Run PyCharm]** which is going to start our IDE. After **PyCharm has started**, a screen similar to the one below will be displayed:
 
-![](/assets/chapter-1-images/01.Hello-python-01.PNG)
+![](/assets/chapter-1-images/01.Hello-python-01.png)
 
 That's it. We're ready to start working with PyCharm.
 
@@ -191,24 +191,24 @@ A single **Python project** consists of several **Python source files** (**.py**
 #Example: creating a console program 'Hello Python'
 Let's get back to our console program. Now that we have PyCharm installed, we can start it. Then we will create a new project: **[Create New Project]**.
 
-![](/assets/chapter-1-images/01.Hello-python-01.PNG)
+![](/assets/chapter-1-images/01.Hello-python-01.png)
 
 We will give our project a **meaningful name**, such as `FirstStepsInProgramming`:
 
-![](/assets/chapter-1-images/01.Hello-python-02.PNG)
+![](/assets/chapter-1-images/01.Hello-python-02.png)
 
 PyCharm will create an **empty project** for us and we can add Python files to it. We'll add a new Python file - **[File]** or right click on our project -> **[New]** -> **[Python File]** and give it a meaningful name like `HelloPython.py`.
 
-We can adjust the version and location of the Python interpreter, which we'll be using. We must have a Python interpreter, otherwise, we won't be able to execute the programs we've written. It's possible to have more than one version of Python on the same computer but for ease of use, in the beginning **just install the latest version and use that**. If you haven't already installed Python, please do so before you continue.
+We can adjust the version and location of the Python interpreter, which we're going to be using. We must have a Python interpreter, otherwise, we won't be able to execute the programs we've written. It's possible to have more than one version of Python on the same computer but for ease of use, in the beginning **just install the latest version and use that**. If you haven't already installed Python, please do so before you continue.
 
 ### Writing Program Code
-Writing Python code requires no additional preparation – creating a file with the `.py` extension is all we need. So let's directly proceed with writing our first line of code. We'll write the following command:
+Writing Python code requires no additional preparation – creating a file with the `.py` extension is all we need. So let's directly proceed with writing our first line of code. We will write the following command:
 ```python
 print('Hello Python')
 ```
 Here's what our program might look like in PyCharm:
 
-![](/assets/chapter-1-images/01.Hello-python-03.PNG)
+![](/assets/chapter-1-images/01.Hello-python-03.png)
 
 The `print('Hello Python')` command allows us to print the text message `Hello Python` on the console. The message needs to be surround with quotes, signifying text.
 
@@ -217,7 +217,7 @@ This command is quite typical for programming: we call the function `print(...)`
 ### Starting the Program
 To start the program we need to press **[Ctrl + Shift + F10]** or right click – **[Run]**. If there are no errors, the program will execute. The result will be displayed on the console:
 
-![](/assets/chapter-1-images/01.Hello-python-04.PNG)
+![](/assets/chapter-1-images/01.Hello-python-04.png)
 
 Actually, the output from the program is the following text message:
 ```python
@@ -230,11 +230,11 @@ Testing the solutions to the problems in this book is completely automated via t
 
 The program we just wrote can be tested here: [https://judge.softuni.org/Contests/Practice/Index/1046#0](https://judge.softuni.org/Contests/Practice/Index/1046#0). In order to do that, simply paste the entire source code in the black field and choose **Python code** as is shown below:
 
-![](/assets/chapter-1-images/01.Hello-python-05.PNG)
+![](/assets/chapter-1-images/01.Hello-python-05.png)
 
 Then we need to send our solution by clicking the **[Submit]** button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the 'Refresh' button at the upper right-hand corner of the table of submitted solutions:
 
-![](/assets/chapter-1-images/01.Hello-python-06.PNG)
+![](/assets/chapter-1-images/01.Hello-python-06.png)
 
 In the table, the Judge System will display one of the following **possible results**:
 - Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
@@ -256,7 +256,7 @@ Print('Hello Python')
 
 In the example above, `print` is written incorrectly and the capital letter needs to be changed to lowercase.
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td>In Python we don't use a <b>semicolon (;)</b> в края на at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td><td>In Python we don't use a <b>semicolon (;)</b> at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
 
 A missing **quotation mark** or **closing bracket** can also cause issues – the program will either **function improperly** or **not execute at all**. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example:
 ```python
@@ -265,7 +265,7 @@ print('Hello Python)
 
 This program will return an **error** and the code will be underlined to draw the programmer's attention to the missed closing bracket.
 
- ![](/assets/chapter-1-images/01.Hello-python-07.PNG)
+ ![](/assets/chapter-1-images/01.Hello-python-07.png)
 
 ## What did we learn in this chapter?
 First of all, we learned **what programming is** – **issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Python programming language** and learned **how to create simple console programs** using PyCharm. Then we examined **Python's program code structure**. We looked at printing with the function **`print(...)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
@@ -273,7 +273,7 @@ First of all, we learned **what programming is** – **issuing commands written 
 Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
 
 ## First Steps in Programming – Exercises
-Welcome to the exercises. We are now going to write a couple of console applications, which will help us make a few more steps into programming. After that we will show you how to program something more complex – programs with graphical and web user interface.
+Welcome to the exercises. We are now going to write a couple of console applications, which will help us take a few more steps into programming. After that we will show you how to program something more complex – programs with a graphical and web user interface.
 
 ### Problem: console-based program 'Expression'
 Write a console-based **Python** program that **calculates** and **prints** the value of the following numerical expression:
@@ -283,15 +283,15 @@ Note: you are **not allowed to previously calculate the value** (for example wit
 ### Hints and Guidelines
 Create a new Python file and name it **Expression**. Then we need to **write the code** which will calculate the numeric expression above and print its value on the console. Pass the expression to the **`print(...)`** command by writing it within its brackets:
 
-![](/assets/chapter-1-images/02.Expression-01.PNG)
+![](/assets/chapter-1-images/02.Expression-01.png)
 
 Start the program with **[Ctrl + Shift + F10]** and check whether the result matches the one from the picture:
 
-![](/assets/chapter-1-images/02.Expression-02.PNG)
+![](/assets/chapter-1-images/02.Expression-02.png)
 
 ### Testing in the Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1046#1](https://judge.softuni.org/Contests/Practice/Index/1046#1).
-![](/assets/chapter-1-images/02.Expression-03.PNG)
+![](/assets/chapter-1-images/02.Expression-03.png)
 
 ### Problem : Numbers from 1 to 20
 Write a **Python console program** that **prints the numbers from 1 to 20** on separate lines on the console.
@@ -299,11 +299,11 @@ Write a **Python console program** that **prints the numbers from 1 to 20** on s
 ### Hints and Guidelines
 Create a Python file and name it **`nums_1_to_20.py`**:
 
-![](/assets/chapter-1-images/03.Numbers-1-to-20-01.PNG)
+![](/assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
-Inside the file write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a cleverer way. Don't worry, there is, but we will mention it later on.
+Inside the file write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a more clever way. Don't worry, there is, but we will mention it later on.
 
-![](/assets/chapter-1-images/03.Numbers-1-to-20-02.PNG)
+![](/assets/chapter-1-images/03.Numbers-1-to-20-02.png)
 
 Let's now **start the program** and check whether the result is what we're expecting:
 ```
@@ -316,7 +316,7 @@ Let's now **start the program** and check whether the result is what we're expec
 ### Testing in the Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/1046#2](https://judge.softuni.org/Contests/Practice/Index/1046#2).
-Now try and **think of a cleverer way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.bg/search?q=for+loop+python)" on the Internet.
+Now try and **think of a more clever way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.bg/search?q=for+loop+python)" on the Internet.
 
 ### Problem: Triangle of 55 stars
 Write a **Python console program** that prints a **triangle of 55 stars** on 10 lines:
@@ -360,7 +360,7 @@ Write a **Python program** which **receives two numbers a and b, then calculates
 ### Hints and Guidelines
 Create a **new Python file**. We'll use the following commands to read our numbers:
 
-![](/assets/chapter-1-images/05.Rectangle-area-01.PNG)
+![](/assets/chapter-1-images/05.Rectangle-area-01.png)
 
 What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  **`a`** and **`b`** to the already familiar **`print(...)`** command. In programming we multiply using the **`*`** operator.
 
@@ -387,7 +387,7 @@ Write a **Python console program which reads an integer positive number N** from
 ### Hints and Guidelines
 Create a **new Python file**. In order to read the number N (2 ≤ N ≤100), we use the following code:
 
-![](/assets/chapter-1-images/06.Square-of-stars-01.PNG)
+![](/assets/chapter-1-images/06.Square-of-stars-01.png)
 
 Finish the program so that it prints a square made up of stars. You may need to use **`for`**-loops.
 
@@ -409,75 +409,75 @@ We will now build a **basic web application** and after that a simple **graphica
 ## Graphical application: 'Numbers Summator'
 Write a **graphical (GUI) application** which **calculates the sum of two numbers**. After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field colored in green:
 
-![](/assets/chapter-1-images/07.Numbers-sum-01.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-01.png)
 
 We'll use the standard Python graphical library **TKInter** for our application (https://wiki.python.org/moin/TkInter. It enables us to create **graphical (GUI) applications** using the **Python** programming language.
 
 ## Empty Python Project
 Create a **new Python project** named **"Summator-GUI"** in PyCharm:
 
-![](/assets/chapter-1-images/07.Numbers-sum-02.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-02.png)
 
 Add a new Python file named **summator.py** to the project. Then add **tkinter** as well:
 
-![](/assets/chapter-1-images/07.Numbers-sum-03.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-03.png)
 
 #### Creating the basis for the GUI project
 Next we need to write the code for our graphical application, starting with the basis:
 
-![](/assets/chapter-1-images/07.Numbers-sum-04.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-04.png)
 
 We'll need the following components (controls):
 *	**Entry** – will enter the numbers that need to be calculated.
 *	**Label** – will serve to statically display text and the result of the calculation.
 *	**Button** – will calculate the sum of our numbers.
 
-![](/assets/chapter-1-images/07.Numbers-sum-05.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-05.png)
 
 Let's **initialize and visualize** our controls (widgets):
 
-![](/assets/chapter-1-images/07.Numbers-sum-06.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-06.png)
 
 And try to start our application with **[Ctrl + Shift + F10]** or right-click + **[Run]**. It should start but **not function correctly**, because we haven't specified what happens when the button is clicked:
 
-![](/assets/chapter-1-images/07.Numbers-sum-07.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-07.png)
 
 #### Application Logic
-Now we'll write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the **`calculate`** command upon the button's initialization:
+Now we're going to write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the **`calculate`** command upon the button's initialization:
 
-![](/assets/chapter-1-images/07.Numbers-sum-08.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-08.png)
 
-Then we'll write the **`calculate`** function's code:
+Then we write the **`calculate`** function's code:
 
-![](/assets/chapter-1-images/07.Numbers-sum-09.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-09.png)
 
 This code **takes the first number** from the **`firstNumberEntry`** field and stores it in the **`first_value`** **variable**. Then it stores the **second number** from the **`secondNumberEntry`** field in the **`second_value`** variable. It **sums** **`first_value`** and **`second_value`** and stores the result in the **`result`** variable. Finally, it **displays the text representation** of the **`result`** variable in the **`resultLabel`** field.
 
 Let's start the program again using **[Ctrl + Shift + F10]** or right click + **[Run]** and check whether it's working correctly. Try and calculate **4** + **5**, then **-2.5** + **1.5**:
 
-![](/assets/chapter-1-images/07.Numbers-sum-10.PNG) ![](/assets/chapter-1-images/07.Numbers-sum-11.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-10.png) ![](/assets/chapter-1-images/07.Numbers-sum-11.png)
 
 #### Managing invalid numbers
 Entering **invalid numbers** like **'a'** and **'b'** seems to create issues:
 
-![](/assets/chapter-1-images/07.Numbers-sum-12.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-12.png)
 
 This is due to the **conversion of the information entered in our text field into a number**. If the **value in the field isn't a number, our program returns an error**. We can fix the code to resolve this issue:
 
-![](/assets/chapter-1-images/07.Numbers-sum-13.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-13.png)
 
 The code you see above **intercepts number-handling errors** (catches exceptions) and in case of an error, **returns a `Not number/s`** value in the result field. If we start our program once more and enter an improper value, the **result is `Not number/s`** and our program continues working as intended: 
 
-![](/assets/chapter-1-images/07.Numbers-sum-14.PNG) ![](/assets/chapter-1-images/07.Numbers-sum-15.PNG)
+![](/assets/chapter-1-images/07.Numbers-sum-14.png) ![](/assets/chapter-1-images/07.Numbers-sum-15.png)
 
-Does that seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. A time will come when this will to be easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and **lots of practice**.
+Does that seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. There will come a time when this becomes easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and **lots of practice**.
 
 ### Web Application: 'Numbers Summator'
 Now we are going to create something even more complex, but also more interesting: a Web application that **calculates the sum of two numbers**. By entering two numbers in the first two text fields and clicking the **[Calculate]** button, **their sum is calculated** and the result is displayed in the third text field.
 
 Keep in mind that we are creating a **Web-based application**. This is an application that is accessible through a web browser, just like your favorite email or news website. The web application is going to have a server side (back-end), which is written in the Python language with **Flask** ([https://flask.palletsprojects.com](https://flask.palletsprojects.com)) technology, and a client side (front-end), which is written in the **HTML** language (this is a language for visualization of information in a web browser). The Web application is expected to resemble the following:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-01.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-01.png)
 
 As opposed to console applications which read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. For our web application we are going to use **Flask**, a light Python library, which allows creating **web applications with the programming language Python**.
 
@@ -486,63 +486,63 @@ Next are the steps for implementation of the "Numbers Summator" web application.
 #### Empty Python solution
 We'll create an **empty Python project** in PyCharm to organize our application's code:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-02.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-02.png)
 
 Then we need to give the project a meaningful name like **"Summator-Web"**. We'll also set the Python interpreter to this one by default:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-03.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-03.png)
 
 #### Installing Flask
 Before we start writing code, we need to install Flask. Let's go to PyCharm's settings [**File**] -> [**Settings**] then go to [**Project: Sumator-Web**] -> [**Project Interpreter**]. There we need to click the **`+`** button:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-04.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-04.png)
 
 When you find Flask in the window that appears, click **[Install package]**:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-05.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-05.png)
 
 If all goes well, you'll receive the following message on the same screen:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-06.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-06.png)
 
 #### Creating the Project Structure
-Let's create the structure of our project. To do that, we'll create a Python file named **`app.py`** where we'll keep our program code. Then we need a folder which we'll call **templates** and an HTML file named **`index.html`** which will help visualize our content in the browser.
+Let's create the structure of our project. To do that, we're going to create a Python file named **`app.py`** where we will keep our program code. Then we need a folder which we'll call **templates** and an HTML file named **`index.html`** which will help visualize our content in the browser.
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-07.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-07.png)
 
 #### Writing the application's logic
 Time to create our application's controls. The aim is to add fields where our numbers will be entered, a button for summing them and a place to display the result. We can achieve this by writing the following code in `templates/index.html`:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-08.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-08.png)
 
 This code creates a web form `<form>` with a field and a button **[Calculate]** which will send the data from the form to our server. Our **Python** `app.py` file will be responsible for data manipulation. Notice the curly braces – they are used to switch between the **HTML** and **Python languages** and come from the **Jinja2** syntax used for creating dynamic web pages.
 
 After we've written the following code in `app.py`, we can test if our program is working by running it:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-09.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-09.png)
 
 Next we need to write the code which will handle our **request**:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-10.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-10.png)
 
 If we click the calculation button now, our program will be able to sum the two digits from the form. Let's run the program again and test whether it's working correctly. Upon entering the numbers **9** and **11**, we'll receive a correct result:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-11.PNG) 
+![](/assets/chapter-1-images/08.Numbers-sum-web-11.png) 
 
 #### Managing invalid numbers
 If we try entering **invalid data**, we'll receive an error:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-12.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-12.png)
 
 In order to handle the error, we need to write the following code:
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-13.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-13.png)
 
 This is not the best solution for error handling, but it will work.
 
 If we run the program one more time and test it by entering **invalid data**, we'll receive the `Not number/s.` message.
 
-![](/assets/chapter-1-images/08.Numbers-sum-web-14.PNG)
+![](/assets/chapter-1-images/08.Numbers-sum-web-14.png)
 
 Does all this seem scary? **There's no need to be afraid**. We have a lot more to learn, to reach the level of knowledge and skills required to write web-based applications with ease like in the example above, as well as much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. 
 

@@ -28,8 +28,7 @@ Let's examine a **real exam topic**, the problems it contains and their solution
 Write a program that calculates **what is the distance passed by a car (in kilometers)**, if we know **the initial speed** \(km/h\), **the initial time frame** in minutes, then the **speed is increased by 10%**, **the second time frame**, then the **speed is decreased by 5%**, and the **time until the end** of the trip. To calculate the distance, you need to **convert the minutes into hours** \(for example 70 minutes = 1.1666 hours\).
 
 ### Input
-
- **4 arguments** are given as parameters of the function:
+Read **4 lines** from the console:
 * **The start speed in km/h** – an integer within the range [**1 … 300**].
 * **The first time in minutes** – an integer within the range [**1 … 1000**].
 * **The second time in minutes** – an integer within the range [**1 … 1000**].
@@ -67,7 +66,7 @@ Such a description may look **misleading** and incomplete at first glance, which
 On condition for **input** will be submitted **four** separate rows, for this reason we will have to call the function **`input()`** four times:
 ![](/assets/chapter-8-2-images/01.Distance-01.png)
 
-Next we have to **convert the input data** in a suitible **type** so we can do the needed computations. We choose type **`int`** because in the description of the problem is mentioned that the input data is going to be in a **determined interval**, for which this data type is enough.
+Next we have to **convert the input data** in a suitible **type** so we can do the needed computations. We choose type **`int`** because in the description of the problem is mentioned that the input data is going to be in a **determined interval**, for which this data type is enough. We perform the data **conversion** as follows:
 
 ![](/assets/chapter-8-2-images/01.Distance-02.png)
 
@@ -79,7 +78,7 @@ We initially **store** one **variable** that will be used multiple times. This c
 
 <table>
 <tr>
-<td width=10%><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<td width=10%><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><strong>Avoiding repetitive code</strong> (centralization of the program logic) in the tasks that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large applications in a real work environment, and its exercising in an initial stage of training will help you build a quality programming style.
 </td>
 </tr>
@@ -111,7 +110,7 @@ Haralambi has some **savings** that he wants to use to **change the tiles** on t
 
 ### Input
 
-We submit 7 numbers as parameters of the function:
+Read **7 lines** from the console:
 
 * **The savings**.
 * **The width** of the floor.
@@ -147,7 +146,7 @@ The result must be **formatted up to the second symbol** after the decimal point
 
 ### Hints and Guidelines
 
-The following task requires our problem to accept more input data and to perform a larger amount of calculations, even though the solution is **identical**. Accepting the input data is done **familiarly**. Pay attention that in **input** part of the description is said that all input data will be **real numbers** and for this reason we will use **`float`**.
+The following task requires our problem to accept more input data and to perform a larger amount of calculations, even though the solution is **identical**. Accepting the input data is done **familiarly**. Pay attention that in **input** part of the description is said that all input data will be **real numbers** and for this reason we will use **`float`** type.
 
 Now that we already have everything for executing the programming logic, we can move to the following part. How can we **calculate** what is the **needed** number of tiles that will be sufficient to cover the entire floor? The requirement is that tiles have a **triangular** shape, which can confuse, but practically, the task needs just **simple calculations**. We can calculate the **common part of the floor** by the formula for finding a rectangle area, as well as the **area of a single tile** using the relevant formula for the triangle area.
 
@@ -155,7 +154,7 @@ To calculate the **number of tiles** that are needed, **we divide the floor area
 
 <table>
 <tr>
-<td width="10%"><img src="assets/alert-icon.png" style="max-width:50px" /></td>
+<td width="10%"><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Pay attention that the requirements state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>math.ceil(…)</strong></code>.
 </td>
 </tr>
@@ -190,9 +189,9 @@ The price for arranging a bouquet is always **2 lv** (BGN). Write a program that
 
 The input is read from the **console** and contains **exactly 5 arguments**:
 
-* **The number** of the puchared **chrysanthemums** – whole number inside the interval of [**0 … 200**].
-* **The number** of the puchared **roses** – whole number inside the interval of [**0 … 200**].
-* **The number** of the puchared **tullips** – whole number inside the interval of [**0 … 200**].
+* **The number** of the puchared **chrysanthemums** – integer number inside the interval of [**0 … 200**].
+* **The number** of the puchared **roses** – integer number inside the interval of [**0 … 200**].
+* **The number** of the puchared **tullips** – integer number inside the interval of [**0 … 200**].
 * **The season** – [**Spring, Summer, Autumn, Winter**].
 * **If the day is a holiday** – [**Y - yes / N - no**].
 
@@ -224,7 +223,7 @@ We will also do the same for the rest of the defined values:
 
 ![](/assets/chapter-8-2-images/03.Flowers-02.png)
 
-Our next sub-task is to **read** properly **the input** data from the console. We will do that in an already familiar manner but this way **we combine** separate functions - one to **read** a line from the console and another to **convert** in a numeric data type: 
+Our next sub-task is to **read** properly **the input** data from the console. We will do that in an already familiar manner but this way **we combine two** separate functions - one to **read** a line from the console and another to **convert** in a numeric data type: 
 
 ![](/assets/chapter-8-2-images/03.Flowers-03.png)
 
@@ -281,7 +280,7 @@ Before executing the code of the **`for`** loop, we will create variables where 
 
 ![](/assets/chapter-8-2-images/05.Grades-02.png)
 
-We run the **loop** and inside it, we **declare one more** variable, in which we will store the **currently** entered grade. The variable will be of the type **`float`** and on every iteration we test **for its value**. According to this value, **we increase** the number of students in the relevant group by **1**, as we should not forget to also increase the **total** amount of the grades, which we also track:
+We run the **loop** and inside it, we **declare one more** variable, in which we will store the **currently** entered grade. The variable will be of the type **`float`** and on every iteration we check **what is its value**. According to this value, **we increase** the number of students in the relevant group by **1**, as we should not forget to also increase the **total** amount of the grades, which we also track:
 
 ![](/assets/chapter-8-2-images/05.Grades-03.png)
 
@@ -301,7 +300,7 @@ Write a program that reads from the console an **integer `n`** and draws a **Chr
 
 ### Input
 
-The input is read from the console - one an **integer `n`** within the range [**3 … 100**].
+The input is read from the console - one **integer `n`** within the range [**3 … 100**].
 
 ### Output
 

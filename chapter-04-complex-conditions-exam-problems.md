@@ -1,6 +1,6 @@
 # Chapter 4.2. More Complex Conditions – Exam Problems
 
-The previous chapter introduced you to **nested conditions** in **Python**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested one into another. We also explained the more complex **`if-elif-else`** conditional statement that allows selecting from a number of options. Now we are going to solve some practical exercises and make sure we have an in-depth understanding of the material, by discussing a set of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
+The previous chapter introduced you to **nested conditions** in **Python**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested inside eachother. We also explained the more complex **`if-elif-else`** conditional statement that allows selecting from a number of options. Now we are going to solve some practical exercises and make sure we have an in-depth understanding of the material, by discussing a set of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
 
 ## Nested Conditions
 
@@ -12,7 +12,7 @@ if condition1:
         # body
 ```
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Remember that it is not a good practice to write <strong>deeply nested conditional statements</strong> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
@@ -31,12 +31,12 @@ else:
     # body
 ```
 
-The body can consist of any code, as long as it corresponds to the syntactic particularity of the language and is indented one tab inside.
+The body can consist of any code, as long as it corresponds to the syntactic particularity of the language and is indented one tab-press in.
 
 
 ## Exam Problems
 
-Now, after we refreshed our knowledge on how to use and nested conditional statements to implement more complex conditions and program logic, let's solve some exam problems.
+Now, after we refreshed our knowledge on how to use nested conditional statements to implement more complex conditions and program logic, let's solve some exam problems.
 
 ## Problem: On Time for the Exam
 
@@ -85,8 +85,8 @@ If the student arrives with more than one minute difference compared to the exam
 
 ### Hints and Guidelines
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start with the code.</td></tr></table>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start writing code.</td></tr></table>
 
 #### Processing the Input Data
 
@@ -112,10 +112,10 @@ What remains is to calculate the difference between the two times, to determine 
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-05.png)
 
-Our next step is to do the required **checks and calculations**, and finally, we will print the output. Let's separate the code into **two** parts.
+Our next step is to do the required **checks and calculations**, and finally, we are going to print the output. Let's separate the code into **two** parts.
 
 - First, let's show when the student arrived – were they early, late or on time. To do that, we will use an **`if-else`** statement. 
-- After that, we will show the **time difference**, if the student arrives at a **different time** compared to the **exam starting time**.
+- After that, we're going to show the **time difference**, if the student arrives at a **different time** compared to the **exam starting time**.
 
 To spare one additional check (**`else`**), we can, by default, assume that the student was late. 
 
@@ -125,7 +125,7 @@ In all other cases, we assume that the student **was late**, which we set as **d
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-06.png)
 
-Finally, we need to understand and print **what is the time difference between exam start time and student arrival time**, as well as whether this time difference indicates the time of arrival **before or after the exam start**.
+Finally, we need to print **what is the time difference between exam start time and student arrival time**, as well as whether this time difference indicates the time of arrival **before or after the exam start**.
 
 We check whether the time difference is **more than** one hour, to print hours and minutes in the required **format**, or **less than** one hour, to print **only minutes** as a format and description. We also need to do one more check – whether the time of student's arrival is **before** or **after** the exam start time.
 
@@ -141,8 +141,8 @@ Actually, for the task, printing the result **on the console** can be done at a 
 
 Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a **file** or displayed as a **web application**. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won't miss some places?
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Always consider the code that contains logical calculations as a separate part, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td>Always consider the code that contains logical calculations as a separate piece, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
 ### Testing in the Judge System
 
@@ -170,7 +170,7 @@ Write a program that accepts **as input the budget and season** and **as output*
 
 The input data will be read from the console and will consist of **two lines**:
 
-- The **first** line holds **the budget** – a **real number** in the range [**10.00 … 5000.00**].
+- The **first** line holds **the budget** – a **floating-point(double) number** in the range [**10.00 … 5000.00**].
 - The **second** line holds one of two possible seasons that are "**summer**" or "**winter**".
 
 ### Output Data
@@ -201,11 +201,11 @@ Typically, as for the other tasks, we can separate the solution into the followi
 
 #### Processing the Input Data
 
-While reading carefully the requirements, we understand that we expect **two** lines of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. We can pick **`float`** as a variable for the budget and – **`string`** for the season: 
+While reading the requirements carefully, we understand that we expect **two** lines of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. We can pick **`float`** as a variable for the budget and – **`string`** for the season: 
 
 ![](/assets/chapter-4-2-images/02.Trip-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>Always take into consideration what <strong>value type</strong> is passed in the input data, as well as what type these need to be converted to, for the program conditions to work properly!</td>
 </tr></table>
 
@@ -217,7 +217,7 @@ Let's create and initialize the variables needed for applying the logic and calc
 
 Similar to the example in the previous task, we can initialize variables with some of the output results, to spare additional initialization.
 
-When examining once again the problem requirements, we notice that the main distribution of where the vacation will take place is determined by the **value of the budget**, i.e. our main logic is divided into two cases:
+When examining the problem requirements once again, we notice that the main distribution of where the vacation will take place is determined by the **value of the budget**, i.e. our main logic is divided into two cases:
 * If the budget is **less than** a particular value.
 * If it is **less than** another value or is **more than** the specified border value.
 
@@ -227,11 +227,11 @@ After that, we need to apply a condition to check the value of the **season**. B
 
 ![](/assets/chapter-4-2-images/02.Trip-03.png)
 
-We can optimize the conditions checking by assigning a **default value** and then checking one variant less. **This saves one logical step**. For example, this block:
+We can optimize the conditionал check by assigning a **default value** and then checking one variant less. **This saves one logical step**. For example, this block:
 
 ![](/assets/chapter-4-2-images/02.Trip-04.png)
 
-can be shortened like this:
+can be shortened like so:
 
 ![](/assets/chapter-4-2-images/02.Trip-05.png)
 
@@ -248,7 +248,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052
 
 ## Problem: Operations with Numbers
 
-Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) и **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, a **special notification** must be printed.
+Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, a **special notification** must be printed.
 
 ### Input Data
 
@@ -286,7 +286,7 @@ Print the output as a **single line** on the console:
 
 ### Hints and Guidelines
 
-The problem is not complex, but there are a lot of code lines to write.
+The problem is not complex, but there are a lot of lines of code to write.
 
 #### Processing the Input Data
 
@@ -308,7 +308,7 @@ Let's place the output as a value upon initializing the **`output`** parameter. 
 
 Based on the approach that we choose, our next condition will be either a simple **`elif`** or a single **`if`**. In the body of this condition, using additional conditions regarding the manner of calculating the output based on the passed operator, we can separate the logic based on the **structure** of the expected **output**. 
 
-From the requirements we can see that for **summing up** (**`+`**), **subtraction** (**`-`**) или **multiplying** (**`*`**) the expected output has the same structure: **"{n1} {operator} {n2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure:
+From the requirements we can see that for **summing up** (**`+`**), **subtraction** (**`-`**) or **multiplying** (**`*`**) the expected output has the same structure: **"{n1} {operator} {n2} = {output} – {even/odd}"**, whereas for **division** (**`/`**) and **modular division** (**`%`**) the output has a different structure:
 
 ![](/assets/chapter-4-2-images/03.Operations-04.png)
 
@@ -389,7 +389,7 @@ We will read the input data and perform the calculations described in the task r
 
 #### Processing the Input Data
 
-Let's read carefully the requirements and examine what we expect to take as **input data**, what is expected to **return as a result**, as well as what are the **main steps** for solving the problem. For a start, let's process and save the input data in **appropriate variables**:
+Let's read the requirements carefully and examine what we expect to take as **input data**, what is expected to **return as a result**, as well as what the **main steps** for solving the problem are. For a start, let's process and save the input data in **appropriate variables**:
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-01.png)
 
@@ -403,11 +403,11 @@ Let's review the requirements once again. We need to perform **two** different b
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-03.png)
 
-By the second set of calculations, we need to find out what amount will be needed for **purchasing tickets** for the group. According to the requirements, this only depends on the type of tickets that we need to buy. Let's use **`if-elif`** conditional statement:
+By the second set of calculations, we need to find out what amount will be needed to **purchase tickets** for the group. According to the requirements, this only depends on the type of tickets that we need to buy. Let's use **`if-elif`** conditional statement:
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-04.png)
 
-Once we have calculated the **transportation costs** and **ticket costs**, what remains is to calculate the final result and understand if the group of football fans will **attend** Euro Cup 2016 or **not**, by the provided the available parameters. 
+Once we have calculated the **transportation costs** and **ticket costs**, what remains is to calculate the final result and understand if the group of football fans will **attend** Euro Cup 2016 or **not**, by the provided available parameters. 
 
 For the output, to spare one **condition** in the construction, we will assume that the group can, by default, attend Euro Cup 2016:
 
@@ -435,17 +435,17 @@ Write a program that calculates **the price of the whole stay for a studio and a
 
 The following **discounts** are also offered:
 
-- For a **studio**, in case of **more than 7** stays in **May and October: 5% discount**.
-- For a **studio**, in case of **more than 14** stays in **May and October: 30% discount**.
-- For a **studio**, in case of **more than 14** stays in **June and September: 20% discount**.
-- For an **apartment**, in case of **more than 14 stays**, **no limitation regarding the month: 10% discount**.
+- For a **studio**, in the case of **more than 7** nights stayed in **May and October: 5% discount**.
+- For a **studio**, in the case of **more than 14** nights stayed in **May and October: 30% discount**.
+- For a **studio**, in the case of **more than 14** nights stayed in **June and September: 20% discount**.
+- For an **apartment**, in the case of **more than 14 nights stayed**, **no limitation regarding the month: 10% discount**.
 
 ### Input Data
 
 The input data will be read from the console and contains **exactly two lines**:
 
 - The **first** line contains the **month** – **May**, **June**, **July**, **August**, **September** or **October**.
-- The **second** line is the **number of stays** – integer within the range [**0 … 200**].
+- The **second** line is the **amount of nights stayed** – integer within the range [**0 … 200**].
 
 ### Output Data
 
@@ -454,7 +454,7 @@ The input data will be read from the console and contains **exactly two lines**:
 - On the **first line**: "**Apartment: { price for the whole stay } lv.**"
 - On the **second line**: "**Studio: { price for the whole stay } lv.**"
 
-**The price for the whole stay must be formatted up to two symbols after the decimal point**.
+**The price for the whole duration of the stay must be formatted up to two symbols after the decimal point**.
 
 ### Sample Input and Output
 

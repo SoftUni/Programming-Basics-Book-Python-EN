@@ -8,14 +8,14 @@ Before we move on to particular tasks, we must clarify that these can be solved 
 
 ## Task: Passion Shopping Days
 
-Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our task is to analyze her strange behavior and  **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over.
+Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our task is to analyze her strange behavior and **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over.
 
 The **first line** of the input will pass the **amount** that Lina has **before** she starts shopping. After that, upon reading the "**`mall.Enter`**" command, Lina enters the mall and starts shopping until the "**`mall.Exit`**" command is given. When Lina starts shopping, **on each line** of the input you will be given strings that are **actions performed by Lina**. Each **symbol** in the string is a **purchase or another action**. String commands contain only symbols of the **ASCII table**. The ASCII code of each sign is **related to what Lina must pay** for each of the goods. You need to interpret the symbols in the following way:
 
 - If the symbol is a **capital letter**, Lina gets a **50% discount**, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
 - If the symbol is a **small letter**, Lina gets a **70% discount**, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
 - If the symbol is **"`%`"**, Lina makes a **purchase** that decreases her money in half.
-- If the symbol is **"`*`"**, Lina **withdraws money from her debit card** and adds 10 lv. to her available funds.
+- If the symbol is **"`*`"**, Lina **withdraws money from her debit card** and adds 10 BGN to her available funds.
 - If the symbol is **different from all of the aforementioned**, Lina just purchases without discount, and in this case, you should simply subtract the value of the symbol from the ASCII table from her available funds.
 
 If a certain value of her purchases is **higher** than her current available funds, Lina **DOES NOT** make the purchase. Lina's funds **cannot be less than 0**.
@@ -24,7 +24,7 @@ The shopping ends when the "**`mall.Exit`**" command is given. When this happens
 
 ### Input Data
 
-The input data must be read from the console. The **first line** of the input will indicate the **amount that Lina has before starting to purchase**. On each of the following lines there will be a particular command. After you read the command "**`mall.Enter`**", on each of the following lines you will be given strings holding **information regarding the purchases / actions** that Lina wants to perform. These strings will keep being passed, until the "**`mall.Exit`**" command is given.
+The input data must be read from the console. The **first line** of the input will indicate the **amount that Lina has before starting to purchase**. On each of the following lines, there will be a particular command. After you read the command "**`mall.Enter`**", on each of the following lines you will be given strings holding **information regarding the purchases / actions** that Lina wants to perform. These strings will keep being passed until the "**`mall.Exit`**" command is given.
 
 Always only one "**`mall.Enter`**" command will be given, as well as only one "**`mall.Exit`**" command.
 
@@ -84,7 +84,7 @@ This is where we need to take into consideration the fact that inside **our arra
 
 ![Input filter](/assets/chapter-9-2-images/01.Passion-days-02.png)
 
-Here is the place to say that by calling  **`input()`** after the end of the loop is used to **pass from the first command** for processing.
+Here is the place to say that by calling **`input()`** after the end of the loop is used to **pass from the first command** for processing.
 
 #### Algorithm for Solving the Problem
 
@@ -100,8 +100,8 @@ The next part of the algorithm is to **process the symbols from the commands**, 
 
 > - If the symbol is a **capital letter**, Lina gets a 50% discount, which means that you must decrease the money she has by 50% of the numeric representation of the symbol from the ASCII table.
 > - If the symbol is a **small letter**, Lina gets a 70% discount, which means that you must decrease the money she has by 30% of the numeric representation of the symbol from the ASCII table.
-> - If the symbol is **"%"**,  Lina purchases and that decreases her money in half.
-> - If the symbol is **"\*"**, Lina withdraws money from her debit card and adds 10 lv. to her available funds.
+> - If the symbol is **"%"**, Lina purchases and that decreases her money in half.
+> - If the symbol is **"\*"**, Lina withdraws money from her debit card and adds 10 BGN to her available funds.
 > - If the symbol is **different from all of the aforementioned**, Lina just purchases without discount, and in this case, you should simply subtract the value of the symbol from the ASCII table from her available funds.
 
 Let's examine the problems that we will be facing in the first condition. The first one is how to distinguish if a particular **symbol is a capital letter**. We can use one of the following ways:
@@ -189,7 +189,7 @@ As usual, we will first read and process the input, after that, we will solve th
 
 #### Reading the Input Data
 
-The input data will consist of exactly one text line read from the console. In order to have access to each expression, we have to read the input with **`input()`** function and then convert the string into array of symbols. Using the function **`pop(…)`** we can processing each symbol:
+The input data will consist of exactly one text line read from the console. To have access to each expression, we have to read the input with **`input()`** function and then convert the string into an array of symbols. Using the function **`pop(…)`** we can process each symbol:
 
 ![Expression Read](/assets/chapter-9-2-images/02.X-expression-03.png)
 
@@ -208,12 +208,12 @@ Now that we already have our starting variables, we must decide **what will be t
 
 ![Main loop](/assets/chapter-9-2-images/02.X-expression-05.png)
 
-Our next step is to process our **`symbol`**  variable. We have 3 possible cases for it:
+Our next step is to process our **`symbol`** variable. We have 3 possible cases for it:
 
 - If the symbol is a **start of a sub-expression placed in brackets** i.e. the found symbol is a **`(`**.
 - If the symbol is a **digit between 0 and 9**. But how can we check this? How can we check if our symbol is a digit? We can use for assistance the **ASCII code** of the symbol, via which we can use the following formula: **`[ASCII code of our symbol] – [ASCII code of the symbol 0] = [the digit that represents the symbol]`**. If **the result of this condition is between 0 and 9**, then our symbol is a **number**.
 
-**Note**: in order to get the ASCII code of a certain symbol, we will use the function **`ord(…)`**.
+**Note**: to get the ASCII code of a certain symbol, we will use the function **`ord(…)`**.
 
 - If the symbol is an **operator**, i.e. it is **`+`**, **`-`**, **`*`** or **`/`**.
 
@@ -222,7 +222,7 @@ Our next step is to process our **`symbol`**  variable. We have 3 possible cases
 Let's examine the actions that we need to undertake in the relevant cases that we defined:
 
 - If our symbol is an **operator**, then the only thing we need to do is to **set a new value for the `expression_operator` variable**.
-- If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if  **`expression_operator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (**`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**).
+- If our symbol is a **digit**, then we need to **change the current result of the expression depending on the current operator**, i.e. if **`expression_operator`** is a **`-`**, then we must **decrease the result by the numerical representation of the current symbol**. We can get the numerical representation of the current symbol via the formula that we used upon checking the condition for this case (**`[ASCII code of our symbol] – [the ASCII code of the symbol `0`] = [the digit that represents the symbol]`**).
 
 ![Number checks](/assets/chapter-9-2-images/02.X-expression-07.png)
 
@@ -246,7 +246,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062
 
 ## Test: Bulls and Cows
 
-We all know the game called "Bulls and Cows"  ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
+We all know the game called "Bulls and Cows" ([https://en.wikipedia.org/wiki/Bulls_and_cows](https://en.wikipedia.org/wiki/Bulls_and_cows)). Upon having a particular 4-digit **secret number** and a 4-digit **suggested number**, the following rules are applied:
 
 - If a digit in the suggested number matches a digit in the secret number and is located at the **same position**, we have a ***bull***.
 - If a digit in the suggested number matches a digit in the secret number but is located at a **different position**, we have a ***cow***.
@@ -308,9 +308,9 @@ To complete our task we can do the followings steps:
 #### Reading the Input Data
 
 We have 3 lines in the input data:
- - **Secret number**.
- - **Number of** desired **bulls**.
- - **Number of** desired **cows**.
+ - The first contains **the secret number**.
+ - The second contains **the number of bulls**.
+ - The third contains **the number of cows**.
 
 Reading the input data is simple:
 
@@ -330,11 +330,11 @@ Let's start analyzing our problem. What we need to do is **analyze all numbers f
 
 ![Digit generation](/assets/chapter-9-2-images/03.Bulls-and-cows-04.png)
 
-Thanks to these loops, **we have access to every digit** of all numbers that we need to check. Our next step is to **separate the secret number into digits**. This can be achieved very easily by **splicing the string (string slicing)**. An alternative solution is to access the symbols by index:
+Thanks to these loops, **we have access to every digit** of all numbers that we need to check. Our next step is to **separate the secret number into digits**. This can be achieved very easily by **slicing the string (string slicing)**. An alternative solution is to access the symbols by index:
 
 ![Guess set](/assets/chapter-9-2-images/03.Bulls-and-cows-05.png)
 
-Остават ни последните две стъпки преди да започнем да анализираме колко крави и бикове има в дадено число. Съответно, първата е **декларацията на counter (брояч) променливи** във вложените ни цикли, за да **броим кравите и биковете** за текущото число. Втората стъпка е да направим **копия на цифрите на текущото число**, което ще анализираме, за да предотвратим евентуални проблеми с работата на вложите цикли (напр., ако правим промени по цифрите):
+Only two last steps remain until we start analyzing how many cows and bulls there are in a particular number. Accordingly, the first one is **the declaration of counter variables** in the nested loops, to **count the cows and bulls** for the current number. The second step is to make **copies of the digits of the current number** that we will analyze, to prevent problems upon working with nested loops, in case we make changes to them.
 
 ![Checks set](/assets/chapter-9-2-images/03.Bulls-and-cows-06.png)
 

@@ -59,7 +59,7 @@ By the set task condition the left and the right inner columns have a width of *
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-02.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td>It's always a good practice, whenever we have an expression with value we intend to use <b>more than once</b>, to keep it in a variable. In this way, on the one hand, our code will be <b>easier to read</b>, and on the other hand, it will be <b>easier to correct</b> possible <b>errors</b>, as we will not have to look for each use of the expression separately. </td>
 </tr></table>
 
@@ -71,7 +71,7 @@ To print the **roof** part, on the console we will use the **`format(…)`** met
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-04.png)
 
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
 <td><strong><code>\</code></strong> is a special symbol in Python and using it solely in the method <strong><code>print(…)</code></strong>, the console will not print it out, so with <strong><code>\\</code></strong> we indicate on the console, that we want to print out exactly this character, without interpreting it as special character (<b>we screen it </b>, in English this is called “<b>character escaping</b>”).</td>
 </tr></table>
 

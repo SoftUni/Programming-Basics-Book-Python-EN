@@ -2,7 +2,7 @@
 
 In the previous chapter we learned how to run a command block **more than once**. That's why we implemented **`for` loop** and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams.  For some of them we’ll show detailed solved examples, while for others there’ll be tips only. Before we begin, we’ll recall the **`for` loop** construction:
 
-![](/assets/chapter-5-2-images/00.For-construction-01.png)
+![](/assets/chapter-5-2-images/00.For-construction-01.png) 
 
 **`for` loops** consist of:
  * **Initialization block**, where the variable-counter (**`i`**) is declared, and with the help of the **`range(…)`** function built into Python, we define what its starting and ending value will be.
@@ -169,7 +169,7 @@ Print a single line in the console:
 
   * If Lily's money is enough:
     * "**Yes! {N}**" – where **N** are the remaining money after the purchase
-  * If they're not:
+  * If its not:
     * "**No! {M}**" – where **M** is the amount of money **lacking**
   * The numbers **N** and **M** should be **formatted with 2-digit precision after the decimal point**.
 
@@ -206,7 +206,7 @@ Print a single line in the console:
 
 Solving this problem, like the previous one, again can be divided in three parts – **reading** the input data, **processing** it and **outputting** a result.
 
-As we already know, in most of the scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpreter decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price (**`present_price`**) in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this problem. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
+As we already know, like in most scripting languages, in Python as well, we don't bother defining the types of the variables that we declare. The interpreter decides on its own what it'll be. For Lily's (**`age`**) and a single toy's price (**`present_price`**) in the problem's description it's said that they'll be **integers**. That's why we'll use **the built-in function `int()`** to convert the read value from string to integer. When the **`input()`** function is used, the input's value in the console is always (**`string`**), that's why if a conversion to another type is needed, we can use **the built-in functions of Python** for this problem. For the washing machine's price, (**`price_of_washing_machine`**), we know that it's a **fractional number and we choose the `float` type**. In the code below **we declare** and **initialize** (assign a value) to the variables:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
@@ -226,7 +226,7 @@ At the end we print the results, taking in account the required formatting, mean
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-05.png)
 
-In some programming languages there's a construction called **conditional operator (`?:`)** (also known as ternary operator), as it's shorter to write. It has the following syntax in Python: **`operand1 if operand2 else operand3`**. The second operand is our condition and it has to be of **bool type** (meaning it has to return **`true/false`**). If **`operand2`** returns **`true`**, it'll execute **`operand1`**, and if it returns **`false`** – **`operand3`**. In our case we check whether Lily's **saved money** are enough to buy a washing machine. If they're higher or equal to its price, the check **`saved_money >= price_of_washing_machine`** will return **`true`** and it'll print "**Yes! …**", while if it's lower – the result will be **`false`** and "**No! …**" will be printed. Of course, instead of the ternary operator, we can use simple **`if`** expressions.
+In some programming languages there's a construction called **conditional operator (`?:`)** (also known as ternary operator), as it's shorter to write. It has the following syntax in Python: **`operand1 if operand2 else operand3`**. The second operand is our condition and it has to be of **bool type** (meaning it has to return **`true/false`**). If **`operand2`** returns **`true`**, it'll execute **`operand1`**, and if it returns **`false`** – **`operand3`**. In our case we check whether Lily's **saved money** is enough to buy a washing machine. If its higher or equal to its price, the check **`saved_money >= price_of_washing_machine`** will return **`true`** and it'll print "**Yes! …**", while if it's lower – the result will be **`false`** and "**No! …**" will be printed. Of course, instead of the ternary operator, we can use simple **`if`** expressions.
 
 More about ternary operators: [https://book.pythontips.com/en/latest/ternary_operators.html](https://book.pythontips.com/en/latest/ternary_operators.html).
 
@@ -237,7 +237,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 ## Problem: Returning to the past
 
-Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** will **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including it**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the taken year]**.
+Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** is **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including the year itself**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the given year]**.
 
 ### Input
 
@@ -387,7 +387,7 @@ Example:
  * If the day is a **second** one, the remainder of division by **3** will be **2** (**`2 % 3 = 2`**) and the check will return **`false`**.
  * If the day is a **fourth** one, the remainder of the division will be **1** (**`4 % 3 = 1`**) and the check will again return **`false`**.
 
-If the check **`day % 3 == 0`** returns **`true`**, there'll also be a check whether the count of untreated patients is higher than the treated's count: **`untreated_patients > treated_patients`**. If the result is again **`true`**, then the count of doctors (**`count_of_doctors`**) will increase.
+If the conditional check **`day % 3 == 0`** returns **`true`**, there'll also be a check whether the count of untreated patients is higher than the treated's count: **`untreated_patients > treated_patients`**. If the result is again **`true`**, then the count of doctors (**`count_of_doctors`**) will increase.
 
 After that we check whether the patients' count for the current day (**`current_patients`**) is higher than the doctors' count (**`count_of_doctors`**). If the patients' count is **higher**:
  - We increase the value of the variable **`treated_patients`** with the doctors' count (**`count_of_doctors`**).
@@ -580,7 +580,7 @@ We'll need a **`for` loop** from **`0`** to **`count_of_loads - 1`**, in order t
  * Else, if the value of **`tons`** is **up to 11**, we increase **`truck_tons`** by **`tons`**.
  * If **`tons`** is **higher than 11**, we increase **`train_tons`** by **`tons`**.
 
-Before we print our output, we have to **calculate the percentage of tons transported by each vehicle** and **the average price per ton**. For the average price we'll declare another additional variable **`total_price`**, in which we'll **sum the total price of all transported loads** (with van, truck and train). The average price will be calculated by dividing **`total_price`** by **`sum_of_tons`**. You're left with **calculating yourself** the percentage of tons transported by each vehicle and printing the output, adhering to the format from the problem's description.
+Before we print our output, we have to **calculate the percentage of tons transported by each vehicle** and **the average price per ton**. For the average price we'll declare another additional variable **`total_price`**, in which we'll **sum the total price of all transported loads** (with van, truck and train). The average price will be calculated by dividing **`total_price`** by **`sum_of_tons`**. You're left with **calculated by yourself** the percentage of tons transported by each vehicle and printing the output, adhering to the format as shown in the problem's description.
 
 ### Testing in the Judge system
 

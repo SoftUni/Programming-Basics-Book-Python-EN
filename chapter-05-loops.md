@@ -1,6 +1,6 @@
 # Chapter 5.1. Loops (Repetitions)
 
-In this chapter we will get familiar with how to **repeat blocks of commands**, known in programming as "**loops**". We will write a number of loops using the **`for`** operator in its classic form. Finally, we will solve some practical problems, which require repeating series of actions, using loops.
+In this chapter we will become familiar with how to **repeat blocks of commands**, known in programming as "**loops**". We will write a number of loops using the **`for`** operator in its classic form. Finally, we will solve some practical problems, which require repeating series of actions, using loops.
 
 
 ## Video
@@ -230,7 +230,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ## What did we learn in this chapter?
 
-We can repeat a block of code with **`for` loop**:
+We can repeat a block of code with a **`for` loop**:
 
 ![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
@@ -240,7 +240,7 @@ We can read a sequence of **`n`** numbers from the console:
 
 ## Exercises: Repetitions (loops)
 
-Now, that we got acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, this is done with a lot of code writing. Let's solve several problems for exercise.
+Now, that we've become acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, -> this is done through writing lots of code. Let's solve a few problems for exercise.
 
 ### Creating new project in PyCharm
 
@@ -250,7 +250,7 @@ Create new project in PyCharm (from [**File**] -> [**New Project**]), in order t
 
 ### Problem: Element equal to the sum of the rest
 
-Write a program that inputs **n integers** and checks whether among them there is a number equal to the sum of all the rest. If there is such an element, print **"Yes" + itsvalue**, otherwise print - **"No" + the difference betwen the largest element and the sum of the rest** (by absolute value). 
+Write a program that inputs **n integers** and checks whether there is a number among them, which is equal to the sum of all the rest. If there is such an element, print **"Yes" + itsvalue**, otherwise print - **"No" + the difference betwen the largest element and the sum of the rest** (by absolute value). 
 
 #### Sample Input and Output
 
@@ -286,9 +286,9 @@ Write a program that reads **n numbers** and calculates **the sum**, **the min**
 
 #### Hints and guidelines
 
-The task combines some of the previous tasks: finding the **min**, **max** value and **sum**, as well as processing of elements on **even and odd positions **. Check them out.
+This task combines some of the previous tasks: finding the **min**, **max** value and **sum**, as well as processing of elements on **even and odd positions **. Check them out.
 
-In the current task it is better to work with **fractions** (not integers). The sum, the min and the max will also be fractions. We must use a **neutral starting value** when findinf the min / max value, for example **1000000000.0** and **-1000000000.0**. If the end result is the neutral value, print **"No"**.
+In the current task it is better to work with **fractions** (not integers). The sum, the min and the max will also be fractions. We must use a **neutral starting value** when finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the end result is the neutral value, print **"No"**.
 
 #### Testing in the Judge System
 
@@ -297,7 +297,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ### Problem: Equal pair
 
-There are **2 \* n numbers**. The first and the second number form a **pair**, the third and the fourth number as well, and so on. Each pair has a **value** – the usm of its numbers. Write a program that check **if all pairs have equal value**. In case the value is the same, print **"Yes, value=…" + the value**, otherwise print **the maximum difference ** between two neighboring pairs in the following format - **"No, maxdiff=…" + the maximum difference **. The input consists of the number **n**, followed by **2*n integers**, all of them one per line.
+There are **2 \* n numbers**. The first and the second number form a **pair**, the third and the fourth number as well, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal value**. In case the value is the same, print **"Yes, value=…" + the value**, otherwise print **the maximum difference ** between two neighboring pairs in the following format - **"No, maxdiff=…" + the maximum difference **. The input consists of the number **n**, followed by **2*n integers**, all of them one per line.
 
 #### Sample Input and Output
 
@@ -321,7 +321,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ## Lab: Graphic and web applications
 
-In the current chapter we learned about **loops** as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them. In order to do that, we will draw some figures that will consist of a large number of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
+In the current chapter we learned about **loops** as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them. In order to do that, we will draw some figures that will consist of a large number made up of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
 
 ### Problem: Turtle Graphics GUI Application
 
@@ -339,7 +339,7 @@ We will start by creating a new **project in PyCharm**:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. She defines class **`Turtle`**, which represents **drawing turtle**. In order to use it, we add the following code in the beginning of the Python file:
+In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. It defines class **`Turtle`**, which represents **drawing turtle**. In order to use it, we add the following code in the beginning of the Python file:
   
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
@@ -351,7 +351,7 @@ The above code moves and rotates the turtle, which is located in the center of t
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-05.png)
 
-Now you can modify the turtle code and make it more complex, in order for the turtle to make more complec figure: 
+Now you can modify the turtle code and make it more complex, in order for the turtle to make a more complex figure: 
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 
@@ -363,7 +363,7 @@ Now our turtle draws more complex figures via a nice animated motion.
 
 ### Problem: * Draw a Hexagon with the Turtle
 
-Add new Python file, with name **hexagon**, which will draw hexagon:
+Add a new Python file, with the name **hexagon**, which will draw a hexagon:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-8.png)
 
@@ -391,11 +391,11 @@ Add new Python file **spiral.py**, which draws spiral with 20 beamsas on the fig
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
-**Hint:** Draw in a loop by moving ahead and rotating. In each step, decrease gradually the length of the forward step and rotate 60 degrees..
+**Hint:** Draw in a loop by moving ahead and rotating. In each step, decrease the length gradually of the forward step and rotate 60 degrees..
 
 ### Problem: * Draw a Sun with the Turtle
 
-Add new Python file **sun.py**, which draws a sun with 36 beams, as on the figure below:
+Add a new Python file **sun.py**, which draws a sun with 36 beams, as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 

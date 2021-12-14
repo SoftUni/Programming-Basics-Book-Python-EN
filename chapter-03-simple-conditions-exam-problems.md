@@ -1,6 +1,6 @@
 # Chapter 3.2. Simple Conditions – Exam Tasks
 
-In the previous chapter, we went through **the simple conditional statements** in Python, which we can use to execute different actions depending on a given condition. We mentioned what is the scope of a variable (it's **`scope`**) and how to track the execution of our program step by step (the so-called **debugging**). In this chapter, working with **simple conditions** by going through some exam tasks. To do this, let's first revise their construction:
+In the previous chapter, we went through **the simple conditional statements** in Python, which we can use to execute different actions depending on a given condition. We mentioned what is the **`scope`** of a variable and how to track the execution of our program step by step (the so-called **debugging**). In this chapter, we'll be working with **simple conditions** by going through some exam tasks. To do this, let's first revise their construction:
 
 ```python
 if bool expression:
@@ -38,7 +38,7 @@ Write a program that reads the number of **kilometers n** and **period of the da
 
 ### Output Data
 
-Print on the console **the lowest price** for the given number of kilometers.
+Print to the console **the lowest price** for the given number of kilometers.
 
 ### Sample Input and Output
 
@@ -52,11 +52,11 @@ Print on the console **the lowest price** for the given number of kilometers.
 
 ### Hints and Guidelines
 
-We will read the input data and depending on the distance, we will choose the cheapest transport. To do that, we will write a few conditional statements.
+We will read the input data and, depending on the distance, we will choose the cheapest transport. To do that, we will write a few conditional statements.
 
 #### Processing the Input Data
 
-In the task, we are given **information about the input and output data**. Therefore, in the first **two lines** from the solution, we will declare and initialize the two **variables** that are going to store **the values of the input data**. **The first line** contains **an integer** and that is why the declared variable will be converted with the function **`int(…)`**. **The second line** contains **a word**, therefore, the variable will be of **`string`** type:
+In the task, we are given **information about the input and output data**. Therefore, in the first **two lines** of the solution, we will declare and initialize the two **variables** that are going to store **the values of the input data**. **The first line** contains **an integer** and that is why the declared variable will be converted with the function **`int(…)`**. **The second line** contains **a word**, therefore, the variable will be of **`string`** type:
 
 ![](/assets/chapter-3-2-images/01.Transport-price-01.png)
 
@@ -76,7 +76,7 @@ To calculate **the taxi rate**, we will use a conditional statement of type **`i
 
 ![](/assets/chapter-3-2-images/01.Transport-price-04.png)
 
-After having done that, now we can start calculating **the transport price** itself. The constraints in the task refer to **the distance** that the student wants to travel. This is why, we will use an **`if-elif-else`** statement that will help us find **the price** of the transport, depending on the given kilometers:
+After having done that, now we can start calculating **the transport price** itself. The constraints in the task refer to **the distance** that the student wants to travel. This is why we will use an **`if-elif-else`** statement that will help us find **the price** of the transport, depending on the given kilometers:
 
 ![](/assets/chapter-3-2-images/01.Transport-price-05.png)
 
@@ -111,8 +111,8 @@ A pool with **volume V** fills up via **two pipes**. **Each pipe has a certain f
 
 ### Output Data
 
-Print on the console **one of the two possible states**:
-* To what extent the pool has filled up and how many percent each pipe has contributed with. All percent values must be formatted to an integer (without rounding).
+Print to the console **one of the two possible states**:
+* To what extent the pool has filled up and how many percents each pipe has contributed with. All percent values must be formatted to an integer (without rounding).
   * "The pool is **[x]**% full. Pipe 1: **[y]**%. Pipe 2: **[z]**%."
 * If the pool has overflown – with how many liters it has overflown for the given time – a floating-point number. 
   * "For **[x]** hours the pool overflows with **[y]** liters."
@@ -170,7 +170,7 @@ The input is read from the console and consists of an integer – **the number o
 
 ### Output Data
 
-**Two lines** have to be printed on the console: 
+**Two lines** have to be printed to the console: 
 * If Tom's time for games **is above the norm** for the current year: 
   * **On the first line** print: **"Tom will run away"**.
   * **On the second line** print the difference from the norm in the format: **"{H} hours and {M} minutes more for play"**.
@@ -228,7 +228,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050
 
 ## Task: Harvest
 
-In a vineyard with an area of X square meters, **40% of the harvest goes for wine production**. **Y kilograms of grapes** are extracted from a **1 square meters vineyard**. **2,5 kg of grapes** is needed for **1 liter of wine**. The wanted quantity of wine for sale is **Z liters**.
+In a vineyard with an area of X square meters, **40% of the harvest goes for wine production**. **Y kilograms of grapes** are extracted from a **1 square meter vineyard**. **2,5 kg of grapes** is needed for **1 liter of wine**. The wanted quantity of wine for sale is **Z liters**.
 
 Write a program that **calculates how much wine can be produced** and whether that quantity is enough. **If it is enough, the rest is divided between the vineyard workers equally**.
 
@@ -242,7 +242,7 @@ The input data is read from the console and consists of **exactly 4 lines**:
 
 ### Output Data
 
-The following has to be printed on the console:
+The following has to be printed to the console:
 * If the **produced** wine is **less than the needed quantity**:
   * **"It will be a tough winter! More {insufficient wine}} liters wine needed."**  
    </br> \* **The result** has to be **rounded down to the nearest integer**.
@@ -264,7 +264,7 @@ To solve the problem, we will read the input data. Then, we will write a few con
 
 #### Processing the Input Data and performing the calculations
 
-First, we have to **check** what **the input data** will be, so that we can choose what **variables** we will use. The code bellow is blured on purpose and it should be written by the reader:
+First, we have to **check** what **the input data** will be, so that we can choose what **variables** we will use. The code bellow is blurred on purpose and it should be written by the reader:
 
 ![](/assets/chapter-3-2-images/04.Harvest-01.png)
 
@@ -276,7 +276,7 @@ After having done these calculations, we are ready to **calculate the quantity o
 
 #### Checking the Conditions and Processing Output Data
 
-After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced, **is enough**. For that, we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
+After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced **are enough**. For that, we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
 
 If the condition returns **`true`**, from the task requirement we see that **on the first line** we have to print **the wine that has been produced from the harvest**. That value has to be **rounded down to the nearest integer**, which we will do by using both the method **`math.floor(…)`** and a **placeholder** when printing it.
 
@@ -311,7 +311,7 @@ The input data is read from **the console** and contains **exactly three lines**
 
 ### Output Data
 
-**Print one line** on the console: 
+**Print one line** to the console: 
 * If **the time is enough**:
   * **"Yes!{the hours left} hours left."**
 * If  **the time is NOT enough**:
@@ -329,7 +329,7 @@ To solve the problem, we will read the input data. Then, we will write a few con
 
 #### Reading the Input Data
 
-**First**, we have to read the input data to solve the problem. The code bellow is blured on purpose and it should be written by the reader:
+**First**, we have to read the input data to solve the problem. The code bellow is blurred on purpose and it should be written by the reader:
 
 ![](/assets/chapter-3-2-images/05.Firm-01.png)
 
