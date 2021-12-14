@@ -39,6 +39,7 @@ This book is available in several versions in different programming languages:
 * [Programming Basics with C# (English)](https://csharp-book.softuni.org)
 * [Programming Basics with Java (English)](https://java-book.softuni.org)
 * [Programming Basics with JavaScript (English)](https://js-book.softuni.org)
+* [Programming Basics with Python (English)](https://python-book.softuni.org)
 * [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
 * [Programming Basics with Java (Bulgarian)](https://java-book.softuni.bg)
 * [Programming Basics with JavaScript (Bulgarian)](https://js-book.softuni.bg)
@@ -50,11 +51,12 @@ This book is available in several versions in different programming languages:
 Brief information about this edition:
 * Title: **Programming Basics with Python**
 * Authors: **Svetlin Nakov & Team**
+  * Main authors: Boncho Vulkov, Hristo Minkov, Iliya Iliev, Martin Tsarev, Miglen Evlogiev, Milena Angelova, Mirela Damyanova, Nikolay Kostov, Petar Ivanov, Petya Gospodinova, Svetlin Nakov, Tanya Evtimova, Tanya Staneva, Teodor Kurtev, Ventsislav Petrov, Vladimir Damyanovski, Yordan Darakchiev
+  * Other contributors: Aleksander Krastev, Aleksander Lazarov, Angel Dimitriev, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Julieta Atanasova, Kalin Primov, Kristiyan Pamidov, Luboslav Lubenov, Marina Shideroff, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov
 * ISBN: **978-619-00-1403-4** (9786190014034)
 * Edition: **Faber Publishing, Sofia, Dec 2021** (expected)
 * License: **CC-BY-SA**
 * Source code: https://github.com/SoftUni/Programming-Basics-Book-Python-EN
-* All authors, editors and **project participants**: Boncho Valkov, Ventsislav Petrov, Vladimir Damyanovski, Iliya Iliev, Yordan Darakchiev, Martin Tsarev, Miglen Evlogiev, Milena Angelova, Mirela Damyanova, Nikolay Kostov, Petar Ivanov, Petya Gospodinova, Svetlin Nakov, Tanya Evtimova, Tanya Staneva, Teodor Kurtev, Hristo Minkov, Alexander Krastev, Alexander Lazarov, Angel Dimitriev, Vasko Viktorov, Ventsislav Petrov, Daniel Tsvetkov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Elena Rogleva, Zhivko Nedyalkova, Zhuliko Nedyalkova, Zhuliva , Ivelin Kirilov, Iskra Nikolova, Kalin Primov, Kristian Pamidov, Lyuboslav Lyubenov, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Svetlin Nakov, Stefka Vasileva, Teodor Kurtev, Tonyo Zhelev, Hristian Hristov, Hristo Hristov, Tsvetan Iliev, Julian Linev, Yanitsa Valeva , Marina Shiderova, Jordan Liubenov.
 
 ## Free Practical Programming Course
 
