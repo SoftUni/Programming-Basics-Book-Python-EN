@@ -482,7 +482,7 @@ Here&apos;s what the PyCharm environment looks like in action:</p>
 <p>Installing Python is quite simple. Just go to <a href="https://python.org/downloads" target="_blank">https://python.org/downloads</a> and download the latest version for your platform.</p>
 <p><img src="assets/chapter-1-images/Python-download.png" alt=""></p>
 <p>On <strong>Windows</strong> the installation is a straightforward process of clicking <strong>[Next]</strong>, <strong>[Next]</strong> and <strong>[Finish]</strong>. On <strong>Linux</strong>, you need to use a package installer like <code>sudo apt-get install python3</code>.</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
   <td>Use <b>Python version 3.x or newer</b>. Python 2 is an outdated technology and although it&apos;s accessible by default on many systems, it&apos;s problematic and many of the examples in this book won&apos;t work on it.</td>
 </tr></table>
 
@@ -544,17 +544,17 @@ print(euro)
 The Community version of PyCharm is freely distributed by JetBrains and can be downloaded from: <a href="https://www.jetbrains.com/pycharm/download" target="_blank">https://www.jetbrains.com/pycharm/download</a>.</p>
 <p>The installation is typical for Windows - simply use the <strong>[Next]</strong> and <strong>[Finish]</strong> buttons. There&apos;s a Linux version available as well.
 In the following paragraphs we&apos;ve described in detail <strong>every step of the PyCharm Community 2018 installation process</strong>. After we download the installation file and run it, we&apos;re greeted with the following screen:</p>
-<p><img src="assets/chapter-1-images/00.PyCharm-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/00.PyCharm-01.png" alt=""></p>
 <p>We hit <strong>[Next]</strong>, which takes us to the screen you see below:</p>
-<p><img src="assets/chapter-1-images/00.PyCharm-02.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/00.PyCharm-02.png" alt=""></p>
 <p>A window with PyCharm&apos;s installation panel is loaded:</p>
-<p><img src="assets/chapter-1-images/00.PyCharm-03.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/00.PyCharm-03.png" alt=""></p>
 <p>We tick the box which allows us to choose a shortcut depending on our operating system [<strong>.py</strong>] and [<strong>Download and install JRE x86 by JetBrains</strong>], and then click [<strong>Next</strong>]:</p>
-<p><img src="assets/chapter-1-images/00.PyCharm-04.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/00.PyCharm-04.png" alt=""></p>
 <p>Then we hit the <strong>[Install]</strong> button.</p>
-<p><img src="assets/chapter-1-images/00.PyCharm-05.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/00.PyCharm-05.png" alt=""></p>
 <p>After PyCharm installs, we&apos;ll see an information screen, where we can tick a box that says <strong>[Run PyCharm]</strong> which is going to start our IDE. After <strong>PyCharm has started</strong>, a screen similar to the one below will be displayed:</p>
-<p><img src="assets/chapter-1-images/01.Hello-python-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/01.Hello-python-01.png" alt=""></p>
 <p>That&apos;s it. We&apos;re ready to start working with PyCharm.</p>
 <h3 id="older-versions-of-pycharm"><a name="older-versions-of-pycharm" class="plugin-anchor" href="#older-versions-of-pycharm"><i class="fa fa-link" aria-hidden="true"></i></a>Older versions of PyCharm</h3>
 <p>We could also use older versions of PyCharm (version 2016 or 2012, for example) but it&apos;s <strong>not recommended</strong> since they don&apos;t have the newest capabilities for development and not all the examples in this book will run on them. </p>
@@ -571,9 +571,9 @@ In the following paragraphs we&apos;ve described in detail <strong>every step of
 <p>A single <strong>Python project</strong> consists of several <strong>Python source files</strong> (<strong>.py</strong>), configuration files and other resources. Every Python source file can have one or more <strong>classes</strong> and <strong>functions</strong>. <strong>Classes</strong> contain <strong>functions</strong>(actions), which are comprised of <strong>series of commands</strong>. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for good organization of our work files.</p>
 <h1 id="example-creating-a-console-program-hello-python"><a name="example-creating-a-console-program-hello-python" class="plugin-anchor" href="#example-creating-a-console-program-hello-python"><i class="fa fa-link" aria-hidden="true"></i></a>Example: creating a console program &apos;Hello Python&apos;</h1>
 <p>Let&apos;s get back to our console program. Now that we have PyCharm installed, we can start it. Then we will create a new project: <strong>[Create New Project]</strong>.</p>
-<p><img src="assets/chapter-1-images/01.Hello-python-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/01.Hello-python-01.png" alt=""></p>
 <p>We will give our project a <strong>meaningful name</strong>, such as <code>FirstStepsInProgramming</code>:</p>
-<p><img src="assets/chapter-1-images/01.Hello-python-02.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/01.Hello-python-02.png" alt=""></p>
 <p>PyCharm will create an <strong>empty project</strong> for us and we can add Python files to it. We&apos;ll add a new Python file - <strong>[File]</strong> or right click on our project -&gt; <strong>[New]</strong> -&gt; <strong>[Python File]</strong> and give it a meaningful name like <code>HelloPython.py</code>.</p>
 <p>We can adjust the version and location of the Python interpreter, which we&apos;re going to be using. We must have a Python interpreter, otherwise, we won&apos;t be able to execute the programs we&apos;ve written. It&apos;s possible to have more than one version of Python on the same computer but for ease of use, in the beginning <strong>just install the latest version and use that</strong>. If you haven&apos;t already installed Python, please do so before you continue.</p>
 <h3 id="writing-program-code"><a name="writing-program-code" class="plugin-anchor" href="#writing-program-code"><i class="fa fa-link" aria-hidden="true"></i></a>Writing Program Code</h3>
@@ -581,12 +581,12 @@ In the following paragraphs we&apos;ve described in detail <strong>every step of
 <pre><code class="lang-python">print(<span class="hljs-string">&apos;Hello Python&apos;</span>)
 </code></pre>
 <p>Here&apos;s what our program might look like in PyCharm:</p>
-<p><img src="assets/chapter-1-images/01.Hello-python-03.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/01.Hello-python-03.png" alt=""></p>
 <p>The <code>print(&apos;Hello Python&apos;)</code> command allows us to print the text message <code>Hello Python</code> on the console. The message needs to be surround with quotes, signifying text.</p>
 <p>This command is quite typical for programming: we call the function <code>print(...)</code> and pass the text literal <code>&apos;Hello Python&apos;</code> as its parameter.</p>
 <h3 id="starting-the-program"><a name="starting-the-program" class="plugin-anchor" href="#starting-the-program"><i class="fa fa-link" aria-hidden="true"></i></a>Starting the Program</h3>
 <p>To start the program we need to press <strong>[Ctrl + Shift + F10]</strong> or right click &#x2013; <strong>[Run]</strong>. If there are no errors, the program will execute. The result will be displayed on the console:</p>
-<p><img src="assets/chapter-1-images/01.Hello-python-04.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/01.Hello-python-04.png" alt=""></p>
 <p>Actually, the output from the program is the following text message:</p>
 <pre><code class="lang-python">Hello Python
 </code></pre>
@@ -594,9 +594,9 @@ In the following paragraphs we&apos;ve described in detail <strong>every step of
 <h3 id="testing-our-program-in-the-judge-system"><a name="testing-our-program-in-the-judge-system" class="plugin-anchor" href="#testing-our-program-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing our program in the Judge system</h3>
 <p>Testing the solutions to the problems in this book is completely automated via the <strong>Judge System</strong>&apos;s website: <a href="https://judge.softuni.org" target="_blank">https://judge.softuni.org</a>. The solutions are judged immediately by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.</p>
 <p>The program we just wrote can be tested here: <a href="https://judge.softuni.org/Contests/Practice/Index/1046#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1046#0</a>. In order to do that, simply paste the entire source code in the black field and choose <strong>Python code</strong> as is shown below:</p>
-<p><img src="assets/chapter-1-images/01.Hello-python-05.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/01.Hello-python-05.png" alt=""></p>
 <p>Then we need to send our solution by clicking the <strong>[Submit]</strong> button. The system returns a result in a few seconds which is displayed in the table of submitted solutions. If necessary, we can hit the &apos;Refresh&apos; button at the upper right-hand corner of the table of submitted solutions:</p>
-<p><img src="assets/chapter-1-images/01.Hello-python-06.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/01.Hello-python-06.png" alt=""></p>
 <p>In the table, the Judge System will display one of the following <strong>possible results</strong>:</p>
 <ul>
 <li>Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.<ul>
@@ -615,13 +615,13 @@ In the following paragraphs we&apos;ve described in detail <strong>every step of
 <pre><code class="lang-python">Print(<span class="hljs-string">&apos;Hello Python&apos;</span>)
 </code></pre>
 <p>In the example above, <code>print</code> is written incorrectly and the capital letter needs to be changed to lowercase.</p>
-<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td><td>In Python we don&apos;t use a <b>semicolon (;)</b> at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
+<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td><td>In Python we don&apos;t use a <b>semicolon (;)</b> at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
 
 <p>A missing <strong>quotation mark</strong> or <strong>closing bracket</strong> can also cause issues &#x2013; the program will either <strong>function improperly</strong> or <strong>not execute at all</strong>. Such mistakes are hard to notice, especially with larger amounts of code. Here&apos;s an example:</p>
 <pre><code class="lang-python">print(&apos;Hello Python)
 </code></pre>
 <p>This program will return an <strong>error</strong> and the code will be underlined to draw the programmer&apos;s attention to the missed closing bracket.</p>
-<p> <img src="assets/chapter-1-images/01.Hello-python-07.PNG" alt=""></p>
+<p> <img src="assets/chapter-1-images/01.Hello-python-07.png" alt=""></p>
 <h2 id="what-did-we-learn-in-this-chapter"><a name="what-did-we-learn-in-this-chapter" class="plugin-anchor" href="#what-did-we-learn-in-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What did we learn in this chapter?</h2>
 <p>First of all, we learned <strong>what programming is</strong> &#x2013; <strong>issuing commands written in a programming language</strong> which the machine can understand and carry out. We also found out what a <strong>computer program</strong> is &#x2013; a <strong>series of commands</strong> that aim to achieve a certain result. We gained some basic knowledge of the <strong>Python programming language</strong> and learned <strong>how to create simple console programs</strong> using PyCharm. Then we examined <strong>Python&apos;s program code structure</strong>. We looked at printing with the function <strong><code>print(...)</code></strong> and starting the program with <strong>[Ctrl + Shift + F10]</strong>. And last but not least, we now know how to test our code in <strong>SoftUni&apos;s Judge System</strong>.</p>
 <p>Top work! Let&apos;s now tackle the <strong>exercises</strong>. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let&apos;s do just that and put what we&apos;ve learned into practice.</p>
@@ -633,19 +633,19 @@ In the following paragraphs we&apos;ve described in detail <strong>every step of
 Note: you are <strong>not allowed to previously calculate the value</strong> (for example with Windows Calculator).<p></p>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Create a new Python file and name it <strong>Expression</strong>. Then we need to <strong>write the code</strong> which will calculate the numeric expression above and print its value on the console. Pass the expression to the <strong><code>print(...)</code></strong> command by writing it within its brackets:</p>
-<p><img src="assets/chapter-1-images/02.Expression-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/02.Expression-01.png" alt=""></p>
 <p>Start the program with <strong>[Ctrl + Shift + F10]</strong> and check whether the result matches the one from the picture:</p>
-<p><img src="assets/chapter-1-images/02.Expression-02.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/02.Expression-02.png" alt=""></p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1046#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1046#1</a>.
-<img src="assets/chapter-1-images/02.Expression-03.PNG" alt=""></p>
+<img src="assets/chapter-1-images/02.Expression-03.png" alt=""></p>
 <h3 id="problem--numbers-from-1-to-20"><a name="problem--numbers-from-1-to-20" class="plugin-anchor" href="#problem--numbers-from-1-to-20"><i class="fa fa-link" aria-hidden="true"></i></a>Problem : Numbers from 1 to 20</h3>
 <p>Write a <strong>Python console program</strong> that <strong>prints the numbers from 1 to 20</strong> on separate lines on the console.</p>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Create a Python file and name it <strong><code>nums_1_to_20.py</code></strong>:</p>
-<p><img src="assets/chapter-1-images/03.Numbers-1-to-20-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/03.Numbers-1-to-20-01.png" alt=""></p>
 <p>Inside the file write 20 <strong><code>print()</code></strong> commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a more clever way. Don&apos;t worry, there is, but we will mention it later on.</p>
-<p><img src="assets/chapter-1-images/03.Numbers-1-to-20-02.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/03.Numbers-1-to-20-02.png" alt=""></p>
 <p>Let&apos;s now <strong>start the program</strong> and check whether the result is what we&apos;re expecting:</p>
 <pre><code>1
 2
@@ -708,7 +708,7 @@ print(<span class="hljs-string">&apos;**&apos;</span>)
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Create a <strong>new Python file</strong>. We&apos;ll use the following commands to read our numbers:</p>
-<p><img src="assets/chapter-1-images/05.Rectangle-area-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/05.Rectangle-area-01.png" alt=""></p>
 <p>What&apos;s left is to finish the program so it can calculate the rectangle&apos;s area and print it. Pass the product of  <strong><code>a</code></strong> and <strong><code>b</code></strong> to the already familiar <strong><code>print(...)</code></strong> command. In programming we multiply using the <strong><code>*</code></strong> operator.</p>
 <h3 id="test-your-solution"><a name="test-your-solution" class="plugin-anchor" href="#test-your-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Test your solution</h3>
 <p>Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input and the program prints 14 &#x2013; their product, as output):</p>
@@ -745,7 +745,7 @@ print(<span class="hljs-string">&apos;**&apos;</span>)
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Create a <strong>new Python file</strong>. In order to read the number N (2 &#x2264; N &#x2264;100), we use the following code:</p>
-<p><img src="assets/chapter-1-images/06.Square-of-stars-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/06.Square-of-stars-01.png" alt=""></p>
 <p>Finish the program so that it prints a square made up of stars. You may need to use <strong><code>for</code></strong>-loops.</p>
 <p><strong>Caution</strong>: this task is more difficult than the rest and is presented to you at this point purposefully. It&apos;s marked with a star, in order to provoke you <strong>to look for information on the Internet</strong>. This is one of the most important skills you have to develop while you&apos;re learning programming. This is what you&apos;ll be doing every day if you work as a developer, so don&apos;t be scared, try it out. If you&apos;re having difficulties, you can also ask for help in the SoftUni forum: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
@@ -758,82 +758,82 @@ print(<span class="hljs-string">&apos;**&apos;</span>)
 <p>We will now build a <strong>basic web application</strong> and after that a simple <strong>graphical application</strong>, in order to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we&apos;ve created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.</p>
 <h2 id="graphical-application-numbers-summator"><a name="graphical-application-numbers-summator" class="plugin-anchor" href="#graphical-application-numbers-summator"><i class="fa fa-link" aria-hidden="true"></i></a>Graphical application: &apos;Numbers Summator&apos;</h2>
 <p>Write a <strong>graphical (GUI) application</strong> which <strong>calculates the sum of two numbers</strong>. After the numbers are entered in the first text fields, and the button <strong>[Calculate]</strong> is clicked, calculate their sum and display the result in the third text field colored in green:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-01.png" alt=""></p>
 <p>We&apos;ll use the standard Python graphical library <strong>TKInter</strong> for our application (<a href="https://wiki.python.org/moin/TkInter" target="_blank">https://wiki.python.org/moin/TkInter</a>. It enables us to create <strong>graphical (GUI) applications</strong> using the <strong>Python</strong> programming language.</p>
 <h2 id="empty-python-project"><a name="empty-python-project" class="plugin-anchor" href="#empty-python-project"><i class="fa fa-link" aria-hidden="true"></i></a>Empty Python Project</h2>
 <p>Create a <strong>new Python project</strong> named <strong>&quot;Summator-GUI&quot;</strong> in PyCharm:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-02.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-02.png" alt=""></p>
 <p>Add a new Python file named <strong>summator.py</strong> to the project. Then add <strong>tkinter</strong> as well:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-03.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-03.png" alt=""></p>
 <h4 id="creating-the-basis-for-the-gui-project"><a name="creating-the-basis-for-the-gui-project" class="plugin-anchor" href="#creating-the-basis-for-the-gui-project"><i class="fa fa-link" aria-hidden="true"></i></a>Creating the basis for the GUI project</h4>
 <p>Next we need to write the code for our graphical application, starting with the basis:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-04.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-04.png" alt=""></p>
 <p>We&apos;ll need the following components (controls):</p>
 <ul>
 <li><strong>Entry</strong> &#x2013; will enter the numbers that need to be calculated.</li>
 <li><strong>Label</strong> &#x2013; will serve to statically display text and the result of the calculation.</li>
 <li><strong>Button</strong> &#x2013; will calculate the sum of our numbers.</li>
 </ul>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-05.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-05.png" alt=""></p>
 <p>Let&apos;s <strong>initialize and visualize</strong> our controls (widgets):</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-06.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-06.png" alt=""></p>
 <p>And try to start our application with <strong>[Ctrl + Shift + F10]</strong> or right-click + <strong>[Run]</strong>. It should start but <strong>not function correctly</strong>, because we haven&apos;t specified what happens when the button is clicked:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-07.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-07.png" alt=""></p>
 <h4 id="application-logic"><a name="application-logic" class="plugin-anchor" href="#application-logic"><i class="fa fa-link" aria-hidden="true"></i></a>Application Logic</h4>
 <p>Now we&apos;re going to write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the <strong><code>calculate</code></strong> command upon the button&apos;s initialization:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-08.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-08.png" alt=""></p>
 <p>Then we write the <strong><code>calculate</code></strong> function&apos;s code:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-09.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-09.png" alt=""></p>
 <p>This code <strong>takes the first number</strong> from the <strong><code>firstNumberEntry</code></strong> field and stores it in the <strong><code>first_value</code></strong> <strong>variable</strong>. Then it stores the <strong>second number</strong> from the <strong><code>secondNumberEntry</code></strong> field in the <strong><code>second_value</code></strong> variable. It <strong>sums</strong> <strong><code>first_value</code></strong> and <strong><code>second_value</code></strong> and stores the result in the <strong><code>result</code></strong> variable. Finally, it <strong>displays the text representation</strong> of the <strong><code>result</code></strong> variable in the <strong><code>resultLabel</code></strong> field.</p>
 <p>Let&apos;s start the program again using <strong>[Ctrl + Shift + F10]</strong> or right click + <strong>[Run]</strong> and check whether it&apos;s working correctly. Try and calculate <strong>4</strong> + <strong>5</strong>, then <strong>-2.5</strong> + <strong>1.5</strong>:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-10.PNG" alt=""> <img src="assets/chapter-1-images/07.Numbers-sum-11.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-10.png" alt=""> <img src="assets/chapter-1-images/07.Numbers-sum-11.png" alt=""></p>
 <h4 id="managing-invalid-numbers"><a name="managing-invalid-numbers" class="plugin-anchor" href="#managing-invalid-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Managing invalid numbers</h4>
 <p>Entering <strong>invalid numbers</strong> like <strong>&apos;a&apos;</strong> and <strong>&apos;b&apos;</strong> seems to create issues:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-12.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-12.png" alt=""></p>
 <p>This is due to the <strong>conversion of the information entered in our text field into a number</strong>. If the <strong>value in the field isn&apos;t a number, our program returns an error</strong>. We can fix the code to resolve this issue:</p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-13.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-13.png" alt=""></p>
 <p>The code you see above <strong>intercepts number-handling errors</strong> (catches exceptions) and in case of an error, <strong>returns a <code>Not number/s</code></strong> value in the result field. If we start our program once more and enter an improper value, the <strong>result is <code>Not number/s</code></strong> and our program continues working as intended: </p>
-<p><img src="assets/chapter-1-images/07.Numbers-sum-14.PNG" alt=""> <img src="assets/chapter-1-images/07.Numbers-sum-15.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/07.Numbers-sum-14.png" alt=""> <img src="assets/chapter-1-images/07.Numbers-sum-15.png" alt=""></p>
 <p>Does that seem complicated? If it does, that&apos;s completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. There will come a time when this becomes easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and <strong>lots of practice</strong>.</p>
 <h3 id="web-application-numbers-summator"><a name="web-application-numbers-summator" class="plugin-anchor" href="#web-application-numbers-summator"><i class="fa fa-link" aria-hidden="true"></i></a>Web Application: &apos;Numbers Summator&apos;</h3>
 <p>Now we are going to create something even more complex, but also more interesting: a Web application that <strong>calculates the sum of two numbers</strong>. By entering two numbers in the first two text fields and clicking the <strong>[Calculate]</strong> button, <strong>their sum is calculated</strong> and the result is displayed in the third text field.</p>
 <p>Keep in mind that we are creating a <strong>Web-based application</strong>. This is an application that is accessible through a web browser, just like your favorite email or news website. The web application is going to have a server side (back-end), which is written in the Python language with <strong>Flask</strong> (<a href="https://flask.palletsprojects.com" target="_blank">https://flask.palletsprojects.com</a>) technology, and a client side (front-end), which is written in the <strong>HTML</strong> language (this is a language for visualization of information in a web browser). The Web application is expected to resemble the following:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-01.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-01.png" alt=""></p>
 <p>As opposed to console applications which read and write data in the form of text on the console, Web applications have a <strong>Web-based user interface</strong>. Web applications are <strong>loaded from some Internet address</strong> (URL) through a standard web browser. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. For our web application we are going to use <strong>Flask</strong>, a light Python library, which allows creating <strong>web applications with the programming language Python</strong>.</p>
 <p>Next are the steps for implementation of the &quot;Numbers Summator&quot; web application.</p>
 <h4 id="empty-python-solution"><a name="empty-python-solution" class="plugin-anchor" href="#empty-python-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Empty Python solution</h4>
 <p>We&apos;ll create an <strong>empty Python project</strong> in PyCharm to organize our application&apos;s code:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-02.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-02.png" alt=""></p>
 <p>Then we need to give the project a meaningful name like <strong>&quot;Summator-Web&quot;</strong>. We&apos;ll also set the Python interpreter to this one by default:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-03.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-03.png" alt=""></p>
 <h4 id="installing-flask"><a name="installing-flask" class="plugin-anchor" href="#installing-flask"><i class="fa fa-link" aria-hidden="true"></i></a>Installing Flask</h4>
 <p>Before we start writing code, we need to install Flask. Let&apos;s go to PyCharm&apos;s settings [<strong>File</strong>] -&gt; [<strong>Settings</strong>] then go to [<strong>Project: Sumator-Web</strong>] -&gt; [<strong>Project Interpreter</strong>]. There we need to click the <strong><code>+</code></strong> button:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-04.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-04.png" alt=""></p>
 <p>When you find Flask in the window that appears, click <strong>[Install package]</strong>:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-05.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-05.png" alt=""></p>
 <p>If all goes well, you&apos;ll receive the following message on the same screen:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-06.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-06.png" alt=""></p>
 <h4 id="creating-the-project-structure"><a name="creating-the-project-structure" class="plugin-anchor" href="#creating-the-project-structure"><i class="fa fa-link" aria-hidden="true"></i></a>Creating the Project Structure</h4>
 <p>Let&apos;s create the structure of our project. To do that, we&apos;re going to create a Python file named <strong><code>app.py</code></strong> where we will keep our program code. Then we need a folder which we&apos;ll call <strong>templates</strong> and an HTML file named <strong><code>index.html</code></strong> which will help visualize our content in the browser.</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-07.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-07.png" alt=""></p>
 <h4 id="writing-the-applications-logic"><a name="writing-the-applications-logic" class="plugin-anchor" href="#writing-the-applications-logic"><i class="fa fa-link" aria-hidden="true"></i></a>Writing the application&apos;s logic</h4>
 <p>Time to create our application&apos;s controls. The aim is to add fields where our numbers will be entered, a button for summing them and a place to display the result. We can achieve this by writing the following code in <code>templates/index.html</code>:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-08.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-08.png" alt=""></p>
 <p>This code creates a web form <code>&lt;form&gt;</code> with a field and a button <strong>[Calculate]</strong> which will send the data from the form to our server. Our <strong>Python</strong> <code>app.py</code> file will be responsible for data manipulation. Notice the curly braces &#x2013; they are used to switch between the <strong>HTML</strong> and <strong>Python languages</strong> and come from the <strong>Jinja2</strong> syntax used for creating dynamic web pages.</p>
 <p>After we&apos;ve written the following code in <code>app.py</code>, we can test if our program is working by running it:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-09.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-09.png" alt=""></p>
 <p>Next we need to write the code which will handle our <strong>request</strong>:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-10.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-10.png" alt=""></p>
 <p>If we click the calculation button now, our program will be able to sum the two digits from the form. Let&apos;s run the program again and test whether it&apos;s working correctly. Upon entering the numbers <strong>9</strong> and <strong>11</strong>, we&apos;ll receive a correct result:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-11.PNG" alt=""> </p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-11.png" alt=""> </p>
 <h4 id="managing-invalid-numbers"><a name="managing-invalid-numbers" class="plugin-anchor" href="#managing-invalid-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Managing invalid numbers</h4>
 <p>If we try entering <strong>invalid data</strong>, we&apos;ll receive an error:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-12.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-12.png" alt=""></p>
 <p>In order to handle the error, we need to write the following code:</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-13.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-13.png" alt=""></p>
 <p>This is not the best solution for error handling, but it will work.</p>
 <p>If we run the program one more time and test it by entering <strong>invalid data</strong>, we&apos;ll receive the <code>Not number/s.</code> message.</p>
-<p><img src="assets/chapter-1-images/08.Numbers-sum-web-14.PNG" alt=""></p>
+<p><img src="assets/chapter-1-images/08.Numbers-sum-web-14.png" alt=""></p>
 <p>Does all this seem scary? <strong>There&apos;s no need to be afraid</strong>. We have a lot more to learn, to reach the level of knowledge and skills required to write web-based applications with ease like in the example above, as well as much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. </p>
 <p>The purpose of both examples (graphical desktop application and web application) is not to teach you, but to allow you to dive a little deeper into programming, to <strong>fuel your interest</strong> towards software development and to inspire you to study hard. <strong>You have a lot more to learn</strong>, but it is interesting, isn&apos;t it?</p>
 
@@ -879,7 +879,7 @@ print(<span class="hljs-string">&apos;**&apos;</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"next":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"previous":{"title":"Preface","level":"1.2","depth":1,"path":"chapter-00-preface.md","ref":"chapter-00-preface.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-01-first-steps-in-programming.md","mtime":"2021-11-21T18:49:05.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-21T18:49:46.277Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"next":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"path":"chapter-02-simple-calculations.md","ref":"chapter-02-simple-calculations.md","articles":[]},"previous":{"title":"Preface","level":"1.2","depth":1,"path":"chapter-00-preface.md","ref":"chapter-00-preface.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-01-first-steps-in-programming.md","mtime":"2021-12-14T12:48:21.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-14T12:49:14.590Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
