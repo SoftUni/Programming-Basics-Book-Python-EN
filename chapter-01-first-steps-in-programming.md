@@ -64,7 +64,7 @@ Installing Python is quite simple. Just go to https://python.org/downloads and d
 
 On **Windows** the installation is a straightforward process of clicking **[Next]**, **[Next]** and **[Finish]**. On **Linux**, you need to use a package installer like `sudo apt-get install python3`.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
   <td>Use <b>Python version 3.x or newer</b>. Python 2 is an outdated technology and although it's accessible by default on many systems, it's problematic and many of the examples in this book won't work on it.</td>
 </tr></table>
 
@@ -256,7 +256,7 @@ Print('Hello Python')
 
 In the example above, `print` is written incorrectly and the capital letter needs to be changed to lowercase.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td><td>In Python we don't use a <b>semicolon (;)</b> at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td><td>In Python we don't use a <b>semicolon (;)</b> at the end of each command. Commands are separated by a <b>new line or by indentation</b>.</td></tr></table>
 
 A missing **quotation mark** or **closing bracket** can also cause issues – the program will either **function improperly** or **not execute at all**. Such mistakes are hard to notice, especially with larger amounts of code. Here's an example:
 ```python
