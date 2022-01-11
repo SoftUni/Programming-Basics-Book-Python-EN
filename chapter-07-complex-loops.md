@@ -182,7 +182,7 @@ while b ≠ 0
   oldB = b
   b = a % b
   a = oldB
-print а
+print a
 ```
 
 ### Example: Greatest Common Divisor (GCD)
@@ -247,7 +247,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057
 
 ### Example: Summing the Digits of a Number
 
-Sum up the digits of the integer **positive** number **n**. For example, if **n = 5634**, then the output would bе: 5 + 6 + 3 + 4 = **18**.
+Sum up the digits of the integer **positive** number **n**. For example, if **n = 5634**, then the output would be: 5 + 6 + 3 + 4 = **18**.
 
 We can use the following idea to solve the problem:
 
@@ -649,7 +649,7 @@ The above code defines the fields for **number of rows, number of columns**, for
 
 We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, in order to draw the corresponding image in the view, **`.PNG`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
 
-To generate random fruits, a **random number** between 0 and 8 is generated for each cell (see class **`random`** in Python). If the number is 0 or 1, put **`аpple`**, if it is between 2 and 3, put **`banana`**, etc. If the number is 8, set **`dynamite`**. Thus, fruits appear 2 times more often than dynamite. Here is the code:
+To generate random fruits, a **random number** between 0 and 8 is generated for each cell (see class **`random`** in Python). If the number is 0 or 1, put **`apple`**, if it is between 2 and 3, put **`banana`**, etc. If the number is 8, set **`dynamite`**. Thus, fruits appear 2 times more often than dynamite. Here is the code:
 
 ![](/assets/chapter-7-1-images/15.Fruits-10.png)
 
@@ -693,7 +693,7 @@ We leave it to more avid readers to implement more complex behaviors, for exampl
 
 ![](/assets/chapter-7-1-images/15.Fruits-01.png)
  
-For now, nothing is happening at **"End of Game"**.If the player hits dynamite, the application notes that the game is over **(`game_оver = Тrue`)**, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:
+For now, nothing is happening at **"End of Game"**.If the player hits dynamite, the application notes that the game is over **(`game_over = True`)**, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:
 
 ![](/assets/chapter-7-1-images/15.Fruits-15.png)
 

@@ -122,7 +122,7 @@ we will receive the following result:
 ```
 600
 ```
-How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will receive 3 elements: `'100'`, `'200'` и `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
+How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will receive 3 elements: `'100'`, `'200'`, and  `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
 
 
 ## Reading Floating Point Numbers

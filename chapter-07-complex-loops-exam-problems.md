@@ -27,7 +27,6 @@ Write a program that enters two integers **n** and **l** and generates in alphab
 
 ### Input Data
 
-Входът се чете от конзолата и се състои от **две цели числа: n** и **l** в интервала [**1 … 9**], по едно на ред.
 The input is read from the console and consists of **two integers: n** and **l** within the range [**1 … 9**], one per line.
 
 ### Output Data
@@ -54,7 +53,7 @@ We can split the solution of the problem into 3 parts:
 
 #### Reading and Processing the Input Data
 
-За For **reading** of **input** data we will declare two integer variables **`int`**: **`n`** and **`l`**.
+For **reading** of **input** data we will declare two integer variables **`int`**: **`n`** and **`l`**.
 
 ![](/assets/chapter-7-2-images/01.stupid-password-generator-1.png)
 
@@ -66,7 +65,7 @@ One of the ways to find a solution for this problem is to create **five** **`for
 
 **Did you know that…?** 
 
-* For convenience we can use the ASCII value of the symbol **"а"** directly in the declarations of the loops - **`97`**:
+* For convenience we can use the ASCII value of the symbol **"a"** directly in the declarations of the loops - **`97`**:
 
 ![](/assets/chapter-7-2-images/01.stupid-password-generator-3.png)
 
@@ -229,7 +228,7 @@ Print on the console **all special numbers**, separated by **space**.
 
 ### Hints and Guidelines
 
-Solve the problem by yourself using what you learned from the previous two problems. Keep in mind the difference between operators for **integer division `//`** и **division with remainder `%`** in Python.
+Solve the problem by yourself using what you learned from the previous two problems. Keep in mind the difference between operators for **integer division `//`** and **division with remainder `%`** in Python.
 
 ### Testing in the Judge System
 
@@ -259,7 +258,7 @@ Print on the console **all integer numbers**, that is the result of the above-me
 
 |Input|Output|Comments|
 |---|---|---|
-|132|129 126 123<br>120 119 121<br>123 120 119<br>121 123 120|(1 + 3) = 4 и (1 + 2) = 3 &rarr; 4 lines with 3 numbers in each<br>Input number 132 <br>132 &rarr; division by 3 &rarr; 132 - 3 =<br>= 129 &rarr; division by 3 &rarr; 129 - 3 = <br>= 126 &rarr; division by 3 &rarr; 126 - 3 = <br>= 123 &rarr; division by 3 &rarr; 123 - 3 = <br>= 120 &rarr; division by 5 &rarr; 120 - 1 = <br>..... 121 &rarr; neither by 5, nor 3 &rarr; 121 + 2 = 123|
+|132|129 126 123<br>120 119 121<br>123 120 119<br>121 123 120|(1 + 3) = 4 and (1 + 2) = 3 &rarr; 4 lines with 3 numbers in each<br>Input number 132 <br>132 &rarr; division by 3 &rarr; 132 - 3 =<br>= 129 &rarr; division by 3 &rarr; 129 - 3 = <br>= 126 &rarr; division by 3 &rarr; 126 - 3 = <br>= 123 &rarr; division by 3 &rarr; 123 - 3 = <br>= 120 &rarr; division by 5 &rarr; 120 - 1 = <br>..... 121 &rarr; neither by 5, nor 3 &rarr; 121 + 2 = 123|
 
 |Input|Output|Comments|
 |---|---|---|

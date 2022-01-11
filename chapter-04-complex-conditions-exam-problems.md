@@ -227,7 +227,7 @@ After that, we need to apply a condition to check the value of the **season**. B
 
 ![](/assets/chapter-4-2-images/02.Trip-03.png)
 
-We can optimize the conditionал check by assigning a **default value** and then checking one variant less. **This saves one logical step**. For example, this block:
+We can optimize the conditional check by assigning a **default value** and then checking one variant less. **This saves one logical step**. For example, this block:
 
 ![](/assets/chapter-4-2-images/02.Trip-04.png)
 
@@ -369,7 +369,7 @@ The input data will be read from the **console** and contains **exactly 3 lines*
 - If the **budget is sufficient**:
   - "**Yes! You have {N} leva left.**" – where **N is the amount of remaining money** for the group.
 - If the **budget is NOT sufficient**:
-  - "**Not enough money! You need {М} leva.**" – where **М is the insufficient amount**.
+  - "**Not enough money! You need {M} leva.**" – where **M is the insufficient amount**.
 
 **The amounts** must be **formatted up to the second digit after the decimal point**.
 
@@ -381,7 +381,7 @@ The input data will be read from the **console** and contains **exactly 3 lines*
 
 | Input | Output | Explanations |
 |---|---|---|
-|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 човека: 40%** of the budget are spent on **transportation**.<br>Remaining amount: 30000 – 12000 = 18000.<br>Category **VIP**: the ticket **costs** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**The amount is not enough** 24499.51 - 18000 = **6499.51**|
+|30000<br>VIP<br>49|Not enough money! You need 6499.51 leva.|**49 people: 40%** of the budget are spent on **transportation**.<br>Remaining amount: 30000 – 12000 = 18000.<br>Category **VIP**: the ticket **costs** 499.99 * 49.<br>**24499.510000000002** < 18000.<br>**The amount is not enough** 24499.51 - 18000 = **6499.51**|
 
 ### Hints and Guidelines
 

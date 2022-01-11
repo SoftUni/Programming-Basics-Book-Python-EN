@@ -201,7 +201,7 @@ Two numbers are given: **start** and **end**. Write a program that **generates a
 **The weight of the letters** is calculated as follows:
 
 ```python 
-weight('а') = 5;
+weight('a') = 5;
 weight('b') = -12;
 weight('c') = 47;
 weight('d') = 7;

@@ -22,7 +22,7 @@ The free course for beginners in SoftUni is suitable for **school students** (of
 
 For this book we chose **Python**, because it is a **modern** language for high-level programming and at the same time it is easy to learn and suitable for **beginners**. As a use **Python** is **widespread**, with a well-developed ecosystem, numerous libraries and technological frameworks, and therefore gives many **prospects** for development. **Python** combines the paradigms of procedural, functional and object-oriented programming in a modern way with easy-to-use syntax. In the book, we'll use the **Python language** and the **PyCharm** development environment, which is available for free from JetBrains.
 
-As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **Python**. The book can also be found translated in other programming languages such as C# (see https://csharp-book.softuni.bg), Java (see https://java-book.softuni.bg), JavaScript (see https://js-book.softuni.bg) и C++ (see https://cpp-book.softuni.bg).
+As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **Python**. The book can also be found translated in other programming languages such as C# (see https://csharp-book.softuni.bg), Java (see https://java-book.softuni.bg), JavaScript (see https://js-book.softuni.bg) and C++ (see https://cpp-book.softuni.bg).
 
 ## The book in other programming languages: C#, Java, JavaScript, C++, PHP
 

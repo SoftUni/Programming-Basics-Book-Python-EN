@@ -81,7 +81,7 @@ The problem is similar to the last one. The difference here is that we need to f
 
 ![](/assets/chapter-6-1-images/03.Square-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#2](https://judge.softuni.org/Contests/Practice/Index/1055#2).
 

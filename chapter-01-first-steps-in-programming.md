@@ -74,7 +74,7 @@ After the Python interpreter has been installed, we can **get it started** and h
 ![](/assets/chapter-1-images/Python-3.7-Shell.png)
 
 ### Working with the Python Interpreter
-Python is an **interpreter** and it can be used in **command mode**: we write a **command**, it's executed and we receive the **result**. The simplest command we can use is to make Python calculate а numeric expression – `2 + 3`, for example: 
+Python is an **interpreter** and it can be used in **command mode**: we write a **command**, it's executed and we receive the **result**. The simplest command we can use is to make Python calculate a numeric expression – `2 + 3`, for example: 
 
 ![](/assets/chapter-1-images/Python-shell-calculate-2-plus-3.png)
 
