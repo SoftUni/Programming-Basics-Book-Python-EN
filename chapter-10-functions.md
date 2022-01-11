@@ -22,7 +22,7 @@ A function can be called as many times as we need to solve our problem. This pre
 We will look at two types of functions – "**basic** functions" (without parameters) and "**complex**" functions (with parameters).
 
 <table>
-<tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>In the object-oriented programming (which is out of the scope of this book) the functions are part of higher-level objects called <b>classes</b>, where functions are called <b>methods</b>. In other programming languages the functions are called <b>procedures</b>. </td>
 </tr>
 </table>
@@ -66,7 +66,7 @@ Within the definition of a function, it is important to follow this exact **stru
 When declaring a given variable in the body of a function, it is called a local variable for the function. The scope of the variable in which it exists and can be used starts with the line on which we have defined it and spans to the last instruction, part of the function’s body. This space of definition is called **field of scope** for the variable. 
 
 <table>
-<tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Some programming languages such as C or C++ distinguish between the <b>declaration</b> and the <b>definition</b> of a function. The <strong>declaration</strong> of a function informs the compiler or the interpreter that a function with its given name exists without imposing implementation. The <strong>definition</strong> of a function brings in the implementation of the function’s body. Within the <strong>Python</strong> language this division into two steps does not exist, which in turn means that each function which is declared must also include some functionality (in the body).</td>
 </tr>
 </table>
@@ -272,7 +272,7 @@ After the **`return`** keyword in a given function, the execution of the functio
 
 ![](/assets/chapter-10-images/10.Return-operator-03.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" />
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" />
 </td><td>In programming it is meaningless to place two <code><b>return</b></code> keywords one after another, as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
 </table>
 

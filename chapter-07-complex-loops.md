@@ -261,7 +261,7 @@ We can use the following idea to solve the problem:
 
 ![](/assets/chapter-7-1-images/09.Sum-digits-01.png)
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px;" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;" /></td>
 <td><code><strong>n % 10</strong></code>: <b>returns</b> the last digit of the number <code><strong>n</strong></code>.<br>
 <code><strong>n // 10</strong></code>: <b>deletes</b> the last digit of <code><strong>n</strong></code>.</td>
 </tr></table>
@@ -286,7 +286,7 @@ An **infinite loop** **runs infinitely** the code of its body. With the infinite
 
 We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **`break`** operator comes in handy in this situation.
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
@@ -311,7 +311,7 @@ Here are some examples of composite numbers:
 * If it is divisible by any of the numbers, it is **composite**.
 * If it is not divisible by any of the numbers, then it is **prime**.
 
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, to check the divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
@@ -380,7 +380,7 @@ If we leave our function that way, our result will be as follows:
 
 Why is this so? As we can see, the result is **missing "1 1"**. When the function reaches the point when **`i = 1`** and **`j = 1`**, it enters the **`if`** check and executes the **`break`** operation. This way, it **exits the inner loop**, but then continues the execution of the **outer loop**. **`i`** increases, the function enters the inner loop and prints the result.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td> When we use the <b><code>break</code></b> <b>operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
@@ -647,7 +647,7 @@ Now we need to prepare the fruits for drawing in the view. Add the following cod
 
 The above code defines the fields for **number of rows, number of columns**, for **fruit table** (playing field), for the **points** accumulated by the player and information whether the game is active or  **finished** (field **`gameOver`**). The playing field is 9 columns in 3 rows and contains text for each field: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**. The main action **`index()`** prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).
 
-We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, in order to draw the corresponding image in the view, **`.PNG`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
+We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, in order to draw the corresponding image in the view, **`.png`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
 
 To generate random fruits, a **random number** between 0 and 8 is generated for each cell (see class **`random`** in Python). If the number is 0 or 1, put **`apple`**, if it is between 2 and 3, put **`banana`**, etc. If the number is 8, set **`dynamite`**. Thus, fruits appear 2 times more often than dynamite. Here is the code:
 
@@ -655,7 +655,7 @@ To generate random fruits, a **random number** between 0 and 8 is generated for 
 
 Drawing the fruit in **`index.html`**:
 
-In order to **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field  **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.PNG" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
+In order to **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field  **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.png" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
 
 ![](/assets/chapter-7-1-images/15.Fruits-11.png)
 

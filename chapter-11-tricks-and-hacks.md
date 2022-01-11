@@ -105,7 +105,7 @@ In programming variables keep data, and for the code to be more understandable, 
 * You should be careful with uppercase and lowercase letters, because Python distinguishes them. For example, **`age`** and **`Age`** are different variables.
 * The names of the variables **cannot coincide with keywords** in the Python language, for example **`for`** is an invalid name for a variable.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Although using capital letters in the names of variables is allowed, <strong>in Python it is not recommended</strong> and is considered a bad style of naming.</td>
 </tr></table>
 

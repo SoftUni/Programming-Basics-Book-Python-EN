@@ -336,7 +336,7 @@ Let's write a program that prints **the day of the week** depending on the **giv
 
 ![](/assets/chapter-4-1-images/09.Day-of-week-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>It is a good practice</b> to put at the <b>first</b> place those <b><code>case</code> statements</b> that process <b>the most common situations</b> and leave the <b><code>case</code> constructions</b> processing <b>the rarer situations</b> at <b>the end, before the <code>default</code> construction</b>. Another <b>good practice</b> is to <b>arrange the <code>case</code> labels</b> in <b>ascending order</b>, regardless of whether they are integral or symbolic.</td>
 </tr></table>
 
@@ -458,7 +458,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 
-<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.PNG" /></p>
+<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-01.png" /></p>
 
 Write a program that enters an integer **h** and the coordinates of a given **point {x, y}** (integers) and prints whether the point is inside the figure (**inside**), outside of the figure (**outside**) or on any of the borders of the figure (**border**).
 
@@ -490,7 +490,7 @@ A possible logic for solving the task (not the only correct one):
 
 * We might split the figure into **two rectangles** with a common side:
 
-<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.PNG" /></p>
+<p align="center"><img src="assets/chapter-4-1-images/13.Point-in-the-figure-03.png" /></p>
 
 * A point is **outer (outside)** for the figure when it is **outside** both of the rectangles.
 * A point is **inner (inside)** for the figure if it is inside one of the rectangles (excluding their borders) or lies on their common side.

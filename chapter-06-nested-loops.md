@@ -158,7 +158,7 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
 </tr></table>
 
@@ -260,7 +260,7 @@ We read the input number **`n`** from the console and write its value in a varia
 
 ![](/assets/chapter-6-1-images/09.House-02.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td><b>It is very important to check if the input data is correct!</b> In these tasks, it is not a problem to directly convert the data from the console into type <b><code>int</code></b>, because it is said that we will be given valid integers. If you are making more complex programs, it is a good practice to check the data. What will happen if instead of a number the user inputs the character "A"?</td>
 </tr></table>
 

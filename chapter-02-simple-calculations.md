@@ -549,7 +549,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 A rectangle is given with **coordinates of its two opposite corners**. You have to calculate its **area and perimeter**:
 
-<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.PNG" width="250" height="200" />
+<img alt="rectangleArea" src="/assets/chapter-2-1-images/00.Rectangle-area-01.png" width="250" height="200" />
 
 For this exercise, we have to take into consideration that by subtracting the smaller **`x`** from the bigger **`x`** we can get the long side of the rectangle. Analogically, by subtracting the smaller **`y`** from the bigger **`y`**, we can get the height of the rectangle. Finally, we have to multiply them. Here is an example implementation of the described logic:
 
@@ -655,7 +655,7 @@ Let's test it with floating-point numbers, for example **2.5**:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-05.png)
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Depending on the regional settings of the operation system, it is possible instead of using a <b>decimal point</b> (US settings), to use a <b>decimal comma</b> (BG settings).</td>
 </tr></table>
 

@@ -21,7 +21,7 @@ Let **the Tribonacci sequence** start with **1**, **2** and **3**. This means th
 
 At the same time, let the **the numbers in the spiral** begin with **5** and the spiral increases by **2** at each step.
 
-<img src="assets/chapter-9-1-images/01.Crossing-sequences-01.PNG" style="float: right; height: 300px;" />
+<img src="assets/chapter-9-1-images/01.Crossing-sequences-01.png" style="float: right; height: 300px;" />
 
 Then **the second sequence** will contain the numbers 5, 7, 9, 13, 17, 23, 29, 37 and so on. We see that **37**  is the first number to be found both in the Tribonacci sequence and in the spiral one, and that is the desired solution to the problem.
 

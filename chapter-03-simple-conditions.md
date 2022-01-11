@@ -110,7 +110,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 
 By pressing the **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other structures) and we want to perform a series of operations, we put them in a block after the condition.
 
-<table><tr><td><img src="/assets/alert-icon.PNG" style="max-width:50px" /></td>
+<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution.</td>
 </tr></table>
 

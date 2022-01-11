@@ -78,7 +78,7 @@ We initially **store** one **variable** that will be used multiple times. This c
 
 <table>
 <tr>
-<td width=10%><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td width=10%><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td><strong>Avoiding repetitive code</strong> (centralization of the program logic) in the tasks that we examine in the present book may look unnecessary at first glance, but this approach is very important upon building large applications in a real work environment, and its exercising in an initial stage of training will help you build a quality programming style.
 </td>
 </tr>
@@ -154,7 +154,7 @@ To calculate the **number of tiles** that are needed, **we divide the floor area
 
 <table>
 <tr>
-<td width="10%"><img src="assets/alert-icon.PNG" style="max-width:50px" /></td>
+<td width="10%"><img src="assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Pay attention that the requirements state that we should round up the number of tiles, obtained upon the division, up to the higher number, and then we should add 5. Find more information about the system functionality that does that: <code><strong>math.ceil(…)</strong></code>.
 </td>
 </tr>
