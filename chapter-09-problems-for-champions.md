@@ -37,7 +37,7 @@ Input data will always be valid and will always be in the format described. No n
 
 The result should be printed on the console.
 
-On the single line of the output, you must print **the lowest number that occurs in both sequences**.  If there is no number in the **range** [**1 … 1 000 000**],which can be found in both sequences, print "**No**".
+On the single line of the output, you must print **the lowest number that occurs in both sequences**.  If there is no number in the **range** [**1 … 1 000 000**], which can be found in both sequences, print "**No**".
 
 ### Constraints
 
@@ -95,7 +95,7 @@ We will do a **linear**, search in the second array, and we will leave the more 
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-06.png)
 
-The previous solution to the problem uses arrays to store the values. Arrays are not needed to solve the problem. There is an **alternative solution**,  that generates the numbers and works directly with them instead of keeping them in an array. On **every step** we can check whether **the numbers in the two sequences match**. If this is the case, we will print the number on the console and terminate the execution of our program. Otherwise, we will see the current number of *which sequence is the smaller one and we will generate the next one where we are "lagging"**. The idea is that **we will generate numbers from the sequence that is "behind"**,until we skip the current number of the other sequence and then vice versa, and if we find a match in the meantime, we will terminate the execution:
+The previous solution to the problem uses arrays to store the values. Arrays are not needed to solve the problem. There is an **alternative solution**,  that generates the numbers and works directly with them instead of keeping them in an array. On **every step** we can check whether **the numbers in the two sequences match**. If this is the case, we will print the number on the console and terminate the execution of our program. Otherwise, we will see the current number of *which sequence is the smaller one and we will generate the next one where we are "lagging"**. The idea is that **we will generate numbers from the sequence that is "behind"**, until we skip the current number of the other sequence and then vice versa, and if we find a match in the meantime, we will terminate the execution:
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-07.png)
 
@@ -173,7 +173,7 @@ Each date consists of exactly **8 characters (digits)** - **2 for the day** (**`
 
 Let's also explain one of the more interesting lines here. Let's take the second digit of the year for example (**`d6`**). We divide the year by 100, and we take a remainder of 10. What do we do? First, we eliminate the last 2 digits of the year by dividing by 100 (Example: **`2018 / 100 = 20`**). With the remainder of 10, we take the last digit of the resulting number (**`20 % 10 = 0`**) and so we get 0, which is the second digit of 2018.
 
-What remains is to do the calculation that will give us the magical weight of a given date. In order **not to write all multiplications**, as shown in the example, we will simply apply a **grouping**. What we need to do is multiply each digit with those that follow it. Instead of typing **`d1 * d2 + d1 * d3 + … + d1 * d8`**,we can shorten this expression to **`d1 * (d2 + d3 + … + d8)`**, for grouping when we have multiplication and summing up. Applying the same simplification for the other multiplications, we get the following formula:
+What remains is to do the calculation that will give us the magical weight of a given date. In order **not to write all multiplications**, as shown in the example, we will simply apply a **grouping**. What we need to do is multiply each digit with those that follow it. Instead of typing **`d1 * d2 + d1 * d3 + … + d1 * d8`**, we can shorten this expression to **`d1 * (d2 + d3 + … + d8)`**, for grouping when we have multiplication and summing up. Applying the same simplification for the other multiplications, we get the following formula:
 
 ![](/assets/chapter-9-1-images/02.Magic-dates-06.png)
 
@@ -196,7 +196,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1061
 
 ## Problem: Five special letters
 
-Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`**,so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
+Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`**, so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
 
 **The weight of the letters** is calculated as follows:
 
