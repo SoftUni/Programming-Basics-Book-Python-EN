@@ -451,7 +451,7 @@
     <span class="hljs-keyword">else</span>:
         <span class="hljs-comment"># body</span>
 </code></pre>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>Remember that it is not a good practice to write <strong>deeply nested conditional statements</strong> (with more than three levels of nesting). Avoid nesting of more than three conditional statements inside one another. This complicates the code and makes its reading and understanding difficult.</td>
 </tr></table>
 
@@ -548,7 +548,7 @@
 </tbody>
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start writing code.</td></tr></table>
 
 <h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing the Input Data</h4>
@@ -580,7 +580,7 @@
 <p><img src="assets/chapter-4-2-images/01.On-time-for-the-exam-08.png" alt=""></p>
 <p>Actually, for the task, printing the result <strong>on the console</strong> can be done at a much earlier stage &#x2013; during the calculations. This, however, is not a very good practice. <strong>Why?</strong></p>
 <p>Let&apos;s examine the idea that our code is not 10 lines, but 100 or 1000! One day, printing the result will not be done on the console, but will be written in a <strong>file</strong> or displayed as a <strong>web application</strong>. Then, how many places in the code you will make changes at, due to such a correction? Are you sure you won&apos;t miss some places?</p>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>Always consider the code that contains logical calculations as a separate piece, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
@@ -662,7 +662,7 @@
 <h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing the Input Data</h4>
 <p>While reading the requirements carefully, we understand that we expect <strong>two</strong> lines of input data. Our first parameter is a <strong>real number</strong>, for which we need to pick an appropriate variable type. We can pick <strong><code>float</code></strong> as a variable for the budget and &#x2013; <strong><code>string</code></strong> for the season: </p>
 <p><img src="assets/chapter-4-2-images/02.Trip-01.png" alt=""></p>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>Always take into consideration what <strong>value type</strong> is passed in the input data, as well as what type these need to be converted to, for the program conditions to work properly!</td>
 </tr></table>
 
@@ -678,7 +678,7 @@
 <p>Based on the way we arrange the logical scheme (the order in which we will check the border values), we will have more or fewer conditions in the solution. <strong>Think why!</strong></p>
 <p>After that, we need to apply a condition to check the value of the <strong>season</strong>. Based on it, we will determine what percentage of the budget will be spent, as well as where the programmer will stay &#x2013; in a <strong>hotel</strong> or a <strong>camp</strong>. This is a sample code that may be used to implement the above idea:</p>
 <p><img src="assets/chapter-4-2-images/02.Trip-03.png" alt=""></p>
-<p>We can optimize the condition&#x430;&#x43B; check by assigning a <strong>default value</strong> and then checking one variant less. <strong>This saves one logical step</strong>. For example, this block:</p>
+<p>We can optimize the conditional check by assigning a <strong>default value</strong> and then checking one variant less. <strong>This saves one logical step</strong>. For example, this block:</p>
 <p><img src="assets/chapter-4-2-images/02.Trip-04.png" alt=""></p>
 <p>can be shortened like so:</p>
 <p><img src="assets/chapter-4-2-images/02.Trip-05.png" alt=""></p>
@@ -819,7 +819,7 @@
 </ul>
 </li>
 <li>If the <strong>budget is NOT sufficient</strong>:<ul>
-<li>&quot;<strong>Not enough money! You need {&#x41C;} leva.</strong>&quot; &#x2013; where <strong>&#x41C; is the insufficient amount</strong>.</li>
+<li>&quot;<strong>Not enough money! You need {M} leva.</strong>&quot; &#x2013; where <strong>M is the insufficient amount</strong>.</li>
 </ul>
 </li>
 </ul>
@@ -853,7 +853,7 @@
 <tr>
 <td>30000<br>VIP<br>49</td>
 <td>Not enough money! You need 6499.51 leva.</td>
-<td><strong>49 &#x447;&#x43E;&#x432;&#x435;&#x43A;&#x430;: 40%</strong> of the budget are spent on <strong>transportation</strong>.<br>Remaining amount: 30000 &#x2013; 12000 = 18000.<br>Category <strong>VIP</strong>: the ticket <strong>costs</strong> 499.99 <em> 49.<br><strong>24499.510000000002</strong> &lt; 18000.<br><strong>The amount is not enough</strong> 24499.51 - 18000 = <em>*6499.51</em></em></td>
+<td><strong>49 people: 40%</strong> of the budget are spent on <strong>transportation</strong>.<br>Remaining amount: 30000 &#x2013; 12000 = 18000.<br>Category <strong>VIP</strong>: the ticket <strong>costs</strong> 499.99 <em> 49.<br><strong>24499.510000000002</strong> &lt; 18000.<br><strong>The amount is not enough</strong> 24499.51 - 18000 = <em>*6499.51</em></em></td>
 </tr>
 </tbody>
 </table>
@@ -1020,7 +1020,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"next":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"previous":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-04-complex-conditions-exam-problems.md","mtime":"2022-01-05T11:37:27.490Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-05T11:38:08.566Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"next":{"title":"5.1. Loops","level":"1.10","depth":1,"path":"chapter-05-loops.md","ref":"chapter-05-loops.md","articles":[]},"previous":{"title":"4.1. More Complex Conditions","level":"1.8","depth":1,"path":"chapter-04-complex-conditions.md","ref":"chapter-04-complex-conditions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-04-complex-conditions-exam-problems.md","mtime":"2022-01-17T16:26:11.997Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-17T16:26:54.473Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

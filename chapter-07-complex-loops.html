@@ -530,7 +530,7 @@
 <li>We declare a variable <strong><code>num</code></strong>, to which we assign the integer, received from the console.</li>
 <li>For a loop condition, we put a <strong><code>True</code></strong> expression, if the number <strong>is not</strong> in the range specified in the problem description.</li>
 <li>In the <strong>body of the loop</strong>: we print the message &quot;<strong>Invalid number!</strong>&quot; on the console, afterwards we assign a new value to <strong><code>num</code></strong> (the next line from the console input).</li>
-<li>Once we have validated the entered number,we print its value outside the body of the loop.</li>
+<li>Once we have validated the entered number, we print its value outside the body of the loop.</li>
 </ul>
 <p>Here is a sample implementation of the algorithm using a <strong><code>while</code> loop</strong>:</p>
 <p><img src="assets/chapter-7-1-images/06.Numbers-in-range-1..100-01.png" alt=""></p>
@@ -592,7 +592,7 @@
   oldB = b
   b = a % b
   a = oldB
-<span class="hljs-keyword">print</span> &#x430;
+<span class="hljs-keyword">print</span> a
 </code></pre>
 <h3 id="example-greatest-common-divisor-gcd"><a name="example-greatest-common-divisor-gcd" class="plugin-anchor" href="#example-greatest-common-divisor-gcd"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Greatest Common Divisor (GCD)</h3>
 <p>Enter the <strong>integers</strong> <strong>a</strong> and <strong>b</strong> and find <strong>GCD(a, b)</strong>.</p>
@@ -638,7 +638,7 @@
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#7</a>.</p>
 <h3 id="example-summing-the-digits-of-a-number"><a name="example-summing-the-digits-of-a-number" class="plugin-anchor" href="#example-summing-the-digits-of-a-number"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Summing the Digits of a Number</h3>
-<p>Sum up the digits of the integer <strong>positive</strong> number <strong>n</strong>. For example, if <strong>n = 5634</strong>, then the output would b&#x435;: 5 + 6 + 3 + 4 = <strong>18</strong>.</p>
+<p>Sum up the digits of the integer <strong>positive</strong> number <strong>n</strong>. For example, if <strong>n = 5634</strong>, then the output would be: 5 + 6 + 3 + 4 = <strong>18</strong>.</p>
 <p>We can use the following idea to solve the problem:</p>
 <ul>
 <li>We declare the variable <strong><code>n</code></strong>, to which we assign a value equal to the number received by the user.</li>
@@ -652,7 +652,7 @@
 <li>outside the body of the loop, we print the final value of the sum.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/09.Sum-digits-01.png" alt=""></p>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px;"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px;"></td>
 <td><code>n % 10</code>: <b>returns</b> the last digit of the number <code>n</code>.<br>
 <code>n // 10</code>: <b>deletes</b> the last digit of <code>n</code>.</td>
 </tr></table>
@@ -666,7 +666,7 @@
 <p><img src="assets/chapter-7-1-images/00.Infinite-while-loop-01.png" alt=""></p>
 <h3 id="the-break-operator"><a name="the-break-operator" class="plugin-anchor" href="#the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>The Break Operator</h3>
 <p>We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The <strong><code>break</code></strong> operator comes in handy in this situation.</p>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>The operator <b><code>break</code></b> stops a loop&apos;s execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
@@ -687,7 +687,7 @@
 <li>If it is divisible by any of the numbers, it is <strong>composite</strong>.</li>
 <li>If it is not divisible by any of the numbers, then it is <strong>prime</strong>.</li>
 </ul>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>We can optimize the algorithm by instead of checking until <code>n-1</code>, to check the divisors only until <code>&#x221A;n</code>. Think of the reasons why this is so.</td>
 </tr></table>
 
@@ -734,7 +734,7 @@
 <p>If we leave our function that way, our result will be as follows:</p>
 <p><img src="assets/chapter-7-1-images/00.Nested-and-break-undesired-result-01.png" alt=""></p>
 <p>Why is this so? As we can see, the result is <strong>missing &quot;1 1&quot;</strong>. When the function reaches the point when <strong><code>i = 1</code></strong> and <strong><code>j = 1</code></strong>, it enters the <strong><code>if</code></strong> check and executes the <strong><code>break</code></strong> operation. This way, it <strong>exits the inner loop</strong>, but then continues the execution of the <strong>outer loop</strong>. <strong><code>i</code></strong> increases, the function enters the inner loop and prints the result.</p>
-<table><tr><td><img src="assets/alert-icon.PNG" style="max-width:50px"></td>
+<table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td> When we use the <b><code>break</code></b> <b>operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
@@ -974,11 +974,11 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
 <p>Now we need to prepare the fruits for drawing in the view. Add the following code to the <strong>app.py</strong> file:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-09.png" alt=""> </p>
 <p>The above code defines the fields for <strong>number of rows, number of columns</strong>, for <strong>fruit table</strong> (playing field), for the <strong>points</strong> accumulated by the player and information whether the game is active or  <strong>finished</strong> (field <strong><code>gameOver</code></strong>). The playing field is 9 columns in 3 rows and contains text for each field: <strong><code>apple</code>, <code>banana</code>, <code>orange</code>, <code>kiwi</code>, <code>empty</code> or <code>dynamite</code></strong>. The main action <strong><code>index()</code></strong> prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).</p>
-<p>We need to generate random fruits. To do this, we need to write the method <strong><code>generate_random_fruits()</code></strong> with the code from the picture below. This code writes in the table (matrix) <strong><code>fruits</code></strong> names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: <strong><code>apple</code>, <code>banana</code>, <code>orange</code>, <code>kiwi</code>, <code>empty</code> or <code>dynamite</code></strong>.Then, in order to draw the corresponding image in the view, <strong><code>.PNG</code></strong> will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view <strong><code>index.html</code></strong>, with two nested <strong><code>for</code></strong> loops (per row and per column).</p>
-<p>To generate random fruits, a <strong>random number</strong> between 0 and 8 is generated for each cell (see class <strong><code>random</code></strong> in Python). If the number is 0 or 1, put <strong><code>&#x430;pple</code></strong>, if it is between 2 and 3, put <strong><code>banana</code></strong>, etc. If the number is 8, set <strong><code>dynamite</code></strong>. Thus, fruits appear 2 times more often than dynamite. Here is the code:</p>
+<p>We need to generate random fruits. To do this, we need to write the method <strong><code>generate_random_fruits()</code></strong> with the code from the picture below. This code writes in the table (matrix) <strong><code>fruits</code></strong> names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: <strong><code>apple</code>, <code>banana</code>, <code>orange</code>, <code>kiwi</code>, <code>empty</code> or <code>dynamite</code></strong>.Then, in order to draw the corresponding image in the view, <strong><code>.png</code></strong> will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view <strong><code>index.html</code></strong>, with two nested <strong><code>for</code></strong> loops (per row and per column).</p>
+<p>To generate random fruits, a <strong>random number</strong> between 0 and 8 is generated for each cell (see class <strong><code>random</code></strong> in Python). If the number is 0 or 1, put <strong><code>apple</code></strong>, if it is between 2 and 3, put <strong><code>banana</code></strong>, etc. If the number is 8, set <strong><code>dynamite</code></strong>. Thus, fruits appear 2 times more often than dynamite. Here is the code:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-10.png" alt=""></p>
 <p>Drawing the fruit in <strong><code>index.html</code></strong>:</p>
-<p>In order to <strong>fill the playing field</strong> with the fruits, we have to iterate <strong>two nested loops</strong> (for the rows and for the columns). Each line consists of 9 pictures, each of which contains <strong><code>apple</code>, <code>banana</code></strong> or another fruit, or an empty field  <strong><code>empty</code></strong>, or <strong><code>dynamite</code></strong>. Images are drawn by printing an HTML tag to insert an image: <strong><code>&lt;img src=&quot;/images/apple.PNG&quot; /&gt;</code></strong>. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with <strong><code>&lt;br&gt;</code></strong>. This is repeated three times for the three lines. Finally, the player&apos;s points are printed. Here&apos;s how the <strong>code</strong> for drawing the playing field and points looks like:</p>
+<p>In order to <strong>fill the playing field</strong> with the fruits, we have to iterate <strong>two nested loops</strong> (for the rows and for the columns). Each line consists of 9 pictures, each of which contains <strong><code>apple</code>, <code>banana</code></strong> or another fruit, or an empty field  <strong><code>empty</code></strong>, or <strong><code>dynamite</code></strong>. Images are drawn by printing an HTML tag to insert an image: <strong><code>&lt;img src=&quot;/images/apple.png&quot; /&gt;</code></strong>. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with <strong><code>&lt;br&gt;</code></strong>. This is repeated three times for the three lines. Finally, the player&apos;s points are printed. Here&apos;s how the <strong>code</strong> for drawing the playing field and points looks like:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-11.png" alt=""></p>
 <p>Note the curly braces &#x2013; they are used to switch between the languages - <strong>HTML</strong> and <strong>Python</strong> and come from <strong>Jinja2</strong> syntax for drawing dynamic web pages.</p>
 <p>We start the project with [<strong>Shift+F10</strong>]. It is expected that a random fruit field with sizes 9 by 3 will be generated and visualized on the web page through a series of pictures:</p>
@@ -1004,7 +1004,7 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
 <li><strong>Shooting from below</strong> ; shooting from below must remove the bottom fruit in the hit column or stop the game when hitting dynamite.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/15.Fruits-01.png" alt=""></p>
-<p>For now, nothing is happening at <strong>&quot;End of Game&quot;</strong>.If the player hits dynamite, the application notes that the game is over <strong>(<code>game_&#x43E;ver = &#x422;rue</code>)</strong>, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:</p>
+<p>For now, nothing is happening at <strong>&quot;End of Game&quot;</strong>.If the player hits dynamite, the application notes that the game is over <strong>(<code>game_over = True</code>)</strong>, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-15.png" alt=""></p>
 <p>The code above checks if the game is over and shows respectively the shooting controls and the playing field (during active play) or a picture with exploded fruits at the end of the game.</p>
 <p>After changing the code of the view, we start with [<strong>Ctrl + Shift + F10</strong>] and <strong>test</strong> the game again:</p>
@@ -1054,7 +1054,7 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-01-05T11:37:27.494Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-05T11:38:08.566Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-01-17T16:26:12.001Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-17T16:26:54.473Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
