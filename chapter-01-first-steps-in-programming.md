@@ -1,14 +1,6 @@
 # Chapter 1. First Steps in Programming
 In this chapter we are going to find out **what programming** is at its core. We are going to become familiar with the idea of **programming languages** and explore the environments for software development (**Integrated Development Environment** – IDEs); we'll see how to work with them, in particular with **PyCharm**. We will write and execute our **first program** written in the programming language Python and then we're going to practice with a few tasks: we will create a console-based program, a graphical application and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we're going to learn how to avoid them.
 
-## Video
-
-<div class="video-player">
-  Watch a video lesson on what we're going to be learning in this chapter: <a target="_blank"
-  href="https://www.youtube.com/watch?v=LUUIDcwBDss">
-  https://www.youtube.com/watch?v=LUUIDcwBDss</a>.
-</div>
-
 ## What does 'To Program' mean?
 To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
 

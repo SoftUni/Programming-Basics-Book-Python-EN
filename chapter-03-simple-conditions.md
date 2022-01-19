@@ -2,14 +2,6 @@
 
 In the current chapter, we're going to be taking a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`**, **`if-elif`** and **`else`**) by implementing appropriate examples and also we are going to take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
-## Video
-
-<div class="video-player">
-  Watch the video-tutorial about this chapter here: 
-  https://www.youtube.com/watch?v=cQIl0wQLVRE.
-</div>
-
-
 ## Number comparison
 
 In programming, we can compare values through the use of the following **operators**:

@@ -2,15 +2,6 @@
 
 In this chapter, the topic of **functions** will be introduced, together with cases in which they might be useful, as well as the **primary concepts** when working with functions. It will be demonstrated why it is a **good practice** to use functions, how to **define** them and how to **call** them. The concept of a **parameter** and a **returned value** of a function, as well as how we can further use the returned value from the function, will be introduced. At the end of the chapter, we'll look at what the **best practices** are when dealing with functions.
 
-
-## Video
-
-<div class="video-player">
-  Watch the interactive video to this chapter here:
-  https://www.youtube.com/watch?v=IDqjZuDcfbE.
-</div>
-
-
 ## What is a function?
 
 So far, we learnt that dividing our code into **smaller units** (functions), each of which being responsible for a specific functionality is more practical in general. Each unit is concerned with **distinct functionality**, in which case not only is it easier to process the problem we are facing, but also improves the **debugging** and **readability** of the code.

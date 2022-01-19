@@ -7,15 +7,6 @@ In this chapter we are going to become familiar with the following concepts and 
 - How to do simple **arithmetic operations**: addition, subtraction, multiplication, division, string concatenation.
 - How to **round** numbers.
 
-
-## Video
-
-<div class="video-player">
-  Watch a video lesson on this chapter here:
-  https://www.youtube.com/watch?v=qcBWD8ImVRI.
-</div>
-
-
 ## Calculations in Programming
 
 We know that computers are machines that process data. All **data** is held in the computer memory (RAM memory) as **variables**. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each **variable** in Python has a **name** and **value**. Here is how to define a variable, assigning a value to it at the time of declaration:

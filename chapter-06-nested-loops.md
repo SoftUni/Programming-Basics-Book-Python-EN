@@ -2,15 +2,6 @@
 
 In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
-
-## Video 
-
-<div class="video-player">
-  Watch the video lesson of this chapter here: 
-  https://www.youtube.com/watch?v=kkxl1bitNAg.
-</div>
-
-
 ### Example: Rectangle Made of 10 x 10 Asterisks
 
 Print on the console a rectangle made out of **10 x 10** asterisks.

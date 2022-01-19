@@ -9,15 +9,6 @@ Since we have learned what **`for` loops** are and their function in code, now i
 
 In the current chapter, we will also take a look at the **`break`** operator and **how** to use it to **interrupt** a loop. We will also learn how to process **errors during execution** of the program, using **`try-except`** statement.
 
-
-## Video
-
-<div class="video-player">
-  Watch a video lesson on this chapter here:
-  https://www.youtube.com/watch?v=IPJigJNDuKQ.
-</div>
-
-
 ## Loops with stride
 
 In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`**  loop works and we already know when and for what purpose it is used. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.

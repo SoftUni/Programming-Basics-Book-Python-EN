@@ -2,15 +2,6 @@
 
 In this chapter we will become familiar with how to **repeat blocks of commands**, known in programming as "**loops**". We will write a number of loops using the **`for`** operator in its classic form. Finally, we will solve some practical problems, which require repeating series of actions, using loops.
 
-
-## Video
-
-<div class="video-player">
-  Watch video-tutorial about this chapter here: 
-  https://www.youtube.com/watch?v=pvTMTGsooMk.
-</div>
-
-
 ## Repeating blocks of code (for loop)
 
 In programming it is often required **to execute a block with commands multiple times**. For this reason we are using **loops**. We can see an example for **`for` loop**, which goes through the numbers from 1 to 10 and prints them:
