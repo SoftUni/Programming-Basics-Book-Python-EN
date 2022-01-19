@@ -11,7 +11,7 @@ In the current chapter, we will also take a look at the **`break`** operator and
 
 ## Loops with stride
 
-In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`**  loop works and we already know when and for what purpose it is used. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.
+In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`** loop works and we already know when and for what purpose it is used. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.
 
 ### Loop with a Step – Explanation
 
@@ -77,7 +77,7 @@ Print the **even** powers of **2** until **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n
 
 Here is how we can solve the problem:
 
-  * We declare a variable **`num`** that will hold the current number and we assign it the initial **value of  1**.
+  * We declare a variable **`num`** that will hold the current number and we assign it the initial **value of 1**.
   * For the **step** of the loop we set a value of **2**.
   * In the **body of the loop**: we print the value of the current number and **increase the current number `num` 4 times** (as per the problem description).
 
@@ -223,7 +223,7 @@ Here is how we can calculate factorial in more detail:
 
 * We declare the variable **`n`**, to which we assign the integer value, received from the input of the console.
 * We declare another variable - **`fact`**, with an initial value of 1. We will use it in the calculation and store the factorial value.
-* For the loop condition we will use **`n > 1`**,  because each time we perform the calculations in the body of the loop, we will decrease the value of **`n`** by 1.
+* For the loop condition we will use **`n > 1`**, because each time we perform the calculations in the body of the loop, we will decrease the value of **`n`** by 1.
 * In the body of the loop:
    * We assign a new value to **`fact`**, which value is the product of multiplying the current **`fact`** with the current **`n`**.
    * We decrement **`n`** with **1**.
@@ -247,7 +247,7 @@ We can use the following idea to solve the problem:
 * As a loop condition, we will use **`n > 0`**, since, after each iteration of the loop, we will be removing the last digit from **`n`**.
 * In the body of the loop:
    * We assign a new value to **`sum`**, which is the result of the sum of the current value of **`sum`** with the last digit of **`n`**.
-   * We assign a new value to **`n`**,  which is the result of removing the last digit of **`n`**.
+   * We assign a new value to **`n`**, which is the result of removing the last digit of **`n`**.
 * outside the body of the loop, we print the final value of the sum.
 
 ![](/assets/chapter-7-1-images/09.Sum-digits-01.png)
@@ -636,7 +636,7 @@ Now we need to prepare the fruits for drawing in the view. Add the following cod
 
 ![](/assets/chapter-7-1-images/15.Fruits-09.png) 
 
-The above code defines the fields for **number of rows, number of columns**, for **fruit table** (playing field), for the **points** accumulated by the player and information whether the game is active or  **finished** (field **`gameOver`**). The playing field is 9 columns in 3 rows and contains text for each field: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**. The main action **`index()`** prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).
+The above code defines the fields for **number of rows, number of columns**, for **fruit table** (playing field), for the **points** accumulated by the player and information whether the game is active or **finished** (field **`gameOver`**). The playing field is 9 columns in 3 rows and contains text for each field: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**. The main action **`index()`** prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).
 
 We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, in order to draw the corresponding image in the view, **`.png`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
 
@@ -646,7 +646,7 @@ To generate random fruits, a **random number** between 0 and 8 is generated for 
 
 Drawing the fruit in **`index.html`**:
 
-In order to **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field  **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.png" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
+In order to **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.png" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
 
 ![](/assets/chapter-7-1-images/15.Fruits-11.png)
 

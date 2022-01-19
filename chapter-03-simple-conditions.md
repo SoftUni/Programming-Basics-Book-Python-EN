@@ -139,7 +139,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 Write a program that reads two integers and outputs the number of higher value between the two .
 
-Our first task is to  **read** the two numbers. After which through the use of a simple  **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
+Our first task is to **read** the two numbers. After which through the use of a simple **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
 
 ![](/assets/chapter-3-1-images/04.Greater-number-01.png)
 
@@ -152,7 +152,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 Every variable has a scope in which it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In Python, **variables could be used anywhere if they are initialized at least once.**
 
-In the example below, on the last line we try to print the variable **`my_name`**, which is defined in the **`else` structure**. We will get an **error**, because in this case the body of the  **`else`** clause, in which we initialize the variable, is not executed. However, there is no problem to print the variable **`can_drive`** because the program entered the body of the **`if`** clause and initialized the variable. As you can see the variables **`can_drive`** and **`my_name`** are colored yellow.  This is a warning from  **PyCharm**, that we may get an error. Therefore, we should be careful where we initialize the variables.
+In the example below, on the last line we try to print the variable **`my_name`**, which is defined in the **`else` structure**. We will get an **error**, because in this case the body of the **`else`** clause, in which we initialize the variable, is not executed. However, there is no problem to print the variable **`can_drive`** because the program entered the body of the **`if`** clause and initialized the variable. As you can see the variables **`can_drive`** and **`my_name`** are colored yellow. This is a warning from **PyCharm**, that we may get an error. Therefore, we should be careful where we initialize the variables.
 
 ![](/assets/chapter-3-1-images/00.Variable-scope-01.png)
 
@@ -174,7 +174,7 @@ else:
 
 ### Example: Numbers 1 through 9 in English
 
-Print the digits one through nine in English on the console (the numbers are read from the console). We can take the digit and through a  **series of conditions** print the corresponding English word on the console:
+Print the digits one through nine in English on the console (the numbers are read from the console). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 
 ```python
 number = int(input())
@@ -224,7 +224,7 @@ We are given an **integer** – several points. Additional **bonus points** are 
 
 #### Hints and pointers
 
-We can calculate the base and additional bonus score with a series of **`if-elif-else`** statements. For the  **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus score - further 2 cases** (whether the number is even or odd):
+We can calculate the base and additional bonus score with a series of **`if-elif-else`** statements. For the **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus score - further 2 cases** (whether the number is even or odd):
 
 ![](/assets/chapter-3-1-images/06.Bonus-score-01.png)
 
@@ -297,7 +297,7 @@ The input will consist of three parameters:
 
 #### Hints and pointers
 
-We take the input data and to the units of measure, we can add the function  **`lower()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
+We take the input data and to the units of measure, we can add the function **`lower()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
 ![](/assets/chapter-3-1-images/08.Metric-converter-01.png)
 

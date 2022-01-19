@@ -74,7 +74,7 @@ Another possibility to develop after this book is to **continue studying program
 After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your practical project**, on which you need to spend a few months, even a year, to learn based on the trial-and-error principle.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Keep in mind that there are many ways to become a programmer, but they all have something in common:   <b>code writing and years of practice</b>!</td>
+<td>Keep in mind that there are many ways to become a programmer, but they all have something in common: <b>code writing and years of practice</b>!</td>
 </tr></table>
 
 

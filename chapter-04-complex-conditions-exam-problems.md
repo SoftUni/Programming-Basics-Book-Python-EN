@@ -119,7 +119,7 @@ Our next step is to do the required **checks and calculations**, and finally, we
 
 To spare one additional check (**`else`**), we can, by default, assume that the student was late. 
 
-After that, according to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**.  If we do not match the first condition, we need to check if **the difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
+After that, according to the condition, we will check whether the difference in times is **more than 30 minutes**. If this is true, we assume that the student is **early**. If we do not match the first condition, we need to check if **the difference is less than or equal to zero (**`<= 0`**)**, by which we are checking the condition whether the student arrived within the range of **0 to 30 minutes** before the exam. 
 
 In all other cases, we assume that the student **was late**, which we set as **default**, and no additional check is needed:
 
@@ -146,7 +146,7 @@ Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, 
 
 ### Testing in the Judge System
 
-Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/1052#0](https://judge.softuni.org/Contests/Practice/Index/1052#0).
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#0](https://judge.softuni.org/Contests/Practice/Index/1052#0).
 
 
 ## Problem: Trip
@@ -377,7 +377,7 @@ The input data will be read from the **console** and contains **exactly 3 lines*
 
 | Input | Output | Explanations |
 |---|---|---|
-|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 person : 75%** of the budget is spent on **transportation**.<br>**Remaining amount:** 1000 – 750 = **250**.<br>Category  **Normal**:  the ticket **price is 249.99 * 1 = 249.99**<br>249.99 < 250: **the person will have** 250 – 249.99 = **0.01** money left|
+|1000<br>Normal<br>1|Yes! You have 0.01 leva left.|**1 person : 75%** of the budget is spent on **transportation**.<br>**Remaining amount:** 1000 – 750 = **250**.<br>Category **Normal**: the ticket **price is 249.99 * 1 = 249.99**<br>249.99 < 250: **the person will have** 250 – 249.99 = **0.01** money left|
 
 | Input | Output | Explanations |
 |---|---|---|

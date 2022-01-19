@@ -1,6 +1,6 @@
 # Chapter 11. Tricks and Hacks
 
-In the current chapter, we are going to see some tricks, hacks and techniques, which will make our work with **Python**  easier in the **PyCharm** IDE. In particular, we will see:
+In the current chapter, we are going to see some tricks, hacks and techniques, which will make our work with **Python** easier in the **PyCharm** IDE. In particular, we will see:
 
 * How to properly **format our code**.
 * Conventions for **naming elements in the code**.
@@ -191,7 +191,7 @@ Debugging plays an important role in the process of creating software, which is 
 * **Correcting** the code, which causes the problems so that the program works correctly.
 * **Testing**, to make sure that the program works correctly after the corrections we have made.
 
-**PyCharm**  gives us **a built-in debugger**,  thanks to which we can place **breakpoints**, at places we have chosen.  When it reaches a **breakpoint**,  the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
+**PyCharm** gives us **a built-in debugger**, thanks to which we can place **breakpoints**, at places we have chosen. When it reaches a **breakpoint**, the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
 
 In order to demonstrate how to use the debugger, we will use the following program:
 
@@ -200,15 +200,15 @@ for i in range(1, 100):
     print(i)
 ```
 
-We will place a **breakpoint** on the function **`print(…)`**. For this, we will need to move our cursor to the line, which prints on the console, and press [**CTRL + F8**]. A **breakpoint**, where the program will  **stop** its execution:
+We will place a **breakpoint** on the function **`print(…)`**. For this, we will need to move our cursor to the line, which prints on the console, and press [**CTRL + F8**]. A **breakpoint**, where the program will **stop** its execution:
 
 ![](/assets/chapter-11-images/02.Debugger-01.png) 
 
-In order to start  **the program in debug mode**, we choose [**Run**] -> [**Debug...**] or press [**Alt + Shift + F9**]:
+In order to start **the program in debug mode**, we choose [**Run**] -> [**Debug...**] or press [**Alt + Shift + F9**]:
 
 ![](/assets/chapter-11-images/02.Debugger-02.png) 
 
-After starting the program, we can see that it **stops executing** at line 2, where we placed our breakpoint.  The code in the current line **is colored in yellow** and we can **run it step by step**. In order to go to **the next line** e use the key [**F8**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
+After starting the program, we can see that it **stops executing** at line 2, where we placed our breakpoint. The code in the current line **is colored in yellow** and we can **run it step by step**. In order to go to **the next line** e use the key [**F8**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
 
 ![Debugger](/assets/chapter-11-images/02.Debugger-03.png) 
 

@@ -14,7 +14,7 @@ Print on the console a rectangle made out of **10 x 10** asterisks.
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is  **`i = 0`**. With each iteration of the loop, the variable increases by **1** while it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
+How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is **`i = 0`**. With each iteration of the loop, the variable increases by **1** while it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
 
 
 #### Testing in the Judge System
@@ -46,7 +46,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 A **nested loop** is a construction where **the body of one loop** (the outer one) **stays inside another loop** (the inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
 
  - When nested loops start executing, **the outer loop starts** first: **initialization** of its control variable is performed and after checking for end of the loop, the code in its body is executed.
-  - After that, **the inner loop is executed**. The control variable's start position is initialized, a check for end of the loop is made and the code in its body is executed.
+ - After that, **the inner loop is executed**. The control variable's start position is initialized, a check for end of the loop is made and the code in its body is executed.
  - When the set value for **end of the loop** is reached, the program goes back one step up and continues executing the previous outer loop. The control variable of the outer loop changes with one step, a check is made to see if the condition for end of the loop is met and **a new execution of the nested \(inner\) loop is started**.
  - This is repeated until the variable of the outer loop meets the condition to **end the loop**.
 
@@ -86,7 +86,7 @@ Write a program which receives an integer **n** and prints **a triangle made of 
 
 #### Hints and Guidelines
 
-The problem is **similar** to those for drawing **a rectangle** and **square**. Once again, we will use **nested loops**, but there is **a  catch** here. The difference is that **the number of columns** that we need to print depends on **the row**, on which we are and not on the input number **`n`**. From the example input and output data, we see that **the count of dollars depends** on which **row** we are on at the moment of the printing, i.e. 1 dollar means the first row, 3 dollars mean the third row, and so on. Let's see the following example in detail. We see that **the variable** of **the nested** loop is connected with the variable of **the outer** one. This way our program prints the desired triangle:
+The problem is **similar** to those for drawing **a rectangle** and **square**. Once again, we will use **nested loops**, but there is **a catch** here. The difference is that **the number of columns** that we need to print depends on **the row**, on which we are and not on the input number **`n`**. From the example input and output data, we see that **the count of dollars depends** on which **row** we are on at the moment of the printing, i.e. 1 dollar means the first row, 3 dollars mean the third row, and so on. Let's see the following example in detail. We see that **the variable** of **the nested** loop is connected with the variable of **the outer** one. This way our program prints the desired triangle:
 
 ![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
@@ -464,4 +464,4 @@ We go to the specified address and enjoy the finished project:
 
 ![](assets/chapter-6-1-images/11.Ratings-11.png)
 
-If you have problems with the sample project above, you can ask questions in the **SoftUni forum**:  [https://softuni.bg/forum](https://softuni.bg/forum).
+If you have problems with the sample project above, you can ask questions in the **SoftUni forum**: [https://softuni.bg/forum](https://softuni.bg/forum).

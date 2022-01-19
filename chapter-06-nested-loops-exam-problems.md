@@ -44,7 +44,7 @@ Print on the console **n** text lines, depicting the **fortress**, just as in th
 
 ### Hints and guidelines
 
-By the set task condition, we can see that the **input data** will contain only one **integer** within the range [**3 … 1000**].  Therefore, we will convert the input value into **`int`** type:
+By the set task condition, we can see that the **input data** will contain only one **integer** within the range [**3 … 1000**]. Therefore, we will convert the input value into **`int`** type:
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-01.png)
 
@@ -96,7 +96,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056
 
 ## Task: Butterfly
 
-Write a program, that takes **an integer n** from the console and draws **butterfly** with width of **2 * n - 1 columns** and height of **2 * (n - 2) + 1 rows** as in the examples below.  **The left and the right** **part** have **width of n - 1**.
+Write a program, that takes **an integer n** from the console and draws **butterfly** with width of **2 * n - 1 columns** and height of **2 * (n - 2) + 1 rows** as in the examples below. **The left and the right** **part** have **width of n - 1**.
 
 ### Input data
 
@@ -104,7 +104,7 @@ The input consists of one element (argument) - **integer n** in the range [**3 �
 
 ### Output data
 
-Print on the console **2 * (n - 2) + 1**  text rows, representing the **butterfly**, exactly as shown in the examples.
+Print on the console **2 * (n - 2) + 1** text rows, representing the **butterfly**, exactly as shown in the examples.
 
 ### Sample Input and Output
 
@@ -134,7 +134,7 @@ We can see in the examples, that on an **even** row we have a beginning **`*`**,
 
 ![](/assets/chapter-6-2-images/02.Butterfly-04.png)
 
-In order to draw the **the butterfly body**, we have to print exactly  **one** row on the console. The structure of the body has a beginning **`(white space)`**, middle part **`@`** and an end **`(white space)`**. From the examples we can see, that the number of the white spaces is equal to **`n-1`**:
+In order to draw the **the butterfly body**, we have to print exactly **one** row on the console. The structure of the body has a beginning **`(white space)`**, middle part **`@`** and an end **`(white space)`**. From the examples we can see, that the number of the white spaces is equal to **`n-1`**:
 
 ![](/assets/chapter-6-2-images/02.Butterfly-05.png)
 
@@ -230,7 +230,7 @@ From the explanation we see that **the input data** will be read from one input 
 
 ![](/assets/chapter-6-2-images/04.Arrow-01.png)
 
-We can divide the figure into **3 parts** - upper, middle and lower. **The upper part** consists of two subparts - first row and body of the arrow. We can see from the examples, that the count of  **the outer dots** in the first row and in the body of the arrow are equal to **`(n - 1) / 2`**. We can keep this value in **a variable** **`outer_dots`**:
+We can divide the figure into **3 parts** - upper, middle and lower. **The upper part** consists of two subparts - first row and body of the arrow. We can see from the examples, that the count of **the outer dots** in the first row and in the body of the arrow are equal to **`(n - 1) / 2`**. We can keep this value in **a variable** **`outer_dots`**:
 
 ![](/assets/chapter-6-2-images/04.Arrow-02.png)
 
@@ -254,7 +254,7 @@ In order to draw **the lower part of the arrow**, we have to assign new values o
 
 ![](/assets/chapter-6-2-images/04.Arrow-07.png)
 
-On each loop iteration **`outer_dots`** increases by 1, and **`inner_dots`** decreases by 2. We can notice, that on the penultimate row the **`inner_dots`** value will be 1 and on each subsequent loop iteration will be a **negative number**. Since the operator **`*`** cannot concatenate symbol 0 or negative number of times in a string, it won't print nothing on the console. In order to avoid that we can print the last row of the figure separately. The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**,  that will print all the rows, except the last one, have to iterate **`n - 2`** number of times:
+On each loop iteration **`outer_dots`** increases by 1, and **`inner_dots`** decreases by 2. We can notice, that on the penultimate row the **`inner_dots`** value will be 1 and on each subsequent loop iteration will be a **negative number**. Since the operator **`*`** cannot concatenate symbol 0 or negative number of times in a string, it won't print nothing on the console. In order to avoid that we can print the last row of the figure separately. The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**, that will print all the rows, except the last one, have to iterate **`n - 2`** number of times:
 
 ![](/assets/chapter-6-2-images/04.Arrow-08.png)
 
@@ -307,7 +307,7 @@ Now we have to draw the **the handle of the axe**. In order to be able to use th
 
 ![](/assets/chapter-6-2-images/05.Axe-04.png)
 
-**The lower part** of the figure, should be divided into two subparts  - the **head of the axe** and the **last row of the figure**. We will print on the console **the head of the axe**, by making a self iterating loop **`axe_height - 1`** number of times. On each iteration **the left dashes** and **the right dashes** decrease by 1, and **the middle dashes** increase by 2:
+**The lower part** of the figure, should be divided into two subparts - the **head of the axe** and the **last row of the figure**. We will print on the console **the head of the axe**, by making a self iterating loop **`axe_height - 1`** number of times. On each iteration **the left dashes** and **the right dashes** decrease by 1, and **the middle dashes** increase by 2:
 
 ![](/assets/chapter-6-2-images/05.Axe-05.png)
 

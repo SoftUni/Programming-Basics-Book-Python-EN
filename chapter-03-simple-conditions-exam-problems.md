@@ -341,7 +341,7 @@ The next step is to calculate **the number of total working hours** by multiplyi
 
 #### Checking the Conditions
 
-After having done the calculations that are needed to find the value of **the working hours**, now we have to check whether these hours are **enough**,  **or some hours are left**.
+After having done the calculations that are needed to find the value of **the working hours**, now we have to check whether these hours are **enough**, **or some hours are left**.
 
 If **the time is enough**, we print the result that is specified in the task requirements, which in this case is the difference between **the working hours and the hours needed** for finishing the project. 
 

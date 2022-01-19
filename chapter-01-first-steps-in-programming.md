@@ -8,7 +8,7 @@ To program means to give instructions to the computer, for example *play a certa
 **Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book we're going to cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
-Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat.  Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat. Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
 To create programs, write program code (commands), execute it and other operations that have to do with making programming more convenient, we need a **development environment** (IDE) like **PyCharm**.
 
 ### Programming languages, compilers, interpreters and development environments
@@ -230,8 +230,8 @@ Then we need to send our solution by clicking the **[Submit]** button. The syste
 
 In the table, the Judge System will display one of the following **possible results**:
 - Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
-  -	If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
-  -	If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
+-	If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
+-	If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
 -	If there are syntactic errors in our program, we receive a **compile time error message**.
 
 ### How do I register at SoftUni Judge?
@@ -293,7 +293,7 @@ Create a Python file and name it **`nums_1_to_20.py`**:
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
-Inside the file write 20 **`print()`** commands,  each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a more clever way. Don't worry, there is, but we will mention it later on.
+Inside the file write 20 **`print()`** commands, each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a more clever way. Don't worry, there is, but we will mention it later on.
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-02.png)
 
@@ -354,7 +354,7 @@ Create a **new Python file**. We'll use the following commands to read our numbe
 
 ![](/assets/chapter-1-images/05.Rectangle-area-01.png)
 
-What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of  **`a`** and **`b`** to the already familiar **`print(...)`** command. In programming we multiply using the **`*`** operator.
+What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of **`a`** and **`b`** to the already familiar **`print(...)`** command. In programming we multiply using the **`*`** operator.
 
 ### Test your solution
 Test your solution with a few examples. You should receive a result identical to the one you see below (we enter 2 and 7 as input and the program prints 14 – their product, as output):

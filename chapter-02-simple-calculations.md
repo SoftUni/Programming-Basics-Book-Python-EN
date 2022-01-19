@@ -113,7 +113,7 @@ we will receive the following result:
 ```
 600
 ```
-How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will receive 3 elements: `'100'`, `'200'`, and  `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
+How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will receive 3 elements: `'100'`, `'200'`, and `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
 
 
 ## Reading Floating Point Numbers
@@ -630,7 +630,7 @@ Write a program that **reads a number from the console** (not necessarily an int
 
 #### Hints and Guidelines
 
-First, we create a **new Python file** in the project "SimpleCalculations".  We right-click the solution **SimpleCalculations** and choose [**New**] -> [**Python File**]. We name it "inches_to_centimeters":
+First, we create a **new Python file** in the project "SimpleCalculations". We right-click the solution **SimpleCalculations** and choose [**New**] -> [**Python File**]. We name it "inches_to_centimeters":
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
 
@@ -906,7 +906,7 @@ To exercise working with variables and calculations with operators and numerical
 
 ### Graphical Application: Converter from BGN to EUR
 
-We need to create **a graphical application** (GUI application), that calculates the value in  **Euro** (EUR) of monetary amount given in **Bulgarian leva** (BGN). We use a fixed rate BGN / EUR: **1.95583**.
+We need to create **a graphical application** (GUI application), that calculates the value in **Euro** (EUR) of monetary amount given in **Bulgarian leva** (BGN). We use a fixed rate BGN / EUR: **1.95583**.
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-01.png)
 

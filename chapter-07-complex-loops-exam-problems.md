@@ -19,11 +19,11 @@ Let's start work on solving the following practical exam problems.
 
 Write a program that enters two integers **n** and **l** and generates in alphabetical order all possible **"dumb” passwords"**, that consist of the following **5 characters**:
 
--	Character  1: digit from **1** to **n**.
--	Character  2: digit from **1** to **n**.
--	Character  3: small letter among the first **l** letters of the Latin alphabet.
--	Character  4: small letter among the first **l** letters of the Latin alphabet.
--	Character  5: digit from **1** to **n, bigger than first 2 digits**.
+-	Character 1: digit from **1** to **n**.
+-	Character 2: digit from **1** to **n**.
+-	Character 3: small letter among the first **l** letters of the Latin alphabet.
+-	Character 4: small letter among the first **l** letters of the Latin alphabet.
+-	Character 5: digit from **1** to **n, bigger than first 2 digits**.
 
 ### Input Data
 
@@ -186,11 +186,11 @@ We have already seen examples of the **second** part – initialization of the *
 
 ![](/assets/chapter-7-2-images/03.stop-number-1.png)
 
-After we have initialized the **`for`**  loop, it is time for the **third** part of the problem - **checking** the condition if the given **number is divisible both by 2 and 3 without remainder**. We will do this using one simple **`if`** condition that we will leave to the reader to do by themselves.
+After we have initialized the **`for`** loop, it is time for the **third** part of the problem - **checking** the condition if the given **number is divisible both by 2 and 3 without remainder**. We will do this using one simple **`if`** condition that we will leave to the reader to do by themselves.
 
 Another **tricky** part of this problem is that apart from the above check we need to do **another** one – whether the **number is equal to the "stop" number**, entered from the console on the third line. To do this check, the previous one has to be passed. For this reason, we will add another **`if`** statement that we will **nest in the previous one**. If the condition is **true**, we need to stop the program from printing. We can do this using a **`break`**, operator, and it will lead us **out** of the **`for`** loop.
  
-If the **condition** that checks whether the number is equal with the "stop" number returns a **`false`**,  result, our program should **continue to print**. This covers the **fourth and last** part of our program.
+If the **condition** that checks whether the number is equal with the "stop" number returns a **`false`**, result, our program should **continue to print**. This covers the **fourth and last** part of our program.
 
 ### Testing in the Judge System
 

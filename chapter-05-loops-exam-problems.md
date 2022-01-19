@@ -1,6 +1,6 @@
 # Chapter 5.2 Iterations (loops) - exam problems
 
-In the previous chapter we learned how to run a command block **more than once**. That's why we implemented **`for` loop** and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams.  For some of them we’ll show detailed solved examples, while for others there’ll be tips only. Before we begin, we’ll recall the **`for` loop** construction:
+In the previous chapter we learned how to run a command block **more than once**. That's why we implemented **`for` loop** and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams. For some of them we’ll show detailed solved examples, while for others there’ll be tips only. Before we begin, we’ll recall the **`for` loop** construction:
 
 ![](/assets/chapter-5-2-images/00.For-construction-01.png) 
 

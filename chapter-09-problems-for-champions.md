@@ -23,7 +23,7 @@ At the same time, let the **the numbers in the spiral** begin with **5** and the
 
 <img src="assets/chapter-9-1-images/01.Crossing-sequences-01.png" style="float: right; height: 300px;" />
 
-Then **the second sequence** will contain the numbers 5, 7, 9, 13, 17, 23, 29, 37 and so on. We see that **37**  is the first number to be found both in the Tribonacci sequence and in the spiral one, and that is the desired solution to the problem.
+Then **the second sequence** will contain the numbers 5, 7, 9, 13, 17, 23, 29, 37 and so on. We see that **37** is the first number to be found both in the Tribonacci sequence and in the spiral one, and that is the desired solution to the problem.
 
 ### Input Data
 
@@ -37,7 +37,7 @@ Input data will always be valid and will always be in the format described. No n
 
 The result should be printed on the console.
 
-On the single line of the output, you must print **the lowest number that occurs in both sequences**.  If there is no number in the **range** [**1 … 1 000 000**], which can be found in both sequences, print "**No**".
+On the single line of the output, you must print **the lowest number that occurs in both sequences**. If there is no number in the **range** [**1 … 1 000 000**], which can be found in both sequences, print "**No**".
 
 ### Constraints
 
@@ -278,7 +278,7 @@ and **for each digit we take the letter from the particular position**. This way
 
 ![](/assets/chapter-9-1-images/03.Five-special-letters-04.png)
 
-***Another solution***:  we can convert the digits to letters by using their arrangement in the **ASCII table**. The expression **`chr(ord('a') + i)`** returns the result **`'a'`** in case **`i = 0`**, **`'b'`** in case **`i = 1`**, **`'c'`** in case **`i = 2`**, etc.
+***Another solution***: we can convert the digits to letters by using their arrangement in the **ASCII table**. The expression **`chr(ord('a') + i)`** returns the result **`'a'`** in case **`i = 0`**, **`'b'`** in case **`i = 1`**, **`'c'`** in case **`i = 2`**, etc.
 
 This way we already have generated all 5-letter combinations and can proceed with the following part of the task.
 
