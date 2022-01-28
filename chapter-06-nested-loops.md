@@ -439,7 +439,7 @@ Look for **Flask** in the window that appears and click the [**Install Package**
 
 ![](assets/chapter-6-1-images/11.Ratings-05.png)
 
-We are now adding the **structure** of the project (the assignment files for this project can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-Python-BG/tree/chapter-06-nested-loops/assets/chapter-6-1-assets)). Copy them from Windows Explorer and paste them in the **Ratings** project folder with Copy/Paste: 
+We are now adding the **structure** of the project (the assignment files for this project can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-Python-EN/raw/master/assets/chapter-6-1-assets/Ratings.zip)). Copy them from Windows Explorer and paste them in the **Ratings** project folder with Copy/Paste: 
 
 ![](assets/chapter-6-1-images/11.Ratings-06.png)
 
