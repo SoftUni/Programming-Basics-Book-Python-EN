@@ -24,14 +24,18 @@ For this book we chose **Python**, because it is a **modern** language for high-
 
 As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **Python**. The book can also be found translated in other programming languages such as C# (see https://csharp-book.softuni.bg), Java (see https://java-book.softuni.bg), JavaScript (see https://js-book.softuni.bg) and C++ (see https://cpp-book.softuni.bg).
 
-## The book in other programming languages: C#, Java, JavaScript, C++, PHP
+## The book in other programming languages: Java, JavaScript, C#, C++
 
 This programming book for complete beginners is available in several programming languages (or is in the process of being adapted for them):
-* [Programming basics with C#](https://csharp-book.softuni.bg)
-* [Programming basics with Java](https://java-book.softuni.bg)
-* [Programming basics with JavaScript](https://js-book.softuni.bg)
-* [Programming basics with C++](https://cpp-book.softuni.bg)
-* [Programming basics with PHP](https://php-book.softuni.bg)
+* [Programming Basics with Java (English)](https://java-book.softuni.org)
+* [Programming Basics with JavaScript (English)](https://js-book.softuni.org)
+* [Programming Basics with C# (English)](https://csharp-book.softuni.org)
+* [Programming Basics with Python (English)](https://python-book.softuni.org)
+* [Programming Basics with JavaScript (Bulgarian)](https://js-book.softuni.bg)
+* [Programming Basics with Python (Bulgarian)](https://python-book.softuni.bg)
+* [Programming Basics with C# (Bulgarian)](https://csharp-book.softuni.bg)
+* [Programming Basics with Java (Bulgarian)](https://java-book.softuni.bg)
+* [Programming Basics with C++ (Bulgarian)](https://cpp-book.softuni.bg)
 
 If you prefer a different language, choose from the list above.
 
