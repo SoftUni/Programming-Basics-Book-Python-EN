@@ -203,15 +203,15 @@ SoftUni's free programming start-up trainings are probably the largest ever cond
 
 The project is part of the efforts of **["Software University" foundation](https://softuni.foundation)** to create and distribute open learning content for training software engineers and IT professionals.
 
-### Authors team
+### Authors Team
 
-This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of all authors and editors (in alphabetical order.)
+This book is developed by a broad author's team of **volunteers** who dedicated their time to give away the systematized knowledge and guide you at the start of programming. Below is a list of the main book authors (in alphabetical order):
 
 > **Boncho Vulkov, Hristo Minkov, Iliya Iliev, Martin Tsarev, Miglen Evlogiev, Milena Angelova, Mirela Damyanova, Nikolay Kostov, Petar Ivanov, Petya Gospodinova, Svetlin Nakov, Tanya Evtimova, Tanya Staneva, Teodor Kurtev, Ventsislav Petrov, Vladimir Damyanovski, Yordan Darakchiev**
 
-The book is based on its initial C# variant ([Introduction to Programming with C#](https://csharp-book.softuni.org)) which is developed by a large team of authors that has a significant contribution to the current book:
+The book is based on its initial C# variant ([Introduction to Programming with C#](https://csharp-book.softuni.org)) which is developed by a large team of authors that has a significant contribution to the current book. Below is a list of the additional book contributors (editors, translators, others):
 
-> Aleksander Krastev, Aleksander Lazarov, Aleksander Peev, Aleksandra Stoycheva, Angel Dimitriev, Ariet Motzeva, Daniel Tsvetkov, Denis Milanov, Dimitar Dzhapunov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Dzhaner Hasan, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Jordan Liubenov, Julieta Atanasova, Kalin Primov, Kaloyan Nenchev, Kristiyan Pamidov, Luboslav Lubenov, Martin Zhelev, Mihail Georgiev, Natali Dimitrova, Nikola Slavchev, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Preslav Mihaylov, Rositsa Nenova, Ruslan Filipov, Simeon Stavrev, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Venelin Bekyarov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
+> Aleksander Krastev, Aleksander Lazarov, Aleksander Peev, Aleksandra Stoycheva, Angel Dimitriev, Ariet Motzeva, Daniel Tsvetkov, Denis Milanov, Dimitar Dzhapunov, Dimitar Tatarski, Dimo Dimov, Diyan Tonchev, Dzhaner Hasan, Elena Rogleva, Hristiyan Hristov, Hristo Hristov, Iskra Nikolova, Ivelin Kirilov, Jordan Liubenov, Julieta Atanasova, Kalin Primov, Kaloyan Nenchev, Kristiyan Pamidov, Luboslav Lubenov, Martin Zhelev, Mihail Georgiev, Natali Dimitrova, Nikola Slavchev, Nikolay Bankin, Nikolay Dimov, Pavlin Petkov, Petar Ivanov, Rositsa Nenova, Ruslan Filipov, Simeon Stavrev, Stefka Vasileva, Svetlin Nakov, Teodor Kurtev, Tonyo Zhelev, Tsvetan Iliev, Vasko Viktorov, Venelin Bekyarov, Ventsislav Petrov, Yanitsa Vuleva, Yulian Linev, Zahariya Pehlivanova, Zhivko Nedyalkov.
 
 Book cover design: Marina Shiderova.
 
@@ -221,7 +221,7 @@ The book is written in the period June-October 2018.
 
 The current book on **The basics of Python programming for beginners** is available for free use on the Internet from: 
 
-<p align="center"><strong><a href="https://python-book.softuni.bg">https://python-book.softuni.bg</a></strong></p>
+<p align="center"><strong><a href="https://python-book.softuni.bg">https://python-book.softuni.org</a></strong></p>
 
 This is **the official website of the book** and there will be uploaded its latest version. The book has been similarly translated to other programming languages listed on its website. 
 
