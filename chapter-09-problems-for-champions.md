@@ -256,7 +256,7 @@ The result should be printed on the console as a sequence of strings, **arranged
 | ---------- | ----- |
 | 300<br>400 | No    |
 
-### Hints and guidelines
+### Hints and Guidelines
 
 As every problem, we start the solution by **processing the input data**:
 

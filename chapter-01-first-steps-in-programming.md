@@ -259,7 +259,7 @@ This program will return an **error** and the code will be underlined to draw th
 
  ![](/assets/chapter-1-images/01.Hello-python-07.png)
 
-## What did we learn in this chapter?
+## What Have We Learned from This Chapter???
 First of all, we learned **what programming is** – **issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Python programming language** and learned **how to create simple console programs** using PyCharm. Then we examined **Python's program code structure**. We looked at printing with the function **`print(...)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
 Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
@@ -342,7 +342,7 @@ Try and **improve your solution** to avoid repeating the same command so many ti
 ### Problem: Rectangle Area
 Write a **Python program** which **receives two numbers a and b, then calculates and prints** the area of a rectangle with sides **a** and **b**.
 
-### Sample input and output
+### Sample Input and Output
 | a | b | area |
 | :---: | :---: | :---: |
 | 2 | 7 |  14  |
@@ -371,7 +371,7 @@ Test your solution here:
 ### \* Problem: Square of Stars
 Write a **Python console program which reads an integer positive number N** from the console and **prints a square of N stars** on the console, like in the examples below.
 
-### Sample input and output
+### Sample Input and Output
 | Input  |    Output   	| Input  |    Output   	| Input  |    Output   	| 
 |-----|-----------|-----|-----------|-----|----------|
 |  3  	| <code>\*\*\*</code><br><code>\*&nbsp;\*</code><br><code>\*\*\*</code>|  4  |<code>\*\*\*\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;\*</code><br><code>\*\*\*\*</code>| 5  	|<code>\*\*\*\*\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*&nbsp;&nbsp;&nbsp;\*</code><br><code>\*\*\*\*\*</code>|

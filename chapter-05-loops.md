@@ -20,7 +20,7 @@ In most cases a **`for` loop** is run between **`1`** and **`n`** (for example f
 
 Write a program that **prints the numbers from 1 to 100**. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can solve the problem using a **`for` loop** , via which we will pass through the numbers from 1 to 100 using the **`i`** variable, and print the numbers in the body of the loop:
 
@@ -40,7 +40,7 @@ You should get **100 points** (fully accurate solution).
 
 Write a program that finds all numbers in range [**1 … 1000**], that end in 7. 
 
-####  Hints and guidelines
+####  Hints and Guidelines
 
 We can solve the problem by combining a **`for` loop** for passing through the numbers between 1 and 1000 and a condition to **check** if each of the numbers end in 7. Of course, there are other solutions, but let's solve the problem using **loop + condition**:
 
@@ -55,7 +55,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 Write a program that prints the letters from the Latin alphabet: **a, b, c, …, z**.
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 It is good to know that the **`for` loops** don't work only with numbers. We can solve the task by running a **`for` loop**, that goes sequentially through all letters in the Latin alphabet:
 
@@ -84,7 +84,7 @@ Write a program that **reads `n` integers and finds their sum**.
 | 1<br>999 | 999 | 
 | 0 | 0 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We can solve the problem with summing up numbers in the following way:
  - We read the input number **`n`**.
@@ -115,7 +115,7 @@ Write a program that enters **n integers** (**n** > 0) and finds **the max** amo
 | 1<br>999 | 999 |
 | 2<br>-1<br>-2 | -1 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We will first enter one number **`n`** (the number of integers that are about to be entered). We assign the current maximum **`max`**an initial neutral value, for example **-10000000000000**. Using a **`for` loop**, that is iterated **n-1 times**, we read one integer **`num`**.  If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the **`max`** value. Finally, in **`max`**  we must have stored the highest number. We print the number on the console.:
 
@@ -208,7 +208,7 @@ Write a program that inputs **text** (string), calculates and prints **the sum o
 | hello | 6<br>(e+o = 2+4 = 6) | bamboo | 9<br>(a+o+o = 1+4+4 = 9) |
 | hi | 3<br>(i = 3) | beer | 4<br>(e+e = 2+2 = 4) |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We read the input text **`line`**, null the sum and run a loop, which goes through each symbol from the text. We check each letter **`c`** and verify if it is a vowel, and accordingly, add its value to the sum:
 
@@ -219,7 +219,7 @@ We read the input text **`line`**, null the sum and run a loop, which goes throu
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#8](https://judge.softuni.org/Contests/Practice/Index/1053#8).
 
 
-## What did we learn in this chapter?
+## What Have We Learned from This Chapter???
 
 We can repeat a block of code with a **`for` loop**:
 
@@ -253,7 +253,7 @@ Write a program that inputs **n integers** and checks whether there is a number 
 | 3<br>5<br>5<br>1 | No<br>Diff = 1 | &#124;5 - (5 + 1)&#124; = 1 |
 | 3<br>1<br>1<br>1 | No<br>Diff = 1 | - |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We have to calculate **the sum** of all elements, find **the largest** of them and check the condition.
 
@@ -275,7 +275,7 @@ Write a program that reads **n numbers** and calculates **the sum**, **the min**
 | 5<br>3<br>-2<br>8<br>11<br>-3 | OddSum=8,<br>OddMin=-3,<br>OddMax=8,<br>EvenSum=9,<br>EvenMin=-2,<br>EvenMax=11 | 4<br>1.5<br>1.75<br>1.5<br>1.75 | OddSum=3,<br>OddMin=1.5,<br>OddMax=1.5,<br>EvenSum=3.5,<br>EvenMin=1.75,<br>EvenMax=1.75 |
 | 1<br>-5 | OddSum=-5,<br>OddMin=-5,<br>OddMax=-5,<br>EvenSum=0,<br>EvenMin=No,<br>EvenMax=No | 3<br>-1<br>-2<br>-3 | OddSum=-4,<br>OddMin=-3,<br>OddMax=-1,<br>EvenSum=-2,<br>EvenMin=-2,<br>EvenMax=-2 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 This task combines some of the previous tasks: finding the **min**, **max** value and **sum**, as well as processing of elements on **even and odd positions **. Check them out.
 
@@ -301,7 +301,7 @@ There are **2 \* n numbers**. The first and the second number form a **pair**, t
 | 2<br>-1<br>0<br>0<br>-1 | Yes, value=-1 | values = {-1, -1}<br>equal values | 
 | 2<br>-1<br>2<br>0<br>-1 | No, maxdiff=2 | values = {1, -1}<br>differences = {2}<br>max difference = 2 |
 
-#### Hints and guidelines
+#### Hints and Guidelines
 
 We read the input numbers **in pairs**. For each pair we calculate its **the sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. In order to do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
 
