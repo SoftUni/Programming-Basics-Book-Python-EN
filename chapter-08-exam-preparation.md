@@ -132,7 +132,7 @@ In the end, we print the result on the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#1](https://judge.softuni.org/Contests/Practice/Index/1059#1).
 
 
-## Problems with Simple Condition
+## Problems with Simple Conditions
 
 **The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
 
@@ -450,7 +450,7 @@ Finally, we print the length of **the longest** sequence found:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#7](https://judge.softuni.org/Contests/Practice/Index/1059#7).
 
 
-## Problems for Drawing Figures on the Console
+## Problems for Drawing Figures on The Console
 
 **The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops for drawing** a figure on the console. Logical reasoning, simple calculations, and conditional statements may be required. The problem tests the ability of students to think logically and invent simple algorithms for solving problems, i.e. to think algorithmically. Here are some examples of Exam Problems:
 
