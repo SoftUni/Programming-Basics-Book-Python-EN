@@ -717,7 +717,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads three numbers from the console **b1, b2 and h and calculates the area of a trapezoid** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
-#### Problem Input and Output
+#### Sample Input and Output
 
 | Input         |  Output |    
 |---------------|---------|
@@ -745,7 +745,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads from the console a **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
-#### Problem Input and Output
+#### Sample Input and Output
 
 | Input |           Output                                         |    
 |-------|----------------------------------------------------------|
@@ -769,7 +769,7 @@ A **rectangle** is defined by the **coordinates** of both of its opposite corner
 
 ![](/assets/chapter-2-1-images/07.Rectangle-area-01.png)
 
-#### Problem Input and Output
+#### Sample Input and Output
 
 | Input                                | Output              |
 | ------------------------------------ | ------------------- |
@@ -786,7 +786,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads from the console **a side and a height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `round(area, 2)`**.
 
-#### Problem Input and Output
+#### Sample Input and Output
 
 | Input               | Output                |
 | ------------------- | --------------------- |
@@ -804,7 +804,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://shorturl.at/irvMR "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
-#### Problem Input and Output
+#### Sample Input and Output
 
 | Input | Output |
 | ---- | ----- |
@@ -822,7 +822,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** but before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
-#### Problem Input and Output
+#### Sample Input and Output
 
 | Input   | Output |
 | ------ | ----- |
@@ -840,7 +840,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program for **conversion of US dollars** (USD) **to Bulgarian leva** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and a **lev** (BGN): **1 USD = 1.79549 BGN**.
 
-#### Problem Input and Output
+#### Sample Input and Output
 
 | Input | Output      |
 | ---- | ---------- |

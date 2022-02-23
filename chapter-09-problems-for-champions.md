@@ -258,7 +258,7 @@ The result should be printed on the console as a sequence of strings, **arranged
 
 ### Hints and Guidelines
 
-As every problem, we start the solution by **processing the input data**:
+As every problem, we start the solution by **Processing The Input Data**:
 
 ![](/assets/chapter-9-1-images/03.Five-special-letters-01.png)
 

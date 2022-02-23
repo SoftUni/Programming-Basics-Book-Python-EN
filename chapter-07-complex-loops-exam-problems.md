@@ -48,10 +48,10 @@ Print on the console **all "dumb" passwords in alphabetical order**, separated b
 We can split the solution of the problem into 3 parts:
 
 * **Reading the input** – in the current problem, this includes reading two numbers **`n`** and **`l`**, each on a separate line.
-* **Processing the input data** – using nested loops to iterate through every possible symbol for each of the five password symbols.
+* **Processing The Input Data** – using nested loops to iterate through every possible symbol for each of the five password symbols.
 * **Printing the output** – printing every "dumb" password that meets the requirements.
 
-#### Reading and Processing the Input Data
+#### Reading and Processing The Input Data
 
 For **reading** of **input** data we will declare two integer variables **`int`**: **`n`** and **`l`**.
 

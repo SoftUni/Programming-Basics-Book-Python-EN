@@ -38,7 +38,7 @@ The body can consist of any code, as long as it corresponds to the syntactic par
 
 Now, after we refreshed our knowledge on how to use nested conditional statements to implement more complex conditions and program logic, let's solve some exam problems.
 
-## Problem: On Time for the Exam
+## Problem: On Time for The Exam
 
 A student has to attend **an exam at a particular time** (for example at 9:30 am). They arrive in the exam room at a particular **time of arrival** (for example 9:40 am). It is considered that the student has arrived **on time** if they have arrived **at the time when the exam starts or up to half an hour earlier**. If the student has arrived **more than 30 minutes earlier**, the student has come **too early**. If they have arrived **after the time when the exam starts**, they are **late**.
 
@@ -88,7 +88,7 @@ If the student arrives with more than one minute difference compared to the exam
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>It is recommended <strong>to read the assignment a few times,</strong> take notes and sketch the examples while thinking before you start writing code.</td></tr></table>
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 According to the assignment, we expect **four** lines containing different **integers** to be passed. Examining the provided parameters, we can use the **`int`** type, as it is suitable for the expected values. We simultaneously **read** the input data and **parse** the string value to the selected data type for the **intege**r.
 
@@ -131,7 +131,7 @@ We check whether the time difference is **more than** one hour, to print hours a
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-07.png)
 
-#### Printing the Result
+#### Printing The Result
 
 Finally, what remains is to print the result on the console. According to the requirements, if the student arrived right on time **(not even a minute difference)**, we do not need to print a second result. This is why we apply the following **condition**:
 
@@ -199,7 +199,7 @@ Typically, as for the other tasks, we can separate the solution into the followi
 * Doing calculations
 * Printing the result
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 While reading the requirements carefully, we understand that we expect **two** lines of input data. Our first parameter is a **real number**, for which we need to pick an appropriate variable type. We can pick **`float`** as a variable for the budget and – **`string`** for the season: 
 
@@ -235,7 +235,7 @@ can be shortened like so:
 
 ![](/assets/chapter-4-2-images/02.Trip-05.png)
 
-#### Printing the Result
+#### Printing The Result
 
 What remains is to display the calculated result on the console:
 
@@ -288,7 +288,7 @@ Print the output as a **single line** on the console:
 
 The problem is not complex, but there are a lot of lines of code to write.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 Upon reading the requirements, we understand that we expect **three** lines of input data. The first two lines are **integers** (within the specified range), and the third one – **an arithmetical symbol**.
 
@@ -326,7 +326,7 @@ For short and clear conditions, such as the above example for even and odd numbe
 
 ![](/assets/chapter-4-2-images/03.Operations-07.png)
 
-#### Printing the Output
+#### Printing The Output
 
 Finally, what remains is to print the calculated result on the console:
 
@@ -387,7 +387,7 @@ The input data will be read from the **console** and contains **exactly 3 lines*
 
 We will read the input data and perform the calculations described in the task requirements, to check if the money will be sufficient.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 Let's read the requirements carefully and examine what we expect to take as **input data**, what is expected to **return as a result**, as well as what the **main steps** for solving the problem are. For a start, let's process and save the input data in **appropriate variables**:
 
@@ -413,7 +413,7 @@ For the output, to spare one **condition** in the construction, we will assume t
 
 ![](/assets/chapter-4-2-images/04.Match-tickets-05.png)
 
-#### Printing the Result
+#### Printing The Result
 
 Finally, we need to display the calculated result on the console.
 
@@ -471,7 +471,7 @@ The input data will be read from the console and contains **exactly two lines**:
 
 We will read the input data and do the calculations according to the provided price list and the discount rules, and finally, print the result.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 According to the task requirements, we expect two lines of input data - the first line is the **month in which the stay is planned**, and the second - the **number of stays**. Let's process and store the input data in the appropriate parameters:
 
@@ -503,7 +503,7 @@ After calculating the relevant prices and the total amount for the stay, now let
 
 To calculate the output parameters, we will use the **formatting** **`.2f`**. This formatting **rounds the decimal** number up to a specified number of characters after the decimal point. In our case, we will round the decimal number up to **2 digits** after the decimal point.
 
-#### Printing the Result
+#### Printing The Result
 
 Finally, what remains is to print the calculated results on the console.
 

@@ -65,7 +65,7 @@ We will separate the solution of the problem into three main parts:
 
 Let's examine each of the parts in detail.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 The input of our task consists of a few components:
 
@@ -187,7 +187,7 @@ The result must be rounded up to the **second digit after the decimal point**.
 
 As usual, we will first read and process the input, after that, we will solve the problem, and finally, we will print the result, formatted as required.
 
-#### Reading the Input Data
+#### Processing The Input Data
 
 The input data will consist of exactly one text line read from the console. To have access to each expression, we have to read the input with **`input()`** function and then convert the string into an array of symbols. Using the function **`pop(…)`** we can process each symbol:
 
@@ -305,7 +305,7 @@ To complete our task we can do the followings steps:
 - We will generate all possible **four-digit combinations** (candidates for verification).
 - For each generated combination we will calculate **how many bulls** and **how many cows** it has according to the secret number. Upon matching the needed bulls and cows, we will **print the combination**.
 
-#### Reading the Input Data
+#### Processing The Input Data
 
 We have 3 lines in the input data:
  - The first contains **the secret number**.

@@ -92,7 +92,7 @@ The logical "**AND**" (operator **`and`**) means a few conditions have to be **f
 |-----|-----|-----|
 |True<br>True<br>False<br>False|True<br>False<br>True<br>False|True<br>False<br>False<br>False|
 
-### How does the `and` Operator work?
+### How Does The `and` Operator Work?
 
 The **`and`** operator accepts **a couple of Boolean** (conditional) statements, which have a **`True`** or **`False`** value, and returns **one** bool statement as a **result**. Using it **instead** of a couple of nested **`if`** blocks, makes the code **more readable**, **ordered** and **easy** to maintain. But how does it **work**, when we put a **few** conditions one after another? As we saw above, the logical **"AND"** returns **`True`**, **only** when it accepts as **arguments statements** with the value **`True`**. Respectively, when we have a **sequence** of arguments, the logical "AND" **checks** either until one of the arguments is **over**, or until it **meets** an argument with value **`False`**. 
 
@@ -316,7 +316,7 @@ To calculate the commission according to the city and volume of sales, we need a
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#7](https://judge.softuni.org/Contests/Practice/Index/1051#7).
 
-### Problem: Day of the Week
+### Problem: Day of The Week
 
 Let's write a program that prints **the day of the week** depending on the **given number** (1 … 7) or "**Error!**" if invalid input is given.
 

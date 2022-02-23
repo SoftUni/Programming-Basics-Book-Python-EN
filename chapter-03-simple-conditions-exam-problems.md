@@ -54,7 +54,7 @@ Print to the console **the lowest price** for the given number of kilometers.
 
 We will read the input data and, depending on the distance, we will choose the cheapest transport. To do that, we will write a few conditional statements.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 In the task, we are given **information about the input and output data**. Therefore, in the first **two lines** of the solution, we will declare and initialize the two **variables** that are going to store **the values of the input data**. **The first line** contains **an integer** and that is why the declared variable will be converted with the function **`int(…)`**. **The second line** contains **a word**, therefore, the variable will be of **`string`** type:
 
@@ -129,7 +129,7 @@ Print to the console **one of the two possible states**:
 
 To solve the task, we read the input data, write a few conditional statements, do some calculations and print the result.
 
-#### Processing the Input Data
+#### Processing The Input Data
 
 From the task requirements we note that our program must have **four lines** from which we read **the input data**. The first **three** consist of **integers** and that is why the **variables** that will store their values will be of **`int`** type. We know that the **fourth** line will be a **floating-point number**, therefore, the variable we use will be of **`float`** type:
 
@@ -189,7 +189,7 @@ The input is read from the console and consists of an integer – **the number o
 
 To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Reading the Input Data and calculating
+#### Processing The Input Data and calculating
 
 From the task we see that **the input data** will be read only on **the first line** and will be **an integer** in the range of [**0 … 365**]. This is why we will use a variable of **`int`** type:
 
@@ -215,7 +215,7 @@ Here we have to note that if the total **time for the playing** of Tom is **less
 
 The time for games is already calculated, which leads us to the **next** step – **comparing** the **time for play** of Tom with the **norm** on which the good sleep of the cat depends. To do so, we will use an **`if-else`** conditional statement. In the **`if` clause** we will check whether **the time for play is more than 30 000** (the norm).
 
-#### Processing the Output Data
+#### Processing The Output Data
 
 Whatever the result of the conditional statement is, we have to print how much **the difference in hours and minutes** is. We will do that with a **placeholder** and the variables that store the values of the hours and the minutes, as the formatting will be according to the task requirements for output: 
 
@@ -263,7 +263,7 @@ The following has to be printed to the console:
 
 To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Processing the Input Data and performing the calculations
+#### Processing The Input Data and performing the calculations
 
 First, we have to **check** what **the input data** will be, so that we can choose what **variables** we will use. The code bellow is blurred on purpose and it should be written by the reader:
 
@@ -328,7 +328,7 @@ The input data is read from **the console** and contains **exactly three lines**
 
 To solve the problem, we will read the input data. Then, we will write a few conditional statements and do some calculations. Finally, we will print the result.
 
-#### Reading the Input Data
+#### Processing The Input Data
 
 **First**, we have to read the input data to solve the problem. The code bellow is blurred on purpose and it should be written by the reader:
 
