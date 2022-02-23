@@ -60,7 +60,7 @@ On the single line of the output, you must print **the lowest number that occurs
 
 The problem seems quite complicated, so we will break it into simpler sub-problems: processing the input, generating Tribonacci sequence, generating numerical spiral and sinding sommon Number for the sequences.
 
-#### Processing the Input
+#### Processing The Input Data
 
 The first step in solving the problem is to read and process the input. Input data consists of **5 integers**: **3**  for the Tribonacci sequence and **2** for the numerical spiral:
 
@@ -87,7 +87,7 @@ What we have to take care of is **for each two numbers, our multiplier** (let's 
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-05.png)
 
-#### Finding Common Number for the Sequences
+#### Finding Common Number for The Sequences
 
 Once we have generated the numbers in both sequences, we can proceed to unite them and build the final solution. How will it look? For **each of the numbers** in the first sequence (starting from the smaller one) we will check if it exists in the next one. The first number that meets this criteria will be **the answer** to the problem.
 
@@ -149,7 +149,7 @@ We start with inserting the necessary functionality and reading the input from t
 
 Having the start and the end year, it is nice to know how we will go through every date, not to worry about how many days there are in the month and whether it is a leap year, and so on.
 
-#### Loop through Dates
+#### Loop Through Dates
 
 For looping through the dates, we will take advantage of the functionality that gives us the **`date`** type in **Python**. We will define a **start date variable**, that we can do using the constructor that accepts a year, month, and day. We know the year is the starting year we read from the console and the month and the day must be January and 1st respectively:
 
@@ -177,7 +177,7 @@ What remains is to do the calculation that will give us the magical weight of a 
 
 ![](/assets/chapter-9-1-images/02.Magic-dates-06.png)
 
-#### Printing the Output
+#### Printing The Output
 
 Once we have the weight calculated of a given date, we need **to check and see if it matches the magical weight we want**, in order to know if it should be printed or not.  Checking can be done using a standard **`if`** operator, taking care to print the date in the correct format. Fortunately, we already have each one of the digits that we need to print from **`d1`** to **`d8`**. Here we have to be careful with the data types. Since the concatenation of strings and the summation are done by the same operator, we have to convert numbers to strings:
 
@@ -194,7 +194,7 @@ Finally, if we have not found a date that is eligible, we will have a **`False`*
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1061#1](https://judge.softuni.org/Contests/Practice/Index/1061#1).
 
 
-## Problem: Five special letters
+## Problem: Five Special Letters
 
 Two numbers are given: **start** and **end**. Write a program that **generates all combinations of 5 letters**, each among the sets of **`{'a', 'b', 'c', 'd', 'e'}`**, so that the weight of these 5 letters is a number in the range **`[start … end]`**, inclusive. Print them in alphabetical order, in a single row, separated by a space.
 
@@ -308,7 +308,7 @@ Once we have the value of that letter, we should **multiply it by its position**
 
 All intermediate results obtained must be added to the **total amount for each letter of the 5-letter combination**.
 
-#### Preparing the Output
+#### Preparing The Output
 
 Whether a word needs to be printed is determined by its weight. We need a condition to determine if **the current weight is in the range** [**start … end**], passed to the input at the start of the program. If this is the case, we print the **full** word (**`full_word`**).
 
