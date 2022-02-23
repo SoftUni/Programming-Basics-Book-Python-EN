@@ -41,7 +41,7 @@ The task is similar to the previous one:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#1](https://judge.softuni.org/Contests/Practice/Index/1055#1).
 
 
-## Nested loops
+## Nested Loops
 
 A **nested loop** is a construction where **the body of one loop** (the outer one) **stays inside another loop** (the inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
 
@@ -180,7 +180,7 @@ From the examples, we see that **the Christmas tree** can be **divided** into **
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#6](https://judge.softuni.org/Contests/Practice/Index/1055#6).
 
 
-## Drawing more complex figures
+## Drawing More Complex Figures
 
 Let's look at how to **draw figures** using **nested loops** with more complex logic, for which we need to think more before coding.
 
@@ -340,7 +340,7 @@ What we know from the problem's description is that the diamond is **`n` x `n`**
 * With each row down, the asterisks get closer to each other. This means that space (**the dashes**) between them is getting smaller and space (**the dashes**) on the left and the right is getting larger.
 * The bottom-most part has 1 or 2 **asterisks**, depending on whether **n** is an even or odd number.
 
-##### Upper and Lower Parts of the Diamond
+##### Upper and Lower Parts of The Diamond
 
 * On each row, except the middle one, the asterisks are surrounded by inner and outer **dashes**.
 * On each row, there is space between the two **asterisks**, except on the first and the last row (sometimes **the asterisk is 1**).
@@ -389,7 +389,7 @@ If we have written all correctly, then the problem is solved.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#9](https://judge.softuni.org/Contests/Practice/Index/1055#9).
 
 
-## What did you learn from this chapter?
+## What Have We Learned from This Chapter?
 
 We learned about one of the ways to create strings: 
 
