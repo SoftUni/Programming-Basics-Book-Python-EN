@@ -6,7 +6,7 @@ In this chapter we will review three additional tasks that belong to the categor
 
 Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with Python** (functions, arrays, collections, recursion, etc.), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
-## Task: Passion Shopping Days
+## Problem: Passion Shopping Days
 
 Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our task is to analyze her strange behavior and **calculate the purchases** that Lina does when she enters the mall, as well as the **money she has left** when the shopping is over.
 
@@ -134,7 +134,7 @@ How can we do that? We will leave the answer to this question to the reader.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062#0](https://judge.softuni.org/Contests/Practice/Index/1062#0).
 
 
-## Task: Numerical Expression
+## Problem: Numerical Expression
 
 Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master because the spell relies on the ability to **quickly solve mathematical expressions**.
 

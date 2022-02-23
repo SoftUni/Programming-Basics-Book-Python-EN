@@ -21,7 +21,7 @@ else:
 After having revised how to write simple conditions, let's solve a few exam tasks to practice the **`if-else`** construction.
 
 
-## Task: Transportation Price
+## Problem: Transportation Price
 
 A student has to travel **n kilometers**. He can choose between **three types of transportation**: 
 * **Taxi**. Starting fee: **0.70** BGN. Day rate: **0.79** BGN/km. Night rate: **0.90** BGN/km.
@@ -97,7 +97,7 @@ After we have checked the distance **conditions** and we have **calculated the p
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#0](https://judge.softuni.org/Contests/Practice/Index/1050#0).
 
 
-## Task: Pipes in Pool
+## Problem: Pipes in Pool
 
 A pool with **volume V** fills up via **two pipes**. **Each pipe has a certain flow rate** (the liters of water, flowing through a pipe for an hour). A worker starts the pipes simultaneously and goes out for **N hours**. Write a program that finds the state of the pool **the moment the worker comes back**. 
 
@@ -155,7 +155,7 @@ However, if **the condition** returns **`false`**, that means that **the quantit
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#1](https://judge.softuni.org/Contests/Practice/Index/1050#1).
 
-## Task: Sleepy Tom Cat
+## Problem: Sleepy Tom Cat
 **Tom Cat** likes to sleep all day but, unfortunately, his owner is always playing with him whenever he has free time. To sleep well, **the norm of games** that Tom has is **30 000 minutes per year**. The time for games he has **depends on the holidays that his owner has**:
 * During **workdays**, his owner plays with him **63 minutes per day**. 
 * During **holidays**, his owner plays with him **127 minutes per day**. 
@@ -226,7 +226,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050
 
 
 
-## Task: Harvest
+## Problem: Harvest
 
 In a vineyard with an area of X square meters, **40% of the harvest goes for wine production**. **Y kilograms of grapes** are extracted from a **1 square meter vineyard**. **2,5 kg of grapes** is needed for **1 liter of wine**. The wanted quantity of wine for sale is **Z liters**.
 
@@ -294,7 +294,7 @@ If the condition returns **`false`**, we have to **print the difference** betwee
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#3](https://judge.softuni.org/Contests/Practice/Index/1050#3).
 
 
-## Task: Firm
+## Problem: Firm
 
 A firm gets a request for creating a project for which a certain number of hours are needed. The firm has **a certain number of days**. During 10% of the days, the workers are **being trained** and cannot work on the project. A normal **working day is 8 hours long**. The project is important for the firm and every worker must work on it with **overtime of 2 hours per day**. 
 

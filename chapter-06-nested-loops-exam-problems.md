@@ -20,7 +20,7 @@ print_me = ('abc' * 2)
 
 Now let's solve some exam tasks to consolidate what we have learned and to develop our algorithmic thinking.
 
-## Task: Drawing a fortress
+## Problem: Drawing a fortress
 
 Write a program, that reads from the console an **integer n** and draws a **fortress** with a width of **2 * n columns** and height of **n rows**, as in the below-given examples. The left and the right inner columns have a width of **n / 2**.
 
@@ -94,7 +94,7 @@ The structure of the **fortress base** is the same as the one in the **roof**. I
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#0](https://judge.softuni.org/Contests/Practice/Index/1056#0).
 
 
-## Task: Butterfly
+## Problem: Butterfly
 
 Write a program, that takes **an integer n** from the console and draws **butterfly** with width of **2 * n - 1 columns** and height of **2 * (n - 2) + 1 rows** as in the examples below. **The left and the right** **part** have **width of n - 1**.
 
@@ -145,7 +145,7 @@ What is left now is to print on the console the **lower wing**, which is **analo
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#1](https://judge.softuni.org/Contests/Practice/Index/1056#1).
 
 
-## Task: "Stop" sign
+## Problem: "Stop" sign
 
 Write a program, that takes an **integer n** from the console and draws **a STOP warning sign** with size as shown in the examples below.
 
@@ -202,7 +202,7 @@ At each subsequent iteration **the beginning** and **the end** decrease by 1, an
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#2](https://judge.softuni.org/Contests/Practice/Index/1056#2).
 
 
-## Task: Arrow
+## Problem: Arrow
 
 Write a program that receives from the console **an odd integer n** and draws **a vertical arrow** with size as in the examples below.
 
@@ -267,7 +267,7 @@ On each loop iteration **`outer_dots`** increases by 1, and **`inner_dots`** dec
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056#3](https://judge.softuni.org/Contests/Practice/Index/1056#3).
 
 
-## Task: Axe
+## Problem: Axe
 
 Write a program, that receives **an integer n** and draws an axe with size as in the example below. The width of the axe is **5 * n** columns.
 
