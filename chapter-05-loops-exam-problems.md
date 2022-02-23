@@ -37,7 +37,7 @@ On the first line of the input is an integer **n** ( 1 <= **n** <= 1000 ), which
 
 In the console, print a histogram of **5 lines**, each of them containing a number between 0% and 100%, formatted with two-digit precision after the decimal point (for example, 25.00%, 66.67%, 57.14%).
 
-### Example input & output
+### Problem input & output
 
 <table>
 <thead>
@@ -173,7 +173,7 @@ Print a single line in the console:
     * "**No! {M}**" – where **M** is the amount of money **lacking**
   * The numbers **N** and **M** should be **formatted with 2-digit precision after the decimal point**.
 
-### Example input & output
+### Problem input & output
 
 <table>
 <thead>
@@ -254,7 +254,7 @@ The input is read from the console and **contains exactly 2 lines**:
   *	If **the money is NOT enough**:
     * "**He will need {M} dollars to survive.**" – where **M** is the amount **lacking**.
 
-### Example input & output
+### Problem input & output
 
 <table>
 <thead>
@@ -331,7 +331,7 @@ The input is read from the **console** and contains:
 * On **the first line**: "**Treated patients: {count of treated patients}.**"
 * On **the second line**: "**Untreated patients: {count of untreated patients}.**"
 
-### Example input and output
+### Problem input and output
 
 <table>
 <thead>
@@ -450,7 +450,7 @@ Print to the console **3 lines**, each of them containing a percentage between 0
  * On the **second line** – the percentage of numbers **divisible by 3**.
  * On the **third line** – the percentage of numbers **divisible by 4**.
 
-### Example input and output
+### Problem input and output
 
 <table>
 <thead>
@@ -516,7 +516,7 @@ Print **4 lines** to the console, as given:
  * **Line #3** – **the percentage** of cargo, transported with a **truck** (between 0.00% and 100.00%).
  * **Line #4** – **the percentage** of cargo, transported with a **train** (between 0.00% and 100.00%).
  
-### Example input and output
+### Problem input and output
 
 <table>
 <thead>

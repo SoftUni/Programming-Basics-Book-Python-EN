@@ -15,7 +15,7 @@ In programming, we can compare values through the use of the following **operato
 
 The result from a comparison is the so-called Boolean value – **`True`** or **`False`**, depending on the evaluated result being either true or false.
 
-### Examples of number comparisons
+### Problems of number comparisons
 
 ![](/assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
@@ -62,7 +62,7 @@ if condition:
     # body of the conditional construct
 ```
 
-### Example: Excellent Grade
+### Problem: Excellent Grade
 
 We take the grade as an input in the console and check if it is excellent (**`≥ 5.50`**).
 
@@ -87,7 +87,7 @@ else:
     # else structure body to be executed if a condition is false
 ```
 
-### Example: Excellent grade or not
+### Problem: Excellent grade or not
 
 Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
@@ -172,7 +172,7 @@ else:
     # else structure body
 ```
 
-### Example: Numbers 1 through 9 in English
+### Problem: Numbers 1 through 9 in English
 
 Print the digits one through nine in English on the console (the numbers are read from the console). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 

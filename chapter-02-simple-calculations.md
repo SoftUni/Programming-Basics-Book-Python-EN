@@ -53,7 +53,7 @@ If it weren't for this conversion, for the program **every number** will be just
 size = int(input('Enter the size = '))
 ```
 
-### Example: Calculating a Square Area with Length of a Side **a**
+### Problem: Calculating a Square Area with Length of a Side **a**
 
 Let's take the following program as an example. It reads an integer, multiplies it by itself (i.e. **squares it**) and prints the result of the multiplication. This is how we can calculate the area of a square by using a given length of its side **a**:
 
@@ -124,7 +124,7 @@ To read a user input as a **floating-point number**, we need to **declare a vari
 num = float(input())
 ```
 
-### Example: Conversion of Inches to Centimeters
+### Problem: Conversion of Inches to Centimeters
 
 Let's write a program that reads a fractional number in inches and converts it to centimeters:
 
@@ -151,7 +151,7 @@ To read a **text** (string) from the console, again, we have to **declare a new 
 str = input()
 ```
 
-### Example: Greeting by Name
+### Problem: Greeting by Name
 
 Let's write a program that asks the user for their name and salutes them with the text "**Hello, _{name}_!**".
 
@@ -453,7 +453,7 @@ expr = (3 + 5) * (4 – 2)  # 16
 
 The standard rule for priorities of arithmetic operations is applied: **multiplication and division are always done before addition and subtraction**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
 
-### Example: Calculating Trapezoid Area
+### Problem: Calculating Trapezoid Area
 
 Let's write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating point number per line) and calculates the area of the trapezoid by the standard math formula:
 
@@ -507,7 +507,7 @@ round(123.456, 0)  # 123.0
 round(123.512, 0)  # 124.0
 ```
 
-### Example: Perimeter and area of a circle: 
+### Problem: Perimeter and area of a circle: 
 
 Let's write a program that, when given the **radius r** of a circle, **calculates the area and the perimeter** of the circle.
 
@@ -536,7 +536,7 @@ Let's try the program with **radius `r = 10`**:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
 
-### Example: Area of a Rectangle
+### Problem: Area of a Rectangle
 
 A rectangle is given with **coordinates of its two opposite corners**. You have to calculate its **area and perimeter**:
 
@@ -717,7 +717,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads three numbers from the console **b1, b2 and h and calculates the area of a trapezoid** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
-#### Example Input and Output
+#### Problem Input and Output
 
 | Input         |  Output |    
 |---------------|---------|
@@ -745,7 +745,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads from the console a **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
-#### Example Input and Output
+#### Problem Input and Output
 
 | Input |           Output                                         |    
 |-------|----------------------------------------------------------|
@@ -769,7 +769,7 @@ A **rectangle** is defined by the **coordinates** of both of its opposite corner
 
 ![](/assets/chapter-2-1-images/07.Rectangle-area-01.png)
 
-#### Example Input and Output
+#### Problem Input and Output
 
 | Input                                | Output              |
 | ------------------------------------ | ------------------- |
@@ -786,7 +786,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads from the console **a side and a height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `round(area, 2)`**.
 
-#### Example Input and Output
+#### Problem Input and Output
 
 | Input               | Output                |
 | ------------------- | --------------------- |
@@ -804,7 +804,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://shorturl.at/irvMR "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
-#### Example Input and Output
+#### Problem Input and Output
 
 | Input | Output |
 | ---- | ----- |
@@ -822,7 +822,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** but before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
-#### Example Input and Output
+#### Problem Input and Output
 
 | Input   | Output |
 | ------ | ----- |
@@ -840,7 +840,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 Write a program for **conversion of US dollars** (USD) **to Bulgarian leva** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and a **lev** (BGN): **1 USD = 1.79549 BGN**.
 
-#### Example Input and Output
+#### Problem Input and Output
 
 | Input | Output      |
 | ---- | ---------- |

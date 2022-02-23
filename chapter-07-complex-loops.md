@@ -23,7 +23,7 @@ By default, range in Python uses a step **value of `1`** and is not added to the
 
 Here is a series of sample problems, the solution of which will help us better understand the use of a **step** in a **`for`** loop.
 
-### Example: Numbers from 1 to N with a step of 3
+### Problem: Numbers from 1 to N with a step of 3
 
 Write a program that prints the numbers **from 1 to n** with a **stride of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
 
@@ -40,7 +40,7 @@ We can solve the problem using the following sequence of actions (algorithm):
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#0](https://judge.softuni.org/Contests/Practice/Index/1057#0).
 
 
-### Example: Numbers from N to 1 in reverse
+### Problem: Numbers from N to 1 in reverse
 
 Write a program that prints the numbers **from n to 1 in reverse** (step -1). For example, **if n = 100**, then the output will be: **100, 99, 98, …, 3, 2, 1**.
 
@@ -58,7 +58,7 @@ We can solve the problem in the following manner:
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#1](https://judge.softuni.org/Contests/Practice/Index/1057#1).
 
 
-### Example: Numbers from 1 to 2^n with a for loop
+### Problem: Numbers from 1 to 2^n with a for loop
 
 In the following example, we will use the standard size 1 stride.
 
@@ -71,7 +71,7 @@ Write a program that prints the numbers **from 1 to 2^n** (two to the power of n
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#2](https://judge.softuni.org/Contests/Practice/Index/1057#2).
 
 
-### Example: Even Powers of 2
+### Problem: Even Powers of 2
 
 Print the **even** powers of **2** until **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n**. For example, if **n = 10**, then the output would be **1, 4, 16, 64, 256, 1024**.
 
@@ -102,7 +102,7 @@ In programming, the **`while` loop** is used when we want to **repeat** the exec
 Here is a series of sample problems, the solutions of which will help us better understand the use of the **`while`** loop.
 
 
-### Example: Sequence of Numbers 2k+1
+### Problem: Sequence of Numbers 2k+1
 
 Write a program that prints **all numbers ≤ n** in the series: **1, 3, 7, 15, 31, …**, assuming that each number is generated according to the following formula next_number = **previous_number \* 2 + 1**.
 
@@ -121,7 +121,7 @@ Here is a sample implementation of this idea:
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#4](https://judge.softuni.org/Contests/Practice/Index/1057#4).
 
 
-### Example: Number in Range [1 … 100]
+### Problem: Number in Range [1 … 100]
 
 Enter an integer in the range [**1 … 100**]. If the entered number is **invalid**, enter **again**. In this case, an invalid number would be any number that is **outside** the given range.
 
@@ -176,7 +176,7 @@ while b ≠ 0
 print a
 ```
 
-### Example: Greatest Common Divisor (GCD)
+### Problem: Greatest Common Divisor (GCD)
 
 Enter the **integers** **a** and **b** and find **GCD(a, b)**.
 
@@ -215,7 +215,7 @@ The structure of `while` + `break` loop is very similar to the classic `while` l
 
 Once we are familiar with the concept of a `while` + `break` loop with an exit condition, which is not required to be at the beginning, now we should proceed with the usual set of practical problems, with which we can master the new knowledge.
 
-### Example: Calculating Factorial
+### Problem: Calculating Factorial
 
 For **n** number calculate **n! = 1 \* 2 \* 3 \* … \* n**. For example, if **n = 5**, then the result would be: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
@@ -236,7 +236,7 @@ Here is how we can calculate factorial in more detail:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#7](https://judge.softuni.org/Contests/Practice/Index/1057#7).
 
 
-### Example: Summing the Digits of a Number
+### Problem: Summing the Digits of a Number
 
 Sum up the digits of the integer **positive** number **n**. For example, if **n = 5634**, then the output would be: 5 + 6 + 3 + 4 = **18**.
 
@@ -281,7 +281,7 @@ We already know that the infinite loop executes a certain code infinitely, but w
 <td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
-### Example: Prime Number Checking
+### Problem: Prime Number Checking
 
 The next problem we are going to solve is to **check whether a given number is prime**, but before that, we should remember what prime numbers.
 
@@ -306,7 +306,7 @@ Here are some examples of composite numbers:
 <td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, to check the divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-### Example: check for a prime number. Break operator
+### Problem: check for a prime number. Break operator
 
 You are tasked to write a function that takes a single input **n** integer and checks if it is prime. This can be implemented by checking if **n** is divisible by any numbers in the range between 2 and √n.
 
@@ -329,7 +329,7 @@ What remains is to add a **condition that checks if the input number is greater 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#9](https://judge.softuni.org/Contests/Practice/Index/1057#9).
 
 
-### Example: the break operator in an infinite loop
+### Problem: the break operator in an infinite loop
 
 Write a function, which checks whether a given number **n** is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
@@ -405,7 +405,7 @@ The **`try-except`** construction has different options, but for now we will get
 
 In the next task we will see how to deal with a situation, in which the user enters an input other than a number (for example **`string`** instead of **`int`**), using **`try-except`**.
 
-### Example: dealing with invalid numbers by try-except
+### Problem: dealing with invalid numbers by try-except
 
 Write a program that checks that a number **n** is even and, if so, print it on the screen. In case of **invalid entered** number, a message should be displayed that the entered input is not a valid number and the input should continue.
 

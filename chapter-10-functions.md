@@ -76,7 +76,7 @@ As the calling of a function is a command by itself, we can call a function from
 
 There is also a possibility the function to be called in **its own body**. This is called **recursion**, for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
 
-### Example: empty receipt
+### Problem: empty receipt
 
 Write a function which prints empty receipt. The function should call another three functions: function which prints the headline of the receipt, function which prints the body of the receipt and function which prints the bottom of the receipt.
 
@@ -132,7 +132,7 @@ Let’s look at another example of function definition which has a few parameter
 
 ![](/assets/chapter-10-images/05.Function-parameters-03.png)
 
-### Example: integer sign
+### Problem: integer sign
 
 Create a function which prints whether the given integer is positive, negative or zero.
 
@@ -175,7 +175,7 @@ The given function **`print_numbers(…)`** can be called in several ways:
 
 On the first line the parameters use the following arguments – **`start = 5`**, **`end = 10`**. With the second line the arguments will be - **`start = 0`**, **`end = 15`**. With the third line we have **`start = 0`**, **`end = 100`**. The last line will use **`start = 35`**, **`end = 40`**.
 
-### Example: Printing of triangle
+### Problem: Printing of triangle
 
 Create a function which prints triangle as shown in the examples.
 
@@ -210,7 +210,7 @@ Finally, we print the **bottom segment** of the triangle, as this time the step 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#2](https://judge.softuni.org/Contests/Practice/Index/1063#2).
 
 
-### Example: drawing filled square
+### Problem: drawing filled square
 
 Draw filled square to the console with a side length N as it is shown in the examples.
 
@@ -281,7 +281,7 @@ The third method of using the returned value of our function is to **pass** this
 
 ![](/assets/chapter-10-images/10.Return-operator-06.png)
 
-### Example: calculating area of a triangle
+### Problem: calculating area of a triangle
 
 Write a function which calculates the area of a triangle, given the base and height, and returns it as an argument.
 
@@ -306,7 +306,7 @@ The next step will be to read the input values and **call the function** using t
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#4](https://judge.softuni.org/Contests/Practice/Index/1063#4).
 
 
-### Example: power of number
+### Problem: power of number
 
 First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments as its parameters (a number and its power), and returns as a result a float type number.
 

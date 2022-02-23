@@ -15,7 +15,7 @@ We have two sequences:
 
 Write a program that finds the first number that appears **in both sequences defined in the aforementioned way.**.
 
-### Example
+### Problem
 
 Let **the Tribonacci sequence** start with **1**, **2** and **3**. This means that **the first sequence** will contain the numbers 1, 2, 3, 6, 11, 20, 37, 68, 125, 230, 423, 778, 1431, 2632, 4841, 8904, 16377, 30122, 55403, 101902, and so on.
 

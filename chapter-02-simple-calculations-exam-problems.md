@@ -427,7 +427,7 @@ Ivan is a programmer in an American company, and he **works** at home **approxim
 
 Print one number on the console – **the average daily earnings in BGN**. The result will be **rounded up to the second digit after the decimal point**.
 
-### Example Input and Output
+### Problem Input and Output
 
 |Input|Output|
 |---------------|------------------|

@@ -144,7 +144,7 @@ The expression is solved **without considering the mathematical rules** for calc
 - An expression containing **(…(…)…) is an invalid one**.
 - An expression containing **(…)…(…) is a valid one**.
 
-### Example
+### Problem
 
 The expression
 

@@ -2,7 +2,7 @@
 
 In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
-### Example: Rectangle Made of 10 x 10 Asterisks
+### Problem: Rectangle Made of 10 x 10 Asterisks
 
 Print on the console a rectangle made out of **10 x 10** asterisks.
 
@@ -22,7 +22,7 @@ How does the example work? We initialize **a loop with a variable `i`**. The def
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
 
 
-### Example: Rectangle Made of N x N Asterisks
+### Problem: Rectangle Made of N x N Asterisks
 
 Write a program which receives a positive number **n** and prints on the console **a rectangle made out of N x N asterisks**. 
 
@@ -58,7 +58,7 @@ In **Python**, when the standard initial value of the variable in the loop (**`i
 
 Let's look at the example above. After the initialization of the **first (outer) loop**, its **body**, which contains **the second (nested) loop**, starts to run. It itself prints one line **`n`** of asterisks. After the **internal** loop **completes** its execution in the first iteration of the external one, then **the external one will continue**, i.e. will print a blank line on the console. **Then** the **first** loop ** will be **updated** and the whole **second** (nested) loop will be executed again. The inner loop will be executed as many times as the body of the outer loop is executed, in this case **`n`** times. 
 
-### Example: Square Made of Asterisks
+### Problem: Square Made of Asterisks
 
 Print on the console a square made of **N x N** asterisks:
 
@@ -76,7 +76,7 @@ The problem is similar to the last one. The difference here is that we need to f
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#2](https://judge.softuni.org/Contests/Practice/Index/1055#2).
 
-### Example: Triangle Made of Dollars
+### Problem: Triangle Made of Dollars
 
 Write a program which receives an integer **n** and prints **a triangle made of dollars** of size **n**.
 
@@ -95,7 +95,7 @@ The problem is **similar** to those for drawing **a rectangle** and **square**. 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#3](https://judge.softuni.org/Contests/Practice/Index/1055#3).
 
 
-### Example: Square Frame
+### Problem: Square Frame
 
 Write a program which receives a positive integer **n** and draws on the console **a square frame** with a size of **N x N**.
 
@@ -306,7 +306,7 @@ If we have written everything correctly, our problem should be solved.
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#8](https://judge.softuni.org/Contests/Practice/Index/1055#8).
 
-### Example: Diamond
+### Problem: Diamond
 
 Write a program which receives an integer **n** (1 ≤ **n** ≤ 100) and prints a diamond with size **N**, as in the following examples:
 
