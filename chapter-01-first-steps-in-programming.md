@@ -254,9 +254,6 @@ In the table, the Judge System will display one of the following **possible resu
 -	If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
 -	If there are syntactic errors in our program, we receive a **compile time error message**.
 
-### How Do I Register at SoftUni Judge?
-Just use your id (Username + Password) from the site [softuni.bg](softuni.bg). If you haven't yet registered, go right ahead – it will take no more than a minute since it's just a standard website registration.
-
 ### Test Your Tone-Playing Programs
 
 Now that you've learned how to **execute programs**, you can test the sample note-playing programs you have above. Have fun with them, try out different things. Try changing them and playing with them. Swap the `print('Hello Python')` command with `windsound.Beep(432, 500)` and add `import windsound` at the top, then start your program. Check whether your computer sound is on and turned up. If you're using an online development environment, you won't hear anything, because the program isn't executed on your computer, but somewhere else. The `windsound` Module may not work with some operating systems like Linux and MacOS.

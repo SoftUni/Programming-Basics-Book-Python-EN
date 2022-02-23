@@ -14,8 +14,7 @@ Remember the **[four main groups of skills](chapter-00-preface.md#become-a-devel
 
 If you were **not able** to solve all problems or a large part of them, go back and solve them! Remember that **becoming a programmer** requires **a lot of work and effort**. This profession is not for lazy people. There is no way to learn it unless **you seriously practice** programming for years!
 
-As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code. We recommend you, besides reading the book, to enroll in the **[practical course "Programming Basics" at SoftUni](https://softuni.bg/apply)**, as an online format of training.
-
+As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code.
 
 ## What to do After Reading This Book?
 
@@ -90,7 +89,6 @@ Here are some recommended **resources**, that will be useful for your developmen
 * https://www.facebook.com/SoftwareUniversity/ - official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
 * https://introprogramming.info - official website of the **books "Programming Basics"** with **C#** and **Java** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
 * https://stackoverflow.com - **Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
-* https://fb.com/groups/bg.developers - **"Programing Bulgaria @ Facebook"** group is one of the biggest Bulgarian communities for programmers related to software development on Facebook.
 * https://www.meetup.com/find/tech/ - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
 
 

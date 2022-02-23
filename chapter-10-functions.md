@@ -74,7 +74,7 @@ As the invoking of a function is a command by itself, we can call a function fro
 
 ![](/assets/chapter-10-images/03.Invoking-functions-02.png)
 
-There is also a possibility the function to be called in **its own body**. This is called **recursion**, for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
+There is also a possibility the function to be called in **its own body**. This is called **recursion**, for which additional information can be found in [Wikipedia](https://en.wikipedia.org/wiki/Recursion) and we strongly encourage you to do your own research on the internet.
 
 ### Problem: Empty Receipt
 
