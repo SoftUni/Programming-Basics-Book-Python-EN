@@ -1,8 +1,8 @@
-# Chapter 3.1. Simple conditions
+# Chapter 3.1. Simple Conditions
 
 In the current chapter, we're going to be taking a look at the **conditional constructs in the Python programming language**. By implementing these constructs, our program can produce a different output based on a given specific input. We will explain the syntax of the conditional operators (**`if`**, **`if-elif`** and **`else`**) by implementing appropriate examples and also we are going to take a look at the range in which a variable lives (its **scope**). Finally, we will go over different **debugging** techniques, to follow the programming steps through which our program goes during its run.
 
-## Number comparison
+## Number Comparison
 
 In programming, we can compare values through the use of the following **operators**:
 
@@ -15,15 +15,15 @@ In programming, we can compare values through the use of the following **operato
 
 The result from a comparison is the so-called Boolean value – **`True`** or **`False`**, depending on the evaluated result being either true or false.
 
-### Problems of number comparisons
+### Problems of Number Comparisons
 
 ![](/assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
 Note that when printing **`true`** and **`false`** values in **Python**, they are capialized, **`True`** and **`False`**, respectively.
 
-### Comparison operators
+### Comparison Operators
 
-In Python we can use the following operators to compare data:
+In Python, we can use the following operators to compare data:
 
 <table>
 <tr>
@@ -53,7 +53,7 @@ Here is an example:
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
-## Simple if comparisons
+## Simple If Comparisons
 
 In programming, we often **check particular conditions** and perform various actions depending on the result of the comparison. This is done through **`if`** clauses, which have the following structure:
 
@@ -62,7 +62,7 @@ if condition:
     # body of the conditional construct
 ```
 
-### Problem: Excellent Grade
+### Problem: Excellent Result
 
 We take the grade as an input in the console and check if it is excellent (**`≥ 5.50`**).
 
@@ -76,7 +76,7 @@ You can test the solution example here:
 [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
 
 
-## If-else conditional constructs
+## If-Else Conditional Constructs
 
 The **`if`** conditional can also have an **`else`** option to provide a specific action to be performed in case the Boolean expression (which is specified at the beginning **`if Boolean expression`**) returns a negative result (**`False`**). Written in this way, the **conditional statement** is called **`if-else`** and its behavior is as follows: if the result of the condition is **positive** (**`True`**) - a set of instructions is executed. By contrast, when the result is **negative** (**`False`**) - a different set is executed. The format of this structure is as shown:
 
@@ -87,7 +87,7 @@ else:
     # else structure body to be executed if a condition is false
 ```
 
-### Problem: Excellent grade or not
+### Problem: Excellent or Not
 
 Similarly to the example above, we input a grade and check if it is excellent, but this time we should **output a result in both cases**:
 
@@ -98,7 +98,7 @@ Similarly to the example above, we input a grade and check if it is excellent, b
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
 
 
-## About blocks of code
+## About Blocks of Code
 
 By pressing the **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other structures) and we want to perform a series of operations, we put them in a block after the condition.
 
@@ -135,7 +135,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
 
-### Problem: Finding the Greater Number
+### Problem: Finding The Greater Number
 
 Write a program that reads two integers and outputs the number of higher value between the two .
 
@@ -148,7 +148,7 @@ Our first task is to **read** the two numbers. After which through the use of a 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
 
 
-## The Lifetime of a variable
+## The Lifetime of a Variable
 
 Every variable has a scope in which it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In Python, **variables could be used anywhere if they are initialized at least once.**
 
@@ -156,7 +156,7 @@ In the example below, on the last line we try to print the variable **`my_name`*
 
 ![](/assets/chapter-3-1-images/00.Variable-scope-01.png)
 
-## Conditional chaining
+## Conditional Chaining
 
 Sometimes we have to do a series of checks, before deciding what actions our program will execute. In such cases we can apply the structure **`if-elif ... else` in series**. For this purpose, we employ the following structure:
 
@@ -172,7 +172,7 @@ else:
     # else structure body
 ```
 
-### Problem: Numbers 1 through 9 in English
+### Problem: Number 0...9 to Text
 
 Print the digits one through nine in English on the console (the numbers are read from the console). We can take the digit and through a **series of conditions** print the corresponding English word on the console:
 
@@ -198,7 +198,7 @@ The program logic of the above example **sequentially compares** the input numbe
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
 
 
-## Excercies: Simple conditions
+## Problems: Simple Conditions
 
 To practice the implementation of the conditional constructs **`if`** and **`if-elif`** we will take a look at a few practical problems.
 
@@ -222,7 +222,7 @@ We are given an **integer** – several points. Additional **bonus points** are 
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We can calculate the base and additional bonus score with a series of **`if-elif-else`** statements. For the **main bonus points we have 3 cases** (the input is less than or equal to 100, it is between 100 and 1000, and finally it is greater than 1000), for the **additional bonus score - further 2 cases** (whether the number is even or odd):
 
@@ -252,7 +252,7 @@ Three athletes finish with some **number of seconds** (between **1** and **50**)
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Firstly, we sum the three numbers, to obtain the total seconds. As we know that **1 minute = 60 seconds**, we should calculate the minutes and seconds in the range 0 to 59:
 - If the result is between 0 and 59, we print 0 minutes + calculated seconds.
@@ -295,7 +295,7 @@ The input will consist of three parameters:
 | 150 <br>mi <br>in | 9503999.99393599 |
 | 450 <br>yd <br>km | 0.41147999937455 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We take the input data and to the units of measure, we can add the function **`lower()`**, which will convert all letters to lower case. As we can see from the conversion table above, we have data for **converting only between meters and any other measuring unit**. To make the conversion, firstly we must calculate the input measurement in meters. To this effect, we need to create a set of conditionals to determine the input measuring unit and then the output.
 
@@ -306,11 +306,11 @@ We take the input data and to the units of measure, we can add the function **`l
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#7](https://judge.softuni.org/Contests/Practice/Index/1049#7).
 
 
-## Debugging - simple operations with a debugger
+## Debugging - Simple Operations With a Debugger
 
 So far, we have written quite a lot of code and oftentimes there have been mistakes, haven't there? Now we can show you a tool to make finding mistakes easier.
 
-### What is "debugging"?
+### What is "Debugging"?
 
 **Debugging** is the process of "**attaching**" to a program's execution, which allows us to follow closely the execution of our program. We can follow **line by line** the events in our program, what its evaluation route is, what the intermediate values of the declared variables at each step of the execution are, among other useful information and thus allowing us to locate errors - the so-called **bugs**:
 
@@ -329,7 +329,7 @@ With [**Ctrl + F8**] we create **breakpoints**, which we can reach directly usin
 
 Now let's practice the lessons learned in this chapter with a few practical exercises.
 
-### Empty PyCharm solution (Project)
+### Empty PyCharm Solution (Project)
 
 We create empty solution in PyCharm so we can organize the solutions to the tasks from the exercises – each task will be in a separate file and all tasks will be in the same Project.
 
@@ -356,7 +356,7 @@ The first exercise for this topic is to write a **console application**, which *
 | 5.5 | Excellent! |
 | 5.49 | (no output) |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We create a new **python** file (**.py**) by right-clicking on the folder we created and selecting [**New**] -> [**Python File**]:
 
@@ -392,7 +392,7 @@ The next exercise for this topic is to write a **console program**, which **read
 | 5.5 | Excellent! |
 | 5.49 | Not excellent. |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Firstly, we create a **new Python file** in our project. After that, we  **write the code** the program. You may use the following example code as a hint:
 
@@ -423,7 +423,7 @@ Write a program that checks whether an **integer** input data is either **even**
 | 25 | odd |
 | 1024 | even |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Again, firstly we must create a **new Python file**. Then the check if a number is either even or odd can be made with the operator **`%`**, which will return the **remainder from an integer divided by 2** as follows: **`is_even = number % 2 == 0`**.
 
@@ -436,7 +436,7 @@ Now we have to **run** the program with [**Ctrl+F5**] and test it:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
 
-### Problem: Find the greater number
+### Problem: Find The Greater Number
 
 Write a program that reads input data from the console. As input data enter **two integers** each on a separate line and print the greater one on the console.
 
@@ -449,7 +449,7 @@ Write a program that reads input data from the console. As input data enter **tw
 |10<br>10| 10 |
 |-5<br>5| 5 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 As usual, first, we need to create a **new Python file**. For the main logic, we need a single **`if-else`** construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself: 
 
@@ -477,7 +477,7 @@ Write a program that reads input data from the console - **integer in range** [*
 | 9 | nine |
 | 10 | number too big |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 We can use a sequence of **`if-elif`** statements to cover every one of the possible **11 cases**.
 
@@ -486,7 +486,7 @@ We can use a sequence of **`if-elif`** statements to cover every one of the poss
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
 
 
-### Problem: Guess the Password
+### Problem: Password Guess
 
 Write a program that **reads input data from the console - a password** (one line of random text) and checks if the input **matches** the phrase "**s3cr3t!P@ssw0rd**". If it matches, print "**Welcome**", otherwise print "**Wrong password!**". 
 
@@ -498,7 +498,7 @@ Write a program that **reads input data from the console - a password** (one lin
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Use an **`if-else`** statement.
 
@@ -507,7 +507,7 @@ Use an **`if-else`** statement.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#8](https://judge.softuni.org/Contests/Practice/Index/1049#8).
 
 
-### Problem: Numbers from 100 to 200
+### Problem: Number 100...200
 
 Write a program that **reads input data from the console - an integer** and checks if it is **below 100**, **between 100 and 200** or **over 200**. Print the appropriate messages as per the examples below.
 
@@ -524,7 +524,7 @@ Write a program that **reads input data from the console - an integer** and chec
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#9](https://judge.softuni.org/Contests/Practice/Index/1049#9).
 
 
-### Problem: Identical words
+### Problem: Equal Words
 
 Write a program that **reads input data from the console - two words** and checks if they are the same. A comparison should be case-insensitive and the output should be either "**yes**" or "**no**". 
 
@@ -538,7 +538,7 @@ Write a program that **reads input data from the console - two words** and check
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Before the comparison, both words should be in lower case, so that case (uppercase / lowercase) does not influence the result **`word = word.lower()`**.
 
@@ -547,7 +547,7 @@ Before the comparison, both words should be in lower case, so that case (upperca
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#10](https://judge.softuni.org/Contests/Practice/Index/1049#10).
 
 
-### Problem: Speed Assessment
+### Problem: Speed Info
 
 Write a program, that **reads input data from the console - speed** (decimal number) and prints **speed information**. For speed **up to 10** (inclusive), print "**slow**". For speed **over 10 up to 50**, print "**average**". For speed **over 50 and up to 150**, print "**fast**". For speed **over 150 and up to 1000**, print "**ultra fast**". For any higher speed, print "**extremely fast**".
 
@@ -565,7 +565,7 @@ Write a program, that **reads input data from the console - speed** (decimal num
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#11](https://judge.softuni.org/Contests/Practice/Index/1049#11).
 
 
-### Problem: Areas of Figures
+### Problem: Area of Figures
 
 Write a program that reads input data from the console - **the measures of a geometric shape** and **calculates its surface area**. There are four types of shapes: **square**, **rectangle**, **circle** and **triangle**.
 
@@ -605,7 +605,7 @@ Write a program that reads **two integers - hours and minutes** based on a 24-ho
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** where appropriate.
 
@@ -614,7 +614,7 @@ Add 15 minutes and check using a set of conditions. If minutes are over 59 **inc
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#13](https://judge.softuni.org/Contests/Practice/Index/1049#13).
 
 
-### Problem: Tree equal numbers
+### Problem: 3 Equal Numbers
 
 Write a program that reads **3 numbers** and prints whether they are the same ("**yes**" / "**no**").
 
@@ -631,7 +631,7 @@ Write a program that reads **3 numbers** and prints whether they are the same ("
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#14](https://judge.softuni.org/Contests/Practice/Index/1049#14).
 
 
-### Problem: \* Convert a number to words
+### Problem: Number 0...100 to Text
 
 Write a program that converts numbers in the range of [**0 … 100**] in text. 
 
@@ -643,7 +643,7 @@ Write a program that converts numbers in the range of [**0 … 100**] in text.
 | 42 | forty two |
 | 6  | six |
 
-#### Hints and pointers
+#### Hints and Guidelines
 
 Firstly, we should check for **single-digit numbers** and if this is the case, print the corresponding word. Then we can check if the number is a **double-digit number**. These can be printed in two parts: left part (**double-digit** = number / 10) and right part (**single-digit** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
 #### Testing in The Judge System

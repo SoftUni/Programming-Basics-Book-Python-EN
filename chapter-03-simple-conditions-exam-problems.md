@@ -1,6 +1,6 @@
-# Chapter 3.2. Simple Conditions – Exam Tasks
+# Chapter 3.2. Simple Conditions – Exam Problems
 
-In the previous chapter, we went through **the simple conditional statements** in Python, which we can use to execute different actions depending on a given condition. We mentioned what is the **`scope`** of a variable and how to track the execution of our program step by step (the so-called **debugging**). In this chapter, we'll be working with **simple conditions** by going through some exam tasks. To do this, let's first revise their construction:
+In the previous chapter, we went through **the simple conditional statements** in Python, which we can use to execute different actions depending on a given condition. We mentioned what is the **`scope`** of a variable and how to track the execution of our program step by step (the so-called **debugging**). In this chapter, we'll be working with **simple conditions** by going through some Exam Problems. To do this, let's first revise their construction:
 
 ```python
 if bool expression:
@@ -16,9 +16,9 @@ else:
  * **`else` clause** and its block of source code (**optional**)
 
  
-## Exam Tasks
+## Exam Problems
 
-After having revised how to write simple conditions, let's solve a few exam tasks to practice the **`if-else`** construction.
+After having revised how to write simple conditions, let's solve a few Exam Problems to practice the **`if-else`** construction.
 
 
 ## Problem: Transportation Price
@@ -156,6 +156,7 @@ However, if **the condition** returns **`false`**, that means that **the quantit
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#1](https://judge.softuni.org/Contests/Practice/Index/1050#1).
 
 ## Problem: Sleepy Tom Cat
+
 **Tom Cat** likes to sleep all day but, unfortunately, his owner is always playing with him whenever he has free time. To sleep well, **the norm of games** that Tom has is **30 000 minutes per year**. The time for games he has **depends on the holidays that his owner has**:
 * During **workdays**, his owner plays with him **63 minutes per day**. 
 * During **holidays**, his owner plays with him **127 minutes per day**. 
@@ -274,7 +275,7 @@ After having done these calculations, we are ready to **calculate the quantity o
 
 ![](/assets/chapter-3-2-images/04.Harvest-02.png)
 
-#### Checking the Conditions and Processing Output Data
+#### Checking The Conditions and Processing Output Data
 
 After having done the necessary calculations, the next step is to **check** whether the liters of wine that have been produced **are enough**. For that, we will use **a simple conditional statement** of the **`if-else`** type and we will check whether the liters of wine from the harvest are **more than** or **equal to** the **needed liters**. 
 
@@ -339,7 +340,7 @@ The next step is to calculate **the number of total working hours** by multiplyi
 
 ![](/assets/chapter-3-2-images/05.Firm-02.png)
 
-#### Checking the Conditions
+#### Checking The Conditions
 
 After having done the calculations that are needed to find the value of **the working hours**, now we have to check whether these hours are **enough**, **or some hours are left**.
 
