@@ -325,7 +325,7 @@ By pressing [**Shift + F9**], we start the program in **Debug mode**. We move on
 
 With [**Ctrl + F8**] we create **breakpoints**, which we can reach directly using [**Shift + F9**] (when starting the program in **Debug mode**).
 
-## Exercises: Simple Conditions
+## Problems: Simple Conditions
 
 Now let's practice the lessons learned in this chapter with a few practical exercises.
 

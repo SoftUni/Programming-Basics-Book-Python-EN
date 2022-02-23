@@ -580,7 +580,7 @@ Let's summarize what we have learned in this chapter:
 - **Calculations with numbers** and using the suitable **arithmetic operators** [+, -, \*, /, ()]: **`sum = 5 + 3`**.
 - **Printing a text by placeholders** on the console: **`print('{0} + {1} = {2}'.format(3, 5, 3 + 5))`**.
 
-## Exercises: Simple Calculations
+## Problems: Simple Calculations
 
 Let's strengthen the knowledge gained throughout this chapter with a few more exercises.
 

@@ -460,12 +460,12 @@ In this chapter were introduced the fundamental concepts of working with functio
 * Discovered what is a **signature** and **returned value** as well as the context of the **`return`** keyword.
 * Got acquainted with the **good practices** in working with functions – how to name them and their parameters, how to format the code, etc.
 
-## Exercises
+## Problems
 
 To consolidate our knowledge about working with functions, a few problems will be solved as an exercise. Each exercise will ask for a function with specific functionality. Then the function must be called, with arguments being passed to the predefined parameters read as inputs from the console. Inputs and outputs beneath each exercise are given as an example.
 
 
-### Exercise: "Hello, Name!"
+### Problem: "Hello, Name!"
 
 Write a function which receives a name as a parameter and prints to the console "*Hello, \<name\>!*".
 
@@ -484,7 +484,7 @@ Define function **`print_name(name)`** and implement its functionality. Then tak
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#7](https://judge.softuni.org/Contests/Practice/Index/1063#7).
 
 
-### Exercise: Smaller number
+### Problem: Smaller number
 
 Create a function called **`get_min(a, b)`**, which returns the smaller number of the two. Write a program which reads three input values from the console and prints the smallest number. Use the function **`get_min(…)`** which is already created.
 
@@ -507,7 +507,7 @@ Define a function **`get_min(a, b)`** and implement its functionality, after whi
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#8](https://judge.softuni.org/Contests/Practice/Index/1063#8).
 
 
-### Exercise: String repetition
+### Problem: String repetition
 
 Write a function called **`repeat_string(str, count)`**, which receives one argument of type string, another argument **N** of type integer and returns the string argument **N** times. The result of the function must be printed to the console.
 
@@ -528,7 +528,7 @@ Finish the function, as the input argument of type string must be concatenated t
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#9](https://judge.softuni.org/Contests/Practice/Index/1063#9).
 
 
-### Exercise: N-th digit
+### Problem: N-th digit
 
 Write a function **`find_nth_digit(number, index)`**, which receives a number and index **N** as parameters and prints the N-th digit from right to left of the number (first digit from right to left has index 1). The result of the function must be printed on the console.
 
@@ -547,7 +547,7 @@ To execute the algorithm, we'll use a **`while`** loop which is running until th
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#10](https://judge.softuni.org/Contests/Practice/Index/1063#10).
 
 
-### Exercise: Number to a numeral system
+### Problem: Number to a numeral system
 
 Write a function called **`integer_to_base(number, to_base)`**, which receives as parameters an integer, and a number which indicates the base of the system. The function returns the input number converted to the required numeral system. Next, the result of the function must be printed to the console. The integer will always be of base 10 while the required base will be between 2 and 10.
 
@@ -574,7 +574,7 @@ Fill up the missing part of the following function:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#11](https://judge.softuni.org/Contests/Practice/Index/1063#11).
 
 
-### Exercise: Notifications
+### Problem: Notifications
 
 Write a program that reads an integer **N** and enters **N** **messages**, each of which can be of multiple lines. For each of the messages’ type will be used a different number of parameters. Each message begins with **`message_type`**, **`success`**, **`warning`** or **`error`**:
    - When **`message_type`** is **`success`**, read **`operation`** + **`message`** (each on a new line).

@@ -229,7 +229,7 @@ We can read a sequence of **`n`** numbers from the console:
 
 ![](/assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Exercises: Repetitions (loops)
+## Problems: Repetitions (loops)
 
 Now, that we've become acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, -> this is done through writing lots of code. Let's solve a few problems for exercise.
 

@@ -395,7 +395,7 @@ While a console application **uses the text console**, web applications use a **
 
 Graphical (GUI) applications have a **visual user interface**, directly on your computer or mobile device, without a web browser. Graphical applications (also known as desktop applications) contain one or more graphical windows where certain controllers are located (text fields, buttons, pictures, tables and others), which **allow dialog** with the user to be more intuitive. Similar to them are mobile applications on your smartphone or tablet: we use forms, text fields, buttons and other controls and we manage them with program code. This is why we learn to write code now: **code is everywhere in software development**.
 
-## Exercises: Graphical and Web Applications
+## Problems: Graphical and Web Applications
 We will now build a **basic web application** and after that a simple **graphical application**, in order to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.
 
 ## Graphical application: 'Numbers Summator'
