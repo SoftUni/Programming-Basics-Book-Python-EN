@@ -546,7 +546,7 @@ Here is an example implementation:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#14](https://judge.softuni.org/Contests/Practice/Index/1057#14).
 
 
-## What have we learned in this chapter?
+## What Have We Learned from This Chapter?
 
 We can use **`for`** loops with a **step**:
 
@@ -588,11 +588,11 @@ except ValueError:
 ```
 
 
-## Problem: web applications with more complex loops
+## Problem: Web Applications with More Complex Loops
 
 Now we know how to repeat a group of actions using **loops**. Let's do something interesting: **web based game**. Yes, a real game, with graphics and game logic. Let's have fun. It will be complicated, but if you do not understand exactly how it works, that is no problem. We are still just entering programming. There is time, you will advance with this technology. For now, follow the steps.
 
-### Problem: web game "Shoot the fruits!"
+### Problem: Web Game "Shoot The Fruits!"
 
 **Condition**: Develop a **Flask web application** – a game in which the player **shoots at fruits**, arranged in a table. Successfully hit fruits disappear, and the player receives points for each fruit that was hit. The shooting is performed on columns, from top to bottom or vice-versa, and the location of the hit (the column under fire) is set by a scroll bar. Due to the inaccuracy of the scroller, the player is not quite sure which column to shoot at. So with each shot there is a chance not to hit and this makes the game more interesting (similar to the slingshot in Angry Birds).
 
@@ -604,7 +604,7 @@ Our game should look like this:
 
 Shown below, are the steps for implementing the "Shoot the Fruits!" Web application.
 
-### Empty PyCharm solution
+### Empty PyCharm Solution
 
 We create a empty solution in PyCharm to organize the code from the application:
 
