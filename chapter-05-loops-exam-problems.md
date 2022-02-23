@@ -29,11 +29,11 @@ We’re given **n-count integers** in range [**1 … 1000**]. A percent of them,
 | ≥ 800       | 920, 800                                        | 2              | p5 = 2 / 20 * 100 = 10.00%      |
 
 
-### Input
+### Input Data
 
 On the first line of the input is an integer **n** ( 1 <= **n** <= 1000 ), which stands for the number of lines with numbers, which will be given to us. On the next **n lines** there is **one integer** in range [**1 … 1000**] – the numbers that the histogram will be based on.
 
-### Output
+### Output Data
 
 In the console, print a histogram of **5 lines**, each of them containing a number between 0% and 100%, formatted with two-digit precision after the decimal point (for example, 25.00%, 66.67%, 57.14%).
 
@@ -155,7 +155,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** birthdays (1, 3, 5, …, n) she receives **toys**, and for each **even** birthday (2, 4, 6, …, n) she receives **money**. For her **second birthday** she receives **10.00 USD**, and **the sum increases by 10 USD with each following even birthday** (2 -> 10, 4 -> 20, 6 -> 30, etc.). Lily has secretly been saving the money for years. **Her brother**, in the years when she **receives money**, **takes 1.00 USD**. Lily **sold the toys** received with the years, **each for P USD** and added the sum to the saved money. With them she wants **to buy a washing machine for X USD**. Write a program that calculates **how much money she has saved** and whether **it's enough to buy a washing machine**.
 
-### Input
+### Input Data
 
 **3 numbers** are read from the console, each on a new line:
 
@@ -163,7 +163,7 @@ Lily is **N years old**. Each **birthday** she receives a gift. For her **odd** 
    - **The price of the washing machine** – a number in range [**1.00 … 10 000.00**].
    - **The price of a single toy** – **integer** in range [**0 … 40**].
 
-### Output
+### Output Data
 
 Print a single line in the console:
 
@@ -239,14 +239,14 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054
 
 Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** is **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including the year itself**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the given year]**.
 
-### Input
+### Input Data
 
 The input is read from the console and **contains exactly 2 lines**:
 
   * **The inherited money** – a real number in range [**1.00 … 1 000 000.00**].
   * **The year until he has to live (inclusive)** – real number in range [**1801 … 1900**].
 
-### Output
+### Output Data
 
 **Print** to the console **1 line**. **The sum** has to be **formatted** with **2-digit precision after the decimal point**:
   * If **the money is enough**:
@@ -318,13 +318,13 @@ For a given amount of time, patients arrive for a checkup in the hospital every 
 
 Write a program that calculates **the count of treated and untreated patients for the given period**.
 
-### Input
+### Input Data
 
 The input is read from the **console** and contains:
   * On the first line – **the period** for which we'll be calculating. **Integer** in range [**1 … 1000**].
   * On the following lines (equal to the number of days) – **the count of patients** that arrive for a checkup **in the current day**. Integer in range [**0 … 10 000**].
 
-### Output
+### Output Data
 
 **Print** to the console **2 lines**:
 
@@ -439,11 +439,11 @@ We're given **n integers** in range [**1 … 1000**]. A percentage of them, **pe
 </tbody>
 </table>  
 
-### Input
+### Input Data
 
 On the first line of the input stands the integer **n** (1 ≤ **n** ≤ 1000) – count of numbers. On the next **n lines** each stands **a single integer** in range [**1 … 1000**] – the numbers for which we'll check their divisors.
 
-### Output
+### Output Data
 
 Print to the console **3 lines**, each of them containing a percentage between 0% and 100%, with 2-digit precision after the decimal point, for example 25.00%, 66.67%, 57.14%.
  * On the **first line** – the percentage of numbers **divisible by 2**.
@@ -502,13 +502,13 @@ You're responsible for the logistics of different cargos. **Depending on the wei
 
 Your task is to calculate **the average price per ton of transported load**, as well as **what percentage of the overall cargo** is transported by **each vehicle**.
 
-### Input
+### Input Data
 
 **A sequence of numbers** is read from the console, each on a different line:
  * **First line**: **count of loads** for transportation – **integer** in range [**1 … 1000**].
  * On each following line **the weight in tons of the current load** is written – **integer** in range [**1 … 1000**].
 
-### Output
+### Output Data
 
 Print **4 lines** to the console, as given:
  * **Line #1** – **the average price per ton of transported cargo** (rounded to second digit after the decimal point).

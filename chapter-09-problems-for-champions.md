@@ -33,7 +33,7 @@ Input data should be read from the console.
 
 Input data will always be valid and will always be in the format described. No need to check.
 
-### Output data
+### Output Data
 
 The result should be printed on the console.
 
