@@ -2,7 +2,7 @@
 
 In this chapter, the topic of **functions** will be introduced, together with cases in which they might be useful, as well as the **primary concepts** when working with functions. It will be demonstrated why it is a **good practice** to use functions, how to **define** them and how to **call** them. The concept of a **parameter** and a **returned value** of a function, as well as how we can further use the returned value from the function, will be introduced. At the end of the chapter, we'll look at what the **best practices** are when dealing with functions.
 
-## What is a function?
+## What is a Function?
 
 So far, we learnt that dividing our code into **smaller units** (functions), each of which being responsible for a specific functionality is more practical in general. Each unit is concerned with **distinct functionality**, in which case not only is it easier to process the problem we are facing, but also improves the **debugging** and **readability** of the code.
 
@@ -18,7 +18,7 @@ We will look at two types of functions – "**basic** functions" (without parame
 </tr>
 </table>
 
-### Basic functions
+### Basic Functions
 
 The **basic** functions are responsible for the execution of an **action** which **contributes** to the solving of a particular problem. Such an action can be printing a string to the console, performing a conditional statement check, going through a loop, etc.
 
@@ -32,7 +32,7 @@ The **function declaration** is always followed by a **colon**, which is followe
 
 If the given snippet of code is present in a program which is to be executed, the function will not affect the program at this stage, because the function is declared, but not called yet.
 
-### Why should we use functions?
+### Why Should We Use Functions?
 
 So far, we found that the functions help with the logical differentiation of a longer code to less complicated, easier to digest pieces. Working with functions gives to our code advantages, such as better structure and greater cohesion. 
 
@@ -40,7 +40,7 @@ The usage of functions **prevents us from code repetition**. The repeating code 
 
 The functions **allow** us to use a piece of code **several** times. Working on more and more problems, you will notice that with the use of already existing functions you will save a lot of time and effort. 
 
-### Declaration of functions
+### Declaration of Functions
 
 **Function declaration** can be considered as a registration of a given functionality within a program so that this functionality can be recognized and later used in the rest of the program where necessary. In the next example, we will explore the element of which a function is composed:
 
@@ -62,21 +62,21 @@ When declaring a given variable in the body of a function, it is called a local 
 </tr>
 </table>
 
-### Calling a function
+### Invoking a Function
 
-The calling of the function is regarded as the **beginning of the execution** of the code which is in the **function’s body**. This is accomplished as the name of the function is called, followed by the parentheses. If the function expects input arguments for its parameters, they must be inserted in the parentheses in the same order in which the parameters were defined in the parentheses. An example that follows:
+The invoking of the function is regarded as the **beginning of the execution** of the code which is in the **function’s body**. This is accomplished as the name of the function is called, followed by the parentheses. If the function expects input arguments for its parameters, they must be inserted in the parentheses in the same order in which the parameters were defined in the parentheses. An example that follows:
 
 ![](/assets/chapter-10-images/03.Invoking-functions-01.png)
 
 The given function can be called plenty of times from **any** location in the code. It’s important to mention that if a function in **Python** is defined somewhere inside the code, the program will only recognize it if it is called after its definition within the code of the program.
 
-As the calling of a function is a command by itself, we can call a function from inside another function:
+As the invoking of a function is a command by itself, we can call a function from inside another function:
 
 ![](/assets/chapter-10-images/03.Invoking-functions-02.png)
 
 There is also a possibility the function to be called in **its own body**. This is called **recursion**, for which additional information can be found in [Wikipedia](https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8F) and we strongly encourage you to do your own research on the internet.
 
-### Problem: empty receipt
+### Problem: Empty Receipt
 
 Write a function which prints empty receipt. The function should call another three functions: function which prints the headline of the receipt, function which prints the body of the receipt and function which prints the bottom of the receipt.
 
@@ -92,7 +92,7 @@ Write a function which prints empty receipt. The function should call another th
 |---|---|
 |(none)|CASH RECEIPT<br>------------------------------<br>Charged to\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>Received by\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_<br>------------------------------<br>(c) SoftUni|
 
-#### Hints
+#### Hints and Guidelines
 
 First, we need to create the function which **prints the header** of the receipt. Its name should be short and sensible which describes the task the function will execute. For example, it can be called **`print_receipt_header`** and its body will contain the following code:
 
@@ -104,15 +104,15 @@ Next, we will create **another function** which wraps the three functions and ca
 
 ![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 The program which contains four functions called inside another function is ready and we can run it and test it locally after which we should send it for a quality check to the Judge platform: [https://judge.softuni.org/Contests/Practice/Index/1063#0](https://judge.softuni.org/Contests/Practice/Index/1063#0).
 
-## Functions with parameters (complex functions)
+## Functions with Parameters (Complex Functions)
 
 To solve our problem using function, often in our practice we need an **additional knowledge** which varies with the problem we need to solve. **The parameters of a function** are supplementing us with this knowledge, hence the behaviour of the function depends on these parameters. 
 
-### Use of parameters in a function
+### Use of Parameters in a Function
 
 As we just mentioned, the parameters **can be zero or as many as needed**. When they are declared, commas are used to separate them from each other. The parameters can be of any type (number, string, etc.). The following is an example which demonstrates how exactly the parameters are being used in a body of a function.
 
@@ -132,7 +132,7 @@ Let’s look at another example of function definition which has a few parameter
 
 ![](/assets/chapter-10-images/05.Function-parameters-03.png)
 
-### Problem: integer sign
+### Problem: Integer Sign
 
 Create a function which prints whether the given integer is positive, negative or zero.
 
@@ -144,7 +144,7 @@ Create a function which prints whether the given integer is positive, negative o
 |-5|The number -5 is negative.|
 |0|The number 0 is zero.|
 
-#### Hints
+#### Hints and Guidelines
 
 The first step is to **create** a function and give it a descriptive name such as **`print_sign`**. This function will have only one parameter – integer number, which sign we want to check:
 
@@ -156,12 +156,12 @@ Then we need to read the input value and call our function:
 
 ![](/assets/chapter-10-images/06.Print-sign-02.png)
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#1](https://judge.softuni.org/Contests/Practice/Index/1063#1).
 
 
-### Optional parameters and default values
+### Optional Parameters and Default Values
 
 **Python** allows us to use **optional parameters**. This in turn allows us to **skip** initialization of the arguments if **default** ones are given to the parameters during the function declaration.
 
@@ -175,7 +175,7 @@ The given function **`print_numbers(…)`** can be called in several ways:
 
 On the first line the parameters use the following arguments – **`start = 5`**, **`end = 10`**. With the second line the arguments will be - **`start = 0`**, **`end = 15`**. With the third line we have **`start = 0`**, **`end = 100`**. The last line will use **`start = 35`**, **`end = 40`**.
 
-### Problem: Printing of triangle
+### Problem: Printing Triangle
 
 Create a function which prints triangle as shown in the examples.
 
@@ -185,7 +185,7 @@ Create a function which prints triangle as shown in the examples.
 |---|---|---|---|
 |3|1<br>1 2<br>1 2 3<br>1 2<br>1|4|1<br>1 2<br>1 2 3<br>1 2 3 4 <br>1 2 3<br>1 2<br>1|
 
-#### Hints
+#### Hints and Guidelines
 
 Before creating a function, which prints numbers on a single line with initial and final value, we must read the input from the console. Next, we choose a meaningful name for our function which shortly describes its purpose. This might be **`print_line`** and we can now build it:
 
@@ -205,12 +205,12 @@ Finally, we print the **bottom segment** of the triangle, as this time the step 
 
 ![](/assets/chapter-10-images/08.Print-triangle-04.png)
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#2](https://judge.softuni.org/Contests/Practice/Index/1063#2).
 
 
-### Problem: drawing filled square
+### Problem: Draw a Filled Square
 
 Draw filled square to the console with a side length N as it is shown in the examples.
 
@@ -220,7 +220,7 @@ Draw filled square to the console with a side length N as it is shown in the exa
 |---|---|---|---|
 |4|<code>--------</code><br><code>-\\/\\/\\/-</code><br><code>-\\/\\/\\/-</code><br><code>--------</code>|5|<code>----------</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>-\\/\\/\\/\\/-</code><br><code>----------</code>|
 
-#### Hints
+#### Hints and Guidelines
 
 The first step will be to read the input from the console. Next, we need to create a function that prints the first and the last line as they are identical. Let's not forget that we need to choose a **descriptive name** and define the length of the side of the square as a **parameter**:
 
@@ -234,16 +234,16 @@ Finally, we call the created functions to draw the square:
 
 ![](/assets/chapter-10-images/09.Draw-filled-square-03.png)
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#3](https://judge.softuni.org/Contests/Practice/Index/1063#3).
 
 
-## Returned value by function
+## Returned Value by a Function
 
 Up until now we were looking at functions that execute a particular action such as printing some text, value, or a string of characters on the console. Other than such functions, there also can be functions which **return** a value as a **result** of their execution – for example, this could the multiplication of two numbers. It will be these functions which will be the topic of our discussion in the next few lines.
 
-### The **`return`** keyword
+### The return Keyword
 
 To return a value which is the result of the function’s execution we use the return keyword. It must be **used in the body** of the function and indicates to the program to **stop execution** of the function and **returns value** to the caller of the function which is written as an argument after the keyword ‘return’. In the example that follows, there is a function which reads two names from the console, concatenates them, and returns them as a result:
 
@@ -257,7 +257,7 @@ In the following example, we have a function which compares two numbers and retu
 
 It is important to notice that the returned value by the function can be of a **different type** compared to the argument’s type - string, integer, floating point number etc.
 
-#### The code after `return` is unreachable
+#### The Code After return is Unreachable
 
 After the **`return`** keyword in a given function, the execution of the function is terminated, and the execution of the program continues where the function was last called. If there are other instructions written after the **`return`** keyword, they will not be executed. Some IDEs (including **PyCharm**) will inform you with the following warning:
 
@@ -267,7 +267,7 @@ After the **`return`** keyword in a given function, the execution of the functio
 </td><td>In programming it is meaningless to place two <code><b>return</b></code> keywords one after another, as the execution of the first <b>return</b> will not allow the execution of the second <b>return</b>.</td></tr>
 </table>
 
-### Use case of a returned value from a function
+### Use Case of a Returned Value from a Function
 
 After a function is executed and the value is returned by its execution, this value can be used in a **several** ways. For once, we can **assign this value to a variable**:
 
@@ -281,7 +281,7 @@ The third method of using the returned value of our function is to **pass** this
 
 ![](/assets/chapter-10-images/10.Return-operator-06.png)
 
-### Problem: calculating area of a triangle
+### Problem: Calculate Triangle Area
 
 Write a function which calculates the area of a triangle, given the base and height, and returns it as an argument.
 
@@ -291,7 +291,7 @@ Write a function which calculates the area of a triangle, given the base and hei
 |---|---|
 |3<br>4|6|
 
-#### Hints
+#### Hints and Guidelines
 
 First, create a function which calculates the surface area based on two input parameters – length of the side **a** and length of the height **h**:
 
@@ -301,12 +301,12 @@ The next step will be to read the input values and **call the function** using t
 
 ![](/assets/chapter-10-images/11.Calculate-triangle-area-02.png)
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#4](https://judge.softuni.org/Contests/Practice/Index/1063#4).
 
 
-### Problem: power of number
+### Problem: Math Power
 
 First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments as its parameters (a number and its power), and returns as a result a float type number.
 
@@ -316,7 +316,7 @@ First, we need to read the input values from the console. The next step will be 
 |---|---|---|---|
 |2<br>8|256|3<br>4|81|
 
-#### Hints
+#### Hints and Guidelines
 
 First, we need to read the input values from the console. The next step will be to create a function which accepts two arguments to its parameters (a number and its power) and returns as a result a **`float`** type number:
 
@@ -324,12 +324,12 @@ First, we need to read the input values from the console. The next step will be 
 
 After we have done the necessary calculation, we must call the defined function and print the result.
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#5](https://judge.softuni.org/Contests/Practice/Index/1063#5).
 
 
-### Functions, returning several values
+### Functions, Returning Several Values
 
 Up to this point we looked at functions which **do not return any value** and functions which **return only one value**. In practice, it is often sensible for a function to return **more than one value**.
 
@@ -337,13 +337,13 @@ To achieve this in **Python**, after the **`return`** keyword we list the values
 
 ![](/assets/chapter-10-images/13.Return-multiple-values-01.png)
 
-Calling the function works as with functions which do not return a value or return a single value. To use the returned values, we can **assign** them to variables whose names are separated by commas as it demonstrated with **`a`** and **`b`**. After the execution of this example, **`a`** will hold the value **`3`** while **`b`** will hold the value **`4`**.
+Invoking the function works as with functions which do not return a value or return a single value. To use the returned values, we can **assign** them to variables whose names are separated by commas as it demonstrated with **`a`** and **`b`**. After the execution of this example, **`a`** will hold the value **`3`** while **`b`** will hold the value **`4`**.
 
-## Variations of functions
+## Variations of Functions
 
 In many programming languages **identically** named functions can be used throughout the code using only different parameters which is considered as **function overloading**. Python does not support this functionality, but a similar effect can be achieved with the unconditional parameters introduced earlier. 
 
-### Function’s signature
+### Function’s Signature
 
 In programming, the way a function is **recognized** is by looking at **both** its fundamental components - **name** and **list** of parameters, declared during the definition of the function. These components define its **specification**, and that's also known as **signature** of the function:
 
@@ -353,7 +353,7 @@ In this example the signature of the function is its name **`print_name`** as we
 
 If in a program we have functions with **identical names** but **different parameters**, we are looking at function overloading. This functionality is not implemented in Python. 
 
-### Variations of functions in Python
+### Variations of Functions in Python
 
 Different options to call functions in **Python** can be achieved with the use of **default arguments** or more precisely with the dynamic allocation of arguments to declared parameters of the function. Let’s look at the example from earlier with a function using a couple of default arguments:
 
@@ -363,21 +363,21 @@ As we already noticed, we can call this function using different combination of 
 
 ![](/assets/chapter-10-images/07.Optional-parameters-02.png)
 
-## Nested functions (local functions)
+## Nested Functions (Local Functions)
 
 Let’s consider the following function which calculates the area of a circle:
 
 ![](/assets/chapter-10-images/15.Nested-functions-01.png)
 
-### What is a local variable?
+### What is a Local Function?
 
 We see that in this piece of code, in the function **`circle_circumference(…)`** there is **another** function called **`circle_diameter(…)`**. This function is also known as **nested function** or **local function**. The nested functions can be declared in every other function. They are only visible and can be called in the scope of the function in which they are declared. In the last example the function **`circle_diameter(…)`** can be called only inside the body of the function **`circle_circumference(…)`** rather than outside its body. 
 
-### Why using local functions?
+### Why Using Local Functions?
 
 With practice we will find that when we write a program, often it appears that we need to use our function **only once**. Other often faced scenarios are when the function of interest gets too long. We already mentioned that when a function uses too many lines of code, the code gets hard to maintain. In these cases, we can be assisted by the **nested functions**. They present us with the possibility to declare a function within a function, where a nested function can be used independently. This contributes to the function’s code as it makes it **cleaner** and **improves its readability**. This in turn improves the correction time if a bug is spotted later and minimizes the probability of error when changes are made to the code. 
 
-### Declaration of nested function
+### Declaration of a Nested Function
 
 Let’s again have a look at the example from before:
 
@@ -387,11 +387,11 @@ In this example the function **`cirlce_diameter(…)`** is nested as it is decla
 
 Nested functions have access to all variables which are declared inside the parenting function. In the discussed example **`pi`** can be used in the body of the function **`cirlce_diameter(…)`**. This asset of the nested functions can make them a preferred choice to solve a particular problem. This functionality saves writing time and decrease the amount of used code which would otherwise be used to declare parameters and variables, already used in the parenting functions.
 
-## Classic approaches in the use of functions
+## Classic Approaches in The Use of Functions
 
 In this section of the chapter, we'll look at some **classic approaches** regarding the functions used in a program such as naming conventions, appearance and structure of the function’s code.
 
-### Naming conventions
+### Naming Conventions
 
 When naming a given function, it is beneficial to use **meaningful names**. As each function is **in charge** of some functionality of the problem, it must be taken into account **what task it will execute** inside the program which makes it a good practice to **name the function after the task it executes**.
 
@@ -411,7 +411,7 @@ Some examples of **inappropriate** naming of functions:
 
 If you can't think of an appropriate name, there is a good possibility that the function is responsible for more than one functionality or lacks a clearly defined goal. In such cases, it is better to think of how the function can be subdivided into smaller functions.
 
-### Naming of the function’s parameters
+### Naming of The Function’s Parameters
 
 In the naming of the **parameters** of the functions, the same rules apply as for the naming of functions. The differences are that it is nice to name a parameter using a noun or a pair of an adjective and a noun, respectively. It should be noted that it is a good practice for the name of the parameter to hint at its type.
 
@@ -431,13 +431,13 @@ Some examples of **inappropriate** naming of parameters:
 *  **`LastName`**
 *  **`lastName`**
 
-### More good practices in working with functions
+### More Good Practices in Working With Functions
 
 Let’s again recall how a function should execute **only one** particular **task** in the program. If this cannot be achieved, the next thing to do is to look at how to **separate** the function into a few other functions. As it was said, a name of a function should clearly and precisely state the purpose of the function. Another good practice will be to **avoid** making the function’s name so long that it can no longer fit on the screen (relatively). If the code in the function gets too large nevertheless, it is recommended to **divide** the function’s tasks into a few shorter functions within the function as demonstrated:
 
 ![](/assets/chapter-10-images/04.Print-receipt-02.png)
 
-### Structure and formatting of the code
+### Structure and Formatting of The Code
 
 In writing functions, caution must be applied to use the correct **indentation** (one Tab into the function). In **Python**, incompatible **indentation** leads to a direct error and does not allow the interpreter to execute the code.
 
@@ -451,7 +451,7 @@ An example of a **incorrectly** formatted Python code (for this reason the last 
 
 Another good rule of thumb is to leave **one empty line** between the loops and the conditional statements as well as **two empty lines** after the definition of a function. Also, try to **avoid long and complex expressions**. Practice shows that these practices improve the readability of the code and save the developer's time.
 
-## What did we learn from this chapter?
+## What Have We Learned from This Chapter?
 
 In this chapter were introduced the fundamental concepts of working with functions, and:
 * Learned that the **use** of functions comes very useful when larger programs must be **fragmented** into simpler tasks.
@@ -475,16 +475,16 @@ Write a function which receives a name as a parameter and prints to the console 
 |---|---|
 |Peter|Hello, Peter!|
 
-#### Hints
+#### Hints and Guidelines
 
 Define function **`print_name(name)`** and implement its functionality. Then take a string variable (name) as an input argument and call the function, passing the read name.
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#7](https://judge.softuni.org/Contests/Practice/Index/1063#7).
 
 
-### Problem: Smaller number
+### Problem: Smaller Number
 
 Create a function called **`get_min(a, b)`**, which returns the smaller number of the two. Write a program which reads three input values from the console and prints the smallest number. Use the function **`get_min(…)`** which is already created.
 
@@ -494,7 +494,7 @@ Create a function called **`get_min(a, b)`**, which returns the smaller number o
 |---|---|---|---|
 |1<br>2<br>3|1|-100<br>-101<br>-102|-102|
 
-#### Hints
+#### Hints and Guidelines
 
 Define a function **`get_min(a, b)`** and implement its functionality, after which call it as it’s shown. To find the smallest of three numbers, first process one pair, and the result can be combined with the third number such as:
 
@@ -502,12 +502,12 @@ Define a function **`get_min(a, b)`** and implement its functionality, after whi
    minimum = get_min(get_min(number1, number2), number3)
 ```
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#8](https://judge.softuni.org/Contests/Practice/Index/1063#8).
 
 
-### Problem: String repetition
+### Problem: String Repetition
 
 Write a function called **`repeat_string(str, count)`**, which receives one argument of type string, another argument **N** of type integer and returns the string argument **N** times. The result of the function must be printed to the console.
 
@@ -517,18 +517,18 @@ Write a function called **`repeat_string(str, count)`**, which receives one argu
 |---|---|---|---|
 |str<br>2|strstr|roki<br>6|rokirokirokirokirokiroki|
 
-#### Hints
+#### Hints and Guidelines
 
 Finish the function, as the input argument of type string must be concatenated to the current output of the loop:
 
 ![](/assets/chapter-10-images/17.Repeated-string-01.png)
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#9](https://judge.softuni.org/Contests/Practice/Index/1063#9).
 
 
-### Problem: N-th digit
+### Problem: N-th Digit
 
 Write a function **`find_nth_digit(number, index)`**, which receives a number and index **N** as parameters and prints the N-th digit from right to left of the number (first digit from right to left has index 1). The result of the function must be printed on the console.
 
@@ -538,16 +538,16 @@ Write a function **`find_nth_digit(number, index)`**, which receives a number an
 |---|---|---|---|---|---|
 |83746<br>2|4|93847837<br>6|8|2435<br>4|2|
 
-#### Hints
+#### Hints and Guidelines
 
 To execute the algorithm, we'll use a **`while`** loop which is running until the number becomes zero. At each iteration of the **`while`** loop, we'll check if the current index of the digit matches with the index passed to the function. If it matches, the digit of the number (**`number % 10`**) with this index will be returned from the function. If not, then another digit will be removed from the current number (**`number = number / 10`**). Caution must be taken when checking, as the index starts from 1 from right to left. When the current index matches with the given one, the returned value of the function will be the digit from the number with the matched index.
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#10](https://judge.softuni.org/Contests/Practice/Index/1063#10).
 
 
-### Problem: Number to a numeral system
+### Problem: Number to a Numeral System
 
 Write a function called **`integer_to_base(number, to_base)`**, which receives as parameters an integer, and a number which indicates the base of the system. The function returns the input number converted to the required numeral system. Next, the result of the function must be printed to the console. The integer will always be of base 10 while the required base will be between 2 and 10.
 
@@ -557,7 +557,7 @@ Write a function called **`integer_to_base(number, to_base)`**, which receives a
 |----|----|----|----|----|----|
 |3<br>2|11|4<br>4|10|9<br>7|12 |
 
-#### Hints
+#### Hints and Guidelines
 
 To solve the problem, a variable will be declared in which the result of the current state of the conversion will be stored as a string. The next steps required for the conversion are as follows:
 * Calculate the **remainder** of the argument’s integer division by the base argument.
@@ -569,7 +569,7 @@ Fill up the missing part of the following function:
 
 ![](/assets/chapter-10-images/18.Integer-to-base-01.png)
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#11](https://judge.softuni.org/Contests/Practice/Index/1063#11).
 
@@ -593,13 +593,13 @@ In the exercise, you have to use four functions: **`show_success_message()`**, *
 |---|---|
 |4<br>error<br>credit card purchase<br>Invalid customer address<br>500<br>warning<br>Email not confirmed<br>success<br>user registration<br>User registered successfully<br>warning<br>Customer has no email assigned|<code>Error: Failed to execute credit card purchase.</code><br><code>==============================================</code><br><code>Reason: Invalid customer address.</code><br><code>Error code: 500.</code><br><br><code>Warning: Email not confirmed.</code><br><code>=============================</code><br><br><code>Successfully executed user registration.</code><br><code>========================================</code><br><code>User registered successfully.</code><br><br><code>Warning: Customer has no email assigned.</code><br><code>=========================================</code>|
 
-#### Hints
+#### Hints and Guidelines
 
 Define and implement the four given functions.
 
 In the function **`read_and_process_message()`** the type of the message is read from the console and depending on the type of the message, the remaining elements are also read, which can appear on either one, two or three consecutive lines, depending on the type of the message. Next, the required method is called to execute the printing of the message.
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#12](https://judge.softuni.org/Contests/Practice/Index/1063#12).
 
@@ -623,7 +623,7 @@ Write a function **`letterize(number)`**, which reads an integer and translates 
 |---|---|---|---|
 |4<br>311<br>418<br>509<br>-9945|three-hundred and eleven<br>four-hundred and eighteen<br>five-hundred and nine<br>too small|3<br>500<br>123<br>9|five-hundred<br>one-hundred and twenty three<br>nine|
 
-#### Hints
+#### Hints and Guidelines
 
 We can first print **the hundreds** as a text – **`(the number / 100) % 10`**, after that **the tens** – **`(the number / 10) % 10`** and at the end **the ones** – **`(the number % 10)`**.
 
@@ -633,7 +633,7 @@ The second special case is when the number formed by the last two digits of the 
 
 The third special case is when the number formed by the last two digits of the input number is **larger than 10 and smaller than 20** (e.g., 111, 814, 919, etc.). In this case, we print "one-hundred and eleven", "eight-hundred and fourteen", "nine-hundred and nineteen", etc.
 
-#### Testing in Judge platform
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#13](https://judge.softuni.org/Contests/Practice/Index/1063#13).
 
@@ -672,7 +672,7 @@ Encrypt the symbols and add them to the encrypted string. In the end, as a resul
 |---|---|
 |7<br>B<br>i<br>r<br>a<br>H<br>a<br>x| H66<n15hv14qh97XJ72Ah97xx10w |
 
-#### Hints
+#### Hints and Guidelines
 
 Our variable **`result`**, in which we will save the value of the result, we will give the initial value **""** (empty string). We must run a loop **`n`** times, so that in each iteration we can add the encrypted symbol to the result string.
 
