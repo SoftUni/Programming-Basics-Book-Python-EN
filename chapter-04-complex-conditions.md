@@ -362,7 +362,7 @@ We can solve the example with a few **`if-elif`** conditional statements by doin
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#9](https://judge.softuni.org/Contests/Practice/Index/1051#9).
 
-## What Have We Learned from This Chapter??
+## What Have We Learned from This Chapter?
 
 Let's review the new constructions and program techniques we have met in this chapter:
 

@@ -324,6 +324,6 @@ To be easier to write it, we can use live template for the **`for` loop**:
  * **`for` + [Tab]**
  * or **`iter` + [Tab]**
 
-## What Have We Learned from This Chapter??
+## What Have We Learned from This Chapter?
 
 In the current chapter we learned how to **correctly** **format** and name the elements of our code, some **shortcuts** for work in PyCharm, some **code snippets** (Live Templates) and how to **debug code**.
