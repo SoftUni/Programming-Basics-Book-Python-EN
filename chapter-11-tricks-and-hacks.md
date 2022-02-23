@@ -125,7 +125,7 @@ Here are some examples for **badly named variables**, even though the names are 
 
 At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gained you will see the need for conventions for writing quality code in order to be able to work easier and faster in a team. You will understand working with code, which is written without complying with any rules for code quality, is annoying.
 
-## Shortcuts in in PyCharm
+## Shortcuts in PyCharm
 
 In the previous section, we mentioned some of the combinations, that are used for formatting code: [**Ctrl + Alt + L**] is used for **formatting the whole code in a file**. These combinations are called **shortcuts** and now we will give more thorough information about them.
 
