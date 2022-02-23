@@ -1,21 +1,21 @@
-# Chapter 7.1. Complex loops
+# Chapter 7.1. Complex Loops
 
 Since we have learned what **`for` loops** are and their function in code, now is the time to take a look at **other loop types**, as well as some **more complex loop constructs**. These will expand our knowledge and help us solve more challenging problems. In particular, we will discuss how to use the following programming constructs:
 
-  * loops **with step aka stride**
+  * loops **with step**
   * **`while`** loops
   * **`while`** + **`break`** loops
   * **infinite** loops
 
 In the current chapter, we will also take a look at the **`break`** operator and **how** to use it to **interrupt** a loop. We will also learn how to process **errors during execution** of the program, using **`try-except`** statement.
 
-## Loops with stride
+## Loops with step
 
-In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`** loop works and we already know when and for what purpose it is used. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **stride**.
+In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`** loop works and we already know when and for what purpose it is used. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **step**.
 
 ### Loop with a Step – Explanation
 
-The **stride** is **part** of the **'range'** function, that specifies the **amount** used to **increment** or **decrement** the value of the **main** variable. The step is declared as the last argument in the **`range`** function.
+The **step** is **part** of the **'range'** function, that specifies the **amount** used to **increment** or **decrement** the value of the **main** variable. The step is declared as the last argument in the **`range`** function.
 
 By default, range in Python uses a step **value of `1`** and is not added to the **`range`** function. If we want our step to be **different from 1**, when writing the **`range`** function, we add another number as the last parameter, which is our step. With a step of **`10`**, the loop would appear as below: 
 
@@ -25,12 +25,12 @@ Here is a series of sample problems, the solution of which will help us better u
 
 ### Problem: Numbers from 1 to N with a step of 3
 
-Write a program that prints the numbers **from 1 to n** with a **stride of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
+Write a program that prints the numbers **from 1 to n** with a **step of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
 
 We can solve the problem using the following sequence of actions (algorithm):
 
   * We read **`n`** from the console.
-  * We run a **`for` loop** from **1** to **`n`** (including **`n`**) with a stride of **3**.
+  * We run a **`for` loop** from **1** to **`n`** (including **`n`**) with a step of **3**.
   * In the **body of the loop** we print the value of the current step.
   
 ![](/assets/chapter-7-1-images/01.Numbers-1-to-n-01.png)
@@ -48,7 +48,7 @@ We can solve the problem in the following manner:
 
   * We read **`n`** from the console.
   * We create a **`for` loop**, from **`n`** to 0.
-  * We define the stride size: **-1**.
+  * We define the step size: **-1**.
   * In the **body of the loop** we print the value of the current step.
 
 ![](/assets/chapter-7-1-images/02.Numbers-n-to-1-01.png)
@@ -60,7 +60,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 
 ### Problem: Numbers from 1 to 2^n with a for loop
 
-In the following example, we will use the standard size 1 stride.
+In the following example, we will use the standard size 1 step.
 
 Write a program that prints the numbers **from 1 to 2^n** (two to the power of n). For example, **if n = 10**, then the output would be **1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024**.
 
@@ -314,7 +314,7 @@ The steps of the **"prime checking algorithm"** are given below in bigger detail
 
 * We declare the variable **`n`**, to which we assign the integer passed by the console.
 * We create a **`is_prime`** boolean with and an initial value of **`True`**. We assume that a number is prime until proven otherwise.
-* We create a **`for`** loop, with the initial value set to 2, for a condition the **current value `<= √n`**. The stride is set to 1.
+* We create a **`for`** loop, with the initial value set to 2, for a condition the **current value `<= √n`**. The step is set to 1.
 * In the **body of the loop** we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`is_prime`** to **`False`** and exit the loop through the **`break`** operator.
 * Depending on the value of **`is_prime`** we print whether the input number is prime (**`True`**) or composite (**`False`**).
 
@@ -530,7 +530,7 @@ We can solve the problem by using **two nested loops** and some simple calculati
 
 * We take the size of the table from the integer value of the variable **`n`**, which is received from the console input.
 * We create a **`for`** loop, that will be responsible for the rows of the table. We name the loop variable **`row`** and assign it an initial **value of 0**. For condition, we set **`n`**. The size of the step is 1.
-* In **the body of the loop** we create a nested **`for`** loop, that will be responsible for the columns in the table. We name the loop variable **`col`** and assign it an initial **value of 0**. For condition, we set **`n`**. The size of the stride is set to 1.
+* In **the body of the loop** we create a nested **`for`** loop, that will be responsible for the columns in the table. We name the loop variable **`col`** and assign it an initial **value of 0**. For condition, we set **`n`**. The size of the step is set to 1.
 * In **the body of the nested loop**:
    * We create a variable **`num`**, to which we assign the result of **the current row + the current column + 1** (+1, is needed since we count from 0).
    * We check whether **`num > n`**. If **`num`** is **greater** than **`n`**, we assign **`num`** a new value equal to **two times**`n`** - the current value of **`num`**. We do this in order not to exceed **`n`** in any of the cells of the table.
@@ -548,7 +548,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057
 
 ## What have we learned in this chapter?
 
-We can use **`for`** loops with a **stride**:
+We can use **`for`** loops with a **step**:
 
 ```python
 for i in range(1, n + 1, 3):
