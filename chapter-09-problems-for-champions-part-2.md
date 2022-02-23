@@ -86,7 +86,7 @@ This is where we need to take into consideration the fact that inside **our arra
 
 Here is the place to say that by calling **`input()`** after the end of the loop is used to **pass from the first command** for processing.
 
-#### Algorithm for Solving the Problem
+#### Algorithm for Solving The Problem
 
 The algorithm for solving the problem is a direct one – we continue **reading commands** from the console **until the command "mall.Exit" is passed**. In the meantime, we **process** each symbol (**`char`**) of each one of the commands according to the rules specified in the task requirements, and in parallel, we **modify the amount** that Lina has and **store the number of purchases**.
 
@@ -118,7 +118,7 @@ An exemplary condition for the first part of the requirements looks like this:
 
 We believe the reader should not have difficulties implementing all the other conditions because they are very similar to the first one.
 
-#### Formatting the Output
+#### Formatting The Output
 
 At the end of our task we must **print** a particular **output**, depending on the following condition:
 
@@ -193,7 +193,7 @@ The input data will consist of exactly one text line read from the console. To h
 
 ![Expression Read](/assets/chapter-9-2-images/02.X-expression-03.png)
 
-#### Algorithm for Solving the Problem
+#### Algorithm for Solving The Problem
 
 For the tasks of our problem we need to use some variables:
 
@@ -354,7 +354,7 @@ Our conditional statement for cows can be done by this method - we check if the 
 
 After that, we sequentially check whether the **second digit** of the generated number **matches the first one**, the **third one**, or the **fourth digit** of the secret number; whether the **third digit** of the generated number matches the **first one**, the **second one**, or the **fourth digit** of the secret number; and finally, we check whether the **fourth digit** of the generated number matches the **first one**, the **second one** or the **third digit** of the secret number.
 
-#### Printing the Output
+#### Printing The Output
 
 After completing all conditions, we just need to **check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console**. If this is true, we print the current number on the console:
 
