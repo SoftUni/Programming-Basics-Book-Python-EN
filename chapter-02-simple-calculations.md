@@ -26,7 +26,7 @@ In programming, each variable stores a certain **value** of a particular **type*
 
 In **Python**, the data type is defined by the value that is assigned and is not explicitly specified when declaring variables (as opposed to C#, Java and C++).  
 
-## Printing Results on the Screen
+## Printing Results on The Screen
 
 In order to print text, numbers or other result on the screen, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
 
@@ -69,7 +69,7 @@ Here is how the program would work for a square with a side equal to 3:
 
 Try to type in an invalid number, for example "**hello**". You will receive an **error** message during execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. 
 
-#### How does the example work?
+#### How Does The Example Work?
 
 The first line **`a = int(input('a = '))`** prints a message which tells the user to input the side of the square **a**, then it reads a text (string) and converts it into an integer (this is called parsing) utilizing the function **`int(…)`**. The result is assigned to a variable with the name **`a`**.
 
@@ -143,7 +143,7 @@ Let's start the program and make sure that when we input a value in inches, we r
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
 
-## Reading a Text from the Console
+## Reading a Text from The Console
 
 To read a **text** (string) from the console, again, we have to **declare a new variable** and use the standard **command for reading a text from the console**:
 
@@ -369,7 +369,7 @@ width = 5 ; height = 7 ; area = 35
 ```
 As you can see from the example, in such printing every two values of the listed are separated by an **interval**.
 
-### Concatenating text with the operator +
+### Concatenating Text with The Operator +
 
 We already know how to concatenate text and numbers with the operator `+`. Using `+`, the example above can be written in the following way:
 ```python
@@ -383,7 +383,7 @@ width = 5 ; height = 7 ; area = 35
 ```
 Because in Python text cannot be directly concatenated with numbers, they first have to be parsed to text using the function `str(num)`.
 
-### Formatting strings `%d`, `%s`, `%f`
+### Formatting Strings `%d`, `%s`, `%f`
 
 Printing with templates can be done with **formatting strings** (also used in C and Java). Here is an example: 
 ```python
@@ -417,7 +417,7 @@ prints the following result:
 ac
 ```
 
-### Formatting using .format(…)
+### Formatting Using .format(…)
 
 We already looked at how we can format text and numbers using `.format(…)` and numbered templates `{0}`, `{1}`, `{2}` etc. Actually, when enumeration is not necessary, we can use just `{}`, to create a **placeholder**. Here is an example of how we can use formatting with `text.format(…)` in order to print the result from the last example:
 ```python
@@ -430,7 +430,7 @@ The result is the same again:
 width = 5 ; height = 7 ; area = 35
 ```
 
-### Formatting Using f-string
+### Formatting Using F-String
 
 Maybe the easieast, the most intuitive and the shortest way to **format text and numbers** in Python is to use the **f-string syntax**:
 ```python
@@ -438,9 +438,9 @@ width = 5
 height = 7
 print(f'width = {width} ; height = {height} ; area = {width * height}')
 ```
-Using the **f-string formatting** is very easy: we put a prefix `f` in front of the string and insert values of variables and expressions in curly braces `{expression}` in random positions. In the example above we have three expressions: `{width}`, `{height}` and `{width * height}` which are calculated and are substituted by their text value. We can use text expressions, integer expressions, floating point expressions and all other kinds of expressions.
+Using the **F-String formatting** is very easy: we put a prefix `f` in front of the string and insert values of variables and expressions in curly braces `{expression}` in random positions. In the example above we have three expressions: `{width}`, `{height}` and `{width * height}` which are calculated and are substituted by their text value. We can use text expressions, integer expressions, floating point expressions and all other kinds of expressions.
 
-Formatting with **f-string** in Python is **the recommedned method** for printing formatted text because it uses the shortest syntax and the code is easily read and understood.
+Formatting with **F-String** in Python is **the recommedned method** for printing formatted text because it uses the shortest syntax and the code is easily read and understood.
 
 
 ## Numerical Expressions
@@ -507,7 +507,7 @@ round(123.456, 0)  # 123.0
 round(123.512, 0)  # 124.0
 ```
 
-### Problem: Perimeter and area of a circle: 
+### Problem: Perimeter and Area of a Circle: 
 
 Let's write a program that, when given the **radius r** of a circle, **calculates the area and the perimeter** of the circle.
 
@@ -570,7 +570,7 @@ When starting the program with the values from the coordinate system, the follow
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
 
-## What have we learned in this chapter?
+## What Have We Learned from This Chapter?
 
 Let's summarize what we have learned in this chapter:
 
@@ -593,7 +593,7 @@ We have to create a new project in PyCharm (from [**Create New Project**] or [**
 
 ![](/assets/chapter-2-1-images/00.New-project-PyCharm-01.png)
 
-### Problem:	Calculating Square Area
+### Problem: Calculating Square Area
 
 The first exercise from this topic is the following: write a console program that **inputs an integer a and calculates the area** of a square with side **`a`**. The task is trivial and easy: **input a number** from the console, **multiply it by itself** and **print the obtained result** on the console.
 
@@ -624,7 +624,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 ![](/assets/chapter-2-1-images/01.Square-area-06.png)
 
 
-### Problem:	Inches to Centimeters
+### Problem: Inches to Centimeters
 
 Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For the purpose **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
 
@@ -713,7 +713,7 @@ Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or wi
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
 
-### Problem:	Trapezoid Area
+### Problem: Trapezoid Area
 
 Write a program that reads three numbers from the console **b1, b2 and h and calculates the area of a trapezoid** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
 
@@ -741,7 +741,7 @@ Again, we have to add to the existing PyCharm project another **Python file** na
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
 
-### Problem:	Circle Area and Perimeter
+### Problem: Circle Area and Perimeter
 
 Write a program that reads from the console a **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
 
@@ -800,7 +800,7 @@ Write a program that reads from the console **a side and a height of a triangle*
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#7](https://judge.softuni.org/Contests/Practice/Index/1047#7).
 
 
-### Problem:	Converter – from °C Degrees to °F Degrees
+### Problem: Converter – from °C Degrees to °F Degrees
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://shorturl.at/irvMR "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
@@ -818,7 +818,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#8](https://judge.softuni.org/Contests/Practice/Index/1047#8).
 
 
-### Problem:	Converter – from Radians to Degrees
+### Problem: Converter – from Radians to Degrees
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** but before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
@@ -891,7 +891,8 @@ Write a program that enters **a birth date** in the format **`dd-MM-yyyy`** and 
 | 2012-01-01 | 26-09-2014 |
 | 1980-06-14 | 10-03-1983 |
 
-#### Hints and Guidelines 
+#### Hints and Guidelines
+
 * Look for information about the data type **``datetime``** in Python and in particular look at the methods **``strptime(str, format)``**, **``timedelta(days=n)``**. With their help you can solve the problem without the need to calculate days, months and leap years.
 * **Don't print** anything additional on the console except for the wanted date!
 
@@ -985,7 +986,7 @@ This way we catch the error in a **try block** and when we input something diffe
 Finally we **run the application** with [**Ctrl + Shift + F10**] or with right-click + [**Run**] and we test if it works correctly.
 
 
-### Graphical Application: \*\*\* Catch the Button!
+### Graphical Application: \*\*\* Catch The Button!
 
 Create a fun graphical application **“catch the button”**. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs form the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
 

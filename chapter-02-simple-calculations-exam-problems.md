@@ -85,12 +85,12 @@ str = firstName + " " + lastName + " is " + age + " years old";
 # Ivan Ivanov is 19 years old
 ```
 
-## Exam Tasks
+## Exam Problems
 
 Now, after having revised how to make simple calculations and how to read and print numbers from the console, let's go to the tasks. We will solve a few **problems from a SoftUni entrance exam**.
 
 
-## Task: Training Lab
+## Problem: Training Lab
 
 **A training lab** has a rectangular size **l** x **w** meters, without columns on the inside. The hall is divided into two parts- left and right, with a hallway approximately in the middle. In both parts, there are **rows with desks**. In the back of the hall, there is a big **entrance door**. In the front, there is a **podium** for the lecturer. A single **working place** takes up **70 x 120 cm** (a table with size 70 x 40 cm + space for a chair and passing through with size 70 x 80 cm). **The hallway** width is at least **100 cm**. It is calculated that due to the **entrance door** (which has 160 cm opening) **exactly one working space is lost**, and due to the **podium** (which has a size of 160 x 120 cm) exactly **two working spaces** are lost. Write a program that reads the size of the training lab as input parameters and calculates the **number of working places in it** (look at the figure).
 
@@ -111,7 +111,7 @@ Print an integer in the console: **the number of working places** in the trainin
 |15<br>8.9  |129  | ![](/assets/chapter-2-2-images/01.Training-lab-01.png)       | 
 |8.4<br>5.2 |39    | ![](/assets/chapter-2-2-images/01.Training-lab-02.png)        |
 
-#### Clarification of the Examples
+#### Clarification of The Examples
 
 In the first example, the hall length is 1500 cm. **12 rows** can be situated in it (12 * 120 cm = 1440 + 60 cm difference). The hall width is 890 cm. 100 cm of them are for the hallway in the middle. The rest 790 cm can be situated by **11 desks per row** (11 \* 70 cm = 770 cm + 20 cm difference). **Number of places = 12 * 11 - 3** = 132 - 3 = **129** (we have 12 rows with 11 working places = 132 minus 3 places for podium and entrance door).
 
@@ -161,7 +161,7 @@ With **`print(…)`** we print the result in the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#0](https://judge.softuni.org/Contests/Practice/Index/1048#0).
 
 
-## Task: Vegetable Market
+## Problem: Vegetable Market
 
 A gardener is selling his harvest on the vegetable market. He is selling **vegetables for N BGN per kilogram** and **fruits for M BGN per kilogram**. Write a program that **calculates the earnings of the harvest in Euro**. (Assume that **1 EUR** is equal to **1.94 BGN**).
 
@@ -233,7 +233,7 @@ The task does not specify a special output format, therefore, we just have to ca
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#1](https://judge.softuni.org/Contests/Practice/Index/1048#1).
 
 
-## Task: Repair Tiles
+## Problem: Repair Tiles
 
 On the ground in front of an apartment building **tiles need to be placed**. The ground has a **square shape with a side of N meters**. The tiles are **"W" meters wide** and **"L" meters long**. There is one bench on the ground with a **width of "M" meters and a length of "O" meters**. There is no need to place tiles under it. Each tile is replaced for **0.2 minutes**.
 
@@ -324,7 +324,7 @@ In the task is specified that the number of the output should be rounded **to th
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#2](https://judge.softuni.org/Contests/Practice/Index/1048#2).
 
 
-## Task: Money
+## Problem: Money
 
 Some time ago, **Pesho bought Bitcoins**. Now, he is going on vacation in Europe **and he needs euros**. Apart from Bitcoins, he has **Chinese yuans** as well. Pesho wants to **exchange his money for euros** for the tour. Write a program that **calculates how much euro he can buy, depending on the following exchange rates**:
 * **1 Bitcoin = 1168 BGN.**
@@ -412,7 +412,7 @@ This code would print a correct result, **but it is hard to read**. It won't be 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#3](https://judge.softuni.org/Contests/Practice/Index/1048#3).
 
 
-## Task: Daily Earnings
+## Problem: Daily Earnings
 
 Ivan is a programmer in an American company, and he **works** at home **approximately N days per month** by earning **approximately M USD per day**. At the end of the year, Ivan **gets a bonus**, which **equals 2.5 of his monthly salary**. In addition, **25% of his annual salary goes for taxes**. Write a program that **calculates what is the amount of Ivan's net average earnings** in BGN per day, as he spends them in Bulgaria. It is accepted that one year has exactly 365 days. The exchange rate of US USD to BGN will **be passed to a function**.
 

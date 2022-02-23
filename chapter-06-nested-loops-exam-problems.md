@@ -1,4 +1,4 @@
-# Chapter 6.2. Nested loops – exam tasks
+# Chapter 6.2. Nested loops – Exam Problems
 
 In the previous chapter, we introduced **nested loops** and how to use them for **drawing** various kinds of **figures on the console**. We've learned how to print figures with different sizes, establishing suitable logic construction by using **single and nested `for`** loops in combination with different calculations and program logic:
 
@@ -16,9 +16,9 @@ We also learned the **operator `*`**, which lets you for defined by us **number*
 print_me = ('abc' * 2)
 ```
 
-## Exam tasks
+## Exam Problems
 
-Now let's solve some exam tasks to consolidate what we have learned and to develop our algorithmic thinking.
+Now let's solve some Exam Problems to consolidate what we have learned and to develop our algorithmic thinking.
 
 ## Problem: Drawing a fortress
 

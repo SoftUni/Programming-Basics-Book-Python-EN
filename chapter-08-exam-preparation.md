@@ -452,7 +452,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059
 
 ## Problems for Drawing Figures on the Console
 
-**The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops for drawing** a figure on the console. Logical reasoning, simple calculations, and conditional statements may be required. The problem tests the ability of students to think logically and invent simple algorithms for solving problems, i.e. to think algorithmically. Here are some examples of exam tasks:
+**The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops for drawing** a figure on the console. Logical reasoning, simple calculations, and conditional statements may be required. The problem tests the ability of students to think logically and invent simple algorithms for solving problems, i.e. to think algorithmically. Here are some examples of Exam Problems:
 
 ### Problem: A Perfect Diamond
 
