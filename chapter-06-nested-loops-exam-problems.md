@@ -24,7 +24,7 @@ Now let's solve some exam tasks to consolidate what we have learned and to devel
 
 Write a program, that reads from the console an **integer n** and draws a **fortress** with a width of **2 * n columns** and height of **n rows**, as in the below-given examples. The left and the right inner columns have a width of **n / 2**.
 
-### Input data
+### Input Data
 
 The program input consists one element (argument) - **integer n** within the range [**3 … 1000**].
 
@@ -98,7 +98,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056
 
 Write a program, that takes **an integer n** from the console and draws **butterfly** with width of **2 * n - 1 columns** and height of **2 * (n - 2) + 1 rows** as in the examples below. **The left and the right** **part** have **width of n - 1**.
 
-### Input data
+### Input Data
 
 The input consists of one element (argument) - **integer n** in the range [**3 … 1000**].
 
@@ -149,7 +149,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056
 
 Write a program, that takes an **integer n** from the console and draws **a STOP warning sign** with size as shown in the examples below.
 
-### Input data
+### Input Data
 
 The input consists of one element (argument) - **integer n** in the range [**3 … 1000**].
 
@@ -206,7 +206,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056
 
 Write a program that receives from the console **an odd integer n** and draws **a vertical arrow** with size as in the examples below.
 
-### Input data
+### Input Data
 
 The input is **an odd integer n** (argument) within the range [**3 … 79**].
 
@@ -271,7 +271,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1056
 
 Write a program, that receives **an integer n** and draws an axe with size as in the example below. The width of the axe is **5 * n** columns.
 
-### Input data
+### Input Data
 
 The input consists one element (argument) - **integer n** within range [**2..42**].
 
