@@ -9,7 +9,7 @@ In the previous chapter we learned how to run a command block **more than once**
  * **Updating the counter** – we implement it as a third parameter in the **`range(…)`** function, and it shows with how many steps the variable-counter should be updated.
  * **Loop body** - it has a random block full of source code.
 
-## Exam problems
+## Exam Problems
 
 Let’s solve a couple of problems with loops in SoftUni’s exams.
 
