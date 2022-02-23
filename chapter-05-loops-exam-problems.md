@@ -1,4 +1,4 @@
-# Chapter 5.2 Iterations (loops) - exam problems
+# Chapter 5.2 Loops - Exam Problems
 
 In the previous chapter we learned how to run a command block **more than once**. That's why we implemented **`for` loop** and covered some of its main applications. Our task in the current chapter is to hone our knowledge by solving a couple of more complex problems with loops, which appear in exams. For some of them we’ll show detailed solved examples, while for others there’ll be tips only. Before we begin, we’ll recall the **`for` loop** construction:
 
@@ -14,7 +14,7 @@ In the previous chapter we learned how to run a command block **more than once**
 Let’s solve a couple of problems with loops in SoftUni’s exams.
 
 
-## Problem: histogram
+## Problem: Histogram
 	
 We’re given **n-count integers** in range [**1 … 1000**]. A percent of them, **p1**, are under 200, __p2__ percent are between 200 and 399, **p3** percent are between 400 and 599, **p4** percent are between 600 and 799, and the remaining **p5** percent begin at 800. Write a program that calculates and prints the percentages **p1**, **p2**, **p3**, **p4** and **p5**.
 
@@ -37,7 +37,7 @@ On the first line of the input is an integer **n** ( 1 <= **n** <= 1000 ), which
 
 In the console, print a histogram of **5 lines**, each of them containing a number between 0% and 100%, formatted with two-digit precision after the decimal point (for example, 25.00%, 66.67%, 57.14%).
 
-### Problem input & output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -92,15 +92,15 @@ In the console, print a histogram of **5 lines**, each of them containing a numb
 </tbody>
 </table>
 
-### Tips and advice
+### Hints and Guidelines
 
 The program that solves this problem can be divided theoretically into three parts:
 
   * **Reading the input data** – in the current problem, this means reading the integer **n**, followed by a **count of n integers**, each on a new line.
-  * **Processing the input data** – in this case, this means dividing the numbers in groups and calculating the division percentage by those groups.
+  * **Processing The Input Data** – in this case, this means dividing the numbers in groups and calculating the division percentage by those groups.
   * **Outputting the final result** – printing the histogram in the console, in the given format.
 
-#### Reading the input data
+#### Processing The Input Data
   
 Before we transition to the real reading of the input, we have to **declare our variables**, in which the data will be stored:
 
@@ -112,7 +112,7 @@ After we’ve declared the needed variables, we can move on to reading the numbe
 
 ![](/assets/chapter-5-2-images/01.Histogram-02.png)
 
-#### Processing the input data
+#### Processing The Output Data
   
 In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to its respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers (**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
 
@@ -140,7 +140,7 @@ The cycle consists of:
    
 After reading the numbers, we have two of them in the first group, and we have only one in the last group. There are **no numbers** in the other groups. After we apply the aforementioned formula, we calculate the percentage of each group. It doesn’t matter whether we multiply by **100** or **100.0** – we’ll get the same result: the **first** group has 66.67%, and the **last** group – 33.33%. We have to mention that this is valid only for **`Python 3`**.
 
-#### Printing the final result
+#### Printing The Final Result
   
 The last step is to print the calculated results. In the problem’s description it’s said that the percentages have to be with **2-digit precision after the decimal point**. To achieve this, we have to write **`.2f`** after the placeholder.
 
@@ -173,7 +173,7 @@ Print a single line in the console:
     * "**No! {M}**" – where **M** is the amount of money **lacking**
   * The numbers **N** and **M** should be **formatted with 2-digit precision after the decimal point**.
 
-### Problem input & output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -202,7 +202,7 @@ Print a single line in the console:
 </tbody>
 </table>    
 
-### Tips and advice
+### Hints and Guidelines
 
 Solving this problem, like the previous one, again can be divided in three parts – **reading** the input data, **processing** it and **outputting** a result.
 
@@ -235,7 +235,7 @@ More about ternary operators: [https://book.pythontips.com/en/latest/ternary_ope
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
 
 
-## Problem: Returning to the past
+## Problem: Returning to The Past
 
 Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** is **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including the year itself**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the given year]**.
 
@@ -254,7 +254,7 @@ The input is read from the console and **contains exactly 2 lines**:
   *	If **the money is NOT enough**:
     * "**He will need {M} dollars to survive.**" – where **M** is the amount **lacking**.
 
-### Problem input & output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -293,7 +293,7 @@ The input is read from the console and **contains exactly 2 lines**:
 </tbody>
 </table> 
 
-### Tips and advice
+### Hints and Guidelines
 
 The method of solving this problem isn't unlike the previous ones, so we begin by **declaring and initializing** the needed variables. In the problem's description it's said that Ivancho's age is 18, so we declare the variable **`years`** with the initial value **18**. We read other variables from the console: 
 
@@ -312,7 +312,7 @@ At the end we print the results, and we do a **check whether the inheritance** (
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#2](https://judge.softuni.org/Contests/Practice/Index/1054#2).
 
 
-## Problem: hospital
+## Problem: Hospital
 
 For a given amount of time, patients arrive for a checkup in the hospital every day. She **initially** has **7 doctors**. Each of them can **check one patient a day only**, but sometimes there's a shortage of doctors, so **the other patients are sent to other hospitals**. **Every third day** the hospital calculates **whether the count of patients that haven't been examined is higher than those that've been, and if so, an additional doctor is assigned**. The assignment happens before the start of the day.
 
@@ -331,7 +331,7 @@ The input is read from the **console** and contains:
 * On **the first line**: "**Treated patients: {count of treated patients}.**"
 * On **the second line**: "**Untreated patients: {count of untreated patients}.**"
 
-### Problem input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -374,7 +374,7 @@ The input is read from the **console** and contains:
 </tbody>
 </table>    
 
-### Tips and advice
+### Hints and Guidelines
 
 Again, we begin by **declaring and initializing** the needed variables. The period, for which we have to do our calculations, we read from the console and assign to the variable **`period`**. We'll need a couple of additional variables: the count of treated patients (**`treated_patients`**), the count of untreated patients (**`untreated_patients`**) and the count of doctors (**`count_of_doctors`**), which is initially 7: 
 
@@ -404,7 +404,7 @@ At the end we only have to print the count of treated and untreated patients.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#3](https://judge.softuni.org/Contests/Practice/Index/1054#3).
 
 
-## Problem: division without remainder
+## Problem: Division Without Remainder
 
 We're given **n integers** in range [**1 … 1000**]. A percentage of them, **percent p1, are divided by 2 without remainder**, **percent p2** are **divided by 3 without remainder**, **percent p3** are **divided by 4 without remainder**. Write a program that calculates and prints the percentages p1, p2 and p3.
 **Example:** we have **n = 10** integers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
@@ -450,7 +450,7 @@ Print to the console **3 lines**, each of them containing a percentage between 0
  * On the **second line** – the percentage of numbers **divisible by 3**.
  * On the **third line** – the percentage of numbers **divisible by 4**.
 
-### Problem input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -475,7 +475,7 @@ Print to the console **3 lines**, each of them containing a percentage between 0
 </tbody>
 </table>  
 
-### Tips and advice
+### Hints and Guidelines
 
 For this and the next problem, you'll have to write the program's code on your own, with the help of the following advice.
 
@@ -492,7 +492,7 @@ At the end, print the found results while keeping the given in the problem's des
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#4](https://judge.softuni.org/Contests/Practice/Index/1054#4).
 
 
-## Problem: logistics
+## Problem: Logistics
 
 You're responsible for the logistics of different cargos. **Depending on the weight** of each load, a **different transportation vehicle** is needed and costs **a different price per ton**:
 
@@ -516,7 +516,7 @@ Print **4 lines** to the console, as given:
  * **Line #3** – **the percentage** of cargo, transported with a **truck** (between 0.00% and 100.00%).
  * **Line #4** – **the percentage** of cargo, transported with a **train** (between 0.00% and 100.00%).
  
-### Problem input and output
+### Sample Input and Output
 
 <table>
 <thead>
@@ -563,7 +563,7 @@ The percentage of <b>train-transported</b> cargo: 16/25*100 = <b>64.00%</b><br>
 </tbody>
 </table>
 
-### Tips and advice
+### Hints and Guidelines
 
 First **we'll read the weight of each load** and we'll **sum** how many tons are being transported by a **van**, **truck** and **train** respectively, and we'll additionally calculate **the total tons** of transported cargos. We'll calculate **the prices of each transport type** according to the total tons and **the total price**. At the end we'll calculate and print **the total average price per ton** and **what part of the overall load is transported by each transport type, in percentages**.
 
