@@ -338,7 +338,7 @@ Let's now **start the program** and check whether the result is what we're expec
 
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/1046#2](https://judge.softuni.org/Contests/Practice/Index/1046#2).
-Now try and **think of a more clever way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.bg/search?q=for+loop+python)" on the Internet.
+Now try and **think of a more clever way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.com/search?q=for+loop+python)" on the Internet.
 
 ### Problem: Triangle of 55 Stars
 
@@ -422,7 +422,7 @@ Create a **new Python file**. In order to read the number N (2 ≤ N ≤100), we
 
 Finish the program so that it prints a square made up of stars. You may need to use **`for`**-loops.
 
-**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the SoftUni forum: https://softuni.bg/forum.
+**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
 
 ### Testing in The Judge System
 

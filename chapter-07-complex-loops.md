@@ -696,4 +696,4 @@ After changing the code of the view, we start with [**Ctrl + Shift + F10**] and 
 
 This time when hitting dynamite, the right picture should appear and only the "new game" action should be allowed (the [**New Game**] button).
 
-Was it complicated? Did you manage to make the game? If you fail, don't worry, this is a relatively complex project that involves a large amount of unstudied material. If you encounter any difficulties, you can ask in the **forum of SoftUni**: https://softuni.bg/forum.
+Was it complicated? Did you manage to make the game? If you fail, don't worry, this is a relatively complex project that involves a large amount of unstudied material. If you encounter any difficulties, you can ask in the **Softuni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).

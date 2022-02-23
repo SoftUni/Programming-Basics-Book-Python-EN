@@ -398,4 +398,4 @@ Add new Python file **triangle.py**, which draws three triangles with 22 beams e
 
 **Hint:** Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles. 
 
-If you have a problem with the above exercises, ask for help in the SoftUni official **discussion forum**: https://softuni.bg/forum.
+If you have a problem with the above exercises, ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).

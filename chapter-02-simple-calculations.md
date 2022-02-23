@@ -1021,4 +1021,4 @@ Let's implement the three functions which represent the program logic in our app
 
 It is possible that not everything will run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and to **look for solutions** to the emerging problems.
 
-If you are having problems with the tasks above, feel free to ask questions in the **SoftUni forum**: https://softuni.bg/forum.
+If you are having problems with the tasks above, feel free to ask questions in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
