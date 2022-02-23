@@ -678,6 +678,6 @@ Our variable **`result`**, in which we will save the value of the result, we wil
 
 To find the first and the last digit of the ASCII code, we will use the same algorithm that we used to solve "N-th number" problem, while to create the string, we will proceed as in "Number to a numeral system"
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#14](https://judge.softuni.org/Contests/Practice/Index/1063#14).

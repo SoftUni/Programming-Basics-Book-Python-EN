@@ -80,7 +80,7 @@ One of the ways to find a solution for this problem is to create **five** **`for
 * **Python** has a wide range of built-in functions and methods for working with strings. Look for more information on the following functions: **`str(number)`**, **`.lower()`**, **`.format(*args, **kwargs)`**, **`.swapcase()`**, **`.upper()`**.
 
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1058#0](https://judge.softuni.org/Contests/Practice/Index/1058#0).
 
@@ -138,7 +138,7 @@ Then we will start writing **`while`** loops.
 
 As we can see, we can solve a problem using different types of loops. Of course, each task has its most appropriate choice. To practice each type of loop – try to solve each of the following problems with all the learned loops.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1058#1](https://judge.softuni.org/Contests/Practice/Index/1058#1).
 
@@ -192,7 +192,7 @@ Another **tricky** part of this problem is that apart from the above check we ne
  
 If the **condition** that checks whether the number is equal with the "stop" number returns a **`false`**, result, our program should **continue to print**. This covers the **fourth and last** part of our program.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1058#2](https://judge.softuni.org/Contests/Practice/Index/1058#2).
 
@@ -230,7 +230,7 @@ Print on the console **all special numbers**, separated by **space**.
 
 Solve the problem by yourself using what you learned from the previous two problems. Keep in mind the difference between operators for **integer division `//`** and **division with remainder `%`** in Python.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1058#3](https://judge.softuni.org/Contests/Practice/Index/1058#3).
 
@@ -268,6 +268,6 @@ Print on the console **all integer numbers**, that is the result of the above-me
 
 Solve the problem **by yourself**, using what you learned from the previous ones. Remember that you will need to define **different** variables for each digit of the input number.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1058#4](https://judge.softuni.org/Contests/Practice/Index/1058#4).

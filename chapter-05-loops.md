@@ -96,7 +96,7 @@ Here is the source code for the solution:
 
 ![](/assets/chapter-5-1-images/04.Sum-numbers-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#3](https://judge.softuni.org/Contests/Practice/Index/1053#3).
 
@@ -121,7 +121,7 @@ We will first enter one number **`n`** (the number of integers that are about to
 
 ![](/assets/chapter-5-1-images/05.Max-number-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#4](https://judge.softuni.org/Contests/Practice/Index/1053#4).
 
@@ -144,7 +144,7 @@ The problem is completely identical to the previous one, except this time we wil
 
 ![](/assets/chapter-5-1-images/06.Min-number-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#5](https://judge.softuni.org/Contests/Practice/Index/1053#5).
 
@@ -165,7 +165,7 @@ We will first input the number **n**, after that the first **n** numbers (**left
 
 ![](/assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#6](https://judge.softuni.org/Contests/Practice/Index/1053#6).
 
@@ -188,7 +188,7 @@ Input the numbers one by one and calculate the two **sums** (of the numbers on *
 
 ![](/assets/chapter-5-1-images/08.Odd-even-sum-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#7](https://judge.softuni.org/Contests/Practice/Index/1053#7).
 
@@ -214,7 +214,7 @@ We read the input text **`line`**, null the sum and run a loop, which goes throu
 
 ![](/assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#8](https://judge.softuni.org/Contests/Practice/Index/1053#8).
 
@@ -257,7 +257,7 @@ Write a program that inputs **n integers** and checks whether there is a number 
 
 We have to calculate **the sum** of all elements, find **the largest** of them and check the condition.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#9](https://judge.softuni.org/Contests/Practice/Index/1053#9).
 
@@ -281,7 +281,7 @@ This task combines some of the previous tasks: finding the **min**, **max** valu
 
 In the current task it is better to work with **fractions** (not integers). The sum, the min and the max will also be fractions. We must use a **neutral starting value** when finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the end result is the neutral value, print **"No"**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#10](https://judge.softuni.org/Contests/Practice/Index/1053#10).
 
@@ -305,7 +305,7 @@ There are **2 \* n numbers**. The first and the second number form a **pair**, t
 
 We read the input numbers **in pairs**. For each pair we calculate its **the sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. In order to do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#11](https://judge.softuni.org/Contests/Practice/Index/1053#11).
 

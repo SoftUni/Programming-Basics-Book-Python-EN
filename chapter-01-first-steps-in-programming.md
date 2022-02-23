@@ -281,7 +281,7 @@ Start the program with **[Ctrl + Shift + F10]** and check whether the result mat
 
 ![](/assets/chapter-1-images/02.Expression-02.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1046#1](https://judge.softuni.org/Contests/Practice/Index/1046#1).
 ![](/assets/chapter-1-images/02.Expression-03.png)
 
@@ -305,7 +305,7 @@ Let's now **start the program** and check whether the result is what we're expec
 20
 ```
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/1046#2](https://judge.softuni.org/Contests/Practice/Index/1046#2).
 Now try and **think of a more clever way** we can write this program, to avoid repeating the same command so many times. Look up information for "[for loop Python](https://www.google.bg/search?q=for+loop+python)" on the Internet.
@@ -333,7 +333,7 @@ print('**')
 …
 ```
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/1046#3](https://judge.softuni.org/Contests/Practice/Index/1046#3).
 
@@ -364,7 +364,7 @@ Test your solution with a few examples. You should receive a result identical to
 14
 ```
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/1046#4](https://judge.softuni.org/Contests/Practice/Index/1046#4).
 
@@ -385,7 +385,7 @@ Finish the program so that it prints a square made up of stars. You may need to 
 
 **Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the SoftUni forum: https://softuni.bg/forum.
 
-### Testing in the Judge System
+### Testing in The Judge System
 Test your solution here:[https://judge.softuni.org/Contests/Practice/Index/1046#5](https://judge.softuni.org/Contests/Practice/Index/1046#5).
 
 ## Console, Graphical and Web Applications

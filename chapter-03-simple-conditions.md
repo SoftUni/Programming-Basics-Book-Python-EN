@@ -70,7 +70,7 @@ We take the grade as an input in the console and check if it is excellent (**`�
 
 Test the example code locally. Try entering different grades, for example, **4.75**, **5.49**, **5.50** and **6.00**. For grades **less than 5.50** the program will not give any output, however for grades of **5.50 or greater**, the output will be "**Excellent!**".
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test the solution example here:
 [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
@@ -130,7 +130,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 
 ![](/assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
@@ -143,7 +143,7 @@ Our first task is to **read** the two numbers. After which through the use of a 
 
 ![](/assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
 
@@ -193,7 +193,7 @@ else:
 
 The program logic of the above example **sequentially compares** the input number with the digits from 1 to 9 **with each consecutive comparison being performed only in case the previous result is not true**. Eventually, if none of the **`if`** conditionals are satisfied, the last **`else` clause** is executed.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
 
@@ -234,7 +234,7 @@ Here’s what the solution to the problem might look like:
 
 Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#5](https://judge.softuni.org/Contests/Practice/Index/1049#5).
 
@@ -262,7 +262,7 @@ Firstly, we sum the three numbers, to obtain the total seconds. As we know that 
 
 ![](/assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#6](https://judge.softuni.org/Contests/Practice/Index/1049#6).
 
@@ -301,7 +301,7 @@ We take the input data and to the units of measure, we can add the function **`l
 
 ![](/assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#7](https://judge.softuni.org/Contests/Practice/Index/1049#7).
 
@@ -370,7 +370,7 @@ We already have a Project with a single file in it. Now we have to write the cod
 
  ![](/assets/chapter-3-1-images/01.ExcellentResult-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
 
@@ -403,7 +403,7 @@ After that, we **run the program**, as usual with [**Shift + F10**], so we can t
  ![](/assets/chapter-3-1-images/02.Excellent-or-not-02.png)
  ![](/assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
 
@@ -431,7 +431,7 @@ Now we have to **run** the program with [**Ctrl+F5**] and test it:
 
 ![](/assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
@@ -459,7 +459,7 @@ When we are done with the implementation of the solution, we **run** the program
 
 ![](/assets/chapter-3-1-images/04.Greater-number-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
 
@@ -481,7 +481,7 @@ Write a program that reads input data from the console - **integer in range** [*
 
 We can use a sequence of **`if-elif`** statements to cover every one of the possible **11 cases**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
 
@@ -502,7 +502,7 @@ Write a program that **reads input data from the console - a password** (one lin
 
 Use an **`if-else`** statement.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#8](https://judge.softuni.org/Contests/Practice/Index/1049#8).
 
@@ -519,7 +519,7 @@ Write a program that **reads input data from the console - an integer** and chec
 | 120 | Between 100 and 200 |
 | 210 | Greater than 200 |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#9](https://judge.softuni.org/Contests/Practice/Index/1049#9).
 
@@ -542,7 +542,7 @@ Write a program that **reads input data from the console - two words** and check
 
 Before the comparison, both words should be in lower case, so that case (uppercase / lowercase) does not influence the result **`word = word.lower()`**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#10](https://judge.softuni.org/Contests/Practice/Index/1049#10).
 
@@ -560,7 +560,7 @@ Write a program, that **reads input data from the console - speed** (decimal num
 | 160 | ultra fast |
 | 3500 | extremely fast |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#11](https://judge.softuni.org/Contests/Practice/Index/1049#11).
 
@@ -586,7 +586,7 @@ The result should be rounded up to the **third decimal point**.
 | circle<br>6 | 113.097 |
 | triangle<br>4.5<br>20 | 45 |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#12](https://judge.softuni.org/Contests/Practice/Index/1049#12).
 
@@ -609,7 +609,7 @@ Write a program that reads **two integers - hours and minutes** based on a 24-ho
 
 Add 15 minutes and check using a set of conditions. If minutes are over 59 **increase the hours** by 1 and **decrease the minutes** by 60. You may handle the case when hours are over 23 similarly. Take care when printing the minutes to add a **leading zero** where appropriate.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#13](https://judge.softuni.org/Contests/Practice/Index/1049#13).
 
@@ -626,7 +626,7 @@ Write a program that reads **3 numbers** and prints whether they are the same ("
 | 5<br>4<br>5 | no |
 | 1<br>2<br>3 | no |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#14](https://judge.softuni.org/Contests/Practice/Index/1049#14).
 
@@ -646,6 +646,6 @@ Write a program that converts numbers in the range of [**0 … 100**] in text.
 #### Hints and pointers
 
 Firstly, we should check for **single-digit numbers** and if this is the case, print the corresponding word. Then we can check if the number is a **double-digit number**. These can be printed in two parts: left part (**double-digit** = number / 10) and right part (**single-digit** = number % 10). If the number has three digits, then it must be 100 and this can be handled as a special case.
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#15](https://judge.softuni.org/Contests/Practice/Index/1049#15).

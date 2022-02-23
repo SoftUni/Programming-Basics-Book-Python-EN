@@ -17,7 +17,7 @@ Print on the console a rectangle made out of **10 x 10** asterisks.
 How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is **`i = 0`**. With each iteration of the loop, the variable increases by **1** while it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
 
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
 
@@ -36,7 +36,7 @@ The task is similar to the previous one:
 
 ![](/assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#1](https://judge.softuni.org/Contests/Practice/Index/1055#1).
 
@@ -72,7 +72,7 @@ The problem is similar to the last one. The difference here is that we need to f
 
 ![](/assets/chapter-6-1-images/03.Square-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#2](https://judge.softuni.org/Contests/Practice/Index/1055#2).
 
@@ -90,7 +90,7 @@ The problem is **similar** to those for drawing **a rectangle** and **square**. 
 
 ![](/assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#3](https://judge.softuni.org/Contests/Practice/Index/1055#3).
 
@@ -119,7 +119,7 @@ Here is an example implementation of the above idea with nested loops:
 
 ![](/assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#4](https://judge.softuni.org/Contests/Practice/Index/1055#4).
 
@@ -153,7 +153,7 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 <td>In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
 </tr></table>
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#5](https://judge.softuni.org/Contests/Practice/Index/1055#5).
 
@@ -175,7 +175,7 @@ From the examples, we see that **the Christmas tree** can be **divided** into **
 
 ![](/assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#6](https://judge.softuni.org/Contests/Practice/Index/1055#6).
 
@@ -207,7 +207,7 @@ When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#7](https://judge.softuni.org/Contests/Practice/Index/1055#7).
 
@@ -302,7 +302,7 @@ After we have finished with the **roof**, it is time for **the base**. It is eas
 
 If we have written everything correctly, our problem should be solved. 
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#8](https://judge.softuni.org/Contests/Practice/Index/1055#8).
 
@@ -384,7 +384,7 @@ Printing the lower part is very similar to that of the upper part. The differenc
 
 If we have written all correctly, then the problem is solved.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#9](https://judge.softuni.org/Contests/Practice/Index/1055#9).
 

@@ -92,7 +92,7 @@ After we have checked the distance **conditions** and we have **calculated the p
 
 ![](/assets/chapter-3-2-images/01.Transport-price-06.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#0](https://judge.softuni.org/Contests/Practice/Index/1050#0).
 
@@ -151,7 +151,7 @@ The ratio has to be in **percentage**, that is why all the calculations so far w
 
 However, if **the condition** returns **`false`**, that means that **the quantity of water** is **more** than the **volume** of the pool, therefore, it has **overflown**. Again, the output data has to be on **one line**, but this time it should contain only two values – one of the **hours** when the worker was absent, and the **quantity of water**, which is the difference between the incoming water and the volume of the pool.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#1](https://judge.softuni.org/Contests/Practice/Index/1050#1).
 
@@ -220,7 +220,7 @@ Whatever the result of the conditional statement is, we have to print how much *
 
 ![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-05.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#2](https://judge.softuni.org/Contests/Practice/Index/1050#2).
 
@@ -289,7 +289,7 @@ If the condition returns **`false`**, we have to **print the difference** betwee
 
 ![](/assets/chapter-3-2-images/04.Harvest-04.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#3](https://judge.softuni.org/Contests/Practice/Index/1050#3).
 
@@ -349,6 +349,6 @@ If **the time is not enough**, we print the additional hours that are needed for
 
 ![](/assets/chapter-3-2-images/05.Firm-03.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1050#4](https://judge.softuni.org/Contests/Practice/Index/1050#4).

@@ -144,7 +144,7 @@ Let's examine the idea that our code is not 10 lines, but 100 or 1000! One day, 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Always consider the code that contains logical calculations as a separate piece, different from the part that processes the input and output data. It has to be able to work regardless of how the data is passed to it and where the result will be displayed.</td></tr></table>
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#0](https://judge.softuni.org/Contests/Practice/Index/1052#0).
 
@@ -241,7 +241,7 @@ What remains is to display the calculated result on the console:
 
 ![](/assets/chapter-4-2-images/02.Trip-06.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#1](https://judge.softuni.org/Contests/Practice/Index/1052#1).
 
@@ -332,7 +332,7 @@ Finally, what remains is to print the calculated result on the console:
 
 ![](/assets/chapter-4-2-images/03.Operations-08.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#2](https://judge.softuni.org/Contests/Practice/Index/1052#2).
 
@@ -417,7 +417,7 @@ For the output, to spare one **condition** in the construction, we will assume t
 
 Finally, we need to display the calculated result on the console.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#3](https://judge.softuni.org/Contests/Practice/Index/1052#3).
 
@@ -507,6 +507,6 @@ To calculate the output parameters, we will use the **formatting** **`.2f`**. Th
 
 Finally, what remains is to print the calculated results on the console.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#4](https://judge.softuni.org/Contests/Practice/Index/1052#4).

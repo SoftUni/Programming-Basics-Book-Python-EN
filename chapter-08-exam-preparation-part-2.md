@@ -90,7 +90,7 @@ Up until now, we were able to **solve two** of the **most important sub-problems
 
 In case you worked accurately and wrote the program using the input data given in the task description, you will be convinced that it works properly.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#0](https://judge.softuni.org/Contests/Practice/Index/1060#0).
 
@@ -155,7 +155,7 @@ We can find the final result by **calculating the total amount** that is needed 
 
 ![](/assets/chapter-8-2-images/02.Change-Tiles-01.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#1](https://judge.softuni.org/Contests/Practice/Index/1060#1).
 
@@ -224,7 +224,7 @@ Let's think of the most appropriate way to **structure** our programming logic. 
 
 What remains is to perform **a few checks** regarding **the discounts** of the different types of flowers, depending on the season, and to modify the final result. 
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#2](https://judge.softuni.org/Contests/Practice/Index/1060#2).
 
@@ -280,7 +280,7 @@ We can calculate what **percentage** is taken by a particular **group of student
 **The final result** is formed in a well-known way **up to the second symbol** after the decimal point.
 
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#3](https://judge.softuni.org/Contests/Practice/Index/1060#3).
 
@@ -335,7 +335,7 @@ What remains is to execute the body of the loop, as **after each** drawing we **
 
 In case we have worked properly, we will obtain figures identical to those in the examples.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#4](https://judge.softuni.org/Contests/Practice/Index/1060#4).
 
@@ -389,6 +389,6 @@ We use a **loop** that runs through **all characters** from the starting to the 
 
 Let's not forget that we also need to print the **total number of valid combinations** that we have found, and they must be printed on the **same line**, separated by a space. We leave this sub-task to the reader.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#5](https://judge.softuni.org/Contests/Practice/Index/1060#5).

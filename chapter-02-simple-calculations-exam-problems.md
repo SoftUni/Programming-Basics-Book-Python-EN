@@ -156,7 +156,7 @@ With **`print(…)`** we print the result in the console:
 
 ![](/assets/chapter-2-2-images/01.Training-lab-05.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#0](https://judge.softuni.org/Contests/Practice/Index/1048#0).
 
@@ -228,7 +228,7 @@ The task does not specify a special output format, therefore, we just have to ca
 
 ![](/assets/chapter-2-2-images/02.Vegetable-market-03.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#1](https://judge.softuni.org/Contests/Practice/Index/1048#1).
 
@@ -319,7 +319,7 @@ In the task is specified that the number of the output should be rounded **to th
 
 ![](/assets/chapter-2-2-images/03.Change-tiles-05.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#2](https://judge.softuni.org/Contests/Practice/Index/1048#2).
 
@@ -407,7 +407,7 @@ Let's pay attention to something that applies to all other problems of this type
 
 This code would print a correct result, **but it is hard to read**. It won't be easy to find out how it works and whether it contains any mistakes, as well as finding such and correcting them. **Instead of one complex expression**, it is **better to write a few simpler ones** and store their values in variables with appropriate names. This way, the code is cleaner and easily maintainable.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#3](https://judge.softuni.org/Contests/Practice/Index/1048#3).
 
@@ -477,6 +477,6 @@ Finally, we have to print the result on the console. We notice **that the number
 
 ![](/assets/chapter-2-2-images/05.Daily-earnings-03.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#4](https://judge.softuni.org/Contests/Practice/Index/1048#4).

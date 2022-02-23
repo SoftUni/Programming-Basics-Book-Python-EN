@@ -99,7 +99,7 @@ The previous solution to the problem uses arrays to store the values. Arrays are
 
 ![](/assets/chapter-9-1-images/01.Crossing-sequences-07.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1061#0](https://judge.softuni.org/Contests/Practice/Index/1061#0).
 
@@ -189,7 +189,7 @@ Finally, if we have not found a date that is eligible, we will have a **`False`*
 
 ![](/assets/chapter-9-1-images/02.Magic-dates-08.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1061#1](https://judge.softuni.org/Contests/Practice/Index/1061#1).
 
@@ -326,6 +326,6 @@ The condition is met **unless we do not have a single word in the entered range*
 
 For the curious ones, we will leave as exercise to optimize the loop's function by reducing the numbers of iterations in nested loops.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here [https://judge.softuni.org/Contests/Practice/Index/1061#2](https://judge.softuni.org/Contests/Practice/Index/1061#2).

@@ -35,7 +35,7 @@ We can solve the problem using the following sequence of actions (algorithm):
   
 ![](/assets/chapter-7-1-images/01.Numbers-1-to-n-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#0](https://judge.softuni.org/Contests/Practice/Index/1057#0).
 
@@ -53,7 +53,7 @@ We can solve the problem in the following manner:
 
 ![](/assets/chapter-7-1-images/02.Numbers-n-to-1-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#1](https://judge.softuni.org/Contests/Practice/Index/1057#1).
 
@@ -66,7 +66,7 @@ Write a program that prints the numbers **from 1 to 2^n** (two to the power of n
 
 ![](/assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#2](https://judge.softuni.org/Contests/Practice/Index/1057#2).
 
@@ -83,7 +83,7 @@ Here is how we can solve the problem:
 
 ![](/assets/chapter-7-1-images/04.Even^2-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#3](https://judge.softuni.org/Contests/Practice/Index/1057#3).
 
@@ -116,7 +116,7 @@ Here is a sample implementation of this idea:
 
 ![](/assets/chapter-7-1-images/05.Numbers-2k+1-01.png)
  
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#4](https://judge.softuni.org/Contests/Practice/Index/1057#4).
 
@@ -136,7 +136,7 @@ Here is a sample implementation of the algorithm using a **`while` loop**:
 
 ![](/assets/chapter-7-1-images/06.Numbers-in-range-1..100-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#5](https://judge.softuni.org/Contests/Practice/Index/1057#5).
 
@@ -192,7 +192,7 @@ We will solve the problem by implementing **Euclid's algorithm**:
 
 ![](/assets/chapter-7-1-images/07.GCD-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 You can test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#6](https://judge.softuni.org/Contests/Practice/Index/1057#6).
 
@@ -231,7 +231,7 @@ Here is how we can calculate factorial in more detail:
 
 ![](/assets/chapter-7-1-images/08.Factorial-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#7](https://judge.softuni.org/Contests/Practice/Index/1057#7).
 
@@ -257,7 +257,7 @@ We can use the following idea to solve the problem:
 <code><strong>n // 10</strong></code>: <b>deletes</b> the last digit of <code><strong>n</strong></code>.</td>
 </tr></table>
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#8](https://judge.softuni.org/Contests/Practice/Index/1057#8).
 
@@ -324,7 +324,7 @@ Here is a sample implementation of the prime checking algorithm, described above
 
 What remains is to add a **condition that checks if the input number is greater than 1**, because, by definition numbers such as 0, 1, -1 and -2 are not prime.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#9](https://judge.softuni.org/Contests/Practice/Index/1057#9).
 
@@ -348,7 +348,7 @@ Here is an example implementation of the idea:
 ![](/assets/chapter-7-1-images/00.Break-in-infinite-loop-01.png)
 
 Note: although the code above is correct, it will not work if the user enters text instead of a number, for example "**Invalid number**". Then the parse of the text to a number will break and the program will display **error message (exception)**. We will learn very soon how to deal with this problem and how to catch and handle exceptions using the **`try-except` construct**.
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
@@ -381,7 +381,7 @@ What is the **correct solution**? One way to solve the problem is by declaring a
 
 In this manner, when **`i + j = 2`**, the program will set the variable **`has_to_end = True`** and will exit the inner loop. Upon the next iteration of the outer loop, via the **`if`** check, the function will not reach the inner loop and will interrupt its execution.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#11](https://judge.softuni.org/Contests/Practice/Index/1057#11).
 
@@ -423,7 +423,7 @@ Here is an example implementation of the described idea:
 
 ![](/assets/chapter-7-1-images/11.Wrong-numbers-try-except-01.png)
 
-#### Testing in the Judge system
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
@@ -475,7 +475,7 @@ Example implementation:
 
 ![](/assets/chapter-7-1-images/12.Fibonacci-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#12](https://judge.softuni.org/Contests/Practice/Index/1057#12).
 
@@ -509,7 +509,7 @@ Here is an example implementation:
 
 ![](/assets/chapter-7-1-images/13.Pyramid-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#13](https://judge.softuni.org/Contests/Practice/Index/1057#13).
 
@@ -541,7 +541,7 @@ Here is an example implementation:
 
 ![](/assets/chapter-7-1-images/14.Table-with-numbers-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#14](https://judge.softuni.org/Contests/Practice/Index/1057#14).
 

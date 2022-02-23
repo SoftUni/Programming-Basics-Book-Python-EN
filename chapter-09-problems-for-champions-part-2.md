@@ -129,7 +129,7 @@ The printing operations are simple, as the only thing we need to take into consi
 
 How can we do that? We will leave the answer to this question to the reader.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062#0](https://judge.softuni.org/Contests/Practice/Index/1062#0).
 
@@ -240,7 +240,7 @@ After finishing the result calculation for our sub-expression, we **modify the r
 
 The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two symbols after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062#1](https://judge.softuni.org/Contests/Practice/Index/1062#1).
 
@@ -360,6 +360,6 @@ After completing all conditions, we just need to **check whether the bulls and c
 
 ![Root check](/assets/chapter-9-2-images/03.Bulls-and-cows-09.png)
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1062#2](https://judge.softuni.org/Contests/Practice/Index/1062#2).

@@ -77,7 +77,7 @@ The next command **`area = a * a`** assigns to a new variable **`area`** the res
 
 The last line **`print('Square area = ', area)`** prints the given text and next to it, the calculated area of the square, held in the variable **`area`** is concatenated.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0).
 
@@ -138,7 +138,7 @@ Let's start the program and make sure that when we input a value in inches, we r
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
@@ -167,7 +167,7 @@ Here is the result if we call the function with the name "Ivan":
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-00.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
@@ -194,7 +194,7 @@ Here is the result which we will get after execution of this example:
 
 Note how each variable must be passed in the **order, in which we want it to print**. Essentially, the template (**placeholder**) **accepts all types of variables** and this creates great convenience when printing. 
 
-### Testing in the Judge System
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
@@ -470,7 +470,7 @@ Because we want the program to work for both integer and floating-point numbers,
 
 ![](/assets/chapter-2-1-images/05.Trapezoid-area-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
@@ -531,7 +531,7 @@ Let's try the program with **radius `r = 10`**:
 
 ![](/assets/chapter-2-1-images/00.Circle-area-01.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
@@ -565,7 +565,7 @@ The function **`max(a, b)`** is used to find the bigger value between **`a`** an
 When starting the program with the values from the coordinate system, the following result is given:
 ![](/assets/chapter-2-1-images/00.Rectangle-area-02.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
@@ -615,7 +615,7 @@ The code inputs an integer through **`a = int(input('a = '))`**, afterwards it c
 
 ![](/assets/chapter-2-1-images/01.Square-area-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0). You have to get 100 points (completely correct solution):
 
@@ -660,7 +660,7 @@ It is recommended to **change the settings of your computer** to use a **decimal
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-08.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
 
@@ -687,7 +687,7 @@ We **run** the program using [**Ctrl + Shift + F10**] or with right click - [**R
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-03.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
 
@@ -708,7 +708,7 @@ We add to the existing PyCharm project one more Python file named "concatenate_d
 
 Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
 
@@ -736,7 +736,7 @@ Again, we have to add to the existing PyCharm project another **Python file** na
 
 **Test** your solution locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
 
@@ -758,7 +758,7 @@ For the calculations you may use the following formulas:
 -	**`area = math.pi * r * r`**.
 -	**`perimeter = 2 * math.pi * r`**.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
@@ -777,7 +777,7 @@ A **rectangle** is defined by the **coordinates** of both of its opposite corner
 | 30<br>40<br>70<br>-10                | 2000<br>180         |
 | 600.25<br>500.75<br>100.50<br>-200.5 | 350449.6875<br>2402 |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
 
@@ -795,7 +795,7 @@ Write a program that reads from the console **a side and a height of a triangle*
 | 7.75 <br>8.45       | Triangle area = 32.74 |
 | 1.23456 <br>4.56789 | Triangle area = 2.82  |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#7](https://judge.softuni.org/Contests/Practice/Index/1047#7).
 
@@ -813,7 +813,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 | -5.5 | 22.1  |
 | 32.3 | 90.14 |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#8](https://judge.softuni.org/Contests/Practice/Index/1047#8).
 
@@ -831,7 +831,7 @@ Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wik
 | 0.7854 | 45    |
 | 0.5236 | 30    |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#9](https://judge.softuni.org/Contests/Practice/Index/1047#9).
 
@@ -848,7 +848,7 @@ Write a program for **conversion of US dollars** (USD) **to Bulgarian leva** (BG
 | 100  | 179.55 BGN |
 | 12.5 | 22.44 BGN  |
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#10](https://judge.softuni.org/Contests/Practice/Index/1047#10).
 
@@ -872,7 +872,7 @@ Write a program for **conversion of money from one currency to another**. It has
 | 12.35<br>EUR<br>GBP  | 9.53 GBP   |
 | 150.35<br>USD<br>EUR | 138.02 EUR |
  
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#11](https://judge.softuni.org/Contests/Practice/Index/1047#11).
 
@@ -895,7 +895,7 @@ Write a program that enters **a birth date** in the format **`dd-MM-yyyy`** and 
 * Look for information about the data type **``datetime``** in Python and in particular look at the methods **``strptime(str, format)``**, **``timedelta(days=n)``**. With their help you can solve the problem without the need to calculate days, months and leap years.
 * **Don't print** anything additional on the console except for the wanted date!
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#12](https://judge.softuni.org/Contests/Practice/Index/1047#12).
 

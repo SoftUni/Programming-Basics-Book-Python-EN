@@ -74,7 +74,7 @@ The only thing left is to print the area on the console.
 
 ![](/assets/chapter-8-1-images/01.Triangle-area-06.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#0](https://judge.softuni.org/Contests/Practice/Index/1059#0).
 
@@ -127,7 +127,7 @@ In the end, we print the result on the console:
 
 ![](/assets/chapter-8-1-images/02.Bricks-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#1](https://judge.softuni.org/Contests/Practice/Index/1059#1).
 
@@ -191,7 +191,7 @@ Finally, we print **the distance** found before.
 
 ![](/assets/chapter-8-1-images/03.Point-on-segment-08.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#2](https://judge.softuni.org/Contests/Practice/Index/1059#2).
 
@@ -243,7 +243,7 @@ When printing the message, we will check whether any of the variables has accept
 
 ![](/assets/chapter-8-1-images/04.Point-in-figure-06.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#3](https://judge.softuni.org/Contests/Practice/Index/1059#3).
 
@@ -302,7 +302,7 @@ The only thing that remains is to print the result on the console. It is importa
 
 ![](/assets/chapter-8-1-images/05.Date-after-5-days-06.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#4](https://judge.softuni.org/Contests/Practice/Index/1059#4).
 
@@ -353,7 +353,7 @@ Similarly, we will supplement the other two cases. The full code of the program 
 
 ![](/assets/chapter-8-1-images/06.Sums-3-numbers-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#5](https://judge.softuni.org/Contests/Practice/Index/1059#5).
 
@@ -401,7 +401,7 @@ Finally, we will print the result on the console in the required **format**:
 
 ![](/assets/chapter-8-1-images/07.Sums-Step-3-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
   
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#6](https://judge.softuni.org/Contests/Practice/Index/1059#6).
 
@@ -445,7 +445,7 @@ Finally, we print the length of **the longest** sequence found:
 
 ![](/assets/chapter-8-1-images/08.Increasing-numbers-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#7](https://judge.softuni.org/Contests/Practice/Index/1059#7).
 
@@ -504,7 +504,7 @@ Here is the code for drawing **the bottom part of the diamond**:
 
 What remains is **to assemble the whole program** by first reading the input, printing the top part of the diamond, and then the bottom part of the diamond.
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#8](https://judge.softuni.org/Contests/Practice/Index/1059#8).
 
@@ -551,7 +551,7 @@ Now, **in the body** of the loop let's add the **asterisks**. We'll check if we'
   
 ![](/assets/chapter-8-1-images/10.Rectangle-with-stars-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#9](https://judge.softuni.org/Contests/Practice/Index/1059#9).
 
@@ -605,7 +605,7 @@ Finally, we will check if **the counter** is equal to **0** and we will print "*
 
 ![](/assets/chapter-8-1-images/11.Increasing-4-numbers-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#10](https://judge.softuni.org/Contests/Practice/Index/1059#10).
 
@@ -662,6 +662,6 @@ Finally, we print “**No**”, if there are no such rectangles.
 
 ![](/assets/chapter-8-1-images/12.Generating-rectangles-04.png)
 
-#### Testing in the Judge System
+#### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#11](https://judge.softuni.org/Contests/Practice/Index/1059#11).

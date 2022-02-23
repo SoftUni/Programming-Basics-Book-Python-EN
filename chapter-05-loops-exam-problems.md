@@ -146,7 +146,7 @@ The last step is to print the calculated results. In the problem’s description
 
 ![](/assets/chapter-5-2-images/01.Histogram-05.png)
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#0](https://judge.softuni.org/Contests/Practice/Index/1054#0).
 
@@ -230,7 +230,7 @@ In some programming languages there's a construction called **conditional operat
 
 More about ternary operators: [https://book.pythontips.com/en/latest/ternary_operators.html](https://book.pythontips.com/en/latest/ternary_operators.html).
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
 
@@ -307,7 +307,7 @@ At the end we print the results, and we do a **check whether the inheritance** (
 
 **Hint**: Think about using the function **`abs(…)`** when printing the output and the inheritance is not enough.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#2](https://judge.softuni.org/Contests/Practice/Index/1054#2).
 
@@ -399,7 +399,7 @@ If the patients' count is **lower**, we increase only the variable **`treated_pa
 
 At the end we only have to print the count of treated and untreated patients.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#3](https://judge.softuni.org/Contests/Practice/Index/1054#3).
 
@@ -487,7 +487,7 @@ In order to read and distribute each number in its respective group, we'll have 
 
 At the end, print the found results while keeping the given in the problem's description format.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#4](https://judge.softuni.org/Contests/Practice/Index/1054#4).
 
@@ -582,6 +582,6 @@ We'll need a **`for` loop** from **`0`** to **`count_of_loads - 1`**, in order t
 
 Before we print our output, we have to **calculate the percentage of tons transported by each vehicle** and **the average price per ton**. For the average price we'll declare another additional variable **`total_price`**, in which we'll **sum the total price of all transported loads** (with van, truck and train). The average price will be calculated by dividing **`total_price`** by **`sum_of_tons`**. You're left with **calculated by yourself** the percentage of tons transported by each vehicle and printing the output, adhering to the format as shown in the problem's description.
 
-### Testing in the Judge system
+### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#5](https://judge.softuni.org/Contests/Practice/Index/1054#5).
