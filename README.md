@@ -1,7 +1,5 @@
 # Free Book "Programming Basics with Python"
 
-> This is a work in progress. This open-source free book, originally written in Bulgarian, will be translated into English, but this is going to take a few months (or years). Please be patient. We will officially announce when the translation is completed.
-
 The free book "**Programming Basics with Python**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops and functions) using the **Python** programming language.
 
 <a href="#"><img src="/assets/Python-Programming-Basics-Book-Cover.png" alt="Book Programming Basics with Python - Cover" class="readme-book-cover-image" /></a>
@@ -20,8 +18,8 @@ The free book "**Programming Basics with Python**" introduces the readers to wri
 * [6.2. Nested Loops – Exam Problems](chapter-06-nested-loops-exam-problems.md)
 * [7.1. More Complex Loops](chapter-07-complex-loops.md)
 * [7.2. More Complex Loops – Exam Problems](chapter-07-complex-loops-exam-problems.md)
-* [8.1. Practical Exam Preparation – part I](chapter-08-exam-preparation.md)
-* [8.2. Practical Exam Preparation – part II](chapter-08-exam-preparation-part-2.md)
+* [8.1. Practical Exam Preparation – Part I](chapter-08-exam-preparation.md)
+* [8.2. Practical Exam Preparation – Part II](chapter-08-exam-preparation-part-2.md)
 * [9.1. Problems for Champions – Part I](chapter-09-problems-for-champions.md)
 * [9.2. Problems for Champions – Part II](chapter-09-problems-for-champions-part-2.md)
 * [10. Methods](chapter-10-functions.md)
