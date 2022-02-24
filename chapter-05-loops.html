@@ -311,7 +311,7 @@
                 <a href="chapter-08-exam-preparation.html">
             
                     
-                    8.1. Practical Exam Preparation – part I
+                    8.1. Practical Exam Preparation – Part I
             
                 </a>
             
@@ -324,7 +324,7 @@
                 <a href="chapter-08-exam-preparation-part-2.html">
             
                     
-                    8.2. Practical Exam Preparation – part II
+                    8.2. Practical Exam Preparation – Part II
             
                 </a>
             
@@ -444,38 +444,38 @@
                                 
                                 <h1 id="chapter-51-loops-repetitions"><a name="chapter-51-loops-repetitions" class="plugin-anchor" href="#chapter-51-loops-repetitions"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 5.1. Loops (Repetitions)</h1>
 <p>In this chapter we will become familiar with how to <strong>repeat blocks of commands</strong>, known in programming as &quot;<strong>loops</strong>&quot;. We will write a number of loops using the <strong><code>for</code></strong> operator in its classic form. Finally, we will solve some practical problems, which require repeating series of actions, using loops.</p>
-<h2 id="repeating-blocks-of-code-for-loop"><a name="repeating-blocks-of-code-for-loop" class="plugin-anchor" href="#repeating-blocks-of-code-for-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Repeating blocks of code (for loop)</h2>
+<h2 id="repeating-blocks-of-code-for-loop"><a name="repeating-blocks-of-code-for-loop" class="plugin-anchor" href="#repeating-blocks-of-code-for-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Repeating Blocks of Code (For Loop)</h2>
 <p>In programming it is often required <strong>to execute a block with commands multiple times</strong>. For this reason we are using <strong>loops</strong>. We can see an example for <strong><code>for</code> loop</strong>, which goes through the numbers from 1 to 10 and prints them:</p>
 <p><img src="assets/chapter-5-1-images/00.For-loop-01.png" alt=""></p>
 <p>The loop starts with the <strong>operator <code>for</code></strong> and passes through all values of particular variable in given range, for example all numbers from 1 to 10 included (without 11) and for each value it performs series of commands.</p>
 <p>Upon declaring the loop, you can specify a <strong>start value</strong> and <strong>end value</strong>, while the end value is not included in the range. <strong>The body of the loop</strong> is a block with at least one commands. THe figure below shows the structure of a <strong><code>for</code> loop</strong>:</p>
 <p><img src="assets/chapter-5-1-images/00.For-loop-02.png" alt=""></p>
 <p>In most cases a <strong><code>for</code> loop</strong> is run between <strong><code>1</code></strong> and <strong><code>n</code></strong> (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, &#x2026;, n  and for each of them to perfomrm a particular action. In the example above, the variable <strong><code>i</code></strong> accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called &quot;<strong>iteration</strong>&quot;.</p>
-<h3 id="problem-the-numbers-from-1-to-100"><a name="problem-the-numbers-from-1-to-100" class="plugin-anchor" href="#problem-the-numbers-from-1-to-100"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: The numbers from 1 to 100</h3>
+<h3 id="problem-the-numbers-from-1-to-100"><a name="problem-the-numbers-from-1-to-100" class="plugin-anchor" href="#problem-the-numbers-from-1-to-100"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: The Numbers from 1 to 100</h3>
 <p>Write a program that <strong>prints the numbers from 1 to 100</strong>. The program does not accept input and prints the numbers from 1 to 100 sequentially, each on a separate line.</p>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We can solve the problem using a <strong><code>for</code> loop</strong> , via which we will pass through the numbers from 1 to 100 using the <strong><code>i</code></strong> variable, and print the numbers in the body of the loop:</p>
 <p><img src="assets/chapter-5-1-images/01.Numbers-1-to-100-01.png" alt=""></p>
 <p><strong>Start</strong> the program with [<strong>Ctrl+Shift+F10</strong>] or with right click - <strong>Run</strong> and <strong>test it</strong>:</p>
 <p><img src="assets/chapter-5-1-images/01.Numbers-1-to-100-02.png" alt=""></p>
-<h4 id="test-in-the-judge-system"><a name="test-in-the-judge-system" class="plugin-anchor" href="#test-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Test in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#0</a>.</p>
 <p>You should get <strong>100 points</strong> (fully accurate solution).</p>
-<h3 id="problem-numbers-to-1000-ending-in-7"><a name="problem-numbers-to-1000-ending-in-7" class="plugin-anchor" href="#problem-numbers-to-1000-ending-in-7"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers to 1000, ending in 7</h3>
+<h3 id="problem-numbers-to-1000-ending-in-7"><a name="problem-numbers-to-1000-ending-in-7" class="plugin-anchor" href="#problem-numbers-to-1000-ending-in-7"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers to 1000, Ending in 7</h3>
 <p>Write a program that finds all numbers in range [<strong>1 &#x2026; 1000</strong>], that end in 7. </p>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We can solve the problem by combining a <strong><code>for</code> loop</strong> for passing through the numbers between 1 and 1000 and a condition to <strong>check</strong> if each of the numbers end in 7. Of course, there are other solutions, but let&apos;s solve the problem using <strong>loop + condition</strong>:</p>
 <p><img src="assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png" alt=""></p>
-<h4 id="test-in-the-judge-system"><a name="test-in-the-judge-system" class="plugin-anchor" href="#test-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Test in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#1</a>.</p>
 <h3 id="problem-all-latin-letters"><a name="problem-all-latin-letters" class="plugin-anchor" href="#problem-all-latin-letters"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: All Latin letters</h3>
 <p>Write a program that prints the letters from the Latin alphabet: <strong>a, b, c, &#x2026;, z</strong>.</p>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>It is good to know that the <strong><code>for</code> loops</strong> don&apos;t work only with numbers. We can solve the task by running a <strong><code>for</code> loop</strong>, that goes sequentially through all letters in the Latin alphabet:</p>
 <p><img src="assets/chapter-5-1-images/03.Latin-letters-01.png" alt=""></p>
-<h4 id="test-in-the-judge-system"><a name="test-in-the-judge-system" class="plugin-anchor" href="#test-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Test in the Judge system</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#2</a>.</p>
-<h3 id="problem-sum-of-numbers"><a name="problem-sum-of-numbers" class="plugin-anchor" href="#problem-sum-of-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sum of numbers</h3>
+<h3 id="problem-sum-of-numbers"><a name="problem-sum-of-numbers" class="plugin-anchor" href="#problem-sum-of-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sum of Numbers</h3>
 <p>Write a program that <strong>reads <code>n</code> integers and finds their sum</strong>.</p>
 <ul>
 <li>The first line of the input holds the number of integers <strong><code>n</code></strong>.</li>
@@ -513,7 +513,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We can solve the problem with summing up numbers in the following way:</p>
 <ul>
 <li>We read the input number <strong><code>n</code></strong>.</li>
@@ -523,9 +523,9 @@
 </ul>
 <p>Here is the source code for the solution:</p>
 <p><img src="assets/chapter-5-1-images/04.Sum-numbers-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#3</a>.</p>
-<h3 id="problem-max-number"><a name="problem-max-number" class="plugin-anchor" href="#problem-max-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Max number</h3>
+<h3 id="problem-max-number"><a name="problem-max-number" class="plugin-anchor" href="#problem-max-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Max Number</h3>
 <p>Write a program that enters <strong>n integers</strong> (<strong>n</strong> &gt; 0) and finds <strong>the max</strong> among them. The first line of the input, reads the number of integers. After that the next lines read the integers, each on separate line. Examples:</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -558,12 +558,12 @@
 </tr>
 </tbody>
 </table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We will first enter one number <strong><code>n</code></strong> (the number of integers that are about to be entered). We assign the current maximum <strong><code>max</code></strong>an initial neutral value, for example <strong>-10000000000000</strong>. Using a <strong><code>for</code> loop</strong>, that is iterated <strong>n-1 times</strong>, we read one integer <strong><code>num</code></strong>.  If the read number <strong><code>num</code></strong> is higher than the current maximum <strong><code>max</code></strong>, we assign the value of the <strong><code>num</code></strong> to the <strong><code>max</code></strong> value. Finally, in <strong><code>max</code></strong>  we must have stored the highest number. We print the number on the console.:</p>
 <p><img src="assets/chapter-5-1-images/05.Max-number-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#4</a>.</p>
-<h3 id="problem-min-number"><a name="problem-min-number" class="plugin-anchor" href="#problem-min-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Min number</h3>
+<h3 id="problem-min-number"><a name="problem-min-number" class="plugin-anchor" href="#problem-min-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Min Number</h3>
 <p>Write a program that enters <strong>n integers</strong> (<strong>n</strong> &gt; 0) and finds <strong>the min</strong> among them. The first line of the input, reads the number of integers and after that the next lines read the integers, each on separate line.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -591,9 +591,9 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>The problem is completely identical to the previous one, except this time we will start with another neutral starting value:</p>
 <p><img src="assets/chapter-5-1-images/06.Min-number-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#5</a>.</p>
-<h3 id="example-left-and-right-sum"><a name="example-left-and-right-sum" class="plugin-anchor" href="#example-left-and-right-sum"><i class="fa fa-link" aria-hidden="true"></i></a>Example: Left and right sum</h3>
+<h3 id="problem-left-and-right-sum"><a name="problem-left-and-right-sum" class="plugin-anchor" href="#problem-left-and-right-sum"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Left and Right Sum</h3>
 <p>Write a program that reads an input <strong>2 * n integers</strong> and checks if <strong> the sum of the first n numbers</strong> (left sum) is equal to <strong>the sum of the second n numbers</strong> (right sum). In case the sums are equal, print <strong>&quot;Yes&quot; + sum</strong>, otherwise print <strong>&quot;No&quot; + the difference</strong>. The difference is calculated as a positive number (by absolute value). The format of the output must be identical to the one in the examples below.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -617,9 +617,9 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We will first input the number <strong>n</strong>, after that the first <strong>n</strong> numbers (<strong>left</strong> half) and we sum them up. We will then proceed with inputting more <strong>n</strong> numbers (<strong>right</strong> half) and sum them up. We calculate <strong>the difference </strong> between the sums by absolute value: <strong><code>math.fabs(rightSum - leftSum)</code></strong>. If the difference is <strong>0</strong>, print <strong>&quot;Yes&quot; + sum</strong>, otherwise print <strong>&quot;No&quot; + the difference </strong>.</p>
 <p><img src="assets/chapter-5-1-images/07.Left-and-right-sum-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#6</a>.</p>
-<h3 id="problem-even--odd-sum"><a name="problem-even--odd-sum" class="plugin-anchor" href="#problem-even--odd-sum"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Even / odd sum</h3>
+<h3 id="problem-even--odd-sum"><a name="problem-even--odd-sum" class="plugin-anchor" href="#problem-even--odd-sum"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Even / Odd Sum</h3>
 <p>Write a program that inputs <strong>n integers</strong> and checks whether <strong>the sum of the numbers on even positions</strong> is equal to <strong>the sum of the numbers on odd positions</strong>. In case the sums are equal, print <strong>&quot;Yes&quot; + sum</strong>, otherwise print <strong>&quot;No&quot; + the difference </strong>. The difference is calculated by absolute value. The format of the output must be identical to the one in the examples below.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -647,9 +647,9 @@
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>Input the numbers one by one and calculate the two <strong>sums</strong> (of the numbers on <strong>even</strong> positions and the numbers on <strong>odd</strong> positions). Identically to the previous problem, we calculate the absolute value of the difference and print the result (<strong>&quot;Yes&quot; + sum</strong> in case of difference of 0 or <strong>&quot;No&quot; + the difference </strong> in any other case):</p>
 <p><img src="assets/chapter-5-1-images/08.Odd-even-sum-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#7</a>.</p>
-<h3 id="problem-sum-of-vowels"><a name="problem-sum-of-vowels" class="plugin-anchor" href="#problem-sum-of-vowels"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sum of vowels</h3>
+<h3 id="problem-sum-of-vowels"><a name="problem-sum-of-vowels" class="plugin-anchor" href="#problem-sum-of-vowels"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sum of Vowels</h3>
 <p>Write a program that inputs <strong>text</strong> (string), calculates and prints <strong>the sum of the values of vowels</strong> according to the table below:</p>
 <table>
 <thead>
@@ -696,22 +696,22 @@
 </tr>
 </tbody>
 </table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We read the input text <strong><code>line</code></strong>, null the sum and run a loop, which goes through each symbol from the text. We check each letter <strong><code>c</code></strong> and verify if it is a vowel, and accordingly, add its value to the sum:</p>
 <p><img src="assets/chapter-5-1-images/09.Vowels-sum-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#8</a>.</p>
-<h2 id="what-did-we-learn-in-this-chapter"><a name="what-did-we-learn-in-this-chapter" class="plugin-anchor" href="#what-did-we-learn-in-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What did we learn in this chapter?</h2>
+<h2 id="what-have-we-learned-from-this-chapter"><a name="what-have-we-learned-from-this-chapter" class="plugin-anchor" href="#what-have-we-learned-from-this-chapter"><i class="fa fa-link" aria-hidden="true"></i></a>What Have We Learned from This Chapter?</h2>
 <p>We can repeat a block of code with a <strong><code>for</code> loop</strong>:</p>
 <p><img src="assets/chapter-5-1-images/00.For-loop-01.png" alt=""></p>
 <p>We can read a sequence of <strong><code>n</code></strong> numbers from the console:</p>
 <p><img src="assets/chapter-5-1-images/00.For-loop-03.png" alt=""></p>
-<h2 id="exercises-repetitions-loops"><a name="exercises-repetitions-loops" class="plugin-anchor" href="#exercises-repetitions-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Exercises: Repetitions (loops)</h2>
+<h2 id="problems-loops-repetitions"><a name="problems-loops-repetitions" class="plugin-anchor" href="#problems-loops-repetitions"><i class="fa fa-link" aria-hidden="true"></i></a>Problems: Loops (Repetitions)</h2>
 <p>Now, that we&apos;ve become acquainted with the loops, it&apos;s time <strong>to consolidate our knowledge in practice</strong>, and as you know, -&gt; this is done through writing lots of code. Let&apos;s solve a few problems for exercise.</p>
-<h3 id="creating-new-project-in-pycharm"><a name="creating-new-project-in-pycharm" class="plugin-anchor" href="#creating-new-project-in-pycharm"><i class="fa fa-link" aria-hidden="true"></i></a>Creating new project in PyCharm</h3>
+<h3 id="creating-new-project-in-pycharm"><a name="creating-new-project-in-pycharm" class="plugin-anchor" href="#creating-new-project-in-pycharm"><i class="fa fa-link" aria-hidden="true"></i></a>Creating New Project in PyCharm</h3>
 <p>Create new project in PyCharm (from [<strong>File</strong>] -&gt; [<strong>New Project</strong>]), in order to organise better the exercise tasks. The purpose of this <strong>project</strong> is to contain <strong>one Python file for each task</strong> from the exercises:</p>
 <p><img src="assets/chapter-5-1-images/00.New-project-PyCharm-01.png" alt=""></p>
-<h3 id="problem-element-equal-to-the-sum-of-the-rest"><a name="problem-element-equal-to-the-sum-of-the-rest" class="plugin-anchor" href="#problem-element-equal-to-the-sum-of-the-rest"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Element equal to the sum of the rest</h3>
+<h3 id="problem-half-sum-element"><a name="problem-half-sum-element" class="plugin-anchor" href="#problem-half-sum-element"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Half Sum Element</h3>
 <p>Write a program that inputs <strong>n integers</strong> and checks whether there is a number among them, which is equal to the sum of all the rest. If there is such an element, print <strong>&quot;Yes&quot; + itsvalue</strong>, otherwise print - <strong>&quot;No&quot; + the difference betwen the largest element and the sum of the rest</strong> (by absolute value). </p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -750,11 +750,11 @@
 </tr>
 </tbody>
 </table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We have to calculate <strong>the sum</strong> of all elements, find <strong>the largest</strong> of them and check the condition.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#9</a>.</p>
-<h3 id="problem-even--odd-positions"><a name="problem-even--odd-positions" class="plugin-anchor" href="#problem-even--odd-positions"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Even / odd positions</h3>
+<h3 id="problem-even--odd-positions"><a name="problem-even--odd-positions" class="plugin-anchor" href="#problem-even--odd-positions"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Even / Odd Positions</h3>
 <p>Write a program that reads <strong>n numbers</strong> and calculates <strong>the sum</strong>, <strong>the min</strong> and <strong>max</strong> values of the numbers on <strong>even</strong> and <strong>odd</strong> positions (counted from 1). If there is no min / max elements, print <strong>&quot;No&quot;</strong>. </p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -793,12 +793,12 @@
 </tr>
 </tbody>
 </table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>This task combines some of the previous tasks: finding the <strong>min</strong>, <strong>max</strong> value and <strong>sum</strong>, as well as processing of elements on <strong>even and odd positions </strong>. Check them out.</p>
 <p>In the current task it is better to work with <strong>fractions</strong> (not integers). The sum, the min and the max will also be fractions. We must use a <strong>neutral starting value</strong> when finding the min / max value, for example <strong>1000000000.0</strong> and <strong>-1000000000.0</strong>. If the end result is the neutral value, print <strong>&quot;No&quot;</strong>.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#10</a>.</p>
-<h3 id="problem-equal-pair"><a name="problem-equal-pair" class="plugin-anchor" href="#problem-equal-pair"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Equal pair</h3>
+<h3 id="problem-equal-pairs"><a name="problem-equal-pairs" class="plugin-anchor" href="#problem-equal-pairs"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Equal Pairs</h3>
 <p>There are <strong>2 * n numbers</strong>. The first and the second number form a <strong>pair</strong>, the third and the fourth number as well, and so on. Each pair has a <strong>value</strong> &#x2013; the sum of its numbers. Write a program that checks <strong>if all pairs have equal value</strong>. In case the value is the same, print <strong>&quot;Yes, value=&#x2026;&quot; + the value</strong>, otherwise print <strong>the maximum difference </strong> between two neighboring pairs in the following format - <strong>&quot;No, maxdiff=&#x2026;&quot; + the maximum difference </strong>. The input consists of the number <strong>n</strong>, followed by <strong>2*n integers</strong>, all of them one per line.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -842,11 +842,11 @@
 </tr>
 </tbody>
 </table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h4>
+<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We read the input numbers <strong>in pairs</strong>. For each pair we calculate its <strong>the sum</strong>. While reading the input pairs, for each pair except the first one, we must calculate <strong>the difference compared to the previous one</strong>. In order to do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the <strong>largest difference </strong> between two pairs. If it is <strong>0</strong>, print <strong>&quot;Yes&quot;</strong> + the value, otherwise print - <strong>&quot;No&quot;</strong> + the difference.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h4>
+<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1053#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1053#11</a>.</p>
-<h2 id="lab-graphic-and-web-applications"><a name="lab-graphic-and-web-applications" class="plugin-anchor" href="#lab-graphic-and-web-applications"><i class="fa fa-link" aria-hidden="true"></i></a>Lab: Graphic and web applications</h2>
+<h2 id="lab-graphic-and-web-applications"><a name="lab-graphic-and-web-applications" class="plugin-anchor" href="#lab-graphic-and-web-applications"><i class="fa fa-link" aria-hidden="true"></i></a>Lab: Graphic and Web Applications</h2>
 <p>In the current chapter we learned about <strong>loops</strong> as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let&apos;s play with them. In order to do that, we will draw some figures that will consist of a large number made up of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using &quot;<strong>turtle graphics</strong>&quot;. It will be interesting. And it is not hard at all. Try it!</p>
 <h3 id="problem-turtle-graphics-gui-application"><a name="problem-turtle-graphics-gui-application" class="plugin-anchor" href="#problem-turtle-graphics-gui-application"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Turtle Graphics GUI Application</h3>
 <p>The purpose of the following exercise is to play with a <strong>drawing library</strong>, also known as <strong>&quot;turtle graphics&quot;</strong>. We will build a graphical application in which we will <strong>draw various figures</strong>, by moving our <strong>&quot;turtle&quot;</strong> across the screen via operations like &quot;move 100 positions ahead&quot;, &quot;turn 30 degrees to the right&quot;, &quot;move 50 more positions ahead&quot;. The application will look approximately like this:</p>
@@ -870,7 +870,7 @@
 <p>Again <strong>start</strong> the app to see the result:</p>
 <p><img src="assets/chapter-5-1-images/13.Turtle-graphics-7.png" alt=""></p>
 <p>Now our turtle draws more complex figures via a nice animated motion.</p>
-<h3 id="problem--draw-a-hexagon-with-the-turtle"><a name="problem--draw-a-hexagon-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-hexagon-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Hexagon with the Turtle</h3>
+<h3 id="problem--draw-a-hexagon-with-the-turtle"><a name="problem--draw-a-hexagon-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-hexagon-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Hexagon with The Turtle</h3>
 <p>Add a new Python file, with the name <strong>hexagon</strong>, which will draw a hexagon:</p>
 <p><img src="assets/chapter-5-1-images/13.Turtle-graphics-8.png" alt=""></p>
 <p><strong>Hint:</strong></p>
@@ -879,7 +879,7 @@
 <li>60 degrees rotation.</li>
 <li>Forward step of 100.</li>
 </ul>
-<h3 id="problem--draw-a-star-with-the-turtle"><a name="problem--draw-a-star-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-star-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Star with the Turtle</h3>
+<h3 id="problem--draw-a-star-with-the-turtle"><a name="problem--draw-a-star-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-star-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Star with The Turtle</h3>
 <p>Add new Python file <strong>star.py</strong>, which draws a star with 5 beams (<strong>pentagram</strong>), as on the figure below:</p>
 <p><img src="assets/chapter-5-1-images/13.Turtle-graphics-9.png" alt=""></p>
 <p><strong>Hints:</strong> Change the colour: <strong><code>my_turtle.color(&quot;green&quot;)</code></strong>. </p>
@@ -888,18 +888,18 @@
 <li>Forward step of 200.</li>
 <li>144 degrees rotation.</li>
 </ul>
-<h3 id="problem--draw-a-spiral-with-the-turtle"><a name="problem--draw-a-spiral-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-spiral-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem * Draw a Spiral with the Turtle</h3>
+<h3 id="problem--draw-a-spiral-with-the-turtle"><a name="problem--draw-a-spiral-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-spiral-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem * Draw a Spiral with The Turtle</h3>
 <p>Add new Python file <strong>spiral.py</strong>, which draws spiral with 20 beamsas on the figure below:</p>
 <p><img src="assets/chapter-5-1-images/13.Turtle-graphics-10.png" alt=""></p>
 <p><strong>Hint:</strong> Draw in a loop by moving ahead and rotating. In each step, decrease the length gradually of the forward step and rotate 60 degrees..</p>
-<h3 id="problem--draw-a-sun-with-the-turtle"><a name="problem--draw-a-sun-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-sun-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Sun with the Turtle</h3>
+<h3 id="problem--draw-a-sun-with-the-turtle"><a name="problem--draw-a-sun-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-sun-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Sun with The Turtle</h3>
 <p>Add a new Python file <strong>sun.py</strong>, which draws a sun with 36 beams, as on the figure below:</p>
 <p><img src="assets/chapter-5-1-images/13.Turtle-graphics-11.png" alt=""></p>
-<h3 id="problem--draw-a-spiral-triangles-with-the-turtle"><a name="problem--draw-a-spiral-triangles-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-spiral-triangles-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Spiral Triangles with the Turtle</h3>
+<h3 id="problem--draw-a-spiral-triangles-with-the-turtle"><a name="problem--draw-a-spiral-triangles-with-the-turtle" class="plugin-anchor" href="#problem--draw-a-spiral-triangles-with-the-turtle"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: * Draw a Spiral Triangles with The Turtle</h3>
 <p>Add new Python file <strong>triangle.py</strong>, which draws three triangles with 22 beams each, as on the figure below:</p>
 <p><img src="assets/chapter-5-1-images/13.Turtle-graphics-12.png" alt=""></p>
 <p><strong>Hint:</strong> Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles. </p>
-<p>If you have a problem with the above exercises, ask for help in the SoftUni official <strong>discussion forum</strong>: <a href="https://softuni.bg/forum" target="_blank">https://softuni.bg/forum</a>.</p>
+<p>If you have a problem with the above exercises, ask for help in the <strong>SoftUni&apos;s Reddit Community</strong>: <a href="https://www.reddit.com/r/softuni/" target="_blank">https://www.reddit.com/r/softuni/</a>.</p>
 
                                 
                                 </section>
@@ -943,7 +943,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.1. Loops","level":"1.10","depth":1,"next":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"path":"chapter-05-loops-exam-problems.md","ref":"chapter-05-loops-exam-problems.md","articles":[]},"previous":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"path":"chapter-04-complex-conditions-exam-problems.md","ref":"chapter-04-complex-conditions-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-05-loops.md","mtime":"2022-02-17T14:11:27.392Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:12:25.443Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5.1. Loops","level":"1.10","depth":1,"next":{"title":"5.2. Loops - Exam Problems","level":"1.11","depth":1,"path":"chapter-05-loops-exam-problems.md","ref":"chapter-05-loops-exam-problems.md","articles":[]},"previous":{"title":"4.2. More Complex Conditions – Exam Problems","level":"1.9","depth":1,"path":"chapter-04-complex-conditions-exam-problems.md","ref":"chapter-04-complex-conditions-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-05-loops.md","mtime":"2022-02-24T11:16:41.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:17:27.103Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

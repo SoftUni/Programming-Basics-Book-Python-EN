@@ -311,7 +311,7 @@
                 <a href="chapter-08-exam-preparation.html">
             
                     
-                    8.1. Practical Exam Preparation – part I
+                    8.1. Practical Exam Preparation – Part I
             
                 </a>
             
@@ -324,7 +324,7 @@
                 <a href="chapter-08-exam-preparation-part-2.html">
             
                     
-                    8.2. Practical Exam Preparation – part II
+                    8.2. Practical Exam Preparation – Part II
             
                 </a>
             
@@ -442,7 +442,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-62-nested-loops-&#x2013;-exam-tasks"><a name="chapter-62-nested-loops-&#x2013;-exam-tasks" class="plugin-anchor" href="#chapter-62-nested-loops-&#x2013;-exam-tasks"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 6.2. Nested loops &#x2013; exam tasks</h1>
+                                <h1 id="chapter-62-nested-loops-&#x2013;-exam-problems"><a name="chapter-62-nested-loops-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-62-nested-loops-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 6.2. Nested loops &#x2013; Exam Problems</h1>
 <p>In the previous chapter, we introduced <strong>nested loops</strong> and how to use them for <strong>drawing</strong> various kinds of <strong>figures on the console</strong>. We&apos;ve learned how to print figures with different sizes, establishing suitable logic construction by using <strong>single and nested <code>for</code></strong> loops in combination with different calculations and program logic:</p>
 <pre><code class="lang-python"><span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
     print(<span class="hljs-string">&quot;*&quot;</span>, end=<span class="hljs-string">&quot;&quot;</span>)
@@ -453,13 +453,13 @@
 <p>We also learned the <strong>operator <code>*</code></strong>, which lets you for defined by us <strong>number</strong> of times, a <strong>given string</strong> to be printed:</p>
 <pre><code class="lang-python">print_me = (<span class="hljs-string">&apos;abc&apos;</span> * <span class="hljs-number">2</span>)
 </code></pre>
-<h2 id="exam-tasks"><a name="exam-tasks" class="plugin-anchor" href="#exam-tasks"><i class="fa fa-link" aria-hidden="true"></i></a>Exam tasks</h2>
-<p>Now let&apos;s solve some exam tasks to consolidate what we have learned and to develop our algorithmic thinking.</p>
-<h2 id="task-drawing-a-fortress"><a name="task-drawing-a-fortress" class="plugin-anchor" href="#task-drawing-a-fortress"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Drawing a fortress</h2>
+<h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
+<p>Now let&apos;s solve some Exam Problems to consolidate what we have learned and to develop our algorithmic thinking.</p>
+<h2 id="problem-drawing-a-fortress"><a name="problem-drawing-a-fortress" class="plugin-anchor" href="#problem-drawing-a-fortress"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Drawing a Fortress</h2>
 <p>Write a program, that reads from the console an <strong>integer n</strong> and draws a <strong>fortress</strong> with a width of <strong>2 * n columns</strong> and height of <strong>n rows</strong>, as in the below-given examples. The left and the right inner columns have a width of <strong>n / 2</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The program input consists one element (argument) - <strong>integer n</strong> within the range [<strong>3 &#x2026; 1000</strong>].</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>n</strong> text lines, depicting the <strong>fortress</strong>, just as in the examples below.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
@@ -498,7 +498,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>By the set task condition, we can see that the <strong>input data</strong> will contain only one <strong>integer</strong> within the range [<strong>3 &#x2026; 1000</strong>]. Therefore, we will convert the input value into <strong><code>int</code></strong> type:</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-01.png" alt=""></p>
 <p>After we&apos;ve declared and initialized the input data, we have to divide the <strong>fortress</strong> into three parts:</p>
@@ -529,13 +529,13 @@
 <p>We add to the value of <strong>white spaces</strong> <strong><code>+ 1</code></strong>, because in the examples we have <strong>one</strong> white space more.</p>
 <p>The structure of the <strong>fortress base</strong> is the same as the one in the <strong>roof</strong>. It includes <strong>two towers</strong> and <strong>middle part</strong>. Each <strong>tower</strong> begins with <strong><code>\</code></strong>, followed by a middle part <strong><code>_</code></strong> and an end <strong><code>/</code></strong>.</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-07.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#0</a>.</p>
-<h2 id="task-butterfly"><a name="task-butterfly" class="plugin-anchor" href="#task-butterfly"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Butterfly</h2>
+<h2 id="problem-butterfly"><a name="problem-butterfly" class="plugin-anchor" href="#problem-butterfly"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Butterfly</h2>
 <p>Write a program, that takes <strong>an integer n</strong> from the console and draws <strong>butterfly</strong> with width of <strong>2 * n - 1 columns</strong> and height of <strong>2 * (n - 2) + 1 rows</strong> as in the examples below. <strong>The left and the right</strong> <strong>part</strong> have <strong>width of n - 1</strong>.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input consists of one element (argument) - <strong>integer n</strong> in the range [<strong>3 &#x2026; 1000</strong>].</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>2 * (n - 2) + 1</strong> text rows, representing the <strong>butterfly</strong>, exactly as shown in the examples.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
@@ -570,7 +570,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Similar to the previous task, we can see from the condition, that the <strong>input data</strong> will consist of only one <strong>integer</strong> in the range [<strong>3 &#x2026; 1000</strong>]. That&apos;s why we will convert the input value into <strong><code>int</code></strong> type:</p>
 <p><img src="assets/chapter-6-2-images/02.Butterfly-01.png" alt=""></p>
 <p>We can divide the figure into 3 parts - <strong>upper wing</strong>, <strong>body</strong> and <strong>lower wing</strong>. In order to draw the upper wing of the butterfly, we have to divide it into three parts - a beginning with <strong><code>*</code></strong>, a middle part with <strong><code>\ /</code></strong> and an end with <strong><code>*</code></strong>. After looking at the examples, we can say that the upper wing of the butterfly is with a size of <strong><code>n - 2</code></strong>:</p>
@@ -582,13 +582,13 @@
 <p>In order to draw the <strong>the butterfly body</strong>, we have to print exactly <strong>one</strong> row on the console. The structure of the body has a beginning <strong><code>(white space)</code></strong>, middle part <strong><code>@</code></strong> and an end <strong><code>(white space)</code></strong>. From the examples we can see, that the number of the white spaces is equal to <strong><code>n-1</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/02.Butterfly-05.png" alt=""></p>
 <p>What is left now is to print on the console the <strong>lower wing</strong>, which is <strong>analogical to the upper wing</strong>: we only need to swap the places of the slashes.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#1</a>.</p>
-<h2 id="task-stop-sign"><a name="task-stop-sign" class="plugin-anchor" href="#task-stop-sign"><i class="fa fa-link" aria-hidden="true"></i></a>Task: &quot;Stop&quot; sign</h2>
+<h2 id="problem-stop-sign"><a name="problem-stop-sign" class="plugin-anchor" href="#problem-stop-sign"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: &quot;Stop&quot; Sign</h2>
 <p>Write a program, that takes an <strong>integer n</strong> from the console and draws <strong>a STOP warning sign</strong> with size as shown in the examples below.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input consists of one element (argument) - <strong>integer n</strong> in the range [<strong>3 &#x2026; 1000</strong>].</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console text lines, representing <strong>the STOP warning sign</strong>, just as in the examples.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
@@ -623,7 +623,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>As in the previous examples, <strong>the input data</strong> will be on one line, which will contains one <strong>int</strong> in the range [<strong>3 &#x2026; 1000</strong>]:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-01.png" alt=""></p>
 <p>We can <strong>divide</strong> the figure into <strong>3 parts</strong> - upper, middle and lower. <strong>The upper part</strong> consists of two subparts - a starting line and lines in which the sign widens. <strong>The starting line</strong> consists of beginning <strong><code>.</code></strong>, middle part <strong><code>_</code></strong> and an end <strong><code>.</code></strong>. After looking at the examples, we can see that the beginning has a size of <strong><code>n + 1</code></strong> and it&apos;s better to keep this <strong>value</strong> as a separate <strong>variable</strong>. We also have to create a second <strong>variable</strong>, in which we will keep <strong>the value</strong> of the <strong>first row middle part</strong> which has a size of <strong><code>2 * n + 1</code></strong>:</p>
@@ -638,13 +638,13 @@
 <p><img src="assets/chapter-6-2-images/03.Stop-06.png" alt=""></p>
 <p><strong>The lower part</strong> of the figure, in which the width of the sign <strong>decreases</strong>, can be done by creating a <strong>loop</strong>, that iterates <strong><code>n</code></strong> number of times. The structure of a row should have a beginning <strong><code>.</code></strong> + <strong><code>\\</code></strong>, middle part <strong><code>_</code></strong> and an end <strong><code>//</code></strong> + <strong><code>.</code></strong>. The number of the <strong>dots</strong> in the first loop iteration has to be 0 and on each subsequent have to <strong>increase</strong> by one. Therefore we can say that the <strong>the dots in the lower part of the figure</strong> are equal to <strong><code>i</code></strong>. To ensure proper operation of our program, on each <strong>loop</strong> iteration, we have to <strong>decrease</strong> the number of <strong><code>_</code></strong> by <strong>2</strong>:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-07.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#2</a>.</p>
-<h2 id="task-arrow"><a name="task-arrow" class="plugin-anchor" href="#task-arrow"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Arrow</h2>
+<h2 id="problem-arrow"><a name="problem-arrow" class="plugin-anchor" href="#problem-arrow"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Arrow</h2>
 <p>Write a program that receives from the console <strong>an odd integer n</strong> and draws <strong>a vertical arrow</strong> with size as in the examples below.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input is <strong>an odd integer n</strong> (argument) within the range [<strong>3 &#x2026; 79</strong>].</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console a vertical arrow, in which &quot;<strong><code>#</code></strong>&quot; (hash sign) marks the outline of the arrow, and &quot;<strong><code>.</code></strong>&quot; - the rest.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
@@ -679,7 +679,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>From the explanation we see that <strong>the input data</strong> will be read from one input line only, which will contain <strong>an integer</strong> within the range [<strong>3 &#x2026; 1000</strong>]. That&apos;s why we will convert the input value into <strong><code>int</code></strong> type:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-01.png" alt=""></p>
 <p>We can divide the figure into <strong>3 parts</strong> - upper, middle and lower. <strong>The upper part</strong> consists of two subparts - first row and body of the arrow. We can see from the examples, that the count of <strong>the outer dots</strong> in the first row and in the body of the arrow are equal to <strong><code>(n - 1) / 2</code></strong>. We can keep this value in <strong>a variable</strong> <strong><code>outer_dots</code></strong>:</p>
@@ -698,13 +698,13 @@
 <p><img src="assets/chapter-6-2-images/04.Arrow-08.png" alt=""></p>
 <p><strong>The last row</strong> of our figure is made of a beginning <strong><code>.</code></strong>, middle part <strong><code>#</code></strong> and an end <strong><code>.</code></strong>. The count of <strong><code>.</code></strong> is equal to <strong><code>outer_dots</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-09.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#3</a>.</p>
-<h2 id="task-axe"><a name="task-axe" class="plugin-anchor" href="#task-axe"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Axe</h2>
+<h2 id="problem-axe"><a name="problem-axe" class="plugin-anchor" href="#problem-axe"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Axe</h2>
 <p>Write a program, that receives <strong>an integer n</strong> and draws an axe with size as in the example below. The width of the axe is <strong>5 * n</strong> columns.</p>
-<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input data</h3>
+<h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input consists one element (argument) - <strong>integer n</strong> within range [<strong>2..42</strong>].</p>
-<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output data</h3>
+<h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
 <p>Print on the console <strong>axe</strong>, as in the examples.</p>
 <h3 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h3>
 <table>
@@ -739,7 +739,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and guidelines</h3>
+<h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>From the explanation we see that <strong>the input data</strong> will be read from one input line only, which will contain <strong>an integer</strong> within the range [<strong>2 &#x2026; 42</strong>]. That&apos;s why we will use <strong><code>int</code></strong> type. After that, for the solution we need to calculate the <strong>the dashes in the left</strong>, <strong>the dashes in the middle</strong>, <strong>the dashes in the right</strong> and the whole figure length:</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-01.png" alt=""></p>
 <p>Once we have declared and initialized the <strong>variables</strong>, we can draw the figure, starting with the <strong>upper part</strong>. We can see from the examples what the structure of <strong>the first row</strong> is and we can create a loop that iterates <strong><code>n</code></strong> number of times. At each loop iteration <strong>the middle dashes</strong> are increasing by 1, and the <strong>right dashes</strong> are decreasing by 1:</p>
@@ -752,7 +752,7 @@
 <p><img src="assets/chapter-6-2-images/05.Axe-05.png" alt=""></p>
 <p>For <strong>the last row</strong> of the figure, we can use again, the already declared variables <strong><code>left_dashes</code></strong>, <strong><code>middle_dashes</code></strong>, <strong><code>right_dashes</code></strong>.</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-06.png" alt=""></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge system</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#4</a>.</p>
 
                                 
@@ -797,7 +797,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"next":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"path":"chapter-07-complex-loops.md","ref":"chapter-07-complex-loops.md","articles":[]},"previous":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-06-nested-loops-exam-problems.md","mtime":"2022-02-17T14:11:27.392Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:12:25.443Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"next":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"path":"chapter-07-complex-loops.md","ref":"chapter-07-complex-loops.md","articles":[]},"previous":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-06-nested-loops-exam-problems.md","mtime":"2022-02-24T11:16:41.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:17:27.103Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

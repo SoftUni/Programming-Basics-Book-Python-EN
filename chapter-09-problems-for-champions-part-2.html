@@ -311,7 +311,7 @@
                 <a href="chapter-08-exam-preparation.html">
             
                     
-                    8.1. Practical Exam Preparation – part I
+                    8.1. Practical Exam Preparation – Part I
             
                 </a>
             
@@ -324,7 +324,7 @@
                 <a href="chapter-08-exam-preparation-part-2.html">
             
                     
-                    8.2. Practical Exam Preparation – part II
+                    8.2. Practical Exam Preparation – Part II
             
                 </a>
             
@@ -446,7 +446,7 @@
 <p>In this chapter we will review three additional tasks that belong to the category &quot;<strong>For Champions</strong>&quot;, i.e. they are more complex than the rest of the tasks in this book.</p>
 <h2 id="more-complex-tasks-on-the-studied-material"><a name="more-complex-tasks-on-the-studied-material" class="plugin-anchor" href="#more-complex-tasks-on-the-studied-material"><i class="fa fa-link" aria-hidden="true"></i></a>More Complex tasks on the Studied Material</h2>
 <p>Before we move on to particular tasks, we must clarify that these can be solved more easily with <strong>additional knowledge in programming with Python</strong> (functions, arrays, collections, recursion, etc.), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct <strong>more complex algorithms</strong> based on your knowledge collected up to the present moment.</p>
-<h2 id="task-passion-shopping-days"><a name="task-passion-shopping-days" class="plugin-anchor" href="#task-passion-shopping-days"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Passion Shopping Days</h2>
+<h2 id="problem-passion-shopping-days"><a name="problem-passion-shopping-days" class="plugin-anchor" href="#problem-passion-shopping-days"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Passion Shopping Days</h2>
 <p>Lina has a real shopping passion. When she has some money, she immediately goes to the closest shopping center (mall) and tries to spend as much as she can on clothes, bags, and shoes. But her favorite thing is winter sales. Our task is to analyze her strange behavior and <strong>calculate the purchases</strong> that Lina does when she enters the mall, as well as the <strong>money she has left</strong> when the shopping is over.</p>
 <p>The <strong>first line</strong> of the input will pass the <strong>amount</strong> that Lina has <strong>before</strong> she starts shopping. After that, upon reading the &quot;<strong><code>mall.Enter</code></strong>&quot; command, Lina enters the mall and starts shopping until the &quot;<strong><code>mall.Exit</code></strong>&quot; command is given. When Lina starts shopping, <strong>on each line</strong> of the input you will be given strings that are <strong>actions performed by Lina</strong>. Each <strong>symbol</strong> in the string is a <strong>purchase or another action</strong>. String commands contain only symbols of the <strong>ASCII table</strong>. The ASCII code of each sign is <strong>related to what Lina must pay</strong> for each of the goods. You need to interpret the symbols in the following way:</p>
 <ul>
@@ -519,7 +519,7 @@
 <li><strong>Formatting</strong> the output.</li>
 </ul>
 <p>Let&apos;s examine each of the parts in detail.</p>
-<h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing the Input Data</h4>
+<h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing The Input Data</h4>
 <p>The input of our task consists of a few components:</p>
 <ul>
 <li>In the <strong>first argument, we have all the money</strong> that Lina has for shopping.</li>
@@ -534,7 +534,7 @@
 <p>This is where we need to take into consideration the fact that inside <strong>our array we should start processing commands</strong>, but <strong>only after we receive</strong> the command <strong>&quot;mall.Enter&quot;</strong>. How can we do that? Using a <strong><code>while</code></strong> or a <strong><code>do-while</code></strong> loop is a good option. Here is an exemplary solution of how <strong>to skip</strong> all commands before processing the command <strong>&quot;mall.Enter&quot;</strong>:</p>
 <p><img src="assets/chapter-9-2-images/01.Passion-days-02.png" alt="Input filter"></p>
 <p>Here is the place to say that by calling <strong><code>input()</code></strong> after the end of the loop is used to <strong>pass from the first command</strong> for processing.</p>
-<h4 id="algorithm-for-solving-the-problem"><a name="algorithm-for-solving-the-problem" class="plugin-anchor" href="#algorithm-for-solving-the-problem"><i class="fa fa-link" aria-hidden="true"></i></a>Algorithm for Solving the Problem</h4>
+<h4 id="algorithm-for-solving-the-problem"><a name="algorithm-for-solving-the-problem" class="plugin-anchor" href="#algorithm-for-solving-the-problem"><i class="fa fa-link" aria-hidden="true"></i></a>Algorithm for Solving The Problem</h4>
 <p>The algorithm for solving the problem is a direct one &#x2013; we continue <strong>reading commands</strong> from the console <strong>until the command &quot;mall.Exit&quot; is passed</strong>. In the meantime, we <strong>process</strong> each symbol (<strong><code>char</code></strong>) of each one of the commands according to the rules specified in the task requirements, and in parallel, we <strong>modify the amount</strong> that Lina has and <strong>store the number of purchases</strong>.</p>
 <p>Let&apos;s examine the first two problems for our algorithm. The first problem concerns the way we read the commands until we reach the <strong>&quot;mall.Exit&quot;</strong> command. The solution that we previously saw uses a <strong><code>while-loop</code></strong>. The second problem for the task is to <strong>access each symbol</strong> of the command passed. Keeping in mind that the input data with the commands is a <strong><code>string</code></strong> type, the easiest way to access each symbol inside the strings is via a <strong><code>for-in</code> loop</strong>.</p>
 <p>This is how the code may look like using two loops like this:</p>
@@ -559,7 +559,7 @@
 <p><img src="assets/chapter-9-2-images/01.Passion-days-04.png" alt="Case check"></p>
 <p><strong>Note</strong>: the variable <strong><code>purchases</code></strong> is of <strong><code>int</code></strong> type, in which we store the number of all purchases.</p>
 <p>We believe the reader should not have difficulties implementing all the other conditions because they are very similar to the first one.</p>
-<h4 id="formatting-the-output"><a name="formatting-the-output" class="plugin-anchor" href="#formatting-the-output"><i class="fa fa-link" aria-hidden="true"></i></a>Formatting the Output</h4>
+<h4 id="formatting-the-output"><a name="formatting-the-output" class="plugin-anchor" href="#formatting-the-output"><i class="fa fa-link" aria-hidden="true"></i></a>Formatting The Output</h4>
 <p>At the end of our task we must <strong>print</strong> a particular <strong>output</strong>, depending on the following condition:</p>
 <blockquote>
 <ul>
@@ -569,9 +569,9 @@
 </blockquote>
 <p>The printing operations are simple, as the only thing we need to take into consideration is that <strong>the amount has to be printed with an accuracy of up to 2 symbols after the decimal point</strong>.</p>
 <p>How can we do that? We will leave the answer to this question to the reader.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1062#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1062#0</a>.</p>
-<h2 id="task-numerical-expression"><a name="task-numerical-expression" class="plugin-anchor" href="#task-numerical-expression"><i class="fa fa-link" aria-hidden="true"></i></a>Task: Numerical Expression</h2>
+<h2 id="problem-numerical-expression"><a name="problem-numerical-expression" class="plugin-anchor" href="#problem-numerical-expression"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numerical Expression</h2>
 <p>Bonny is an exceptionally powerful witch. As her natural power is not sufficient to successfully fight vampires and werewolves, she has started to master the power of Expressions. An expression is very hard to master because the spell relies on the ability to <strong>quickly solve mathematical expressions</strong>.</p>
 <p>To use an &quot;Expression spell&quot;, the witch must know the result of a mathematical expression in advance. An <strong>Expression spell</strong> consists of a few simple mathematical expressions. Each mathematical expression can contain operators for <strong>summing up</strong>, <strong>subtraction</strong>, <strong>multiplying</strong>, and/or <strong>division</strong>.</p>
 <p>The expression is solved <strong>without considering the mathematical rules</strong> for calculating numerical expressions. This means that the priority is applied according to the sequence of the operators, and not the type of calculation that they do. The expression <strong>can contain brackets</strong>, as <strong>everything inside the brackets is calculated first</strong>. Every expression can contain multiple brackets, but no nested brackets:</p>
@@ -579,7 +579,7 @@
 <li>An expression containing <strong>(&#x2026;(&#x2026;)&#x2026;) is an invalid one</strong>.</li>
 <li>An expression containing <strong>(&#x2026;)&#x2026;(&#x2026;) is a valid one</strong>.</li>
 </ul>
-<h3 id="example"><a name="example" class="plugin-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>Example</h3>
+<h3 id="problem"><a name="problem" class="plugin-anchor" href="#problem"><i class="fa fa-link" aria-hidden="true"></i></a>Problem</h3>
 <p>The expression</p>
 <p><img src="assets/chapter-9-2-images/02.X-expression-01.png" alt="First example"></p>
 <p>is solved in the following way:</p>
@@ -621,10 +621,10 @@
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>As usual, we will first read and process the input, after that, we will solve the problem, and finally, we will print the result, formatted as required.</p>
-<h4 id="reading-the-input-data"><a name="reading-the-input-data" class="plugin-anchor" href="#reading-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Reading the Input Data</h4>
+<h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing The Input Data</h4>
 <p>The input data will consist of exactly one text line read from the console. To have access to each expression, we have to read the input with <strong><code>input()</code></strong> function and then convert the string into an array of symbols. Using the function <strong><code>pop(&#x2026;)</code></strong> we can process each symbol:</p>
 <p><img src="assets/chapter-9-2-images/02.X-expression-03.png" alt="Expression Read"></p>
-<h4 id="algorithm-for-solving-the-problem"><a name="algorithm-for-solving-the-problem" class="plugin-anchor" href="#algorithm-for-solving-the-problem"><i class="fa fa-link" aria-hidden="true"></i></a>Algorithm for Solving the Problem</h4>
+<h4 id="algorithm-for-solving-the-problem"><a name="algorithm-for-solving-the-problem" class="plugin-anchor" href="#algorithm-for-solving-the-problem"><i class="fa fa-link" aria-hidden="true"></i></a>Algorithm for Solving The Problem</h4>
 <p>For the tasks of our problem we need to use some variables:</p>
 <ul>
 <li>One variable will store our <strong>current result</strong>.</li>
@@ -659,7 +659,7 @@
 <p><img src="assets/chapter-9-2-images/02.X-expression-09.png" alt="Operator checks"></p>
 <h4 id="formatting-the-output"><a name="formatting-the-output" class="plugin-anchor" href="#formatting-the-output"><i class="fa fa-link" aria-hidden="true"></i></a>Formatting the Output</h4>
 <p>The only output that the program must print on the console is the <strong>result of solving the expression with an accuracy of up to two symbols after the decimal point</strong>. How can we format the output this way? We will leave the answer to this question to the reader.</p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1062#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1062#1</a>.</p>
 <h2 id="test-bulls-and-cows"><a name="test-bulls-and-cows" class="plugin-anchor" href="#test-bulls-and-cows"><i class="fa fa-link" aria-hidden="true"></i></a>Test: Bulls and Cows</h2>
 <p>We all know the game called &quot;Bulls and Cows&quot; (<a href="https://en.wikipedia.org/wiki/Bulls_and_cows" target="_blank">https://en.wikipedia.org/wiki/Bulls_and_cows</a>). Upon having a particular 4-digit <strong>secret number</strong> and a 4-digit <strong>suggested number</strong>, the following rules are applied:</p>
@@ -779,7 +779,7 @@
 <li>We will generate all possible <strong>four-digit combinations</strong> (candidates for verification).</li>
 <li>For each generated combination we will calculate <strong>how many bulls</strong> and <strong>how many cows</strong> it has according to the secret number. Upon matching the needed bulls and cows, we will <strong>print the combination</strong>.</li>
 </ul>
-<h4 id="reading-the-input-data"><a name="reading-the-input-data" class="plugin-anchor" href="#reading-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Reading the Input Data</h4>
+<h4 id="processing-the-input-data"><a name="processing-the-input-data" class="plugin-anchor" href="#processing-the-input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Processing The Input Data</h4>
 <p>We have 3 lines in the input data:</p>
 <ul>
 <li>The first contains <strong>the secret number</strong>.</li>
@@ -807,10 +807,10 @@
 <p>Our conditional statement for cows can be done by this method - we check if the <strong>first digit</strong> from the generated number <strong>matches with the second</strong>, <strong>the third</strong>, or <strong>the fourth</strong> digit of the secret number. Example:</p>
 <p><img src="assets/chapter-9-2-images/03.Bulls-and-cows-08.png" alt="Case check"></p>
 <p>After that, we sequentially check whether the <strong>second digit</strong> of the generated number <strong>matches the first one</strong>, the <strong>third one</strong>, or the <strong>fourth digit</strong> of the secret number; whether the <strong>third digit</strong> of the generated number matches the <strong>first one</strong>, the <strong>second one</strong>, or the <strong>fourth digit</strong> of the secret number; and finally, we check whether the <strong>fourth digit</strong> of the generated number matches the <strong>first one</strong>, the <strong>second one</strong> or the <strong>third digit</strong> of the secret number.</p>
-<h4 id="printing-the-output"><a name="printing-the-output" class="plugin-anchor" href="#printing-the-output"><i class="fa fa-link" aria-hidden="true"></i></a>Printing the Output</h4>
+<h4 id="printing-the-output"><a name="printing-the-output" class="plugin-anchor" href="#printing-the-output"><i class="fa fa-link" aria-hidden="true"></i></a>Printing The Output</h4>
 <p>After completing all conditions, we just need to <strong>check whether the bulls and cows in the currently generated number match the desired bulls and cows read from the console</strong>. If this is true, we print the current number on the console:</p>
 <p><img src="assets/chapter-9-2-images/03.Bulls-and-cows-09.png" alt="Root check"></p>
-<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in the Judge System</h3>
+<h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1062#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1062#2</a>.</p>
 
                                 
@@ -855,7 +855,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"next":{"title":"10. Methods","level":"1.20","depth":1,"path":"chapter-10-functions.md","ref":"chapter-10-functions.md","articles":[]},"previous":{"title":"9.1. Problems for Champions – Part I","level":"1.18","depth":1,"path":"chapter-09-problems-for-champions.md","ref":"chapter-09-problems-for-champions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-09-problems-for-champions-part-2.md","mtime":"2022-02-17T14:11:27.392Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T14:12:25.443Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.2. Problems for Champions – Part II","level":"1.19","depth":1,"next":{"title":"10. Methods","level":"1.20","depth":1,"path":"chapter-10-functions.md","ref":"chapter-10-functions.md","articles":[]},"previous":{"title":"9.1. Problems for Champions – Part I","level":"1.18","depth":1,"path":"chapter-09-problems-for-champions.md","ref":"chapter-09-problems-for-champions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-09-problems-for-champions-part-2.md","mtime":"2022-02-24T11:16:41.155Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:17:27.103Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
