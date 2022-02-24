@@ -148,7 +148,7 @@ Let's move to the calculations. The special part here is that after having divid
 <td><b>Search in Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in Python or we are dealing with one that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-In this case, we can try with the following search: "[***Python gets whole number part of float***](https://www.google.com/?q=python+get+whole+number+part+of+float)". One possible way is to use the method **`math.trunc(…)`** and don't forget to refer to the **`math`** library. The code down below is blurred on purpose and it should be completed by the reader:
+In this case, we can try with the following search: "[***Python get whole number part of float***](https://www.google.com/?q=python+get+whole+number+part+of+float)". One possible way is to use the method **`math.trunc(…)`** and don't forget to refer to the **`math`** library. The code down below is blurred on purpose and it should be completed by the reader:
 
 ![](/assets/chapter-2-2-images/01.Training-lab-04.png)
 
