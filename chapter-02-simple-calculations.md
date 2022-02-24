@@ -163,7 +163,7 @@ print(name, end='!')
 
 By default, the built-in function **`print(…)`** prints the result and continues to the next line. This is because **`print(…)`** uses the parameter **`end`**, which by default has a value **`\n`** (new line). In order to stay on the same line, we can change the value of **`end=''`**.
 
-Here is the result if we call the function with the name "Ivan":
+Here is the result if we call the function with the name "John":
 
 ![](/assets/chapter-2-1-images/03.Greeting-by-name-00.png)
 
