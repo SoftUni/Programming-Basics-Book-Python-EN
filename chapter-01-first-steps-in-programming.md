@@ -1,29 +1,29 @@
 # Chapter 1. First Steps in Programming
-In this chapter we are going to find out **what programming** is at its core. We are going to become familiar with the idea of **programming languages** and explore the environments for software development (**Integrated Development Environment** – IDEs); we'll see how to work with them, in particular with **PyCharm**. We will write and execute our **first program** written in the programming language Python and then we're going to practice with a few tasks: we will create a console-based program, a graphical application and a Web application. We will learn how use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we're going to learn how to avoid them.
+In this chapter, we are going to find out **what programming** is at its core. We are going to become familiar with the idea of **programming languages** and explore the environments for software development (**Integrated Development Environment** – IDEs); we'll see how to work with them, in particular with **PyCharm**. We will write and execute our **first program** written in the programming language Python and then we're going to practice with a few tasks: we will create a console-based program, a graphical application, and a Web application. We will learn how to use **SoftUni's Judge System** to check the correctness of our solutions to the problems in this book. Finally, we'll look at some typical mistakes made during code writing and we're going to learn how to avoid them.
 
 ## What Does 'To Program' Mean?
 
-To program means to give instructions to the computer, for example *play a certain sound*, *print something on the screen* or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
+To program means to give instructions to the computer, for example, *play a certain sound*, *print something on the screen*, or *multiply two numbers*. When there's a series of commands, we have a computer program (script). The computer program's text is called **program code** (**source code** or **just code**).
 
 ## Computer Programs
 
-**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. To write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book we're going to cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
+**Computer programs** represent a **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go, etc. To write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book, we're going to cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
 
-Computer programs usually execute some sort of algorithm. **Algorithms** are series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally move the pan away from the heat. Similarly, in programming, **computer programs execute algorithms** – series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
+Computer programs usually execute some sort of algorithm. **Algorithms** are a series of steps used to complete a task and achieve an expected result - something like a recipe. For example, if we need to fry some eggs, we follow a certain recipe (algorithm): we heat some oil in a pan, then we break the eggs, we wait until they're cooked, and finally, move the pan away from the heat. Similarly, in programming, **computer programs execute algorithms** – a series of commands needed to complete a certain task. If we want to print a series of numbers in ascending order, for example, we need an algorithm. It will go through all the numbers, find the smallest one and print it, then go through the rest of them and do the same until there are no more numbers left.
 To create programs, write program code (commands), execute it and other operations that have to do with making programming more convenient, we need a **development environment** (IDE) like **PyCharm**.
 
 ### Programming Languages, Compilers, Interpreters and Development Environments
-**Programming languages** are an artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages we write series of commands (**programs**) which **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
+**Programming languages** are artificial languages (syntax for expression), designed to **issue commands** which we expect the computer to read, process and execute. With the help of programming languages, we write a series of commands (**programs**) that **tell the computer what to do**. Execution of computer programs can be achieved by using either a **compiler** or an **interpreter**.
 
-**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been complied, the program can be directly executed by the microprocessor in cooperation with the operation system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
+**The compiler** translates code from a programming language into **machine code** and for each construct (command) in the code, it chooses an appropriate, predefined fragment of machine code while simultaneously checking the program's text for **errors**. Together, all the compiled fragments represent the original program translated in machine code, exactly how the computer's microprocessor is expecting it. After it's been compiled, the program can be directly executed by the microprocessor in cooperation with the operating system. Compiled programming languages **compile the program** before executing it and find syntactic errors (incorrect commands) during compile time. Languages like C++, C#, Java, Swift and Go work with compilers.
 
-Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
+Some programming languages don't use a compiler but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence and understands not only single commands and series of commands but also other language constructs (checks, iterations, functions, etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
 
-Overall, compiled languages work slower than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code quicker and re-execute (to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
+Overall, compiled languages work slower than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code quicker and re-execute (to remove a mistake, for example), while compiled languages are slower after a code change has been introduced, due to the need for compilation.
 
-**The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a **programming language**, **a compiler or interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
+**The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a **programming language**, **a compiler or interpreter**, an **execution environment** where our program is executed, a **debugger** that traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
 **Development environments** are convenient because they incorporate everything necessary to develop a program, so there's no need to leave the environment. If we don't use a development environment, we'll have to write code in a text editor, compile it with a command from the console, execute it with another command from the console and write additional commands, when needed, which would cost a lot of time. This is why most programmers use IDEs for everyday work.
 
@@ -32,7 +32,7 @@ Here's what the PyCharm environment looks like in action:
 
 ![](/assets/chapter-1-images/PyCharm-IDE-in-action.png)
 
-Alternatives to PyCharm for writing code in Python are **Visual Studio Code** (https://code.visualstudio.com), **Atom** (https://atom.io), **Eclipse for Python** (https://www.eclipse.org) together with the add-on **PyDev** (https://pydev.org) and others. In this book we'll use the development environment PyCharm.
+Alternatives to PyCharm for writing code in Python are **Visual Studio Code** (https://code.visualstudio.com), **Atom** (https://atom.io), **Eclipse for Python** (https://www.eclipse.org) together with the add-on **PyDev** (https://pydev.org) and others. In this book, we'll use the development environment PyCharm.
 
 Alternatives to desktop development environments (IDE) are online environments for Python programing such as [**Repl.it**](https://repl.it/languages/python3) and [**PythonAnywhere**](https://www.pythonanywhere.com). They're great for testing short examples, when we cannot install an IDE locally, or when we want to easily share our code with colleagues. Here's an example of how to execute **Python code** in **Repl.it**:
 
@@ -46,7 +46,7 @@ There are different types of **programming languages**. **Lowest-level** languag
 
 **Low-level languages** command hardware directly and require a lot of effort and a vast number of commands, to carry out a certain task. **Higher-level languages** require less code to achieve the same result, but have no direct access to hardware. They are used to develop application software like web and mobile applications.
 
-Most of the software we use on a daily basis like music players, video players, GSP programs etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP etc.
+Most of the software we use daily like music players, video players, GSP programs, etc. is written on high-level **languages for application programming** like Python, JavaScript, C#, Java, C++, PHP, etc.
 
 **Python is an interpreted language** which means we write commands and they're executed immediately after running the program. As a result of that, we will realize we've made a mistake in our code only after we've started our program and reached the incorrect command. In cases like these, **IDEs** like PyCharm are extremely helpful as they check our code while we're writing it and alarm us of potential issues. After we've written our code and want to test it, we can save it in a file with extension **`.py`**. 
 
@@ -60,10 +60,10 @@ Installing Python is quite simple. Just go to https://python.org/downloads and d
 
 ![](/assets/chapter-1-images/Python-download.png)
 
-On **Windows** the installation is a straightforward process of clicking **[Next]**, **[Next]** and **[Finish]**. On **Linux**, you need to use a package installer like `sudo apt-get install python3`.
+On **Windows**, the installation is a straightforward process of clicking **[Next]**, **[Next]** and **[Finish]**. On **Linux**, you need to use a package installer like `sudo apt-get install python3`.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-  <td>Use <b>Python version 3.x or newer</b>. Python 2 is an outdated technology and although it's accessible by default on many systems, it's problematic and many of the examples in this book won't work on it.</td>
+  <td>Use <b>Python version 3.x or newer</b>. Python 2 is outdated technology and although it's accessible by default on many systems, it's problematic and many of the examples in this book won't work on it.</td>
 </tr></table>
 
 ## Starting The Python Interpreter
@@ -88,7 +88,7 @@ Let's try a few more commands: store the value `5` in a variable named `a` and p
 ## Computer Programs
 
 As we already mentioned, a program is a **series of commands**, in other words, it describes a series of calculations, checks, iterations and numerous other operations, which aim at producing a result.
-The program is written in text format and the text is called **source code**. It's saved in a file with extension `.py` (`main.py`, for instance), and then it can be executed through your browser or through the **console** with the help of **Python Shell**. In **script and interpreted languages**, like JavaScript, Python and PHP, the source code is executed step by step by an interpreter.
+The program is written in text format and the text is called **source code**. It's saved in a file with extension `.py` (`main.py`, for instance), and then it can be executed through your browser or the **console** with the help of **Python Shell**. In **script and interpreted languages**, like JavaScript, Python and PHP, the source code is executed step by step by an interpreter.
 
 ### Problem: A Program That Prints 'Hello'
 
@@ -111,19 +111,19 @@ winsound.Beep(432, 500)
 In a Windows environment we will **hear a sound**. Make sure your speakers aren't muted. On Linux and MacOs, the example won't work.
 
 ### Problem: A Program That Plays a Series of Music Tones:
-We can make our last program a bit more complex by creating a loop which passes a series of notes with increasing height to the command:
+We can make our last program a bit more complex by creating a loop that passes a series of notes with increasing height to the command:
 ```python
 import winsound
 
 for i in range(200, 4000, 200):
     winsound.Beep(i, 300)
 ```
-In the example above we make the computer play very briefly (300 milliseconds) each subsequent tone with height 200, 400, 600 etc. hertz until reaching 4000 hertz. The result is something similar to a melody.
+In the example above we make the computer play very briefly (300 milliseconds) each subsequent tone with height 200, 400, 600, etc. hertz until reaching 4000 hertz. The result is something similar to a melody.
 We will learn how iterations (loops) in programming work in **chapter** "[Loops](chapter-05-loops.md)", but for now, let's assume that they just repeat a command many times.
 
 ### Problem: Program That Converts Levs (BGN - Bulgaria's currency) , into Euros
 
-Let's have a look at another simple program which reads a number of levs(BGN) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of **three consecutive commands**. Enter and execute them in sequence:
+Let's have a look at another simple program that reads a number of levs(BGN) from the user, converts them into euro (divides them by the euro exchange rate) and prints the result. This is a program of **three consecutive commands**. Enter and execute them in sequence:
 ```python
 leva = int(input())
 euro = leva / 1.95583
@@ -134,15 +134,15 @@ Here's what the **result** of the above series of commands might look like:
 
 ![](/assets/chapter-1-images/Python-shell-leva-to-euro.png)
 
-We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of three commands. Let's now move on to the more exciting bit: writing our own programs in **Python** and executing them.
+We looked at **three examples of computer programs**: single command, series of commands in a loop and a sequence of three commands. Let's now move on to the more exciting bit: writing our programs in **Python** and executing them.
 
 ## How Can We Write a Console Program?
 
-Let's go through the necessary steps to **create and execute a computer program** which uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Python programs from this book and the exercises that go along with it.
+Let's go through the necessary steps to **create and execute a computer program** that uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Python programs from this book and the exercises that go along with it.
 
 ## Development Environment (IDE)
-As previously mentioned, we need a **development environment** (IDE) to program. The IDE is actually a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
--	For programming in Python we use the **PyCharm** environment, suitable Windows, Linux and MacOS operating systems.
+As previously mentioned, we need a **development environment** (IDE) to program. The IDE is a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
+-	For programming in Python, we use the **PyCharm** environment, suitable Windows, Linux and MacOS operating systems.
 - If we are programming in Java we might use **IntelliJ IDEA**, **Eclipse** and **NetBeans**.
 - If we are programming in C# we might use **Visual Studio**.
 
@@ -151,7 +151,7 @@ Let's start by installing the **PyCharm Community** integrated environment (in o
 The Community version of PyCharm is freely distributed by JetBrains and can be downloaded from: [https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download).
 
 The installation is typical for Windows - simply use the **[Next]** and **[Finish]** buttons. There's a Linux version available as well.
-In the following paragraphs we've described in detail **every step of the PyCharm Community 2018 installation process**. After we download the installation file and run it, we're greeted with the following screen:
+In the following paragraphs, we've described in detail **every step of the PyCharm Community 2018 installation process**. After we download the installation file and run it, we're greeted with the following screen:
 
 ![](/assets/chapter-1-images/00.PyCharm-01.png)
 
@@ -194,7 +194,7 @@ Before we start working with PyCharm, let's get familiar with the term **PyCharm
 
 In the beginning that will be a console program which we'll learn how to write with the help of this book, its resources and SoftUni's Programming Basics course. After some more thorough studying and with time and practice, these projects will turn into applications, web apps and other projects. The PyCharm project uses **logic to group the numerous files** that make up a certain application or component.
 
-A single **Python project** consists of several **Python source files** (**.py**), configuration files and other resources. Every Python source file can have one or more **classes** and **functions**. **Classes** contain **functions**(actions), which are comprised of **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for good organization of our work files.
+A single **Python project** consists of several **Python source files** (**.py**), configuration files and other resources. Every Python source file can have one or more **classes** and **functions**. **Classes** contain **functions**(actions), which are comprised of a **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for the good organization of our work files.
 
 # Problem: Creating a Console Program 'Hello Python'
 
@@ -206,9 +206,9 @@ We will give our project a **meaningful name**, such as `FirstStepsInProgramming
 
 ![](/assets/chapter-1-images/01.Hello-python-02.png)
 
-PyCharm will create an **empty project** for us and we can add Python files to it. We'll add a new Python file - **[File]** or right click on our project -> **[New]** -> **[Python File]** and give it a meaningful name like `HelloPython.py`.
+PyCharm will create an **empty project** for us and we can add Python files to it. We'll add a new Python file - **[File]** or right-click on our project -> **[New]** -> **[Python File]** and give it a meaningful name like `HelloPython.py`.
 
-We can adjust the version and location of the Python interpreter, which we're going to be using. We must have a Python interpreter, otherwise, we won't be able to execute the programs we've written. It's possible to have more than one version of Python on the same computer but for ease of use, in the beginning **just install the latest version and use that**. If you haven't already installed Python, please do so before you continue.
+We can adjust the version and location of the Python interpreter, which we're going to be using. We must have a Python interpreter, otherwise, we won't be able to execute the programs we've written. It's possible to have more than one version of Python on the same computer but for ease of use, in the beginning, **just install the latest version and use that**. If you haven't already installed Python, please do so before you continue.
 
 ### Writing Program Code
 
@@ -220,25 +220,25 @@ Here's what our program might look like in PyCharm:
 
 ![](/assets/chapter-1-images/01.Hello-python-03.png)
 
-The `print('Hello Python')` command allows us to print the text message `Hello Python` on the console. The message needs to be surround with quotes, signifying text.
+The `print('Hello Python')` command allows us to print the text message `Hello Python` on the console. The message needs to be surrounded with quotes, signifying text.
 
 This command is quite typical for programming: we call the function `print(...)` and pass the text literal `'Hello Python'` as its parameter.
 
 ### Starting The Program
 
-To start the program we need to press **[Ctrl + Shift + F10]** or right click – **[Run]**. If there are no errors, the program will execute. The result will be displayed on the console:
+To start the program we need to press **[Ctrl + Shift + F10]** or right-click – **[Run]**. If there are no errors, the program will execute. The result will be displayed on the console:
 
 ![](/assets/chapter-1-images/01.Hello-python-04.png)
 
-Actually, the output from the program is the following text message:
+The output from the program is the following text message:
 ```python
 Hello Python
 ```
-The **'Process finished with exit code 0'** message is displayed at the end of the PyCharm console after the program has executed, to signify that the program has finished with no errors.
+The **'Process finished with exit code 0'** message is displayed at the end of the PyCharm console after the program has been executed, to signify that the program has finished with no errors.
 
 ### Testing in The Judge System
 
-Testing the solutions to the problems in this book is completely automated via the **Judge System**'s website: [https://judge.softuni.org](https://judge.softuni.org). The solutions are judged immediately by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
+Testing the solutions to the problems in this book is completely automated via the **Judge System**'s website: [https://judge.softuni.org](https://judge.softuni.org). The solutions are judged immediately by the system. Each solution goes through a series of tests that are hidden; every test that passes grants the user certain points.
 
 The program we just wrote can be tested here: [https://judge.softuni.org/Contests/Practice/Index/1046#0](https://judge.softuni.org/Contests/Practice/Index/1046#0). To do that, simply paste the entire source code in the black field and choose **Python code** as is shown below:
 
@@ -249,10 +249,10 @@ Then we need to send our solution by clicking the **[Submit]** button. The syste
 ![](/assets/chapter-1-images/01.Hello-python-06.png)
 
 In the table, the Judge System will display one of the following **possible results**:
-- Number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
+- A number of points (between 0 and 100), when the submitted code is compiled successfully (there are no syntactic errors) and can be tested.
 -	If our solution is **completely correct**, all tests are marked in green and we receive **100 points**.
 -	If our solution is **incorrect**, some tests are marked in red and we receive less than 100 or 0 points.
--	If there are syntactic errors in our program, we receive a **compile time error message**.
+-	If there are syntactic errors in our program, we receive a **compile-time error message**.
 
 ### Test Your Tone-Playing Programs
 
@@ -280,7 +280,7 @@ This program will return an **error** and the code will be underlined to draw th
 
 ## What Have We Learned from This Chapter?
 
-First of all, we learned **what programming is** – **issuing commands written in a programming language** which the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Python programming language** and learned **how to create simple console programs** using PyCharm. Then we examined **Python's program code structure**. We looked at printing with the function **`print(...)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
+First of all, we learned **what programming is** – **issuing commands written in a programming language** that the machine can understand and carry out. We also found out what a **computer program** is – a **series of commands** that aim to achieve a certain result. We gained some basic knowledge of the **Python programming language** and learned **how to create simple console programs** using PyCharm. Then we examined **Python's program code structure**. We looked at printing with the function **`print(...)`** and starting the program with **[Ctrl + Shift + F10]**. And last but not least, we now know how to test our code in **SoftUni's Judge System**.
 
 Top work! Let's now tackle the **exercises**. You do remember that learning how to program involves a lot of code writing and problem-solving, right? Let's do just that and put what we've learned into practice.
 
@@ -309,7 +309,7 @@ Start the program with **[Ctrl + Shift + F10]** and check whether the result mat
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1046#1](https://judge.softuni.org/Contests/Practice/Index/1046#1).
 ![](/assets/chapter-1-images/02.Expression-03.png)
 
-### Problem : Numbers from 1 to 20
+### Problem: Numbers from 1 to 20
 
 Write a **Python console program** that **prints the numbers from 1 to 20** on separate lines on the console.
 
@@ -371,7 +371,7 @@ Try and **improve your solution** to avoid repeating the same command so many ti
 
 ### Problem: Rectangle Area
 
-Write a **Python program** which **receives two numbers a and b, then calculates and prints** the area of a rectangle with sides **a** and **b**.
+Write a **Python program** that **receives two numbers a and b, then calculates and prints** the area of a rectangle with sides **a** and **b**.
 
 ### Sample Input and Output
 | a | b | area |
@@ -386,7 +386,7 @@ Create a **new Python file**. We'll use the following commands to read our numbe
 
 ![](/assets/chapter-1-images/05.Rectangle-area-01.png)
 
-What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of **`a`** and **`b`** to the already familiar **`print(...)`** command. In programming we multiply using the **`*`** operator.
+What's left is to finish the program so it can calculate the rectangle's area and print it. Pass the product of **`a`** and **`b`** to the already familiar **`print(...)`** command. In programming, we multiply using the **`*`** operator.
 
 ### Test Your Solution
 
@@ -404,7 +404,7 @@ Test your solution here:
 
 ### Problem: Square of Stars
 
-Write a **Python console program which reads an integer positive number N** from the console and **prints a square of N stars** on the console, like in the examples below.
+Write a **Python console program that reads an integer positive number N** from the console and **prints a square of N stars** on the console, like in the examples below.
 
 ### Sample Input and Output
 
@@ -420,7 +420,7 @@ Create a **new Python file**. To read the number N (2 ≤ N ≤100), we use the 
 
 Finish the program so that it prints a square made up of stars. You may need to use **`for`**-loops.
 
-**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
+**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning to program. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
 
 ### Testing in The Judge System
 
@@ -436,11 +436,11 @@ Graphical (GUI) applications have a **visual user interface**, directly on your 
 
 ## Problem: Graphical and Web Applications
 
-We will now build a **basic web application** and after that a simple **graphical application**, to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.
+We will now build a **basic web application** and after that, a simple **graphical application**, to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.
 
 ## Graphical Application: 'Numbers Summator'
 
-Write a **graphical (GUI) application** which **calculates the sum of two numbers**. After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field colored in green:
+Write a **graphical (GUI) application** that **calculates the sum of two numbers**. After the numbers are entered in the first text fields, and the button **[Calculate]** is clicked, calculate their sum and display the result in the third text field colored in green:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-01.png)
 
@@ -458,7 +458,7 @@ Add a new Python file named **summator.py** to the project. Then add **tkinter**
 
 #### Creating The Basis for The GUI Project
 
-Next we need to write the code for our graphical application, starting with the basis:
+Next, we need to write the code for our graphical application, starting with the basis:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-04.png)
 
@@ -479,7 +479,7 @@ And try to start our application with **[Ctrl + Shift + F10]** or right-click + 
 
 #### Application Logic
 
-Now we're going to write the code responsible for summing our numbers and displaying the result in the third field. In order for that to work, we add the **`calculate`** command upon the button's initialization:
+Now we're going to write the code responsible for summing our numbers and displaying the result in the third field. For that to work, we add the **`calculate`** command upon the button's initialization:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-08.png)
 
@@ -489,7 +489,7 @@ Then we write the **`calculate`** function's code:
 
 This code **takes the first number** from the **`firstNumberEntry`** field and stores it in the **`first_value`** **variable**. Then it stores the **second number** from the **`secondNumberEntry`** field in the **`second_value`** variable. It **sums** **`first_value`** and **`second_value`** and stores the result in the **`result`** variable. Finally, it **displays the text representation** of the **`result`** variable in the **`resultLabel`** field.
 
-Let's start the program again using **[Ctrl + Shift + F10]** or right click + **[Run]** and check whether it's working correctly. Try and calculate **4** + **5**, then **-2.5** + **1.5**:
+Let's start the program again using **[Ctrl + Shift + F10]** or right-click + **[Run]** and check whether it's working correctly. Try and calculate **4** + **5**, then **-2.5** + **1.5**:
 
 ![](/assets/chapter-1-images/07.Numbers-sum-10.png) ![](/assets/chapter-1-images/07.Numbers-sum-11.png)
 
@@ -507,18 +507,18 @@ The code you see above **intercepts number-handling errors** (catches exceptions
 
 ![](/assets/chapter-1-images/07.Numbers-sum-14.png) ![](/assets/chapter-1-images/07.Numbers-sum-15.png)
 
-Does that seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or to the next chapter in the book. There will come a time when this becomes easy for you, but you really have to put some effort and be persistent. Learning programming is a slow process involving lots and **lots of practice**.
+Does that seem complicated? If it does, that's completely normal. We are at the very start of our programming journey. The example above requires much more knowledge and skills, which we are going to develop using this book and later on as well. Just allow yourself to have some fun with desktop programming. Or bravely move forward to the next example or the next chapter in the book. There will come a time when this becomes easy for you, but you have to put in some effort and be persistent. Learning programming is a slow process involving lots and **lots of practice**.
 
 ### Web Application: 'Numbers Summator'
 Now we are going to create something even more complex, but also more interesting: a Web application that **calculates the sum of two numbers**. By entering two numbers in the first two text fields and clicking the **[Calculate]** button, **their sum is calculated** and the result is displayed in the third text field.
 
-Keep in mind that we are creating a **Web-based application**. This is an application that is accessible through a web browser, just like your favorite email or news website. The web application is going to have a server side (back-end), which is written in the Python language with **Flask** ([https://flask.palletsprojects.com](https://flask.palletsprojects.com)) technology, and a client side (front-end), which is written in the **HTML** language (this is a language for visualization of information in a web browser). The Web application is expected to resemble the following:
+Keep in mind that we are creating a **Web-based application**. This is an application that is accessible through a web browser, just like your favorite email or news website. The web application is going to have a server-side (back-end), which is written in the Python language with **Flask** ([https://flask.palletsprojects.com](https://flask.palletsprojects.com)) technology, and a client-side (front-end), which is written in the **HTML** language (this is a language for visualization of information in a web browser). The Web application is expected to resemble the following:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-01.png)
 
-As opposed to console applications which read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data in a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. For our web application we are going to use **Flask**, a light Python library, which allows creating **web applications with the programming language Python**.
+As opposed to console applications that read and write data in the form of text on the console, Web applications have a **Web-based user interface**. Web applications are **loaded from some Internet address** (URL) through a standard web browser. Users write input data on a page, visualized by the web browser, the data is processed on a web server and the results are shown again on a page in the web browser. For our web application, we are going to use **Flask**, a light Python library, which allows creating **web applications with the programming language Python**.
 
-Next are the steps for implementation of the "Numbers Summator" web application.
+Next are the steps for the implementation of the "Numbers Summator" web application.
 
 #### Empty Python Solution
 
@@ -562,11 +562,11 @@ After we've written the following code in `app.py`, we can test if our program i
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-09.png)
 
-Next we need to write the code which will handle our **request**:
+Next, we need to write the code which will handle our **request**:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-10.png)
 
-If we click the calculation button now, our program will be able to sum the two digits from the form. Let's run the program again and test whether it's working correctly. Upon entering the numbers **9** and **11**, we'll receive a correct result:
+If we click the calculation button now, our program will be able to sum the two digits from the form. Let's run the program again and test whether it's working correctly. Upon entering the numbers **9** and **11**, we'll receive the correct result:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-11.png) 
 
@@ -588,4 +588,4 @@ If we run the program one more time and test it by entering **invalid data**, we
 
 Does all this seem scary? **There's no need to be afraid**. We have a lot more to learn, to reach the level of knowledge and skills required to write web-based applications with ease like in the example above, as well as much bigger and more complex applications. If it all makes little sense, just keep going without worrying. In time, you will remember with a smile how incomprehensible and exciting your first collision with web programming was. 
 
-The purpose of both examples (graphical desktop application and web application) is not to teach you, but to allow you to dive a little deeper into programming, to **fuel your interest** towards software development and to inspire you to study hard. **You have a lot more to learn**, but it is interesting, isn't it?
+The purpose of both examples (graphical desktop application and web application) is not to teach you, but to allow you to dive a little deeper into programming, to **fuel your interest** in software development, and to inspire you to study hard. **You have a lot more to learn**, but it is interesting, isn't it?
