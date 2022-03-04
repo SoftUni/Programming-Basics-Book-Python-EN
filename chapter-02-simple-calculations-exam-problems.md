@@ -2,7 +2,7 @@
 
 In the previous chapter, we explained how to work with the system console – how to **read numbers** from it and how to **print the output**. We went through the main arithmetical operations and briefly mentioned data types. Now, we are going to practice what we have learned by solving a few **more complex exam problems**.
 
-## Reading Numbers from the Console
+## Reading Numbers from The Console
 
 Before going to the tasks, we are going to revise the most important aspects of what we have studied in the previous chapter. We will start by reading numbers from the console.
 
@@ -60,13 +60,13 @@ result = 3 + 5 # the result is 8
 result = 3 - 5 # the result is -2
 ```
 
-### Operator *
+### Operator \*
 
 ```python
 result = 3 * 5 # the result is 15
 ```
 
-### Operator / and //
+### Operator \/ and \/\/
 
 ```python
 result = 5 / 2 # the result is 2.5 (fractional division)
@@ -148,7 +148,7 @@ Let's move to the calculations. The special part here is that after having divid
 <td><b>Search in Google!</b> Whenever we have an idea how to solve a particular problem, but we do not know how to write it in Python or we are dealing with one that many other people have had before us, the easiest way to solve it is by looking for information on the Internet.</td>
 </tr></table>
 
-In this case, we can try with the following search: "[***Python get whole number part of float***](https://www.google.com/?q=python+get+whole+number+part+of+float)". One possible way is to use the method **`math.trunc(…)`** and don't forget to refer to the **`math`** library. The code down below is blurred on purpose and it should be completed by the reader:
+In this case, we can try with the following search: "[***Python gets whole number part of float***](https://www.google.com/?q=python+get+whole+number+part+of+float)". One possible way is to use the method **`math.trunc(…)`** and don't forget to refer to the **`math`** library. The code down below is blurred on purpose and it should be completed by the reader:
 
 ![](/assets/chapter-2-2-images/01.Training-lab-04.png)
 
