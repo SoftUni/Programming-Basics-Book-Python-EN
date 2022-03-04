@@ -19,7 +19,7 @@ The result from a comparison is the so-called Boolean value – **`True`** or **
 
 ![](/assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-Note that when printing **`true`** and **`false`** values in **Python**, they are capialized, **`True`** and **`False`**, respectively.
+Note that when printing **`true`** and **`false`** values in **Python**, they are capitalized, **`True`** and **`False`**, respectively.
 
 ### Comparison Operators
 
@@ -103,7 +103,7 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 By pressing the **tab key** we create a block of code through which a group of commands can be executed. When we have code in **if, elif, else** (and other structures) and we want to perform a series of operations, we put them in a block after the condition.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution.</td>
+<td>It is a good practice <strong>to use a tab (or four spaces)</strong> since this makes the code more readable, neater and cleaner. In this way, we avoid errors during code execution.</td>
 </tr></table>
 
 Here is an example of bad indentation:
@@ -137,7 +137,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 ### Problem: Greater Number
 
-Write a program that reads two integers and outputs the number of higher value between the two .
+Write a program that reads two integers and outputs the number of higher value between the two.
 
 Our first task is to **read** the two numbers. After which through the use of a simple **`if-else`** structure, in combination with the **greater than operator** (**`>`**), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.
 
@@ -152,7 +152,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049
 
 Every variable has a scope in which it exists, called **variable scope**. This scope specifies where the variable can be used and accessed. In Python, **variables could be used anywhere if they are initialized at least once.**
 
-In the example below, on the last line we try to print the variable **`my_name`**, which is defined in the **`else` structure**. We will get an **error**, because in this case the body of the **`else`** clause, in which we initialize the variable, is not executed. However, there is no problem to print the variable **`can_drive`** because the program entered the body of the **`if`** clause and initialized the variable. As you can see the variables **`can_drive`** and **`my_name`** are colored yellow. This is a warning from **PyCharm**, that we may get an error. Therefore, we should be careful where we initialize the variables.
+In the example below, on the last line, we try to print the variable **`my_name`**, which is defined in the **`else` structure**. We will get an **error**, because in this case the body of the **`else`** clause, in which we initialize the variable, is not executed. However, there is no problem printing the variable **`can_drive`** because the program entered the body of the **`if`** clause and initialized the variable. As you can see the variables **`can_drive`** and **`my_name`** are colored yellow. This is a warning from **PyCharm**, that we may get an error. Therefore, we should be careful where we initialize the variables.
 
 ![](/assets/chapter-3-1-images/00.Variable-scope-01.png)
 
