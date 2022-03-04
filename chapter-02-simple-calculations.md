@@ -9,7 +9,7 @@ In this chapter we are going to become familiar with the following concepts and 
 
 ## Calculations in Programming
 
-We know that computers are machines that process data. All **data** is held in the computer memory (RAM memory) as **variables**. Variables are named areas of the computer memory which hold data of a certain type, for example a number or text. Each **variable** in Python has a **name** and **value**. Here is how to define a variable, assigning a value to it at the time of declaration:
+We know that computers are machines that process data. All **data** is held in the computer memory (RAM) as **variables**. Variables are named areas of the computer memory which hold data of a certain type, for example, a number or text. Each **variable** in Python has a **name** and **value**. Here is how to define a variable, assigning a value to it at the time of declaration:
 
 ![](/assets/chapter-2-1-images/00.Declaring-variables-01.png)
 
@@ -28,7 +28,7 @@ In **Python**, the data type is defined by the value that is assigned and is not
 
 ## Printing Results on The Screen
 
-To print text, numbers or other result on the screen, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
+To print text, numbers, or another result on the screen, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
 
 ```python
 print(9)  # prints a number
@@ -67,7 +67,7 @@ Here is how the program would work for a square with a side equal to 3:
 
 ![](/assets/chapter-2-1-images/00.Square-area-01.png)
 
-Try to type in an invalid number, for example "**hello**". You will receive an **error** message during execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. 
+Try to type in an invalid number, for example "**hello**". You will receive an **error** message during the execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. 
 
 #### How Does The Example Work?
 
@@ -116,7 +116,7 @@ we will receive the following result:
 How does the code mentioned above work? By using `.split(…)` we separate the elements from the given text line by the interval separator. If we type in the input from above, we will receive 3 elements: `'100'`, `'200'`, and `'300'`. After that, utilizing the function `map(int, elements)` we convert the sequence of elements from text to numbers.
 
 
-## Reading Floating Point Numbers
+## Reading Floating-Point Numbers
 
 To read a user input as a **floating-point number**, we need to **declare a variable**, this time using the function **`float(…)`** which converts the given text value to a fractional number:
 
@@ -134,7 +134,7 @@ centimeters = inches * 2.54
 print('Centimeters = ', centimeters)
 ```
 
-Let's start the program and make sure that when we input a value in inches, we receive a correct result in centimeters:
+Let's start the program and make sure that when we input a value in inches, we receive the correct result in centimeters:
 
 ![](/assets/chapter-2-1-images/02.Inches-to-centimeters-01.png)
 
@@ -174,7 +174,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ## Concatenating Text and Numbers
 
-When printing text, numbers and other data, **we can concatenate them** by using templates **`{0}`**, **`{1}`**, **`{2}`** etc. In programming these **templates** are called **placeholders**. 
+When printing text, numbers and other data, **we can concatenate them** by using templates **`{0}`**, **`{1}`**, **`{2}`**, etc. In programming, these **templates** are called **placeholders**. 
 
 In **Python** we use the built-in method **`.format(…)`**, through which we list the variables we want to put in place of the templates (placeholders). Example: we type in **first name** and **last name** of a student as well as their **age** and **hometown** and we print text in the format “You are _{name}_ _{family name}_, a _{age}_-year-old person from _{hometown}_.”. The following is a solution with text templates:
 
@@ -188,7 +188,7 @@ print('You are {0} {1}, a {2}-year-old person from {3}.'
       .format(first_name, last_name, age, town))
 ```
 
-Here is the result which we will get after execution of this example:
+Here is the result that we will get after the execution of this example:
 
 ![](/assets/chapter-2-1-images/00.Placeholders-01.png)
 
@@ -253,7 +253,7 @@ b = 7
 product = a * b  # 35
 ```
 
-### Dividing Numbers: Operator /
+### Dividing Numbers: Operator \/
 
 Dividing numbers is done with the **`/`** operator. 
 
@@ -321,7 +321,7 @@ sum = 'The sum is: ' + str(a) + str(b)
 print(sum)  # The sum is 1.52.5
 ```
 
-Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, to change the order of execution of the operations:
+Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? The concatenation works from left to right and the result above is correct. If we want to sum the numbers, we have to use **brackets**, to change the order of execution of the operations:
 
 ```python
 a = 1.5
@@ -331,7 +331,7 @@ sum = 'The sum is: ' + str(int(a + b))
 print(sum)  # The sum is: 4
 ```
 
-### Repeating Text: Operator *
+### Repeating Text: Operator \*
 
 The operator `*` can be used to **repeat a given text a number of times**:
 ```py
@@ -352,7 +352,7 @@ print(5 * count)      # 100
 
 ## Printing Formatted Text in Python 
 
-In Python there are **several ways** to print **formatted text**, i.e. text, combined with numbers, values of variables and expressions. We have already encountered some of them, but let's look at the issue in more detail.
+In Python, there are **several ways** to print **formatted text**, i.e. text, combined with numbers, values of variables, and expressions. We have already encountered some of them, but let's look at the issue in more detail.
 
 ### Printing with Commas
 
@@ -399,7 +399,7 @@ width = 5 ; height = 7 ; area = 35
 
 Using a wrong formatting string could result in an error.
 
-When formatting floating point numbers, we can round them to a specified number of digits after the decimal point, for example with the formatting string `%.2f` we can print a floating point number rounded to 2 digits after the decimal point: 
+When formatting floating-point numbers, we can round them to a specified number of digits after the decimal point, for example with the formatting string `%.2f` we can print a floating-point number rounded to 2 digits after the decimal point: 
 ```python
 print('price = %.2f \nVAT = %.3f' % (1.60, 1.60 * 0.2))
 ```
@@ -408,7 +408,7 @@ The result from the code above is the following:
 price = 1.60
 VAT = 0.320
 ```
-In the example above we use the special symbol `\n`, which means „go to the next line“. Analogically, the special symbol `\b` returns the cursor with one position backwards (deletes the last printed symbol), respectively the following code:
+In the example above we use the special symbol `\n`, which means „go to the next line“. Analogically, the special symbol `\b` returns the cursor with one position backward (deletes the last printed symbol), respectively the following code:
 ```python
 print('ab\bc')
 ```
@@ -438,9 +438,9 @@ width = 5
 height = 7
 print(f'width = {width} ; height = {height} ; area = {width * height}')
 ```
-Using the **F-String formatting** is very easy: we put a prefix `f` in front of the string and insert values of variables and expressions in curly braces `{expression}` in random positions. In the example above we have three expressions: `{width}`, `{height}` and `{width * height}` which are calculated and are substituted by their text value. We can use text expressions, integer expressions, floating point expressions and all other kinds of expressions.
+Using the **F-String formatting** is very easy: we put a prefix `f` in front of the string and insert values of variables and expressions in curly braces `{expression}` in random positions. In the example above we have three expressions: `{width}`, `{height}` and `{width * height}` which are calculated and are substituted by their text value. We can use text expressions, integer expressions, floating-point expressions, and all other kinds of expressions.
 
-Formatting with **F-String** in Python is **the recommedned method** for printing formatted text because it uses the shortest syntax and the code is easily read and understood.
+Formatting with **F-String** in Python is **the recommended method** for printing formatted text because it uses the shortest syntax and the code is easily read and understood.
 
 
 ## Numerical Expressions
@@ -451,7 +451,7 @@ In programming, we can calculate **numerical expressions**, for example:
 expr = (3 + 5) * (4 – 2)  # 16
 ```
 
-The standard rule for priorities of arithmetic operations is applied: **multiplication and division are always done before addition and subtraction**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
+The standard rule for priorities of arithmetic operations is applied: **multiplication and division are always done before addition and subtraction**. In the case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
 
 ### Problem: Concatenate Data
 
@@ -475,7 +475,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem: Trapeziod Area
 
-Let's write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating point number per line) and calculates the area of the trapezoid by the standard math formula:
+Let's write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating-point number per line) and calculates the area of the trapezoid by the standard math formula:
 
 ```python
 b1 = float(input())
@@ -497,7 +497,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ## Rounding of Numbers
 
-Sometimes when we work with floating point numbers we need to convert the numbers to the same type of format. This conversion is called **rounding**. **Python** offers several methods for rounding of numbers:
+Sometimes when we work with floating-point numbers we need to convert the numbers to the same type of format. This conversion is called **rounding**. **Python** offers several methods for rounding of numbers:
 
 * **`math.ceil(…)`** - **rounding up**, to the next (bigger) integer number:
 
@@ -615,7 +615,7 @@ We have to create a new project in PyCharm (from [**Create New Project**] or [**
 
 ### Problem: Triangle Area
 
-Write a program that reads from the console **a side and a height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `round(area, 2)`**.
+Write a program that reads from the console **aside and a height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `round(area, 2)`**.
 
 #### Sample Input and Output
 
@@ -633,7 +633,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem: Celsius to Fahrenheit
 
-Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://shorturl.at/irvMR "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
+Write a program that reads **degrees on the Celsius scale** (°C) and converts them to **degrees on the Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://shorturl.at/irvMR "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
 #### Sample Input and Output
 
@@ -651,7 +651,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem: Radians to Degrees
 
-Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** but before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
+Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** but before that, we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
 #### Sample Input and Output
 
@@ -669,7 +669,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ### Problem: USD to BGN
 
-Write a program for **conversion of US dollars** (USD) **to Bulgarian leva** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and a **lev** (BGN): **1 USD = 1.79549 BGN**.
+Write a program for the **conversion of US dollars** (USD) **to Bulgarian leva** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and a **lev** (BGN): **1 USD = 1.79549 BGN**.
 
 #### Sample Input and Output
 
@@ -692,7 +692,7 @@ Write a program for **conversion of money from one currency to another**. It has
 |:----------------:|:-------:|:-------:|:-------:|
 |      1 BGN       | 1.79549 | 1.95583 | 2.53405 |
 
-**The input** is **sum for conversion**, **input currency** and **output currency**. **The output** is one number – the converted value of the above currency rates, rounded **2 digits** after the decimal point.  
+**The input** is the **sum for conversion**, **input currency**, and **output currency**. **The output** is one number – the converted value of the above currency rates rounded **2 digits** after the decimal point.  
 
 #### Sample Input and Output
 
@@ -724,7 +724,7 @@ Write a program that enters **a birth date** in the format **`dd-MM-yyyy`** and 
 
 #### Hints and Guidelines
 
-* Look for information about the data type **``datetime``** in Python and in particular look at the methods **``strptime(str, format)``**, **``timedelta(days=n)``**. With their help you can solve the problem without the need to calculate days, months and leap years.
+* Look for information about the data type **``datetime``** in Python and in particular look at the methods **``strptime(str, format)``**, **``timedelta(days=n)``**. With their help, you can solve the problem without the need to calculate days, months, and leap years.
 * **Don't print** anything additional on the console except for the wanted date!
 
 #### Testing in The Judge System
@@ -734,7 +734,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047
 
 ## Graphical Applications with Numerical Expressions
 
-To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **desktop application** with graphical user interface. We will use calculations with floating-point numbers in it.
+To exercise working with variables and calculations with operators and numerical expressions, we will make something interesting: we will develop a **desktop application** with a graphical user interface. We will use calculations with floating-point numbers in them.
 
 ### Graphical Application: Converter from BGN to EUR
 
@@ -752,16 +752,16 @@ First, we create a Graphical **Application**, which represents a rectangle **Fra
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-03.png)
 
-Now we can add the components of our application to the so called **function** which we will call with the function **__init__**, or the so called **constructor**:
+Now we can add the components of our application to the so-called **function** which we will call with the function **__init__**, or the so-called **constructor**:
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-04.png)
 
 We order the following UI components:
 
-* **Label** - will serve for static display of text
+* **Label** - will serve for a static display of text
 * **Entry** - will input the value for conversion
 * **Button** - will convert the given value
-* One more **Label** which will show the result of the conversion.
+* One more **Label** will show the result of the conversion.
 
 Our components are found in the function **`create_widgets()`**. We add text for visualization on the first **Label**, named **`label`**. **`numberEntry`** is **Entry** where the conversion value will be input. **`convertButton`** will **catch** an event and execute **command** (in our task it will call the function **`convert()`** which we will write shortly). **`output`** is our **Label** for displaying a result after we have input a value and we have clicked a button:
 
@@ -784,7 +784,7 @@ def convert(self):
         bg="green", fg="white")
 ```
 
-On the last line we input the result of our **Label `output`** and we set the color of the background (**`bg`**) and the color of the text (**`fg`**).
+On the last line, we input the result of our **Label `output`** and we set the color of the background (**`bg`**) and the color of the text (**`fg`**).
 
 We run the application with [Ctrl + Shift + F10] or with right-click + [Run], and we test if it works correctly.
 
@@ -814,12 +814,12 @@ This way we catch the error in a **try block** and when we input something diffe
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-08.png)
 
-Finally we **run the application** with [**Ctrl + Shift + F10**] or with right-click + [**Run**] and we test if it works correctly.
+Finally, we **run the application** with [**Ctrl + Shift + F10**] or with right-click + [**Run**] and we test if it works correctly.
 
 
 ### Graphical Application: \*\*\* Catch The Button!
 
-Create a fun graphical application **“catch the button”**. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs form the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
+Create a fun graphical application **“catch the button”**. Upon moving the mouse cursor onto the button, it moves to a random position. This way it creates the impression that **"the button runs from the mouse and it is hard to catch"**. When the button gets “caught”, a congratulations message is shown.
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-01.png)
 
@@ -831,11 +831,11 @@ We will have the following components:
 - **Button** - the button which we have to **catch**.
 - **Label** - the congratulations message.
 
-We create a button containing **text "Catch me!"** and **command - the function `on_click()`**, which we will define later. We visualize the components by using the method **`pack()`**. Let both components be **on the top (top)**:
+We create a button containing the **text "Catch me!"** and **command - the function `on_click()`**, which we will define later. We visualize the components by using the method **`pack()`**. Let both components be **on the top (top)**:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-03.png)
 
-In our exercise we will use the so called **binding** operation. This represents **catching** of a change and executing a specified function. Using this code we instruct our program to execute the function **`on_enter()`** when the mouse cursor is over the button and to execute the function **`on_leave()`** when the mouse cursor leaves the button:
+In our examples, we will use the so-called **binding** operation. This represents **catching** of a change and executing a specified function. Using this code we instruct our program to execute the function **`on_enter()`** when the mouse cursor is over the button and to execute the function **`on_leave()`** when the mouse cursor leaves the button:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-04.png)
 
@@ -844,12 +844,12 @@ To move the button to a random position we use **`random`**:
 ![](/assets/chapter-2-1-images/14.Catch-the-button-05.png)
 
 Let's implement the three functions which represent the program logic in our application:
-  * **`on_enter(self, event)`** - we select random **`x`** and **`y`** coordinates which will change every time we move our cursor over the button; we also change the location of the button - in our example it will be **static to the right**, but you can create your own logic and change the direction of the button together with the random numbers selected for coordiantes.
+  * **`on_enter(self, event)`** - we select random **`x`** and **`y`** coordinates which will change every time we move our cursor over the button; we also change the location of the button - in our example it will be **static to the right**, but you can create your logic and change the direction of the button together with the random numbers selected for coordinates.
   * **`on_leave(self, event)`** - when the cursor of the mouse is not over the button, our congratulation should not appear; we configure our **label** to **not have text**.
   * **`on_click()`** - when we click the button, our **label** will now display text - **You win!**.
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-06.png)
 
-It is possible that not everything will run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and to **look for solutions** to the emerging problems.
+Not everything may run smoothly from the first try. These exercises above go **beyond the material learned** and their purpose is to strengthen your interest and make you search the web and **look for solutions** to the emerging problems.
 
 If you are having problems with the tasks above, feel free to ask questions in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
