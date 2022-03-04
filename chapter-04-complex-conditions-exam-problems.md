@@ -1,6 +1,6 @@
 # Chapter 4.2. More Complex Conditions – Exam Problems
 
-The previous chapter introduced you to **nested conditions** in **Python**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested inside eachother. We also explained the more complex **`if-elif-else`** conditional statement that allows selecting from a number of options. Now we are going to solve some practical exercises and make sure we have an in-depth understanding of the material, by discussing a set of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
+The previous chapter introduced you to **nested conditions** in **Python**. Via nested conditions, the program logic in a particular application can be represented using **`if` conditional statements** that are nested inside each other. We also explained the more complex **`if-elif-else`** conditional statement that allows selecting from a number of options. Now we are going to solve some practical exercises and make sure we have an in-depth understanding of the material, by discussing a set of more complex problems that had been given to students on exams. Before moving to the problems, let's first recall what nested conditions are:
 
 ## Nested Conditions
 
@@ -100,7 +100,7 @@ Examining the expected output, we can create variables that contain the differen
 
 #### Calculations
 
-After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for an easier and more accurate comparison:
+After reading the input data, we can now start writing the logic for calculating the result. Let's first calculate the **start time** of the exam **in minutes** for easier and more accurate comparison:
 
 ![](/assets/chapter-4-2-images/01.On-time-for-the-exam-03.png)
 
