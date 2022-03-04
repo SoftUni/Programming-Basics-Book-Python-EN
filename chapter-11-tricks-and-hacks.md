@@ -123,7 +123,7 @@ Here are some examples for **badly named variables**, even though the names are 
 * **`Start_Index`** (contaions capital letters).
 * **`lastNegativeNumber_Index`** (missing '\_' before each word).
 
-At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gained you will see the need for conventions for writing quality code in order to be able to work easier and faster in a team. You will understand working with code, which is written without complying with any rules for code quality, is annoying.
+At a first look all these rules can seem meaningless and unnecessary, but with time passed and experience gained you will see the need for conventions for writing quality code to be able to work easier and faster in a team. You will understand working with code, which is written without complying with any rules for code quality, is annoying.
 
 ## Shortcuts in PyCharm
 
@@ -152,7 +152,7 @@ In **PyCharm** there are the so-called **code snippets** (code snippets), which 
 
 ### Creating Your Own Code Snippet
 
-In this section we are going to show you how to **make your own code snippet**. We will see **how to make live template** for **two nested loops**. In order to begin we must create a new empty project and go to [**File**] -> [**Settings**], as shown on the picture:
+In this section we are going to show you how to **make your own code snippet**. We will see **how to make live template** for **two nested loops**. To begin we must create a new empty project and go to [**File**] -> [**Settings**], as shown on the picture:
 
 ![](/assets/chapter-11-images/01.Code-snippet-02.png) 
 
@@ -164,7 +164,7 @@ We choose a snippet, for example **`iter`**, we explore it:
 
 ![](/assets/chapter-11-images/01.Code-snippet-04.png) 
 
-We see many things we haven't seen before yet, but don't worry, we will become acquainted with them later. For now we want to create our own snippet. In order to do so we choose the button Add (the green **+** on the right). From the list we choose [**1. Live Template**]. In the bottom part of the window, on the place of **Abbreviation**, we should write a short name, which will be used to call the snippet (for example **`ff`**, for **`for, for`**), for **Description** we give a usefull description and for **Template Text** we input the following:
+We see many things we haven't seen before yet, but don't worry, we will become acquainted with them later. For now we want to create our own snippet. To do so we choose the button Add (the green **+** on the right). From the list we choose [**1. Live Template**]. In the bottom part of the window, on the place of **Abbreviation**, we should write a short name, which will be used to call the snippet (for example **`ff`**, for **`for, for`**), for **Description** we give a usefull description and for **Template Text** we input the following:
 
 ```
 for $I$ in $LIST1$:
@@ -193,7 +193,7 @@ Debugging plays an important role in the process of creating software, which is 
 
 **PyCharm** gives us **a built-in debugger**, thanks to which we can place **breakpoints**, at places we have chosen. When it reaches a **breakpoint**, the program **stops running** and allows **step-by-step running** of the remaining lines. Debugging allows us to **get in the details of the program** and see where exactly the errors occur and what is the reason for this.
 
-In order to demonstrate how to use the debugger, we will use the following program:
+To demonstrate how to use the debugger, we will use the following program:
 
 ```python
 for i in range(1, 100):
@@ -204,11 +204,11 @@ We will place a **breakpoint** on the function **`print(…)`**. For this, we wi
 
 ![](/assets/chapter-11-images/02.Debugger-01.png) 
 
-In order to start **the program in debug mode**, we choose [**Run**] -> [**Debug...**] or press [**Alt + Shift + F9**]:
+To start **the program in debug mode**, we choose [**Run**] -> [**Debug...**] or press [**Alt + Shift + F9**]:
 
 ![](/assets/chapter-11-images/02.Debugger-02.png) 
 
-After starting the program, we can see that it **stops executing** at line 2, where we placed our breakpoint. The code in the current line **is colored in yellow** and we can **run it step by step**. In order to go to **the next line** e use the key [**F8**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
+After starting the program, we can see that it **stops executing** at line 2, where we placed our breakpoint. The code in the current line **is colored in yellow** and we can **run it step by step**. To go to **the next line** e use the key [**F8**]. **We can see that the code on the current line hasn't been executed yet**. **It will execute when we go ahead to the next line**:
 
 ![Debugger](/assets/chapter-11-images/02.Debugger-03.png) 
 

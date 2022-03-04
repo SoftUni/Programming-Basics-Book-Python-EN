@@ -114,7 +114,7 @@ After we’ve declared the needed variables, we can move on to reading the numbe
 
 #### Processing The Output Data
   
-In order to read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to its respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers (**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
+To read and assign each number to its respective group, we’ll use a **`for`-loop** from **0** to **`n`** (the count of the numbers). Each iteration of the cycle will read and assign **only one number** (**`current_number`**) to its respective group. So that we can decide if a selected number belongs to a group, **we check its range**. If it passes, we increase the count of this group’s numbers (**`cnt_p1`**, **`cnt_p2`**, etc.) by 1:
 
 ![](/assets/chapter-5-2-images/01.Histogram-03.png)
 
@@ -122,7 +122,7 @@ After we’ve found out how many numbers there are in each group, we can move on
 
 <p align="center"><strong>(Group percentage) = (Group number count) * 100 / (Count of all numbers)</strong></p>
 
-It doesn’t matter whether we’ll divide by **100** (an **`integer`** type), or **100.0**(a **`float`** type), since the **division** will take place and the result will be saved to the variable. Example: **5 / 2 = 2.5**, and **5 / 2.0 = 2.5**. In **`Python 3`**, there’s no difference whether we’ll be dividing by an integer or a real number - if the result is a real number itself, then it will be saved in the variable as a floating-point number. But in **`Python 2.7`** we have to convert the numbers to a **`float`** type, in order to get the correct result – a real number. Having that in mind, the first variable’s formula will look like this:
+It doesn’t matter whether we’ll divide by **100** (an **`integer`** type), or **100.0**(a **`float`** type), since the **division** will take place and the result will be saved to the variable. Example: **5 / 2 = 2.5**, and **5 / 2.0 = 2.5**. In **`Python 3`**, there’s no difference whether we’ll be dividing by an integer or a real number - if the result is a real number itself, then it will be saved in the variable as a floating-point number. But in **`Python 2.7`** we have to convert the numbers to a **`float`** type, to get the correct result – a real number. Having that in mind, the first variable’s formula will look like this:
 
 ![](/assets/chapter-5-2-images/01.Histogram-04.png)
 
@@ -210,7 +210,7 @@ As we already know, like in most scripting languages, in Python as well, we don'
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-01.png)
 
-In order to solve the problem, we'll need a couple of helper variables – for **the toys' count** (**`number_of_toys`**) for **the saved money** (**`saved_money`**) and for **the money received on each birthday** (**`money_for_birthday`**). We initially assign 10 to **`money_for_birthday`**, because in the description it's said that the first sum received by Lily is 10 USD:
+To solve the problem, we'll need a couple of helper variables – for **the toys' count** (**`number_of_toys`**) for **the saved money** (**`saved_money`**) and for **the money received on each birthday** (**`money_for_birthday`**). We initially assign 10 to **`money_for_birthday`**, because in the description it's said that the first sum received by Lily is 10 USD:
 
 ![](/assets/chapter-5-2-images/02.Smart-lilly-02.png)
  
@@ -481,7 +481,7 @@ For this and the next problem, you'll have to write the program's code on your o
 
 The program that solves the current problem is similar to the one from the problem **Histogram**, which we viewed previously. That's why we can begin by declaring our needed variables. For example, a couple of variable names can be: **`n`** – count of numbers (which we'll read from the console) and **`divisible_by_2`**, **`divisible_by_3`**, **`divisible_by_4`** – additional variables, storing the count of numbers in their respective groups.
 
-In order to read and distribute each number in its respective group, we'll have to start our**`for` loop** from **`0`** and end at **`n`** (the numbers' count). Each of the loop's iterations has to read and distribute **a single number**. The difference is that **a single number can be distributed to more than one group simultaneously**, so we have to do **three different `if` checks for each number** – whether it's divided by 2, 3 and 4, and to increase the value of the variable that stores the count of numbers in the respective group.
+To read and distribute each number in its respective group, we'll have to start our**`for` loop** from **`0`** and end at **`n`** (the numbers' count). Each of the loop's iterations has to read and distribute **a single number**. The difference is that **a single number can be distributed to more than one group simultaneously**, so we have to do **three different `if` checks for each number** – whether it's divided by 2, 3 and 4, and to increase the value of the variable that stores the count of numbers in the respective group.
 
 **Warning**: an **`if-elif`** construction in this case won't be of use to us, since when it detects a match, the loop gets broken before checking the following conditions.
 
@@ -569,7 +569,7 @@ First **we'll read the weight of each load** and we'll **sum** how many tons are
 
 We declare our variables, for example: **`count_of_loads`** – the count of cargos to be transported (we read them from the console), **`sum_of_tons`** – the sum of the overall load's weight, **`microbus_tons`**, **`truck_tons`**, **`train_tons`** – variables, holding the sum of the weights transported respectively by a van, truck and train.
 
-We'll need a **`for` loop** from **`0`** to **`count_of_loads - 1`**, in order to go through all loads. For each load **we read its weight** (in tons) from the console and assign it to our variable, for example **`tons`**. To the sum of all loads (**`sum_of_tons`**) we add our current load's weight (**`tons`**). After we've read our current load's weight, **we have to decide which transport vehicle will be used for it** (van, truck or train). For this we'll need some **`if-elif`** checks:
+We'll need a **`for` loop** from **`0`** to **`count_of_loads - 1`**, to go through all loads. For each load **we read its weight** (in tons) from the console and assign it to our variable, for example **`tons`**. To the sum of all loads (**`sum_of_tons`**) we add our current load's weight (**`tons`**). After we've read our current load's weight, **we have to decide which transport vehicle will be used for it** (van, truck or train). For this we'll need some **`if-elif`** checks:
 
  * If the value of the variable **`tons`** is **lower than 3**, we increase the value of the variable **`microbus_tons`** by the value of **`tons`**:
  

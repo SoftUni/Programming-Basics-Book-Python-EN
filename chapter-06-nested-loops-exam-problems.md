@@ -79,7 +79,7 @@ To print the **roof** part, on the console we will use the **`format(…)`** met
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-05.png)
 
-In order to draw a penultimate row, which is part of the base, we need to print a beginning **`|`**, middle part **`(white space)_(white space)`** and an end **`|`**. To do this, we can use already declared variables **`col_size`** and **`mid_size`** because as we see from the examples they are equal to the number of **`_`** in the roof:
+To draw a penultimate row, which is part of the base, we need to print a beginning **`|`**, middle part **`(white space)_(white space)`** and an end **`|`**. To do this, we can use already declared variables **`col_size`** and **`mid_size`** because as we see from the examples they are equal to the number of **`_`** in the roof:
 
 ![](/assets/chapter-6-2-images/01.Draw-fort-06.png)
 
@@ -122,7 +122,7 @@ Similar to the previous task, we can see from the condition, that the **input da
 
 ![](/assets/chapter-6-2-images/02.Butterfly-01.png)
 
-We can divide the figure into 3 parts - **upper wing**, **body** and **lower wing**. In order to draw the upper wing of the butterfly, we have to divide it into three parts - a beginning with **`*`**, a middle part with **`\ /`** and an end with **`*`**. After looking at the examples, we can say that the upper wing of the butterfly is with a size of **`n - 2`**:
+We can divide the figure into 3 parts - **upper wing**, **body** and **lower wing**. To draw the upper wing of the butterfly, we have to divide it into three parts - a beginning with **`*`**, a middle part with **`\ /`** and an end with **`*`**. After looking at the examples, we can say that the upper wing of the butterfly is with a size of **`n - 2`**:
 
 ![](/assets/chapter-6-2-images/02.Butterfly-02.png)
 
@@ -134,7 +134,7 @@ We can see in the examples, that on an **even** row we have a beginning **`*`**,
 
 ![](/assets/chapter-6-2-images/02.Butterfly-04.png)
 
-In order to draw the **the butterfly body**, we have to print exactly **one** row on the console. The structure of the body has a beginning **`(white space)`**, middle part **`@`** and an end **`(white space)`**. From the examples we can see, that the number of the white spaces is equal to **`n-1`**:
+To draw the **the butterfly body**, we have to print exactly **one** row on the console. The structure of the body has a beginning **`(white space)`**, middle part **`@`** and an end **`(white space)`**. From the examples we can see, that the number of the white spaces is equal to **`n-1`**:
 
 ![](/assets/chapter-6-2-images/02.Butterfly-05.png)
 
@@ -181,7 +181,7 @@ Once we have declared and initialized the two variables, we can print the first 
 
 ![](/assets/chapter-6-2-images/03.Stop-03.png)
 
-In order to draw the rows in which the sign is getting **"wider"**, we have to create a **loop**, that iterates **`n`** number of times. The row structure consists of a beginning **`.`**, **`//`** + middle part **`_`** + **`\\`** and an end **`.`**. In order to reuse the already created **variables**, we have to decrease **`dots`** by 1 and **`underscores`** by 2, because we've already **printed** the first row, and the dots and underscores in the top part of the figure are **decreasing** on each row:
+To draw the rows in which the sign is getting **"wider"**, we have to create a **loop**, that iterates **`n`** number of times. The row structure consists of a beginning **`.`**, **`//`** + middle part **`_`** + **`\\`** and an end **`.`**. To reuse the already created **variables**, we have to decrease **`dots`** by 1 and **`underscores`** by 2, because we've already **printed** the first row, and the dots and underscores in the top part of the figure are **decreasing** on each row:
 
 ![](/assets/chapter-6-2-images/03.Stop-04.png)
 
@@ -238,7 +238,7 @@ The count of **the inner dots** in the body of the arrow is equal to **`(n - 2)`
 
 ![](/assets/chapter-6-2-images/04.Arrow-03.png)
 
-We can see from the examples the structure of the first row. We can use the declared and initialized by us **variables** **`outer_dots`** and **`n`**, in order to print **the first row**:
+We can see from the examples the structure of the first row. We can use the declared and initialized by us **variables** **`outer_dots`** and **`n`**, to print **the first row**:
 
 ![](/assets/chapter-6-2-images/04.Arrow-04.png)
 
@@ -250,11 +250,11 @@ To draw **the body of the arrow**, we have to create **a loop**, which iterates 
 
 ![](/assets/chapter-6-2-images/04.Arrow-06.png)
 
-In order to draw **the lower part of the arrow**, we have to assign new values of the two **variables** **`outer_dots`** and **`inner_dots`**.
+To draw **the lower part of the arrow**, we have to assign new values of the two **variables** **`outer_dots`** and **`inner_dots`**.
 
 ![](/assets/chapter-6-2-images/04.Arrow-07.png)
 
-On each loop iteration **`outer_dots`** increases by 1, and **`inner_dots`** decreases by 2. We can notice, that on the penultimate row the **`inner_dots`** value will be 1 and on each subsequent loop iteration will be a **negative number**. Since the operator **`*`** cannot concatenate symbol 0 or negative number of times in a string, it won't print nothing on the console. In order to avoid that we can print the last row of the figure separately. The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**, that will print all the rows, except the last one, have to iterate **`n - 2`** number of times:
+On each loop iteration **`outer_dots`** increases by 1, and **`inner_dots`** decreases by 2. We can notice, that on the penultimate row the **`inner_dots`** value will be 1 and on each subsequent loop iteration will be a **negative number**. Since the operator **`*`** cannot concatenate symbol 0 or negative number of times in a string, it won't print nothing on the console. To avoid that we can print the last row of the figure separately. The height of the lower part of the arrow is **`n - 1`**, therefore **the loop**, that will print all the rows, except the last one, have to iterate **`n - 2`** number of times:
 
 ![](/assets/chapter-6-2-images/04.Arrow-08.png)
 
@@ -299,7 +299,7 @@ Once we have declared and initialized the **variables**, we can draw the figure,
 
 ![](/assets/chapter-6-2-images/05.Axe-02.png)
 
-Now we have to draw the **the handle of the axe**. In order to be able to use the newly created **variables**, when drawing the handle of the axe, we have to decrease **the middle dashes** by 1 and to increase **these on the right and left** by 1.
+Now we have to draw the **the handle of the axe**. To be able to use the newly created **variables**, when drawing the handle of the axe, we have to decrease **the middle dashes** by 1 and to increase **these on the right and left** by 1.
 
 ![](/assets/chapter-6-2-images/05.Axe-03.png)
 

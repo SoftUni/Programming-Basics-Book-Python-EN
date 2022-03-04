@@ -28,7 +28,7 @@ In **Python**, the data type is defined by the value that is assigned and is not
 
 ## Printing Results on The Screen
 
-In order to print text, numbers or other result on the screen, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
+To print text, numbers or other result on the screen, we need to call the built-in function **`print()`**. It allows us to print the value of a variable as well as to directly print a string or a number:
 
 ```python
 print(9)  # prints a number
@@ -161,7 +161,7 @@ print('Hello, ', end='')
 print(name, end='!')
 ```
 
-By default, the built-in function **`print(…)`** prints the result and continues to the next line. This is because **`print(…)`** uses the parameter **`end`**, which by default has a value **`\n`** (new line). In order to stay on the same line, we can change the value of **`end=''`**.
+By default, the built-in function **`print(…)`** prints the result and continues to the next line. This is because **`print(…)`** uses the parameter **`end`**, which by default has a value **`\n`** (new line). To stay on the same line, we can change the value of **`end=''`**.
 
 Here is the result if we call the function with the name "John":
 
@@ -321,7 +321,7 @@ sum = 'The sum is: ' + str(a) + str(b)
 print(sum)  # The sum is 1.52.5
 ```
 
-Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, in order to change the order of execution of the operations:
+Did you notice something strange? Maybe you expected the numbers **`a`** and **`b`** to be summed? Actually, the concatenation works from left to right and the result above is absolutely correct. If we want to sum the numbers, we have to use **brackets**, to change the order of execution of the operations:
 
 ```python
 a = 1.5
@@ -419,7 +419,7 @@ ac
 
 ### Formatting Using .format(…)
 
-We already looked at how we can format text and numbers using `.format(…)` and numbered templates `{0}`, `{1}`, `{2}` etc. Actually, when enumeration is not necessary, we can use just `{}`, to create a **placeholder**. Here is an example of how we can use formatting with `text.format(…)` in order to print the result from the last example:
+We already looked at how we can format text and numbers using `.format(…)` and numbered templates `{0}`, `{1}`, `{2}` etc. Actually, when enumeration is not necessary, we can use just `{}`, to create a **placeholder**. Here is an example of how we can use formatting with `text.format(…)` to print the result from the last example:
 ```python
 width = 5
 height = 7
@@ -606,7 +606,7 @@ Let's strengthen the knowledge gained throughout this chapter with a few more ex
 
 ### Creating a New Project in PyCharm
 
-We have to create a new project in PyCharm (from [**Create New Project**] or [**File**] -> [**New Project**]) in order to better organize our problems for exercise. The idea of this **project** is for it to contain **one Python file for each problem** of the exercises:
+We have to create a new project in PyCharm (from [**Create New Project**] or [**File**] -> [**New Project**]) to better organize our problems for exercise. The idea of this **project** is for it to contain **one Python file for each problem** of the exercises:
 
 * We start PyCharm.
 * We create a new project: [**Create New Project**] (or [**File**] -> [**New Project**]).
@@ -744,7 +744,7 @@ We need to create **a graphical application** (GUI application), that calculates
 
 **Note:** This exercise goes beyond the material learned in this book and aims not to teach you how to program GUI applications, but to strengthen your interest in software development. Let's get to work.
 
-We add to the existing PyCharm project one more Python file. We name it "BGN_to_EUR_converter". In order to create a Graphical Application using Python we will use the standard library [**tkinter**](https://docs.python.org/3/library/tkinter.html#module-tkinter).
+We add to the existing PyCharm project one more Python file. We name it "BGN_to_EUR_converter". To create a Graphical Application using Python we will use the standard library [**tkinter**](https://docs.python.org/3/library/tkinter.html#module-tkinter).
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-02.png)
 
@@ -792,7 +792,7 @@ We will have a problem with this code. What will happen if we input something di
 
 ![](/assets/chapter-2-1-images/13.Currency-converter-07.png)
 
-We can **catch** this error and prompt a user-friendly message in our application. In order to do this, let's change the code of our program logic:
+We can **catch** this error and prompt a user-friendly message in our application. To do this, let's change the code of our program logic:
 
 ```python
 def convert(self):
@@ -839,7 +839,7 @@ In our exercise we will use the so called **binding** operation. This represents
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-04.png)
 
-In order to move the button to a random position we use **`random`**:
+To move the button to a random position we use **`random`**:
 
 ![](/assets/chapter-2-1-images/14.Catch-the-button-05.png)
 

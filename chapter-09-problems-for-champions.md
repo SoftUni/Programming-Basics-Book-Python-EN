@@ -179,7 +179,7 @@ What remains is to do the calculation that will give us the magical weight of a 
 
 #### Printing The Output
 
-Once we have the weight calculated of a given date, we need **to check and see if it matches the magical weight we want**, in order to know if it should be printed or not.  Checking can be done using a standard **`if`** operator, taking care to print the date in the correct format. Fortunately, we already have each one of the digits that we need to print from **`d1`** to **`d8`**. Here we have to be careful with the data types. Since the concatenation of strings and the summation are done by the same operator, we have to convert numbers to strings:
+Once we have the weight calculated of a given date, we need **to check and see if it matches the magical weight we want**, to know if it should be printed or not.  Checking can be done using a standard **`if`** operator, taking care to print the date in the correct format. Fortunately, we already have each one of the digits that we need to print from **`d1`** to **`d8`**. Here we have to be careful with the data types. Since the concatenation of strings and the summation are done by the same operator, we have to convert numbers to strings:
 
 ![](/assets/chapter-9-1-images/02.Magic-dates-07.png)
 
@@ -266,7 +266,7 @@ We have several main points in the problem - **generating all combinations** wit
 
 #### Generating All Combinations
 
-In order to generate **all combinations with length of 1** using 5 symbols, we would use a **loop from 0..4**, as we want each number of the loop to match one character. In order to generate **all combinations with length of 2** using 5 characters (i.e "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, as we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have **5 nested loops** with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`** and **`i5`**:
+To generate **all combinations with length of 1** using 5 symbols, we would use a **loop from 0..4**, as we want each number of the loop to match one character. To generate **all combinations with length of 2** using 5 characters (i.e "aa", "ab", "ac", …, "ba", …), we would create **two nested loops each running through the digits from 0 to 4**, as we will once again make sure that each digit matches a specific character. We will repeat this step 5 times, so we will finally have **5 nested loops** with indexes **`i1`**, **`i2`**, **`i3`**, **`i4`** and **`i5`**:
 
 ![](/assets/chapter-9-1-images/03.Five-special-letters-02.png)
 
@@ -320,7 +320,7 @@ The words are **separated with a space** and we'll accumulate them in an interme
 
 #### Final Touches
 
-The condition is met **unless we do not have a single word in the entered range**. In order to find out if we have found a word, we can simply check whether the string **`result`** has its initial value (i.e., an empty string), if it does, we print **`"No"`**, otherwise we print the whole string without the last space (using the **`.strip(…)`** method):
+The condition is met **unless we do not have a single word in the entered range**. To find out if we have found a word, we can simply check whether the string **`result`** has its initial value (i.e., an empty string), if it does, we print **`"No"`**, otherwise we print the whole string without the last space (using the **`.strip(…)`** method):
 
 ![](/assets/chapter-9-1-images/03.Five-special-letters-10.png)
 

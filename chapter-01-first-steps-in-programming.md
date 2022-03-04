@@ -7,7 +7,7 @@ To program means to give instructions to the computer, for example *play a certa
 
 ## Computer Programs
 
-**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. In order to write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book we're going to cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
+**Computer programs** represent **series of commands** written in a particular **programming language**, like Python, C#, Java, JavaScript, Ruby, PHP, C, C++, Go etc. To write commands, we need to be familiar with the **syntax and semantics of the language** we'll be using, in our case – **Python**. In this book we're going to cover programming in general, as well as Python's particular syntax and semantics. We will examine each step of writing code, starting with the simplest and eventually reaching more complex programming constructs.
 
 ### Algorithms
 
@@ -21,7 +21,7 @@ To create programs, write program code (commands), execute it and other operatio
 
 Some programming languages don't use a compiler, but are **directly interpreted** by specialized software called an interpreter. **The interpreter** is a **program that executes programs**, written in some programming language. It executes the program's commands in sequence, and understands not only single commands and series of commands, but also other language constructs (checks, iterations, functions etc.). PHP, Python and JavaScript are languages that work with an interpreter and are executed without the need to be compiled. Due to lack of preliminary compilation, interpreted languages' errors are found during run time, after the program has already started working.
 
-Overall, compiled languages work slower than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code quicker and re-execute (in order to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
+Overall, compiled languages work slower than their interpreted counterparts. The difference in execution speed is sometimes insignificant, but in other cases massive. In interpreted programming languages we can change code quicker and re-execute (to remove a mistake, for example), while compiled languages are slower after a change in code has been introduced, due to the need for compilation.
 
 **The development environment** (Integrated Development Environment – **IDE**) combines traditional instruments for software development. In the development environment we write code, compile and execute programs. Development environments incorporate a text editor for writing code, a **programming language**, **a compiler or interpreter**, an **execution environment** where our program is executed, a **debugger** which traces our program and looks for errors, **instruments for design and user interface** as well as other instruments and add-ons.
 
@@ -52,7 +52,7 @@ Most of the software we use on a daily basis like music players, video players, 
 
 ## Python Interpreter: Installation and Use
 
-In order to program in Python, we first need to **install a Python interpreter**. It executes commands and runs programs, written in Python, and is essential if we want to use Python on our computer. 
+To program in Python, we first need to **install a Python interpreter**. It executes commands and runs programs, written in Python, and is essential if we want to use Python on our computer. 
 
 ### Installing The Python Interpreter
 
@@ -141,7 +141,7 @@ We looked at **three examples of computer programs**: single command, series of 
 Let's go through the necessary steps to **create and execute a computer program** which uses a text console (window for entering and printing text) to read and write its data. Such programs are called **console programs**. But first of all, we need to **install and prepare the development environment** where we will write and execute the Python programs from this book and the exercises that go along with it.
 
 ## Development Environment (IDE)
-As previously mentioned, we need a **development environment** (IDE) in order to program. The IDE is actually a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
+As previously mentioned, we need a **development environment** (IDE) to program. The IDE is actually a program editor, where we write program code and execute it, discover our mistakes, correct them and start the program again.
 -	For programming in Python we use the **PyCharm** environment, suitable Windows, Linux and MacOS operating systems.
 - If we are programming in Java we might use **IntelliJ IDEA**, **Eclipse** and **NetBeans**.
 - If we are programming in C# we might use **Visual Studio**.
@@ -240,7 +240,7 @@ The **'Process finished with exit code 0'** message is displayed at the end of t
 
 Testing the solutions to the problems in this book is completely automated via the **Judge System**'s website: [https://judge.softuni.org](https://judge.softuni.org). The solutions are judged immediately by the system. Each solution goes through a series of tests which are hidden; every test that passes grants the user certain points.
 
-The program we just wrote can be tested here: [https://judge.softuni.org/Contests/Practice/Index/1046#0](https://judge.softuni.org/Contests/Practice/Index/1046#0). In order to do that, simply paste the entire source code in the black field and choose **Python code** as is shown below:
+The program we just wrote can be tested here: [https://judge.softuni.org/Contests/Practice/Index/1046#0](https://judge.softuni.org/Contests/Practice/Index/1046#0). To do that, simply paste the entire source code in the black field and choose **Python code** as is shown below:
 
 ![](/assets/chapter-1-images/01.Hello-python-05.png)
 
@@ -319,7 +319,7 @@ Create a Python file and name it **`nums_1_to_20.py`**:
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-01.png)
 
-Inside the file write 20 **`print()`** commands, each on a separate line, in order to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a more clever way. Don't worry, there is, but we will mention it later on.
+Inside the file write 20 **`print()`** commands, each on a separate line, to print the numbers from 1 to 20 one after another. Some of you may be wondering if there is a more clever way. Don't worry, there is, but we will mention it later on.
 
 ![](/assets/chapter-1-images/03.Numbers-1-to-20-02.png)
 
@@ -414,13 +414,13 @@ Write a **Python console program which reads an integer positive number N** from
 
 ### Hints and Guidelines
 
-Create a **new Python file**. In order to read the number N (2 ≤ N ≤100), we use the following code:
+Create a **new Python file**. To read the number N (2 ≤ N ≤100), we use the following code:
 
 ![](/assets/chapter-1-images/06.Square-of-stars-01.png)
 
 Finish the program so that it prints a square made up of stars. You may need to use **`for`**-loops.
 
-**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, in order to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
+**Caution**: this task is more difficult than the rest and is presented to you at this point purposefully. It's marked with a star, to provoke you **to look for information on the Internet**. This is one of the most important skills you have to develop while you're learning programming. This is what you'll be doing every day if you work as a developer, so don't be scared, try it out. If you're having difficulties, you can also ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
 
 ### Testing in The Judge System
 
@@ -436,7 +436,7 @@ Graphical (GUI) applications have a **visual user interface**, directly on your 
 
 ## Problem: Graphical and Web Applications
 
-We will now build a **basic web application** and after that a simple **graphical application**, in order to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.
+We will now build a **basic web application** and after that a simple **graphical application**, to have a look at what we will be able to create once we progress with programming and software development. We are not going to examine the techniques and constructions used in much detail. Rather, we are just going to have a peek at the arrangement and functionality of what we've created. After we progress with our knowledge, we will be able to develop bigger and more complex software applications and systems. We hope that the examples given below will boost your interest, rather than make you give up.
 
 ## Graphical Application: 'Numbers Summator'
 
@@ -576,7 +576,7 @@ If we try entering **invalid data**, we'll receive an error:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-12.png)
 
-In order to handle the error, we need to write the following code:
+To handle the error, we need to write the following code:
 
 ![](/assets/chapter-1-images/08.Numbers-sum-web-13.png)
 

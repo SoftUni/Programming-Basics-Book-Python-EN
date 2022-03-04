@@ -235,7 +235,7 @@ Now, that we've become acquainted with the loops, it's time **to consolidate our
 
 ### Creating New Project in PyCharm
 
-Create new project in PyCharm (from [**File**] -> [**New Project**]), in order to organise better the exercise tasks. The purpose of this **project** is to contain **one Python file for each task** from the exercises:
+Create new project in PyCharm (from [**File**] -> [**New Project**]), to organise better the exercise tasks. The purpose of this **project** is to contain **one Python file for each task** from the exercises:
   
 ![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.png)
 
@@ -303,7 +303,7 @@ There are **2 \* n numbers**. The first and the second number form a **pair**, t
 
 #### Hints and Guidelines
 
-We read the input numbers **in pairs**. For each pair we calculate its **the sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. In order to do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
+We read the input numbers **in pairs**. For each pair we calculate its **the sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. To do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
 
 #### Testing in The Judge System
 
@@ -312,7 +312,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ## Lab: Graphic and Web Applications
 
-In the current chapter we learned about **loops** as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them. In order to do that, we will draw some figures that will consist of a large number made up of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
+In the current chapter we learned about **loops** as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them. To do that, we will draw some figures that will consist of a large number made up of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
 
 ### Problem: Turtle Graphics GUI Application
 
@@ -330,7 +330,7 @@ We will start by creating a new **project in PyCharm**:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. It defines class **`Turtle`**, which represents **drawing turtle**. In order to use it, we add the following code in the beginning of the Python file:
+In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. It defines class **`Turtle`**, which represents **drawing turtle**. To use it, we add the following code in the beginning of the Python file:
   
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
