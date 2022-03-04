@@ -342,7 +342,7 @@ The above code moves and rotates the turtle, which is located in the center of t
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-05.png)
 
-Now you can modify the turtle code and make it more complex, in order for the turtle to make a more complex figure: 
+Now you can modify the turtle code and make it more complex, for the turtle to make a more complex figure: 
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-06.png)
 

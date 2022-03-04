@@ -684,7 +684,7 @@ We leave it to more avid readers to implement more complex behaviors, for exampl
 
 ![](/assets/chapter-7-1-images/15.Fruits-01.png)
  
-For now, nothing is happening at **"End of Game"**.If the player hits dynamite, the application notes that the game is over **(`game_over = True`)**, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:
+For now, nothing is happening at **"End of Game"**.If the player hits dynamite, the application notes that the game is over **(`game_over = True`)**, but this fact is not visualized in any way. For the game to end, we need to add a few checks to the view:
 
 ![](/assets/chapter-7-1-images/15.Fruits-15.png)
 

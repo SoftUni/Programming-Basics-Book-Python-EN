@@ -37,7 +37,7 @@ if some_condition:
     print("End of outer if statement")
 ```
 
-The formatting of the code in **Python** is extremely important in order for it to work. Code that is not formatted throws an **error**.
+The formatting of the code in **Python** is extremely important for it to work. Code that is not formatted throws an **error**.
 
 This is an example of **badly formatted code** according to the accepted conventions for writing code in Python:
    
