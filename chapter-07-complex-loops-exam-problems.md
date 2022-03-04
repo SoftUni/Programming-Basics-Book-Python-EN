@@ -15,7 +15,7 @@ We **already learned** how to execute **a block of commands more than once** usi
 Let's start work on solving the following practical exam problems.
 
 
-## Problem: Dumb Passwords Generator
+## Problem: Stupid Password Generator
 
 Write a program that enters two integers **n** and **l** and generates in alphabetical order all possible **"dumb” passwords"**, that consist of the following **5 characters**:
 

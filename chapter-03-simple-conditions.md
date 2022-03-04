@@ -135,7 +135,7 @@ The problem can be solved with a single **`if-else`** structure and the operator
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
 
 
-### Problem: Finding The Greater Number
+### Problem: Greater Number
 
 Write a program that reads two integers and outputs the number of higher value between the two .
 
@@ -239,7 +239,7 @@ Please note that for this problem the Judge system is set up to ignore any non-n
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#5](https://judge.softuni.org/Contests/Practice/Index/1049#5).
 
 
-### Problem: Summing Up Seconds
+### Problem: Sum Seconds
 
 Three athletes finish with some **number of seconds** (between **1** and **50**). Write a program that reads the times of the contestants and calculates their **combined time** in "minutes:seconds" format. Seconds are to be printed with a **leading zero** (2 -> "02", 7 -> "07", 35 -> "35").
 
@@ -342,149 +342,6 @@ Select **Pure Python** from the field on the left and set the project directory,
 ![](/assets/chapter-3-1-images/00.PyCharm-02.png)
 
 Now we have an empty project (no files in it).
-
-### Problem: Excellent Grade
-
-The first exercise for this topic is to write a **console application**, which **reads input data - a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher.
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 6 | Excellent! |
-| 5 | (no output) |
-| 5.5 | Excellent! |
-| 5.49 | (no output) |
-
-#### Hints and Guidelines
-
-We create a new **python** file (**.py**) by right-clicking on the folder we created and selecting [**New**] -> [**Python File**]:
-
- ![](/assets/chapter-3-1-images/00.PyCharm-03.png)
-
-A dialog box will open, where we need to specify a name for our file. Since our task is to check if a grade is excellent, let’s name the file **excellent_result**:
-
- ![](/assets/chapter-3-1-images/00.PyCharm-04.png)
- 
-We already have a Project with a single file in it. Now we have to write the code to solve the problem. To this effect we write the following code:
-
- ![](/assets/chapter-3-1-images/01.ExcellentResult-01.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#0](https://judge.softuni.org/Contests/Practice/Index/1049#0).
-
- ![](/assets/chapter-3-1-images/01.ExcellentResult-02.png) 
-
- ![](/assets/chapter-3-1-images/01.ExcellentResult-03.png)
-
-
-### Problem: Excellent Grade or Not
-
-The next exercise for this topic is to write a **console program**, which **reads input data - a grade** (decimal number) and prints "**Excellent!**", if the grade is **5.50** or higher, or "**Not excellent.**" if it is not.
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 6 | Excellent! |
-| 5 | Not excellent. |
-| 5.5 | Excellent! |
-| 5.49 | Not excellent. |
-
-#### Hints and Guidelines
-
-Firstly, we create a **new Python file** in our project. After that, we  **write the code** the program. You may use the following example code as a hint:
-
- ![](/assets/chapter-3-1-images/02.Excellent-or-not-01.png)
-
-After that, we **run the program**, as usual with [**Shift + F10**], so we can test its functionality:
-
- ![](/assets/chapter-3-1-images/02.Excellent-or-not-02.png)
- ![](/assets/chapter-3-1-images/02.Excellent-or-not-03.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#1](https://judge.softuni.org/Contests/Practice/Index/1049#1).
-
-![](/assets/chapter-3-1-images/02.Excellent-or-not-04.png)
-
-
-### Problem: Even or Odd
-
-Write a program that checks whether an **integer** input data is either **even** or **odd** and prints the result on the console.
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 2 | even |
-| 3 | odd |
-| 25 | odd |
-| 1024 | even |
-
-#### Hints and Guidelines
-
-Again, firstly we must create a **new Python file**. Then the check if a number is either even or odd can be made with the operator **`%`**, which will return the **remainder from an integer divided by 2** as follows: **`is_even = number % 2 == 0`**.
-
-Now we have to **run** the program with [**Ctrl+F5**] and test it:  
-
-![](/assets/chapter-3-1-images/03.Even-or-odd-02.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#2](https://judge.softuni.org/Contests/Practice/Index/1049#2).
-
-
-### Problem: Find The Greater Number
-
-Write a program that reads input data from the console. As input data enter **two integers** each on a separate line and print the greater one on the console.
-
-#### Sample Input and Output
-
-| Input | Output |
-|-----|------|
-|5<br>3| 5 |
-|3<br>5| 5 |
-|10<br>10| 10 |
-|-5<br>5| 5 |
-
-#### Hints and Guidelines
-
-As usual, first, we need to create a **new Python file**. For the main logic, we need a single **`if-else`** construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself: 
-
-![](/assets/chapter-3-1-images/04.Greater-number-01.png)
-
-When we are done with the implementation of the solution, we **run** the program with [**Shift + F10**] and test it:
-
-![](/assets/chapter-3-1-images/04.Greater-number-02.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#3](https://judge.softuni.org/Contests/Practice/Index/1049#3).
-
-
-### Problem: Output a Digit's Word Equivalent
-
-Write a program that reads input data from the console - **integer in range** [**0 … 9**] and prints **its word equivalent** in English. If the number is outside the given range, the program should print "**number too big**".
-
-#### Sample Input and Output
-
-| Input | Output |
-| --- | ---- |
-| 5 | five |
-| 1 | one |
-| 9 | nine |
-| 10 | number too big |
-
-#### Hints and Guidelines
-
-We can use a sequence of **`if-elif`** statements to cover every one of the possible **11 cases**.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1049#4](https://judge.softuni.org/Contests/Practice/Index/1049#4).
-
 
 ### Problem: Password Guess
 

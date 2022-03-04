@@ -233,7 +233,7 @@ The task does not specify a special output format, therefore, we just have to ca
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1048#1](https://judge.softuni.org/Contests/Practice/Index/1048#1).
 
 
-## Problem: Repair Tiles
+## Problem: Change Tiles
 
 On the ground in front of an apartment building **tiles need to be placed**. The ground has a **square shape with a side of N meters**. The tiles are **"W" meters wide** and **"L" meters long**. There is one bench on the ground with a **width of "M" meters and a length of "O" meters**. There is no need to place tiles under it. Each tile is replaced for **0.2 minutes**.
 

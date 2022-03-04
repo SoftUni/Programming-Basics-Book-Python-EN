@@ -235,7 +235,7 @@ More about ternary operators: [https://book.pythontips.com/en/latest/ternary_ope
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#1](https://judge.softuni.org/Contests/Practice/Index/1054#1).
 
 
-## Problem: Returning to The Past
+## Problem: Back to The Past
 
 Ivancho is **18 years old** and receives an inheritance of **X USD** and **a time-travelling machine**. He decides **to travel back to 1800**, but he doesn't know **whether the money** is **be enough** to live without working. Write **a program that calculates** whether Ivancho **will have enough money**, so as to live without working **until a given year, including the year itself**. We accept that **each even year** (1800, 1802, etc.) he'll **spend 12 000 dollars**. For **each odd year** (1801, 1803, etc.) he'll spend **12 000 + 50 * [Ivancho's age in the given year]**.
 
@@ -404,7 +404,7 @@ At the end we only have to print the count of treated and untreated patients.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1054#3](https://judge.softuni.org/Contests/Practice/Index/1054#3).
 
 
-## Problem: Division Without Remainder
+## Problem: Division
 
 We're given **n integers** in range [**1 … 1000**]. A percentage of them, **percent p1, are divided by 2 without remainder**, **percent p2** are **divided by 3 without remainder**, **percent p3** are **divided by 4 without remainder**. Write a program that calculates and prints the percentages p1, p2 and p3.
 **Example:** we have **n = 10** integers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:

@@ -2,7 +2,7 @@
 
 In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, in order to print on the console simple and not so simple figures by specified sizes.
 
-### Problem: Rectangle Made of 10 x 10 Asterisks
+### Problem: Rectangle of 10 x 10 Stars
 
 Print on the console a rectangle made out of **10 x 10** asterisks.
 
@@ -22,7 +22,7 @@ How does the example work? We initialize **a loop with a variable `i`**. The def
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#0](https://judge.softuni.org/Contests/Practice/Index/1055#0).
 
 
-### Problem: Rectangle Made of N x N Asterisks
+### Problem: Rectangle of N x N Stars
 
 Write a program which receives a positive number **n** and prints on the console **a rectangle made out of N x N asterisks**. 
 
@@ -58,7 +58,7 @@ In **Python**, when the standard initial value of the variable in the loop (**`i
 
 Let's look at the example above. After the initialization of the **first (outer) loop**, its **body**, which contains **the second (nested) loop**, starts to run. It itself prints one line **`n`** of asterisks. After the **internal** loop **completes** its execution in the first iteration of the external one, then **the external one will continue**, i.e. will print a blank line on the console. **Then** the **first** loop ** will be **updated** and the whole **second** (nested) loop will be executed again. The inner loop will be executed as many times as the body of the outer loop is executed, in this case **`n`** times. 
 
-### Problem: Square Made of Asterisks
+### Problem: Square of Stars
 
 Print on the console a square made of **N x N** asterisks:
 
@@ -76,7 +76,7 @@ The problem is similar to the last one. The difference here is that we need to f
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#2](https://judge.softuni.org/Contests/Practice/Index/1055#2).
 
-### Problem: Triangle Made of Dollars
+### Problem: Triangle of Dollars
 
 Write a program which receives an integer **n** and prints **a triangle made of dollars** of size **n**.
 
@@ -124,7 +124,7 @@ Here is an example implementation of the above idea with nested loops:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055#4](https://judge.softuni.org/Contests/Practice/Index/1055#4).
 
 
-### Problem: Rhombus Made of Asterisks
+### Problem: Rhombus of Stars
 
 Write a program which receives a positive integer **n** and prints **a rhombus made of asterisks** with size **N**.
 

@@ -53,7 +53,7 @@ If it weren't for this conversion, for the program **every number** will be just
 size = int(input('Enter the size = '))
 ```
 
-### Problem: Calculating a Square Area with Length of a Side **a**
+### Problem: Square Area
 
 Let's take the following program as an example. It reads an integer, multiplies it by itself (i.e. **squares it**) and prints the result of the multiplication. This is how we can calculate the area of a square by using a given length of its side **a**:
 
@@ -124,7 +124,7 @@ To read a user input as a **floating-point number**, we need to **declare a vari
 num = float(input())
 ```
 
-### Problem: Conversion of Inches to Centimeters
+### Problem: Inches to Centimeters
 
 Let's write a program that reads a fractional number in inches and converts it to centimeters:
 
@@ -453,7 +453,27 @@ expr = (3 + 5) * (4 – 2)  # 16
 
 The standard rule for priorities of arithmetic operations is applied: **multiplication and division are always done before addition and subtraction**. In case of an **expression in brackets, it is calculated first**, but we already know all of that from school math.
 
-### Problem: Calculating Trapezoid Area
+### Problem: Concatenate Data
+
+Write a program, that reads a first name, last name, age and city from the console and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-year-old person from <town>`**.
+
+#### Hints and Guidelines
+
+We add to the existing PyCharm project one more Python file named "concatenate_data". We **write the code** which reads the input from the console:
+
+![](/assets/chapter-2-1-images/04.Concatenate-data-01.png)
+
+**The code**, which prints the message described in the condition of the task, is purposefully blurred and must be added by the reader: 
+
+![](/assets/chapter-2-1-images/04.Concatenate-data-02.png)
+
+Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
+
+#### Testing in The Judge System
+
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
+
+### Problem: Trapeziod Area
 
 Let's write a program that inputs the lengths of the two bases of a trapezoid and its height (one floating point number per line) and calculates the area of the trapezoid by the standard math formula:
 
@@ -507,7 +527,7 @@ round(123.456, 0)  # 123.0
 round(123.512, 0)  # 124.0
 ```
 
-### Problem: Perimeter and Area of a Circle: 
+### Problem: Circle Area and Perimeter 
 
 Let's write a program that, when given the **radius r** of a circle, **calculates the area and the perimeter** of the circle.
 
@@ -536,7 +556,7 @@ Let's try the program with **radius `r = 10`**:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
 
 
-### Problem: Area of a Rectangle
+### Problem: 2D Rectangle Area
 
 A rectangle is given with **coordinates of its two opposite corners**. You have to calculate its **area and perimeter**:
 
@@ -593,195 +613,6 @@ We have to create a new project in PyCharm (from [**Create New Project**] or [**
 
 ![](/assets/chapter-2-1-images/00.New-project-PyCharm-01.png)
 
-### Problem: Calculating Square Area
-
-The first exercise from this topic is the following: write a console program that **inputs an integer a and calculates the area** of a square with side **`a`**. The task is trivial and easy: **input a number** from the console, **multiply it by itself** and **print the obtained result** on the console.
-
-#### Hints and Guidelines
-
-We create a **new file** in the existing PyCharm project. Right-click on **SimpleCalculations** and choose [**New**] -> [**Python File**]:
-
-![](/assets/chapter-2-1-images/01.Square-area-01.png)
-
-A **dialog box** will open letting us choose a **name** for the file. We name it "square_area":
-
-![](/assets/chapter-2-1-images/01.Square-area-02.png)
-
-We already have a solution with one console application in it. What remains is to write the **code for solving this problem**. For this purpose, we go to the file and we write the following code:
-
-![](/assets/chapter-2-1-images/01.Square-area-03.png)
-
-The code inputs an integer through **`a = int(input('a = '))`**, afterwards it calculates **`area = a * a`** and finally prints the value of the variable **`area`**. We **start** the program using [**Ctrl + Shift + F10**] or with right-click - [**Run**], and we **test** it with different inputs:
-
-![](/assets/chapter-2-1-images/01.Square-area-04.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#0](https://judge.softuni.org/Contests/Practice/Index/1047#0). You have to get 100 points (completely correct solution):
-
-![](/assets/chapter-2-1-images/01.Square-area-05.png)
-
-![](/assets/chapter-2-1-images/01.Square-area-06.png)
-
-
-### Problem: Inches to Centimeters
-
-Write a program that **reads a number from the console** (not necessarily an integer) and converts the number from **inches to centimeters.** For the purpose **it multiplies the inches by 2.54** (because 1 inch = 2.54 centimeters).
-
-#### Hints and Guidelines
-
-First, we create a **new Python file** in the project "SimpleCalculations". We right-click the solution **SimpleCalculations** and choose [**New**] -> [**Python File**]. We name it "inches_to_centimeters":
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-02.png)
-
-Next, we have to write **the program code**:
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-03.png)
-
-**Start the program** with [**Ctrl + Shift + F10**] or with right-click - [**Run**]:
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-04.png)
-
-Let's test it with floating-point numbers, for example **2.5**:
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-05.png)
-
-<table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Depending on the regional settings of the operation system, it is possible instead of using a <b>decimal point</b> (US settings), to use a <b>decimal comma</b> (BG settings).</td>
-</tr></table>
-
-If the program expects a decimal point and a decimal comma is entered, or vice versa (a decimal point is entered when a decimal comma is expected), the following error will occur:
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-06.png)
-
-It is recommended to **change the settings of your computer** to use a **decimal point**: In Windows this can be done from the Control Panel:
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-07.png)
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-08.png)
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#1](https://judge.softuni.org/Contests/Practice/Index/1047#1).
-
-The solution should be accepted as a completely correct one:
-
-![](/assets/chapter-2-1-images/02.Inches-to-centimeters-09.png)
-
-
-### Problem: Greeting by Name
-
-Write a program that **reads a person's name** and prints **`Hello, <name>!`**, where **`<name>`** is the name entered earlier.
-
-#### Hints and Guidelines
-
-First, we create a **new Python file** named "greeting_by_name" in the project "SimpleCalculations":
-
-![](/assets/chapter-2-1-images/03.Greeting-by-name-01.png)
-
-Next, **we have to write the code** of the program. If you have any difficulties, you can use the code from the example below:
-
-![](/assets/chapter-2-1-images/03.Greeting-by-name-02.png)
-
-We **run** the program using [**Ctrl + Shift + F10**] or with right click - [**Run**] to test if it runs correctly:
-
-![](/assets/chapter-2-1-images/03.Greeting-by-name-03.png)
-
-#### Testing in The Judge System
-
-Test your solution here:  [https://judge.softuni.org/Contests/Practice/Index/1047#2](https://judge.softuni.org/Contests/Practice/Index/1047#2).
-
-
-### Problem: Concatenating Text and Numbers
-
-Write a program, that reads a first name, last name, age and city from the console and prints a message of the following kind: **`You are <firstName> <lastName>, a <age>-year-old person from <town>`**.
-
-#### Hints and Guidelines
-
-We add to the existing PyCharm project one more Python file named "concatenate_data". We **write the code** which reads the input from the console:
-
-![](/assets/chapter-2-1-images/04.Concatenate-data-01.png)
-
-**The code**, which prints the message described in the condition of the task, is purposefully blurred and must be added by the reader: 
-
-![](/assets/chapter-2-1-images/04.Concatenate-data-02.png)
-
-Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#3](https://judge.softuni.org/Contests/Practice/Index/1047#3).
-
-
-### Problem: Trapezoid Area
-
-Write a program that reads three numbers from the console **b1, b2 and h and calculates the area of a trapezoid** with bases **b1 and b2 and height h. The formula for trapezoid area is (b1 + b2) * h / 2**.
-
-#### Sample Input and Output
-
-| Input         |  Output |    
-|---------------|---------|
-| 8<br>13<br>7  | 73.5    | 
-| 12<br>8<br>5  | 50      | 
-
-The figure below shows a trapezoid with bases 8 and 13 and height 7. It has an area **(8 + 13) * 7 / 2 = 73.5**.
-
-![](/assets/chapter-2-1-images/05.Trapezoid-area-01.png)
-
-#### Hints and Guidelines
-
-Again, we have to add to the existing PyCharm project another **Python file** named "trapezoid_area" and to write the **code which reads the input data from the console, calculates the trapezoid area and prints it**. The code in the picture is purposely blurred, in order for you to give it a thought and finish it yourself.
-
-![](/assets/chapter-2-1-images/05.Trapezoid-area-02.png)
-
-**Test** your solution locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#4](https://judge.softuni.org/Contests/Practice/Index/1047#4).
-
-
-### Problem: Circle Area and Perimeter
-
-Write a program that reads from the console a **number r** and calculates and prints **the area and perimeter of a circle** with **radius r**.
-
-#### Sample Input and Output
-
-| Input |           Output                                         |    
-|-------|----------------------------------------------------------|
-| 3     | Area = 28.2743338823081 <br> Perimeter = 18.8495559215388|
-| 4.5   | Area = 63.6172512351933 <br> Perimeter = 28.2743338823081|
-
-#### Hints and Guidelines
-
-For the calculations you may use the following formulas:
--	**`area = math.pi * r * r`**.
--	**`perimeter = 2 * math.pi * r`**.
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#5](https://judge.softuni.org/Contests/Practice/Index/1047#5).
-
-
-### Problem: Rectangle Area
-
-A **rectangle** is defined by the **coordinates** of both of its opposite corners (x1, y1) – (x2, y2). Calculate its **area and perimeter**. **The input** is read from the console. The numbers **x1, y1, x2 and y2** are given one per line. **The output** is printed on the console and it has to contain two lines, each with one number – the area and the perimeter.
-
-![](/assets/chapter-2-1-images/07.Rectangle-area-01.png)
-
-#### Sample Input and Output
-
-| Input                                | Output              |
-| ------------------------------------ | ------------------- |
-| 60<br>20<br>10<br>50                 | 1500<br>160         |
-| 30<br>40<br>70<br>-10                | 2000<br>180         |
-| 600.25<br>500.75<br>100.50<br>-200.5 | 350449.6875<br>2402 |
-
-#### Testing in The Judge System
-
-Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#6](https://judge.softuni.org/Contests/Practice/Index/1047#6).
-
-
 ### Problem: Triangle Area
 
 Write a program that reads from the console **a side and a height of a triangle** and calculates its area. Use the **formula** for triangle area: **area = a * h / 2**. Round the result to **2 digits after the decimal point using `round(area, 2)`**.
@@ -800,7 +631,7 @@ Write a program that reads from the console **a side and a height of a triangle*
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#7](https://judge.softuni.org/Contests/Practice/Index/1047#7).
 
 
-### Problem: Converter – from °C Degrees to °F Degrees
+### Problem: Celsius to Fahrenheit
 
 Write a program that reads **degrees on Celsius scale** (°C) and converts them to **degrees on Fahrenheit scale** (°F). Look on the Internet for a proper [formula](https://shorturl.at/irvMR "Search in Google") to do the calculations. Round the result to **2 digits after the decimal point**.
 
@@ -818,7 +649,7 @@ Write a program that reads **degrees on Celsius scale** (°C) and converts them 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#8](https://judge.softuni.org/Contests/Practice/Index/1047#8).
 
 
-### Problem: Converter – from Radians to Degrees
+### Problem: Radians to Degrees
 
 Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wiki/Radian)** (**`rad`**) and converts it to **[degrees](https://en.wikipedia.org/wiki/Degree_(angle))** (**`deg`**). Look for a proper formula on the Internet. The number **π** in Python programs is available through **`math.pi`** but before that we have to refer to **the math library** using **`import math`**. Round the result to the nearest integer number using the method **`round()`**.
 
@@ -836,7 +667,7 @@ Write a program, that reads **an angle in [radians](https://en.wikipedia.org/wik
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#9](https://judge.softuni.org/Contests/Practice/Index/1047#9).
 
 
-### Problem: Converter – USD to BGN
+### Problem: USD to BGN
 
 Write a program for **conversion of US dollars** (USD) **to Bulgarian leva** (BGN). **Round** the result to **2 digits** after the decimal point. Use a fixed rate between a **dollar** (USD) and a **lev** (BGN): **1 USD = 1.79549 BGN**.
 
@@ -853,7 +684,7 @@ Write a program for **conversion of US dollars** (USD) **to Bulgarian leva** (BG
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#10](https://judge.softuni.org/Contests/Practice/Index/1047#10).
 
 
-### Problem: * Currency Converter
+### Problem: \* Currency Converter
 
 Write a program for **conversion of money from one currency to another**. It has to support the following currencies: **BGN, USD, EUR, GBP**. Use the following fixed currency rates:
 
@@ -877,7 +708,7 @@ Write a program for **conversion of money from one currency to another**. It has
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1047#11](https://judge.softuni.org/Contests/Practice/Index/1047#11).
 
 
-### Problem:	** Date Calculations – 1000 Days on the Earth
+### Problem: \* 1000 Days After Birth
 
 Write a program that enters **a birth date** in the format **`dd-MM-yyyy`** and calculates the date on which **1000 days** are turned since this birth date and prints it in the same format.
 

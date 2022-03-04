@@ -288,7 +288,7 @@ Top work! Let's now tackle the **exercises**. You do remember that learning how 
 
 Welcome to the exercises. We are now going to write a couple of console applications, which will help us take a few more steps into programming. After that we will show you how to program something more complex – programs with a graphical and web user interface.
 
-### Problem: Console-Based Program 'Expression'
+### Problem: Expression
 
 Write a console-based **Python** program that **calculates** and **prints** the value of the following numerical expression:
 <p align="center"> (3522 + 52353) * 23 - (2336 * 501 + 23432 - 6743) * 3 </p>
@@ -402,7 +402,8 @@ Test your solution with a few examples. You should receive a result identical to
 Test your solution here:
 [https://judge.softuni.org/Contests/Practice/Index/1046#4](https://judge.softuni.org/Contests/Practice/Index/1046#4).
 
-### \* Problem: Square of Stars
+### Problem: Square of Stars
+
 Write a **Python console program which reads an integer positive number N** from the console and **prints a square of N stars** on the console, like in the examples below.
 
 ### Sample Input and Output

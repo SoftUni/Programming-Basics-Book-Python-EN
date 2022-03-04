@@ -24,7 +24,7 @@ The course **"Programing Basics"** finishes with a **practical exam**. There are
 
 **The first** problem of the "Programming Basics" Practical Exam covers **simple calculations without checks and loops**. Here are a few examples:
 
-### Problem: 2D Triangle Area
+### Problem: Triangle Area
 
 <table>
    <tr>
@@ -79,7 +79,7 @@ The only thing left is to print the area on the console.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#0](https://judge.softuni.org/Contests/Practice/Index/1059#0).
 
 
-### Problem: Moving Bricks
+### Problem: Bricks
 
 Construction workers have to transfer a total of **x bricks**. **The workers** are **w** and work simultaneously. They transport the bricks in trolleys, each with a **capacity of m** bricks. Write a program that reads the integers **x**, **w**, and **m**, and calculates **what is the minimum number of courses** the workers need to do to transport the bricks.
 
@@ -136,7 +136,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059
 
 **The second** problem of the "Programming Basics" Practical Exam covers **conditional statements and simple calculations**. Here are a few examples:
 
-### Problem: Point on a Segment
+### Problem: Point on Segment
 
 On a horizontal line, **a horizontal segment** is placed, set with the **x** coordinates at both ends: **first** and **second**. **A point** is located **on** the same horizontal line and is set with its **x coordinate**. Write a program that checks whether the point is **inside or outside of the segment** and calculates **the distance to the nearest end** of the segment.
 
@@ -196,7 +196,7 @@ Finally, we print **the distance** found before.
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#2](https://judge.softuni.org/Contests/Practice/Index/1059#2).
 
 
-### Problem: Point on a Figure
+### Problem: Point in Figure
 
 Write a program that checks if a point (with coordinates **x** and **y**) is **inside** or **outside** of the given figure:
  
@@ -252,7 +252,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059
 
 **The third** problem of the "Programming Basics" Practical Exam includes **several nested checks combined with simple calculations**. Here are a few examples:
 
-### Problem: Date after 5 days
+### Problem: Date After 5 days
 
 There are two numbers **d** (day) and **m** (month) that form **a date**. Write a program that prints the date that will be **after 5 days**. For example, 5 days after **28.03** is the date **2.04**. We assume that the months: April, June, September, and November have 30 days, February has 28 days, and the rest have 31 days. Months to be printed with **leading zero** when they are single-digit numbers (e.g. 01, 08).
 
@@ -307,7 +307,7 @@ The only thing that remains is to print the result on the console. It is importa
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#4](https://judge.softuni.org/Contests/Practice/Index/1059#4).
 
 
-### Problem: Sums of Three Numbers
+### Problem: Sums 3 Numbers
 
 There are **3 integers** given. Write a program that checks if **the sum of two of the numbers is equal to the third one**. For example, if the numbers are **3**, **5**, and **2**, the sum of two of the numbers is equal to the third one: **2 + 3 = 5**.
 
@@ -362,7 +362,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059
 
 **The fourth** problem of the "Programming Basics" Practical Exam includes a **simple loop with simple logic** in it. Here are a few examples:
 
-### Problem: Sums with Step of 3
+### Problem: Sums Step 3
 
 There are given **n** integers **a1, a2, …, an**. Calculate the sums:
 -	**sum1 = a1 + a4 + a7** + … (the numbers are summed, starting from the first one with step of 3).
@@ -405,7 +405,7 @@ Finally, we will print the result on the console in the required **format**:
   
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#6](https://judge.softuni.org/Contests/Practice/Index/1059#6).
 
-### Problem: Sequence of Increasing Elements
+### Problem: Increasing Elements
 
 A series of **n** numbers is given: **a1**, **a2**, **…**, **an**. Calculate **the length of the longest increasing sequence** of consecutive elements in the series of numbers.
 
@@ -454,7 +454,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059
 
 **The fifth** problem of the "Programming Basics" Practical Exam requires **using one or several nested loops for drawing** a figure on the console. Logical reasoning, simple calculations, and conditional statements may be required. The problem tests the ability of students to think logically and invent simple algorithms for solving problems, i.e. to think algorithmically. Here are some examples of Exam Problems:
 
-### Problem: A Perfect Diamond
+### Problem: Perfect Diamond
 
 Write a function that takes as a parameter **n** and draws **a perfect diamond** with size **n** as in the examples below.
 
@@ -509,7 +509,7 @@ What remains is **to assemble the whole program** by first reading the input, pr
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1059#8](https://judge.softuni.org/Contests/Practice/Index/1059#8).
 
 
-### Problem: Rectangle with Asterisks in the Center
+### Problem: Rectangle with Stars
 
 Write a function that takes as a parameter an integer **n** and draws **a rectangle** with size **n with 2 asterisks in the center** as in the examples below.
 

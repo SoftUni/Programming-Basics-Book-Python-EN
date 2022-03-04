@@ -95,7 +95,7 @@ In case you worked accurately and wrote the program using the input data given i
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#0](https://judge.softuni.org/Contests/Practice/Index/1060#0).
 
 
-## Problem: Changing Tiles
+## Problem: Change Tiles
 
 Haralambi has some **savings** that he wants to use to **change the tiles** on the bathroom floor. The **floor is rectangular**, and the **tiles are triangular**. Write a program that **calculates if his savings will be sufficient**. **The width and length of the floor are submitted**, as well as **one of the sides of the triangle with its height towards it**. We must **calculate how many tiles are needed,** to cover the floor. The **number** of tiles **must be rounded up to the higher integer** and **5 more tiles must be added** as spare tiles. Also, **we have submitted** – **the price per tile** and **the amount paid for the work** of a workman.
 
@@ -159,7 +159,7 @@ We can find the final result by **calculating the total amount** that is needed 
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1060#1](https://judge.softuni.org/Contests/Practice/Index/1060#1).
 
-## Problem: Flowers Shop
+## Problem: Flowers
 
 A flowers shop offers 3 types of flowers: **chrysanthemums**, **roses** and **tulips**. The prices depend on the season. In this problem, our currency will be **lv**, which is BGN (Bulgarian lev).
 

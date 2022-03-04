@@ -23,7 +23,7 @@ By default, range in Python uses a step **value of `1`** and is not added to the
 
 Here is a series of sample problems, the solution of which will help us better understand the use of a **step** in a **`for`** loop.
 
-### Problem: Numbers from 1 to N with a step of 3
+### Problem: Numbers 1...N with Step 3
 
 Write a program that prints the numbers **from 1 to n** with a **step of 3**. For example, **if n = 100**, then the output would be: **1, 4, 7, 10, …, 94, 97, 100**.
 
@@ -40,7 +40,7 @@ We can solve the problem using the following sequence of actions (algorithm):
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#0](https://judge.softuni.org/Contests/Practice/Index/1057#0).
 
 
-### Problem: Numbers from N to 1 in reverse
+### Problem: Numbers N...1
 
 Write a program that prints the numbers **from n to 1 in reverse** (step -1). For example, **if n = 100**, then the output will be: **100, 99, 98, …, 3, 2, 1**.
 
@@ -58,7 +58,7 @@ We can solve the problem in the following manner:
 You can test your solution at the following link: [https://judge.softuni.org/Contests/Practice/Index/1057#1](https://judge.softuni.org/Contests/Practice/Index/1057#1).
 
 
-### Problem: Numbers from 1 to 2^n with a for loop
+### Problem: Powers of Two
 
 In the following example, we will use the standard size 1 step.
 
@@ -102,7 +102,7 @@ In programming, the **`while` loop** is used when we want to **repeat** the exec
 Here is a series of sample problems, the solutions of which will help us better understand the use of the **`while`** loop.
 
 
-### Problem: Sequence of Numbers 2k+1
+### Problem: Sequence 2k+1
 
 Write a program that prints **all numbers ≤ n** in the series: **1, 3, 7, 15, 31, …**, assuming that each number is generated according to the following formula next_number = **previous_number \* 2 + 1**.
 
@@ -215,7 +215,7 @@ The structure of `while` + `break` loop is very similar to the classic `while` l
 
 Once we are familiar with the concept of a `while` + `break` loop with an exit condition, which is not required to be at the beginning, now we should proceed with the usual set of practical problems, with which we can master the new knowledge.
 
-### Problem: Calculating Factorial
+### Problem: Factorial
 
 For **n** number calculate **n! = 1 \* 2 \* 3 \* … \* n**. For example, if **n = 5**, then the result would be: **5!** = 1 \* 2 \* 3 \* 4 \* 5 = **120**.
 
@@ -236,7 +236,7 @@ Here is how we can calculate factorial in more detail:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#7](https://judge.softuni.org/Contests/Practice/Index/1057#7).
 
 
-### Problem: Summing the Digits of a Number
+### Problem: Sum Digits
 
 Sum up the digits of the integer **positive** number **n**. For example, if **n = 5634**, then the output would be: 5 + 6 + 3 + 4 = **18**.
 
@@ -281,7 +281,7 @@ We already know that the infinite loop executes a certain code infinitely, but w
 <td>The operator <b><code>break</code></b> stops a loop's execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
-### Problem: Prime Number Checking
+### Problem: Check Prime
 
 The next problem we are going to solve is to **check whether a given number is prime**, but before that, we should remember what prime numbers.
 
@@ -306,7 +306,7 @@ Here are some examples of composite numbers:
 <td>We can optimize the algorithm by instead of checking until <code><strong>n-1</strong></code>, to check the divisors only until <code><strong>√n</strong></code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-### Problem: check for a prime number. Break operator
+### Problem: Enter Even Number
 
 You are tasked to write a function that takes a single input **n** integer and checks if it is prime. This can be implemented by checking if **n** is divisible by any numbers in the range between 2 and √n.
 
@@ -329,7 +329,7 @@ What remains is to add a **condition that checks if the input number is greater 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#9](https://judge.softuni.org/Contests/Practice/Index/1057#9).
 
 
-### Problem: the break operator in an infinite loop
+### The break operator in an infinite loop
 
 Write a function, which checks whether a given number **n** is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
@@ -405,7 +405,7 @@ The **`try-except`** construction has different options, but for now we will get
 
 In the next task we will see how to deal with a situation, in which the user enters an input other than a number (for example **`string`** instead of **`int`**), using **`try-except`**.
 
-### Problem: dealing with invalid numbers by try-except
+### Problem: Break Sum
 
 Write a program that checks that a number **n** is even and, if so, print it on the screen. In case of **invalid entered** number, a message should be displayed that the entered input is not a valid number and the input should continue.
 
@@ -434,7 +434,7 @@ Now the solution must always work: whether we enter integers, invalid numbers (f
 
 In this chapter, we got familiar with a few new types of loops that can perform repetitions with more complex programming logic. Let's solve a few practical problems using these new constructs.
 
-### Problem: Fibonacci Numbers
+### Problem: Fibonacci
 
 Fibonacci's numbers in mathematics form a sequence that looks like this: **1, 1, 2, 3, 5, 8, 13, 21, 34, …**.
 
@@ -480,7 +480,7 @@ Example implementation:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#12](https://judge.softuni.org/Contests/Practice/Index/1057#12).
 
 
-### Problem: Numbers Pyramid
+### Problem: Number Pyramid
 
 Print the **numbers 1 … n in a pyramid** as per the below example. On the first row, we print one number, at the second we print two, at the third, we print three, and so on, until the numbers are over. On the last line, we print as many numbers as we get until we get to **n**.
 
@@ -514,7 +514,7 @@ Here is an example implementation:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#13](https://judge.softuni.org/Contests/Practice/Index/1057#13).
 
 
-### Problem: Numbers Table
+### Problem: Number Table
 
 Print the numbers 1 … n in a table as per the examples below:
 

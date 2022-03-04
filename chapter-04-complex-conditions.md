@@ -222,7 +222,7 @@ Like the rest of the operators in programming, the operators **`and`** and **`or
 
 Sometimes the conditions may be **very complex**, so they can require a long bool expression or a sequence of conditions. Let's take a look at a few examples.
 
-### Problem: Point on a Rectangle Border
+### Problem: Point on Rectangle Border
 
 Write a program that checks whether a **point {x, y}** is placed **onto any of the sides of a rectangle {x1, y1} – {x2, y2}**. The input data is read from the console and consists of 6 lines: the decimal numbers **x1**, **y1**, **x2**, **y2**, **x** and **y** (as it is guaranteed that **x1 < x2** and **y1 < y2**). Print "**Border**" (if the point lies on any of the sides) or "**Inside / Outside**" (in the opposite case).
 
@@ -289,7 +289,7 @@ Write a program that **reads** from the console a **fruit** (banana / apple / �
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#6](https://judge.softuni.org/Contests/Practice/Index/1051#6).
 
-### Problem: Trade Fees
+### Problem: Trade Comissions
 
 A company is giving the following **commissions** to its traders according to the **city**, in which they are working and the **volume of sales s**:
 
@@ -316,7 +316,7 @@ To calculate the commission according to the city and volume of sales, we need a
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#7](https://judge.softuni.org/Contests/Practice/Index/1051#7).
 
-### Problem: Day of The Week
+### Problem: Day of Week
 
 Let's write a program that prints **the day of the week** depending on the **given number** (1 … 7) or "**Error!**" if invalid input is given.
 
@@ -448,7 +448,7 @@ A sample code (parts of the code are blurred on purpose to stimulate independent
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051#11](https://judge.softuni.org/Contests/Practice/Index/1051#11).
 
-### Problem: * Point in the Figure
+### Problem: \* Point in The Figure
 
 The figure consists of **6 blocks with size h \* h**, placed as in the figure below. The lower left angle of the building is on position {0, 0}. The upper right angle of the figure is on position {**2\*h**, **4\*h**}. The coordinates given in the figure are for **h = 2**:
 

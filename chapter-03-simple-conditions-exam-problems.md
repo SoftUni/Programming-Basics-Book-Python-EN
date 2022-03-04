@@ -21,7 +21,7 @@ else:
 After having revised how to write simple conditions, let's solve a few Exam Problems to practice the **`if-else`** construction.
 
 
-## Problem: Transportation Price
+## Problem: Transport Price
 
 A student has to travel **n kilometers**. He can choose between **three types of transportation**: 
 * **Taxi**. Starting fee: **0.70** BGN. Day rate: **0.79** BGN/km. Night rate: **0.90** BGN/km.

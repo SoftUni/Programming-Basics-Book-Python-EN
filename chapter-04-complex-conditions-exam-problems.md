@@ -246,7 +246,7 @@ What remains is to display the calculated result on the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#1](https://judge.softuni.org/Contests/Practice/Index/1052#1).
 
 
-## Problem: Operations with Numbers
+## Problem: Operations
 
 Write a program that reads **two integers (n1 and n2)** and an **operator** that performs a particular mathematical operation with them. Possible operations are: **summing up** (**`+`**), **subtraction** (**`-`**), **multiplying** (**`*`**), **division** (**`/`**) and **modular division** (**`%`**). Upon summing up, subtracting and multiplying, the console must print the result and display whether it is an **even** or an **odd** number. Upon regular division – **just the result**, and upon modular division – **the remainder**. You need to take into consideration the fact that **the divisor can be equal to zero** (**`= 0`**), and dividing by zero is not possible. In this case, a **special notification** must be printed.
 
@@ -337,7 +337,7 @@ Finally, what remains is to print the calculated result on the console:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1052#2](https://judge.softuni.org/Contests/Practice/Index/1052#2).
 
 
-## Problem: Game Tickets
+## Problem: Match Tickets
 
 **A group of football** fans decided to buy **tickets for Euro Cup 2016**. The tickets are sold in **two** price categories:
 

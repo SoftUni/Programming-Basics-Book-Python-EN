@@ -76,7 +76,7 @@ As the invoking of a function is a command by itself, we can call a function fro
 
 There is also a possibility the function to be called in **its own body**. This is called **recursion**, for which additional information can be found in [Wikipedia](https://en.wikipedia.org/wiki/Recursion) and we strongly encourage you to do your own research on the internet.
 
-### Problem: Empty Receipt
+### Problem: Bank Receipt
 
 Write a function which prints empty receipt. The function should call another three functions: function which prints the headline of the receipt, function which prints the body of the receipt and function which prints the bottom of the receipt.
 
@@ -132,7 +132,7 @@ Let’s look at another example of function definition which has a few parameter
 
 ![](/assets/chapter-10-images/05.Function-parameters-03.png)
 
-### Problem: Integer Sign
+### Problem: Sign of Integer Number
 
 Create a function which prints whether the given integer is positive, negative or zero.
 
@@ -363,6 +363,26 @@ As we already noticed, we can call this function using different combination of 
 
 ![](/assets/chapter-10-images/07.Optional-parameters-02.png)
 
+## Problem: Greater of Two Values
+
+The input is two values of the same type. The values can be of **`int`**, **`chr`** or **`str`** type. Create a function **`getMax()`** that returns as a result the greater of the two values.
+
+### Sample Input and Output
+
+| Input | Output | Input | Output | Input | Output |
+| --- | --- | --- | --- | --- | --- |
+|int<br>2<br>16|16|char<br>a<br>z|z|string<br>Ivan<br>Tod|Tod|
+
+### Creating the Functions
+
+We need to create three functions with the same name and different signatures. First we create a function, which will compare integers.
+
+Following the logic of the previous function we create another one with the same name, but this one will compare characters.
+
+### Testing in the Judge System
+
+Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#6](https://judge.softuni.org/Contests/Practice/Index/1063#6).
+
 ## Nested Functions (Local Functions)
 
 Let’s consider the following function which calculates the area of a circle:
@@ -465,7 +485,7 @@ In this chapter were introduced the fundamental concepts of working with functio
 To consolidate our knowledge about working with functions, a few problems will be solved as an exercise. Each exercise will ask for a function with specific functionality. Then the function must be called, with arguments being passed to the predefined parameters read as inputs from the console. Inputs and outputs beneath each exercise are given as an example.
 
 
-### Problem: "Hello, Name!"
+### Problem: Hello, Name!
 
 Write a function which receives a name as a parameter and prints to the console "*Hello, \<name\>!*".
 
@@ -484,7 +504,7 @@ Define function **`print_name(name)`** and implement its functionality. Then tak
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#7](https://judge.softuni.org/Contests/Practice/Index/1063#7).
 
 
-### Problem: Smaller Number
+### Problem: Min Method
 
 Create a function called **`get_min(a, b)`**, which returns the smaller number of the two. Write a program which reads three input values from the console and prints the smallest number. Use the function **`get_min(…)`** which is already created.
 
@@ -507,7 +527,7 @@ Define a function **`get_min(a, b)`** and implement its functionality, after whi
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#8](https://judge.softuni.org/Contests/Practice/Index/1063#8).
 
 
-### Problem: String Repetition
+### Problem: String Repeater
 
 Write a function called **`repeat_string(str, count)`**, which receives one argument of type string, another argument **N** of type integer and returns the string argument **N** times. The result of the function must be printed to the console.
 
@@ -528,7 +548,7 @@ Finish the function, as the input argument of type string must be concatenated t
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#9](https://judge.softuni.org/Contests/Practice/Index/1063#9).
 
 
-### Problem: N-th Digit
+### Problem: Nth Digit
 
 Write a function **`find_nth_digit(number, index)`**, which receives a number and index **N** as parameters and prints the N-th digit from right to left of the number (first digit from right to left has index 1). The result of the function must be printed on the console.
 
@@ -547,7 +567,7 @@ To execute the algorithm, we'll use a **`while`** loop which is running until th
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#10](https://judge.softuni.org/Contests/Practice/Index/1063#10).
 
 
-### Problem: Number to a Numeral System
+### Problem: Integer to Base
 
 Write a function called **`integer_to_base(number, to_base)`**, which receives as parameters an integer, and a number which indicates the base of the system. The function returns the input number converted to the required numeral system. Next, the result of the function must be printed to the console. The integer will always be of base 10 while the required base will be between 2 and 10.
 
@@ -597,14 +617,14 @@ In the exercise, you have to use four functions: **`show_success_message()`**, *
 
 Define and implement the four given functions.
 
-In the function **`read_and_process_message()`** the type of the message is read from the console and depending on the type of the message, the remaining elements are also read, which can appear on either one, two or three consecutive lines, depending on the type of the message. Next, the required method is called to execute the printing of the message.
+In the function **`read_and_process_message()`** the type of the message is read from the console and depending on the type of the message, the remaining elements are also read, which can appear on either one, two or three consecutive lines, depending on the type of the message. Next, the required function is called to execute the printing of the message.
 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#12](https://judge.softuni.org/Contests/Practice/Index/1063#12).
 
 
-### Numbers to words
+### Problem: \* Numbers to Words
 
 Write a function **`letterize(number)`**, which reads an integer and translates it into words using the following requirements:
 * Print each word on the same line (including minus sign if applicable) as shown in the output.
@@ -638,7 +658,7 @@ The third special case is when the number formed by the last two digits of the i
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063#13](https://judge.softuni.org/Contests/Practice/Index/1063#13).
 
 
-### Problem: String Encryption
+### Problem: \* String Encryption
 
 Write a function **`encrypt(letter)`**, which encrypts a given letter in the following way:
 * It takes the first and the last digit from the ASCII code of the letter and concatenates them into a string, which will represent the result.
