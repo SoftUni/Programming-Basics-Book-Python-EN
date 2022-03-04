@@ -64,7 +64,7 @@ Before starting with the conditional statements, we need to **declare** one more
 
 ![](/assets/chapter-3-2-images/01.Transport-price-02.png)
 
-#### Checking the conditions and calculating
+#### Checking The Conditions and Calculating
 
 After having **declared and initialized** the input data and the variable that stores the value of the price, we have to decide which **conditions** of the task have to be **checked first**. 
 
@@ -86,7 +86,7 @@ If the condition of the variable **is not true** (returns **`false`**), the next
 
 If this condition **does not return `true`** as a result, we have to store **a value**, equal to **the result** of **the multiplication** of **the distance** by the train **rate** to the price variable in the **`else`** body. This is done because the train is **the cheapest** transport for the given distance. 
 
-#### Printing the Output Data
+#### Printing The Output Data
 
 After we have checked the distance **conditions** and we have **calculated the price of the cheapest transport**, we have to **print it**. The task **does not** specify how to format the result, therefore, we just print **the variable**:
 
@@ -131,7 +131,7 @@ To solve the task, we read the input data, write a few conditional statements, d
 
 #### Processing The Input Data
 
-From the task requirements we note that our program must have **four lines** from which we read **the input data**. The first **three** consist of **integers** and that is why the **variables** that will store their values will be of **`int`** type. We know that the **fourth** line will be a **floating-point number**, therefore, the variable we use will be of **`float`** type:
+From the task requirements, we note that our program must have **four lines** from which we read **the input data**. The first **three** consist of **integers** and that is why the **variables** that will store their values will be of **`int`** type. We know that the **fourth** line will be a **floating-point number**, therefore, the variable we use will be of **`float`** type:
 
 ![](/assets/chapter-3-2-images/02.Pipes-in-pool-01.png)
 
@@ -139,7 +139,7 @@ Our next step is to **declare and initialize** a variable in which we are going 
 
 ![](/assets/chapter-3-2-images/02.Pipes-in-pool-02.png)
 
-#### Checking the Conditions and Processing Output Data
+#### Checking The Conditions and Processing Output Data
 
 After we have **the value of the quantity** of water that has flown through the **pipes**, the next step is to **compare** that quantity with the volume of the pool itself.
 
@@ -211,7 +211,7 @@ Here we have to note that if the total **time for the playing** of Tom is **less
 
 ![](/assets/chapter-3-2-images/03.Sleepy-tom-cat-04.png)
 
-#### Checking the Conditions
+#### Checking The Conditions
 
 The time for games is already calculated, which leads us to the **next** step – **comparing** the **time for play** of Tom with the **norm** on which the good sleep of the cat depends. To do so, we will use an **`if-else`** conditional statement. In the **`if` clause** we will check whether **the time for play is more than 30 000** (the norm).
 
@@ -265,7 +265,7 @@ To solve the problem, we will read the input data. Then, we will write a few con
 
 #### Processing The Input Data and performing the calculations
 
-First, we have to **check** what **the input data** will be, so that we can choose what **variables** we will use. The code bellow is blurred on purpose and it should be written by the reader:
+First, we have to **check** what **the input data** will be so that we can choose what **variables** we will use. The code below is blurred on purpose and it should be written by the reader:
 
 ![](/assets/chapter-3-2-images/04.Harvest-01.png)
 
@@ -330,7 +330,7 @@ To solve the problem, we will read the input data. Then, we will write a few con
 
 #### Processing The Input Data
 
-**First**, we have to read the input data to solve the problem. The code bellow is blurred on purpose and it should be written by the reader:
+**First**, we have to read the input data to solve the problem. The code below is blurred on purpose and it should be written by the reader:
 
 ![](/assets/chapter-3-2-images/05.Firm-01.png)
 
