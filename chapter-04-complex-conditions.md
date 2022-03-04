@@ -1,6 +1,6 @@
 # Chapter 4.1. More Complex Conditions
 
-In the **current** chapter, we are going to examine **nested conditional statements** in the **Python** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"** because **we put `if` condition** into **another `if` condition**. We are going to examine the **more complex logical conditions** through proper examples.
+In the **current** chapter, we are going to examine **nested conditional statements** in the **Python** language, by which our program can execute **conditions**, that contain other **nested conditional statements**. We call them **"nested"** because **we put the `if` condition** into **another `if` condition**. We are going to examine the **more complex logical conditions** through proper examples.
 
 ## Nested Conditions
 
@@ -145,7 +145,7 @@ In school, the teacher said: "Ivan or Peter should clean the board". For complet
 |:-----:|:-----:|:-----:|
 |True<br>True<br>False<br>False|True<br>False<br>True<br>False|True<br>True<br>True<br>False|
 
-### How does the `or` operator work?
+### How Does The `or` Operator Work?
 
 We have already learned what the logical **"OR" represents**. But how is it being achieved? Just like with the logical **"AND"**, the program **checks** from left to right **the arguments** that are given. To obtain **`True`** from the expression, **just one** argument must have a **`True`** value. Respectively, the checking **continues** until an **argument** with **such** value is met or until the arguments **are over**.
 
@@ -218,7 +218,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1051
 
 Like the rest of the operators in programming, the operators **`and`** and **`or`** have a priority, as in the case **`and`** is with higher priority than **`or`**. The operator **`()`** serves for **changing the priority of operators** and is being calculated first, just like in mathematics. Using parentheses also gives the code better readability and is considered a good practice.
 
-## More Complex Conditions - Examples
+## More Complex Conditions - Problems
 
 Sometimes the conditions may be **very complex**, so they can require a long bool expression or a sequence of conditions. Let's take a look at a few examples.
 
