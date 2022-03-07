@@ -53,7 +53,7 @@ We can split the solution of the problem into 3 parts:
 
 #### Reading and Processing The Input Data
 
-For **reading** of **input** data we will declare two integer variables **`int`**: **`n`** and **`l`**.
+For **reading** of **input** data, we will declare two integer variables **`int`**: **`n`** and **`l`**.
 
 ![](/assets/chapter-7-2-images/01.stupid-password-generator-1.png)
 
@@ -63,7 +63,7 @@ One of the ways to find a solution for this problem is to create **five** **`for
 
 ![](/assets/chapter-7-2-images/01.stupid-password-generator-2.png)
 
-**Did you know that…?** 
+**Do you know that…?** 
 
 * For convenience we can use the ASCII value of the symbol **"a"** directly in the declarations of the loops - **`97`**:
 
@@ -99,7 +99,7 @@ Example: "Magic number" &rarr; 2
 
 ### Input Data
 
-The input is from the console and consists **one integer** within the range [**1 … 600 000**].
+The input is from the console and consists of **one integer** within the range [**1 … 600 000**].
 
 ### Output Data
 
@@ -117,7 +117,7 @@ Print on the console **all magic numbers**, separated by **space**.
 
 -	Declare and initialize an integer type **variable** **`int`** and read the **input** from the console.
 -	Nest **six `for` loops** one for each digit.
--	In the last loop, using an **`if`** statement check if the **product** of the six digits is **equal** to the **magic** number.
+-	In the last loop, using an **`if`** statement checks if the **product** of the six digits is **equal** to the **magic** number.
 
 Here is an example implementation of the idea:
 
@@ -128,11 +128,11 @@ In the previous chapter, we reviewed other loop constructions. Let's look at the
 ![](/assets/chapter-7-2-images/02.magic-numbers-2.png)
 
 Then we will start writing **`while`** loops.
-- We will initialize **first digit**: **`a = 1`**.
+- We will initialize the **first digit**: **`a = 1`**.
 - We will set a **condition for each** loop: the digit will be less than or equal to 9.
 - At the **beginning** of each loop, we set a value of the **next** digit, in this case: **`b = 1`**. In the nested **`for`** loops, we initialize the variables in the inner loops at each increment of the outer ones. We want to do the same here.
 - At **the end** of each loop, we will **increase** the digit by one: **`a += 1`**, **`b += 1`**, **`c += 1`** etc.
-- In the **innermost ** loop, we will make **the check** and if necessary, we will print on the console.
+- In the **innermost** loop, we will make **the check** and if necessary, we will print on the console.
 
 ![](/assets/chapter-7-2-images/02.magic-numbers-3.png)
 
@@ -162,11 +162,11 @@ Print on the console on a single line all numbers, that meet the condition, sepa
 
 |Input|Output|Comments|
 |---|---|---|
-|1<br>30<br>15|30 24 18 12 6|Numbers from 30 to 1, that are divisible at the same time by 2 and 3 without remainder are: 30, 24, 18, 12 and 6. The number 15 **is not equal** to any, so the sequence **continues**.|
+|1<br>30<br>15|30 24 18 12 6|Numbers from 30 to 1, that are divisible at the same time by 2 and 3 without remainder are: 30, 24, 18, 12, and 6. The number 15 **is not equal** to any, so the sequence **continues**.|
 
 |Input|Output|Comments|
 |---|---|---|
-|1<br>36<br>12|36 30 24 18|Numbers from 36 to 1, that are divisible at the same time by 2 and 3 without remainder are: 36, 30, 24, 18, 12 and 6. The number 12 **is equal** to the stop number, so **we stop by 18**.|
+|1<br>36<br>12|36 30 24 18|Numbers from 36 to 1, that are divisible at the same time by 2 and 3 without remainder are: 36, 30, 24, 18, 12, and 6. The number 12 **is equal** to the stop number, so **we stop by 18**.|
 
 |Input|Output|
 |---|---|
@@ -182,7 +182,7 @@ The problem can be divided into **four** logical parts:
 
 The **first** part is ordinary - we read **three** integer numbers from the console
 
-We have already seen examples of the **second** part – initialization of the **`for`** loop. It is a bit **tricky** - the explanation mentions that the numbers have to be printed in **reversed order**. This means that the **initial** value of the variable **`i`** will be **bigger**, and from the examples, we can see that it is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`** suggests that the step would be **decreased by 1**:
+We have already seen examples of the **second** part – initialization of the **`for`** loop. It is a bit **tricky** - the explanation mentions that the numbers have to be printed in **reversed order**. This means that the **initial** value of the variable **`i`** will be **bigger**, and from the examples, we can see that it is **M**. Thus, the **final** value of **`i`** should be **N**. The fact that we will print the results in reversed order and the values of **`i`** suggest that the step would be **decreased by 1**:
 
 ![](/assets/chapter-7-2-images/03.stop-number-1.png)
 
