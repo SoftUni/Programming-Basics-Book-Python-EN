@@ -1,6 +1,6 @@
 # Free Book "Programming Basics with Python"
 
-The free book "**Programming Basics with Python**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops and functions) using the **Python** programming language.
+The free book "**Programming Basics with Python**" introduces the readers to writing **programming code** at a beginner level (variables and data, conditional statements, loops, and functions) using the **Python** programming language.
 
 <a href="#"><img src="/assets/Python-Programming-Basics-Book-Cover.png" alt="Book Programming Basics with Python - Cover" class="readme-book-cover-image" /></a>
 
@@ -58,4 +58,4 @@ Brief information about this edition:
 
 ## Free Practical Programming Course
 
-Enjoy reading and do not forget to **sign up** for the [**Practical Free Course "Programming Basics"**](https://softuni.org) coming together with this book, because programming is learned by practice, code writing and solving many, many problems, not just by reading!
+Enjoy reading and do not forget to **sign up** for the [**Practical Free Course "Programming Basics"**](https://softuni.org) coming together with this book, because programming is learned by practice, code writing, and solving many, many problems, not just by reading!
