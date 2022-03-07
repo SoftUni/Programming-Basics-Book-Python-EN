@@ -7,15 +7,15 @@ Since we have learned what **`for` loops** are and their function in code, now i
   * **`while`** + **`break`** loops
   * **infinite** loops
 
-In the current chapter, we will also take a look at the **`break`** operator and **how** to use it to **interrupt** a loop. We will also learn how to process **errors during execution** of the program, using **`try-except`** statement.
+In the current chapter, we will also take a look at the **`break`** operator and **how** to use it to **interrupt** a loop. We will also learn how to process **errors during the execution** of the program, using the **`try-except`** statement.
 
-## Loops with step
+## Loops with a Step
 
-In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`** loop works and we already know when and for what purpose it is used. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step** or as it is also known **step**.
+In the ["Loops (Repetitions)"](/chapter-05-loops.md) chapter we learned how the **`for`** loop works and we already know when and for what purpose it is used. In the present chapter we will **take a look** at a particular and a very important **part of this structure** - its **step**.
 
-### Loop with a Step – Explanation
+### Explanation
 
-The **step** is **part** of the **'range'** function, that specifies the **amount** used to **increment** or **decrement** the value of the **main** variable. The step is declared as the last argument in the **`range`** function.
+The **step** is **part** of the **'range'** function, which specifies the **amount** used to **increment** or **decrement** the value of the **main** variable. The step is declared as the last argument in the **`range`** function.
 
 By default, range in Python uses a step **value of `1`** and is not added to the **`range`** function. If we want our step to be **different from 1**, when writing the **`range`** function, we add another number as the last parameter, which is our step. With a step of **`10`**, the loop would appear as below: 
 
@@ -31,7 +31,7 @@ We can solve the problem using the following sequence of actions (algorithm):
 
   * We read **`n`** from the console.
   * We run a **`for` loop** from **1** to **`n`** (including **`n`**) with a step of **3**.
-  * In the **body of the loop** we print the value of the current step.
+  * In the **body of the loop**, we print the value of the current step.
   
 ![](/assets/chapter-7-1-images/01.Numbers-1-to-n-01.png)
 
@@ -49,7 +49,7 @@ We can solve the problem in the following manner:
   * We read **`n`** from the console.
   * We create a **`for` loop**, from **`n`** to 0.
   * We define the step size: **-1**.
-  * In the **body of the loop** we print the value of the current step.
+  * In the **body of the loop**, we print the value of the current step.
 
 ![](/assets/chapter-7-1-images/02.Numbers-n-to-1-01.png)
 
@@ -78,7 +78,7 @@ Print the **even** powers of **2** until **2^n**: **2^0, 2^2, 2^4, 2^8, …, 2^n
 Here is how we can solve the problem:
 
   * We declare a variable **`num`** that will hold the current number and we assign it the initial **value of 1**.
-  * For the **step** of the loop we set a value of **2**.
+  * For the **step** of the loop, we set a value of **2**.
   * In the **body of the loop**: we print the value of the current number and **increase the current number `num` 4 times** (as per the problem description).
 
 ![](/assets/chapter-7-1-images/04.Even^2-01.png)
@@ -90,10 +90,10 @@ You can test your solution at the following link: [https://judge.softuni.org/Con
 
 ## While loop
 
-The next type of loops that we will become familiar with, which are called **`while` loops**. The special thing about them is that they repeat a command block, **while a condition is met**. Their structure is a bit different than that of the **`for`** loops, however, they boast a simpler syntax.
+The next type of loops that we will become familiar are called **`while` loops**. The special thing about them is that they repeat a command block, **while a condition is met**. Their structure is a bit different than that of the **`for`** loops, however, they boast a simpler syntax.
 
 
-### While Loop – Explanation
+### Explanation
 
 In programming, the **`while` loop** is used when we want to **repeat** the execution of a specific logic block until **a specific condition is met**. Any expression that returns either **`true`** or **`false`** (a Boolean) can be used as a "**condition**". When the **condition** becomes **invalid**, the **`while`** loop **is interrupted** and the program **proceeds** to execute the code after the loop. The **`while` loop** structure looks like this:
 
@@ -187,7 +187,7 @@ We will solve the problem by implementing **Euclid's algorithm**:
 * In the **body of the loop** we follow the instructions from the pseudo-code:
    * We create a temporary variable to which we assign the **current** value of **`b`**.
    * We assign a new value to **`b`**, which is the remainder of the division of **`a`** and **`b`**.
-   * On variable **`a`** we assign the **previous** value of the variable **`b`**.
+   * On variable **`a`**, we assign the **previous** value of variable **`b`**.
 * Once the loop is complete and we have found the GCD, we print it on the screen.
 
 ![](/assets/chapter-7-1-images/07.GCD-01.png)
@@ -199,7 +199,7 @@ You can test your solution here: [https://judge.softuni.org/Contests/Practice/In
 
 ## While True + break loop
 
-The next type of loop construction that we will become familiar with while studying programming is the `while True` + `break` loop (for short `while` + `break` loop). Its idea **is to repeat a block of code** over and over again until **explicit termination of the loop**, usually after a `if` statement in the body of the loop. Here's what this loop looks like in Python code:
+The next type of loop construction that we will become familiar with while studying programming is the `while True` + `break` loop (for short `while` + `break` loop). Its idea **is to repeat a block of code** over and over again until **explicit termination of the loop**, usually after an `if` statement in the body of the loop. Here's what this loop looks like in Python code:
 
 ![](/assets/chapter-7-1-images/00.Do-while-01.png)
 
@@ -209,9 +209,9 @@ In programming, the `break` operator unconditionally terminates a loop and proce
 
 The construct for the `while` + `break` loop in many other programming languages is implemented with the `do-while` construct, but there is no direct equivalent of `do-while` in Python. To do the same in Python, we can use an infinite loop (`while True`) and when an exit condition is reached, the loop is interrupted (with `break`).
 
-The `while` + `break` construct provides more flexibility than `while` loops, because it allows to break the loop at **any place** in the body of the loop(for example at the beginning, in the middle or at the end), it even allows to have exit of the loop in several different places (with several `break` operators).
+The `while` + `break` construct provides more flexibility than `while` loops because it allows to break the loop at **any place** in the body of the loop(for example at the beginning, in the middle, or at the end), it even allows to have exit of the loop in several different places (with several `break` operators).
 
-The structure of `while` + `break` loop is very similar to the classic `while` loop, but there is a significant difference: `while` is executed 0 or more times (according to the entry condition of the loop), whilst `while` + `break` will execute its body **at least once**. Why is this? In the `while True` + `break` loop structure, the **condition** is always checked **in the body of the loop**, whilst with the classic `while` loop the condition, which we check to exit the loop is always at the begginning, before its body.
+The structure of `while` + `break` loop is very similar to the classic `while` loop, but there is a significant difference: `while` is executed 0 or more times (according to the entry condition of the loop), whilst `while` + `break` will execute its body **at least once**. Why is this? In the `while True` + `break` loop structure, the **condition** is always checked **in the body of the loop**, whilst with the classic `while` loop the condition, which we check to exit the loop is always at the beginning, before its body.
 
 Once we are familiar with the concept of a `while` + `break` loop with an exit condition, which is not required to be at the beginning, now we should proceed with the usual set of practical problems, with which we can master the new knowledge.
 
@@ -225,9 +225,9 @@ Here is how we can calculate factorial in more detail:
 * We declare another variable - **`fact`**, with an initial value of 1. We will use it in the calculation and store the factorial value.
 * For the loop condition we will use **`n > 1`**, because each time we perform the calculations in the body of the loop, we will decrease the value of **`n`** by 1.
 * In the body of the loop:
-   * We assign a new value to **`fact`**, which value is the product of multiplying the current **`fact`** with the current **`n`**.
+   * We assign a new value to the **`fact`**, which value is the product of multiplying the current **`fact`** with the current **`n`**.
    * We decrement **`n`** with **1**.
-* Outside the body of the loop we print the final factorial value.
+* Outside the body of the loop, we print the final factorial value.
 
 ![](/assets/chapter-7-1-images/08.Factorial-01.png)
 
@@ -262,18 +262,18 @@ We can use the following idea to solve the problem:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#8](https://judge.softuni.org/Contests/Practice/Index/1057#8).
 
 
-## Infinite loops and the operator break
+## Infinite Loops and The break Operator 
 
 So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs, and how we can **break** it using the **`break`** operator.
 
 ### Infinite Loop – Explanation
 
-An **infinite loop** **runs infinitely** the code of its body. With the infinite **`while`** loops the end check is a conditional expression that **always** returns **`true`**. Here is an example of an **infinite `while`** loop:
+An **infinite loop** **runs infinitely** the code of its body. With the infinite **`while`** loops, the end check is a conditional expression that **always** returns **`true`**. Here is an example of an **infinite `while`** loop:
 
 ![](/assets/chapter-7-1-images/00.Infinite-while-loop-01.png)
 
 
-### The Break Operator
+### The break Operator
 
 We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **`break`** operator comes in handy in this situation.
 
@@ -283,9 +283,9 @@ We already know that the infinite loop executes a certain code infinitely, but w
 
 ### Problem: Check Prime
 
-The next problem we are going to solve is to **check whether a given number is prime**, but before that, we should remember what prime numbers.
+The next problem we are going to solve is to **check whether a given number is prime**, but before that, we should remember what prime numbers are.
 
-**Definition**: An integer is considered **prime**, if it is divisible only by itself and by 1. By definition, the prime numbers are positive and greater than 1. The smallest prime number is **2**.
+**Definition**: An integer is considered **prime** if it is divisible only by itself and by 1. By definition, the prime numbers are positive and greater than 1. The smallest prime number is **2**.
 
 We can assume that an integer **n** is a prime number if **n > 1** and **n** is not divisible by a number between **2** and **n-1**.
 
@@ -313,23 +313,23 @@ You are tasked to write a function that takes a single input **n** integer and c
 The steps of the **"prime checking algorithm"** are given below in bigger detail:
 
 * We declare the variable **`n`**, to which we assign the integer passed by the console.
-* We create a **`is_prime`** boolean with and an initial value of **`True`**. We assume that a number is prime until proven otherwise.
+* We create a **`is_prime`** boolean with an initial value of **`True`**. We assume that a number is prime until proven otherwise.
 * We create a **`for`** loop, with the initial value set to 2, for a condition the **current value `<= √n`**. The step is set to 1.
-* In the **body of the loop** we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`is_prime`** to **`False`** and exit the loop through the **`break`** operator.
+* In the **body of the loop**, we check if **`n`**, divided by the **current value** has a remainder. If there is **no reminder** from the division, then we change **`is_prime`** to **`False`** and exit the loop through the **`break`** operator.
 * Depending on the value of **`is_prime`** we print whether the input number is prime (**`True`**) or composite (**`False`**).
 
 Here is a sample implementation of the prime checking algorithm, described above:
 
 ![](/assets/chapter-7-1-images/10.Check-if-prime-01.png)
 
-What remains is to add a **condition that checks if the input number is greater than 1**, because, by definition numbers such as 0, 1, -1 and -2 are not prime.
+What remains is to add a **condition that checks if the input number is greater than 1**, because, by definition numbers such as 0, 1, -1, and -2 are not prime.
 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#9](https://judge.softuni.org/Contests/Practice/Index/1057#9).
 
 
-### The break operator in an infinite loop
+### The break Operator in an Infinite Loop
 
 Write a function, which checks whether a given number **n** is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
@@ -340,22 +340,22 @@ Here is an idea for the solution:
 * In **the body of the loop**:
    * We take the integer value, passed to our function, and assign it to **`n`**.
    * If **the number is even**, we exit the loop by a **`break`**. 
-   * **Otherwise**, we print a message stating that **the number is not even**. Iterations continue, until an even number is entered.
+   * **Otherwise**, we print a message stating that **the number is not even**. Iterations continue until an even number is entered.
 * We print the even number on the console.
 
 Here is an example implementation of the idea:
 
 ![](/assets/chapter-7-1-images/00.Break-in-infinite-loop-01.png)
 
-Note: although the code above is correct, it will not work if the user enters text instead of a number, for example "**Invalid number**". Then the parse of the text to a number will break and the program will display **error message (exception)**. We will learn very soon how to deal with this problem and how to catch and handle exceptions using the **`try-except` construct**.
+Note: although the code above is correct, it will not work if the user enters text instead of a number, for example "**Invalid number**". Then the parse of the text to a number will break and the program will display an **error message (exception)**. We will learn very soon how to deal with this problem and how to catch and handle exceptions using the **`try-except` construct**.
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
 
-## Nested Loops and the Break operator
+## Nested Loops and The break Operator
 
-Now since we know what **nested loops** are and how the **`break`** operator works, it is time to figure out how they work together.To get a better idea, we should write a **function** step by step, that should make all possible combinations of **number pairs**. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until **`i + j`** **is not** equal to 2 (i.e. **`i = 1`** and **`j = 1`**).
+Now since we know what **nested loops** are and how the **`break`** operator works, it is time to figure out how they work together. To get a better idea, we should write a **function** step by step, that should make all possible combinations of **number pairs**. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until **`i + j`** **is not** equal to 2 (i.e. **`i = 1`** and **`j = 1`**).
 
 The desired result is:
 
@@ -375,7 +375,7 @@ Why is this so? As we can see, the result is **missing "1 1"**. When the functio
 <td> When we use the <b><code>break</code></b> <b>operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
-What is the **correct solution**? One way to solve the problem is by declaring a **`bool` variable**, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to **`True`** and exit the inner loop with **`break`**, and in the next check, we exit the outer loop. Here is an example implementation of this idea:
+What is the **correct solution**? One way to solve the problem is by declaring a **`bool` variable**, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to **`True`** and exit the inner loop with a **`break`**, and in the next check, we exit the outer loop. Here is an example implementation of this idea:
 
 ![](/assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png)
 
@@ -385,38 +385,38 @@ In this manner, when **`i + j = 2`**, the program will set the variable **`has_t
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#11](https://judge.softuni.org/Contests/Practice/Index/1057#11).
 
-## Dealing with exceptions: try-except
+## Dealing with Exceptions: try-except
 
-The last thing we'll look at in this chapter is how to "catch" **errors (exceptions)** using the **`try-except`** construction .
+The last thing we'll look at in this chapter is how to "catch" **errors (exceptions)** using the **`try-except`** construction.
 
 ### What is try-except?
 
 The **`try-except`** construction is used for **catching and handling exceptions (errors)** during program execution.
 
-In programming, **exceptions** are notifications of an event that disrupts the normal operation of a program. Such events **interrupt the execution** of the program, which starts looking for someone to handle the situation. If it is not found, the exception is printed on the console (i.e. the program stops). If found, **the exception is processed** and the program continues normal execution. In a bit we will see exactly how this happens.
+In programming, **exceptions** are notifications of an event that disrupts the normal operation of a program. Such events **interrupt the execution** of the program, which starts looking for someone to handle the situation. If it is not found, the exception is printed on the console (i.e. the program stops). If found, **the exception is processed** and the program continues normal execution. In a bit, we will see exactly how this happens.
 
-### try-except construction
+### try-except Construction
 
-The **`try-except`** construction has different options, but for now we will get acquainted only with the most basic of them
+The **`try-except`** construction has different options, but for now, we will get acquainted only with the most basic of them
 
  ![](/assets/chapter-7-1-images/00.Try...except-01.png)
 
 
 
-In the next task we will see how to deal with a situation, in which the user enters an input other than a number (for example **`string`** instead of **`int`**), using **`try-except`**.
+In the next task, we will see how to deal with a situation, in which the user enters an input other than a number (for example **`string`** instead of **`int`**), using **`try-except`**.
 
 ### Problem: Break Sum
 
-Write a program that checks that a number **n** is even and, if so, print it on the screen. In case of **invalid entered** number, a message should be displayed that the entered input is not a valid number and the input should continue.
+Write a program that checks that a number **n** is even and if so, print it on the screen. In case of an **invalid entered** number, a message should be displayed that the entered input is not a valid number and the input should continue.
 
 Here's how we can solve the problem:
 
 * We create an infinite **`while`** loop, as a condition we will set **`True`**.
 * In the body of the loop:
 	* We create a **`try-except`** construction.
-	* In the block **`try`** we write the program logic for reading the user input, its parsing to a number and the parity check.
-	* At **even number** we print it and leave the loop (with **`break`**). The program has done its job and is coming to an end.
-	* At **odd number** we print a message that an even number is required without leaving the loop (because we want it to be repeated again).
+	* In the block **`try`** we write the program logic for reading the user input, its parsing to a number, and the parity check.
+	* At an **even number**, we print it and leave the loop (with **`break`**). The program has done its job and is coming to an end.
+	* At an **odd number**, we print a message that an even number is required without leaving the loop (because we want it to be repeated).
 	* If we **catch an exception** during the execution of the **`try`** block, we print a message for an invalid entered number (and the loop repeats, because we do not explicitly leave it).
 
 Here is an example implementation of the described idea:
@@ -427,10 +427,10 @@ Here is an example implementation of the described idea:
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
-Now the solution must always work: whether we enter integers, invalid numbers (for example, numbers with too many digits) or text that does not contain numbers.
+Now the solution must always work: whether we enter integers, invalid numbers (for example, numbers with too many digits), or text that does not contain numbers.
 
 
-## Problems with loops
+## Problems with Loops
 
 In this chapter, we got familiar with a few new types of loops that can perform repetitions with more complex programming logic. Let's solve a few practical problems using these new constructs.
 
@@ -456,15 +456,15 @@ Fn = Fn-1 + Fn-2
 |0|1| |
 |1|1| |
 
-Enter an **integer** number **n** and calculate the **n-th Fibonacci number.**.
+Enter an **integer** number **n** and calculate the **n-th Fibonacci number**.
 
 #### Hints and Guidelines
 
 An idea to solve the problem:
 
 * We declare a **variable `n`**, which will hold the integer value received from the console input.
-* We create the variables **`f0`** and **`f1`**, to which we assign the value to **1**, since this is the start of Fibonacci's sequence.
-* We create a **`for`** loop starting from 0 to **final value `n - 1`**.
+* We create the variables **`f0`** and **`f1`**, to which we assign the value to **1** since this is the start of Fibonacci's sequence.
+* We create a **`for`** loop starting from 0 to the **final value `n - 1`**.
 * In the **body of the loop:**
    * We create a **temporary** variable **`f_next`**, to which we assign the next number in the Fibonacci sequence.
    * To **`f0`** we assign the current value of **`f1`**.
@@ -492,7 +492,7 @@ Print the **numbers 1 … n in a pyramid** as per the below example. On the firs
 
 #### Hints and Guidelines
 
-We can solve the problem with **two nested loops** (by rows and columns) with printing in them and leaving when the last number is reached. Here is the idea, written in more detail:
+We can solve the problem with **two nested loops** (by rows and columns) by printing in them and leaving when the last number is reached. Here is the idea, written in more detail:
 
 * We declare a variable **`n`**, to which we assign the integer value, received from the console input.
 * We declare a variable **`num`** with an initial value of 1. It will hold the count of printed numbers. At each iteration, we will **increment** it by **1** and will add it to the current row.
@@ -502,7 +502,7 @@ We can solve the problem with **two nested loops** (by rows and columns) with pr
    * We check whether **`col > 1`**, if true we print space. If we do not make this check and instead print the space every time, each resulting line will start with a space.
    * We **print** the number **`num`**  in the current cell of the table and **increment it by 1**.
    * We check if **`num > n`**. If the **`num`** is greater than **`n`**, we **break** the **inner loop**.
-* We print **empty line**, to move on to the next.
+* We print an **empty line**, to move on to the next.
 * Again, we check if **`num > n`**. If it is greater, we **interrupt** the execution of **our program** with a **`break`** operator. 
 
 Here is an example implementation:
@@ -533,9 +533,9 @@ We can solve the problem by using **two nested loops** and some simple calculati
 * In **the body of the loop** we create a nested **`for`** loop, that will be responsible for the columns in the table. We name the loop variable **`col`** and assign it an initial **value of 0**. For condition, we set **`n`**. The size of the step is set to 1.
 * In **the body of the nested loop**:
    * We create a variable **`num`**, to which we assign the result of **the current row + the current column + 1** (+1, is needed since we count from 0).
-   * We check whether **`num > n`**. If **`num`** is **greater** than **`n`**, we assign **`num`** a new value equal to **two times**`n`** - the current value of **`num`**. We do this in order not to exceed **`n`** in any of the cells of the table.
-    * We print the number fro the current table cell.
-* We print **empty line** in the outer loop, to move on to the next line.
+   * We check whether **`num > n`**. If **`num`** is **greater** than **`n`**, we assign **`num`** a new value equal to **two times `n`** - the current value of **`num`**. We do this in order not to exceed **`n`** in any of the cells of the table.
+    * We print the number from the current table cell.
+* We print an **empty line** in the outer loop, to move on to the next line.
 
 Here is an example implementation:
 
@@ -590,11 +590,11 @@ except ValueError:
 
 ## Problem: Web Applications with More Complex Loops
 
-Now we know how to repeat a group of actions using **loops**. Let's do something interesting: **web based game**. Yes, a real game, with graphics and game logic. Let's have fun. It will be complicated, but if you do not understand exactly how it works, that is no problem. We are still just entering programming. There is time, you will advance with this technology. For now, follow the steps.
+Now we know how to repeat a group of actions using **loops**. Let's do something interesting: a **web-based game**. Yes, a real game, with graphics and game logic. Let's have fun. It will be complicated, but if you do not understand exactly how it works, that is no problem. We are still just entering programming. There is time, you will advance with this technology. For now, follow the steps.
 
 ### Problem: Web Game "Shoot The Fruits!"
 
-**Condition**: Develop a **Flask web application** – a game in which the player **shoots at fruits**, arranged in a table. Successfully hit fruits disappear, and the player receives points for each fruit that was hit. The shooting is performed on columns, from top to bottom or vice-versa, and the location of the hit (the column under fire) is set by a scroll bar. Due to the inaccuracy of the scroller, the player is not quite sure which column to shoot at. So with each shot there is a chance not to hit and this makes the game more interesting (similar to the slingshot in Angry Birds).
+**Condition**: Develop a **Flask web application** – a game in which the player **shoots at fruits**, arranged in a table. Successfully hit fruits disappear, and the player receives points for each fruit that was hit. The shooting is performed on columns, from top to bottom or vice-versa, and the location of the hit (the column under fire) is set by a scroll bar. Due to the inaccuracy of the scroller, the player is not quite sure which column to shoot at. So with each shot, there is a chance not to hit and this makes the game more interesting (similar to the slingshot in Angry Birds).
 
 Our game should look like this:
 
@@ -606,7 +606,7 @@ Shown below, are the steps for implementing the "Shoot the Fruits!" Web applicat
 
 ### Empty PyCharm Solution
 
-We create a empty solution in PyCharm to organize the code from the application:
+We create an empty solution in PyCharm to organize the code from the application:
 
 ![](/assets/chapter-7-1-images/15.Blank-Python-project-01.png)
 
@@ -618,7 +618,7 @@ We will create our web application using the **Flask** library, which we have al
 
 Now we need to take the structure of the project from the resources provided to us.
 
-Then, we add the **resources** for the game (they are part of the task files for this project and can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-CSharp-Python/tree/master/assets/chapter-7-1-assets)). We copy them from Windows Explorer and paste them in the project folder in PyCharm with **copy/paste**. Once we have placed the resources, the structure of the project should look like this:
+Then, we add the **resources** for the game (they are part of the task files for this project and can be downloaded from [here](https://github.com/SoftUni/Programming-Basics-Book-CSharp-Python/tree/master/assets/chapter-7-1-assets)). We copy them from Windows Explorer and paste them into the project folder in PyCharm with **copy/paste**. Once we have placed the resources, the structure of the project should look like this:
 
 ![](/assets/chapter-7-1-images/15.Fruits-06.png)
 
@@ -636,9 +636,9 @@ Now we need to prepare the fruits for drawing in the view. Add the following cod
 
 ![](/assets/chapter-7-1-images/15.Fruits-09.png) 
 
-The above code defines the fields for **number of rows, number of columns**, for **fruit table** (playing field), for the **points** accumulated by the player and information whether the game is active or **finished** (field **`gameOver`**). The playing field is 9 columns in 3 rows and contains text for each field: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**. The main action **`index()`** prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).
+The above code defines the fields for a **number of rows**, a **number of columns**, for **fruit table** (playing field), for the **points** accumulated by the player, and information whether the game is active or **finished** (field **`gameOver`**). The playing field is 9 columns in 3 rows and contains the text for each field: **`apple`, `banana`, `orange`, `kiwi`, `empty`, or `dynamite`**. The main action **`index()`** prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).
 
-We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty` or `dynamite`**.Then, to draw the corresponding image in the view, **`.png`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and per column).
+We need to generate random fruits. To do this, we need to write the method **`generate_random_fruits()`** with the code from the picture below. This code writes in the table (matrix) **`fruits`** names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: **`apple`, `banana`, `orange`, `kiwi`, `empty`, or `dynamite`**. Then, to draw the corresponding image in the view, **`.png`** will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view **`index.html`**, with two nested **`for`** loops (per row and column).
 
 To generate random fruits, a **random number** between 0 and 8 is generated for each cell (see class **`random`** in Python). If the number is 0 or 1, put **`apple`**, if it is between 2 and 3, put **`banana`**, etc. If the number is 8, set **`dynamite`**. Thus, fruits appear 2 times more often than dynamite. Here is the code:
 
@@ -646,7 +646,7 @@ To generate random fruits, a **random number** between 0 and 8 is generated for 
 
 Drawing the fruit in **`index.html`**:
 
-To **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and for the columns). Each line consists of 9 pictures, each of which contains **`apple`, `banana`** or another fruit, or an empty field **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.png" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
+To **fill the playing field** with the fruits, we have to iterate **two nested loops** (for the rows and the columns). Each line consists of 9 pictures, each of which contains an **`apple`, `banana`**, or another fruit, or an empty field **`empty`**, or **`dynamite`**. Images are drawn by printing an HTML tag to insert an image: **`<img src="/images/apple.png" />`**. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with **`<br>`**. This is repeated three times for the three lines. Finally, the player's points are printed. Here's how the **code** for drawing the playing field and points looks like:
 
 ![](/assets/chapter-7-1-images/15.Fruits-11.png)
 
@@ -658,12 +658,12 @@ We start the project with [**Shift+F10**]. It is expected that a random fruit fi
 
 Now the game is somewhat done: the playing field is randomly generated and visualized successfully (if you haven't made a mistake somewhere). It remains to realize the essence of the game: **shooting at the fruits**.
 
-To do this, add the actions [**New Game**], [**Fire Top**] and [**Fire Bottom**] to the file **app.py**:
+To do this, add the actions [**New Game**], [**Fire Top**], and [**Fire Bottom**] to the file **app.py**:
 
 ![](/assets/chapter-7-1-images/15.Fruits-13.png) 
 
 Using the code above we define three actions:
-*	**`reset()`** – launches a new game by generating a new random playing field with fruits and explosives, resets the player's points and makes the game valid **(`gameOver = false`)**. This action is quite simple and can be tested immediately with [**Shift+F10**] before writing the others..
+*	**`reset()`** – launches a new game by generating a new random playing field with fruits and explosives, resets the player's points, and makes the game valid **(`gameOver = false`)**. This action is quite simple and can be tested immediately with [**Shift+F10**] before writing the others.
 *	**`fire_top()`** – shoots in line **0** at **`position`** (number from 0 to 100), taken by the user. A **down** (+1) shooting from row **0** (top) is called. The shooting itself is more complex in logic and will be discussed shortly.
 *	**`fire_bottom()`** – shoots in line **2** at **`position`** (number from 0 to 100), taken by the user. A shoot in the **up** (-1) direction from row **2** (bottom) is called.
 
@@ -671,9 +671,9 @@ We implement the "shooting" method **`fire(position, start_row, step)`**:
 
 ![](/assets/chapter-7-1-images/15.Fruits-14.png)
 
-Shooting works as follows: first the number of the column **`col`**, to which the player is aiming is calculated. The input number from the scroller (between 0 and 100) s reduced to a number between 0 and 8 (for each of the 9 columns). The line number **row** is either 0 (if the shot at the top) or the number of lines minus one (if the shot is at the bottom). Accordingly, the direction of firing (the step) is **1** (down) or **-1** (up).
+Shooting works as follows: first, the number of the column **`col`**, to which the player is aiming is calculated. The input number from the scroller (between 0 and 100) s reduced to a number between 0 and 8 (for each of the 9 columns). The line number **row** is either 0 (if the shot is at the top) or the number of lines minus one (if the shot is at the bottom). Accordingly, the direction of firing (the step) is **1** (down) or **-1** (up).
 
-To find where the shot hits a fruit or dynamite, go through a loop through all the cells of the playing field in the target column and from the first to the last attacked row. If a fruit is found, it disappears (replaced by **`empty`**) and points are given to the player. If **`dynamite`** is encountered, the game is marked as over.
+To find where the shot hits a fruit or dynamite, go through a loop through all the cells of the playing field in the target column and from the first to the last attacked row. If the fruit is found, it disappears (replaced by **`empty`**) and points are given to the player. If **`dynamite`** is encountered, the game is marked as over.
 
 We leave it to more avid readers to implement more complex behaviors, for example, to give different points when hitting a different fruit, to realize an animation with an explosion (this is not too easy), to take away points when shooting unnecessarily in an empty column, and similar.
 
