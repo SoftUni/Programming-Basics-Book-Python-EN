@@ -467,7 +467,7 @@ We add to the existing PyCharm project one more Python file named "concatenate_d
 
 ![](/assets/chapter-2-1-images/04.Concatenate-data-02.png)
 
-Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right click - [**Run**] and enter sample input.
+Next, the solution should be tested locally using [**Ctrl + Shift + F10**] or with right-click - [**Run**] and enter sample input.
 
 #### Testing in The Judge System
 
