@@ -19,7 +19,7 @@ Write a program that finds the first number that appears **in both sequences def
 
 Let **the Tribonacci sequence** start with **1**, **2** and **3**. This means that **the first sequence** will contain the numbers 1, 2, 3, 6, 11, 20, 37, 68, 125, 230, 423, 778, 1431, 2632, 4841, 8904, 16377, 30122, 55403, 101902, and so on.
 
-At the same time, let the **the numbers in the spiral** begin with **5** and the spiral increases by **2** at each step.
+At the same time, let the **numbers in the spiral** begin with **5** and the spiral increases by **2** at each step.
 
 <img src="assets/chapter-9-1-images/01.Crossing-sequences-01.png" style="float: right; height: 300px;" />
 

@@ -286,7 +286,7 @@ number = 5.432424
 print(f"{number:.2f}")
 ```
 
-In this case after the number we add **`:.2f`**, which will limit the number to 2 digits after the decimal point and will work like **`round(…)`**. You should keep in mind that the number after the letter **`f`** means to how many digits after the decimal point the number is rounded (i.e. it can be **`3f`** or **`5f`**). Don't forget the **the dot before the number** - it is necessary.
+In this case after the number we add **`:.2f`**, which will limit the number to 2 digits after the decimal point and will work like **`round(…)`**. You should keep in mind that the number after the letter **`f`** means to how many digits after the decimal point the number is rounded (i.e. it can be **`3f`** or **`5f`**). Don't forget the **dot before the number** - it is necessary.
 
 ### How to Write a Conditional Statement?
 
