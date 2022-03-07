@@ -1,6 +1,6 @@
 # Chapter 2.1. Simple Calculations
 
-In this chapter we are going to become familiar with the following concepts and programming techniques:
+In this chapter, we are going to become familiar with the following concepts and programming techniques:
 - How to work with **data types and variables**, which are necessary when processing numbers and strings.
 - How to **print** a result on the console.
 - How to **read** user input.

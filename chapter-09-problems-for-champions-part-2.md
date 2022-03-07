@@ -1,6 +1,6 @@
 # Chapter 9.2. Problems for Champions – Part II
 
-In this chapter we will review three additional tasks that belong to the category "**For Champions**", i.e. they are more complex than the rest of the tasks in this book.
+In this chapter, we will review three additional tasks that belong to the category "**For Champions**", i.e. they are more complex than the rest of the tasks in this book.
 
 ## More Complex tasks on the Studied Material
 
