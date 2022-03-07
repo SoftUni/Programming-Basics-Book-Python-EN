@@ -2,7 +2,7 @@
 
 In this chapter, we will review three additional tasks that belong to the category "**For Champions**", i.e. they are more complex than the rest of the tasks in this book.
 
-## More Complex tasks on the Studied Material
+## More Complex Tasks on The Studied Material
 
 Before we move on to particular tasks, we must clarify that these can be solved more easily with **additional knowledge in programming with Python** (functions, arrays, collections, recursion, etc.), but each solution that will be provided now only uses the material covered in this book. The goal is to learn how to construct **more complex algorithms** based on your knowledge collected up to the present moment.
 
@@ -236,7 +236,7 @@ After finishing the result calculation for our sub-expression, we **modify the r
 
 ![Operator checks](/assets/chapter-9-2-images/02.X-expression-09.png)
 
-#### Formatting the Output
+#### Formatting The Output
 
 The only output that the program must print on the console is the **result of solving the expression with an accuracy of up to two symbols after the decimal point**. How can we format the output this way? We will leave the answer to this question to the reader.
 
@@ -316,7 +316,7 @@ Reading the input data is simple:
 
 ![Input read](/assets/chapter-9-2-images/03.Bulls-and-cows-01.png)
 
-#### Algorithm for Solving the Problem
+#### Algorithm for Solving The Problem
 
 Before starting to write the algorithm for solving our problem, we must **declare a flag** that indicates whether a solution is found:
 
