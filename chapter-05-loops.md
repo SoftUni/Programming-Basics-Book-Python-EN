@@ -1,20 +1,20 @@
-# Chapter 5.1. Loops (Repetitions)
+# Chapter 5.1. Loops
 
-In this chapter we will become familiar with how to **repeat blocks of commands**, known in programming as "**loops**". We will write a number of loops using the **`for`** operator in its classic form. Finally, we will solve some practical problems, which require repeating series of actions, using loops.
+In this chapter, we will become familiar with how to **repeat blocks of commands**, known in programming as "**loops**". We will write a number of loops using the **`for`** operator in its classic form. Finally, we will solve some practical problems, which require repeating a series of actions, using loops.
 
 ## Repeating Blocks of Code (For Loop)
 
-In programming it is often required **to execute a block with commands multiple times**. For this reason we are using **loops**. We can see an example for **`for` loop**, which goes through the numbers from 1 to 10 and prints them:
+In programming, it is often required **to execute a block with commands multiple times**. For this reason, we are using **loops**. We can see an example of a **`for` loop**, which goes through the numbers from 1 to 10 and prints them:
 
 ![](/assets/chapter-5-1-images/00.For-loop-01.png)
 
-The loop starts with the **operator `for`** and passes through all values of particular variable in given range, for example all numbers from 1 to 10 included (without 11) and for each value it performs series of commands.
+The loop starts with the **operator `for`** and passes through all values of a particular variable in a given range, for example, all numbers from 1 to 10 included (without 11), and for each value, it performs a series of commands.
 
-Upon declaring the loop, you can specify a **start value** and **end value**, while the end value is not included in the range. **The body of the loop** is a block with at least one commands. THe figure below shows the structure of a **`for` loop**:
+Upon declaring the loop, you can specify a **start value** and **end value**, while the end value is not included in the range. **The body of the loop** is a block with at least one command. The figure below shows the structure of a **`for` loop**:
 
 ![](/assets/chapter-5-1-images/00.For-loop-02.png)
 
-In most cases a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perfomrm a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printes in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
+In most cases, a **`for` loop** is run between **`1`** and **`n`** (for example from 1 to 10). The purpose of the loop is to go sequentially through the numbers 1, 2, 3, …, n  and for each of them to perform a particular action. In the example above, the variable **`i`** accepts values from 1 to 10 and  the current value is printed in the body of the loop. The loop is repeated 10 times and each of these repetitions is called "**iteration**".
 
 ### Problem: Numbers from 1 to 100
 
@@ -22,11 +22,11 @@ Write a program that **prints the numbers from 1 to 100**. The program does not 
 
 #### Hints and Guidelines
 
-We can solve the problem using a **`for` loop** , via which we will pass through the numbers from 1 to 100 using the **`i`** variable, and print the numbers in the body of the loop:
+We can solve the problem using a **`for` loop**, via which we will pass through the numbers from 1 to 100 using the **`i`** variable, and print the numbers in the body of the loop:
 
 ![](/assets/chapter-5-1-images/01.Numbers-1-to-100-01.png)
 
-**Start** the program with [**Ctrl+Shift+F10**] or with right click - **Run** and **test it**:
+**Start** the program with [**Ctrl+Shift+F10**] or with right-click - **Run** and **test it**:
 
 ![](/assets/chapter-5-1-images/01.Numbers-1-to-100-02.png)
 
@@ -38,11 +38,11 @@ You should get **100 points** (fully accurate solution).
 
 ### Problem: Numbers Ending in 7
 
-Write a program that finds all numbers in range [**1 … 1000**], that end in 7. 
+Write a program that finds all numbers in the range [**1 … 1000**], that end in 7. 
 
 ####  Hints and Guidelines
 
-We can solve the problem by combining a **`for` loop** for passing through the numbers between 1 and 1000 and a condition to **check** if each of the numbers end in 7. Of course, there are other solutions, but let's solve the problem using **loop + condition**:
+We can solve the problem by combining a **`for` loop** for passing through the numbers between 1 and 1000 and a condition to **check** if each of the numbers ends in 7. Of course, there are other solutions, but let's solve the problem using **loop + condition**:
 
 ![](/assets/chapter-5-1-images/02.Numbers-ending-in-7-01.png)
 
@@ -86,7 +86,7 @@ Write a program that **reads `n` integers and finds their sum**.
 
 #### Hints and Guidelines
 
-We can solve the problem with summing up numbers in the following way:
+We can solve the problem by summing up numbers in the following way:
  - We read the input number **`n`**.
  - We initially start with a sum **`sum = 0`**.
  - We run a loop from 0 to **`n`**. On each step of the loop, we read the number **`num`** and add it to the **`sum`**.
@@ -103,7 +103,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ### Problem: Max Number
 
-Write a program that enters **n integers** (**n** > 0) and finds **the max** among them. The first line of the input, reads the number of integers. After that the next lines read the integers, each on separate line. Examples:
+Write a program that enters **n integers** (**n** > 0) and finds **the max** among them. The first line of the input reads the number of integers. After that, the next lines read the integers, each on a separate line. Examples:
 
 #### Sample Input and Output
 
@@ -117,7 +117,7 @@ Write a program that enters **n integers** (**n** > 0) and finds **the max** amo
 
 #### Hints and Guidelines
 
-We will first enter one number **`n`** (the number of integers that are about to be entered). We assign the current maximum **`max`**an initial neutral value, for example **-10000000000000**. Using a **`for` loop**, that is iterated **n-1 times**, we read one integer **`num`**.  If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the **`max`** value. Finally, in **`max`**  we must have stored the highest number. We print the number on the console.:
+We will first enter one number **`n`** (the number of integers that are about to be entered). We assign the current maximum **`max`**an initial neutral value, for example **-1000000**. Using a **`for` loop**, that is iterated **n-1 times**, we read one integer **`num`**.  If the read number **`num`** is higher than the current maximum **`max`**, we assign the value of the **`num`** to the **`max`** value. Finally, in **`max`**, we must have stored the highest number. We print the number on the console.:
 
 ![](/assets/chapter-5-1-images/05.Max-number-01.png)
 
@@ -128,7 +128,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ### Problem: Min Number
 
-Write a program that enters **n integers** (**n** > 0) and finds **the min** among them. The first line of the input, reads the number of integers and after that the next lines read the integers, each on separate line.
+Write a program that enters **n integers** (**n** > 0) and finds **the min** among them. The first line of the input reads the number of integers and after that, the next lines read the integers, each on a separate line.
 
 #### Sample Input and Output
 
@@ -161,7 +161,7 @@ Write a program that reads an input **2 \* n integers** and checks if ** the sum
 
 #### Hints and Guidelines
 
-We will first input the number **n**, after that the first **n** numbers (**left** half) and we sum them up. We will then proceed with inputting more **n** numbers (**right** half) and sum them up. We calculate **the difference ** between the sums by absolute value: **`math.fabs(rightSum - leftSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + the difference **.
+We will first input the number **n**, after that the first **n** numbers (**left** half) and we sum them up. We will then proceed with inputting more **n** numbers (**right** half) and sum them up. We calculate **the difference** between the sums by absolute value: **`math.fabs(rightSum - leftSum)`**. If the difference is **0**, print **"Yes" + sum**, otherwise print **"No" + the difference **.
 
 ![](/assets/chapter-5-1-images/07.Left-and-right-sum-01.png)
 
@@ -210,7 +210,7 @@ Write a program that inputs **text** (string), calculates and prints **the sum o
 
 #### Hints and Guidelines
 
-We read the input text **`line`**, null the sum and run a loop, which goes through each symbol from the text. We check each letter **`c`** and verify if it is a vowel, and accordingly, add its value to the sum:
+We read the input text **`line`**, null the sum, and run a loop, which goes through each symbol from the text. We check each letter **`c`** and verify if it is a vowel, and accordingly, add its value to the sum:
 
 ![](/assets/chapter-5-1-images/09.Vowels-sum-01.png)
 
@@ -229,19 +229,19 @@ We can read a sequence of **`n`** numbers from the console:
 
 ![](/assets/chapter-5-1-images/00.For-loop-03.png)
 
-## Problems: Loops (Repetitions)
+## Problems: Loops
 
 Now, that we've become acquainted with the loops, it's time **to consolidate our knowledge in practice**, and as you know, -> this is done through writing lots of code. Let's solve a few problems for exercise.
 
 ### Creating New Project in PyCharm
 
-Create new project in PyCharm (from [**File**] -> [**New Project**]), to organise better the exercise tasks. The purpose of this **project** is to contain **one Python file for each task** from the exercises:
+Create a new project in PyCharm (from [**File**] -> [**New Project**]), to organize better the exercise tasks. The purpose of this **project** is to contain **one Python file for each task** from the exercises:
   
 ![](/assets/chapter-5-1-images/00.New-project-PyCharm-01.png)
 
 ### Problem: Half Sum Element
 
-Write a program that inputs **n integers** and checks whether there is a number among them, which is equal to the sum of all the rest. If there is such an element, print **"Yes" + itsvalue**, otherwise print - **"No" + the difference betwen the largest element and the sum of the rest** (by absolute value). 
+Write a program that inputs **n integers** and checks whether there is a number among them, which is equal to the sum of all the rest. If there is such an element, print **"Yes" + its value**, otherwise print - **"No" + the difference between the largest element and the sum of the rest** (by absolute value). 
 
 #### Sample Input and Output
 
@@ -255,7 +255,7 @@ Write a program that inputs **n integers** and checks whether there is a number 
 
 #### Hints and Guidelines
 
-We have to calculate **the sum** of all elements, find **the largest** of them and check the condition.
+We have to calculate **the sum** of all elements, find **the largest** of them, and check the condition.
 
 #### Testing in The Judge System
 
@@ -264,7 +264,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ### Problem: Odd \/ Even Positions
 
-Write a program that reads **n numbers** and calculates **the sum**, **the min** and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there is no min / max elements, print **"No"**. 
+Write a program that reads **n numbers** and calculates **the sum**, **the min**, and **max** values of the numbers on **even** and **odd** positions (counted from 1). If there are no min / max elements, print **"No"**. 
 
 #### Sample Input and Output
 
@@ -277,9 +277,9 @@ Write a program that reads **n numbers** and calculates **the sum**, **the min**
 
 #### Hints and Guidelines
 
-This task combines some of the previous tasks: finding the **min**, **max** value and **sum**, as well as processing of elements on **even and odd positions **. Check them out.
+This task combines some of the previous tasks: finding the **min**, **max** value, and **sum**, as well as processing of elements on **even and odd positions **. Check them out.
 
-In the current task it is better to work with **fractions** (not integers). The sum, the min and the max will also be fractions. We must use a **neutral starting value** when finding the min / max value, for example **1000000000.0** and **-1000000000.0**. If the end result is the neutral value, print **"No"**.
+In the current task, it is better to work with **fractions** (not integers). The sum, the min, and the max will also be fractions. We must use a **neutral starting value** when finding the min / max value, for example **10000.0** and **-10000.0**. If the result is the neutral value, print **"No"**.
 
 #### Testing in The Judge System
 
@@ -288,7 +288,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053
 
 ### Problem: Equal Pairs
 
-There are **2 \* n numbers**. The first and the second number form a **pair**, the third and the fourth number as well, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal value**. In case the value is the same, print **"Yes, value=…" + the value**, otherwise print **the maximum difference ** between two neighboring pairs in the following format - **"No, maxdiff=…" + the maximum difference **. The input consists of the number **n**, followed by **2*n integers**, all of them one per line.
+There are **2 \* n numbers**. The first and the second number form a **pair**, the third and the fourth number as well, and so on. Each pair has a **value** – the sum of its numbers. Write a program that checks **if all pairs have equal value**. In case the value is the same, print **"Yes, value=…" + the value**, otherwise print **the maximum difference** between two neighboring pairs in the following format - **"No, maxdiff=…" + the maximum difference**. The input consists of the number **n**, followed by **2*n integers**, all of them one per line.
 
 #### Sample Input and Output
 
@@ -303,16 +303,16 @@ There are **2 \* n numbers**. The first and the second number form a **pair**, t
 
 #### Hints and Guidelines
 
-We read the input numbers **in pairs**. For each pair we calculate its **the sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. To do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
+We read the input numbers **in pairs**. For each pair, we calculate its **sum**. While reading the input pairs, for each pair except the first one, we must calculate **the difference compared to the previous one**. To do that, we need to store as a separate variable the sum of the previous pair. Finally, we find the **largest difference ** between two pairs. If it is **0**, print **"Yes"** + the value, otherwise print - **"No"** + the difference.
 
 #### Testing in The Judge System
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1053#11](https://judge.softuni.org/Contests/Practice/Index/1053#11).
 
 
-## Lab: Graphic and Web Applications
+## Lab: Graphics and Web Applications
 
-In the current chapter we learned about **loops** as a programming construction that allows to repeat a particular action or a group of actions multiple times. Now let's play with them. To do that, we will draw some figures that will consist of a large number made up of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
+In the current chapter, we learned about **loops** as a programming construction that allows repeating a particular action or a group of actions multiple times. Now let's play with them. To do that, we will draw some figures that will consist of a large number made up of repeating graphical elements, but this time we will not do it on the console, but in a graphical environment using "**turtle graphics**". It will be interesting. And it is not hard at all. Try it!
 
 ### Problem: Turtle Graphics GUI Application
 
@@ -320,7 +320,7 @@ The purpose of the following exercise is to play with a **drawing library**, als
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-01.png)
 
-Let's first get familiar with **the concept of drawing "Turtle Graphics""**. Take a look at the following sources:
+Let's first get familiar with **the concept of drawing "Turtle Graphics"**. Take a look at the following sources:
 
 * Definition of "turtle graphics": [https://wiki.c2.com/?TurtleGraphics](https://wiki.c2.com/?TurtleGraphics)
 * Article on "turtle graphics" in Wikipedia – [https://en.wikipedia.org/wiki/Turtle_graphics](https://en.wikipedia.org/wiki/Turtle_graphics)
@@ -330,7 +330,7 @@ We will start by creating a new **project in PyCharm**:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-02.png)
 
-In the newly created project we add new **Python File**. For the drawing we will use the external library **`turtle`**. It defines class **`Turtle`**, which represents **drawing turtle**. To use it, we add the following code in the beginning of the Python file:
+In the newly created project, we add a new **Python File**. For the drawing, we will use the external library **`turtle`**. It defines class **`Turtle`**, which represents **drawing turtle**. To use it, we add the following code at the beginning of the Python file:
   
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-03.png)
 
@@ -338,7 +338,7 @@ After that for the drawing we add the code:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-04.png)
 
-The above code moves and rotates the turtle, which is located in the center of the screen in the beginning (in the middle of the form) and draws an equilateral triangle. You can edit it and play with it. **Start** the app:
+The above code moves and rotates the turtle, which is located in the center of the screen at the beginning (in the middle of the form) and draws an equilateral triangle. You can edit it and play with it. **Start** the app:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-05.png)
 
@@ -352,7 +352,7 @@ Again **start** the app to see the result:
 
 Now our turtle draws more complex figures via a nice animated motion.
 
-### Problem: * Draw a Hexagon with The Turtle
+### Problem: \* Draw a Hexagon with The Turtle
 
 Add a new Python file, with the name **hexagon**, which will draw a hexagon:
 
@@ -364,7 +364,7 @@ With loop repeat the following 6 times:
 * 60 degrees rotation.
 * Forward step of 100.
 
-### Problem: * Draw a Star with The Turtle
+### Problem: \* Draw a Star with The Turtle
 
 Add new Python file **star.py**, which draws a star with 5 beams (**pentagram**), as on the figure below:
 
@@ -376,26 +376,26 @@ Repeat 5 times the following in a loop:
 * Forward step of 200.
 * 144 degrees rotation.
 
-### Problem * Draw a Spiral with The Turtle
+### Problem" \* Draw a Spiral with The Turtle
 
-Add new Python file **spiral.py**, which draws spiral with 20 beamsas on the figure below:
+Add new Python file **spiral.py**, which draws spiral with 20 beams as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-10.png)
 
-**Hint:** Draw in a loop by moving ahead and rotating. In each step, decrease the length gradually of the forward step and rotate 60 degrees..
+**Hint:** Draw in a loop by moving ahead and rotating. In each step, decrease the length gradually of the forward step and rotate 60 degrees.
 
-### Problem: * Draw a Sun with The Turtle
+### Problem: \* Draw a Sun with The Turtle
 
 Add a new Python file **sun.py**, which draws a sun with 36 beams, as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-11.png)
 
-### Problem: * Draw a Spiral Triangles with The Turtle
+### Problem: \* Draw a Spiral Triangles with The Turtle
 
 Add new Python file **triangle.py**, which draws three triangles with 22 beams each, as on the figure below:
 
 ![](/assets/chapter-5-1-images/13.Turtle-graphics-12.png)
 
-**Hint:** Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step with 10 and rotate 120 degrees. Repeat 3 times for the three triangles. 
+**Hint:** Draw in a loop by moving forward and rotating. In each step, increase the length of the forward step by 10 and rotate 120 degrees. Repeat 3 times for the three triangles. 
 
 If you have a problem with the above exercises, ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
