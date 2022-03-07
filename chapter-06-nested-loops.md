@@ -1,6 +1,6 @@
 # Chapter 6.1. Nested Loops
 
-In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations** and **checks**, to print on the console simple and not so simple figures by specified sizes.
+In the current chapter, we will be looking at **nested loops** and how to use `for` loops to **draw** various **figures on the console**, that contain symbols and signs, ordered in rows and columns on the console. We will use **single** and **nested loops** (loops that stay in other loops), **calculations**, and **checks**, to print on the console simple and not so simple figures by specified sizes.
 
 ### Problem: Rectangle of 10 x 10 Stars
 
@@ -14,7 +14,7 @@ Print on the console a rectangle made out of **10 x 10** asterisks.
 
 ![](/assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is **`i = 0`**. With each iteration of the loop, the variable increases by **1** while it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0<sup>-th</sup>** to **9<sup>-th</sup>** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
+How does the example work? We initialize **a loop with a variable `i`**. The default value of the variable is **`i = 0`**. With each iteration of the loop, the variable increases by **1** while it is **less than 10**. This way the code in the body of the loop is executed **10 times** - from **0** to **9** included. In the body of the loop, we print a new line on the console **`'*' * 10`**, which creates a string of 10 asterisks.
 
 
 #### Testing in The Judge System
@@ -24,7 +24,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Problem: Rectangle of N x N Stars
 
-Write a program which receives a positive number **n** and prints on the console **a rectangle made out of N x N asterisks**. 
+Write a program that receives a positive number **n** and prints on the console **a rectangle made out of N x N asterisks**. 
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -45,9 +45,9 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 A **nested loop** is a construction where **the body of one loop** (the outer one) **stays inside another loop** (the inner one). In each iteration of the outer loop, **the whole** inner loop is executed. This happens in the following way:
 
- - When nested loops start executing, **the outer loop starts** first: **initialization** of its control variable is performed and after checking for end of the loop, the code in its body is executed.
- - After that, **the inner loop is executed**. The control variable's start position is initialized, a check for end of the loop is made and the code in its body is executed.
- - When the set value for **end of the loop** is reached, the program goes back one step up and continues executing the previous outer loop. The control variable of the outer loop changes with one step, a check is made to see if the condition for end of the loop is met and **a new execution of the nested \(inner\) loop is started**.
+ - When nested loops start executing, **the outer loop starts** first: **initialization** of its control variable is performed and after checking for the end of the loop, the code in its body is executed.
+ - After that, **the inner loop is executed**. The control variable's start position is initialized, a check for the end of the loop is made and the code in its body is executed.
+ - When the set value for the **end of the loop** is reached, the program goes back one step up and continues executing the previous outer loop. The control variable of the outer loop changes with one step, a check is made to see if the condition for the end of the loop is met and **a new execution of the nested \(inner\) loop is started**.
  - This is repeated until the variable of the outer loop meets the condition to **end the loop**.
 
 Here is an **example** that illustrates nested loops. The aim is again to print a rectangle made of **N x N asterisk**, in which for each row a loop iterates from **1** to **N**, and for each column a nested loop is executed from **1** to **N**:
@@ -56,7 +56,7 @@ Here is an **example** that illustrates nested loops. The aim is again to print 
 
 In **Python**, when the standard initial value of the variable in the loop (**`i = 0`**) does not work for us, we can change it with the above syntax. I.e. when we want the loop to start from **1** and rotate to **`n`** inclusive, we write: **`for i in range (1, n + 1)`**. The first value in parentheses indicates the beginning of the loop, and the second - the end of the loop, but not including, i.e. the loop ends before it is reached. 
 
-Let's look at the example above. After the initialization of the **first (outer) loop**, its **body**, which contains **the second (nested) loop**, starts to run. It itself prints one line **`n`** of asterisks. After the **internal** loop **completes** its execution in the first iteration of the external one, then **the external one will continue**, i.e. will print a blank line on the console. **Then** the **first** loop ** will be **updated** and the whole **second** (nested) loop will be executed again. The inner loop will be executed as many times as the body of the outer loop is executed, in this case **`n`** times. 
+Let's look at the example above. After the initialization of the **first (outer) loop**, its **body**, which contains **the second (nested) loop**, starts to run. It prints one line **`n`** of asterisks. After the **internal** loop **completes** its execution in the first iteration of the external one, then **the external one will continue**, i.e. will print a blank line on the console. **Then** the **first** loop ** will be **updated** and the whole **second** (nested) loop will be executed again. The inner loop will be executed as many times as the body of the outer loop is executed, in this case, **`n`** times. 
 
 ### Problem: Square of Stars
 
@@ -78,7 +78,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Problem: Triangle of Dollars
 
-Write a program which receives an integer **n** and prints **a triangle made of dollars** of size **n**.
+Write a program that receives an integer **n** and prints **a triangle made of dollars** of size **n**.
 
 |Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
@@ -97,7 +97,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Problem: Square Frame
 
-Write a program which receives a positive integer **n** and draws on the console **a square frame** with a size of **N x N**.
+Write a program that receives a positive integer **n** and draws on the console **a square frame** with a size of **N x N**.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -126,7 +126,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Problem: Rhombus of Stars
 
-Write a program which receives a positive integer **n** and prints **a rhombus made of asterisks** with size **N**.
+Write a program that receives a positive integer **n** and prints **a rhombus made of asterisks** with size **N**.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -150,7 +150,7 @@ To solve this problem, we need to mentally **divide** **the rhombus** into **two
 ![](/assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter in this case shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
+<td>In Python, the standard step of the <strong><code>for</code></strong> loop is positive and is equal to 1. If we want to change it, we must use a third parameter in the arguments of the loop: <code><b>for i in range (0, 100, 2)</b></code>. The third parameter, in this case, shows that the variable will increase from 0 to 99 inclusive, with step 2.</td>
 </tr></table>
 
 #### Testing in The Judge System
@@ -159,7 +159,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Problem: Christmas Tree
 
-Write a program which receives a number **n** (1 ≤ n ≤ 100) and prints a Christmas tree with a height of **N + 1**.
+Write a program that receives a number **n** (1 ≤ n ≤ 100) and prints a Christmas tree with a height of **N + 1**.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -171,7 +171,7 @@ Write a program which receives a number **n** (1 ≤ n ≤ 100) and prints a Chr
 
 #### Hints and Guidelines
 
-From the examples, we see that **the Christmas tree** can be **divided** into **three** logical parts. **The first** part is **the asterisks and the whitespaces before and after them**, **the middle** part is **` | `**, and **the last** part is again **asterisks**, but this time there are **whitespaces** only **before** them. The printing can be done with only **one loop** and the operation **string multiplication** , which we will use once for the asterisks and once for the whitespaces:
+From the examples, we see that **the Christmas tree** can be **divided** into **three** logical parts. **The first** part is **the asterisks and the whitespaces before and after them**, **the middle** part is **` | `**, and **the last** part is again **asterisks**, but this time there are **whitespaces** only **before** them. The printing can be done with only **one loop** and the operation **string multiplication**, which we will use once for the asterisks and once for the whitespaces:
 
 ![](/assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
@@ -186,7 +186,7 @@ Let's look at how to **draw figures** using **nested loops** with more complex l
 
 ### Problem: Sunglasses
 
-Write a program which receives an integer **n** (3 ≤ n ≤ 100) and prints sunglasses with a size of **5\*N x N** as found in the examples:
+Write a program that receives an integer **n** (3 ≤ n ≤ 100) and prints sunglasses with a size of **5\*N x N** as found in the examples:
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -203,7 +203,7 @@ From the examples, we can see that the sunglasses can be divided into **three pa
 ![](/assets/chapter-6-1-images/08.Sunglasses-01.png)
 
 
-When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 2 - 1`**, because in the examples we can see that in **this row** we need to print **vertical slashes** instead of whitespaces:
+When drawing **the middle** part, we need to **check** if the row is **`(n-1) / 2 - 1`** because in the examples we can see that in **this row** we need to print **vertical slashes** instead of whitespaces:
 
 ![](/assets/chapter-6-1-images/08.Sunglasses-02.png)
 
@@ -213,7 +213,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Problem: House
 
-Write a program which receives a number **n** (2 ≤ **n** ≤ 100) and prints **a house** with size **N x N**, just as in the examples:
+Write a program that receives a number **n** (2 ≤ **n** ≤ 100) and prints **a house** with size **N x N**, just as in the examples:
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -237,7 +237,7 @@ We understand from the description of the problem that the house is with a size 
 
 ##### The Roof
 * It comprises **asterisks** and **dashes**.
-* At its highest part there are one or two asterisks, depending on whether **n** is even or odd, as well as dashes. 
+* At its highest part, there are one or two asterisks, depending on whether **n** is even or odd, as well as dashes. 
 * At its lowest part, there are many asterisks and little to no dashes.
 * With each lower row, **the asterisks** increase by 2, and **the dashes** decrease also by 2.
 
@@ -245,7 +245,7 @@ We understand from the description of the problem that the house is with a size 
 ##### The Base
 * The height is **`n`** rows.
 * It is made out of **asterisks** and **vertical slashes**.
-* Each row comprises 2 **vertical slashes** – one in the beginning and one at the end of the row, and also **asterisks** between the vertival slashes with a string length of **`n - 2`**.    
+* Each row comprises 2 **vertical slashes** – one in the beginning and one at the end of the row, and also **asterisks** between the vertical slashes with a string length of **`n - 2`**.    
 
 We read the input number **`n`** from the console and write its value in a variable: 
 
@@ -308,7 +308,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1055
 
 ### Problem: Diamond
 
-Write a program which receives an integer **n** (1 ≤ **n** ≤ 100) and prints a diamond with size **N**, as in the following examples:
+Write a program that receives an integer **n** (1 ≤ **n** ≤ 100) and prints a diamond with size **N**, as in the following examples:
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -411,7 +411,7 @@ for row in range(5):
 
 ## Lab: Drawing Figures in a Web Environment 
 
-Now that we got used to **nested loops** and the way to use them to draw figures on the console, we can get into something even more interesting: we can see how loops can be used to **draw in a Web environment**. We will make a web application that visualizes a number rating (a number from 0 to 100) with stars. This kind of visualization is common in e-commerce sites, reviews of products, event rating, rating of apps, and others.
+Now that we got used to the **nested loops** and the way to use them to draw figures on the console, we can get into something even more interesting: we can see how loops can be used to **draw in a Web environment**. We will make a web application that visualizes a number rating (a number from 0 to 100) with stars. This kind of visualization is common in e-commerce sites, reviews of products, event rating, rating of apps, and others.
 
 Don't worry if you don't understand all of the code, how exactly it is written and how the project works. It is normal, now we are learning to write code and we are a long way from the web development technologies. If you are struggling to write your project by following the steps, ask for help in the **SoftUni's Reddit Community**: [https://www.reddit.com/r/softuni/](https://www.reddit.com/r/softuni/).
 
@@ -443,7 +443,7 @@ We are now adding the **structure** of the project (the assignment files for thi
 
 ![](assets/chapter-6-1-images/11.Ratings-06.png)
 
-For everything to work, we need to add the code. First we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code:
+For everything to work, we need to add the code. First, we go to the file **index.html** (from the templates folder) and look for the **TODO** sections. In their place we enter the following code:
 ![](assets/chapter-6-1-images/11.Ratings-07.png)
 
 The above code creates a web form **`<form>`** with one field **`" rating "`** for entering a number in the interval [**0… 100**] and a button [**Rate**] to send the data from the form to the server. Then, draw with three separate **for** loops the corresponding number of stars - filled, half-empty and empty. 
@@ -452,7 +452,7 @@ The action that will process the data is called **`/DrawRatings`**, which means 
 
 ![](assets/chapter-6-1-images/11.Ratings-08.png)
 
-The code from the function **`draw_ratings ()`** takes the entered number **`rating`** from the form and passes it to the function **`calc_rating (…)`**. The **`calc_rating (…)`** function computes and calculates the number of **full stars**, the number of **empty stars** and the number of **halves of stars**, then reloads the page, but with new ones submitted values of the variables for the stars. We implement it as follows:
+The code from the function **`draw_ratings ()`** takes the entered number **`rating`** from the form and passes it to the function **`calc_rating (…)`**. The **`calc_rating (…)`** function computes and calculates the number of **full stars**, the number of **empty stars**, and the number of **halves of stars**, then reload the page, but with new ones submitted values of the variables for the stars. We implement it as follows:
 
 ![](assets/chapter-6-1-images/11.Ratings-09.png)
 
