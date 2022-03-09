@@ -16,7 +16,7 @@ If you were **not able** to solve all problems or a large part of them, go back 
 
 As we already explained, the first and basic skill of a programmer is **to learn to write code** with ease and pleasure. This is namely the mission of this book: to teach you how to code.
 
-## What to do After Reading This Book?
+## What to Do After Reading This Book?
 
 This book **gives you solid grounds**, thanks to which it will be easy for you to continue developing as a programmer. If you wonder how to continue your development, you have the following possibilities:
  - to study for a **software engineer at SoftUni** and make programming your profession.
@@ -35,40 +35,40 @@ The training in SoftUni has a duration of **2-3 years** (depending on the profes
 
 Keep in mind that **to become a programmer takes a lot of effort**, writing tens of thousands of lines of code, and solving hundreds, even thousands of practical problems, and this takes years! If someone offers you "**an easier program**" and promises you to become a programmer and start working within 3-4 months, then either they are **lying** to you, or they will give you such a low level, that **companies won't even take you as a trainee**, even if you pay to the company that is wasting its time with you. There are exceptions, of course - for example, if you are not starting from scratch, or if you have extremely well-developed engineering thinking, or if you apply for a very low position (for example technical support), but in general, **you cannot become a programmer if you haven't spent at least 1 year of intense learning and code-writing**!
 
-#### Entrance Exam at SoftUni
-
+<!-- to update -->
+<!-- #### Entrance Exam at SoftUni
 **To enroll at SoftUni** you need to attend an **entrance exam** in "Programming Basics" on the material from this book. If you easily solve the problems in this book, then you are ready for the exam. Also, pay attention to the chapters on **preparation for the practical exam in programming**. They will give you a good idea of the level of difficulty of the exam and the types of tasks that you need to learn to solve.
 
-If the tasks from the book and the preparation examples are hard for you, then you **need more preparation**. Enroll for the [free course in "Programming Basics"](https://softuni.org) or go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease**, without helping yourselves with the guidelines and the sample solutions.
+If the tasks from the book and the preparation examples are hard for you, then you **need more preparation**. Go through the book carefully one more time, without skipping solving **the problems in any of the studied topics**! You must learn how **to solve them with ease**, without helping yourselves with the guidelines and the sample solutions. -->
 
-#### SoftUni Curriculum for Software Engineers
+<!-- #### SoftUni Curriculum for Software Engineers
 
-What follows after the entrance exam is a **serious curriculum** in the SoftUni program for training software engineers. It is formed as a sequence of **modules in several courses** in programming and software technologies, fully directed towards gaining fundamental knowledge in software development and acquiring **practical skills for working** as a programmer with the most contemporary software technologies. Students are given a choice between **several professions** and specializations focused on C#, Java, JavaScript, PHP, and other languages and technologies. Each profession is trained in several modules with 4 months duration, and each module consists of 2 or 3 courses. The classes are divided into **theoretical preparation** (30%) and **practical exercises, projects** (70%), and each course ends with a practical exam or practical academic project.
+What follows after the entrance exam is a **serious curriculum** in the SoftUni program for training software engineers. It is formed as a sequence of **modules in several courses** in programming and software technologies, fully directed towards gaining fundamental knowledge in software development and acquiring **practical skills for working** as a programmer with the most contemporary software technologies. Students are given a choice between **several professions** and specializations focused on C#, Java, JavaScript, PHP, and other languages and technologies. Each profession is trained in several modules with 4 months duration, and each module consists of 2 or 3 courses. The classes are divided into **theoretical preparation** (30%) and **practical exercises, projects** (70%), and each course ends with a practical exam or practical academic project. -->
 
-#### How Many Hours Per Day does The Training Take?
+<!-- #### How Many Hours Per Day does The Training Take?
 
 The training for software engineers at SoftUni is a **very serious occupation** and you need to spend **at least 4-5 hours every day**, preferably your entire attention and time. Combining **working and training** is not always successful, but if you work something easy and you have a lot of spare time, it is a good option. SoftUni is an appropriate option for **school students, university students**, and **people who work**, but it is best if you assign your entire time to your training and mastering the profession. It will not work if you spend 2 or 4 hours a week on it!
 
-The forms of training at SoftUni are **on-site** (the better choice) and **online** (if you don't have another option). In both forms of training, to learn the program in the curriculum (that is required by software companies for starting a job), you need **a lot of learning**. You just need to **find the time for it!** Reason #1 for having a hard time on the road to the profession in SoftUni is not spending enough time for the training: as a minimum, you need to spend at least 20-30 hours a week.
+The forms of training at SoftUni are **on-site** (the better choice) and **online** (if you don't have another option). In both forms of training, to learn the program in the curriculum (that is required by software companies for starting a job), you need **a lot of learning**. You just need to **find the time for it!** Reason #1 for having a hard time on the road to the profession in SoftUni is not spending enough time for the training: as a minimum, you need to spend at least 20-30 hours a week. -->
 
 #### SoftUni for People Who Work and Study
 
-We recommend to everyone who gets **an excellent score at the SoftUni entrance exam** and is passionate about making programming their profession, to leave the rest of their commitments aside and **spend their entire time** on learning the profession of a "software engineer" and start making a living through it.
+We recommend to everyone who gets **an excellent score at Judge Problems** and is passionate about making programming their profession, to leave the rest of their commitments aside and **spend their entire time** on learning the profession of a "software engineer" and start making a living through it.
 
  - For people who **work** this means quitting their job (and getting a loan or decreasing their expenses, to live with a lower income for 1-2 years until they start working in the new profession).
- - For people who **study** in a traditional university, this means to move significantly their focus towards programming and the practical courses in SoftUni, by decreasing the time spent in the traditional university.
+ - For people who **study** in a traditional university, this means to move significantly their focus towards programming, by decreasing the time spent in the traditional university.
  - For **unemployed** people, this is an excellent chance to assign their entire time, power, and energy to acquire a new, perspective, well paid and highly sought profession, that will give them good life quality and long-term prosperity.
  - For **students** in secondary schools and high schools, this means **giving a priority** to what is more important in their development: studying practical programming in SoftUni, which will give them a profession and a job, or giving their full attention to the traditional education system, or combining smartly both undertakings. Unfortunately, often priorities are determined by parents, and we don't have a solution for these cases.
  
-We recommend to all who **cannot get an excellent score at the SoftUni entrance exam** to spend more time on better learning, understanding, and most of all, practicing the material studied in the present book. If you cannot easily solve the problems in this book, you will not be able to cope with programming and software development in the future.
+We recommend to all who **cannot get an excellent score at the Judge problems** to spend more time on better learning, understanding, and most of all, practicing the material studied in the present book. If you cannot easily solve the problems in this book, you will not be able to cope with programming and software development in the future.
 
-**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession as a software engineer, if you don't have an excellent grade at the SoftUni entrance exam! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously and work on this for years every day with joy and pleasure.
+**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession as a software engineer, if you don't have an excellent grade at the book exercises! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously and work on this for years every day with joy and pleasure.
 
 ### Study Software Engineering on Your Own
 
 Another possibility to develop after this book is to **continue studying programming outside of SoftUni**. You can enroll or subscribe to **video training**, that goes into more details in programming with **Python** or other languages and development platforms. You can **read books** on programming and software technologies, follow **online tutorials** and other online resources – there are plenty of free materials on the Internet. However, keep in mind that the most important thing about the profession of a programmer is **to do practical projects**!
 
-**You cannot become a programmer without a lot of code writing and intense practice**. Allocate **sufficient time** to it. You cannot become a programmer for a month or two. On the Internet, you will find a wide variety of **free resources** such as books, manuals, video lessons, online and on-site courses on programming and software development. However, you need to invest **at least a year or two**, to acquire a foundation level, needed for starting a job.
+**You cannot become a programmer without a lot of code writing and intense practice**. Allocate **sufficient time** to it. You cannot become a programmer for a month or two. On the Internet, you will find a wide variety of **free resources** such as books, manuals, and video lessons. However, you need to invest **at least a year or two**, to acquire a foundation level, needed for starting a job.
 
 After you gain some experience, find a way to start **an internship in a company** (which will be almost impossible unless you'd spent at least a year of intense code writing before that) or come up with **your practical project**, on which you need to spend a few months, even a year, to learn based on the trial-and-error principle.
 
@@ -86,7 +86,6 @@ If you aim to study programming seriously, **surround yourselves with people who
 Here are some recommended **resources**, that will be useful for your development as a programmer:
 * https://softuni.org – official **website of SoftUni**. In it, you will find free (and not only) courses, seminars, video tutorials, and training in programming, software technologies, and digital competencies.
 * https://www.facebook.com/softuni.org – official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
-* https://www.facebook.com/SoftwareUniversity/ - official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
 * https://introprogramming.info - official website of the **books "Programming Basics"** with **C#** and **Java** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
 * https://stackoverflow.com - **Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
 * https://www.meetup.com/find/tech/ - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
