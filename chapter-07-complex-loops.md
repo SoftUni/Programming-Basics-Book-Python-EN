@@ -262,7 +262,7 @@ We can use the following idea to solve the problem:
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#8](https://judge.softuni.org/Contests/Practice/Index/1057#8).
 
 
-## Infinite Loops and The break Operator 
+## Infinite Loops and The `break` Operator 
 
 So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an **infinite loop** is, when it occurs, and how we can **break** it using the **`break`** operator.
 
@@ -273,7 +273,7 @@ An **infinite loop** **runs infinitely** the code of its body. With the infinite
 ![](/assets/chapter-7-1-images/00.Infinite-while-loop-01.png)
 
 
-### The break Operator
+### The `break` Operator
 
 We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The **`break`** operator comes in handy in this situation.
 
@@ -329,7 +329,7 @@ What remains is to add a **condition that checks if the input number is greater 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#9](https://judge.softuni.org/Contests/Practice/Index/1057#9).
 
 
-### The break Operator in an Infinite Loop
+### The `break` Operator in an Infinite Loop
 
 Write a function, which checks whether a given number **n** is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.
 
@@ -353,7 +353,7 @@ Note: although the code above is correct, it will not work if the user enters te
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#10](https://judge.softuni.org/Contests/Practice/Index/1057#10).
 
 
-## Nested Loops and The break Operator
+## Nested Loops and The `break` Operator
 
 Now since we know what **nested loops** are and how the **`break`** operator works, it is time to figure out how they work together. To get a better idea, we should write a **function** step by step, that should make all possible combinations of **number pairs**. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until **`i + j`** **is not** equal to 2 (i.e. **`i = 1`** and **`j = 1`**).
 

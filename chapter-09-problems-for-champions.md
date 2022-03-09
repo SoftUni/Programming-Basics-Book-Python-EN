@@ -4,7 +4,7 @@ In this chapter, we will offer the reader a few **more difficult tasks**, that a
 
 ## More Complex Problems on The Studied Material
 
-Together we will solve several programming problems that cover the material studied in the book, but are more difficult than the usual problems of the entrance exams at SoftUni. If you want to **become a programming basics champion**, we recommend practicing solving such complex tasks to make it easier for you to take exams.
+Together we will solve several programming problems that cover the material studied in the book, but are more difficult than the usual problems of the practical exams at SoftUni. If you want to **become a programming basics champion**, we recommend practicing solving such complex tasks to make it easier for you to take exams.
 
 
 ## Problem: Crossing Sequences

@@ -243,7 +243,7 @@ Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1063
 
 Up until now, we were looking at functions that execute a particular action such as printing some text, value, or a string of characters on the console. Other than such functions, there also can be functions that **return** a value as a **result** of their execution – for example, this could the multiplication of two numbers. It will be these functions that will be the topic of our discussion in the next few lines.
 
-### The return Keyword
+### The `return` Keyword
 
 To return a value that is the result of the function’s execution we use the return keyword. It must be **used in the body** of the function and indicates to the program to **stop the execution** of the function and **returns value** to the caller of the function which is written as an argument after the keyword ‘return’. In the example that follows, there is a function that reads two names from the console, concatenates them, and returns them as a result:
 
@@ -257,7 +257,7 @@ In the following example, we have a function that compares two numbers and retur
 
 It is important to notice that the returned value by the function can be of a **different type** compared to the argument’s type - string, integer, floating-point number, etc.
 
-#### The Code After return is Unreachable
+#### The Code After `return` is Unreachable
 
 After the **`return`** keyword in a given function, the execution of the function is terminated, and the execution of the program continues where the function was last called. If there are other instructions written after the **`return`** keyword, they will not be executed. Some IDEs (including **PyCharm**) will inform you of the following warning:
 
