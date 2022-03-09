@@ -192,7 +192,7 @@ There are also **alternative environments to develop online**, directly in your 
 
 Before we start working with PyCharm, let's get familiar with the term **PyCharm Project** - it represents the project we're currently working on. 
 
-In the beginning that will be a console program which we'll learn how to write with the help of this book, its resources and SoftUni's Programming Basics course. After some more thorough studying and with time and practice, these projects will turn into applications, web apps and other projects. The PyCharm project uses **logic to group the numerous files** that make up a certain application or component.
+In the beginning that will be a console program which we'll learn how to write with the help of this book. After some more thorough studying and with time and practice, these projects will turn into applications, web apps and other projects. The PyCharm project uses **logic to group the numerous files** that make up a certain application or component.
 
 A single **Python project** consists of several **Python source files** (**.py**), configuration files and other resources. Every Python source file can have one or more **classes** and **functions**. **Classes** contain **functions**(actions), which are comprised of a **series of commands**. It may seem complicated, but in larger projects, this structure is extremely convenient and allows for the good organization of our work files.
 

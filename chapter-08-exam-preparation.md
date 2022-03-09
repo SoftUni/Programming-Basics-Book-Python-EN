@@ -4,7 +4,7 @@ In **the present chapter**, we will examine a few **problems** with a level of *
 
 ## The "Programming Basics" Practical Exam
 
-The course **"Programing Basics"** finishes with a **practical exam**. There are **6** problems included, and you will have **4 hours** to solve them. **Each** of the exam problems will **cover** one of the studied **topics** during the course. Problem topics are as follows:
+The **Practical Exam** contains **6** problems included, and you will have **4 hours** to solve them. **Each** of the exam problems will **cover** one of the studied **topics** during the course. Problem topics are as follows:
 
 - Problem with simple calculations (without conditions)
 - Problem with simple condition
@@ -15,7 +15,7 @@ The course **"Programing Basics"** finishes with a **practical exam**. There are
 
 ## The Online Evaluation System (Judge)
 
-**All exams and homework** are automatically **tested** through the online **Judge system**: [https://judge.softuni.org](https://judge.softuni.org). For **each** of the problems, there are **visible** (zero points) tests that help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.
+**All exams and problems** are automatically **tested** through the online **Judge system**: [https://judge.softuni.org](https://judge.softuni.org). For **each** of the problems, there are **visible** (zero points) tests that help you understand what is expected of the problem and fix your mistakes, as well as **competition** tests that are **hidden** and check if your solution is working properly.
 
 **How** does the testing in the **Judge** system work? **You upload** the source code and from the menu below you choose to compile as a **Python** program. The program is being **tested** with a series of tests, giving **points** for each **successful** test.
 

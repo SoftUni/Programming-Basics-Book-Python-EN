@@ -93,7 +93,7 @@ In this section, we will focus on **the accepted conventions for naming projects
 
 It is recommended to use a descriptive name **for naming projects and files**, which suggests **the role** of the respective file / project, and at the same time, the **`lowercase_with_underscores` convention** is also recommended. This is a **convention for naming** elements, in which each word, including the first one, starts with **a lowercase character**, and each word after is connected with an underscore (**`_`**), for example, **`expression_calculator`**. It's acceptable to name projects using the **`PascalCase`** convention - each word, including the first one, starts with a capital letter, and the next are appended to each other - **`ExpressionCalculator`**.
 
-Example: This course starts with the **First steps in coding** lecture, therefore an exemplary name for the solution for this lecture can be **`first_steps_in_coding`** or **`FirstStepsInCoding`**. The files in a project should follow the **`lowercase_with_underscores`** convention. If we take for example the first problem in the **First steps in coding** lecture, it is called **Hello World**, therefore our file in the project will be called **`hello_world.py`**.
+Example: The book starts with the **First steps in coding** chapter, therefore an exemplary name for the solution for this lecture can be **`first_steps_in_coding`** or **`FirstStepsInCoding`**. The files in a project should follow the **`lowercase_with_underscores`** convention. If we take for example the first problem in the **First steps in coding** lecture, it is called **Hello World**, therefore our file in the project will be called **`hello_world.py`**.
 
 ### Naming Variables
 
