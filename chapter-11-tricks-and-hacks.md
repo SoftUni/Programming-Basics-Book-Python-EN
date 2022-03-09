@@ -307,7 +307,7 @@ else:
 To make it easier we can use a live template for an **`if` construction**:
  * **`if` + [Tab]**
 
-### How to Write a 'For' Loop?
+### How to Write a `for` Loop?
 
 For a **`for` loop** we need a couple of things:
 

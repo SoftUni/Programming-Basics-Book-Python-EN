@@ -385,17 +385,17 @@ In this manner, when **`i + j = 2`**, the program will set the variable **`has_t
 
 Test your solution here: [https://judge.softuni.org/Contests/Practice/Index/1057#11](https://judge.softuni.org/Contests/Practice/Index/1057#11).
 
-## Dealing with Exceptions: try-except
+## Dealing with Exceptions: `try-except`
 
 The last thing we'll look at in this chapter is how to "catch" **errors (exceptions)** using the **`try-except`** construction.
 
-### What is try-except?
+### What is `try-except`?
 
 The **`try-except`** construction is used for **catching and handling exceptions (errors)** during program execution.
 
 In programming, **exceptions** are notifications of an event that disrupts the normal operation of a program. Such events **interrupt the execution** of the program, which starts looking for someone to handle the situation. If it is not found, the exception is printed on the console (i.e. the program stops). If found, **the exception is processed** and the program continues normal execution. In a bit, we will see exactly how this happens.
 
-### try-except Construction
+### The `try-except` Construction
 
 The **`try-except`** construction has different options, but for now, we will get acquainted only with the most basic of them
 

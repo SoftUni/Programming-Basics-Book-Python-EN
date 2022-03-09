@@ -376,7 +376,7 @@ if condition1:
         # body
 ```
 
-### Complex Conditions with and, or, not and ()
+### Complex Conditions with `and`, `or`, `not`, and `()`
 
 ```python
 if (x == left or x == right) and (y >= top or y <= bottom):

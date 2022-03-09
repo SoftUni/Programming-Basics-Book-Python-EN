@@ -417,7 +417,7 @@ prints the following result:
 ac
 ```
 
-### Formatting Using .format(…)
+### Formatting Using `.format(…)`
 
 We already looked at how we can format text and numbers using `.format(…)` and numbered templates `{0}`, `{1}`, `{2}` etc. Actually, when enumeration is not necessary, we can use just `{}`, to create a **placeholder**. Here is an example of how we can use formatting with `text.format(…)` to print the result from the last example:
 ```python
