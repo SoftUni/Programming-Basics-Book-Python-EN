@@ -20,3 +20,10 @@
 * [10. Methods](chapter-10-functions.md)
 * [11. Tricks and Hacks](chapter-11-tricks-and-hacks.md)
 * [Conclusion](chapter-12-conclusion.md)
+
+<hr />
+
+* [🎓 SoftUni Global](https://softuni.org)
+* [👨🏼‍💻 Learn Programming @ SoftUni Global](https://softuni.org/learn)
+* [▶️ SoftUni Global @ YouTube](https://www.youtube.com/c/CodeWithNakov)
+* [📚 Nakov's Books](https://introprogramming.info)
