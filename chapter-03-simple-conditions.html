@@ -399,6 +399,65 @@
     
 
     
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://softuni.org">
+            
+                    
+                    🎓 SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://softuni.org/learn">
+            
+                    
+                    👨🏼‍💻 Learn Programming @ SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <a target="_blank" href="https://www.youtube.com/c/CodeWithNakov">
+            
+                    
+                    ▶️ SoftUni Global @ YouTube
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <a target="_blank" href="https://introprogramming.info">
+            
+                    
+                    📚 Nakov's Books
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -457,7 +516,7 @@
 <p>The result from a comparison is the so-called Boolean value &#x2013; <strong><code>True</code></strong> or <strong><code>False</code></strong>, depending on the evaluated result being either true or false.</p>
 <h3 id="problems-of-number-comparisons"><a name="problems-of-number-comparisons" class="plugin-anchor" href="#problems-of-number-comparisons"><i class="fa fa-link" aria-hidden="true"></i></a>Problems of Number Comparisons</h3>
 <p><img src="assets/chapter-3-1-images/00.Comparing-numbers-01.png" alt=""></p>
-<p>Note that when printing <strong><code>true</code></strong> and <strong><code>false</code></strong> values in <strong>Python</strong>, they are capialized, <strong><code>True</code></strong> and <strong><code>False</code></strong>, respectively.</p>
+<p>Note that when printing <strong><code>true</code></strong> and <strong><code>false</code></strong> values in <strong>Python</strong>, they are capitalized, <strong><code>True</code></strong> and <strong><code>False</code></strong>, respectively.</p>
 <h3 id="comparison-operators"><a name="comparison-operators" class="plugin-anchor" href="#comparison-operators"><i class="fa fa-link" aria-hidden="true"></i></a>Comparison Operators</h3>
 <p>In Python, we can use the following operators to compare data:</p>
 <table>
@@ -513,7 +572,7 @@
 <h2 id="about-blocks-of-code"><a name="about-blocks-of-code" class="plugin-anchor" href="#about-blocks-of-code"><i class="fa fa-link" aria-hidden="true"></i></a>About Blocks of Code</h2>
 <p>By pressing the <strong>tab key</strong> we create a block of code through which a group of commands can be executed. When we have code in <strong>if, elif, else</strong> (and other structures) and we want to perform a series of operations, we put them in a block after the condition.</p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
-<td>It is a good practice <strong>to use tab (or four spaces)</strong>, since this makes the code more readable, neater and cleaner. In this way we avoid errors during code execution.</td>
+<td>It is a good practice <strong>to use a tab (or four spaces)</strong> since this makes the code more readable, neater and cleaner. In this way, we avoid errors during code execution.</td>
 </tr></table>
 
 <p>Here is an example of bad indentation:</p>
@@ -530,15 +589,15 @@
 <p><img src="assets/chapter-3-1-images/03.Even-or-odd-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#2</a>.</p>
-<h3 id="problem-finding-the-greater-number"><a name="problem-finding-the-greater-number" class="plugin-anchor" href="#problem-finding-the-greater-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Finding The Greater Number</h3>
-<p>Write a program that reads two integers and outputs the number of higher value between the two .</p>
+<h3 id="problem-greater-number"><a name="problem-greater-number" class="plugin-anchor" href="#problem-greater-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Greater Number</h3>
+<p>Write a program that reads two integers and outputs the number of higher value between the two.</p>
 <p>Our first task is to <strong>read</strong> the two numbers. After which through the use of a simple <strong><code>if-else</code></strong> structure, in combination with the <strong>greater than operator</strong> (<strong><code>&gt;</code></strong>), to perform the comparison. We have deliberately blurred parts of the code so that the reader can implement the learned so far.</p>
 <p><img src="assets/chapter-3-1-images/04.Greater-number-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#3</a>.</p>
 <h2 id="the-lifetime-of-a-variable"><a name="the-lifetime-of-a-variable" class="plugin-anchor" href="#the-lifetime-of-a-variable"><i class="fa fa-link" aria-hidden="true"></i></a>The Lifetime of a Variable</h2>
 <p>Every variable has a scope in which it exists, called <strong>variable scope</strong>. This scope specifies where the variable can be used and accessed. In Python, <strong>variables could be used anywhere if they are initialized at least once.</strong></p>
-<p>In the example below, on the last line we try to print the variable <strong><code>my_name</code></strong>, which is defined in the <strong><code>else</code> structure</strong>. We will get an <strong>error</strong>, because in this case the body of the <strong><code>else</code></strong> clause, in which we initialize the variable, is not executed. However, there is no problem to print the variable <strong><code>can_drive</code></strong> because the program entered the body of the <strong><code>if</code></strong> clause and initialized the variable. As you can see the variables <strong><code>can_drive</code></strong> and <strong><code>my_name</code></strong> are colored yellow. This is a warning from <strong>PyCharm</strong>, that we may get an error. Therefore, we should be careful where we initialize the variables.</p>
+<p>In the example below, on the last line, we try to print the variable <strong><code>my_name</code></strong>, which is defined in the <strong><code>else</code> structure</strong>. We will get an <strong>error</strong>, because in this case the body of the <strong><code>else</code></strong> clause, in which we initialize the variable, is not executed. However, there is no problem printing the variable <strong><code>can_drive</code></strong> because the program entered the body of the <strong><code>if</code></strong> clause and initialized the variable. As you can see the variables <strong><code>can_drive</code></strong> and <strong><code>my_name</code></strong> are colored yellow. This is a warning from <strong>PyCharm</strong>, that we may get an error. Therefore, we should be careful where we initialize the variables.</p>
 <p><img src="assets/chapter-3-1-images/00.Variable-scope-01.png" alt=""></p>
 <h2 id="conditional-chaining"><a name="conditional-chaining" class="plugin-anchor" href="#conditional-chaining"><i class="fa fa-link" aria-hidden="true"></i></a>Conditional Chaining</h2>
 <p>Sometimes we have to do a series of checks, before deciding what actions our program will execute. In such cases we can apply the structure <strong><code>if-elif ... else</code> in series</strong>. For this purpose, we employ the following structure:</p>
@@ -619,7 +678,7 @@
 <p>Please note that for this problem the Judge system is set up to ignore any non-number outputs, so we may print explanations along with the number output.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#5" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#5</a>.</p>
-<h3 id="problem-summing-up-seconds"><a name="problem-summing-up-seconds" class="plugin-anchor" href="#problem-summing-up-seconds"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Summing Up Seconds</h3>
+<h3 id="problem-sum-seconds"><a name="problem-sum-seconds" class="plugin-anchor" href="#problem-sum-seconds"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sum Seconds</h3>
 <p>Three athletes finish with some <strong>number of seconds</strong> (between <strong>1</strong> and <strong>50</strong>). Write a program that reads the times of the contestants and calculates their <strong>combined time</strong> in &quot;minutes:seconds&quot; format. Seconds are to be printed with a <strong>leading zero</strong> (2 -&gt; &quot;02&quot;, 7 -&gt; &quot;07&quot;, 35 -&gt; &quot;35&quot;).</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -752,188 +811,6 @@
 <p>Select <strong>Pure Python</strong> from the field on the left and set the project directory, putting the name of your project in place of the <strong>untitled</strong> one:  </p>
 <p><img src="assets/chapter-3-1-images/00.PyCharm-02.png" alt=""></p>
 <p>Now we have an empty project (no files in it).</p>
-<h3 id="problem-excellent-grade"><a name="problem-excellent-grade" class="plugin-anchor" href="#problem-excellent-grade"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Excellent Grade</h3>
-<p>The first exercise for this topic is to write a <strong>console application</strong>, which <strong>reads input data - a grade</strong> (decimal number) and prints &quot;<strong>Excellent!</strong>&quot;, if the grade is <strong>5.50</strong> or higher.</p>
-<h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>6</td>
-<td>Excellent!</td>
-</tr>
-<tr>
-<td>5</td>
-<td>(no output)</td>
-</tr>
-<tr>
-<td>5.5</td>
-<td>Excellent!</td>
-</tr>
-<tr>
-<td>5.49</td>
-<td>(no output)</td>
-</tr>
-</tbody>
-</table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>We create a new <strong>python</strong> file (<strong>.py</strong>) by right-clicking on the folder we created and selecting [<strong>New</strong>] -&gt; [<strong>Python File</strong>]:</p>
-<p> <img src="assets/chapter-3-1-images/00.PyCharm-03.png" alt=""></p>
-<p>A dialog box will open, where we need to specify a name for our file. Since our task is to check if a grade is excellent, let&#x2019;s name the file <strong>excellent_result</strong>:</p>
-<p> <img src="assets/chapter-3-1-images/00.PyCharm-04.png" alt=""></p>
-<p>We already have a Project with a single file in it. Now we have to write the code to solve the problem. To this effect we write the following code:</p>
-<p> <img src="assets/chapter-3-1-images/01.ExcellentResult-01.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
-<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#0</a>.</p>
-<p> <img src="assets/chapter-3-1-images/01.ExcellentResult-02.png" alt=""> </p>
-<p> <img src="assets/chapter-3-1-images/01.ExcellentResult-03.png" alt=""></p>
-<h3 id="problem-excellent-grade-or-not"><a name="problem-excellent-grade-or-not" class="plugin-anchor" href="#problem-excellent-grade-or-not"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Excellent Grade or Not</h3>
-<p>The next exercise for this topic is to write a <strong>console program</strong>, which <strong>reads input data - a grade</strong> (decimal number) and prints &quot;<strong>Excellent!</strong>&quot;, if the grade is <strong>5.50</strong> or higher, or &quot;<strong>Not excellent.</strong>&quot; if it is not.</p>
-<h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>6</td>
-<td>Excellent!</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Not excellent.</td>
-</tr>
-<tr>
-<td>5.5</td>
-<td>Excellent!</td>
-</tr>
-<tr>
-<td>5.49</td>
-<td>Not excellent.</td>
-</tr>
-</tbody>
-</table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>Firstly, we create a <strong>new Python file</strong> in our project. After that, we  <strong>write the code</strong> the program. You may use the following example code as a hint:</p>
-<p> <img src="assets/chapter-3-1-images/02.Excellent-or-not-01.png" alt=""></p>
-<p>After that, we <strong>run the program</strong>, as usual with [<strong>Shift + F10</strong>], so we can test its functionality:</p>
-<p> <img src="assets/chapter-3-1-images/02.Excellent-or-not-02.png" alt="">
- <img src="assets/chapter-3-1-images/02.Excellent-or-not-03.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
-<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#1</a>.</p>
-<p><img src="assets/chapter-3-1-images/02.Excellent-or-not-04.png" alt=""></p>
-<h3 id="problem-even-or-odd"><a name="problem-even-or-odd" class="plugin-anchor" href="#problem-even-or-odd"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Even or Odd</h3>
-<p>Write a program that checks whether an <strong>integer</strong> input data is either <strong>even</strong> or <strong>odd</strong> and prints the result on the console.</p>
-<h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2</td>
-<td>even</td>
-</tr>
-<tr>
-<td>3</td>
-<td>odd</td>
-</tr>
-<tr>
-<td>25</td>
-<td>odd</td>
-</tr>
-<tr>
-<td>1024</td>
-<td>even</td>
-</tr>
-</tbody>
-</table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>Again, firstly we must create a <strong>new Python file</strong>. Then the check if a number is either even or odd can be made with the operator <strong><code>%</code></strong>, which will return the <strong>remainder from an integer divided by 2</strong> as follows: <strong><code>is_even = number % 2 == 0</code></strong>.</p>
-<p>Now we have to <strong>run</strong> the program with [<strong>Ctrl+F5</strong>] and test it:  </p>
-<p><img src="assets/chapter-3-1-images/03.Even-or-odd-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
-<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#2</a>.</p>
-<h3 id="problem-find-the-greater-number"><a name="problem-find-the-greater-number" class="plugin-anchor" href="#problem-find-the-greater-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Find The Greater Number</h3>
-<p>Write a program that reads input data from the console. As input data enter <strong>two integers</strong> each on a separate line and print the greater one on the console.</p>
-<h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>5<br>3</td>
-<td>5</td>
-</tr>
-<tr>
-<td>3<br>5</td>
-<td>5</td>
-</tr>
-<tr>
-<td>10<br>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>-5<br>5</td>
-<td>5</td>
-</tr>
-</tbody>
-</table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>As usual, first, we need to create a <strong>new Python file</strong>. For the main logic, we need a single <strong><code>if-else</code></strong> construct. The code below is deliberately blurred, however, there is enough visible to give you some hint, so you can complete it yourself: </p>
-<p><img src="assets/chapter-3-1-images/04.Greater-number-01.png" alt=""></p>
-<p>When we are done with the implementation of the solution, we <strong>run</strong> the program with [<strong>Shift + F10</strong>] and test it:</p>
-<p><img src="assets/chapter-3-1-images/04.Greater-number-02.png" alt=""></p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
-<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#3</a>.</p>
-<h3 id="problem-output-a-digits-word-equivalent"><a name="problem-output-a-digits-word-equivalent" class="plugin-anchor" href="#problem-output-a-digits-word-equivalent"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Output a Digit&apos;s Word Equivalent</h3>
-<p>Write a program that reads input data from the console - <strong>integer in range</strong> [<strong>0 &#x2026; 9</strong>] and prints <strong>its word equivalent</strong> in English. If the number is outside the given range, the program should print &quot;<strong>number too big</strong>&quot;.</p>
-<h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
-<table>
-<thead>
-<tr>
-<th>Input</th>
-<th>Output</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>5</td>
-<td>five</td>
-</tr>
-<tr>
-<td>1</td>
-<td>one</td>
-</tr>
-<tr>
-<td>9</td>
-<td>nine</td>
-</tr>
-<tr>
-<td>10</td>
-<td>number too big</td>
-</tr>
-</tbody>
-</table>
-<h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>We can use a sequence of <strong><code>if-elif</code></strong> statements to cover every one of the possible <strong>11 cases</strong>.</p>
-<h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
-<p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1049#4" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1049#4</a>.</p>
 <h3 id="problem-password-guess"><a name="problem-password-guess" class="plugin-anchor" href="#problem-password-guess"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Password Guess</h3>
 <p>Write a program that <strong>reads input data from the console - a password</strong> (one line of random text) and checks if the input <strong>matches</strong> the phrase &quot;<strong>s3cr3t!P@ssw0rd</strong>&quot;. If it matches, print &quot;<strong>Welcome</strong>&quot;, otherwise print &quot;<strong>Wrong password!</strong>&quot;. </p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
@@ -1237,7 +1114,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"next":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"previous":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions.md","mtime":"2022-02-24T11:43:55.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:44:52.270Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1. Simple Conditions","level":"1.6","depth":1,"next":{"title":"3.2. Simple Conditions – Exam Problems","level":"1.7","depth":1,"path":"chapter-03-simple-conditions-exam-problems.md","ref":"chapter-03-simple-conditions-exam-problems.md","articles":[]},"previous":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js","./assets/js/modal-popup.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-03-simple-conditions.md","mtime":"2022-07-08T07:30:12.383Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-08T07:30:54.497Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1260,6 +1137,14 @@
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/b82381ef0a87465c7dd5517c45be46de-top-menu.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/953054134797f5983881d661f025b80c-modal-popup.js"></script>
         
     
         

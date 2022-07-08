@@ -399,6 +399,65 @@
     
 
     
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://softuni.org">
+            
+                    
+                    🎓 SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://softuni.org/learn">
+            
+                    
+                    👨🏼‍💻 Learn Programming @ SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <a target="_blank" href="https://www.youtube.com/c/CodeWithNakov">
+            
+                    
+                    ▶️ SoftUni Global @ YouTube
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <a target="_blank" href="https://introprogramming.info">
+            
+                    
+                    📚 Nakov's Books
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -442,7 +501,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="chapter-62-nested-loops-&#x2013;-exam-problems"><a name="chapter-62-nested-loops-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-62-nested-loops-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 6.2. Nested loops &#x2013; Exam Problems</h1>
+                                <h1 id="chapter-62-nested-loops-&#x2013;-exam-problems"><a name="chapter-62-nested-loops-&#x2013;-exam-problems" class="plugin-anchor" href="#chapter-62-nested-loops-&#x2013;-exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 6.2. Nested Loops &#x2013; Exam Problems</h1>
 <p>In the previous chapter, we introduced <strong>nested loops</strong> and how to use them for <strong>drawing</strong> various kinds of <strong>figures on the console</strong>. We&apos;ve learned how to print figures with different sizes, establishing suitable logic construction by using <strong>single and nested <code>for</code></strong> loops in combination with different calculations and program logic:</p>
 <pre><code class="lang-python"><span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
     print(<span class="hljs-string">&quot;*&quot;</span>, end=<span class="hljs-string">&quot;&quot;</span>)
@@ -450,12 +509,12 @@
         print(<span class="hljs-string">&quot; *&quot;</span>, end=<span class="hljs-string">&quot;&quot;</span>)
     print(<span class="hljs-string">&quot;&quot;</span>)
 </code></pre>
-<p>We also learned the <strong>operator <code>*</code></strong>, which lets you for defined by us <strong>number</strong> of times, a <strong>given string</strong> to be printed:</p>
+<p>We also learned the <strong>operator <code>*</code></strong>, which lets you for defined by us a <strong>number</strong> of times, a <strong>given string</strong> to be printed:</p>
 <pre><code class="lang-python">print_me = (<span class="hljs-string">&apos;abc&apos;</span> * <span class="hljs-number">2</span>)
 </code></pre>
 <h2 id="exam-problems"><a name="exam-problems" class="plugin-anchor" href="#exam-problems"><i class="fa fa-link" aria-hidden="true"></i></a>Exam Problems</h2>
 <p>Now let&apos;s solve some Exam Problems to consolidate what we have learned and to develop our algorithmic thinking.</p>
-<h2 id="problem-drawing-a-fortress"><a name="problem-drawing-a-fortress" class="plugin-anchor" href="#problem-drawing-a-fortress"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Drawing a Fortress</h2>
+<h2 id="problem-draw-fort"><a name="problem-draw-fort" class="plugin-anchor" href="#problem-draw-fort"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Draw Fort</h2>
 <p>Write a program, that reads from the console an <strong>integer n</strong> and draws a <strong>fortress</strong> with a width of <strong>2 * n columns</strong> and height of <strong>n rows</strong>, as in the below-given examples. The left and the right inner columns have a width of <strong>n / 2</strong>.</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The program input consists one element (argument) - <strong>integer n</strong> within the range [<strong>3 &#x2026; 1000</strong>].</p>
@@ -508,31 +567,31 @@
 <li>base</li>
 </ul>
 <p>We can see from the examples, that the <strong>roof</strong> consists of <strong>two towers</strong> and <strong>a middle part</strong>. Each tower has a beginning <strong><code>/</code></strong>, middle part <strong><code>^</code></strong> and an end <strong><code>\</code></strong>.</p>
-<p>By the set task condition the left and the right inner columns have a width of <strong><code>n / 2</code></strong>, therefore we can save this value as a separate <strong>variable</strong>, keeping in mind, that if we receive an <strong>odd number</strong> as input, the result of dividing by two will be a number with a whole and fractional part. In this case, we need <strong>only the whole part</strong> (in the set task condition we can see, that when the input is equal to <strong>3</strong> the count of <strong><code>^</code></strong> in the inner part column is equal to <strong>1</strong>, and input of <strong>5</strong> it is <strong>3</strong>), we can separate it with the function <strong><code>math.trunc(&#x2026;)</code></strong> and to save only its value in our new variable:</p>
+<p>By the set task condition the left and the right inner columns have a width of <strong><code>n / 2</code></strong>, therefore we can save this value as a separate <strong>variable</strong>, keeping in mind, that if we receive an <strong>odd number</strong> as input, the result of dividing by two will be a number with a whole and fractional part. In this case, we need <strong>only the whole part</strong> (in the set task condition we can see, that when the input is equal to <strong>3</strong> the count of <strong><code>^</code></strong> in the inner part column is equal to <strong>1</strong>, and the input of <strong>5</strong> it is <strong>3</strong>), we can separate it with the function <strong><code>math.trunc(&#x2026;)</code></strong> and to save only its value in our new variable:</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-02.png" alt=""></p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
-<td>It&apos;s always a good practice, whenever we have an expression with value we intend to use <b>more than once</b>, to keep it in a variable. In this way, on the one hand, our code will be <b>easier to read</b>, and on the other hand, it will be <b>easier to correct</b> possible <b>errors</b>, as we will not have to look for each use of the expression separately. </td>
+<td>It&apos;s always a good practice, whenever we have an expression with the value we intend to use <b>more than once</b>, to keep it in a variable. In this way, on the one hand, our code will be <b>easier to read</b>, and on the other hand, it will be <b>easier to correct</b> possible <b>errors</b>, as we will not have to look for each use of the expression separately. </td>
 </tr></table>
 
-<p>We also declare a second <strong>variable</strong>, which will keep <strong>the value</strong> of the part <strong>between the two towers</strong>. By the set task condition, we know that the total width of the fortress is <strong><code>n * 2</code></strong>. In addition, we have two towers with one slash for a start and one slash for an end (a total of 4 characters) and a width of <strong><code>col_size</code></strong>. Therefore, to get the number of characters in the middle part, we have to subtract the size of the towers from the width of the entire fortress: <strong><code>2 * n - 2 * col_size - 4</code></strong>.</p>
+<p>We also declare a second <strong>variable</strong>, which will keep <strong>the value</strong> of the part <strong>between the two towers</strong>. By the set task condition, we know that the total width of the fortress is <strong><code>n * 2</code></strong>. In addition, we have two towers with one slash for a start and one slash for an end (a total of 4 characters), and width of <strong><code>col_size</code></strong>. Therefore, to get the number of characters in the middle part, we have to subtract the size of the towers from the width of the entire fortress: <strong><code>2 * n - 2 * col_size - 4</code></strong>.</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-03.png" alt=""></p>
-<p>To print the <strong>roof</strong> part, on the console we will use the <strong><code>format(&#x2026;)</code></strong> method in comination with the operator <strong><code>*</code></strong>, which joins a given string <strong>n</strong> number of times:</p>
+<p>To print the <strong>roof</strong> part, on the console we will use the <strong><code>format(&#x2026;)</code></strong> method in combination with the operator <strong><code>*</code></strong>, which joins a given string <strong>n</strong> number of times:</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-04.png" alt=""></p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
-<td><strong><code>\</code></strong> is a special symbol in Python and using it solely in the method <strong><code>print(&#x2026;)</code></strong>, the console will not print it out, so with <strong><code>\\</code></strong> we indicate on the console, that we want to print out exactly this character, without interpreting it as special character (<b>we screen it </b>, in English this is called &#x201C;<b>character escaping</b>&#x201D;).</td>
+<td><strong><code>\</code></strong> is a special symbol in Python and using it solely in the method <strong><code>print(&#x2026;)</code></strong>, the console will not print it out, so with <strong><code>\\</code></strong> we indicate on the console, that we want to print out exactly this character, without interpreting it as a special character (<b>character escaping it</b>).</td>
 </tr></table>
 
-<p><strong>The fortress body</strong> consists of beginning <strong><code>|</code></strong>, middle part <strong><code>(white spaces)</code></strong> and an end <strong><code>|</code></strong>. <strong>The middle part</strong> of white spaces has a width of <strong><code>2 * n - 2</code></strong>. The number of <strong>rows</strong> for the walls can be determined from the given examples: <strong><code>n - 3</code></strong>:</p>
+<p><strong>The fortress body</strong> consists of beginning <strong><code>|</code></strong>, middle part <strong><code>(white spaces)</code></strong>, and an end <strong><code>|</code></strong>. <strong>The middle part</strong> of white spaces has a width of <strong><code>2 * n - 2</code></strong>. The number of <strong>rows</strong> for the walls can be determined from the given examples: <strong><code>n - 3</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-05.png" alt=""></p>
-<p>In order to draw a penultimate row, which is part of the base, we need to print a beginning <strong><code>|</code></strong>, middle part <strong><code>(white space)_(white space)</code></strong> and an end <strong><code>|</code></strong>. To do this, we can use already declared variables <strong><code>col_size</code></strong> and <strong><code>mid_size</code></strong> because as we see from the examples they are equal to the number of <strong><code>_</code></strong> in the roof:</p>
+<p>To draw a penultimate row, which is part of the base, we need to print a beginning <strong><code>|</code></strong>, middle part <strong><code>(white space)_(white space)</code></strong>, and an end <strong><code>|</code></strong>. To do this, we can use already declared variables <strong><code>col_size</code></strong> and <strong><code>mid_size</code></strong> because as we see from the examples they are equal to the number of <strong><code>_</code></strong> in the roof:</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-06.png" alt=""></p>
-<p>We add to the value of <strong>white spaces</strong> <strong><code>+ 1</code></strong>, because in the examples we have <strong>one</strong> white space more.</p>
-<p>The structure of the <strong>fortress base</strong> is the same as the one in the <strong>roof</strong>. It includes <strong>two towers</strong> and <strong>middle part</strong>. Each <strong>tower</strong> begins with <strong><code>\</code></strong>, followed by a middle part <strong><code>_</code></strong> and an end <strong><code>/</code></strong>.</p>
+<p>We add to the value of <strong>white spaces</strong> <strong><code>+ 1</code></strong> because in the examples we have <strong>one</strong> white space more.</p>
+<p>The structure of the <strong>fortress base</strong> is the same as the one in the <strong>roof</strong>. It includes <strong>two towers</strong> and a <strong>middle part</strong>. Each <strong>tower</strong> begins with <strong><code>\</code></strong>, followed by a middle part <strong><code>_</code></strong>, and an end <strong><code>/</code></strong>.</p>
 <p><img src="assets/chapter-6-2-images/01.Draw-fort-07.png" alt=""></p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#0</a>.</p>
 <h2 id="problem-butterfly"><a name="problem-butterfly" class="plugin-anchor" href="#problem-butterfly"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Butterfly</h2>
-<p>Write a program, that takes <strong>an integer n</strong> from the console and draws <strong>butterfly</strong> with width of <strong>2 * n - 1 columns</strong> and height of <strong>2 * (n - 2) + 1 rows</strong> as in the examples below. <strong>The left and the right</strong> <strong>part</strong> have <strong>width of n - 1</strong>.</p>
+<p>Write a program, that takes <strong>an integer n</strong> from the console and draws <strong>butterfly</strong> with a width of <strong>2 * n - 1 columns</strong> and height of <strong>2 * (n - 2) + 1 rows</strong> as in the examples below. <strong>The left and the right part</strong> have a <strong>width of n - 1</strong>.</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input consists of one element (argument) - <strong>integer n</strong> in the range [<strong>3 &#x2026; 1000</strong>].</p>
 <h3 id="output-data"><a name="output-data" class="plugin-anchor" href="#output-data"><i class="fa fa-link" aria-hidden="true"></i></a>Output Data</h3>
@@ -573,18 +632,18 @@
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>Similar to the previous task, we can see from the condition, that the <strong>input data</strong> will consist of only one <strong>integer</strong> in the range [<strong>3 &#x2026; 1000</strong>]. That&apos;s why we will convert the input value into <strong><code>int</code></strong> type:</p>
 <p><img src="assets/chapter-6-2-images/02.Butterfly-01.png" alt=""></p>
-<p>We can divide the figure into 3 parts - <strong>upper wing</strong>, <strong>body</strong> and <strong>lower wing</strong>. In order to draw the upper wing of the butterfly, we have to divide it into three parts - a beginning with <strong><code>*</code></strong>, a middle part with <strong><code>\ /</code></strong> and an end with <strong><code>*</code></strong>. After looking at the examples, we can say that the upper wing of the butterfly is with a size of <strong><code>n - 2</code></strong>:</p>
+<p>We can divide the figure into 3 parts - <strong>upper wing</strong>, <strong>body</strong>, and <strong>lower wing</strong>. To draw the upper wing of the butterfly, we have to divide it into three parts - a beginning with <strong><code>*</code></strong>, a middle part with <strong><code>\ /</code></strong>, and an end with <strong><code>*</code></strong>. After looking at the examples, we can say that the upper wing of the butterfly is with a size of <strong><code>n - 2</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/02.Butterfly-02.png" alt=""></p>
 <p>To draw the upper wing we make a loop repeated <strong><code>half_row_size</code></strong> number of times:</p>
 <p><img src="assets/chapter-6-2-images/02.Butterfly-03.png" alt=""></p>
 <p>We can see in the examples, that on an <strong>even</strong> row we have a beginning <strong><code>*</code></strong>, middle part <strong><code>\ /</code></strong> and an end <strong><code>*</code></strong>, on the other hand on an <strong>odd</strong> row we have a beginning <strong><code>-</code></strong>, middle part <strong><code>\ /</code></strong> and an end <strong><code>-</code></strong>. Therefore, at each iteration of the loop, we have to do an <strong><code>if-else</code></strong> check to see whether the row that we print is even or odd. From the examples given in the set condition, we can see that the number of star characters and dashes on each row is equal to <strong><code>n - 2</code></strong>, i. e. we can use again the variable <strong><code>half_row_size</code></strong> to print them: </p>
 <p><img src="assets/chapter-6-2-images/02.Butterfly-04.png" alt=""></p>
-<p>In order to draw the <strong>the butterfly body</strong>, we have to print exactly <strong>one</strong> row on the console. The structure of the body has a beginning <strong><code>(white space)</code></strong>, middle part <strong><code>@</code></strong> and an end <strong><code>(white space)</code></strong>. From the examples we can see, that the number of the white spaces is equal to <strong><code>n-1</code></strong>:</p>
+<p>To draw the <strong>butterfly body</strong>, we have to print exactly <strong>one</strong> row on the console. The structure of the body has a beginning <strong><code>(white space)</code></strong>, middle part <strong><code>@</code></strong>, and an end <strong><code>(white space)</code></strong>. From the examples we can see, that the number of the white spaces is equal to <strong><code>n-1</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/02.Butterfly-05.png" alt=""></p>
 <p>What is left now is to print on the console the <strong>lower wing</strong>, which is <strong>analogical to the upper wing</strong>: we only need to swap the places of the slashes.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#1</a>.</p>
-<h2 id="problem-stop-sign"><a name="problem-stop-sign" class="plugin-anchor" href="#problem-stop-sign"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: &quot;Stop&quot; Sign</h2>
+<h2 id="problem-stop"><a name="problem-stop" class="plugin-anchor" href="#problem-stop"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Stop</h2>
 <p>Write a program, that takes an <strong>integer n</strong> from the console and draws <strong>a STOP warning sign</strong> with size as shown in the examples below.</p>
 <h3 id="input-data"><a name="input-data" class="plugin-anchor" href="#input-data"><i class="fa fa-link" aria-hidden="true"></i></a>Input Data</h3>
 <p>The input consists of one element (argument) - <strong>integer n</strong> in the range [<strong>3 &#x2026; 1000</strong>].</p>
@@ -624,19 +683,19 @@
 </tbody>
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
-<p>As in the previous examples, <strong>the input data</strong> will be on one line, which will contains one <strong>int</strong> in the range [<strong>3 &#x2026; 1000</strong>]:</p>
+<p>As in the previous examples, <strong>the input data</strong> will be on one line, which will contain one <strong>int</strong> in the range [<strong>3 &#x2026; 1000</strong>]:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-01.png" alt=""></p>
-<p>We can <strong>divide</strong> the figure into <strong>3 parts</strong> - upper, middle and lower. <strong>The upper part</strong> consists of two subparts - a starting line and lines in which the sign widens. <strong>The starting line</strong> consists of beginning <strong><code>.</code></strong>, middle part <strong><code>_</code></strong> and an end <strong><code>.</code></strong>. After looking at the examples, we can see that the beginning has a size of <strong><code>n + 1</code></strong> and it&apos;s better to keep this <strong>value</strong> as a separate <strong>variable</strong>. We also have to create a second <strong>variable</strong>, in which we will keep <strong>the value</strong> of the <strong>first row middle part</strong> which has a size of <strong><code>2 * n + 1</code></strong>:</p>
+<p>We can <strong>divide</strong> the figure into <strong>3 parts</strong> - upper, middle, and lower. <strong>The upper part</strong> consists of two subparts - a starting line and lines in which the sign widens. <strong>The starting line</strong> consists of beginning <strong><code>.</code></strong>, middle part <strong><code>_</code></strong> and an end <strong><code>.</code></strong>. After looking at the examples, we can see that the beginning has a size of <strong><code>n + 1</code></strong> and it&apos;s better to keep this <strong>value</strong> as a separate <strong>variable</strong>. We also have to create a second <strong>variable</strong>, in which we will keep <strong>the value</strong> of the <strong>first-row middle part</strong> which has a size of <strong><code>2 * n + 1</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-02.png" alt=""></p>
 <p>Once we have declared and initialized the two variables, we can print the first row on the console:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-03.png" alt=""></p>
-<p>In order to draw the rows in which the sign is getting <strong>&quot;wider&quot;</strong>, we have to create a <strong>loop</strong>, that iterates <strong><code>n</code></strong> number of times. The row structure consists of a beginning <strong><code>.</code></strong>, <strong><code>//</code></strong> + middle part <strong><code>_</code></strong> + <strong><code>\\</code></strong> and an end <strong><code>.</code></strong>. In order to reuse the already created <strong>variables</strong>, we have to decrease <strong><code>dots</code></strong> by 1 and <strong><code>underscores</code></strong> by 2, because we&apos;ve already <strong>printed</strong> the first row, and the dots and underscores in the top part of the figure are <strong>decreasing</strong> on each row:</p>
+<p>To draw the rows in which the sign is getting <strong>&quot;wider&quot;</strong>, we have to create a <strong>loop</strong>, that iterates <strong><code>n</code></strong> number of times. The row structure consists of a beginning <strong><code>.</code></strong>, <strong><code>//</code></strong> + middle part <strong><code>_</code></strong> + <strong><code>\\</code></strong> and an end <strong><code>.</code></strong>. To reuse the already created <strong>variables</strong>, we have to decrease <strong><code>dots</code></strong> by 1 and <strong><code>underscores</code></strong> by 2, because we&apos;ve already <strong>printed</strong> the first row, and the dots and underscores in the top part of the figure are <strong>decreasing</strong> on each row:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-04.png" alt=""></p>
 <p>At each subsequent iteration <strong>the beginning</strong> and <strong>the end</strong> decrease by 1, and <strong>the middle part</strong> increases by 2:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-05.png" alt=""></p>
 <p><strong>The middle part</strong> of the figure begins with <strong><code>//</code></strong> + <strong><code>_</code></strong>, middle part <strong><code>STOP!</code></strong> and an end <strong><code>_</code></strong> + <strong><code>\\</code></strong>. The count of the underscores <strong><code>_</code></strong> is <strong><code>(underscores - 5) / 2</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-06.png" alt=""></p>
-<p><strong>The lower part</strong> of the figure, in which the width of the sign <strong>decreases</strong>, can be done by creating a <strong>loop</strong>, that iterates <strong><code>n</code></strong> number of times. The structure of a row should have a beginning <strong><code>.</code></strong> + <strong><code>\\</code></strong>, middle part <strong><code>_</code></strong> and an end <strong><code>//</code></strong> + <strong><code>.</code></strong>. The number of the <strong>dots</strong> in the first loop iteration has to be 0 and on each subsequent have to <strong>increase</strong> by one. Therefore we can say that the <strong>the dots in the lower part of the figure</strong> are equal to <strong><code>i</code></strong>. To ensure proper operation of our program, on each <strong>loop</strong> iteration, we have to <strong>decrease</strong> the number of <strong><code>_</code></strong> by <strong>2</strong>:</p>
+<p><strong>The lower part</strong> of the figure, in which the width of the sign <strong>decreases</strong>, can be done by creating a <strong>loop</strong>, that iterates <strong><code>n</code></strong> number of times. The structure of a row should have a beginning <strong><code>.</code></strong> + <strong><code>\\</code></strong>, middle part <strong><code>_</code></strong> and an end <strong><code>//</code></strong> + <strong><code>.</code></strong>. The number of the <strong>dots</strong> in the first loop iteration has to be 0 and each subsequent has to <strong>increase</strong> by one. Therefore we can say that the <strong>dots in the lower part of the figure</strong> are equal to <strong><code>i</code></strong>. To ensure proper operation of our program, on each <strong>loop</strong> iteration, we have to <strong>decrease</strong> the number of <strong><code>_</code></strong> by <strong>2</strong>:</p>
 <p><img src="assets/chapter-6-2-images/03.Stop-07.png" alt=""></p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1056#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1056#2</a>.</p>
@@ -682,19 +741,19 @@
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
 <p>From the explanation we see that <strong>the input data</strong> will be read from one input line only, which will contain <strong>an integer</strong> within the range [<strong>3 &#x2026; 1000</strong>]. That&apos;s why we will convert the input value into <strong><code>int</code></strong> type:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-01.png" alt=""></p>
-<p>We can divide the figure into <strong>3 parts</strong> - upper, middle and lower. <strong>The upper part</strong> consists of two subparts - first row and body of the arrow. We can see from the examples, that the count of <strong>the outer dots</strong> in the first row and in the body of the arrow are equal to <strong><code>(n - 1) / 2</code></strong>. We can keep this value in <strong>a variable</strong> <strong><code>outer_dots</code></strong>:</p>
+<p>We can divide the figure into <strong>3 parts</strong> - upper, middle, and lower. <strong>The upper part</strong> consists of two subparts - the first row and the body of the arrow. We can see from the examples, that the count of <strong>the outer dots</strong> in the first row and the body of the arrow are equal to <strong><code>(n - 1) / 2</code></strong>. We can keep this value in <strong>a variable</strong> <strong><code>outer_dots</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-02.png" alt=""></p>
 <p>The count of <strong>the inner dots</strong> in the body of the arrow is equal to <strong><code>(n - 2)</code></strong>. We have to create <strong>the variable</strong> <strong><code>inner_dots</code></strong>, which will keep this value:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-03.png" alt=""></p>
-<p>We can see from the examples the structure of the first row. We can use the declared and initialized by us <strong>variables</strong> <strong><code>outer_dots</code></strong> and <strong><code>n</code></strong>, in order to print <strong>the first row</strong>:</p>
+<p>We can see from the examples the structure of the first row. We can use the declared and initialize by us <strong>variables</strong> <strong><code>outer_dots</code></strong> and <strong><code>n</code></strong>, to print <strong>the first row</strong>:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-04.png" alt=""></p>
 <p>To draw <strong>the body of the arrow</strong>, we have to create <strong>a loop</strong>, which iterates <strong><code>n - 2</code></strong> number of times:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-05.png" alt=""></p>
 <p><strong>The middle part of the figure</strong> is made of a beginning <strong><code>#</code></strong>, middle part <strong><code>.</code></strong> and an end <strong><code>#</code></strong>. The count of <strong><code>#</code></strong> is equal to <strong><code>outer_dots</code></strong> and that is why we will use the same <strong>variable</strong>:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-06.png" alt=""></p>
-<p>In order to draw <strong>the lower part of the arrow</strong>, we have to assign new values of the two <strong>variables</strong> <strong><code>outer_dots</code></strong> and <strong><code>inner_dots</code></strong>.</p>
+<p>To draw <strong>the lower part of the arrow</strong>, we have to assign new values of the two <strong>variables</strong> <strong><code>outer_dots</code></strong> and <strong><code>inner_dots</code></strong>.</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-07.png" alt=""></p>
-<p>On each loop iteration <strong><code>outer_dots</code></strong> increases by 1, and <strong><code>inner_dots</code></strong> decreases by 2. We can notice, that on the penultimate row the <strong><code>inner_dots</code></strong> value will be 1 and on each subsequent loop iteration will be a <strong>negative number</strong>. Since the operator <strong><code>*</code></strong> cannot concatenate symbol 0 or negative number of times in a string, it won&apos;t print nothing on the console. In order to avoid that we can print the last row of the figure separately. The height of the lower part of the arrow is <strong><code>n - 1</code></strong>, therefore <strong>the loop</strong>, that will print all the rows, except the last one, have to iterate <strong><code>n - 2</code></strong> number of times:</p>
+<p>On each loop iteration <strong><code>outer_dots</code></strong> increase by 1, and <strong><code>inner_dots</code></strong> decrease by 2. We can notice, that on the penultimate row the <strong><code>inner_dots</code></strong> value will be 1 and on each subsequent loop iteration will be a <strong>negative number</strong>. Since the operator <strong><code>*</code></strong> cannot concatenate symbol 0 or a negative number of times in a string, it will print nothing on the console. To avoid that we can print the last row of the figure separately. The height of the lower part of the arrow is <strong><code>n - 1</code></strong>, therefore <strong>the loop</strong>, that will print all the rows, except the last one, have to iterate <strong><code>n - 2</code></strong> number of times:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-08.png" alt=""></p>
 <p><strong>The last row</strong> of our figure is made of a beginning <strong><code>.</code></strong>, middle part <strong><code>#</code></strong> and an end <strong><code>.</code></strong>. The count of <strong><code>.</code></strong> is equal to <strong><code>outer_dots</code></strong>:</p>
 <p><img src="assets/chapter-6-2-images/04.Arrow-09.png" alt=""></p>
@@ -740,15 +799,15 @@
 </tbody>
 </table>
 <h3 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h3>
-<p>From the explanation we see that <strong>the input data</strong> will be read from one input line only, which will contain <strong>an integer</strong> within the range [<strong>2 &#x2026; 42</strong>]. That&apos;s why we will use <strong><code>int</code></strong> type. After that, for the solution we need to calculate the <strong>the dashes in the left</strong>, <strong>the dashes in the middle</strong>, <strong>the dashes in the right</strong> and the whole figure length:</p>
+<p>From the explanation we see that <strong>the input data</strong> will be read from one input line only, which will contain <strong>an integer</strong> within the range [<strong>2 &#x2026; 42</strong>]. That&apos;s why we will use <strong><code>int</code></strong> type. After that, for the solution we need to calculate the <strong>dashes in the left</strong>, <strong>the dashes in the middle</strong>, <strong>the dashes in the right</strong>, and the whole figure length:</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-01.png" alt=""></p>
-<p>Once we have declared and initialized the <strong>variables</strong>, we can draw the figure, starting with the <strong>upper part</strong>. We can see from the examples what the structure of <strong>the first row</strong> is and we can create a loop that iterates <strong><code>n</code></strong> number of times. At each loop iteration <strong>the middle dashes</strong> are increasing by 1, and the <strong>right dashes</strong> are decreasing by 1:</p>
+<p>Once we have declared and initialized the <strong>variables</strong>, we can draw the figure, starting with the <strong>upper part</strong>. We can see from the examples what the structure of <strong>the first row</strong> is and we can create a loop that iterates <strong><code>n</code></strong> number of times. At each loop iteration, <strong>the middle dashes</strong> are increasing by 1, and the <strong>right dashes</strong> are decreasing by 1:</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-02.png" alt=""></p>
-<p>Now we have to draw the <strong>the handle of the axe</strong>. In order to be able to use the newly created <strong>variables</strong>, when drawing the handle of the axe, we have to decrease <strong>the middle dashes</strong> by 1 and to increase <strong>these on the right and left</strong> by 1.</p>
+<p>Now we have to draw the <strong>handle of the axe</strong>. To be able to use the newly created <strong>variables</strong>, when drawing the handle of the axe, we have to decrease <strong>the middle dashes</strong> by 1 and increase <strong>these on the right and left</strong> by 1.</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-03.png" alt=""></p>
-<p><strong>The handle of the axe</strong> we can draw, by iterating a loop that repeats <strong><code>n / 2</code></strong> number of times. We can set this value into separate <strong>variable</strong>, considering that when dividing <strong>odd number</strong> inputs by 2 the result will be <strong>a real number</strong> with a whole and fractional part. Since in this case we need <strong>only the whole part</strong> (from the example condition we see that at input <strong>5</strong> the height of the axe handle is <strong>2</strong>), we can use the <strong><code>math.trunc(&#x2026;)</code></strong> method, to save only its value in our new variable <strong><code>axe_height</code></strong>. We get the structure of the handle from the examples given:</p>
+<p><strong>The handle of the axe</strong> we can draw, by iterating a loop that repeats <strong><code>n / 2</code></strong> number of times. We can set this value into a separate <strong>variable</strong>, considering that when dividing <strong>odd number</strong> inputs by 2 the result will be <strong>a real number</strong> with a whole and fractional part. Since in this case, we need <strong>only the whole part</strong> (from the example condition we see that at input <strong>5</strong> the height of the axe handle is <strong>2</strong>), we can use the <strong><code>math.trunc(&#x2026;)</code></strong> method, to save only its value in our new variable <strong><code>axe_height</code></strong>. We get the structure of the handle from the examples given:</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-04.png" alt=""></p>
-<p><strong>The lower part</strong> of the figure, should be divided into two subparts - the <strong>head of the axe</strong> and the <strong>last row of the figure</strong>. We will print on the console <strong>the head of the axe</strong>, by making a self iterating loop <strong><code>axe_height - 1</code></strong> number of times. On each iteration <strong>the left dashes</strong> and <strong>the right dashes</strong> decrease by 1, and <strong>the middle dashes</strong> increase by 2:</p>
+<p><strong>The lower part</strong> of the figure should be divided into two subparts - the <strong>head of the axe</strong> and the <strong>last row of the figure</strong>. We will print on the console <strong>the head of the axe</strong>, by making a self iterating loop <strong><code>axe_height - 1</code></strong> number of times. On each iteration, <strong>the left dashes</strong> and <strong>the right dashes</strong> decrease by 1, and <strong>the middle dashes</strong> increase by 2:</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-05.png" alt=""></p>
 <p>For <strong>the last row</strong> of the figure, we can use again, the already declared variables <strong><code>left_dashes</code></strong>, <strong><code>middle_dashes</code></strong>, <strong><code>right_dashes</code></strong>.</p>
 <p><img src="assets/chapter-6-2-images/05.Axe-06.png" alt=""></p>
@@ -797,7 +856,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"next":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"path":"chapter-07-complex-loops.md","ref":"chapter-07-complex-loops.md","articles":[]},"previous":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-06-nested-loops-exam-problems.md","mtime":"2022-02-24T11:43:55.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:44:52.270Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"next":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"path":"chapter-07-complex-loops.md","ref":"chapter-07-complex-loops.md","articles":[]},"previous":{"title":"6.1. Nested Loops","level":"1.12","depth":1,"path":"chapter-06-nested-loops.md","ref":"chapter-06-nested-loops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js","./assets/js/modal-popup.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-06-nested-loops-exam-problems.md","mtime":"2022-07-08T07:30:12.383Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-08T07:30:54.497Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -820,6 +879,14 @@
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/b82381ef0a87465c7dd5517c45be46de-top-menu.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/953054134797f5983881d661f025b80c-modal-popup.js"></script>
         
     
         

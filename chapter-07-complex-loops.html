@@ -399,6 +399,65 @@
     
 
     
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <a target="_blank" href="https://softuni.org">
+            
+                    
+                    🎓 SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://softuni.org/learn">
+            
+                    
+                    👨🏼‍💻 Learn Programming @ SoftUni Global
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <a target="_blank" href="https://www.youtube.com/c/CodeWithNakov">
+            
+                    
+                    ▶️ SoftUni Global @ YouTube
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <a target="_blank" href="https://introprogramming.info">
+            
+                    
+                    📚 Nakov's Books
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -450,38 +509,38 @@
 <li><strong><code>while</code></strong> + <strong><code>break</code></strong> loops</li>
 <li><strong>infinite</strong> loops</li>
 </ul>
-<p>In the current chapter, we will also take a look at the <strong><code>break</code></strong> operator and <strong>how</strong> to use it to <strong>interrupt</strong> a loop. We will also learn how to process <strong>errors during execution</strong> of the program, using <strong><code>try-except</code></strong> statement.</p>
-<h2 id="loops-with-step"><a name="loops-with-step" class="plugin-anchor" href="#loops-with-step"><i class="fa fa-link" aria-hidden="true"></i></a>Loops with step</h2>
-<p>In the <a href="chapter-05-loops.html">&quot;Loops (Repetitions)&quot;</a> chapter we learned how the <strong><code>for</code></strong> loop works and we already know when and for what purpose it is used. In the present chapter we will <strong>take a look</strong> at a particular and a very important <strong>part of this structure</strong> - its <strong>step</strong> or as it is also known <strong>step</strong>.</p>
-<h3 id="loop-with-a-step-&#x2013;-explanation"><a name="loop-with-a-step-&#x2013;-explanation" class="plugin-anchor" href="#loop-with-a-step-&#x2013;-explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Loop with a Step &#x2013; Explanation</h3>
-<p>The <strong>step</strong> is <strong>part</strong> of the <strong>&apos;range&apos;</strong> function, that specifies the <strong>amount</strong> used to <strong>increment</strong> or <strong>decrement</strong> the value of the <strong>main</strong> variable. The step is declared as the last argument in the <strong><code>range</code></strong> function.</p>
+<p>In the current chapter, we will also take a look at the <strong><code>break</code></strong> operator and <strong>how</strong> to use it to <strong>interrupt</strong> a loop. We will also learn how to process <strong>errors during the execution</strong> of the program, using the <strong><code>try-except</code></strong> statement.</p>
+<h2 id="loops-with-a-step"><a name="loops-with-a-step" class="plugin-anchor" href="#loops-with-a-step"><i class="fa fa-link" aria-hidden="true"></i></a>Loops with a Step</h2>
+<p>In the <a href="chapter-05-loops.html">&quot;Loops (Repetitions)&quot;</a> chapter we learned how the <strong><code>for</code></strong> loop works and we already know when and for what purpose it is used. In the present chapter we will <strong>take a look</strong> at a particular and a very important <strong>part of this structure</strong> - its <strong>step</strong>.</p>
+<h3 id="explanation"><a name="explanation" class="plugin-anchor" href="#explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Explanation</h3>
+<p>The <strong>step</strong> is <strong>part</strong> of the <strong>&apos;range&apos;</strong> function, which specifies the <strong>amount</strong> used to <strong>increment</strong> or <strong>decrement</strong> the value of the <strong>main</strong> variable. The step is declared as the last argument in the <strong><code>range</code></strong> function.</p>
 <p>By default, range in Python uses a step <strong>value of <code>1</code></strong> and is not added to the <strong><code>range</code></strong> function. If we want our step to be <strong>different from 1</strong>, when writing the <strong><code>range</code></strong> function, we add another number as the last parameter, which is our step. With a step of <strong><code>10</code></strong>, the loop would appear as below: </p>
 <p><img src="assets/chapter-7-1-images/00.Step-explanation-01.png" alt=""></p>
 <p>Here is a series of sample problems, the solution of which will help us better understand the use of a <strong>step</strong> in a <strong><code>for</code></strong> loop.</p>
-<h3 id="problem-numbers-from-1-to-n-with-a-step-of-3"><a name="problem-numbers-from-1-to-n-with-a-step-of-3" class="plugin-anchor" href="#problem-numbers-from-1-to-n-with-a-step-of-3"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers from 1 to N with a step of 3</h3>
+<h3 id="problem-numbers-1n-with-step-3"><a name="problem-numbers-1n-with-step-3" class="plugin-anchor" href="#problem-numbers-1n-with-step-3"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers 1...N with Step 3</h3>
 <p>Write a program that prints the numbers <strong>from 1 to n</strong> with a <strong>step of 3</strong>. For example, <strong>if n = 100</strong>, then the output would be: <strong>1, 4, 7, 10, &#x2026;, 94, 97, 100</strong>.</p>
 <p>We can solve the problem using the following sequence of actions (algorithm):</p>
 <ul>
 <li>We read <strong><code>n</code></strong> from the console.</li>
 <li>We run a <strong><code>for</code> loop</strong> from <strong>1</strong> to <strong><code>n</code></strong> (including <strong><code>n</code></strong>) with a step of <strong>3</strong>.</li>
-<li>In the <strong>body of the loop</strong> we print the value of the current step.</li>
+<li>In the <strong>body of the loop</strong>, we print the value of the current step.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/01.Numbers-1-to-n-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#0</a>.</p>
-<h3 id="problem-numbers-from-n-to-1-in-reverse"><a name="problem-numbers-from-n-to-1-in-reverse" class="plugin-anchor" href="#problem-numbers-from-n-to-1-in-reverse"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers from N to 1 in reverse</h3>
+<h3 id="problem-numbers-n1"><a name="problem-numbers-n1" class="plugin-anchor" href="#problem-numbers-n1"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers N...1</h3>
 <p>Write a program that prints the numbers <strong>from n to 1 in reverse</strong> (step -1). For example, <strong>if n = 100</strong>, then the output will be: <strong>100, 99, 98, &#x2026;, 3, 2, 1</strong>.</p>
 <p>We can solve the problem in the following manner:</p>
 <ul>
 <li>We read <strong><code>n</code></strong> from the console.</li>
 <li>We create a <strong><code>for</code> loop</strong>, from <strong><code>n</code></strong> to 0.</li>
 <li>We define the step size: <strong>-1</strong>.</li>
-<li>In the <strong>body of the loop</strong> we print the value of the current step.</li>
+<li>In the <strong>body of the loop</strong>, we print the value of the current step.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/02.Numbers-n-to-1-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#1" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#1</a>.</p>
-<h3 id="problem-numbers-from-1-to-2n-with-a-for-loop"><a name="problem-numbers-from-1-to-2n-with-a-for-loop" class="plugin-anchor" href="#problem-numbers-from-1-to-2n-with-a-for-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers from 1 to 2^n with a for loop</h3>
+<h3 id="problem-powers-of-two"><a name="problem-powers-of-two" class="plugin-anchor" href="#problem-powers-of-two"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Powers of Two</h3>
 <p>In the following example, we will use the standard size 1 step.</p>
 <p>Write a program that prints the numbers <strong>from 1 to 2^n</strong> (two to the power of n). For example, <strong>if n = 10</strong>, then the output would be <strong>1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024</strong>.</p>
 <p><img src="assets/chapter-7-1-images/03.Numbers-1-to-2^n-01.png" alt=""></p>
@@ -492,19 +551,19 @@
 <p>Here is how we can solve the problem:</p>
 <ul>
 <li>We declare a variable <strong><code>num</code></strong> that will hold the current number and we assign it the initial <strong>value of 1</strong>.</li>
-<li>For the <strong>step</strong> of the loop we set a value of <strong>2</strong>.</li>
+<li>For the <strong>step</strong> of the loop, we set a value of <strong>2</strong>.</li>
 <li>In the <strong>body of the loop</strong>: we print the value of the current number and <strong>increase the current number <code>num</code> 4 times</strong> (as per the problem description).</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/04.Even^2-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution at the following link: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#3</a>.</p>
 <h2 id="while-loop"><a name="while-loop" class="plugin-anchor" href="#while-loop"><i class="fa fa-link" aria-hidden="true"></i></a>While loop</h2>
-<p>The next type of loops that we will become familiar with, which are called <strong><code>while</code> loops</strong>. The special thing about them is that they repeat a command block, <strong>while a condition is met</strong>. Their structure is a bit different than that of the <strong><code>for</code></strong> loops, however, they boast a simpler syntax.</p>
-<h3 id="while-loop-&#x2013;-explanation"><a name="while-loop-&#x2013;-explanation" class="plugin-anchor" href="#while-loop-&#x2013;-explanation"><i class="fa fa-link" aria-hidden="true"></i></a>While Loop &#x2013; Explanation</h3>
+<p>The next type of loops that we will become familiar are called <strong><code>while</code> loops</strong>. The special thing about them is that they repeat a command block, <strong>while a condition is met</strong>. Their structure is a bit different than that of the <strong><code>for</code></strong> loops, however, they boast a simpler syntax.</p>
+<h3 id="explanation"><a name="explanation" class="plugin-anchor" href="#explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Explanation</h3>
 <p>In programming, the <strong><code>while</code> loop</strong> is used when we want to <strong>repeat</strong> the execution of a specific logic block until <strong>a specific condition is met</strong>. Any expression that returns either <strong><code>true</code></strong> or <strong><code>false</code></strong> (a Boolean) can be used as a &quot;<strong>condition</strong>&quot;. When the <strong>condition</strong> becomes <strong>invalid</strong>, the <strong><code>while</code></strong> loop <strong>is interrupted</strong> and the program <strong>proceeds</strong> to execute the code after the loop. The <strong><code>while</code> loop</strong> structure looks like this:</p>
 <p><img src="assets/chapter-7-1-images/00.While-loop-01.png" alt=""></p>
 <p>Here is a series of sample problems, the solutions of which will help us better understand the use of the <strong><code>while</code></strong> loop.</p>
-<h3 id="problem-sequence-of-numbers-2k1"><a name="problem-sequence-of-numbers-2k1" class="plugin-anchor" href="#problem-sequence-of-numbers-2k1"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sequence of Numbers 2k+1</h3>
+<h3 id="problem-sequence-2k1"><a name="problem-sequence-2k1" class="plugin-anchor" href="#problem-sequence-2k1"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sequence 2k+1</h3>
 <p>Write a program that prints <strong>all numbers &#x2264; n</strong> in the series: <strong>1, 3, 7, 15, 31, &#x2026;</strong>, assuming that each number is generated according to the following formula next_number = <strong>previous_number * 2 + 1</strong>.</p>
 <p>Here is how we can solve the problem:</p>
 <ul>
@@ -596,7 +655,7 @@
 <li>In the <strong>body of the loop</strong> we follow the instructions from the pseudo-code:<ul>
 <li>We create a temporary variable to which we assign the <strong>current</strong> value of <strong><code>b</code></strong>.</li>
 <li>We assign a new value to <strong><code>b</code></strong>, which is the remainder of the division of <strong><code>a</code></strong> and <strong><code>b</code></strong>.</li>
-<li>On variable <strong><code>a</code></strong> we assign the <strong>previous</strong> value of the variable <strong><code>b</code></strong>.</li>
+<li>On variable <strong><code>a</code></strong>, we assign the <strong>previous</strong> value of variable <strong><code>b</code></strong>.</li>
 </ul>
 </li>
 <li>Once the loop is complete and we have found the GCD, we print it on the screen.</li>
@@ -605,15 +664,15 @@
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>You can test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#6" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#6</a>.</p>
 <h2 id="while-true--break-loop"><a name="while-true--break-loop" class="plugin-anchor" href="#while-true--break-loop"><i class="fa fa-link" aria-hidden="true"></i></a>While True + break loop</h2>
-<p>The next type of loop construction that we will become familiar with while studying programming is the <code>while True</code> + <code>break</code> loop (for short <code>while</code> + <code>break</code> loop). Its idea <strong>is to repeat a block of code</strong> over and over again until <strong>explicit termination of the loop</strong>, usually after a <code>if</code> statement in the body of the loop. Here&apos;s what this loop looks like in Python code:</p>
+<p>The next type of loop construction that we will become familiar with while studying programming is the <code>while True</code> + <code>break</code> loop (for short <code>while</code> + <code>break</code> loop). Its idea <strong>is to repeat a block of code</strong> over and over again until <strong>explicit termination of the loop</strong>, usually after an <code>if</code> statement in the body of the loop. Here&apos;s what this loop looks like in Python code:</p>
 <p><img src="assets/chapter-7-1-images/00.Do-while-01.png" alt=""></p>
 <p>The above example is called &#x201C;<strong>inverted <code>while</code> loop</strong>&#x201D;, because the condition for exiting the loop is at the end, not at the beginning. In essence, the above construction is an &#x201C;infinite loop&#x201D; with a check, of a given condition, for an exit inside the body of the cycle.</p>
 <p>In programming, the <code>break</code> operator unconditionally terminates a loop and proceeds to the first instruction after it. In the example above, a condition is checked at the end of the cycle, and if it is not true, the cycle is terminated.</p>
-<p>The construct for the <code>while</code> + <code>break</code> loop in many other programming languages is implemented with the <code>do-while</code> construct, but there is no direct equivalent of <code>do-while</code> in Python. In order to do the same in Python, we can use an infinite loop (<code>while True</code>) and when an exit condition is reached, the loop is interrupted (with <code>break</code>).</p>
-<p>The <code>while</code> + <code>break</code> construct provides more flexibility than <code>while</code> loops, because it allows to break the loop at <strong>any place</strong> in the body of the loop(for example at the beginning, in the middle or at the end), it even allows to have exit of the loop in several different places (with several <code>break</code> operators).</p>
-<p>The structure of <code>while</code> + <code>break</code> loop is very similar to the classic <code>while</code> loop, but there is a significant difference: <code>while</code> is executed 0 or more times (according to the entry condition of the loop), whilst <code>while</code> + <code>break</code> will execute its body <strong>at least once</strong>. Why is this? In the <code>while True</code> + <code>break</code> loop structure, the <strong>condition</strong> is always checked <strong>in the body of the loop</strong>, whilst with the classic <code>while</code> loop the condition, which we check to exit the loop is always at the begginning, before its body.</p>
+<p>The construct for the <code>while</code> + <code>break</code> loop in many other programming languages is implemented with the <code>do-while</code> construct, but there is no direct equivalent of <code>do-while</code> in Python. To do the same in Python, we can use an infinite loop (<code>while True</code>) and when an exit condition is reached, the loop is interrupted (with <code>break</code>).</p>
+<p>The <code>while</code> + <code>break</code> construct provides more flexibility than <code>while</code> loops because it allows to break the loop at <strong>any place</strong> in the body of the loop(for example at the beginning, in the middle, or at the end), it even allows to have exit of the loop in several different places (with several <code>break</code> operators).</p>
+<p>The structure of <code>while</code> + <code>break</code> loop is very similar to the classic <code>while</code> loop, but there is a significant difference: <code>while</code> is executed 0 or more times (according to the entry condition of the loop), whilst <code>while</code> + <code>break</code> will execute its body <strong>at least once</strong>. Why is this? In the <code>while True</code> + <code>break</code> loop structure, the <strong>condition</strong> is always checked <strong>in the body of the loop</strong>, whilst with the classic <code>while</code> loop the condition, which we check to exit the loop is always at the beginning, before its body.</p>
 <p>Once we are familiar with the concept of a <code>while</code> + <code>break</code> loop with an exit condition, which is not required to be at the beginning, now we should proceed with the usual set of practical problems, with which we can master the new knowledge.</p>
-<h3 id="problem-calculating-factorial"><a name="problem-calculating-factorial" class="plugin-anchor" href="#problem-calculating-factorial"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Calculating Factorial</h3>
+<h3 id="problem-factorial"><a name="problem-factorial" class="plugin-anchor" href="#problem-factorial"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Factorial</h3>
 <p>For <strong>n</strong> number calculate <strong>n! = 1 * 2 * 3 * &#x2026; * n</strong>. For example, if <strong>n = 5</strong>, then the result would be: <strong>5!</strong> = 1 * 2 * 3 * 4 * 5 = <strong>120</strong>.</p>
 <p>Here is how we can calculate factorial in more detail:</p>
 <ul>
@@ -621,16 +680,16 @@
 <li>We declare another variable - <strong><code>fact</code></strong>, with an initial value of 1. We will use it in the calculation and store the factorial value.</li>
 <li>For the loop condition we will use <strong><code>n &gt; 1</code></strong>, because each time we perform the calculations in the body of the loop, we will decrease the value of <strong><code>n</code></strong> by 1.</li>
 <li>In the body of the loop:<ul>
-<li>We assign a new value to <strong><code>fact</code></strong>, which value is the product of multiplying the current <strong><code>fact</code></strong> with the current <strong><code>n</code></strong>.</li>
+<li>We assign a new value to the <strong><code>fact</code></strong>, which value is the product of multiplying the current <strong><code>fact</code></strong> with the current <strong><code>n</code></strong>.</li>
 <li>We decrement <strong><code>n</code></strong> with <strong>1</strong>.</li>
 </ul>
 </li>
-<li>Outside the body of the loop we print the final factorial value.</li>
+<li>Outside the body of the loop, we print the final factorial value.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/08.Factorial-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#7" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#7</a>.</p>
-<h3 id="problem-summing-the-digits-of-a-number"><a name="problem-summing-the-digits-of-a-number" class="plugin-anchor" href="#problem-summing-the-digits-of-a-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Summing the Digits of a Number</h3>
+<h3 id="problem-sum-digits"><a name="problem-sum-digits" class="plugin-anchor" href="#problem-sum-digits"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Sum Digits</h3>
 <p>Sum up the digits of the integer <strong>positive</strong> number <strong>n</strong>. For example, if <strong>n = 5634</strong>, then the output would be: 5 + 6 + 3 + 4 = <strong>18</strong>.</p>
 <p>We can use the following idea to solve the problem:</p>
 <ul>
@@ -652,20 +711,20 @@
 
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#8</a>.</p>
-<h2 id="infinite-loops-and-the-operator-break"><a name="infinite-loops-and-the-operator-break" class="plugin-anchor" href="#infinite-loops-and-the-operator-break"><i class="fa fa-link" aria-hidden="true"></i></a>Infinite loops and the operator break</h2>
+<h2 id="infinite-loops-and-the-break-operator"><a name="infinite-loops-and-the-break-operator" class="plugin-anchor" href="#infinite-loops-and-the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Infinite Loops and The <code>break</code> Operator</h2>
 <p>So far, we were introduced to various types of loops, learning what structures they have and how they are applied. Now, we need to understand what an <strong>infinite loop</strong> is, when it occurs, and how we can <strong>break</strong> it using the <strong><code>break</code></strong> operator.</p>
 <h3 id="infinite-loop-&#x2013;-explanation"><a name="infinite-loop-&#x2013;-explanation" class="plugin-anchor" href="#infinite-loop-&#x2013;-explanation"><i class="fa fa-link" aria-hidden="true"></i></a>Infinite Loop &#x2013; Explanation</h3>
-<p>An <strong>infinite loop</strong> <strong>runs infinitely</strong> the code of its body. With the infinite <strong><code>while</code></strong> loops the end check is a conditional expression that <strong>always</strong> returns <strong><code>true</code></strong>. Here is an example of an <strong>infinite <code>while</code></strong> loop:</p>
+<p>An <strong>infinite loop</strong> <strong>runs infinitely</strong> the code of its body. With the infinite <strong><code>while</code></strong> loops, the end check is a conditional expression that <strong>always</strong> returns <strong><code>true</code></strong>. Here is an example of an <strong>infinite <code>while</code></strong> loop:</p>
 <p><img src="assets/chapter-7-1-images/00.Infinite-while-loop-01.png" alt=""></p>
-<h3 id="the-break-operator"><a name="the-break-operator" class="plugin-anchor" href="#the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>The Break Operator</h3>
+<h3 id="the-break-operator"><a name="the-break-operator" class="plugin-anchor" href="#the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>The <code>break</code> Operator</h3>
 <p>We already know that the infinite loop executes a certain code infinitely, but what if we want at some point under a given condition to interrupt and exit the loop? The <strong><code>break</code></strong> operator comes in handy in this situation.</p>
 <table><tr><td><img src="assets/alert-icon.png" style="max-width:50px"></td>
 <td>The operator <b><code>break</code></b> stops a loop&apos;s execution at the point it is called and the execution continues from the first line after the end of the loop. This means that the current iteration of the loop will not be completed accordingly and the rest of the code in the body of the loop will not be executed.</td>
 </tr></table>
 
-<h3 id="problem-prime-number-checking"><a name="problem-prime-number-checking" class="plugin-anchor" href="#problem-prime-number-checking"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Prime Number Checking</h3>
-<p>The next problem we are going to solve is to <strong>check whether a given number is prime</strong>, but before that, we should remember what prime numbers.</p>
-<p><strong>Definition</strong>: An integer is considered <strong>prime</strong>, if it is divisible only by itself and by 1. By definition, the prime numbers are positive and greater than 1. The smallest prime number is <strong>2</strong>.</p>
+<h3 id="problem-check-prime"><a name="problem-check-prime" class="plugin-anchor" href="#problem-check-prime"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Check Prime</h3>
+<p>The next problem we are going to solve is to <strong>check whether a given number is prime</strong>, but before that, we should remember what prime numbers are.</p>
+<p><strong>Definition</strong>: An integer is considered <strong>prime</strong> if it is divisible only by itself and by 1. By definition, the prime numbers are positive and greater than 1. The smallest prime number is <strong>2</strong>.</p>
 <p>We can assume that an integer <strong>n</strong> is a prime number if <strong>n &gt; 1</strong> and <strong>n</strong> is not divisible by a number between <strong>2</strong> and <strong>n-1</strong>.</p>
 <p>The first few prime numbers are: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, &#x2026;</p>
 <p>By contrast, <strong>composite numbers</strong> are integers, which can be obtained by multiplying several prime numbers.</p>
@@ -684,22 +743,22 @@
 <td>We can optimize the algorithm by instead of checking until <code>n-1</code>, to check the divisors only until <code>&#x221A;n</code>. Think of the reasons why this is so.</td>
 </tr></table>
 
-<h3 id="problem-check-for-a-prime-number-break-operator"><a name="problem-check-for-a-prime-number-break-operator" class="plugin-anchor" href="#problem-check-for-a-prime-number-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: check for a prime number. Break operator</h3>
+<h3 id="problem-enter-even-number"><a name="problem-enter-even-number" class="plugin-anchor" href="#problem-enter-even-number"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Enter Even Number</h3>
 <p>You are tasked to write a function that takes a single input <strong>n</strong> integer and checks if it is prime. This can be implemented by checking if <strong>n</strong> is divisible by any numbers in the range between 2 and &#x221A;n.</p>
 <p>The steps of the <strong>&quot;prime checking algorithm&quot;</strong> are given below in bigger detail:</p>
 <ul>
 <li>We declare the variable <strong><code>n</code></strong>, to which we assign the integer passed by the console.</li>
-<li>We create a <strong><code>is_prime</code></strong> boolean with and an initial value of <strong><code>True</code></strong>. We assume that a number is prime until proven otherwise.</li>
+<li>We create a <strong><code>is_prime</code></strong> boolean with an initial value of <strong><code>True</code></strong>. We assume that a number is prime until proven otherwise.</li>
 <li>We create a <strong><code>for</code></strong> loop, with the initial value set to 2, for a condition the <strong>current value <code>&lt;= &#x221A;n</code></strong>. The step is set to 1.</li>
-<li>In the <strong>body of the loop</strong> we check if <strong><code>n</code></strong>, divided by the <strong>current value</strong> has a remainder. If there is <strong>no reminder</strong> from the division, then we change <strong><code>is_prime</code></strong> to <strong><code>False</code></strong> and exit the loop through the <strong><code>break</code></strong> operator.</li>
+<li>In the <strong>body of the loop</strong>, we check if <strong><code>n</code></strong>, divided by the <strong>current value</strong> has a remainder. If there is <strong>no reminder</strong> from the division, then we change <strong><code>is_prime</code></strong> to <strong><code>False</code></strong> and exit the loop through the <strong><code>break</code></strong> operator.</li>
 <li>Depending on the value of <strong><code>is_prime</code></strong> we print whether the input number is prime (<strong><code>True</code></strong>) or composite (<strong><code>False</code></strong>).</li>
 </ul>
 <p>Here is a sample implementation of the prime checking algorithm, described above:</p>
 <p><img src="assets/chapter-7-1-images/10.Check-if-prime-01.png" alt=""></p>
-<p>What remains is to add a <strong>condition that checks if the input number is greater than 1</strong>, because, by definition numbers such as 0, 1, -1 and -2 are not prime.</p>
+<p>What remains is to add a <strong>condition that checks if the input number is greater than 1</strong>, because, by definition numbers such as 0, 1, -1, and -2 are not prime.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#9" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#9</a>.</p>
-<h3 id="problem-the-break-operator-in-an-infinite-loop"><a name="problem-the-break-operator-in-an-infinite-loop" class="plugin-anchor" href="#problem-the-break-operator-in-an-infinite-loop"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: the break operator in an infinite loop</h3>
+<h3 id="the-break-operator-in-an-infinite-loop"><a name="the-break-operator-in-an-infinite-loop" class="plugin-anchor" href="#the-break-operator-in-an-infinite-loop"><i class="fa fa-link" aria-hidden="true"></i></a>The <code>break</code> Operator in an Infinite Loop</h3>
 <p>Write a function, which checks whether a given number <strong>n</strong> is even and if so - print it on the console. An even number can be divided by 2 without a remainder. If the number is invalid, we will print that the current number is not even and the user will need to input a new number.</p>
 <p>Here is an idea for the solution:</p>
 <ul>
@@ -708,18 +767,18 @@
 <li>In <strong>the body of the loop</strong>:<ul>
 <li>We take the integer value, passed to our function, and assign it to <strong><code>n</code></strong>.</li>
 <li>If <strong>the number is even</strong>, we exit the loop by a <strong><code>break</code></strong>. </li>
-<li><strong>Otherwise</strong>, we print a message stating that <strong>the number is not even</strong>. Iterations continue, until an even number is entered.</li>
+<li><strong>Otherwise</strong>, we print a message stating that <strong>the number is not even</strong>. Iterations continue until an even number is entered.</li>
 </ul>
 </li>
 <li>We print the even number on the console.</li>
 </ul>
 <p>Here is an example implementation of the idea:</p>
 <p><img src="assets/chapter-7-1-images/00.Break-in-infinite-loop-01.png" alt=""></p>
-<p>Note: although the code above is correct, it will not work if the user enters text instead of a number, for example &quot;<strong>Invalid number</strong>&quot;. Then the parse of the text to a number will break and the program will display <strong>error message (exception)</strong>. We will learn very soon how to deal with this problem and how to catch and handle exceptions using the <strong><code>try-except</code> construct</strong>.</p>
+<p>Note: although the code above is correct, it will not work if the user enters text instead of a number, for example &quot;<strong>Invalid number</strong>&quot;. Then the parse of the text to a number will break and the program will display an <strong>error message (exception)</strong>. We will learn very soon how to deal with this problem and how to catch and handle exceptions using the <strong><code>try-except</code> construct</strong>.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#10</a>.</p>
-<h2 id="nested-loops-and-the-break-operator"><a name="nested-loops-and-the-break-operator" class="plugin-anchor" href="#nested-loops-and-the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Loops and the Break operator</h2>
-<p>Now since we know what <strong>nested loops</strong> are and how the <strong><code>break</code></strong> operator works, it is time to figure out how they work together.To get a better idea, we should write a <strong>function</strong> step by step, that should make all possible combinations of <strong>number pairs</strong>. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until <strong><code>i + j</code></strong> <strong>is not</strong> equal to 2 (i.e. <strong><code>i = 1</code></strong> and <strong><code>j = 1</code></strong>).</p>
+<h2 id="nested-loops-and-the-break-operator"><a name="nested-loops-and-the-break-operator" class="plugin-anchor" href="#nested-loops-and-the-break-operator"><i class="fa fa-link" aria-hidden="true"></i></a>Nested Loops and The <code>break</code> Operator</h2>
+<p>Now since we know what <strong>nested loops</strong> are and how the <strong><code>break</code></strong> operator works, it is time to figure out how they work together. To get a better idea, we should write a <strong>function</strong> step by step, that should make all possible combinations of <strong>number pairs</strong>. The first number in the pair is increasing from 1 to 3, while the second one is decreasing from 3 to 1. Our solution must continue running until <strong><code>i + j</code></strong> <strong>is not</strong> equal to 2 (i.e. <strong><code>i = 1</code></strong> and <strong><code>j = 1</code></strong>).</p>
 <p>The desired result is:</p>
 <p><img src="assets/chapter-7-1-images/00.Nested-and-break-desired-result-01.png" alt=""></p>
 <p>Here is a <strong>wrong implementation</strong>, that looks right at first glance:</p>
@@ -731,30 +790,30 @@
 <td> When we use the <b><code>break</code></b> <b>operator</b> in a <b>nested loop</b>, it interrupts <b>only</b> the execution of the inner loop.</td>
 </tr></table>
 
-<p>What is the <strong>correct solution</strong>? One way to solve the problem is by declaring a <strong><code>bool</code> variable</strong>, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to <strong><code>True</code></strong> and exit the inner loop with <strong><code>break</code></strong>, and in the next check, we exit the outer loop. Here is an example implementation of this idea:</p>
+<p>What is the <strong>correct solution</strong>? One way to solve the problem is by declaring a <strong><code>bool</code> variable</strong>, to keep track if the loop iteration has to continue. If we have to exit (leave all nested loops), we set the variable to <strong><code>True</code></strong> and exit the inner loop with a <strong><code>break</code></strong>, and in the next check, we exit the outer loop. Here is an example implementation of this idea:</p>
 <p><img src="assets/chapter-7-1-images/00.Nested-and-break-undesired-result-02.png" alt=""></p>
 <p>In this manner, when <strong><code>i + j = 2</code></strong>, the program will set the variable <strong><code>has_to_end = True</code></strong> and will exit the inner loop. Upon the next iteration of the outer loop, via the <strong><code>if</code></strong> check, the function will not reach the inner loop and will interrupt its execution.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#11" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#11</a>.</p>
-<h2 id="dealing-with-exceptions-try-except"><a name="dealing-with-exceptions-try-except" class="plugin-anchor" href="#dealing-with-exceptions-try-except"><i class="fa fa-link" aria-hidden="true"></i></a>Dealing with exceptions: try-except</h2>
-<p>The last thing we&apos;ll look at in this chapter is how to &quot;catch&quot; <strong>errors (exceptions)</strong> using the <strong><code>try-except</code></strong> construction .</p>
-<h3 id="what-is-try-except"><a name="what-is-try-except" class="plugin-anchor" href="#what-is-try-except"><i class="fa fa-link" aria-hidden="true"></i></a>What is try-except?</h3>
+<h2 id="dealing-with-exceptions-try-except"><a name="dealing-with-exceptions-try-except" class="plugin-anchor" href="#dealing-with-exceptions-try-except"><i class="fa fa-link" aria-hidden="true"></i></a>Dealing with Exceptions: <code>try-except</code></h2>
+<p>The last thing we&apos;ll look at in this chapter is how to &quot;catch&quot; <strong>errors (exceptions)</strong> using the <strong><code>try-except</code></strong> construction.</p>
+<h3 id="what-is-try-except"><a name="what-is-try-except" class="plugin-anchor" href="#what-is-try-except"><i class="fa fa-link" aria-hidden="true"></i></a>What is <code>try-except</code>?</h3>
 <p>The <strong><code>try-except</code></strong> construction is used for <strong>catching and handling exceptions (errors)</strong> during program execution.</p>
-<p>In programming, <strong>exceptions</strong> are notifications of an event that disrupts the normal operation of a program. Such events <strong>interrupt the execution</strong> of the program, which starts looking for someone to handle the situation. If it is not found, the exception is printed on the console (i.e. the program stops). If found, <strong>the exception is processed</strong> and the program continues normal execution. In a bit we will see exactly how this happens.</p>
-<h3 id="try-except-construction"><a name="try-except-construction" class="plugin-anchor" href="#try-except-construction"><i class="fa fa-link" aria-hidden="true"></i></a>try-except construction</h3>
-<p>The <strong><code>try-except</code></strong> construction has different options, but for now we will get acquainted only with the most basic of them</p>
+<p>In programming, <strong>exceptions</strong> are notifications of an event that disrupts the normal operation of a program. Such events <strong>interrupt the execution</strong> of the program, which starts looking for someone to handle the situation. If it is not found, the exception is printed on the console (i.e. the program stops). If found, <strong>the exception is processed</strong> and the program continues normal execution. In a bit, we will see exactly how this happens.</p>
+<h3 id="the-try-except-construction"><a name="the-try-except-construction" class="plugin-anchor" href="#the-try-except-construction"><i class="fa fa-link" aria-hidden="true"></i></a>The <code>try-except</code> Construction</h3>
+<p>The <strong><code>try-except</code></strong> construction has different options, but for now, we will get acquainted only with the most basic of them</p>
 <p> <img src="assets/chapter-7-1-images/00.Try...except-01.png" alt=""></p>
-<p>In the next task we will see how to deal with a situation, in which the user enters an input other than a number (for example <strong><code>string</code></strong> instead of <strong><code>int</code></strong>), using <strong><code>try-except</code></strong>.</p>
-<h3 id="problem-dealing-with-invalid-numbers-by-try-except"><a name="problem-dealing-with-invalid-numbers-by-try-except" class="plugin-anchor" href="#problem-dealing-with-invalid-numbers-by-try-except"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: dealing with invalid numbers by try-except</h3>
-<p>Write a program that checks that a number <strong>n</strong> is even and, if so, print it on the screen. In case of <strong>invalid entered</strong> number, a message should be displayed that the entered input is not a valid number and the input should continue.</p>
+<p>In the next task, we will see how to deal with a situation, in which the user enters an input other than a number (for example <strong><code>string</code></strong> instead of <strong><code>int</code></strong>), using <strong><code>try-except</code></strong>.</p>
+<h3 id="problem-break-sum"><a name="problem-break-sum" class="plugin-anchor" href="#problem-break-sum"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Break Sum</h3>
+<p>Write a program that checks that a number <strong>n</strong> is even and if so, print it on the screen. In case of an <strong>invalid entered</strong> number, a message should be displayed that the entered input is not a valid number and the input should continue.</p>
 <p>Here&apos;s how we can solve the problem:</p>
 <ul>
 <li>We create an infinite <strong><code>while</code></strong> loop, as a condition we will set <strong><code>True</code></strong>.</li>
 <li>In the body of the loop:<ul>
 <li>We create a <strong><code>try-except</code></strong> construction.</li>
-<li>In the block <strong><code>try</code></strong> we write the program logic for reading the user input, its parsing to a number and the parity check.</li>
-<li>At <strong>even number</strong> we print it and leave the loop (with <strong><code>break</code></strong>). The program has done its job and is coming to an end.</li>
-<li>At <strong>odd number</strong> we print a message that an even number is required without leaving the loop (because we want it to be repeated again).</li>
+<li>In the block <strong><code>try</code></strong> we write the program logic for reading the user input, its parsing to a number, and the parity check.</li>
+<li>At an <strong>even number</strong>, we print it and leave the loop (with <strong><code>break</code></strong>). The program has done its job and is coming to an end.</li>
+<li>At an <strong>odd number</strong>, we print a message that an even number is required without leaving the loop (because we want it to be repeated).</li>
 <li>If we <strong>catch an exception</strong> during the execution of the <strong><code>try</code></strong> block, we print a message for an invalid entered number (and the loop repeats, because we do not explicitly leave it).</li>
 </ul>
 </li>
@@ -763,10 +822,10 @@
 <p><img src="assets/chapter-7-1-images/11.Wrong-numbers-try-except-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#10" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#10</a>.</p>
-<p>Now the solution must always work: whether we enter integers, invalid numbers (for example, numbers with too many digits) or text that does not contain numbers.</p>
-<h2 id="problems-with-loops"><a name="problems-with-loops" class="plugin-anchor" href="#problems-with-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Problems with loops</h2>
+<p>Now the solution must always work: whether we enter integers, invalid numbers (for example, numbers with too many digits), or text that does not contain numbers.</p>
+<h2 id="problems-with-loops"><a name="problems-with-loops" class="plugin-anchor" href="#problems-with-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Problems with Loops</h2>
 <p>In this chapter, we got familiar with a few new types of loops that can perform repetitions with more complex programming logic. Let&apos;s solve a few practical problems using these new constructs.</p>
-<h3 id="problem-fibonacci-numbers"><a name="problem-fibonacci-numbers" class="plugin-anchor" href="#problem-fibonacci-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Fibonacci Numbers</h3>
+<h3 id="problem-fibonacci"><a name="problem-fibonacci" class="plugin-anchor" href="#problem-fibonacci"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Fibonacci</h3>
 <p>Fibonacci&apos;s numbers in mathematics form a sequence that looks like this: <strong>1, 1, 2, 3, 5, 8, 13, 21, 34, &#x2026;</strong>.</p>
 <p><strong>The formula</strong> to derive the next member of Fibonacci&apos;s sequence is:</p>
 <pre><code class="lang-python">F0 = <span class="hljs-number">1</span>
@@ -809,13 +868,13 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 </tr>
 </tbody>
 </table>
-<p>Enter an <strong>integer</strong> number <strong>n</strong> and calculate the <strong>n-th Fibonacci number.</strong>.</p>
+<p>Enter an <strong>integer</strong> number <strong>n</strong> and calculate the <strong>n-th Fibonacci number</strong>.</p>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>An idea to solve the problem:</p>
 <ul>
 <li>We declare a <strong>variable <code>n</code></strong>, which will hold the integer value received from the console input.</li>
-<li>We create the variables <strong><code>f0</code></strong> and <strong><code>f1</code></strong>, to which we assign the value to <strong>1</strong>, since this is the start of Fibonacci&apos;s sequence.</li>
-<li>We create a <strong><code>for</code></strong> loop starting from 0 to <strong>final value <code>n - 1</code></strong>.</li>
+<li>We create the variables <strong><code>f0</code></strong> and <strong><code>f1</code></strong>, to which we assign the value to <strong>1</strong> since this is the start of Fibonacci&apos;s sequence.</li>
+<li>We create a <strong><code>for</code></strong> loop starting from 0 to the <strong>final value <code>n - 1</code></strong>.</li>
 <li>In the <strong>body of the loop:</strong><ul>
 <li>We create a <strong>temporary</strong> variable <strong><code>f_next</code></strong>, to which we assign the next number in the Fibonacci sequence.</li>
 <li>To <strong><code>f0</code></strong> we assign the current value of <strong><code>f1</code></strong>.</li>
@@ -828,7 +887,7 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 <p><img src="assets/chapter-7-1-images/12.Fibonacci-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#12" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#12</a>.</p>
-<h3 id="problem-numbers-pyramid"><a name="problem-numbers-pyramid" class="plugin-anchor" href="#problem-numbers-pyramid"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers Pyramid</h3>
+<h3 id="problem-number-pyramid"><a name="problem-number-pyramid" class="plugin-anchor" href="#problem-number-pyramid"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Number Pyramid</h3>
 <p>Print the <strong>numbers 1 &#x2026; n in a pyramid</strong> as per the below example. On the first row, we print one number, at the second we print two, at the third, we print three, and so on, until the numbers are over. On the last line, we print as many numbers as we get until we get to <strong>n</strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -854,7 +913,7 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 </tbody>
 </table>
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
-<p>We can solve the problem with <strong>two nested loops</strong> (by rows and columns) with printing in them and leaving when the last number is reached. Here is the idea, written in more detail:</p>
+<p>We can solve the problem with <strong>two nested loops</strong> (by rows and columns) by printing in them and leaving when the last number is reached. Here is the idea, written in more detail:</p>
 <ul>
 <li>We declare a variable <strong><code>n</code></strong>, to which we assign the integer value, received from the console input.</li>
 <li>We declare a variable <strong><code>num</code></strong> with an initial value of 1. It will hold the count of printed numbers. At each iteration, we will <strong>increment</strong> it by <strong>1</strong> and will add it to the current row.</li>
@@ -866,14 +925,14 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 <li>We check if <strong><code>num &gt; n</code></strong>. If the <strong><code>num</code></strong> is greater than <strong><code>n</code></strong>, we <strong>break</strong> the <strong>inner loop</strong>.</li>
 </ul>
 </li>
-<li>We print <strong>empty line</strong>, to move on to the next.</li>
+<li>We print an <strong>empty line</strong>, to move on to the next.</li>
 <li>Again, we check if <strong><code>num &gt; n</code></strong>. If it is greater, we <strong>interrupt</strong> the execution of <strong>our program</strong> with a <strong><code>break</code></strong> operator. </li>
 </ul>
 <p>Here is an example implementation:</p>
 <p><img src="assets/chapter-7-1-images/13.Pyramid-01.png" alt=""></p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1057#13" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1057#13</a>.</p>
-<h3 id="problem-numbers-table"><a name="problem-numbers-table" class="plugin-anchor" href="#problem-numbers-table"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Numbers Table</h3>
+<h3 id="problem-number-table"><a name="problem-number-table" class="plugin-anchor" href="#problem-number-table"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Number Table</h3>
 <p>Print the numbers 1 &#x2026; n in a table as per the examples below:</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
@@ -902,13 +961,13 @@ Fn = Fn<span class="hljs-number">-1</span> + Fn<span class="hljs-number">-2</spa
 <li>In <strong>the body of the loop</strong> we create a nested <strong><code>for</code></strong> loop, that will be responsible for the columns in the table. We name the loop variable <strong><code>col</code></strong> and assign it an initial <strong>value of 0</strong>. For condition, we set <strong><code>n</code></strong>. The size of the step is set to 1.</li>
 <li>In <strong>the body of the nested loop</strong>:<ul>
 <li>We create a variable <strong><code>num</code></strong>, to which we assign the result of <strong>the current row + the current column + 1</strong> (+1, is needed since we count from 0).</li>
-<li>We check whether <strong><code>num &gt; n</code></strong>. If <strong><code>num</code></strong> is <strong>greater</strong> than <strong><code>n</code></strong>, we assign <strong><code>num</code></strong> a new value equal to <strong>two times</strong><code>n</code><strong> - the current value of </strong><code>num</code><strong>. We do this in order not to exceed </strong><code>n</code>** in any of the cells of the table.<ul>
-<li>We print the number fro the current table cell.</li>
+<li>We check whether <strong><code>num &gt; n</code></strong>. If <strong><code>num</code></strong> is <strong>greater</strong> than <strong><code>n</code></strong>, we assign <strong><code>num</code></strong> a new value equal to <strong>two times <code>n</code></strong> - the current value of <strong><code>num</code></strong>. We do this in order not to exceed <strong><code>n</code></strong> in any of the cells of the table.<ul>
+<li>We print the number from the current table cell.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>We print <strong>empty line</strong> in the outer loop, to move on to the next line.</li>
+<li>We print an <strong>empty line</strong> in the outer loop, to move on to the next line.</li>
 </ul>
 <p>Here is an example implementation:</p>
 <p><img src="assets/chapter-7-1-images/14.Table-with-numbers-01.png" alt=""></p>
@@ -943,21 +1002,21 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
 <span class="hljs-comment"># If int(&#x2026;) gets an error, it will complete the exception block of code</span>
 </code></pre>
 <h2 id="problem-web-applications-with-more-complex-loops"><a name="problem-web-applications-with-more-complex-loops" class="plugin-anchor" href="#problem-web-applications-with-more-complex-loops"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Web Applications with More Complex Loops</h2>
-<p>Now we know how to repeat a group of actions using <strong>loops</strong>. Let&apos;s do something interesting: <strong>web based game</strong>. Yes, a real game, with graphics and game logic. Let&apos;s have fun. It will be complicated, but if you do not understand exactly how it works, that is no problem. We are still just entering programming. There is time, you will advance with this technology. For now, follow the steps.</p>
+<p>Now we know how to repeat a group of actions using <strong>loops</strong>. Let&apos;s do something interesting: a <strong>web-based game</strong>. Yes, a real game, with graphics and game logic. Let&apos;s have fun. It will be complicated, but if you do not understand exactly how it works, that is no problem. We are still just entering programming. There is time, you will advance with this technology. For now, follow the steps.</p>
 <h3 id="problem-web-game-shoot-the-fruits"><a name="problem-web-game-shoot-the-fruits" class="plugin-anchor" href="#problem-web-game-shoot-the-fruits"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Web Game &quot;Shoot The Fruits!&quot;</h3>
-<p><strong>Condition</strong>: Develop a <strong>Flask web application</strong> &#x2013; a game in which the player <strong>shoots at fruits</strong>, arranged in a table. Successfully hit fruits disappear, and the player receives points for each fruit that was hit. The shooting is performed on columns, from top to bottom or vice-versa, and the location of the hit (the column under fire) is set by a scroll bar. Due to the inaccuracy of the scroller, the player is not quite sure which column to shoot at. So with each shot there is a chance not to hit and this makes the game more interesting (similar to the slingshot in Angry Birds).</p>
+<p><strong>Condition</strong>: Develop a <strong>Flask web application</strong> &#x2013; a game in which the player <strong>shoots at fruits</strong>, arranged in a table. Successfully hit fruits disappear, and the player receives points for each fruit that was hit. The shooting is performed on columns, from top to bottom or vice-versa, and the location of the hit (the column under fire) is set by a scroll bar. Due to the inaccuracy of the scroller, the player is not quite sure which column to shoot at. So with each shot, there is a chance not to hit and this makes the game more interesting (similar to the slingshot in Angry Birds).</p>
 <p>Our game should look like this:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-01.png" alt=""> </p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-02.png" alt=""></p>
 <p>Shown below, are the steps for implementing the &quot;Shoot the Fruits!&quot; Web application.</p>
 <h3 id="empty-pycharm-solution"><a name="empty-pycharm-solution" class="plugin-anchor" href="#empty-pycharm-solution"><i class="fa fa-link" aria-hidden="true"></i></a>Empty PyCharm Solution</h3>
-<p>We create a empty solution in PyCharm to organize the code from the application:</p>
+<p>We create an empty solution in PyCharm to organize the code from the application:</p>
 <p><img src="assets/chapter-7-1-images/15.Blank-Python-project-01.png" alt=""></p>
 <p>Then, we give a meaningful name to the project, for example &quot;<strong>Fruits-Web-Game</strong>&quot;. Also, set the Python interpreter to the default one:</p>
 <p><img src="assets/chapter-7-1-images/15.Blank-Python-project-02.png" alt=""></p>
 <p>We will create our web application using the <strong>Flask</strong> library, which we have already met. As we already know, before we start writing code, we need to install it. We go to PyCharm settings [<strong>File</strong>] -&gt; [<strong>Settings</strong>] and then to [<strong>Project: Fruit-Web-Game</strong>] -&gt; [<strong>Project Interpreter</strong>]. There, press the <strong><code>+</code></strong> button, search for and install <strong><code>Flask</code></strong>.</p>
 <p>Now we need to take the structure of the project from the resources provided to us.</p>
-<p>Then, we add the <strong>resources</strong> for the game (they are part of the task files for this project and can be downloaded from <a href="https://github.com/SoftUni/Programming-Basics-Book-CSharp-Python/tree/master/assets/chapter-7-1-assets" target="_blank">here</a>). We copy them from Windows Explorer and paste them in the project folder in PyCharm with <strong>copy/paste</strong>. Once we have placed the resources, the structure of the project should look like this:</p>
+<p>Then, we add the <strong>resources</strong> for the game (they are part of the task files for this project and can be downloaded from <a href="https://github.com/SoftUni/Programming-Basics-Book-CSharp-Python/tree/master/assets/chapter-7-1-assets" target="_blank">here</a>). We copy them from Windows Explorer and paste them into the project folder in PyCharm with <strong>copy/paste</strong>. Once we have placed the resources, the structure of the project should look like this:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-06.png" alt=""></p>
 <p>If we open <strong>app.py</strong> and launch it with the right button -&gt; [<strong>Run &apos;app&apos;</strong>], we should open the application, then click on the link in the console and open our web browser :</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-07.png" alt=""></p>
@@ -966,29 +1025,29 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
 <p>This code creates a web form <strong><code>&lt;form&gt;</code></strong> with a scroller (field) <strong><code>position</code></strong> to set a number in the interval [<strong>0 &#x2026; 100</strong>] and a button [<strong>Fire Top</strong>] to send the form data to the server. The action that will process the data is called <strong><code>/FireTop</code></strong>, which means the <strong><code>fire_top()</code></strong> function, which is located in the <strong>app.py</strong> file. There are two more similar forms with buttons [<strong>Fire Bottom</strong>] and [<strong>New Game</strong>].</p>
 <p>Now we need to prepare the fruits for drawing in the view. Add the following code to the <strong>app.py</strong> file:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-09.png" alt=""> </p>
-<p>The above code defines the fields for <strong>number of rows, number of columns</strong>, for <strong>fruit table</strong> (playing field), for the <strong>points</strong> accumulated by the player and information whether the game is active or <strong>finished</strong> (field <strong><code>gameOver</code></strong>). The playing field is 9 columns in 3 rows and contains text for each field: <strong><code>apple</code>, <code>banana</code>, <code>orange</code>, <code>kiwi</code>, <code>empty</code> or <code>dynamite</code></strong>. The main action <strong><code>index()</code></strong> prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).</p>
-<p>We need to generate random fruits. To do this, we need to write the method <strong><code>generate_random_fruits()</code></strong> with the code from the picture below. This code writes in the table (matrix) <strong><code>fruits</code></strong> names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: <strong><code>apple</code>, <code>banana</code>, <code>orange</code>, <code>kiwi</code>, <code>empty</code> or <code>dynamite</code></strong>.Then, in order to draw the corresponding image in the view, <strong><code>.png</code></strong> will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view <strong><code>index.html</code></strong>, with two nested <strong><code>for</code></strong> loops (per row and per column).</p>
+<p>The above code defines the fields for a <strong>number of rows</strong>, a <strong>number of columns</strong>, for <strong>fruit table</strong> (playing field), for the <strong>points</strong> accumulated by the player, and information whether the game is active or <strong>finished</strong> (field <strong><code>gameOver</code></strong>). The playing field is 9 columns in 3 rows and contains the text for each field: <strong><code>apple</code>, <code>banana</code>, <code>orange</code>, <code>kiwi</code>, <code>empty</code>, or <code>dynamite</code></strong>. The main action <strong><code>index()</code></strong> prepares the playing field for drawing by saving the elements of the game and calling the view that draws them on the game page (in the web browser as HTML).</p>
+<p>We need to generate random fruits. To do this, we need to write the method <strong><code>generate_random_fruits()</code></strong> with the code from the picture below. This code writes in the table (matrix) <strong><code>fruits</code></strong> names of different pictures and thus builds the playing field. One of the following values is written in each cell of the table: <strong><code>apple</code>, <code>banana</code>, <code>orange</code>, <code>kiwi</code>, <code>empty</code>, or <code>dynamite</code></strong>. Then, to draw the corresponding image in the view, <strong><code>.png</code></strong> will be pasted to the text from the table and thus the name of the image file will be obtained, which will be inserted into the HTML page as part of the playing field. Filling the playing field (9 columns with 3 rows) is done in the view <strong><code>index.html</code></strong>, with two nested <strong><code>for</code></strong> loops (per row and column).</p>
 <p>To generate random fruits, a <strong>random number</strong> between 0 and 8 is generated for each cell (see class <strong><code>random</code></strong> in Python). If the number is 0 or 1, put <strong><code>apple</code></strong>, if it is between 2 and 3, put <strong><code>banana</code></strong>, etc. If the number is 8, set <strong><code>dynamite</code></strong>. Thus, fruits appear 2 times more often than dynamite. Here is the code:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-10.png" alt=""></p>
 <p>Drawing the fruit in <strong><code>index.html</code></strong>:</p>
-<p>In order to <strong>fill the playing field</strong> with the fruits, we have to iterate <strong>two nested loops</strong> (for the rows and for the columns). Each line consists of 9 pictures, each of which contains <strong><code>apple</code>, <code>banana</code></strong> or another fruit, or an empty field <strong><code>empty</code></strong>, or <strong><code>dynamite</code></strong>. Images are drawn by printing an HTML tag to insert an image: <strong><code>&lt;img src=&quot;/images/apple.png&quot; /&gt;</code></strong>. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with <strong><code>&lt;br&gt;</code></strong>. This is repeated three times for the three lines. Finally, the player&apos;s points are printed. Here&apos;s how the <strong>code</strong> for drawing the playing field and points looks like:</p>
+<p>To <strong>fill the playing field</strong> with the fruits, we have to iterate <strong>two nested loops</strong> (for the rows and the columns). Each line consists of 9 pictures, each of which contains an <strong><code>apple</code>, <code>banana</code></strong>, or another fruit, or an empty field <strong><code>empty</code></strong>, or <strong><code>dynamite</code></strong>. Images are drawn by printing an HTML tag to insert an image: <strong><code>&lt;img src=&quot;/images/apple.png&quot; /&gt;</code></strong>. Nine pictures are arranged one after the other on each of the lines, and then they are moved to a new line with <strong><code>&lt;br&gt;</code></strong>. This is repeated three times for the three lines. Finally, the player&apos;s points are printed. Here&apos;s how the <strong>code</strong> for drawing the playing field and points looks like:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-11.png" alt=""></p>
 <p>Note the curly braces &#x2013; they are used to switch between the languages - <strong>HTML</strong> and <strong>Python</strong> and come from <strong>Jinja2</strong> syntax for drawing dynamic web pages.</p>
 <p>We start the project with [<strong>Shift+F10</strong>]. It is expected that a random fruit field with sizes 9 by 3 will be generated and visualized on the web page through a series of pictures:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-12.png" alt=""></p>
 <p>Now the game is somewhat done: the playing field is randomly generated and visualized successfully (if you haven&apos;t made a mistake somewhere). It remains to realize the essence of the game: <strong>shooting at the fruits</strong>.</p>
-<p>To do this, add the actions [<strong>New Game</strong>], [<strong>Fire Top</strong>] and [<strong>Fire Bottom</strong>] to the file <strong>app.py</strong>:</p>
+<p>To do this, add the actions [<strong>New Game</strong>], [<strong>Fire Top</strong>], and [<strong>Fire Bottom</strong>] to the file <strong>app.py</strong>:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-13.png" alt=""> </p>
 <p>Using the code above we define three actions:</p>
 <ul>
-<li><strong><code>reset()</code></strong> &#x2013; launches a new game by generating a new random playing field with fruits and explosives, resets the player&apos;s points and makes the game valid <strong>(<code>gameOver = false</code>)</strong>. This action is quite simple and can be tested immediately with [<strong>Shift+F10</strong>] before writing the others..</li>
+<li><strong><code>reset()</code></strong> &#x2013; launches a new game by generating a new random playing field with fruits and explosives, resets the player&apos;s points, and makes the game valid <strong>(<code>gameOver = false</code>)</strong>. This action is quite simple and can be tested immediately with [<strong>Shift+F10</strong>] before writing the others.</li>
 <li><strong><code>fire_top()</code></strong> &#x2013; shoots in line <strong>0</strong> at <strong><code>position</code></strong> (number from 0 to 100), taken by the user. A <strong>down</strong> (+1) shooting from row <strong>0</strong> (top) is called. The shooting itself is more complex in logic and will be discussed shortly.</li>
 <li><strong><code>fire_bottom()</code></strong> &#x2013; shoots in line <strong>2</strong> at <strong><code>position</code></strong> (number from 0 to 100), taken by the user. A shoot in the <strong>up</strong> (-1) direction from row <strong>2</strong> (bottom) is called.</li>
 </ul>
 <p>We implement the &quot;shooting&quot; method <strong><code>fire(position, start_row, step)</code></strong>:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-14.png" alt=""></p>
-<p>Shooting works as follows: first the number of the column <strong><code>col</code></strong>, to which the player is aiming is calculated. The input number from the scroller (between 0 and 100) s reduced to a number between 0 and 8 (for each of the 9 columns). The line number <strong>row</strong> is either 0 (if the shot at the top) or the number of lines minus one (if the shot is at the bottom). Accordingly, the direction of firing (the step) is <strong>1</strong> (down) or <strong>-1</strong> (up).</p>
-<p>To find where the shot hits a fruit or dynamite, go through a loop through all the cells of the playing field in the target column and from the first to the last attacked row. If a fruit is found, it disappears (replaced by <strong><code>empty</code></strong>) and points are given to the player. If <strong><code>dynamite</code></strong> is encountered, the game is marked as over.</p>
+<p>Shooting works as follows: first, the number of the column <strong><code>col</code></strong>, to which the player is aiming is calculated. The input number from the scroller (between 0 and 100) s reduced to a number between 0 and 8 (for each of the 9 columns). The line number <strong>row</strong> is either 0 (if the shot is at the top) or the number of lines minus one (if the shot is at the bottom). Accordingly, the direction of firing (the step) is <strong>1</strong> (down) or <strong>-1</strong> (up).</p>
+<p>To find where the shot hits a fruit or dynamite, go through a loop through all the cells of the playing field in the target column and from the first to the last attacked row. If the fruit is found, it disappears (replaced by <strong><code>empty</code></strong>) and points are given to the player. If <strong><code>dynamite</code></strong> is encountered, the game is marked as over.</p>
 <p>We leave it to more avid readers to implement more complex behaviors, for example, to give different points when hitting a different fruit, to realize an animation with an explosion (this is not too easy), to take away points when shooting unnecessarily in an empty column, and similar.</p>
 <p><strong>We test</strong> what works so far by running the application with [<strong>Ctrl + Shift + F10</strong>]:</p>
 <ul>
@@ -997,7 +1056,7 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
 <li><strong>Shooting from below</strong> ; shooting from below must remove the bottom fruit in the hit column or stop the game when hitting dynamite.</li>
 </ul>
 <p><img src="assets/chapter-7-1-images/15.Fruits-01.png" alt=""></p>
-<p>For now, nothing is happening at <strong>&quot;End of Game&quot;</strong>.If the player hits dynamite, the application notes that the game is over <strong>(<code>game_over = True</code>)</strong>, but this fact is not visualized in any way. In order for the game to end, we need to add a few checks to the view:</p>
+<p>For now, nothing is happening at <strong>&quot;End of Game&quot;</strong>.If the player hits dynamite, the application notes that the game is over <strong>(<code>game_over = True</code>)</strong>, but this fact is not visualized in any way. For the game to end, we need to add a few checks to the view:</p>
 <p><img src="assets/chapter-7-1-images/15.Fruits-15.png" alt=""></p>
 <p>The code above checks if the game is over and shows respectively the shooting controls and the playing field (during active play) or a picture with exploded fruits at the end of the game.</p>
 <p>After changing the code of the view, we start with [<strong>Ctrl + Shift + F10</strong>] and <strong>test</strong> the game again:</p>
@@ -1047,7 +1106,7 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-02-24T11:43:55.356Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-24T11:44:52.270Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"7.1. More Complex Loops","level":"1.14","depth":1,"next":{"title":"7.2. More Complex Loops – Exam Problems","level":"1.15","depth":1,"path":"chapter-07-complex-loops-exam-problems.md","ref":"chapter-07-complex-loops-exam-problems.md","articles":[]},"previous":{"title":"6.2. Nested Loops – Exam Problems","level":"1.13","depth":1,"path":"chapter-06-nested-loops-exam-problems.md","ref":"chapter-06-nested-loops-exam-problems.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js","./assets/js/modal-popup.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-07-complex-loops.md","mtime":"2022-07-08T07:30:12.387Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-08T07:30:54.497Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1070,6 +1129,14 @@ print(<span class="hljs-string">&quot;Even number entered: {}&quot;</span>.forma
     
         
         <script src="gitbook/gitbook-plugin-scripts/16c379089a06746b89963336a59c0e59-video.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/b82381ef0a87465c7dd5517c45be46de-top-menu.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/953054134797f5983881d661f025b80c-modal-popup.js"></script>
         
     
         
