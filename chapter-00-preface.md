@@ -10,13 +10,13 @@ The book is also used as an unofficial **textbook for school-level programming c
 
 ## Who is This Book Intended for?
 
-This book is suitable for **complete beginners in programming**, who want to try what programming is and learn the main constructions for writing programming code that is used in software development, regardless of programming languages and technologies used. The book provides a **solid basis** of practical skills that are used for further study in programming and software development.
+This book is suitable for **complete beginners in programming**, who want to find out what programming is and learn the main constructions for writing programming code that is used in software development. The book provides a **solid basis** of practical skills that are used for further study in programming and software development.
 
 ## Why Did We Choose The Python Language?
 
 For this book, we chose **Python**, because it is a **modern** language for high-level programming and at the same time it is easy to learn and suitable for **beginners**. As a use **Python** is **widespread**, with a well-developed ecosystem, numerous libraries, and technological frameworks, and therefore gives many **prospects** for development. **Python** combines the paradigms of procedural, functional, and object-oriented programming in a modern way with easy-to-use syntax. In the book, we'll use the **Python language** and the **PyCharm** development environment, which is available for free from JetBrains.
 
-As we will explain later, **the programming language with which we start is not essential**, but we still need to use some programming language, and in this book, we have chosen **Python**.  The book can also be found mirrored in other programming languages such as C# and JavaScript (see [https://csharp-book.softuni.org](https://csharp-book.softuni.org)).
+As we will explain more about later, the programming language you start with does not make a significant difference in the process of learning to code, but you still need to choose one. For this book, we will focus specifically on Java. You can find the principles and concepts explained here illustrated with other programming languages like C#, JavaScript, and Python [here](https://softuni.org/learn/resources/free-programming-books?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=PythonBook).
 
 ## The Book in Other Programming Languages: Java, JavaScript, C#, C++
 
