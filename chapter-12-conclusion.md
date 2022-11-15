@@ -2,7 +2,7 @@
 
 If you have **read the entire** book and you've solved all the problems from the exercises and reached the present conclusion, **congratulations**! You've already made the **first step** in learning the **profession of a programmer**, but there is a **long way** to go until you become **really good** and make **software writing** your **profession**.
 
-Remember the **[four main groups of skills](chapter-00-preface.md#become-a-developer)**, that each programmer must have to work in the industry:
+Remember the **[four main groups of skills](chapter-00.2-how-to-become-a-programmer.md)**, that each programmer must have to work in the industry:
  - Skill #1 – **writing the program code** (20% of programmer's skills) – covered to a large degree by this book, but you must learn additional basic data structures, classes, functions, strings, and other elements of code writing.
  - Skill #2 – **algorithmic thinking** (30% of programmer's skills) – covered partially by this book and developed mostly by solving a large amount of diverse algorithmic problems.
  - Skill #3 – a **fundamental understanding of the profession** (25% of programmer's skills) – acquired for a few years in combination with learning and practice (reading books, watching video lessons, attending courses, and mostly by writing diverse projects in various technological areas).
