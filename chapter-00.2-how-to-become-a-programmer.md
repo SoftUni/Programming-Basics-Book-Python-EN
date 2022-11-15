@@ -19,7 +19,7 @@ Learning how **to write code** forms about 20% of the minimum skills required fo
 
 The ability to code **can be learned in a few months** of intensive studying and solving practical tasks by writing code every day. This book covers only the first part of the coding skill: **working with variables, conditionals, and loops**. The rest remains to be learned in subsequent trainings, courses, and books.
 
-The book give only the beginning of a long-term and serious study, on the path to professional programming. You won't be able to become a programmer without mastering the material from this book. You will lack programming fundamentals and it will become increasingly difficult to move forward. Therefore **pay enough attention to the basics of programming**: solve problems and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
+The book is only the beginning of a long-term study and a small step of your path to programming professionally. You won't be able to become a programmer without mastering the material from this book. You will lack programming fundamentals and it will become increasingly difficult to move forward. Therefore **pay enough attention to the basics of programming**: solve problems and write a lot of code for months until you learn **to easily solve all the problems in this book**. Then move on.
 
 We pay special attention to the fact that **programming language doesn't have significant relevance** for one's coding skill. You can either code or not. If you can code in C#, then you'll easily switch to Java or C++, or any other language. These are the skills that each programming book for beginners starts with, including this one.
 
@@ -30,7 +30,7 @@ Algorithmic (logical, engineering, mathematical, abstract) thinking forms about 
 How **to build algorithmic thinking**?
 * Review **many (1000+) programming tasks**, the more diverse, the better. This is the recipe: reducing thousands of practical tasks, inventing an algorithm for them, and executing the algorithm, along with debugging errors along the way.
 * Physics, mathematics, and/or similar sciences help, but they are not restraining! People with **engineering and technical inclinations** usually learn to think logically easily, because they already have the skills for solving problems, although not algorithmic. 
-* The ability **to solve programming tasks** (which requires algorithmic thinking) is extremely important for programmers. Many companies require only this skill in job interviews.
+* The ability **to solve programming tasks** (which requires algorithmic thinking) is extremely important for programmers. Many companies test for this skill specifically during job interviews.
 
 This book develops **a beginner's level of algorithmic thinking**, but it is not enough to make you a good programmer. To become proficient in the professions, you will need to add **logical thinking skills and improve tasks** outside this book, such as **working with data structures** (arrays, lists, matrices, hash tables, tree structures) and basic **algorithms** (search, sorting, tree structures, recursion, etc.). 
 
@@ -58,7 +58,7 @@ As you may guess, **the programing language does not matter** for the developmen
 
 We must emphasize once again that the choice of **the programming language is not a significant factor** in acquiring these skills.. They accumulate slowly, over many years of practice in the profession. Some knowledge is fundamental and can be learned theoretically, but it takes years of practice to fully understand them in depth.
 
-Fundamental knowledge and skills for programming, software development, software engineering, and computer science are taught during the **Software Engineering Program**. Working with a variety of software libraries, APIs, frameworks, and software technologies and their interaction gradually builds this knowledge and skills, so do not expect that you will understand them from a single course, book or project.
+Fundamental knowledge and skills for programming, software development, software engineering, and computer science are taught during the **Software Developer Program** and **open courses**. Working with a variety of software libraries, APIs, frameworks, and software technologies and their interaction gradually builds this knowledge and skills, so do not expect that you will understand them from a single course, book or project.
 
 **Basic knowledge in the areas listed above** is usually sufficient to start working as a programmer. You will gain a deeper understanding of the concepts from the technologies and development tools you use in your day-to-day work.
 
@@ -87,7 +87,7 @@ As we already made clear, the technical skills, determined by mastering a specif
 * All programmers have about **80-90% of the same skills**, which do not depend on language! These are the skills to program and develop software, and they are very similar in different programming languages and development technologies.
 * The more languages and technologies you are proficient in, the faster you will learn new languages and the less you will feel a difference between them.
 
-Let us state once again that **the choice of programming language (mostly) does not matter** - you just need to learn to program. This process starts with **coding** (by reading this book or enrolling in a Software Engineer program), continues with mastering more **complex programming concepts** (like data structures, algorithms, OOP, and FP), and includes using **fundamental knowledge and skills for software development, software engineering, and computer science**.
+Let us state once again that **the choice of programming language (mostly) does not matter** - you just need to learn to program. This process starts with **coding** (by reading this book or enrolling in a [Software Developer program](https://learn.softuni.org/catalog?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=PythonBook)), continues with mastering more **complex programming concepts** (like data structures, algorithms, OOP, and FP), and includes using **fundamental knowledge and skills for software development, software engineering, and computer science**.
 
 
 You will need to know a **specific programming language**, program libraries (APIs), frameworks, and software technologies (front-end UI technologies, back-end technologies, ORM technologies, etc.) once you start working on a software project.
