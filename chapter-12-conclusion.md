@@ -55,16 +55,9 @@ The forms of training at SoftUni are **on-site** (the better choice) and **onlin
 
 #### SoftUni for People Who Work and Study
 
-We recommend to everyone who gets **an excellent score at Judge Problems** and is passionate about making programming their profession, to leave the rest of their commitments aside and **spend their entire time** on learning the profession of a "software engineer" and start making a living through it.
+We recommend to everyone who gets **an excellent score at Judge Problems** and is passionate about making programming their profession, to consider leaving the rest of their commitments aside to **spend more time** on learning the profession of a software engineer and start making a living through it.
 
- - For people who **work** this means quitting their job (and getting a loan or decreasing their expenses, to live with a lower income for 1-2 years until they start working in the new profession).
- - For people who **study** in a traditional university, this means to move significantly their focus towards programming, by decreasing the time spent in the traditional university.
- - For **unemployed** people, this is an excellent chance to assign their entire time, power, and energy to acquire a new, perspective, well paid and highly sought profession, that will give them good life quality and long-term prosperity.
- - For **students** in secondary schools and high schools, this means **giving a priority** to what is more important in their development: studying practical programming in SoftUni, which will give them a profession and a job, or giving their full attention to the traditional education system, or combining smartly both undertakings. Unfortunately, often priorities are determined by parents, and we don't have a solution for these cases.
- 
 We recommend to all who **cannot get an excellent score at the Judge problems** to spend more time on better learning, understanding, and most of all, practicing the material studied in the present book. If you cannot easily solve the problems in this book, you will not be able to cope with programming and software development in the future.
-
-**Do not skip the programming basics!** Do not under any circumstances make bold decisions and quit your job or the traditional university, making great plans for your future profession as a software engineer, if you don't have an excellent grade at the book exercises! It measures if programming is suitable for you, to what extent you like it and if you are motivated to study it seriously and work on this for years every day with joy and pleasure.
 
 ### Study Software Engineering on Your Own
 
@@ -85,9 +78,9 @@ Regardless of the path you have chosen, if you are seriously involved in program
 If you aim to study programming seriously, **surround yourselves with people who are involved in programming** seriously. Join **communities of software developers**, attend software conferences, go to events for programmers, find friends with whom you can talk about programming and discuss problems and bugs, find an environment that can help you. In most large towns there are free events for programmers, a few times a week. In smaller localities, you have the Internet and access to the entire online community.
 
 Here are some recommended **resources**, that will be useful for your development as a programmer:
-* https://softuni.org – official **website of SoftUni**. In it, you will find free (and not only) courses, seminars, video tutorials, and training in programming, software technologies, and digital competencies.
+* [https://learn.softuni.org](https://learn.softuni.org?utm_source=FreeProgrammingBooks&utm_medium=text&utm_campaign=PythonBook) –  the official page for SoftUni’s **self-paced Software Developer programs and open courses**.
 * https://www.facebook.com/softuni.org – official **Facebook page of SoftUni**. By it, you will learn about new courses, seminars, and events related to programming and software development.
-* https://introprogramming.info - official website of the **books "Programming Basics"** with **C#** and **Java** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
+* https://introprogramming.info - official website of the **books "Programming Basics"** with **C#**, **Java**, **JavaScript**, and **Python** by Dr. Svetlin Nakov and his team. The books examine in-depth programming basics, basic data structures and algorithms, object-oriented programming, and other basic skills, and are an excellent continuation for reading after the current book. However, **besides reading, you need to do intense code writing**, do not forget that!
 * https://stackoverflow.com - **Stack Overflow** is one of the **widest** discussion forums for programmers worldwide, where you will find assistance for any possible question in the world of programming. If you are fluent in English, look up at StackOverflow and ask your questions there.
 * https://www.meetup.com - search **tech meetups** around your town and enter the community that you like. More of the tech meetups are free and the newcomers are welcome.
 
