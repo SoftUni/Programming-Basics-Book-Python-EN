@@ -45,6 +45,16 @@ The book is distributed **for free** in electronic format under an open license 
 
 International Standard Book Number (ISBN): **978-619-00-1403-4**.
 
+## The Book That Helps Teachers 
+
+If you are a **teacher of programming**, informatics, or information technology or want **to teach programming**, this book gives you more
+than a well-structured learning material with many examples and tasks. **Free of charge** with the book you receive **quality educational content** for teaching in school, in the **Bulgarian language**, by the school requirements:
+
+* **Educational presentations** (PowerPoint slides) for each learning topic tailored to 45-minute hours in schools – free of charge.
+* Well-designed **tasks** for class and homework, with detailed conditions and sample entrance and exit – free of charge.
+* **An automated task and homework verification system** (Online Judge System) to be used by students, also free of charge.
+* **Video lessons** with methodological instructions from the free course for programming teachers, which is held regularly by the SoftUni Foundation.
+
 ## Bug Reports
 
 If you find **bugs**, inaccuracies, or defects in the book, you can report them in the official tracker of the project:
