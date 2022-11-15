@@ -24,7 +24,7 @@ The book is written in the period June-October 2018.
 
 The current book on **The basics of Python programming for beginners** is available for free use on the Internet from: 
 
-<p align="center"><strong><a href="https://python-book.softuni.mn">https://python-book.softuni.mn</a></strong></p>
+<p align="center"><strong><a href="https://python-book.softuni.mn">https://python-book.softuni.org</a></strong></p>
 
 This is **the official website of the book** and there will be uploaded its latest version. 
 
@@ -32,7 +32,7 @@ This is **the official website of the book** and there will be uploaded its late
 
 The book is distributed **for free** in electronic format under an open license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
 
-**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-Python-MN.
+**The source code** of the book can be found on GitHub: https://github.com/SoftUni/Programming-Basics-Book-Python-EN.
 
 International Standard Book Number (ISBN): **978-619-00-1403-4**.
 
@@ -40,7 +40,7 @@ International Standard Book Number (ISBN): **978-619-00-1403-4**.
 
 If you find **bugs**, inaccuracies, or defects in the book, you can report them in the official tracker of the project:
 
-<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-Python-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-Python-MN/issues</a></strong></p>
+<p align="center"><strong><a href="https://github.com/SoftUni/Programming-Basics-Book-Python-EN/issues">https://github.com/SoftUni/Programming-Basics-Book-Python-EN/issues</a></strong></p>
 
 We can't promise that we will edit everything you send us, but we are willing to constantly improve the quality of this book so that the reported errors and all reasonable suggestions will be addressed.
 
