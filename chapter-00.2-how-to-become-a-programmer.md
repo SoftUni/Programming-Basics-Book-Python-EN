@@ -2,7 +2,7 @@
 
 Dear readers, many of you must have the ambition to become programmers, make a living with software development, or work in the IT sector. That is why we have prepared for you a **short guide "How to become a programmer"** to navigate you on the steps to this much-desired profession.
 
-Becoming a programmer (at the level of starting work in a software company) would take **at least 1-2 years of learning and writing code every day**, solving several thousand programming tasks, developing several practical projects, and gaining a lot of experience with code writing and software development. It's not possible for a month or two! The profession of software engineering requires a large amount of knowledge, backed by extensive practice. 
+You can become a junior-level programmer after at least **1-2 years of daily learning and writing code**, solving thousands of programming problems, developing several practical projects resulting in a lot of experience in software development. It takes more than a month or two of effort! The profession of the software engineer requires a large amount of knowledge as a result of a lot of practice.
 
 There are **4 main skill groups** that all programmers must have. Most of these skills are preserved over time and are not significantly affected by the development of specific technologies (which change constantly). These are the skills that **every good programmer has** and which every rookie should aspire to obtain:
 * code writing (20%)
