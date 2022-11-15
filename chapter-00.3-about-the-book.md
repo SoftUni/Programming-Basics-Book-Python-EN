@@ -28,6 +28,15 @@ The current book on **The basics of Python programming for beginners** is availa
 
 This is **the official website of the book** and there will be uploaded its latest version. 
 
+## Forum for Your Questions
+
+Ask your **questions to this book** on Programming Basics in the **SoftUni's Reddit Community**:
+<p align="center"><strong><a href="https://www.reddit.com/r/softuni/">https://www.reddit.com/r/softuni/</a></strong></p>
+
+In this discussion subreddit, you will receive a **free adequate answer on any questions from the curriculum content of this textbook**, as well as on other programming issues. SoftUni's teachers, assistants, and mentors also answer your questions constantly.
+
+If you have a specific question, such as why a program doesn't run, that you've been stuck with for a few hours, **ask it in the subreddit** and you'll get an answer. You will be surprised how well-intentioned and responsive the users of the SoftUni’s subreddit are.
+
 ## License and Distribution 
 
 The book is distributed **for free** in electronic format under an open license **[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
