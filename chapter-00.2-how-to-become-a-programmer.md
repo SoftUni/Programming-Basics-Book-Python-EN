@@ -4,6 +4,12 @@ Dear readers, many of you must have the ambition to become programmers, make a l
 
 You can become a junior-level programmer after at least **1-2 years of daily learning and writing code**, solving thousands of programming problems, developing several practical projects resulting in a lot of experience in software development. It takes more than a month or two of effort! The profession of the software engineer requires a large amount of knowledge as a result of a lot of practice.
 
+## Video: Become a Software Engineer – 4 Essential Skills
+
+Watch a video lesson about SoftUni and SoftUni Judge here: https://youtu.be/Ds5PD3UW57k.
+
+## The 4 Essential Skills of the Software Developers
+
 There are **4 main skill groups** that all programmers must have. Most of these skills are preserved over time and are not significantly affected by the development of specific technologies (which change constantly). These are the skills that **every good programmer has** and which every rookie should aspire to obtain:
 * code writing (20%)
 * algorithmic thinking (30%)
