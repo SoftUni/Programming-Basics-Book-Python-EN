@@ -14,9 +14,9 @@ Using the **SoftUni Interactive Platform**, you **write, execute and test code d
 
 This is how the **SoftUni Interactive Classroom** looks like:
  
-![](/assets/chapter-0-images/Interactive-Classroom-Video.png)
+![](/assets/chapter-0-images/Interactive-Classroom-Video.PNG)
 
-![](/assets/chapter-0-images/Interactive-Classroom-Live-Coding-Exercise.png)
+![](/assets/chapter-0-images/Interactive-Classroom-Live-Coding-Exercise.PNG)
 
 ## Video: SoftUni and SoftUni Judge
 
