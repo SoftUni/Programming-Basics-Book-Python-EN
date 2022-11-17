@@ -14,9 +14,9 @@ Using the **SoftUni Interactive Platform**, you **write, execute and test code d
 
 This is how the **SoftUni Interactive Classroom** looks like:
  
-![](/assets/chapter-0-images/SoftUni-Interactive-Classroom-Video.png)
+![](/assets/chapter-0-images/Interactive-Classroom-Video.png)
 
-![](/assets/chapter-0-images/SoftUni-Interactive-Classroom-Live-Coding-Exercise.png)
+![](/assets/chapter-0-images/Interactive-Classroom-Live-Coding-Exercise.png)
 
 ## Video: SoftUni and SoftUni Judge
 
@@ -25,7 +25,7 @@ Watch a video lesson about SoftUni and SoftUni Judge here: [https://youtu.be/TDl
 ## The Automated Judge System
 
 **The SoftUni Judge system** \([https://judge.softuni.org](https://judge.softuni.org)\) is an automated Internet system for **checking the solutions of programming exercises via series of tests**. The submission and verification happen in **real time**: you submit the solution and within seconds you get an answer whether it is correct. You earn **points** for each task depending on your answer. For a completely right one, you get the maximum points for the problem. With a partially correct solution, you receive a fraction of the points. And with a completely wrong answer, you get 0 points. This how the **SoftUni Judge** looks like:
-![](/assets/chapter-1-images/02.Expression-03.png)
+![](/assets/chapter-1-images/Judge-System-Exercise.PNG)
 **All problems from the current book are available for testing in SoftUni judge** and we strongly recommend testing them after you solve them to be sure you don't miss anything and that your solution works correctly according to the task requirements.
 
 Keep in mind some **specifics about SoftUni judge**:
