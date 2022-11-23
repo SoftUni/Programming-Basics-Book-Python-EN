@@ -36,7 +36,6 @@ Keep in mind some **specifics about SoftUni judge**:
 
 The SoftUni judge system is **available any time** via its website: [https://judge.softuni.org](https://judge.softuni.org).
 
-  * To sign in use your authentication for the SoftUni website: [https://softuni.org](https://softuni.org).
   * Using the SoftUni system is **free** and it's not bound with the participation in SoftUni's courses.
 
 We are convinced that after sending a few tasks **you will like getting instant feedback** for your solutions and the Judge system will become your favorite assistant in your programming practice.
