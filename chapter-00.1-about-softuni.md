@@ -20,7 +20,7 @@ This is how the **SoftUni Interactive Classroom** looks like:
 
 ## Video: SoftUni and SoftUni Judge
 
-Watch a video lesson about SoftUni and SoftUni Judge here: [https://www.youtube.com/watch?v=IwLET8SDBE4](https://www.youtube.com/watch?v=IwLET8SDBE4).
+Watch a video lesson about SoftUni and SoftUni Judge here: https://www.youtube.com/watch?v=IwLET8SDBE4.
 
 ## The Automated Judge System
 
