@@ -522,7 +522,7 @@
 <li><strong>str</strong> - text (string) of symbols: &apos;a&apos;, &apos;Hello&apos;, &apos;Hi&apos;, &apos;Beer&apos;, ...</li>
 <li><strong>datetime</strong> - date: 21-12-2017, 25/07/1995, ...</li>
 </ul>
-<p>In <strong>Python</strong>, the data type is defined by the value that is assigned and is not explicitly specified when declaring variables (as opposed to C#, Java and C++).  </p>
+<p>In <strong>Python</strong>, the data type is defined by the value that is assigned and is not explicitly specified when declaring variables (as opposed to C#, Java and C++).</p>
 <h2 id="printing-results-on-the-screen"><a name="printing-results-on-the-screen" class="plugin-anchor" href="#printing-results-on-the-screen"><i class="fa fa-link" aria-hidden="true"></i></a>Printing Results on The Screen</h2>
 <p>To print text, numbers, or another result on the screen, we need to call the built-in function <strong><code>print()</code></strong>. It allows us to print the value of a variable as well as to directly print a string or a number:</p>
 <pre><code class="lang-python">print(<span class="hljs-number">9</span>)  <span class="hljs-comment"># prints a number</span>
@@ -533,10 +533,10 @@ msg = <span class="hljs-string">&apos;Hello, Python!&apos;</span>
 print(msg)  <span class="hljs-comment"># prints value of a variable</span>
 </code></pre>
 <h2 id="reading-user-input-in-integer-type"><a name="reading-user-input-in-integer-type" class="plugin-anchor" href="#reading-user-input-in-integer-type"><i class="fa fa-link" aria-hidden="true"></i></a>Reading User Input in Integer Type</h2>
-<p>To read a user input as an integer, it is necessary to <strong>declare a variable</strong> and use the built-in functions <code>input (&#x2026;)</code> to read a text line from the console and <code>int (&#x2026;)</code> to convert a text value to numerical: </p>
+<p>To read a user input as an integer, it is necessary to <strong>declare a variable</strong> and use the built-in functions <code>input (&#x2026;)</code> to read a text line from the console and <code>int (&#x2026;)</code> to convert a text value to numerical:</p>
 <pre><code class="lang-python">num = int(input())
 </code></pre>
-<p>If it weren&apos;t for this conversion, for the program <strong>every number</strong> will be just <strong>text</strong> with which <strong>we wouldn&apos;t be able to do</strong> arithmetic operations. When using <code>input(&#x2026;)</code> we can include a prompt to the user to tell them what we want them to enter, for example: </p>
+<p>If it weren&apos;t for this conversion, for the program <strong>every number</strong> will be just <strong>text</strong> with which <strong>we wouldn&apos;t be able to do</strong> arithmetic operations. When using <code>input(&#x2026;)</code> we can include a prompt to the user to tell them what we want them to enter, for example:</p>
 <pre><code class="lang-python">size = int(input(<span class="hljs-string">&apos;Enter the size = &apos;</span>))
 </code></pre>
 <h3 id="problem-square-area"><a name="problem-square-area" class="plugin-anchor" href="#problem-square-area"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Square Area</h3>
@@ -547,7 +547,7 @@ print(<span class="hljs-string">&apos;Square area = &apos;</span>, area)
 </code></pre>
 <p>Here is how the program would work for a square with a side equal to 3:</p>
 <p><img src="assets/chapter-2-1-images/00.Square-area-01.png" alt=""></p>
-<p>Try to type in an invalid number, for example &quot;<strong>hello</strong>&quot;. You will receive an <strong>error</strong> message during the execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number. </p>
+<p>Try to type in an invalid number, for example &quot;<strong>hello</strong>&quot;. You will receive an <strong>error</strong> message during the execution of the program (exception). This is normal. We will find out later how we can catch such errors and make the user re-enter a number.</p>
 <h4 id="how-does-the-example-work"><a name="how-does-the-example-work" class="plugin-anchor" href="#how-does-the-example-work"><i class="fa fa-link" aria-hidden="true"></i></a>How Does The Example Work?</h4>
 <p>The first line <strong><code>a = int(input(&apos;a = &apos;))</code></strong> prints a message which tells the user to input the side of the square <strong>a</strong>, then it reads a text (string) and converts it into an integer (this is called parsing) utilizing the function <strong><code>int(&#x2026;)</code></strong>. The result is assigned to a variable with the name <strong><code>a</code></strong>.</p>
 <p>The next command <strong><code>area = a * a</code></strong> assigns to a new variable <strong><code>area</code></strong> the result of the multiplication of <strong><code>a</code></strong> by <strong><code>a</code></strong>.</p>
@@ -555,13 +555,13 @@ print(<span class="hljs-string">&apos;Square area = &apos;</span>, area)
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#0" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#0</a>.</p>
 <h2 id="reading-a-sequence-of-numbers"><a name="reading-a-sequence-of-numbers" class="plugin-anchor" href="#reading-a-sequence-of-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Reading a Sequence of Numbers</h2>
-<p>When we want to read <strong>several numbers from the console</strong>, if they are given <strong>each on a new line</strong>, we read them sequentially like this: </p>
+<p>When we want to read <strong>several numbers from the console</strong>, if they are given <strong>each on a new line</strong>, we read them sequentially like this:</p>
 <pre><code class="lang-python">num1 = input()
 num2 = input()
 num3 = input()
 print(num1, num2, num3)
 </code></pre>
-<p>If we type in the following input: </p>
+<p>If we type in the following input:</p>
 <pre><code>10
 20
 30
@@ -606,7 +606,7 @@ print(name, end=<span class="hljs-string">&apos;!&apos;</span>)
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#2" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#2</a>.</p>
 <h2 id="concatenating-text-and-numbers"><a name="concatenating-text-and-numbers" class="plugin-anchor" href="#concatenating-text-and-numbers"><i class="fa fa-link" aria-hidden="true"></i></a>Concatenating Text and Numbers</h2>
-<p>When printing text, numbers and other data, <strong>we can concatenate them</strong> by using templates <strong><code>{0}</code></strong>, <strong><code>{1}</code></strong>, <strong><code>{2}</code></strong>, etc. In programming, these <strong>templates</strong> are called <strong>placeholders</strong>. </p>
+<p>When printing text, numbers and other data, <strong>we can concatenate them</strong> by using templates <strong><code>{0}</code></strong>, <strong><code>{1}</code></strong>, <strong><code>{2}</code></strong>, etc. In programming, these <strong>templates</strong> are called <strong>placeholders</strong>.</p>
 <p>In <strong>Python</strong> we use the built-in method <strong><code>.format(&#x2026;)</code></strong>, through which we list the variables we want to put in place of the templates (placeholders). Example: we type in <strong>first name</strong> and <strong>last name</strong> of a student as well as their <strong>age</strong> and <strong>hometown</strong> and we print text in the format &#x201C;You are <em>{name}</em> <em>{family name}</em>, a <em>{age}</em>-year-old person from <em>{hometown}</em>.&#x201D;. The following is a solution with text templates:</p>
 <pre><code class="lang-python">first_name = input()
 last_name = input()
@@ -618,7 +618,7 @@ print(<span class="hljs-string">&apos;You are {0} {1}, a {2}-year-old person fro
 </code></pre>
 <p>Here is the result that we will get after the execution of this example:</p>
 <p><img src="assets/chapter-2-1-images/00.Placeholders-01.png" alt=""></p>
-<p>Note how each variable must be passed in the <strong>order, in which we want it to print</strong>. Essentially, the template (<strong>placeholder</strong>) <strong>accepts all types of variables</strong> and this creates great convenience when printing. </p>
+<p>Note how each variable must be passed in the <strong>order, in which we want it to print</strong>. Essentially, the template (<strong>placeholder</strong>) <strong>accepts all types of variables</strong> and this creates great convenience when printing.</p>
 <h3 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h3>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#3" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#3</a>.</p>
 <h3 id="more-on-printing-formatted-text"><a name="more-on-printing-formatted-text" class="plugin-anchor" href="#more-on-printing-formatted-text"><i class="fa fa-link" aria-hidden="true"></i></a>More on Printing Formatted Text</h3>
@@ -652,8 +652,8 @@ print(result)
 b = <span class="hljs-number">7</span>
 product = a * b  <span class="hljs-comment"># 35</span>
 </code></pre>
-<h3 id="dividing-numbers-operator-"><a name="dividing-numbers-operator-" class="plugin-anchor" href="#dividing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Dividing Numbers: Operator \/</h3>
-<p>Dividing numbers is done with the <strong><code>/</code></strong> operator. </p>
+<h3 id="dividing-numbers-operator-"><a name="dividing-numbers-operator-" class="plugin-anchor" href="#dividing-numbers-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Dividing Numbers: Operator /</h3>
+<p>Dividing numbers is done with the <strong><code>/</code></strong> operator.</p>
 <p><strong>Note:</strong> <strong>Dividing by 0</strong> causes an <strong>error</strong> during execution (runtime exception) - <strong>ZeroDivisionError</strong>.</p>
 <p>Here are a few examples with the division operator:</p>
 <pre><code class="lang-python">print(<span class="hljs-number">10</span> / <span class="hljs-number">2.5</span>) <span class="hljs-comment"># Result: 4</span>
@@ -665,7 +665,7 @@ print(<span class="hljs-number">-5</span> / <span class="hljs-number">0</span>) 
 print(<span class="hljs-number">0</span> / <span class="hljs-number">0</span>)    <span class="hljs-comment"># Result: ZeroDivisionError: division by zero</span>
 print(<span class="hljs-number">2.5</span> / <span class="hljs-number">0</span>)  <span class="hljs-comment"># Result: ZeroDivisionError: float division by zero</span>
 </code></pre>
-<h3 id="raising-to-a-power-operator-"><a name="raising-to-a-power-operator-" class="plugin-anchor" href="#raising-to-a-power-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Raising to a Power: Operator <strong>`</strong>`**</h3>
+<h3 id="raising-to-a-power-operator-"><a name="raising-to-a-power-operator-" class="plugin-anchor" href="#raising-to-a-power-operator-"><i class="fa fa-link" aria-hidden="true"></i></a>Raising to a Power: Operator **</h3>
 <p>To <strong>raise to power</strong> in Python the operator <code>**</code> is used:</p>
 <pre><code class="lang-python">print(<span class="hljs-number">2</span> ** <span class="hljs-number">10</span>)     <span class="hljs-comment"># 1024</span>
 print(<span class="hljs-number">2</span> ** <span class="hljs-number">20</span>)     <span class="hljs-comment"># 1048576</span>
@@ -688,7 +688,7 @@ age = <span class="hljs-number">19</span>
 str = first_name + <span class="hljs-string">&apos; &apos;</span> + last_name + <span class="hljs-string">&apos; @ &apos;</span> + str(age)
 print(str)  <span class="hljs-comment"># Maria Ivanova @ 19</span>
 </code></pre>
-<p>In Python, we cannot directly concatenate a number to a given text, so we first parse the number to text utilizing the <strong><code>str (&#x2026;)</code></strong> function. </p>
+<p>In Python, we cannot directly concatenate a number to a given text, so we first parse the number to text utilizing the <strong><code>str (&#x2026;)</code></strong> function.</p>
 <p>Here is another example:</p>
 <pre><code class="lang-python">a = <span class="hljs-number">1.5</span>
 b = <span class="hljs-number">2.5</span>
@@ -737,7 +737,7 @@ print(<span class="hljs-string">&apos;width = &apos;</span> + str(width) + <span
 <pre><code>width = 5 ; height = 7 ; area = 35
 </code></pre><p>Because in Python text cannot be directly concatenated with numbers, they first have to be parsed to text using the function <code>str(num)</code>.</p>
 <h3 id="formatting-strings-d-s-f"><a name="formatting-strings-d-s-f" class="plugin-anchor" href="#formatting-strings-d-s-f"><i class="fa fa-link" aria-hidden="true"></i></a>Formatting Strings <code>%d</code>, <code>%s</code>, <code>%f</code></h3>
-<p>Printing with templates can be done with <strong>formatting strings</strong> (also used in C and Java). Here is an example: </p>
+<p>Printing with templates can be done with <strong>formatting strings</strong> (also used in C and Java). Here is an example:</p>
 <pre><code class="lang-python">width = <span class="hljs-number">5</span>
 height = <span class="hljs-number">7</span>
 text = <span class="hljs-string">&quot;area&quot;</span>
@@ -746,10 +746,10 @@ print(<span class="hljs-string">&apos;width = %d ; height = %d ; %s = %d&apos;</
 <p>In the example above we use the operator <code>%</code>, which substitutes values in a <strong>text template</strong>, given as a sequence of elements in brackets. The following main <strong>placeholders</strong> are used (formatting strings): <code>%d</code> signifies an integer, <code>%f</code> signifies a floating-point number, <code>%s</code> signifies text. The outcome of the code above is the same as in the last examples:</p>
 <pre><code>width = 5 ; height = 7 ; area = 35
 </code></pre><p>Using a wrong formatting string could result in an error.</p>
-<p>When formatting floating-point numbers, we can round them to a specified number of digits after the decimal point, for example with the formatting string <code>%.2f</code> we can print a floating-point number rounded to 2 digits after the decimal point: </p>
+<p>When formatting floating-point numbers, we can round them to a specified number of digits after the decimal point, for example with the formatting string <code>%.2f</code> we can print a floating-point number rounded to 2 digits after the decimal point:</p>
 <pre><code class="lang-python">print(<span class="hljs-string">&apos;price = %.2f \nVAT = %.3f&apos;</span> % (<span class="hljs-number">1.60</span>, <span class="hljs-number">1.60</span> * <span class="hljs-number">0.2</span>))
 </code></pre>
-<p>The result from the code above is the following: </p>
+<p>The result from the code above is the following:</p>
 <pre><code>price = 1.60
 VAT = 0.320
 </code></pre><p>In the example above we use the special symbol <code>\n</code>, which means &#x201E;go to the next line&#x201C;. Analogically, the special symbol <code>\b</code> returns the cursor with one position backward (deletes the last printed symbol), respectively the following code:</p>
@@ -783,7 +783,7 @@ print(f<span class="hljs-string">&apos;width = {width} ; height = {height} ; are
 <h4 id="hints-and-guidelines"><a name="hints-and-guidelines" class="plugin-anchor" href="#hints-and-guidelines"><i class="fa fa-link" aria-hidden="true"></i></a>Hints and Guidelines</h4>
 <p>We add to the existing PyCharm project one more Python file named &quot;concatenate_data&quot;. We <strong>write the code</strong> which reads the input from the console:</p>
 <p><img src="assets/chapter-2-1-images/04.Concatenate-data-01.png" alt=""></p>
-<p><strong>The code</strong>, which prints the message described in the condition of the task, is purposefully blurred and must be added by the reader: </p>
+<p><strong>The code</strong>, which prints the message described in the condition of the task, is purposefully blurred and must be added by the reader:</p>
 <p><img src="assets/chapter-2-1-images/04.Concatenate-data-02.png" alt=""></p>
 <p>Next, the solution should be tested locally using [<strong>Ctrl + Shift + F10</strong>] or with right-click - [<strong>Run</strong>] and enter sample input.</p>
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
@@ -814,7 +814,7 @@ print(<span class="hljs-string">&apos;Trapezoid area = &apos;</span> + str(area)
 <pre><code class="lang-python">down = math.floor(<span class="hljs-number">45.67</span>)  <span class="hljs-comment"># down = 45</span>
 </code></pre>
 <ul>
-<li><strong><code>round(&#x2026;)</code></strong> - rounding is done following the <strong>basic rule for rounding</strong> - if the decimal part is less than 5, the rounding is down and vice versa, if it is greater than 5 - up: </li>
+<li><strong><code>round(&#x2026;)</code></strong> - rounding is done following the <strong>basic rule for rounding</strong> - if the decimal part is less than 5, the rounding is down and vice versa, if it is greater than 5 - up:</li>
 </ul>
 <pre><code class="lang-python">round(<span class="hljs-number">5.439</span>)  <span class="hljs-comment"># 5</span>
 round(<span class="hljs-number">5.539</span>)  <span class="hljs-comment"># 6</span>
@@ -953,7 +953,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <h4 id="testing-in-the-judge-system"><a name="testing-in-the-judge-system" class="plugin-anchor" href="#testing-in-the-judge-system"><i class="fa fa-link" aria-hidden="true"></i></a>Testing in The Judge System</h4>
 <p>Test your solution here: <a href="https://judge.softuni.org/Contests/Practice/Index/1047#8" target="_blank">https://judge.softuni.org/Contests/Practice/Index/1047#8</a>.</p>
 <h3 id="problem-radians-to-degrees"><a name="problem-radians-to-degrees" class="plugin-anchor" href="#problem-radians-to-degrees"><i class="fa fa-link" aria-hidden="true"></i></a>Problem: Radians to Degrees</h3>
-<p>Write a program, that reads <strong>an angle in <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it to <strong><a href="https://en.wikipedia.org/wiki/Degree_(angle" target="_blank">degrees</a>)</strong> (<strong><code>deg</code></strong>). Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in Python programs is available through <strong><code>math.pi</code></strong> but before that, we have to refer to <strong>the math library</strong> using <strong><code>import math</code></strong>. Round the result to the nearest integer number using the method <strong><code>round()</code></strong>.</p>
+<p>Write a program, that reads <strong>an angle in <a href="https://en.wikipedia.org/wiki/Radian" target="_blank">radians</a></strong> (<strong><code>rad</code></strong>) and converts it to <strong><a href="https://en.wikipedia.org/wiki/Degree_(angle" target="_blank">degrees</a>&gt;)</strong> (<strong><code>deg</code></strong>). Look for a proper formula on the Internet. The number <strong>&#x3C0;</strong> in Python programs is available through <strong><code>math.pi</code></strong> but before that, we have to refer to <strong>the math library</strong> using <strong><code>import math</code></strong>. Round the result to the nearest integer number using the method <strong><code>round()</code></strong>.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -1030,7 +1030,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 </tr>
 </tbody>
 </table>
-<p><strong>The input</strong> is the <strong>sum for conversion</strong>, <strong>input currency</strong>, and <strong>output currency</strong>. <strong>The output</strong> is one number &#x2013; the converted value of the above currency rates rounded <strong>2 digits</strong> after the decimal point.  </p>
+<p><strong>The input</strong> is the <strong>sum for conversion</strong>, <strong>input currency</strong>, and <strong>output currency</strong>. <strong>The output</strong> is one number &#x2013; the converted value of the above currency rates rounded <strong>2 digits</strong> after the decimal point.</p>
 <h4 id="sample-input-and-output"><a name="sample-input-and-output" class="plugin-anchor" href="#sample-input-and-output"><i class="fa fa-link" aria-hidden="true"></i></a>Sample Input and Output</h4>
 <table>
 <thead>
@@ -1110,7 +1110,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
 <p><img src="assets/chapter-2-1-images/13.Currency-converter-02.png" alt=""></p>
 <p>First, we create a Graphical <strong>Application</strong>, which represents a rectangle <strong>Frame</strong> for components. At this stage, everything will be done without explanations, as if it is <strong>magic</strong>:</p>
 <p><img src="assets/chapter-2-1-images/13.Currency-converter-03.png" alt=""></p>
-<p>Now we can add the components of our application to the so-called <strong>function</strong> which we will call with the function <strong><strong>init</strong></strong>, or the so-called <strong>constructor</strong>:</p>
+<p>Now we can add the components of our application to the so-called <strong>function</strong> which we will call with the function *<strong>*init**</strong>, or the so-called <strong>constructor</strong>:</p>
 <p><img src="assets/chapter-2-1-images/13.Currency-converter-04.png" alt=""></p>
 <p>We order the following UI components:</p>
 <ul>
@@ -1223,7 +1223,7 @@ print(<span class="hljs-string">&apos;Perimeter = &apos;</span>, perimeter)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2023-09-29T21:58:49.676Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-29T21:59:35.796Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.1. Simple Calculations","level":"1.4","depth":1,"next":{"title":"2.2. Simple Calculations – Exam Problems","level":"1.5","depth":1,"path":"chapter-02-simple-calculations-exam-problems.md","ref":"chapter-02-simple-calculations-exam-problems.md","articles":[]},"previous":{"title":"1. First Steps in Programming","level":"1.3","depth":1,"path":"chapter-01-first-steps-in-programming.md","ref":"chapter-01-first-steps-in-programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["ga","meta","anchors","expandable-chapters-small","katex","scripts","page-toc-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"meta":{"content":"","data":[],"name":""},"scripts":{"files":["./assets/js/repl.it-code-runner.js","./assets/js/video.js","./assets/js/top-menu.js"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"expandable-chapters-small":{},"ga":{"configuration":"auto","token":"UA-11309924-36"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":36,"left":36,"top":48,"bottom":48}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-619-00-1403-4","variables":{},"title":"Programming Basics with Python","language":"en","gitbook":"*","description":"Free book \"Programming Basics with Python\" for absolute beginners. Covers the Python language, the PyCharm development environment, variables, data, calculations, conditional statements, loops, nested loops, functions and many practical exercises."},"file":{"path":"chapter-02-simple-calculations.md","mtime":"2023-11-01T09:14:23.110Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-01T09:15:02.639Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
