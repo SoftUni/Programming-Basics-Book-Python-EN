@@ -29,7 +29,7 @@ The free book "**Programming Basics with Python**" introduces the readers to wri
 ## Download The Book
 
 Download the book "**Programming Basics with Python**" in **PDF** format:
-* <a href="#">TODO</a>
+* <a href="https://github.com/SoftUni/Programming-Basics-Book-Python-EN/blob/master/resources/Programming-Basics-Python-v2021.pdf">Programming-Basics-Python-v2021.pdf</a>
 
 ## Book Editions
 
