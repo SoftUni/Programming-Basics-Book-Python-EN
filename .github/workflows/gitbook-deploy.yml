@@ -18,6 +18,8 @@ jobs:
         with: { node-version: '10' }
       - name: Install Gitbook CLI client (gitbook-cli)
         run: npm install -g gitbook-cli
+      - name: Preinstall compatible cheerio version for legacy GitBook plugins
+        run: npm install cheerio@0.22.0
       - name: Install Gitbook plugins (git install)
         run: gitbook install
       - name: Build the book to the `_book` folder (git build)
